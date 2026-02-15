@@ -212,30 +212,6 @@ export const homePage = html`
       </div>
     </section>
 
-    <section class="tech-section">
-      <div class="container">
-        <h2 class="section-title">Built with Modern Tech</h2>
-        <div class="tech-stack">
-          <div class="tech-item">
-            <div class="tech-name">Bun</div>
-            <div class="tech-desc">Fast JavaScript runtime</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-name">Hono</div>
-            <div class="tech-desc">Lightweight web framework</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-name">TypeScript</div>
-            <div class="tech-desc">Type-safe development</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-name">Server-Side</div>
-            <div class="tech-desc">Fast rendering</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="cta-section">
       <div class="container">
         <h2>Ready to Master DSA?</h2>

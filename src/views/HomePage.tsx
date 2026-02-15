@@ -215,31 +215,6 @@ export const HomePage = () => {
             </div>
           </section>
 
-          {/* Tech Stack Section */}
-          <section class="tech-section">
-            <div class="container">
-              <h2 class="section-title">Built with Modern Tech</h2>
-              <div class="tech-stack">
-                <div class="tech-item">
-                  <div class="tech-name">Bun</div>
-                  <div class="tech-desc">Fast JavaScript runtime</div>
-                </div>
-                <div class="tech-item">
-                  <div class="tech-name">Hono</div>
-                  <div class="tech-desc">Lightweight web framework</div>
-                </div>
-                <div class="tech-item">
-                  <div class="tech-name">TypeScript</div>
-                  <div class="tech-desc">Type-safe development</div>
-                </div>
-                <div class="tech-item">
-                  <div class="tech-name">Hono JSX</div>
-                  <div class="tech-desc">Server-side rendering</div>
-                </div>
-              </div>
-            </div>
-          </section>
-
           {/* CTA Section */}
           <section class="cta-section">
             <div class="container">
