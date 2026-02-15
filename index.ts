@@ -4,6 +4,7 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 import { homePageDynamic } from './src/views/home-dynamic.js'
 import { problemsPage } from './src/views/problems.js'
+import { patternsPage } from './src/views/patterns.js'
 import { loadProblemsCache, getProblemsCache, refreshCache } from './src/data/csv-loader.js'
 
 const app = new Hono()
@@ -19,6 +20,10 @@ app.get('/', (c) => {
 
 app.get('/problems', (c) => {
   return c.html(problemsPage)
+})
+
+app.get('/patterns', (c) => {
+  return c.html(patternsPage())
 })
 
 // Serve CSS

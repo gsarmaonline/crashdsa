@@ -3,7 +3,7 @@
   "info": {
     "title": "CrashDSA API",
     "version": "1.0.0",
-    "description": "Auto-generated API documentation for CrashDSA Hono backend"
+    "description": "API for CrashDSA — a curated DSA problem aggregation platform built with Hono + Bun"
   },
   "servers": [
     {
@@ -14,19 +14,52 @@
   "paths": {
     "/": {
       "get": {
-        "summary": "Get welcome message",
-        "description": "Returns a simple welcome message to verify the API is running",
-        "operationId": "getRoot",
-        "tags": ["General"],
+        "summary": "Homepage",
+        "description": "Returns the server-rendered homepage with featured problems and statistics",
+        "operationId": "getHome",
+        "tags": ["UI"],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "HTML page",
             "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string",
-                  "example": "Hello Hono!"
-                }
+              "text/html": {
+                "schema": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/problems": {
+      "get": {
+        "summary": "Problems page",
+        "description": "Returns the server-rendered problems listing page with client-side filtering",
+        "operationId": "getProblemsPage",
+        "tags": ["UI"],
+        "responses": {
+          "200": {
+            "description": "HTML page",
+            "content": {
+              "text/html": {
+                "schema": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/patterns": {
+      "get": {
+        "summary": "Patterns page",
+        "description": "Returns the server-rendered patterns page showing all 20 solution patterns with problem counts and difficulty breakdowns",
+        "operationId": "getPatternsPage",
+        "tags": ["UI"],
+        "responses": {
+          "200": {
+            "description": "HTML page",
+            "content": {
+              "text/html": {
+                "schema": { "type": "string" }
               }
             }
           }
@@ -35,8 +68,8 @@
     },
     "/api/hello": {
       "get": {
-        "summary": "Get hello message",
-        "description": "Returns a JSON response with a hello message from the Hono API",
+        "summary": "Hello message",
+        "description": "Returns a JSON hello message to verify the API is running",
         "operationId": "getApiHello",
         "tags": ["API"],
         "responses": {
@@ -52,38 +85,254 @@
           }
         }
       }
+    },
+    "/api/problems": {
+      "get": {
+        "summary": "List all problems",
+        "description": "Returns all problems, optionally filtered by difficulty",
+        "operationId": "getProblems",
+        "tags": ["Problems"],
+        "parameters": [
+          {
+            "name": "difficulty",
+            "in": "query",
+            "description": "Filter by difficulty level",
+            "schema": {
+              "type": "string",
+              "enum": ["Easy", "Medium", "Hard"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/problems/pattern/{pattern}": {
+      "get": {
+        "summary": "Get problems by pattern",
+        "description": "Returns all problems belonging to a specific solution pattern",
+        "operationId": "getProblemsByPattern",
+        "tags": ["Problems"],
+        "parameters": [
+          {
+            "name": "pattern",
+            "in": "path",
+            "required": true,
+            "description": "Pattern slug (e.g. two-pointers, sliding-window)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PatternProblemsResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Pattern not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/patterns": {
+      "get": {
+        "summary": "List all patterns",
+        "description": "Returns all available solution patterns with display names and problem counts",
+        "operationId": "getPatterns",
+        "tags": ["Patterns"],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PatternsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/stats": {
+      "get": {
+        "summary": "Get statistics",
+        "description": "Returns aggregate statistics about the problem collection",
+        "operationId": "getStats",
+        "tags": ["Stats"],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/refresh": {
+      "post": {
+        "summary": "Refresh data cache",
+        "description": "Reloads all problem data from CSV files into the in-memory cache",
+        "operationId": "refreshCache",
+        "tags": ["Admin"],
+        "responses": {
+          "200": {
+            "description": "Cache refreshed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": { "type": "string", "example": "Cache refreshed successfully" }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Refresh failed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "Problem": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "example": "Two Sum" },
+          "difficulty": { "type": "string", "enum": ["Easy", "Medium", "Hard"] },
+          "patterns": {
+            "type": "array",
+            "items": { "type": "string" },
+            "example": ["two-pointers"]
+          },
+          "sourceSheets": {
+            "type": "array",
+            "items": { "type": "string" },
+            "example": ["neetcode150", "blind75"]
+          },
+          "link": { "type": "string", "format": "uri", "example": "https://leetcode.com/problems/two-sum/" },
+          "acceptanceRate": { "type": "string", "example": "51.4%" },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["name", "difficulty", "patterns", "sourceSheets", "link", "acceptanceRate", "tags"]
+      },
+      "ProblemsResponse": {
+        "type": "object",
+        "properties": {
+          "problems": {
+            "type": "array",
+            "items": { "$ref": "#/components/schemas/Problem" }
+          },
+          "count": { "type": "integer", "example": 326 }
+        },
+        "required": ["problems", "count"]
+      },
+      "PatternProblemsResponse": {
+        "type": "object",
+        "properties": {
+          "pattern": { "type": "string", "example": "two-pointers" },
+          "problems": {
+            "type": "array",
+            "items": { "$ref": "#/components/schemas/Problem" }
+          },
+          "count": { "type": "integer", "example": 25 }
+        },
+        "required": ["pattern", "problems", "count"]
+      },
+      "PatternInfo": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "example": "two-pointers" },
+          "displayName": { "type": "string", "example": "Two Pointers" },
+          "count": { "type": "integer", "example": 25 }
+        },
+        "required": ["name", "displayName", "count"]
+      },
+      "PatternsResponse": {
+        "type": "object",
+        "properties": {
+          "patterns": {
+            "type": "array",
+            "items": { "$ref": "#/components/schemas/PatternInfo" }
+          },
+          "total": { "type": "integer", "example": 20 }
+        },
+        "required": ["patterns", "total"]
+      },
+      "StatsResponse": {
+        "type": "object",
+        "properties": {
+          "total": { "type": "integer", "example": 326 },
+          "easy": { "type": "integer", "example": 70 },
+          "medium": { "type": "integer", "example": 180 },
+          "hard": { "type": "integer", "example": 76 },
+          "lastUpdated": { "type": "string", "format": "date-time" }
+        },
+        "required": ["total", "easy", "medium", "hard", "lastUpdated"]
+      },
       "HelloResponse": {
         "type": "object",
         "properties": {
-          "message": {
-            "type": "string",
-            "example": "Hello from Hono API!"
-          }
+          "message": { "type": "string", "example": "Hello from Hono API!" }
         },
         "required": ["message"]
       },
       "ErrorResponse": {
         "type": "object",
         "properties": {
-          "error": {
-            "type": "string"
-          }
+          "error": { "type": "string" }
         }
       }
     }
   },
   "tags": [
-    {
-      "name": "General",
-      "description": "General endpoints"
-    },
-    {
-      "name": "API",
-      "description": "API endpoints"
-    }
+    { "name": "UI", "description": "Server-rendered HTML pages" },
+    { "name": "API", "description": "General API endpoints" },
+    { "name": "Problems", "description": "DSA problem endpoints" },
+    { "name": "Patterns", "description": "Solution pattern endpoints" },
+    { "name": "Stats", "description": "Statistics endpoints" },
+    { "name": "Admin", "description": "Administrative endpoints" }
   ]
 }

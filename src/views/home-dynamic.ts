@@ -26,6 +26,7 @@ export function homePageDynamic() {
       <div class="nav-links">
         <a href="/">Home</a>
         <a href="/problems">Problems</a>
+        <a href="/patterns">Patterns</a>
         <a href="#features">Features</a>
         <a href="/api-docs" target="_blank">API Docs</a>
       </div>
