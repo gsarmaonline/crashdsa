@@ -6,12 +6,12 @@
   "scripts": {
     "dev": "bun run --hot index.ts",
     "start": "bun run index.ts",
+    "test": "bun test",
     "api-docs": "bun run scripts/generate-api-docs.ts",
     "api-docs:serve": "bun run dev",
     "screenshots": "bun run scripts/take-screenshots.ts"
   },
   "devDependencies": {
-    "@hono/swagger-ui": "^0.5.3",
     "@types/bun": "latest",
     "puppeteer": "^24.37.3"
   },
@@ -19,6 +19,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@hono/swagger-ui": "^0.5.3",
     "hono": "^4.11.9"
   }
 }
