@@ -1,0 +1,89 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "CrashDSA API",
+    "version": "1.0.0",
+    "description": "Auto-generated API documentation for CrashDSA Hono backend"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Development server"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Get welcome message",
+        "description": "Returns a simple welcome message to verify the API is running",
+        "operationId": "getRoot",
+        "tags": ["General"],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string",
+                  "example": "Hello Hono!"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/hello": {
+      "get": {
+        "summary": "Get hello message",
+        "description": "Returns a JSON response with a hello message from the Hono API",
+        "operationId": "getApiHello",
+        "tags": ["API"],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HelloResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HelloResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Hello from Hono API!"
+          }
+        },
+        "required": ["message"]
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "General",
+      "description": "General endpoints"
+    },
+    {
+      "name": "API",
+      "description": "API endpoints"
+    }
+  ]
+}
