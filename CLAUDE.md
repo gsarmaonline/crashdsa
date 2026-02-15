@@ -4,27 +4,35 @@ This file contains instructions and context for Claude Code when working on this
 
 ## Project Overview
 
-**CrashDSA** is a backend API built with Hono and Bun. The goal is to provide a lightweight, fast API for data structures and algorithms learning platform.
+**CrashDSA** is a full-stack web application built with Hono and Bun. The goal is to provide a lightweight, fast platform for data structures and algorithms learning with interactive problems and solutions.
 
 ## Tech Stack
 
 - **Runtime:** Bun (fast JavaScript runtime)
 - **Framework:** Hono (lightweight web framework)
+- **Frontend:** Server-side rendered HTML with Hono
 - **Language:** TypeScript
 - **Documentation:** OpenAPI/Swagger
+- **Visual Testing:** Puppeteer for screenshot automation
 
 ## Project Structure
 
 ```
 crashdsa/
 ├── index.ts              # Main application file with routes
+├── src/                  # Source code
+│   ├── views/           # HTML page templates
+│   ├── components/      # Reusable UI components (future)
+│   └── styles/          # CSS stylesheets
 ├── docs/                 # API documentation
 │   ├── API.md           # Human-readable API docs
 │   ├── openapi.json     # OpenAPI 3.0 specification
 │   ├── API_EXAMPLES.md  # cURL examples
 │   └── API_SUMMARY.md   # API overview
+├── screenshots/         # Auto-generated screenshots
 ├── scripts/             # Utility scripts
-│   └── generate-api-docs.ts  # Documentation generator
+│   ├── generate-api-docs.ts  # Documentation generator
+│   └── take-screenshots.ts   # Screenshot capture script
 ├── package.json
 └── tsconfig.json
 ```
@@ -53,6 +61,14 @@ crashdsa/
 - Keep OpenAPI spec in sync with code
 - Document all request/response types, status codes, and error responses
 
+### Visual Testing & Screenshots
+
+- **Whenever frontend code changes** (HTML, CSS, new pages), run screenshot capture
+- Before creating PRs with UI changes, run `/screenshotify` or `bun run screenshots`
+- Screenshots are captured in 3 viewports: desktop (1920x1080), tablet (768x1024), mobile (375x667)
+- Include screenshot comparisons in PR descriptions showing visual changes
+- Screenshots help reviewers understand visual impact of changes
+
 ### Testing
 
 - Add tests for new endpoints (future)
@@ -66,6 +82,7 @@ crashdsa/
 - `bun run start` - Start production server
 - `bun run api-docs` - Generate/update API documentation
 - `bun run api-docs:serve` - Start server and view docs at http://localhost:3000/api-docs
+- `bun run screenshots` - Capture screenshots of all pages (desktop, tablet, mobile)
 
 ### Documentation Workflow
 
@@ -80,10 +97,13 @@ crashdsa/
 - Always run tests before committing (when tests are added)
 - Keep commits focused and atomic
 
-## API Endpoints
+## Routes
 
-Current endpoints:
-- `GET /` - Welcome message
+### UI Routes
+- `GET /` - Homepage with DSA problems showcase
+- `GET /styles.css` - CSS stylesheet
+
+### API Endpoints
 - `GET /api/hello` - Hello API message
 - `GET /api-docs` - Interactive Swagger UI documentation
 - `GET /openapi.json` - OpenAPI specification

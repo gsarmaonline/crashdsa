@@ -2,14 +2,22 @@ import { Hono } from 'hono'
 import { swaggerUI } from '@hono/swagger-ui'
 import { readFileSync } from 'fs'
 import { join } from 'path'
+import { homePage } from './src/views/home.js'
 
 const app = new Hono()
 
-// API Routes
+// UI Routes
 app.get('/', (c) => {
-  return c.text('Hello Hono!')
+  return c.html(homePage)
 })
 
+// Serve CSS
+app.get('/styles.css', (c) => {
+  const css = readFileSync(join(process.cwd(), 'src', 'styles', 'styles.css'), 'utf-8')
+  return c.body(css, 200, { 'Content-Type': 'text/css' })
+})
+
+// API Routes
 app.get('/api/hello', (c) => {
   return c.json({ message: 'Hello from Hono API!' })
 })
@@ -25,4 +33,7 @@ app.get('/openapi.json', (c) => {
   return c.json(JSON.parse(spec))
 })
 
-export default app
+export default {
+  port: 3000,
+  fetch: app.fetch,
+}

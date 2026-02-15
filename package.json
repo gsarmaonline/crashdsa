@@ -7,11 +7,13 @@
     "dev": "bun run --hot index.ts",
     "start": "bun run index.ts",
     "api-docs": "bun run scripts/generate-api-docs.ts",
-    "api-docs:serve": "bun run dev"
+    "api-docs:serve": "bun run dev",
+    "screenshots": "bun run scripts/take-screenshots.ts"
   },
   "devDependencies": {
     "@hono/swagger-ui": "^0.5.3",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "puppeteer": "^24.37.3"
   },
   "peerDependencies": {
     "typescript": "^5"

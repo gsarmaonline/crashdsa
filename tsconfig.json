@@ -6,6 +6,9 @@
     "module": "Preserve",
     "moduleDetection": "force",
     "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "jsxFragmentFactory": "Fragment",
+    "jsxFactory": "jsx",
     "allowJs": true,
 
     // Bundler mode
