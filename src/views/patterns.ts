@@ -23,6 +23,7 @@ export function patternsPage() {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patterns - CrashDSA</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <style>
     .patterns-header {
       margin-bottom: 2rem;
