@@ -1,0 +1,12 @@
+Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
+Minimum Number of Flips to Reverse Binary String,Easy,leetcode-top-150,https://leetcode.com/problems/minimum-number-of-flips-to-reverse-binary-string/,75.7%
+Reverse Letters Then Special Characters in a String,Easy,leetcode-top-150,https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/,81.4%
+Reverse Linked List,Easy,neetcode150; blind75; grind75; striver-a2z,https://leetcode.com/problems/reverse-linked-list/,N/A
+Reverse String Prefix,Easy,leetcode-top-150,https://leetcode.com/problems/reverse-string-prefix/,89.4%
+Construct Binary Tree from Preorder and Inorder Traversal,Medium,neetcode150; blind75,https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/,N/A
+Lexicographically Smallest String After Reverse,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/,54.7%
+Reorder List,Medium,neetcode150; blind75,https://leetcode.com/problems/reorder-list/,N/A
+Reverse Integer,Medium,neetcode150,https://leetcode.com/problems/reverse-integer/,N/A
+Reverse Words With Same Vowel Count,Medium,leetcode-top-150,https://leetcode.com/problems/reverse-words-with-same-vowel-count/,66.5%
+Reverse Nodes in k-Group,Hard,neetcode150; striver-a2z,https://leetcode.com/problems/reverse-nodes-in-k-group/,N/A
+Reverse Pairs,Hard,striver-a2z,https://leetcode.com/problems/reverse-pairs/,N/A

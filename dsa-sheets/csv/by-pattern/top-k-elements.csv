@@ -1,9 +1,10 @@
 Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
 Kth Largest Element in a Stream,Easy,neetcode150,https://leetcode.com/problems/kth-largest-element-in-a-stream/,N/A
 Largest Even Number,Easy,leetcode-top-150,https://leetcode.com/problems/largest-even-number/,69.2%
-Smallest Absent Positive Greater Than Average,Easy,leetcode-top-150,https://leetcode.com/problems/smallest-absent-positive-greater-than-average/,34%
+Smallest Absent Positive Greater Than Average,Easy,leetcode-top-150,https://leetcode.com/problems/smallest-absent-positive-greater-than-average/,34.1%
 Smallest Missing Multiple of K,Easy,leetcode-top-150,https://leetcode.com/problems/smallest-missing-multiple-of-k/,63.1%
 Cheapest Flights Within K Stops,Medium,neetcode150,https://leetcode.com/problems/cheapest-flights-within-k-stops/,N/A
+K Closest Points to Origin,Medium,neetcode150; grind75,https://leetcode.com/problems/k-closest-points-to-origin/,N/A
 Kth Largest Element in an Array,Medium,neetcode150,https://leetcode.com/problems/kth-largest-element-in-an-array/,N/A
 Largest Prime from Consecutive Prime Sum,Medium,leetcode-top-150,https://leetcode.com/problems/largest-prime-from-consecutive-prime-sum/,38.8%
 Largest Subarray With Zero Sum,Medium,striver-a2z,https://leetcode.com/problems/largest-subarray-with-zero-sum/,N/A

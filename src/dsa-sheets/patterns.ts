@@ -1,121 +1,150 @@
 /**
- * Pattern definitions for categorizing DSA problems
+ * Pure solution pattern definitions for senior engineers
+ * Focus on algorithmic strategies, not data structures
  */
 
 import type { Pattern, PatternName } from './types';
 
 export const PATTERNS: Pattern[] = [
   {
-    name: 'array-hashing',
-    displayName: 'Array & Hashing',
-    description: 'Problems involving arrays, hash tables, and hash sets',
-    keywords: ['array', 'hash', 'map', 'set', 'hashmap', 'hashset', 'dictionary'],
-    tagMappings: ['Array', 'Hash Table', 'Hash Map', 'Hash Set', 'Dictionary']
-  },
-  {
     name: 'two-pointers',
     displayName: 'Two Pointers',
-    description: 'Problems using two-pointer technique, including fast/slow pointers',
-    keywords: ['two pointer', 'two-pointer', 'fast slow', 'left right', 'start end'],
-    tagMappings: ['Two Pointers', 'Fast and Slow Pointers']
+    description: 'Move pointers from opposite ends or same direction to solve array/string problems',
+    keywords: ['two pointer', 'left right', 'start end', 'opposite direction'],
+    tagMappings: ['Two Pointers']
+  },
+  {
+    name: 'fast-slow-pointers',
+    displayName: 'Fast & Slow Pointers',
+    description: 'Use two pointers moving at different speeds for cycle detection and middle finding',
+    keywords: ['fast slow', 'cycle detection', 'middle', 'tortoise hare', 'floyd'],
+    tagMappings: ['Linked List', 'Two Pointers']
   },
   {
     name: 'sliding-window',
     displayName: 'Sliding Window',
-    description: 'Problems using sliding window technique for subarrays/substrings',
-    keywords: ['sliding window', 'subarray', 'substring', 'consecutive', 'contiguous'],
+    description: 'Dynamic window over array/string for subarray/substring optimization',
+    keywords: ['sliding window', 'subarray', 'substring', 'consecutive', 'contiguous', 'window'],
     tagMappings: ['Sliding Window']
   },
   {
     name: 'binary-search',
     displayName: 'Binary Search',
-    description: 'Problems involving binary search and its variations',
-    keywords: ['binary search', 'sorted', 'search', 'logarithmic'],
+    description: 'Search in sorted space with O(log n) complexity and variations',
+    keywords: ['binary search', 'sorted', 'search', 'logarithmic', 'divide'],
     tagMappings: ['Binary Search', 'Binary Search Tree']
   },
   {
-    name: 'linked-list',
-    displayName: 'Linked List',
-    description: 'Problems involving singly or doubly linked lists',
-    keywords: ['linked list', 'node', 'next', 'prev', 'cycle'],
-    tagMappings: ['Linked List', 'Doubly-Linked List']
+    name: 'cyclic-sort',
+    displayName: 'Cyclic Sort',
+    description: 'Sort array where numbers are in range [1, n] to find missing/duplicate',
+    keywords: ['cyclic', 'missing number', 'duplicate', 'range'],
+    tagMappings: ['Array', 'Sorting']
   },
   {
-    name: 'trees',
-    displayName: 'Trees',
-    description: 'Problems involving binary trees, BST, DFS, BFS',
-    keywords: ['tree', 'binary tree', 'bst', 'dfs', 'bfs', 'traversal', 'level order', 'inorder', 'preorder', 'postorder'],
-    tagMappings: ['Tree', 'Binary Tree', 'Binary Search Tree', 'Depth-First Search', 'Breadth-First Search', 'DFS', 'BFS']
+    name: 'linked-list-reversal',
+    displayName: 'In-place Linked List Reversal',
+    description: 'Reverse linked list or parts of it in-place without extra space',
+    keywords: ['reverse linked list', 'reverse', 'in place', 'reorder'],
+    tagMappings: ['Linked List']
   },
   {
-    name: 'tries',
-    displayName: 'Tries',
-    description: 'Problems involving trie (prefix tree) data structure',
-    keywords: ['trie', 'prefix tree', 'prefix', 'word'],
-    tagMappings: ['Trie', 'Prefix Tree']
+    name: 'tree-dfs',
+    displayName: 'Tree DFS',
+    description: 'Depth-first traversal strategies (preorder, inorder, postorder)',
+    keywords: ['tree', 'dfs', 'depth first', 'preorder', 'inorder', 'postorder', 'recursion'],
+    tagMappings: ['Tree', 'Binary Tree', 'Depth-First Search', 'DFS', 'Recursion']
   },
   {
-    name: 'heap-priority-queue',
-    displayName: 'Heap / Priority Queue',
-    description: 'Problems using heaps or priority queues',
-    keywords: ['heap', 'priority queue', 'top k', 'kth', 'largest', 'smallest'],
-    tagMappings: ['Heap', 'Priority Queue', 'Heap (Priority Queue)']
+    name: 'tree-bfs',
+    displayName: 'Tree BFS',
+    description: 'Level-order traversal using queue for breadth-first exploration',
+    keywords: ['tree', 'bfs', 'breadth first', 'level order', 'level', 'queue'],
+    tagMappings: ['Tree', 'Binary Tree', 'Breadth-First Search', 'BFS', 'Queue']
+  },
+  {
+    name: 'graph-dfs',
+    displayName: 'Graph DFS',
+    description: 'Explore all paths in graph using depth-first search',
+    keywords: ['graph', 'dfs', 'depth first', 'explore', 'path', 'island', 'connected'],
+    tagMappings: ['Graph', 'Depth-First Search', 'DFS']
+  },
+  {
+    name: 'graph-bfs',
+    displayName: 'Graph BFS',
+    description: 'Find shortest path or explore level-wise using breadth-first search',
+    keywords: ['graph', 'bfs', 'breadth first', 'shortest path', 'level'],
+    tagMappings: ['Graph', 'Breadth-First Search', 'BFS']
+  },
+  {
+    name: 'union-find',
+    displayName: 'Union Find',
+    description: 'Disjoint set data structure for connectivity and grouping problems',
+    keywords: ['union find', 'disjoint set', 'connected component', 'connectivity'],
+    tagMappings: ['Union Find', 'Disjoint Set']
+  },
+  {
+    name: 'topological-sort',
+    displayName: 'Topological Sort',
+    description: 'Order tasks with dependencies using DFS or Kahn\'s algorithm',
+    keywords: ['topological', 'dependency', 'order', 'course', 'prerequisite'],
+    tagMappings: ['Topological Sort', 'Graph']
   },
   {
     name: 'backtracking',
     displayName: 'Backtracking',
-    description: 'Problems requiring backtracking approach',
-    keywords: ['backtrack', 'permutation', 'combination', 'subset', 'generate'],
+    description: 'Generate all combinations, permutations, or subsets by exploring and backtracking',
+    keywords: ['backtrack', 'permutation', 'combination', 'subset', 'generate', 'all'],
     tagMappings: ['Backtracking', 'Recursion']
   },
   {
-    name: 'graphs',
-    displayName: 'Graphs',
-    description: 'Problems involving graph algorithms (DFS, BFS, union-find, etc.)',
-    keywords: ['graph', 'vertex', 'edge', 'connected', 'cycle', 'path', 'island', 'union find', 'disjoint set'],
-    tagMappings: ['Graph', 'Depth-First Search', 'Breadth-First Search', 'Union Find', 'Topological Sort']
+    name: 'dynamic-programming-1d',
+    displayName: 'Dynamic Programming - 1D',
+    description: 'Optimize using single array DP (Fibonacci, climbing stairs, house robber)',
+    keywords: ['dp', 'dynamic programming', 'memoization', 'tabulation', '1d', 'fibonacci', 'climb'],
+    tagMappings: ['Dynamic Programming', 'DP', 'Memoization']
   },
   {
-    name: 'dynamic-programming',
-    displayName: 'Dynamic Programming',
-    description: 'Problems requiring dynamic programming techniques',
-    keywords: ['dp', 'dynamic programming', 'memoization', 'tabulation', 'optimal substructure'],
-    tagMappings: ['Dynamic Programming', 'DP', 'Memoization']
+    name: 'dynamic-programming-2d',
+    displayName: 'Dynamic Programming - 2D',
+    description: 'Optimize using 2D DP (LCS, edit distance, matrix problems)',
+    keywords: ['dp', 'dynamic programming', '2d', 'matrix', 'grid', 'lcs', 'subsequence'],
+    tagMappings: ['Dynamic Programming', 'DP', 'Matrix']
   },
   {
     name: 'greedy',
     displayName: 'Greedy',
-    description: 'Problems solvable with greedy algorithms',
-    keywords: ['greedy', 'optimal', 'local maximum', 'local minimum'],
+    description: 'Make locally optimal choice at each step to find global optimum',
+    keywords: ['greedy', 'optimal', 'local', 'choice'],
     tagMappings: ['Greedy', 'Greedy Algorithm']
   },
   {
-    name: 'intervals',
-    displayName: 'Intervals',
-    description: 'Problems involving interval merging, overlapping, etc.',
+    name: 'merge-intervals',
+    displayName: 'Merge Intervals',
+    description: 'Merge, insert, or find overlapping intervals',
     keywords: ['interval', 'merge', 'overlap', 'meeting', 'range'],
     tagMappings: ['Interval', 'Merge Intervals', 'Line Sweep']
   },
   {
-    name: 'math-geometry',
-    displayName: 'Math & Geometry',
-    description: 'Problems involving mathematical or geometric concepts',
-    keywords: ['math', 'geometry', 'matrix', 'grid', 'coordinate', 'angle', 'distance'],
-    tagMappings: ['Math', 'Geometry', 'Matrix', 'Number Theory', 'Combinatorics']
+    name: 'top-k-elements',
+    displayName: 'Top K Elements',
+    description: 'Find K largest/smallest elements using heap or quickselect',
+    keywords: ['heap', 'priority queue', 'top k', 'kth', 'largest', 'smallest', 'k closest'],
+    tagMappings: ['Heap', 'Priority Queue', 'Heap (Priority Queue)', 'Quickselect']
+  },
+  {
+    name: 'monotonic-stack',
+    displayName: 'Monotonic Stack',
+    description: 'Use stack to find next greater/smaller element efficiently',
+    keywords: ['stack', 'monotonic', 'next greater', 'next smaller', 'temperature', 'histogram'],
+    tagMappings: ['Stack', 'Monotonic Stack']
   },
   {
     name: 'bit-manipulation',
     displayName: 'Bit Manipulation',
-    description: 'Problems using bitwise operations',
-    keywords: ['bit', 'binary', 'xor', 'and', 'or', 'shift', 'bitwise'],
+    description: 'Use bitwise operations (XOR, AND, OR, shifts) to solve problems efficiently',
+    keywords: ['bit', 'binary', 'xor', 'and', 'or', 'shift', 'bitwise', 'mask'],
     tagMappings: ['Bit Manipulation', 'Bitwise', 'Binary']
-  },
-  {
-    name: 'stack',
-    displayName: 'Stack',
-    description: 'Problems using stack data structure',
-    keywords: ['stack', 'monotonic', 'parentheses', 'valid', 'push', 'pop'],
-    tagMappings: ['Stack', 'Monotonic Stack', 'Queue', 'Monotonic Queue']
   }
 ];
 

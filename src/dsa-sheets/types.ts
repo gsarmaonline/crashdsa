@@ -5,22 +5,26 @@
 export type Difficulty = 'Easy' | 'Medium' | 'Hard';
 
 export type PatternName =
-  | 'array-hashing'
   | 'two-pointers'
+  | 'fast-slow-pointers'
   | 'sliding-window'
   | 'binary-search'
-  | 'linked-list'
-  | 'trees'
-  | 'tries'
-  | 'heap-priority-queue'
+  | 'cyclic-sort'
+  | 'linked-list-reversal'
+  | 'tree-dfs'
+  | 'tree-bfs'
+  | 'graph-dfs'
+  | 'graph-bfs'
+  | 'union-find'
+  | 'topological-sort'
   | 'backtracking'
-  | 'graphs'
-  | 'dynamic-programming'
+  | 'dynamic-programming-1d'
+  | 'dynamic-programming-2d'
   | 'greedy'
-  | 'intervals'
-  | 'math-geometry'
-  | 'bit-manipulation'
-  | 'stack';
+  | 'merge-intervals'
+  | 'top-k-elements'
+  | 'monotonic-stack'
+  | 'bit-manipulation';
 
 export type SheetName =
   | 'neetcode150'

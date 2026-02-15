@@ -20,23 +20,26 @@ This skill aggregates DSA (Data Structures & Algorithms) problems from 5 popular
 
 2. **Processes** and normalizes data to common schema
 
-3. **Categorizes** problems by 16 solution patterns:
-   - Array & Hashing
+3. **Categorizes** problems by 20 pure solution patterns (algorithmic strategies for senior engineers):
    - Two Pointers
+   - Fast & Slow Pointers
    - Sliding Window
    - Binary Search
-   - Linked List
-   - Trees (DFS/BFS)
-   - Tries
-   - Heap/Priority Queue
+   - Cyclic Sort
+   - Linked List Reversal
+   - Tree DFS
+   - Tree BFS
+   - Graph DFS
+   - Graph BFS
+   - Union Find
+   - Topological Sort
    - Backtracking
-   - Graphs
-   - Dynamic Programming
+   - Dynamic Programming (1D & 2D)
    - Greedy
-   - Intervals
-   - Math & Geometry
+   - Merge Intervals
+   - Top K Elements
+   - Monotonic Stack
    - Bit Manipulation
-   - Stack
 
 4. **Deduplicates** problems found across multiple sources
 

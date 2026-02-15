@@ -2,9 +2,11 @@
 
 An automated pipeline for aggregating, categorizing, and deduplicating Data Structures & Algorithms problems from popular practice sheets.
 
+**Target Audience**: Senior engineers preparing for advanced technical interviews
+
 ## Overview
 
-This system consolidates problems from 5 major DSA practice sources, removes duplicates, categorizes them by solution patterns, and exports to CSV for easy consumption.
+This system consolidates problems from 5 major DSA practice sources, removes duplicates, categorizes them by **pure solution patterns** (algorithmic strategies, not data structures), and exports to CSV for easy consumption.
 
 ### Problem Sources
 
@@ -14,26 +16,30 @@ This system consolidates problems from 5 major DSA practice sources, removes dup
 4. **Grind 75** - Customizable study plan
 5. **Striver's A2Z** - Comprehensive DSA coverage
 
-### Solution Patterns (16 Total)
+### Solution Patterns (20 Total)
 
-Problems are categorized into these patterns:
+Problems are categorized by **algorithmic strategies**, not data structures:
 
-- **Array & Hashing** - Arrays, hash tables, hash sets
-- **Two Pointers** - Two-pointer technique, fast/slow pointers
-- **Sliding Window** - Subarray/substring problems
-- **Binary Search** - Binary search and variations
-- **Linked List** - Singly/doubly linked lists
-- **Trees** - Binary trees, BST, DFS, BFS
-- **Tries** - Prefix trees
-- **Heap/Priority Queue** - Heap-based problems
-- **Backtracking** - Permutations, combinations, subsets
-- **Graphs** - Graph algorithms (DFS, BFS, union-find)
-- **Dynamic Programming** - DP optimization problems
-- **Greedy** - Greedy algorithms
-- **Intervals** - Interval merging, scheduling
-- **Math & Geometry** - Mathematical/geometric concepts
-- **Bit Manipulation** - Bitwise operations
-- **Stack** - Stack-based problems
+- **Two Pointers** - Move pointers from opposite ends or same direction
+- **Fast & Slow Pointers** - Cycle detection, middle finding (Floyd's algorithm)
+- **Sliding Window** - Dynamic window over array/string for optimization
+- **Binary Search** - Search in sorted space with O(log n) and variations
+- **Cyclic Sort** - Sort numbers in range [1, n] to find missing/duplicate
+- **Linked List Reversal** - In-place reversal without extra space
+- **Tree DFS** - Depth-first traversal (preorder, inorder, postorder)
+- **Tree BFS** - Level-order traversal using queue
+- **Graph DFS** - Explore all paths depth-first
+- **Graph BFS** - Shortest path, level-wise exploration
+- **Union Find** - Disjoint sets for connectivity problems
+- **Topological Sort** - Order tasks with dependencies
+- **Backtracking** - Generate combinations, permutations, subsets
+- **Dynamic Programming - 1D** - Single array DP (Fibonacci, climbing stairs)
+- **Dynamic Programming - 2D** - Matrix DP (LCS, edit distance)
+- **Greedy** - Local optimum → global optimum
+- **Merge Intervals** - Interval merging, overlap detection, scheduling
+- **Top K Elements** - Heap-based K largest/smallest selection
+- **Monotonic Stack** - Next greater/smaller element efficiently
+- **Bit Manipulation** - XOR, masks, shifts for efficient operations
 
 ## Quick Start
 

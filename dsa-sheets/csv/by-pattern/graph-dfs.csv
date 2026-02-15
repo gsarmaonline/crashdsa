@@ -1,22 +1,16 @@
 Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
 Clone Graph,Medium,neetcode150; blind75; grind75,https://leetcode.com/problems/clone-graph/,N/A
-Course Schedule,Medium,neetcode150; blind75; grind75,https://leetcode.com/problems/course-schedule/,N/A
-Graph Valid Tree,Medium,neetcode150; blind75,https://leetcode.com/problems/graph-valid-tree/,N/A
 Lexicographically Smallest Negated Permutation that Sums to Target,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/,30.7%
 Lexicographically Smallest Permutation Greater Than Target,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/,26.5%
 Lexicographically Smallest String After Reverse,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/,54.7%
-Linked List Cycle II,Medium,striver-a2z,https://leetcode.com/problems/linked-list-cycle-ii/,N/A
 Max Area of Island,Medium,neetcode150,https://leetcode.com/problems/max-area-of-island/,N/A
 Maximum Path Score in a Grid,Medium,leetcode-top-150,https://leetcode.com/problems/maximum-path-score-in-a-grid/,36.5%
-Number of Connected Components in an Undirected Graph,Medium,neetcode150; blind75,https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/,N/A
 Number of Islands,Medium,neetcode150; blind75; grind75,https://leetcode.com/problems/number-of-islands/,N/A
 Number of Prefix Connected Groups,Medium,leetcode-top-150,https://leetcode.com/problems/number-of-prefix-connected-groups/,60.7%
 Pacific Atlantic Water Flow,Medium,neetcode150; blind75,https://leetcode.com/problems/pacific-atlantic-water-flow/,N/A
-Word Search,Medium,neetcode150; blind75,https://leetcode.com/problems/word-search/,N/A
 Binary Tree Maximum Path Sum,Hard,neetcode150; blind75,https://leetcode.com/problems/binary-tree-maximum-path-sum/,N/A
 Lexicographically Smallest Palindromic Permutation Greater Than Target,Hard,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/,24.8%
 Lexicographically Smallest String After Deleting Duplicate Characters,Hard,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-string-after-deleting-duplicate-characters/,18.9%
 Longest Increasing Path in a Matrix,Hard,neetcode150,https://leetcode.com/problems/longest-increasing-path-in-a-matrix/,N/A
 Maximum Subgraph Score in a Tree,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/,70.5%
-Minimum Edge Toggles on a Tree,Hard,leetcode-top-150,https://leetcode.com/problems/minimum-edge-toggles-on-a-tree/,68.7%
 Palindromic Path Queries in a Tree,Hard,leetcode-top-150,https://leetcode.com/problems/palindromic-path-queries-in-a-tree/,32%

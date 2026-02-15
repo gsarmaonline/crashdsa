@@ -1,17 +1,30 @@
 Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
+Smallest Absent Positive Greater Than Average,Easy,leetcode-top-150,https://leetcode.com/problems/smallest-absent-positive-greater-than-average/,34.1%
+Smallest Missing Multiple of K,Easy,leetcode-top-150,https://leetcode.com/problems/smallest-missing-multiple-of-k/,63.1%
 Combination Sum,Medium,neetcode150; grind75,https://leetcode.com/problems/combination-sum/,N/A
 Combination Sum II,Medium,neetcode150,https://leetcode.com/problems/combination-sum-ii/,N/A
 Combination Sum IV,Medium,blind75,https://leetcode.com/problems/combination-sum-iv/,N/A
+Design Add and Search Words Data Structure,Medium,neetcode150; blind75,https://leetcode.com/problems/design-add-and-search-words-data-structure/,N/A
+Find Emotionally Consistent Users,Medium,leetcode-top-150,https://leetcode.com/problems/find-emotionally-consistent-users/,52.1%
 Generate Parentheses,Medium,neetcode150,https://leetcode.com/problems/generate-parentheses/,N/A
 Generate Schedule,Medium,leetcode-top-150,https://leetcode.com/problems/generate-schedule/,23.8%
 Letter Combinations of a Phone Number,Medium,neetcode150,https://leetcode.com/problems/letter-combinations-of-a-phone-number/,N/A
 Lexicographically Smallest Negated Permutation that Sums to Target,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/,30.7%
 Lexicographically Smallest Permutation Greater Than Target,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/,26.5%
+Lexicographically Smallest String After Reverse,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/,54.7%
+Min Cost to Connect All Points,Medium,neetcode150,https://leetcode.com/problems/min-cost-to-connect-all-points/,N/A
+Minimum Deletion Cost to Make All Characters Equal,Medium,leetcode-top-150,https://leetcode.com/problems/minimum-deletion-cost-to-make-all-characters-equal/,54.9%
+Minimum Time to Complete All Deliveries,Medium,leetcode-top-150,https://leetcode.com/problems/minimum-time-to-complete-all-deliveries/,34.3%
 Partition Equal Subset Sum,Medium,neetcode150,https://leetcode.com/problems/partition-equal-subset-sum/,N/A
 Permutation in String,Medium,neetcode150,https://leetcode.com/problems/permutation-in-string/,N/A
 Permutations,Medium,neetcode150; grind75,https://leetcode.com/problems/permutations/,N/A
+Smallest All-Ones Multiple,Medium,leetcode-top-150,https://leetcode.com/problems/smallest-all-ones-multiple/,46.8%
 Subsets,Medium,neetcode150,https://leetcode.com/problems/subsets/,N/A
 Subsets II,Medium,neetcode150,https://leetcode.com/problems/subsets-ii/,N/A
+Walls and Gates,Medium,neetcode150,https://leetcode.com/problems/walls-and-gates/,N/A
 Word Search,Medium,neetcode150; blind75,https://leetcode.com/problems/word-search/,N/A
+Burst Balloons,Hard,neetcode150,https://leetcode.com/problems/burst-balloons/,N/A
+Find Nth Smallest Integer With K One Bits,Hard,leetcode-top-150,https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/,33.8%
 Lexicographically Smallest Palindromic Permutation Greater Than Target,Hard,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/,24.8%
+Lexicographically Smallest String After Deleting Duplicate Characters,Hard,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-string-after-deleting-duplicate-characters/,18.9%
 Word Search II,Hard,neetcode150; blind75,https://leetcode.com/problems/word-search-ii/,N/A

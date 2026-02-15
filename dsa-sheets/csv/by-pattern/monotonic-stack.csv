@@ -1,11 +1,8 @@
 Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
 Implement Queue using Stacks,Easy,grind75,https://leetcode.com/problems/implement-queue-using-stacks/,N/A
-Valid Palindrome,Easy,neetcode150; blind75; grind75,https://leetcode.com/problems/valid-palindrome/,N/A
 Valid Parentheses,Easy,neetcode150; blind75; grind75,https://leetcode.com/problems/valid-parentheses/,N/A
 Car Fleet,Medium,neetcode150,https://leetcode.com/problems/car-fleet/,N/A
 Daily Temperatures,Medium,neetcode150,https://leetcode.com/problems/daily-temperatures/,N/A
 Evaluate Reverse Polish Notation,Medium,neetcode150; grind75,https://leetcode.com/problems/evaluate-reverse-polish-notation/,N/A
-Generate Parentheses,Medium,neetcode150,https://leetcode.com/problems/generate-parentheses/,N/A
 Min Stack,Medium,neetcode150; grind75,https://leetcode.com/problems/min-stack/,N/A
-Valid Parenthesis String,Medium,neetcode150,https://leetcode.com/problems/valid-parenthesis-string/,N/A
-Valid Sudoku,Medium,neetcode150,https://leetcode.com/problems/valid-sudoku/,N/A
+Largest Rectangle in Histogram,Hard,neetcode150,https://leetcode.com/problems/largest-rectangle-in-histogram/,N/A

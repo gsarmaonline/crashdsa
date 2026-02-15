@@ -92,12 +92,21 @@ crashdsa/
 
 ### DSA Sheet Aggregation
 
+**Target Audience**: Senior engineers preparing for advanced technical interviews
+
 - **Purpose**: Consolidate problems from 5 popular DSA practice sheets (NeetCode 150, Blind 75, LeetCode Top 150, Grind 75, Striver's A2Z)
-- **Features**: Categorizes by 16 solution patterns, removes duplicates, exports to CSV
+- **Features**: Categorizes by 20 pure solution patterns (algorithmic strategies, not data structures), removes duplicates, exports to CSV
+- **Solution Patterns** (strategic approach, not data structures):
+  - Two Pointers, Fast & Slow Pointers, Sliding Window
+  - Binary Search, Cyclic Sort, Linked List Reversal
+  - Tree DFS, Tree BFS, Graph DFS, Graph BFS
+  - Union Find, Topological Sort, Backtracking
+  - Dynamic Programming (1D & 2D), Greedy
+  - Merge Intervals, Top K Elements, Monotonic Stack, Bit Manipulation
 - **Usage**: Run `/update-dsa-sheets` or `bun run dsa-sheets:update` to refresh data
 - **Output**:
   - `dsa-sheets/csv/master.csv` - All unique problems
-  - `dsa-sheets/csv/by-pattern/*.csv` - Problems grouped by pattern
+  - `dsa-sheets/csv/by-pattern/*.csv` - Problems grouped by solution strategy
 - **Cache**: Data cached for 24 hours, use `--force` to override
 - **Pipeline**: Fetch → Process → Categorize → Deduplicate → Export CSV
 - **Stats**: ~326 unique problems after deduplication from ~456 total

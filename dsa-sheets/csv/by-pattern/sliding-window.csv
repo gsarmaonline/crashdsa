@@ -3,7 +3,7 @@ Equal Score Substrings,Easy,leetcode-top-150,https://leetcode.com/problems/equal
 Count Bowl Subarrays,Medium,leetcode-top-150,https://leetcode.com/problems/count-bowl-subarrays/,47.8%
 Count Subarrays With Cost Less Than or Equal to K,Medium,leetcode-top-150,https://leetcode.com/problems/count-subarrays-with-cost-less-than-or-equal-to-k/,45.1%
 Count Subarrays With Majority Element I,Medium,leetcode-top-150,https://leetcode.com/problems/count-subarrays-with-majority-element-i/,65%
-Distinct Points Reachable After Substring Removal,Medium,leetcode-top-150,https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/,53.7%
+Distinct Points Reachable After Substring Removal,Medium,leetcode-top-150,https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/,53.8%
 Final Element After Subarray Deletions,Medium,leetcode-top-150,https://leetcode.com/problems/final-element-after-subarray-deletions/,39.7%
 Largest Prime from Consecutive Prime Sum,Medium,leetcode-top-150,https://leetcode.com/problems/largest-prime-from-consecutive-prime-sum/,38.8%
 Largest Subarray With Zero Sum,Medium,striver-a2z,https://leetcode.com/problems/largest-subarray-with-zero-sum/,N/A
@@ -29,7 +29,7 @@ Count Stable Subarrays,Hard,leetcode-top-150,https://leetcode.com/problems/count
 Count Subarrays With Majority Element II,Hard,leetcode-top-150,https://leetcode.com/problems/count-subarrays-with-majority-element-ii/,44.2%
 Longest Alternating Subarray After Removing At Most One Element,Hard,leetcode-top-150,https://leetcode.com/problems/longest-alternating-subarray-after-removing-at-most-one-element/,30%
 Longest Balanced Subarray II,Hard,leetcode-top-150,https://leetcode.com/problems/longest-balanced-subarray-ii/,33.8%
-Maximum Subarray XOR with Bounded Range,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/,25.4%
+Maximum Subarray XOR with Bounded Range,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/,25.5%
 Maximum Total Subarray Value II,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-total-subarray-value-ii/,21.9%
 Minimum Deletions to Make Alternating Substring,Hard,leetcode-top-150,https://leetcode.com/problems/minimum-deletions-to-make-alternating-substring/,44.6%
 Minimum Inversion Count in Subarrays of Fixed Length,Hard,leetcode-top-150,https://leetcode.com/problems/minimum-inversion-count-in-subarrays-of-fixed-length/,42.4%

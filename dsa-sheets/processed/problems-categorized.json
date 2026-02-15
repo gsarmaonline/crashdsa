@@ -10,7 +10,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -24,7 +24,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -38,7 +38,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -52,7 +52,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -66,8 +66,7 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
-      "array-hashing"
+      "top-k-elements"
     ]
   },
   {
@@ -81,7 +80,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -95,7 +94,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "array-hashing"
     ]
   },
   {
@@ -137,7 +136,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "array-hashing"
     ]
   },
   {
@@ -151,7 +150,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "binary-search",
       "bit-manipulation"
     ]
@@ -167,8 +165,7 @@
     ],
     "tags": [],
     "patterns": [
-      "two-pointers",
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -210,8 +207,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -225,8 +221,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "array-hashing"
+      "sliding-window"
     ]
   },
   {
@@ -268,8 +263,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "array-hashing"
+      "sliding-window"
     ]
   },
   {
@@ -297,7 +291,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "monotonic-stack"
     ]
   },
   {
@@ -311,7 +305,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "monotonic-stack"
     ]
   },
   {
@@ -325,7 +319,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "monotonic-stack"
     ]
   },
   {
@@ -339,8 +333,7 @@
     ],
     "tags": [],
     "patterns": [
-      "backtracking",
-      "stack"
+      "backtracking"
     ]
   },
   {
@@ -354,7 +347,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "monotonic-stack"
     ]
   },
   {
@@ -368,7 +361,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "monotonic-stack"
     ]
   },
   {
@@ -382,8 +375,8 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
-      "math-geometry"
+      "top-k-elements",
+      "monotonic-stack"
     ]
   },
   {
@@ -413,7 +406,7 @@
     "tags": [],
     "patterns": [
       "binary-search",
-      "math-geometry"
+      "dynamic-programming-2d"
     ]
   },
   {
@@ -483,7 +476,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "binary-search",
       "bit-manipulation"
     ]
@@ -499,7 +491,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "linked-list-reversal"
     ]
   },
   {
@@ -513,7 +505,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "two-pointers"
     ]
   },
   {
@@ -527,7 +519,8 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "linked-list-reversal",
+      "fast-slow-pointers"
     ]
   },
   {
@@ -541,8 +534,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list",
-      "two-pointers"
+      "fast-slow-pointers"
     ]
   },
   {
@@ -584,8 +576,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list",
-      "two-pointers"
+      "fast-slow-pointers"
     ]
   },
   {
@@ -599,7 +590,8 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "fast-slow-pointers",
+      "cyclic-sort"
     ]
   },
   {
@@ -627,8 +619,7 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
-      "linked-list"
+      "top-k-elements"
     ]
   },
   {
@@ -642,7 +633,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "linked-list-reversal"
     ]
   },
   {
@@ -656,7 +647,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -670,7 +661,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -684,7 +675,8 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
+      "tree-bfs",
       "bit-manipulation"
     ]
   },
@@ -699,7 +691,8 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
+      "tree-bfs",
       "bit-manipulation"
     ]
   },
@@ -714,7 +707,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -728,7 +721,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -742,7 +735,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
       "binary-search"
     ]
   },
@@ -757,7 +750,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-bfs"
     ]
   },
   {
@@ -771,7 +764,8 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
+      "tree-bfs",
       "bit-manipulation"
     ]
   },
@@ -786,8 +780,8 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list",
-      "trees",
+      "tree-dfs",
+      "tree-bfs",
       "bit-manipulation"
     ]
   },
@@ -802,7 +796,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -816,8 +810,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
-      "binary-search"
+      "tree-dfs"
     ]
   },
   {
@@ -831,7 +824,10 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "linked-list-reversal",
+      "tree-dfs",
+      "tree-bfs",
+      "topological-sort",
       "bit-manipulation"
     ]
   },
@@ -846,8 +842,9 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
-      "graphs",
+      "tree-dfs",
+      "tree-bfs",
+      "graph-dfs",
       "bit-manipulation"
     ]
   },
@@ -862,7 +859,8 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
+      "tree-bfs",
       "bit-manipulation"
     ]
   },
@@ -877,7 +875,7 @@
     ],
     "tags": [],
     "patterns": [
-      "tries"
+      "tree-dfs"
     ]
   },
   {
@@ -891,7 +889,8 @@
     ],
     "tags": [],
     "patterns": [
-      "tries"
+      "tree-dfs",
+      "backtracking"
     ]
   },
   {
@@ -905,7 +904,7 @@
     ],
     "tags": [],
     "patterns": [
-      "tries",
+      "tree-dfs",
       "backtracking"
     ]
   },
@@ -920,7 +919,7 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue"
+      "top-k-elements"
     ]
   },
   {
@@ -948,6 +947,7 @@
     ],
     "tags": [],
     "patterns": [
+      "top-k-elements",
       "bit-manipulation"
     ]
   },
@@ -962,8 +962,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "heap-priority-queue"
+      "top-k-elements"
     ]
   },
   {
@@ -1005,7 +1004,7 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue"
+      "top-k-elements"
     ]
   },
   {
@@ -1061,7 +1060,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "backtracking"
     ]
   },
@@ -1090,8 +1088,7 @@
     ],
     "tags": [],
     "patterns": [
-      "backtracking",
-      "graphs"
+      "backtracking"
     ]
   },
   {
@@ -1147,7 +1144,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "graph-dfs"
     ]
   },
   {
@@ -1161,7 +1158,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "graph-dfs"
     ]
   },
   {
@@ -1175,7 +1172,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs",
+      "graph-dfs",
       "bit-manipulation"
     ]
   },
@@ -1190,7 +1187,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "graph-dfs"
     ]
   },
   {
@@ -1218,7 +1215,8 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals",
+      "cyclic-sort",
+      "merge-intervals",
       "bit-manipulation"
     ]
   },
@@ -1233,6 +1231,7 @@
     ],
     "tags": [],
     "patterns": [
+      "backtracking",
       "bit-manipulation"
     ]
   },
@@ -1247,7 +1246,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "topological-sort"
     ]
   },
   {
@@ -1261,7 +1260,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "topological-sort"
     ]
   },
   {
@@ -1289,7 +1288,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "union-find"
     ]
   },
   {
@@ -1303,7 +1302,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "union-find"
     ]
   },
   {
@@ -1317,7 +1316,6 @@
     ],
     "tags": [],
     "patterns": [
-      "tries",
       "bit-manipulation"
     ]
   },
@@ -1346,7 +1344,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "backtracking"
     ]
   },
   {
@@ -1402,7 +1400,7 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue"
+      "top-k-elements"
     ]
   },
   {
@@ -1416,7 +1414,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -1430,7 +1428,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -1444,7 +1442,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -1458,7 +1456,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -1472,8 +1470,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ]
   },
   {
@@ -1487,8 +1484,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ]
   },
   {
@@ -1502,7 +1498,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -1516,7 +1512,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -1530,8 +1526,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -1545,7 +1540,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -1559,7 +1554,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -1573,7 +1568,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "backtracking"
     ]
   },
@@ -1588,7 +1582,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-2d"
     ]
   },
   {
@@ -1602,7 +1596,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-2d"
     ]
   },
   {
@@ -1672,8 +1666,8 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs",
-      "math-geometry"
+      "graph-dfs",
+      "dynamic-programming-2d"
     ]
   },
   {
@@ -1687,7 +1681,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "dynamic-programming-2d"
     ]
   },
   {
@@ -1701,7 +1695,7 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "array-hashing"
     ]
   },
   {
@@ -1715,7 +1709,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "backtracking"
     ]
   },
   {
@@ -1743,8 +1737,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -1758,8 +1751,7 @@
     ],
     "tags": [],
     "patterns": [
-      "greedy",
-      "dynamic-programming"
+      "greedy"
     ]
   },
   {
@@ -1815,7 +1807,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals",
+      "merge-intervals",
       "bit-manipulation"
     ]
   },
@@ -1844,7 +1836,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "array-hashing"
     ]
   },
   {
@@ -1858,7 +1850,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -1872,7 +1864,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -1886,7 +1878,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals",
+      "merge-intervals",
       "greedy"
     ]
   },
@@ -1901,7 +1893,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -1915,8 +1907,8 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals",
-      "heap-priority-queue"
+      "merge-intervals",
+      "top-k-elements"
     ]
   },
   {
@@ -1930,7 +1922,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -1944,7 +1936,7 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "two-pointers"
     ]
   },
   {
@@ -1958,7 +1950,7 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "two-pointers"
     ]
   },
   {
@@ -1972,7 +1964,7 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "two-pointers"
     ]
   },
   {
@@ -2085,7 +2077,7 @@
     "tags": [],
     "patterns": [
       "bit-manipulation",
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2114,7 +2106,7 @@
     "tags": [],
     "patterns": [
       "bit-manipulation",
-      "math-geometry"
+      "cyclic-sort"
     ]
   },
   {
@@ -2142,7 +2134,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "linked-list-reversal"
     ]
   },
   {
@@ -2156,7 +2148,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -2170,8 +2162,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2185,7 +2176,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -2199,7 +2190,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -2213,8 +2204,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2228,8 +2218,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2271,8 +2260,7 @@
     ],
     "tags": [],
     "patterns": [
-      "two-pointers",
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -2329,7 +2317,7 @@
     "tags": [],
     "patterns": [
       "bit-manipulation",
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2344,7 +2332,7 @@
     "tags": [],
     "patterns": [
       "bit-manipulation",
-      "math-geometry"
+      "cyclic-sort"
     ]
   },
   {
@@ -2372,7 +2360,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2386,7 +2374,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2400,7 +2388,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2414,7 +2402,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-2d"
     ]
   },
   {
@@ -2428,7 +2416,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2456,7 +2444,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2470,7 +2458,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2484,7 +2472,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -2498,7 +2486,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-2d"
     ]
   },
   {
@@ -2512,8 +2500,7 @@
     ],
     "tags": [],
     "patterns": [
-      "greedy",
-      "dynamic-programming"
+      "greedy"
     ]
   },
   {
@@ -2527,7 +2514,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "graph-dfs"
     ]
   },
   {
@@ -2541,7 +2528,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "topological-sort"
     ]
   },
   {
@@ -2555,7 +2542,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "graph-dfs"
     ]
   },
   {
@@ -2569,7 +2556,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "graph-dfs"
     ]
   },
   {
@@ -2611,7 +2598,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "union-find"
     ]
   },
   {
@@ -2625,7 +2612,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "union-find"
     ]
   },
   {
@@ -2639,7 +2626,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -2653,7 +2640,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -2667,7 +2654,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals",
+      "merge-intervals",
       "greedy"
     ]
   },
@@ -2682,7 +2669,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -2696,8 +2683,8 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals",
-      "heap-priority-queue"
+      "merge-intervals",
+      "top-k-elements"
     ]
   },
   {
@@ -2711,7 +2698,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "linked-list-reversal"
     ]
   },
   {
@@ -2725,8 +2712,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list",
-      "two-pointers"
+      "fast-slow-pointers"
     ]
   },
   {
@@ -2740,7 +2726,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "two-pointers"
     ]
   },
   {
@@ -2754,8 +2740,7 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
-      "linked-list"
+      "top-k-elements"
     ]
   },
   {
@@ -2769,8 +2754,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list",
-      "two-pointers"
+      "fast-slow-pointers"
     ]
   },
   {
@@ -2784,7 +2768,8 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "linked-list-reversal",
+      "fast-slow-pointers"
     ]
   },
   {
@@ -2798,7 +2783,7 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "two-pointers"
     ]
   },
   {
@@ -2812,7 +2797,7 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "two-pointers"
     ]
   },
   {
@@ -2826,7 +2811,7 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "two-pointers"
     ]
   },
   {
@@ -2840,8 +2825,7 @@
     ],
     "tags": [],
     "patterns": [
-      "backtracking",
-      "graphs"
+      "backtracking"
     ]
   },
   {
@@ -2855,8 +2839,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "array-hashing"
+      "sliding-window"
     ]
   },
   {
@@ -2884,8 +2867,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "array-hashing"
+      "sliding-window"
     ]
   },
   {
@@ -2899,7 +2881,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -2913,7 +2895,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -2927,7 +2909,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "monotonic-stack"
     ]
   },
   {
@@ -2941,7 +2923,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "array-hashing"
     ]
   },
   {
@@ -2955,8 +2937,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ]
   },
   {
@@ -2970,8 +2951,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ]
   },
   {
@@ -2999,7 +2979,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -3013,7 +2993,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -3027,7 +3007,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -3041,8 +3021,9 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
-      "graphs",
+      "tree-dfs",
+      "tree-bfs",
+      "graph-dfs",
       "bit-manipulation"
     ]
   },
@@ -3057,7 +3038,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-bfs"
     ]
   },
   {
@@ -3071,7 +3052,8 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
+      "tree-bfs",
       "bit-manipulation"
     ]
   },
@@ -3086,7 +3068,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -3100,7 +3082,10 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "linked-list-reversal",
+      "tree-dfs",
+      "tree-bfs",
+      "topological-sort",
       "bit-manipulation"
     ]
   },
@@ -3115,7 +3100,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -3129,8 +3114,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
-      "binary-search"
+      "tree-dfs"
     ]
   },
   {
@@ -3144,7 +3128,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
       "binary-search"
     ]
   },
@@ -3159,7 +3143,7 @@
     ],
     "tags": [],
     "patterns": [
-      "tries"
+      "tree-dfs"
     ]
   },
   {
@@ -3173,7 +3157,8 @@
     ],
     "tags": [],
     "patterns": [
-      "tries"
+      "tree-dfs",
+      "backtracking"
     ]
   },
   {
@@ -3187,7 +3172,7 @@
     ],
     "tags": [],
     "patterns": [
-      "tries",
+      "tree-dfs",
       "backtracking"
     ]
   },
@@ -3202,8 +3187,7 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
-      "linked-list"
+      "top-k-elements"
     ]
   },
   {
@@ -3217,8 +3201,7 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
-      "array-hashing"
+      "top-k-elements"
     ]
   },
   {
@@ -3232,7 +3215,7 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue"
+      "top-k-elements"
     ]
   },
   {
@@ -3248,7 +3231,7 @@
     "patterns": [
       "bit-manipulation"
     ],
-    "acceptance": 63.6,
+    "acceptance": 63.7,
     "frequency": 0
   },
   {
@@ -3262,8 +3245,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ],
     "acceptance": 18.1,
     "frequency": 0
@@ -3295,8 +3277,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "tries",
       "bit-manipulation"
     ],
     "acceptance": 84.3,
@@ -3329,7 +3309,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ],
     "acceptance": 41.6,
     "frequency": 0
@@ -3361,7 +3341,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window",
       "bit-manipulation"
     ],
@@ -3379,8 +3358,9 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
-      "graphs"
+      "tree-dfs",
+      "tree-bfs",
+      "graph-dfs"
     ],
     "acceptance": 32,
     "frequency": 0
@@ -3396,9 +3376,9 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "backtracking"
     ],
-    "acceptance": 52,
+    "acceptance": 52.1,
     "frequency": 0
   },
   {
@@ -3412,12 +3392,12 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window",
-      "intervals",
+      "cyclic-sort",
+      "merge-intervals",
       "bit-manipulation"
     ],
-    "acceptance": 25.4,
+    "acceptance": 25.5,
     "frequency": 0
   },
   {
@@ -3447,7 +3427,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "linked-list-reversal"
     ],
     "acceptance": 81.4,
     "frequency": 0
@@ -3463,8 +3443,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "tries"
+      "array-hashing"
     ],
     "acceptance": 73.6,
     "frequency": 0
@@ -3480,7 +3459,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 30,
@@ -3545,7 +3523,8 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
+      "backtracking",
+      "top-k-elements",
       "bit-manipulation"
     ],
     "acceptance": 33.8,
@@ -3578,7 +3557,7 @@
     ],
     "tags": [],
     "patterns": [
-      "tries"
+      "array-hashing"
     ],
     "acceptance": 65.3,
     "frequency": 0
@@ -3610,8 +3589,8 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
-      "graphs"
+      "tree-dfs",
+      "tree-bfs"
     ],
     "acceptance": 68.7,
     "frequency": 0
@@ -3627,9 +3606,8 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list",
-      "trees",
-      "math-geometry",
+      "tree-dfs",
+      "tree-bfs",
       "bit-manipulation"
     ],
     "acceptance": 57.6,
@@ -3646,7 +3624,7 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue"
+      "top-k-elements"
     ],
     "acceptance": 69.2,
     "frequency": 0
@@ -3678,7 +3656,7 @@
     ],
     "tags": [],
     "patterns": [
-      "tries"
+      "linked-list-reversal"
     ],
     "acceptance": 89.4,
     "frequency": 0
@@ -3710,7 +3688,8 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue"
+      "backtracking",
+      "top-k-elements"
     ],
     "acceptance": 46.8,
     "frequency": 0
@@ -3758,7 +3737,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "topological-sort"
     ],
     "acceptance": 52.3,
     "frequency": 0
@@ -3774,7 +3753,6 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry",
       "bit-manipulation"
     ],
     "acceptance": 87.4,
@@ -3855,7 +3833,7 @@
     ],
     "tags": [],
     "patterns": [
-      "tries",
+      "linked-list-reversal",
       "bit-manipulation"
     ],
     "acceptance": 66.5,
@@ -3904,7 +3882,8 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "dynamic-programming-1d",
+      "dynamic-programming-2d"
     ],
     "acceptance": 23.5,
     "frequency": 0
@@ -3920,7 +3899,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 31.5,
@@ -3937,8 +3915,10 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
-      "graphs",
+      "tree-dfs",
+      "tree-bfs",
+      "graph-dfs",
+      "graph-bfs",
       "bit-manipulation"
     ],
     "acceptance": 70.5,
@@ -4003,7 +3983,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 42.4,
@@ -4021,7 +4000,7 @@
     "tags": [],
     "patterns": [
       "binary-search",
-      "intervals",
+      "merge-intervals",
       "bit-manipulation"
     ],
     "acceptance": 33.6,
@@ -4070,7 +4049,6 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry",
       "bit-manipulation"
     ],
     "acceptance": 44.2,
@@ -4087,7 +4065,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "backtracking"
     ],
     "acceptance": 54.9,
     "frequency": 0
@@ -4103,8 +4081,7 @@
     ],
     "tags": [],
     "patterns": [
-      "tries",
-      "graphs"
+      "graph-dfs"
     ],
     "acceptance": 60.7,
     "frequency": 0
@@ -4152,7 +4129,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "dynamic-programming-2d"
     ],
     "acceptance": 30.3,
     "frequency": 0
@@ -4184,7 +4161,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 66.8,
@@ -4201,7 +4177,8 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "cyclic-sort",
+      "merge-intervals"
     ],
     "acceptance": 24.9,
     "frequency": 0
@@ -4217,6 +4194,7 @@
     ],
     "tags": [],
     "patterns": [
+      "linked-list-reversal",
       "bit-manipulation"
     ],
     "acceptance": 75.7,
@@ -4233,7 +4211,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 39.7,
@@ -4266,7 +4243,7 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "array-hashing"
     ],
     "acceptance": 65.2,
     "frequency": 0
@@ -4314,7 +4291,7 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "array-hashing"
     ],
     "acceptance": 60.4,
     "frequency": 0
@@ -4346,7 +4323,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 32.1,
@@ -4443,7 +4419,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 21.3,
@@ -4460,7 +4435,8 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "cyclic-sort",
+      "merge-intervals"
     ],
     "acceptance": 34.7,
     "frequency": 0
@@ -4524,8 +4500,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ],
     "acceptance": 91.4,
     "frequency": 0
@@ -4541,8 +4516,11 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
-      "graphs"
+      "cyclic-sort",
+      "graph-dfs",
+      "graph-bfs",
+      "backtracking",
+      "top-k-elements"
     ],
     "acceptance": 18.9,
     "frequency": 0
@@ -4559,7 +4537,7 @@
     "tags": [],
     "patterns": [
       "sliding-window",
-      "heap-priority-queue"
+      "top-k-elements"
     ],
     "acceptance": 38.8,
     "frequency": 0
@@ -4591,7 +4569,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window",
       "bit-manipulation"
     ],
@@ -4609,7 +4586,8 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue"
+      "backtracking",
+      "top-k-elements"
     ],
     "acceptance": 63.1,
     "frequency": 0
@@ -4657,9 +4635,10 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
+      "graph-dfs",
+      "graph-bfs",
       "backtracking",
-      "graphs"
+      "top-k-elements"
     ],
     "acceptance": 30.7,
     "frequency": 0
@@ -4675,7 +4654,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window",
       "bit-manipulation"
     ],
@@ -4693,7 +4671,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window",
       "bit-manipulation"
     ],
@@ -4711,8 +4688,11 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
-      "graphs"
+      "linked-list-reversal",
+      "graph-dfs",
+      "graph-bfs",
+      "backtracking",
+      "top-k-elements"
     ],
     "acceptance": 54.7,
     "frequency": 0
@@ -4728,7 +4708,8 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs",
+      "tree-bfs"
     ],
     "acceptance": 53.5,
     "frequency": 0
@@ -4744,7 +4725,6 @@
     ],
     "tags": [],
     "patterns": [
-      "tries",
       "bit-manipulation"
     ],
     "acceptance": 54.8,
@@ -4809,8 +4789,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ],
     "acceptance": 44.6,
     "frequency": 0
@@ -4826,7 +4805,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window",
       "binary-search",
       "bit-manipulation"
@@ -4847,7 +4825,7 @@
     "patterns": [
       "array-hashing"
     ],
-    "acceptance": 52.5,
+    "acceptance": 52.4,
     "frequency": 0
   },
   {
@@ -4909,7 +4887,8 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "cyclic-sort",
+      "merge-intervals"
     ],
     "acceptance": 80.4,
     "frequency": 0
@@ -4925,8 +4904,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ],
     "acceptance": 42.1,
     "frequency": 0
@@ -4942,8 +4920,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ],
     "acceptance": 69.7,
     "frequency": 0
@@ -4992,7 +4969,6 @@
     "tags": [],
     "patterns": [
       "sliding-window",
-      "trees",
       "bit-manipulation"
     ],
     "acceptance": 56.7,
@@ -5041,7 +5017,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "backtracking"
     ],
     "acceptance": 34.3,
     "frequency": 0
@@ -5057,7 +5033,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 33.8,
@@ -5074,7 +5049,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 65.7,
@@ -5107,7 +5081,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "bit-manipulation"
     ],
     "acceptance": 39.3,
@@ -5124,7 +5097,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "dynamic-programming-1d"
     ],
     "acceptance": 64,
     "frequency": 0
@@ -5156,9 +5129,10 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
+      "graph-dfs",
+      "graph-bfs",
       "backtracking",
-      "graphs"
+      "top-k-elements"
     ],
     "acceptance": 24.8,
     "frequency": 0
@@ -5190,6 +5164,7 @@
     ],
     "tags": [],
     "patterns": [
+      "dynamic-programming-2d",
       "bit-manipulation"
     ],
     "acceptance": 37.1,
@@ -5206,6 +5181,7 @@
     ],
     "tags": [],
     "patterns": [
+      "dynamic-programming-2d",
       "bit-manipulation"
     ],
     "acceptance": 50.9,
@@ -5222,6 +5198,7 @@
     ],
     "tags": [],
     "patterns": [
+      "cyclic-sort",
       "bit-manipulation"
     ],
     "acceptance": 12.1,
@@ -5238,7 +5215,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "dynamic-programming-2d"
     ],
     "acceptance": 60.1,
     "frequency": 0
@@ -5286,7 +5263,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 19.3,
@@ -5303,10 +5279,9 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ],
-    "acceptance": 53.7,
+    "acceptance": 53.8,
     "frequency": 0
   },
   {
@@ -5320,9 +5295,10 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue",
+      "graph-dfs",
+      "graph-bfs",
       "backtracking",
-      "graphs"
+      "top-k-elements"
     ],
     "acceptance": 26.5,
     "frequency": 0
@@ -5338,8 +5314,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "trees"
+      "sliding-window"
     ],
     "acceptance": 32.4,
     "frequency": 0
@@ -5403,9 +5378,10 @@
     ],
     "tags": [],
     "patterns": [
-      "heap-priority-queue"
+      "backtracking",
+      "top-k-elements"
     ],
-    "acceptance": 34,
+    "acceptance": 34.1,
     "frequency": 0
   },
   {
@@ -5435,7 +5411,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "bit-manipulation"
     ],
     "acceptance": 84.7,
@@ -5452,6 +5427,7 @@
     ],
     "tags": [],
     "patterns": [
+      "topological-sort",
       "bit-manipulation"
     ],
     "acceptance": 91,
@@ -5468,7 +5444,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 21.9,
@@ -5485,7 +5460,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 64.3,
@@ -5502,8 +5476,8 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "sliding-window"
+      "sliding-window",
+      "dynamic-programming-1d"
     ],
     "acceptance": 69.4,
     "frequency": 0
@@ -5519,7 +5493,6 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window"
     ],
     "acceptance": 47.8,
@@ -5648,6 +5621,7 @@
     ],
     "tags": [],
     "patterns": [
+      "dynamic-programming-2d",
       "bit-manipulation"
     ],
     "acceptance": 51.2,
@@ -5664,7 +5638,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "dynamic-programming-2d"
     ],
     "acceptance": 31.1,
     "frequency": 0
@@ -5680,8 +5654,8 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs",
-      "math-geometry",
+      "graph-dfs",
+      "dynamic-programming-2d",
       "bit-manipulation"
     ],
     "acceptance": 36.5,
@@ -5714,7 +5688,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -5728,7 +5702,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "monotonic-stack"
     ]
   },
   {
@@ -5742,7 +5716,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "two-pointers"
     ]
   },
   {
@@ -5756,8 +5730,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -5771,7 +5744,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "array-hashing"
     ]
   },
   {
@@ -5785,7 +5758,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -5799,7 +5772,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -5842,7 +5815,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
       "binary-search"
     ]
   },
@@ -5857,7 +5830,8 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
+      "tree-bfs",
       "bit-manipulation"
     ]
   },
@@ -5872,8 +5846,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list",
-      "two-pointers"
+      "fast-slow-pointers"
     ]
   },
   {
@@ -5887,7 +5860,8 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "tree-bfs",
+      "monotonic-stack"
     ]
   },
   {
@@ -5929,7 +5903,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -5957,7 +5931,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "linked-list-reversal"
     ]
   },
   {
@@ -5999,7 +5973,8 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
+      "tree-bfs",
       "bit-manipulation"
     ]
   },
@@ -6014,7 +5989,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "fast-slow-pointers"
     ]
   },
   {
@@ -6028,7 +6003,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -6042,7 +6017,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -6056,7 +6031,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -6070,7 +6045,7 @@
     ],
     "tags": [],
     "patterns": [
-      "math-geometry"
+      "dynamic-programming-2d"
     ]
   },
   {
@@ -6084,6 +6059,7 @@
     ],
     "tags": [],
     "patterns": [
+      "top-k-elements",
       "bit-manipulation"
     ]
   },
@@ -6098,8 +6074,7 @@
     ],
     "tags": [],
     "patterns": [
-      "sliding-window",
-      "array-hashing"
+      "sliding-window"
     ]
   },
   {
@@ -6113,8 +6088,7 @@
     ],
     "tags": [],
     "patterns": [
-      "two-pointers",
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -6128,7 +6102,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-bfs"
     ]
   },
   {
@@ -6142,7 +6116,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "graph-dfs"
     ]
   },
   {
@@ -6156,7 +6130,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "monotonic-stack"
     ]
   },
   {
@@ -6170,7 +6144,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "topological-sort"
     ]
   },
   {
@@ -6184,7 +6158,7 @@
     ],
     "tags": [],
     "patterns": [
-      "tries"
+      "tree-dfs"
     ]
   },
   {
@@ -6198,7 +6172,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -6212,7 +6186,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -6226,7 +6200,7 @@
     ],
     "tags": [],
     "patterns": [
-      "stack"
+      "monotonic-stack"
     ]
   },
   {
@@ -6240,7 +6214,7 @@
     ],
     "tags": [],
     "patterns": [
-      "trees"
+      "tree-dfs"
     ]
   },
   {
@@ -6254,7 +6228,7 @@
     ],
     "tags": [],
     "patterns": [
-      "graphs"
+      "graph-dfs"
     ]
   },
   {
@@ -6268,7 +6242,8 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals",
+      "cyclic-sort",
+      "merge-intervals",
       "bit-manipulation"
     ]
   },
@@ -6325,7 +6300,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -6339,7 +6314,8 @@
     ],
     "tags": [],
     "patterns": [
-      "trees",
+      "tree-dfs",
+      "tree-bfs",
       "bit-manipulation"
     ]
   },
@@ -6368,7 +6344,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -6396,7 +6372,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "two-pointers"
     ]
   },
   {
@@ -6438,8 +6414,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
-      "dynamic-programming"
+      "dynamic-programming-1d"
     ]
   },
   {
@@ -6467,7 +6442,7 @@
     ],
     "tags": [],
     "patterns": [
-      "intervals"
+      "merge-intervals"
     ]
   },
   {
@@ -6481,9 +6456,8 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "binary-search",
-      "intervals",
+      "merge-intervals",
       "bit-manipulation"
     ]
   },
@@ -6498,7 +6472,8 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "fast-slow-pointers",
+      "cyclic-sort"
     ]
   },
   {
@@ -6513,7 +6488,7 @@
     "tags": [],
     "patterns": [
       "bit-manipulation",
-      "math-geometry"
+      "cyclic-sort"
     ]
   },
   {
@@ -6528,7 +6503,7 @@
     "tags": [],
     "patterns": [
       "binary-search",
-      "math-geometry"
+      "dynamic-programming-2d"
     ]
   },
   {
@@ -6570,7 +6545,7 @@
     ],
     "tags": [],
     "patterns": [
-      "dynamic-programming"
+      "dynamic-programming-2d"
     ]
   },
   {
@@ -6584,7 +6559,7 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing"
+      "linked-list-reversal"
     ]
   },
   {
@@ -6626,9 +6601,8 @@
     ],
     "tags": [],
     "patterns": [
-      "array-hashing",
       "sliding-window",
-      "heap-priority-queue"
+      "top-k-elements"
     ]
   },
   {
@@ -6656,7 +6630,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "linked-list-reversal"
     ]
   },
   {
@@ -6670,7 +6644,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "fast-slow-pointers"
     ]
   },
   {
@@ -6684,7 +6658,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "two-pointers"
     ]
   },
   {
@@ -6698,8 +6672,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list",
-      "two-pointers"
+      "fast-slow-pointers"
     ]
   },
   {
@@ -6727,7 +6700,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "array-hashing"
     ]
   },
   {
@@ -6741,8 +6714,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list",
-      "two-pointers"
+      "fast-slow-pointers"
     ]
   },
   {
@@ -6756,7 +6728,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "array-hashing"
     ]
   },
   {
@@ -6770,8 +6742,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list",
-      "graphs"
+      "array-hashing"
     ]
   },
   {
@@ -6785,7 +6756,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "array-hashing"
     ]
   },
   {
@@ -6799,7 +6770,7 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "linked-list-reversal"
     ]
   },
   {
@@ -6827,7 +6798,8 @@
     ],
     "tags": [],
     "patterns": [
-      "linked-list"
+      "tree-bfs",
+      "graph-bfs"
     ]
   },
   {

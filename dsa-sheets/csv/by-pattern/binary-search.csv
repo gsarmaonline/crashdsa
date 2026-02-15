@@ -2,7 +2,6 @@ Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
 Binary Search,Easy,neetcode150; grind75,https://leetcode.com/problems/binary-search/,N/A
 Merge Sorted Array,Easy,striver-a2z,https://leetcode.com/problems/merge-sorted-array/,N/A
 Find Minimum in Rotated Sorted Array,Medium,neetcode150; blind75,https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/,N/A
-Kth Smallest Element in a BST,Medium,neetcode150; blind75,https://leetcode.com/problems/kth-smallest-element-in-a-bst/,N/A
 Lowest Common Ancestor of a Binary Search Tree,Medium,neetcode150; blind75; grind75,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/,N/A
 Search a 2D Matrix,Medium,neetcode150; striver-a2z,https://leetcode.com/problems/search-a-2d-matrix/,N/A
 Search in Rotated Sorted Array,Medium,neetcode150; blind75; grind75,https://leetcode.com/problems/search-in-rotated-sorted-array/,N/A
