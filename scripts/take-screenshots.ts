@@ -14,6 +14,7 @@ const execAsync = promisify(exec)
 const routes = [
   { path: '/', name: 'home' },
   { path: '/problems', name: 'problems' },
+  { path: '/patterns', name: 'patterns' },
   { path: '/api-docs', name: 'api-docs' },
 ]
 
