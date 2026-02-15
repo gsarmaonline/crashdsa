@@ -26,6 +26,7 @@ COPY --from=prerelease /app/index.ts .
 COPY --from=prerelease /app/package.json .
 COPY --from=prerelease /app/src ./src
 COPY --from=prerelease /app/docs ./docs
+COPY --from=prerelease /app/dsa-sheets ./dsa-sheets
 
 # Expose port
 EXPOSE 3000
