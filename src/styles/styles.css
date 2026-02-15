@@ -370,11 +370,6 @@ h3 {
   padding: 4rem 0;
 }
 
-.tech-section {
-  background: var(--bg-secondary);
-  padding: 4rem 0;
-}
-
 .cta-section {
   padding: 4rem 0;
   text-align: center;
@@ -425,35 +420,6 @@ h3 {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-}
-
-/* Tech Stack */
-.tech-stack {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.tech-item {
-  text-align: center;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 0.5rem;
-  border: 1px solid var(--border);
-}
-
-.tech-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-}
-
-.tech-desc {
-  color: var(--text-secondary);
-  font-size: 0.875rem;
 }
 
 /* Responsive */
