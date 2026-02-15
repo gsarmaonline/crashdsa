@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+bun.lockb
+
+# Development files
+.git/
+.github/
+.vscode/
+*.log
+
+# Testing and screenshots
+screenshots/
+scripts/take-screenshots.ts
+
+# Documentation (except docs needed at runtime)
+README.md
+CLAUDE.md
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
