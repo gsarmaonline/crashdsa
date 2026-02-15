@@ -1,12 +1,20 @@
 import { html, raw } from 'hono/html'
 import { getProblemsCache } from '../data/csv-loader.js'
+import { PATTERNS } from '../dsa-sheets/patterns.js'
 
 export function homePageDynamic() {
   const cache = getProblemsCache()
   const { stats, patterns } = cache
 
-  // Get a sample of problems for featured section
-  const featuredProblems = cache.all.slice(0, 6)
+  // Pick 6 featured patterns with problem counts
+  const featuredPatternNames = ['two-pointers', 'sliding-window', 'binary-search', 'tree-dfs', 'dynamic-programming-1d', 'backtracking']
+  const featuredPatterns = featuredPatternNames
+    .map(name => {
+      const pattern = PATTERNS.find(p => p.name === name)
+      const count = cache.byPattern[name]?.length ?? 0
+      return pattern ? { ...pattern, count } : null
+    })
+    .filter(Boolean) as (typeof PATTERNS[number] & { count: number })[]
 
   return html`
 <!DOCTYPE html>
@@ -108,25 +116,24 @@ export function homePageDynamic() {
       </div>
     </section>
 
-    <section id="problems" class="problems-section">
+    <section id="patterns" class="problems-section">
       <div class="container">
-        <h2 class="section-title">Featured Problems</h2>
-        <p class="section-subtitle">The kind of problems you'll see in staff and senior loops</p>
+        <h2 class="section-title">Solution Patterns</h2>
+        <p class="section-subtitle">Master the strategies that repeat across senior-level interviews</p>
 
         <div class="problems-grid">
-          ${raw(featuredProblems.map(problem => `
+          ${raw(featuredPatterns.map(pattern => `
             <div class="problem-card">
               <div class="problem-header">
-                <h3>${problem.name}</h3>
-                <span class="badge badge-${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                <h3>${pattern.displayName}</h3>
+                <span class="badge badge-medium">${pattern.count} problems</span>
               </div>
               <div class="problem-body">
-                <p class="problem-category"><strong>Patterns:</strong> ${problem.patterns.join(', ') || 'N/A'}</p>
-                <p class="problem-category"><strong>Sources:</strong> ${problem.sourceSheets.join(', ')}</p>
+                <p class="problem-description">${pattern.description}</p>
               </div>
               <div class="problem-footer">
-                <a href="${problem.link}" target="_blank" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
-                  Solve on LeetCode
+                <a href="/patterns" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
+                  Explore Pattern
                 </a>
               </div>
             </div>
@@ -134,7 +141,7 @@ export function homePageDynamic() {
         </div>
 
         <div style="text-align: center; margin-top: 2rem;">
-          <a href="/problems" class="btn btn-primary">View All ${stats.total} Problems</a>
+          <a href="/patterns" class="btn btn-primary">View All ${patterns.length} Patterns</a>
         </div>
       </div>
     </section>
