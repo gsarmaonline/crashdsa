@@ -101,6 +101,15 @@ h3 {
   color: var(--text);
 }
 
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
 .subtitle {
   font-size: 1.25rem;
   color: var(--text-secondary);
