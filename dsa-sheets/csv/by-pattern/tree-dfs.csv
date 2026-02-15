@@ -1,0 +1,24 @@
+Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
+Balanced Binary Tree,Easy,neetcode150; grind75,https://leetcode.com/problems/balanced-binary-tree/,N/A
+Diameter of Binary Tree,Easy,neetcode150; grind75,https://leetcode.com/problems/diameter-of-binary-tree/,N/A
+Invert Binary Tree,Easy,neetcode150; blind75; grind75,https://leetcode.com/problems/invert-binary-tree/,N/A
+Maximum Depth of Binary Tree,Easy,neetcode150; blind75; grind75,https://leetcode.com/problems/maximum-depth-of-binary-tree/,N/A
+Same Tree,Easy,neetcode150; blind75,https://leetcode.com/problems/same-tree/,N/A
+Subtree of Another Tree,Easy,neetcode150; blind75,https://leetcode.com/problems/subtree-of-another-tree/,N/A
+Binary Tree Right Side View,Medium,neetcode150,https://leetcode.com/problems/binary-tree-right-side-view/,N/A
+Construct Binary Tree from Preorder and Inorder Traversal,Medium,neetcode150; blind75,https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/,N/A
+Count Good Nodes in Binary Tree,Medium,neetcode150,https://leetcode.com/problems/count-good-nodes-in-binary-tree/,N/A
+Design Add and Search Words Data Structure,Medium,neetcode150; blind75,https://leetcode.com/problems/design-add-and-search-words-data-structure/,N/A
+Implement Trie (Prefix Tree),Medium,neetcode150; blind75; grind75,https://leetcode.com/problems/implement-trie-prefix-tree/,N/A
+Kth Smallest Element in a BST,Medium,neetcode150; blind75,https://leetcode.com/problems/kth-smallest-element-in-a-bst/,N/A
+Lowest Common Ancestor of a Binary Search Tree,Medium,neetcode150; blind75; grind75,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/,N/A
+Lowest Common Ancestor of a Binary Tree,Medium,grind75,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/,N/A
+Pythagorean Distance Nodes in a Tree,Medium,leetcode-top-150,https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/,57.6%
+Validate Binary Search Tree,Medium,neetcode150; blind75; grind75,https://leetcode.com/problems/validate-binary-search-tree/,N/A
+Binary Tree Maximum Path Sum,Hard,neetcode150; blind75,https://leetcode.com/problems/binary-tree-maximum-path-sum/,N/A
+Maximum Subgraph Score in a Tree,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/,70.5%
+Minimum Edge Toggles on a Tree,Hard,leetcode-top-150,https://leetcode.com/problems/minimum-edge-toggles-on-a-tree/,68.7%
+Palindromic Path Queries in a Tree,Hard,leetcode-top-150,https://leetcode.com/problems/palindromic-path-queries-in-a-tree/,32%
+Serialize and Deserialize Binary Tree,Hard,neetcode150; blind75,https://leetcode.com/problems/serialize-and-deserialize-binary-tree/,N/A
+Total Sum of Interaction Cost in Tree Groups,Hard,leetcode-top-150,https://leetcode.com/problems/total-sum-of-interaction-cost-in-tree-groups/,53.5%
+Word Search II,Hard,neetcode150; blind75,https://leetcode.com/problems/word-search-ii/,N/A

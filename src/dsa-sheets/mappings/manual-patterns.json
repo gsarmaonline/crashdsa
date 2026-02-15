@@ -1,0 +1,298 @@
+{
+  "two-sum": {
+    "patterns": ["two-pointers"],
+    "reason": "Can be solved with hash table or two pointers after sorting"
+  },
+  "best-time-to-buy-and-sell-stock": {
+    "patterns": ["dynamic-programming-1d"],
+    "reason": "Classic 1D DP problem tracking min price"
+  },
+  "contains-duplicate": {
+    "patterns": ["two-pointers"],
+    "reason": "Hash set or sorting with two pointers"
+  },
+  "product-of-array-except-self": {
+    "patterns": ["two-pointers"],
+    "reason": "Two passes: left products, right products"
+  },
+  "maximum-subarray": {
+    "patterns": ["dynamic-programming-1d"],
+    "reason": "Kadane's algorithm - classic 1D DP"
+  },
+  "maximum-product-subarray": {
+    "patterns": ["dynamic-programming-1d"],
+    "reason": "Similar to maximum subarray with DP"
+  },
+  "find-minimum-in-rotated-sorted-array": {
+    "patterns": ["binary-search"],
+    "reason": "Binary search on rotated array"
+  },
+  "search-in-rotated-sorted-array": {
+    "patterns": ["binary-search"],
+    "reason": "Binary search variation"
+  },
+  "3sum": {
+    "patterns": ["two-pointers"],
+    "reason": "Sort then use two pointers"
+  },
+  "container-with-most-water": {
+    "patterns": ["two-pointers"],
+    "reason": "Two pointers from ends"
+  },
+  "longest-substring-without-repeating-characters": {
+    "patterns": ["sliding-window"],
+    "reason": "Classic sliding window"
+  },
+  "longest-repeating-character-replacement": {
+    "patterns": ["sliding-window"],
+    "reason": "Sliding window with character count"
+  },
+  "minimum-window-substring": {
+    "patterns": ["sliding-window"],
+    "reason": "Complex sliding window"
+  },
+  "valid-anagram": {
+    "patterns": ["two-pointers"],
+    "reason": "Character frequency counting"
+  },
+  "group-anagrams": {
+    "patterns": ["two-pointers"],
+    "reason": "Hash map grouping with sorted keys"
+  },
+  "valid-parentheses": {
+    "patterns": ["monotonic-stack"],
+    "reason": "Classic stack problem"
+  },
+  "reverse-linked-list": {
+    "patterns": ["linked-list-reversal"],
+    "reason": "Basic in-place linked list reversal"
+  },
+  "merge-two-sorted-lists": {
+    "patterns": ["two-pointers"],
+    "reason": "Two pointers on two lists"
+  },
+  "linked-list-cycle": {
+    "patterns": ["fast-slow-pointers"],
+    "reason": "Floyd's cycle detection"
+  },
+  "reorder-list": {
+    "patterns": ["linked-list-reversal", "fast-slow-pointers"],
+    "reason": "Find middle with fast/slow, reverse second half"
+  },
+  "remove-nth-node-from-end-of-list": {
+    "patterns": ["fast-slow-pointers"],
+    "reason": "Two pointers with n gap"
+  },
+  "invert-binary-tree": {
+    "patterns": ["tree-dfs"],
+    "reason": "Simple DFS recursion"
+  },
+  "maximum-depth-of-binary-tree": {
+    "patterns": ["tree-dfs"],
+    "reason": "DFS to find max depth"
+  },
+  "same-tree": {
+    "patterns": ["tree-dfs"],
+    "reason": "DFS comparison"
+  },
+  "subtree-of-another-tree": {
+    "patterns": ["tree-dfs"],
+    "reason": "DFS traversal and comparison"
+  },
+  "lowest-common-ancestor-of-a-binary-search-tree": {
+    "patterns": ["tree-dfs", "binary-search"],
+    "reason": "DFS with BST property"
+  },
+  "binary-tree-level-order-traversal": {
+    "patterns": ["tree-bfs"],
+    "reason": "Classic BFS level-order"
+  },
+  "validate-binary-search-tree": {
+    "patterns": ["tree-dfs"],
+    "reason": "DFS with range validation"
+  },
+  "kth-smallest-element-in-a-bst": {
+    "patterns": ["tree-dfs"],
+    "reason": "Inorder DFS traversal"
+  },
+  "implement-trie-prefix-tree": {
+    "patterns": ["tree-dfs"],
+    "reason": "Trie is a tree structure with DFS operations"
+  },
+  "design-add-and-search-words-data-structure": {
+    "patterns": ["tree-dfs", "backtracking"],
+    "reason": "Trie with DFS backtracking for wildcards"
+  },
+  "word-search-ii": {
+    "patterns": ["tree-dfs", "backtracking"],
+    "reason": "Trie + DFS backtracking on grid"
+  },
+  "merge-k-sorted-lists": {
+    "patterns": ["top-k-elements"],
+    "reason": "Min heap for merging K lists"
+  },
+  "top-k-frequent-elements": {
+    "patterns": ["top-k-elements"],
+    "reason": "Classic top K problem with heap"
+  },
+  "find-median-from-data-stream": {
+    "patterns": ["top-k-elements"],
+    "reason": "Two heaps technique"
+  },
+  "combination-sum": {
+    "patterns": ["backtracking"],
+    "reason": "Backtracking to generate combinations"
+  },
+  "permutations": {
+    "patterns": ["backtracking"],
+    "reason": "Backtracking to generate permutations"
+  },
+  "subsets": {
+    "patterns": ["backtracking"],
+    "reason": "Backtracking to generate subsets"
+  },
+  "word-search": {
+    "patterns": ["backtracking"],
+    "reason": "DFS backtracking on grid"
+  },
+  "number-of-islands": {
+    "patterns": ["graph-dfs"],
+    "reason": "DFS on grid graph"
+  },
+  "clone-graph": {
+    "patterns": ["graph-dfs"],
+    "reason": "DFS traversal and copying"
+  },
+  "pacific-atlantic-water-flow": {
+    "patterns": ["graph-dfs"],
+    "reason": "DFS from borders"
+  },
+  "course-schedule": {
+    "patterns": ["topological-sort"],
+    "reason": "Topological sort for cycle detection"
+  },
+  "number-of-connected-components-in-an-undirected-graph": {
+    "patterns": ["union-find"],
+    "reason": "Union-find for connected components"
+  },
+  "graph-valid-tree": {
+    "patterns": ["union-find"],
+    "reason": "Union-find for cycle detection"
+  },
+  "climbing-stairs": {
+    "patterns": ["dynamic-programming-1d"],
+    "reason": "Classic 1D DP (Fibonacci)"
+  },
+  "coin-change": {
+    "patterns": ["dynamic-programming-1d"],
+    "reason": "1D DP optimization"
+  },
+  "longest-increasing-subsequence": {
+    "patterns": ["dynamic-programming-1d"],
+    "reason": "1D DP sequence problem"
+  },
+  "longest-common-subsequence": {
+    "patterns": ["dynamic-programming-2d"],
+    "reason": "Classic 2D DP"
+  },
+  "word-break": {
+    "patterns": ["dynamic-programming-1d"],
+    "reason": "1D DP string partition"
+  },
+  "house-robber": {
+    "patterns": ["dynamic-programming-1d"],
+    "reason": "1D DP optimization"
+  },
+  "house-robber-ii": {
+    "patterns": ["dynamic-programming-1d"],
+    "reason": "1D DP with circular constraint"
+  },
+  "decode-ways": {
+    "patterns": ["dynamic-programming-1d"],
+    "reason": "1D DP counting"
+  },
+  "unique-paths": {
+    "patterns": ["dynamic-programming-2d"],
+    "reason": "2D grid DP"
+  },
+  "jump-game": {
+    "patterns": ["greedy"],
+    "reason": "Greedy approach tracking max reach"
+  },
+  "merge-intervals": {
+    "patterns": ["merge-intervals"],
+    "reason": "Classic interval merging"
+  },
+  "insert-interval": {
+    "patterns": ["merge-intervals"],
+    "reason": "Interval insertion"
+  },
+  "non-overlapping-intervals": {
+    "patterns": ["merge-intervals", "greedy"],
+    "reason": "Greedy interval scheduling"
+  },
+  "meeting-rooms": {
+    "patterns": ["merge-intervals"],
+    "reason": "Interval overlap check"
+  },
+  "meeting-rooms-ii": {
+    "patterns": ["merge-intervals", "top-k-elements"],
+    "reason": "Interval scheduling with heap"
+  },
+  "rotate-image": {
+    "patterns": ["two-pointers"],
+    "reason": "Matrix rotation with two pointers"
+  },
+  "spiral-matrix": {
+    "patterns": ["two-pointers"],
+    "reason": "Matrix traversal with boundaries"
+  },
+  "set-matrix-zeroes": {
+    "patterns": ["two-pointers"],
+    "reason": "Matrix manipulation with markers"
+  },
+  "number-of-1-bits": {
+    "patterns": ["bit-manipulation"],
+    "reason": "Bit counting"
+  },
+  "counting-bits": {
+    "patterns": ["bit-manipulation", "dynamic-programming-1d"],
+    "reason": "Bit manipulation with DP"
+  },
+  "missing-number": {
+    "patterns": ["bit-manipulation", "cyclic-sort"],
+    "reason": "XOR or cyclic sort"
+  },
+  "reverse-bits": {
+    "patterns": ["bit-manipulation"],
+    "reason": "Bit manipulation"
+  },
+  "sum-of-two-integers": {
+    "patterns": ["bit-manipulation"],
+    "reason": "Addition using bits"
+  },
+  "min-stack": {
+    "patterns": ["monotonic-stack"],
+    "reason": "Stack with min tracking"
+  },
+  "evaluate-reverse-polish-notation": {
+    "patterns": ["monotonic-stack"],
+    "reason": "Stack-based evaluation"
+  },
+  "generate-parentheses": {
+    "patterns": ["backtracking"],
+    "reason": "Backtracking to generate valid combos"
+  },
+  "daily-temperatures": {
+    "patterns": ["monotonic-stack"],
+    "reason": "Classic monotonic stack"
+  },
+  "car-fleet": {
+    "patterns": ["monotonic-stack"],
+    "reason": "Monotonic stack problem"
+  },
+  "find-the-duplicate-number": {
+    "patterns": ["fast-slow-pointers", "cyclic-sort"],
+    "reason": "Floyd's cycle detection or cyclic sort"
+  }
+}

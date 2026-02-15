@@ -1,0 +1,15 @@
+Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
+01 Matrix,Medium,grind75,https://leetcode.com/problems/01-matrix/,N/A
+Longest Common Subsequence,Medium,neetcode150; blind75,https://leetcode.com/problems/longest-common-subsequence/,N/A
+Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND,Medium,leetcode-top-150,https://leetcode.com/problems/longest-strictly-increasing-subsequence-with-non-zero-bitwise-and/,50.9%
+Longest Subsequence With Non-Zero Bitwise XOR,Medium,leetcode-top-150,https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/,37.1%
+Maximum Path Score in a Grid,Medium,leetcode-top-150,https://leetcode.com/problems/maximum-path-score-in-a-grid/,36.5%
+Search a 2D Matrix,Medium,neetcode150; striver-a2z,https://leetcode.com/problems/search-a-2d-matrix/,N/A
+Unique Paths,Medium,neetcode150; blind75; striver-a2z,https://leetcode.com/problems/unique-paths/,N/A
+Count Routes to Climb a Rectangular Grid,Hard,leetcode-top-150,https://leetcode.com/problems/count-routes-to-climb-a-rectangular-grid/,23.5%
+Distinct Subsequences,Hard,neetcode150,https://leetcode.com/problems/distinct-subsequences/,N/A
+Longest Increasing Path in a Matrix,Hard,neetcode150,https://leetcode.com/problems/longest-increasing-path-in-a-matrix/,N/A
+Maximum XOR of Subsequences,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-xor-of-subsequences/,51.2%
+Number of Effective Subsequences,Hard,leetcode-top-150,https://leetcode.com/problems/number-of-effective-subsequences/,30.3%
+Number of Stable Subsequences,Hard,leetcode-top-150,https://leetcode.com/problems/number-of-stable-subsequences/,60.1%
+Sum of Beautiful Subsequences,Hard,leetcode-top-150,https://leetcode.com/problems/sum-of-beautiful-subsequences/,31.1%

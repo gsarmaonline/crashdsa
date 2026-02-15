@@ -1,0 +1,6819 @@
+[
+  {
+    "id": "p-neetcode150-contains-duplicate",
+    "title": "Contains Duplicate",
+    "slug": "contains-duplicate",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/contains-duplicate/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-valid-anagram",
+    "title": "Valid Anagram",
+    "slug": "valid-anagram",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/valid-anagram/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-two-sum",
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/two-sum/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-group-anagrams",
+    "title": "Group Anagrams",
+    "slug": "group-anagrams",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/group-anagrams/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-top-k-frequent-elements",
+    "title": "Top K Frequent Elements",
+    "slug": "top-k-frequent-elements",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/top-k-frequent-elements/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-neetcode150-product-of-array-except-self",
+    "title": "Product of Array Except Self",
+    "slug": "product-of-array-except-self",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/product-of-array-except-self/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-valid-sudoku",
+    "title": "Valid Sudoku",
+    "slug": "valid-sudoku",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/valid-sudoku/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-encode-and-decode-strings",
+    "title": "Encode and Decode Strings",
+    "slug": "encode-and-decode-strings",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/encode-and-decode-strings/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-longest-consecutive-sequence",
+    "title": "Longest Consecutive Sequence",
+    "slug": "longest-consecutive-sequence",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-consecutive-sequence/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-neetcode150-valid-palindrome",
+    "title": "Valid Palindrome",
+    "slug": "valid-palindrome",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/valid-palindrome/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-two-sum-ii-input-array-is-sorted",
+    "title": "Two Sum II - Input Array Is Sorted",
+    "slug": "two-sum-ii-input-array-is-sorted",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-3sum",
+    "title": "3Sum",
+    "slug": "3sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/3sum/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-container-with-most-water",
+    "title": "Container With Most Water",
+    "slug": "container-with-most-water",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/container-with-most-water/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-trapping-rain-water",
+    "title": "Trapping Rain Water",
+    "slug": "trapping-rain-water",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/trapping-rain-water/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-best-time-to-buy-and-sell-stock",
+    "title": "Best Time to Buy and Sell Stock",
+    "slug": "best-time-to-buy-and-sell-stock",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-longest-substring-without-repeating-characters",
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-neetcode150-longest-repeating-character-replacement",
+    "title": "Longest Repeating Character Replacement",
+    "slug": "longest-repeating-character-replacement",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-neetcode150-permutation-in-string",
+    "title": "Permutation in String",
+    "slug": "permutation-in-string",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/permutation-in-string/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-minimum-window-substring",
+    "title": "Minimum Window Substring",
+    "slug": "minimum-window-substring",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-window-substring/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-neetcode150-sliding-window-maximum",
+    "title": "Sliding Window Maximum",
+    "slug": "sliding-window-maximum",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/sliding-window-maximum/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-neetcode150-valid-parentheses",
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/valid-parentheses/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-neetcode150-min-stack",
+    "title": "Min Stack",
+    "slug": "min-stack",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/min-stack/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-neetcode150-evaluate-reverse-polish-notation",
+    "title": "Evaluate Reverse Polish Notation",
+    "slug": "evaluate-reverse-polish-notation",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-neetcode150-generate-parentheses",
+    "title": "Generate Parentheses",
+    "slug": "generate-parentheses",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/generate-parentheses/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-daily-temperatures",
+    "title": "Daily Temperatures",
+    "slug": "daily-temperatures",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/daily-temperatures/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-neetcode150-car-fleet",
+    "title": "Car Fleet",
+    "slug": "car-fleet",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/car-fleet/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-neetcode150-largest-rectangle-in-histogram",
+    "title": "Largest Rectangle in Histogram",
+    "slug": "largest-rectangle-in-histogram",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements",
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-neetcode150-binary-search",
+    "title": "Binary Search",
+    "slug": "binary-search",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/binary-search/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-search-a-2d-matrix",
+    "title": "Search a 2D Matrix",
+    "slug": "search-a-2d-matrix",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/search-a-2d-matrix/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search",
+      "dynamic-programming-2d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-koko-eating-bananas",
+    "title": "Koko Eating Bananas",
+    "slug": "koko-eating-bananas",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/koko-eating-bananas/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-find-minimum-in-rotated-sorted-array",
+    "title": "Find Minimum in Rotated Sorted Array",
+    "slug": "find-minimum-in-rotated-sorted-array",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search"
+    ]
+  },
+  {
+    "id": "p-neetcode150-search-in-rotated-sorted-array",
+    "title": "Search in Rotated Sorted Array",
+    "slug": "search-in-rotated-sorted-array",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search"
+    ]
+  },
+  {
+    "id": "p-neetcode150-time-based-key-value-store",
+    "title": "Time Based Key-Value Store",
+    "slug": "time-based-key-value-store",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/time-based-key-value-store/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-median-of-two-sorted-arrays",
+    "title": "Median of Two Sorted Arrays",
+    "slug": "median-of-two-sorted-arrays",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-reverse-linked-list",
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/reverse-linked-list/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal"
+    ]
+  },
+  {
+    "id": "p-neetcode150-merge-two-sorted-lists",
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-reorder-list",
+    "title": "Reorder List",
+    "slug": "reorder-list",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/reorder-list/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal",
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-remove-nth-node-from-end-of-list",
+    "title": "Remove Nth Node From End of List",
+    "slug": "remove-nth-node-from-end-of-list",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-copy-list-with-random-pointer",
+    "title": "Copy List with Random Pointer",
+    "slug": "copy-list-with-random-pointer",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-add-two-numbers",
+    "title": "Add Two Numbers",
+    "slug": "add-two-numbers",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/add-two-numbers/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-linked-list-cycle",
+    "title": "Linked List Cycle",
+    "slug": "linked-list-cycle",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/linked-list-cycle/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-find-the-duplicate-number",
+    "title": "Find the Duplicate Number",
+    "slug": "find-the-duplicate-number",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/find-the-duplicate-number/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers",
+      "cyclic-sort"
+    ]
+  },
+  {
+    "id": "p-neetcode150-lru-cache",
+    "title": "LRU Cache",
+    "slug": "lru-cache",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/lru-cache/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-merge-k-sorted-lists",
+    "title": "Merge k Sorted Lists",
+    "slug": "merge-k-sorted-lists",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/merge-k-sorted-lists/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-neetcode150-reverse-nodes-in-k-group",
+    "title": "Reverse Nodes in k-Group",
+    "slug": "reverse-nodes-in-k-group",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal"
+    ]
+  },
+  {
+    "id": "p-neetcode150-invert-binary-tree",
+    "title": "Invert Binary Tree",
+    "slug": "invert-binary-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/invert-binary-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-maximum-depth-of-binary-tree",
+    "title": "Maximum Depth of Binary Tree",
+    "slug": "maximum-depth-of-binary-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-diameter-of-binary-tree",
+    "title": "Diameter of Binary Tree",
+    "slug": "diameter-of-binary-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/diameter-of-binary-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-balanced-binary-tree",
+    "title": "Balanced Binary Tree",
+    "slug": "balanced-binary-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/balanced-binary-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-same-tree",
+    "title": "Same Tree",
+    "slug": "same-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/same-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-subtree-of-another-tree",
+    "title": "Subtree of Another Tree",
+    "slug": "subtree-of-another-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/subtree-of-another-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-lowest-common-ancestor-of-a-binary-search-tree",
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "binary-search"
+    ]
+  },
+  {
+    "id": "p-neetcode150-binary-tree-level-order-traversal",
+    "title": "Binary Tree Level Order Traversal",
+    "slug": "binary-tree-level-order-traversal",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-bfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-binary-tree-right-side-view",
+    "title": "Binary Tree Right Side View",
+    "slug": "binary-tree-right-side-view",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/binary-tree-right-side-view/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-count-good-nodes-in-binary-tree",
+    "title": "Count Good Nodes in Binary Tree",
+    "slug": "count-good-nodes-in-binary-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-validate-binary-search-tree",
+    "title": "Validate Binary Search Tree",
+    "slug": "validate-binary-search-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/validate-binary-search-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-kth-smallest-element-in-a-bst",
+    "title": "Kth Smallest Element in a BST",
+    "slug": "kth-smallest-element-in-a-bst",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-construct-binary-tree-from-preorder-and-inorder-traversal",
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal",
+      "tree-dfs",
+      "tree-bfs",
+      "topological-sort",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-binary-tree-maximum-path-sum",
+    "title": "Binary Tree Maximum Path Sum",
+    "slug": "binary-tree-maximum-path-sum",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "graph-dfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-serialize-and-deserialize-binary-tree",
+    "title": "Serialize and Deserialize Binary Tree",
+    "slug": "serialize-and-deserialize-binary-tree",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-implement-trie-prefix-tree",
+    "title": "Implement Trie (Prefix Tree)",
+    "slug": "implement-trie-prefix-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-design-add-and-search-words-data-structure",
+    "title": "Design Add and Search Words Data Structure",
+    "slug": "design-add-and-search-words-data-structure",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-word-search-ii",
+    "title": "Word Search II",
+    "slug": "word-search-ii",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/word-search-ii/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-kth-largest-element-in-a-stream",
+    "title": "Kth Largest Element in a Stream",
+    "slug": "kth-largest-element-in-a-stream",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-neetcode150-last-stone-weight",
+    "title": "Last Stone Weight",
+    "slug": "last-stone-weight",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/last-stone-weight/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-k-closest-points-to-origin",
+    "title": "K Closest Points to Origin",
+    "slug": "k-closest-points-to-origin",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/k-closest-points-to-origin/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-kth-largest-element-in-an-array",
+    "title": "Kth Largest Element in an Array",
+    "slug": "kth-largest-element-in-an-array",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-neetcode150-task-scheduler",
+    "title": "Task Scheduler",
+    "slug": "task-scheduler",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/task-scheduler/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-design-twitter",
+    "title": "Design Twitter",
+    "slug": "design-twitter",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/design-twitter/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-find-median-from-data-stream",
+    "title": "Find Median from Data Stream",
+    "slug": "find-median-from-data-stream",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/find-median-from-data-stream/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-neetcode150-subsets",
+    "title": "Subsets",
+    "slug": "subsets",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/subsets/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-combination-sum",
+    "title": "Combination Sum",
+    "slug": "combination-sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/combination-sum/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-permutations",
+    "title": "Permutations",
+    "slug": "permutations",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/permutations/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-subsets-ii",
+    "title": "Subsets II",
+    "slug": "subsets-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/subsets-ii/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-combination-sum-ii",
+    "title": "Combination Sum II",
+    "slug": "combination-sum-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/combination-sum-ii/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-word-search",
+    "title": "Word Search",
+    "slug": "word-search",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/word-search/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-palindrome-partitioning",
+    "title": "Palindrome Partitioning",
+    "slug": "palindrome-partitioning",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/palindrome-partitioning/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-letter-combinations-of-a-phone-number",
+    "title": "Letter Combinations of a Phone Number",
+    "slug": "letter-combinations-of-a-phone-number",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-n-queens",
+    "title": "N-Queens",
+    "slug": "n-queens",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/n-queens/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-number-of-islands",
+    "title": "Number of Islands",
+    "slug": "number-of-islands",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/number-of-islands/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-clone-graph",
+    "title": "Clone Graph",
+    "slug": "clone-graph",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/clone-graph/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-max-area-of-island",
+    "title": "Max Area of Island",
+    "slug": "max-area-of-island",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/max-area-of-island/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-pacific-atlantic-water-flow",
+    "title": "Pacific Atlantic Water Flow",
+    "slug": "pacific-atlantic-water-flow",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs"
+    ]
+  },
+  {
+    "id": "p-neetcode150-surrounded-regions",
+    "title": "Surrounded Regions",
+    "slug": "surrounded-regions",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/surrounded-regions/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-rotting-oranges",
+    "title": "Rotting Oranges",
+    "slug": "rotting-oranges",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/rotting-oranges/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "cyclic-sort",
+      "merge-intervals",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-walls-and-gates",
+    "title": "Walls and Gates",
+    "slug": "walls-and-gates",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/walls-and-gates/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-course-schedule",
+    "title": "Course Schedule",
+    "slug": "course-schedule",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/course-schedule/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "topological-sort"
+    ]
+  },
+  {
+    "id": "p-neetcode150-course-schedule-ii",
+    "title": "Course Schedule II",
+    "slug": "course-schedule-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/course-schedule-ii/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "topological-sort"
+    ]
+  },
+  {
+    "id": "p-neetcode150-redundant-connection",
+    "title": "Redundant Connection",
+    "slug": "redundant-connection",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/redundant-connection/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-number-of-connected-components-in-an-undirected-graph",
+    "title": "Number of Connected Components in an Undirected Graph",
+    "slug": "number-of-connected-components-in-an-undirected-graph",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "union-find"
+    ]
+  },
+  {
+    "id": "p-neetcode150-graph-valid-tree",
+    "title": "Graph Valid Tree",
+    "slug": "graph-valid-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/graph-valid-tree/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "union-find"
+    ]
+  },
+  {
+    "id": "p-neetcode150-word-ladder",
+    "title": "Word Ladder",
+    "slug": "word-ladder",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/word-ladder/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-reconstruct-itinerary",
+    "title": "Reconstruct Itinerary",
+    "slug": "reconstruct-itinerary",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/reconstruct-itinerary/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-min-cost-to-connect-all-points",
+    "title": "Min Cost to Connect All Points",
+    "slug": "min-cost-to-connect-all-points",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-network-delay-time",
+    "title": "Network Delay Time",
+    "slug": "network-delay-time",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/network-delay-time/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-swim-in-rising-water",
+    "title": "Swim in Rising Water",
+    "slug": "swim-in-rising-water",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/swim-in-rising-water/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-alien-dictionary",
+    "title": "Alien Dictionary",
+    "slug": "alien-dictionary",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/alien-dictionary/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-cheapest-flights-within-k-stops",
+    "title": "Cheapest Flights Within K Stops",
+    "slug": "cheapest-flights-within-k-stops",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-neetcode150-climbing-stairs",
+    "title": "Climbing Stairs",
+    "slug": "climbing-stairs",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/climbing-stairs/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-min-cost-climbing-stairs",
+    "title": "Min Cost Climbing Stairs",
+    "slug": "min-cost-climbing-stairs",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-house-robber",
+    "title": "House Robber",
+    "slug": "house-robber",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/house-robber/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-house-robber-ii",
+    "title": "House Robber II",
+    "slug": "house-robber-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/house-robber-ii/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-longest-palindromic-substring",
+    "title": "Longest Palindromic Substring",
+    "slug": "longest-palindromic-substring",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-palindromic-substring/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-neetcode150-palindromic-substrings",
+    "title": "Palindromic Substrings",
+    "slug": "palindromic-substrings",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/palindromic-substrings/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-neetcode150-decode-ways",
+    "title": "Decode Ways",
+    "slug": "decode-ways",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/decode-ways/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-coin-change",
+    "title": "Coin Change",
+    "slug": "coin-change",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/coin-change/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-maximum-product-subarray",
+    "title": "Maximum Product Subarray",
+    "slug": "maximum-product-subarray",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-product-subarray/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-word-break",
+    "title": "Word Break",
+    "slug": "word-break",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/word-break/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-longest-increasing-subsequence",
+    "title": "Longest Increasing Subsequence",
+    "slug": "longest-increasing-subsequence",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-increasing-subsequence/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-partition-equal-subset-sum",
+    "title": "Partition Equal Subset Sum",
+    "slug": "partition-equal-subset-sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/partition-equal-subset-sum/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-unique-paths",
+    "title": "Unique Paths",
+    "slug": "unique-paths",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/unique-paths/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-longest-common-subsequence",
+    "title": "Longest Common Subsequence",
+    "slug": "longest-common-subsequence",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-common-subsequence/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-best-time-to-buy-and-sell-stock-with-cooldown",
+    "title": "Best Time to Buy and Sell Stock with Cooldown",
+    "slug": "best-time-to-buy-and-sell-stock-with-cooldown",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-coin-change-2",
+    "title": "Coin Change 2",
+    "slug": "coin-change-2",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/coin-change-2/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-target-sum",
+    "title": "Target Sum",
+    "slug": "target-sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/target-sum/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-interleaving-string",
+    "title": "Interleaving String",
+    "slug": "interleaving-string",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/interleaving-string/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-longest-increasing-path-in-a-matrix",
+    "title": "Longest Increasing Path in a Matrix",
+    "slug": "longest-increasing-path-in-a-matrix",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs",
+      "dynamic-programming-2d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-distinct-subsequences",
+    "title": "Distinct Subsequences",
+    "slug": "distinct-subsequences",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/distinct-subsequences/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-edit-distance",
+    "title": "Edit Distance",
+    "slug": "edit-distance",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/edit-distance/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-burst-balloons",
+    "title": "Burst Balloons",
+    "slug": "burst-balloons",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/burst-balloons/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-neetcode150-regular-expression-matching",
+    "title": "Regular Expression Matching",
+    "slug": "regular-expression-matching",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/regular-expression-matching/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-maximum-subarray",
+    "title": "Maximum Subarray",
+    "slug": "maximum-subarray",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-subarray/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-jump-game",
+    "title": "Jump Game",
+    "slug": "jump-game",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/jump-game/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "greedy"
+    ]
+  },
+  {
+    "id": "p-neetcode150-jump-game-ii",
+    "title": "Jump Game II",
+    "slug": "jump-game-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/jump-game-ii/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-gas-station",
+    "title": "Gas Station",
+    "slug": "gas-station",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/gas-station/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-hand-of-straights",
+    "title": "Hand of Straights",
+    "slug": "hand-of-straights",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/hand-of-straights/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-merge-triplets-to-form-target-triplet",
+    "title": "Merge Triplets to Form Target Triplet",
+    "slug": "merge-triplets-to-form-target-triplet",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/merge-triplets-to-form-target-triplet/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-partition-labels",
+    "title": "Partition Labels",
+    "slug": "partition-labels",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/partition-labels/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-valid-parenthesis-string",
+    "title": "Valid Parenthesis String",
+    "slug": "valid-parenthesis-string",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/valid-parenthesis-string/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-insert-interval",
+    "title": "Insert Interval",
+    "slug": "insert-interval",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/insert-interval/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-neetcode150-merge-intervals",
+    "title": "Merge Intervals",
+    "slug": "merge-intervals",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/merge-intervals/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-neetcode150-non-overlapping-intervals",
+    "title": "Non-overlapping Intervals",
+    "slug": "non-overlapping-intervals",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/non-overlapping-intervals/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals",
+      "greedy"
+    ]
+  },
+  {
+    "id": "p-neetcode150-meeting-rooms",
+    "title": "Meeting Rooms",
+    "slug": "meeting-rooms",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/meeting-rooms/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-neetcode150-meeting-rooms-ii",
+    "title": "Meeting Rooms II",
+    "slug": "meeting-rooms-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/meeting-rooms-ii/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals",
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-neetcode150-minimum-interval-to-include-each-query",
+    "title": "Minimum Interval to Include Each Query",
+    "slug": "minimum-interval-to-include-each-query",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-interval-to-include-each-query/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-neetcode150-rotate-image",
+    "title": "Rotate Image",
+    "slug": "rotate-image",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/rotate-image/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-spiral-matrix",
+    "title": "Spiral Matrix",
+    "slug": "spiral-matrix",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/spiral-matrix/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-set-matrix-zeroes",
+    "title": "Set Matrix Zeroes",
+    "slug": "set-matrix-zeroes",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/set-matrix-zeroes/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-neetcode150-happy-number",
+    "title": "Happy Number",
+    "slug": "happy-number",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/happy-number/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-plus-one",
+    "title": "Plus One",
+    "slug": "plus-one",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/plus-one/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-pow-x-n",
+    "title": "Pow X N",
+    "slug": "pow-x-n",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/pow-x-n/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-multiply-strings",
+    "title": "Multiply Strings",
+    "slug": "multiply-strings",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/multiply-strings/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-detect-squares",
+    "title": "Detect Squares",
+    "slug": "detect-squares",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/detect-squares/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-single-number",
+    "title": "Single Number",
+    "slug": "single-number",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/single-number/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-neetcode150-number-of-1-bits",
+    "title": "Number of 1 Bits",
+    "slug": "number-of-1-bits",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/number-of-1-bits/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-counting-bits",
+    "title": "Counting Bits",
+    "slug": "counting-bits",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/counting-bits/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation",
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-neetcode150-reverse-bits",
+    "title": "Reverse Bits",
+    "slug": "reverse-bits",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/reverse-bits/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-missing-number",
+    "title": "Missing Number",
+    "slug": "missing-number",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/missing-number/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation",
+      "cyclic-sort"
+    ]
+  },
+  {
+    "id": "p-neetcode150-sum-of-two-integers",
+    "title": "Sum of Two Integers",
+    "slug": "sum-of-two-integers",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/sum-of-two-integers/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-neetcode150-reverse-integer",
+    "title": "Reverse Integer",
+    "slug": "reverse-integer",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/reverse-integer/",
+    "sourceSheets": [
+      "neetcode150"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal"
+    ]
+  },
+  {
+    "id": "p-blind75-two-sum",
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/two-sum/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-best-time-to-buy-and-sell-stock",
+    "title": "Best Time to Buy and Sell Stock",
+    "slug": "best-time-to-buy-and-sell-stock",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-contains-duplicate",
+    "title": "Contains Duplicate",
+    "slug": "contains-duplicate",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/contains-duplicate/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-product-of-array-except-self",
+    "title": "Product of Array Except Self",
+    "slug": "product-of-array-except-self",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/product-of-array-except-self/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-maximum-subarray",
+    "title": "Maximum Subarray",
+    "slug": "maximum-subarray",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-subarray/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-maximum-product-subarray",
+    "title": "Maximum Product Subarray",
+    "slug": "maximum-product-subarray",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-product-subarray/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-find-minimum-in-rotated-sorted-array",
+    "title": "Find Minimum in Rotated Sorted Array",
+    "slug": "find-minimum-in-rotated-sorted-array",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search"
+    ]
+  },
+  {
+    "id": "p-blind75-search-in-rotated-sorted-array",
+    "title": "Search in Rotated Sorted Array",
+    "slug": "search-in-rotated-sorted-array",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search"
+    ]
+  },
+  {
+    "id": "p-blind75-3sum",
+    "title": "3Sum",
+    "slug": "3sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/3sum/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-container-with-most-water",
+    "title": "Container With Most Water",
+    "slug": "container-with-most-water",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/container-with-most-water/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-sum-of-two-integers",
+    "title": "Sum of Two Integers",
+    "slug": "sum-of-two-integers",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/sum-of-two-integers/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-blind75-number-of-1-bits",
+    "title": "Number of 1 Bits",
+    "slug": "number-of-1-bits",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/number-of-1-bits/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-blind75-counting-bits",
+    "title": "Counting Bits",
+    "slug": "counting-bits",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/counting-bits/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation",
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-missing-number",
+    "title": "Missing Number",
+    "slug": "missing-number",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/missing-number/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation",
+      "cyclic-sort"
+    ]
+  },
+  {
+    "id": "p-blind75-reverse-bits",
+    "title": "Reverse Bits",
+    "slug": "reverse-bits",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/reverse-bits/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-blind75-climbing-stairs",
+    "title": "Climbing Stairs",
+    "slug": "climbing-stairs",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/climbing-stairs/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-coin-change",
+    "title": "Coin Change",
+    "slug": "coin-change",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/coin-change/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-longest-increasing-subsequence",
+    "title": "Longest Increasing Subsequence",
+    "slug": "longest-increasing-subsequence",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-increasing-subsequence/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-longest-common-subsequence",
+    "title": "Longest Common Subsequence",
+    "slug": "longest-common-subsequence",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-common-subsequence/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d"
+    ]
+  },
+  {
+    "id": "p-blind75-word-break",
+    "title": "Word Break",
+    "slug": "word-break",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/word-break/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-combination-sum-iv",
+    "title": "Combination Sum IV",
+    "slug": "combination-sum-iv",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/combination-sum-iv/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-blind75-house-robber",
+    "title": "House Robber",
+    "slug": "house-robber",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/house-robber/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-house-robber-ii",
+    "title": "House Robber II",
+    "slug": "house-robber-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/house-robber-ii/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-decode-ways",
+    "title": "Decode Ways",
+    "slug": "decode-ways",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/decode-ways/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-blind75-unique-paths",
+    "title": "Unique Paths",
+    "slug": "unique-paths",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/unique-paths/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d"
+    ]
+  },
+  {
+    "id": "p-blind75-jump-game",
+    "title": "Jump Game",
+    "slug": "jump-game",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/jump-game/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "greedy"
+    ]
+  },
+  {
+    "id": "p-blind75-clone-graph",
+    "title": "Clone Graph",
+    "slug": "clone-graph",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/clone-graph/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs"
+    ]
+  },
+  {
+    "id": "p-blind75-course-schedule",
+    "title": "Course Schedule",
+    "slug": "course-schedule",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/course-schedule/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "topological-sort"
+    ]
+  },
+  {
+    "id": "p-blind75-pacific-atlantic-water-flow",
+    "title": "Pacific Atlantic Water Flow",
+    "slug": "pacific-atlantic-water-flow",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs"
+    ]
+  },
+  {
+    "id": "p-blind75-number-of-islands",
+    "title": "Number of Islands",
+    "slug": "number-of-islands",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/number-of-islands/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs"
+    ]
+  },
+  {
+    "id": "p-blind75-longest-consecutive-sequence",
+    "title": "Longest Consecutive Sequence",
+    "slug": "longest-consecutive-sequence",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-consecutive-sequence/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-blind75-alien-dictionary",
+    "title": "Alien Dictionary",
+    "slug": "alien-dictionary",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/alien-dictionary/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-blind75-graph-valid-tree",
+    "title": "Graph Valid Tree",
+    "slug": "graph-valid-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/graph-valid-tree/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "union-find"
+    ]
+  },
+  {
+    "id": "p-blind75-number-of-connected-components-in-an-undirected-graph",
+    "title": "Number of Connected Components in an Undirected Graph",
+    "slug": "number-of-connected-components-in-an-undirected-graph",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "union-find"
+    ]
+  },
+  {
+    "id": "p-blind75-insert-interval",
+    "title": "Insert Interval",
+    "slug": "insert-interval",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/insert-interval/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-blind75-merge-intervals",
+    "title": "Merge Intervals",
+    "slug": "merge-intervals",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/merge-intervals/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-blind75-non-overlapping-intervals",
+    "title": "Non-overlapping Intervals",
+    "slug": "non-overlapping-intervals",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/non-overlapping-intervals/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals",
+      "greedy"
+    ]
+  },
+  {
+    "id": "p-blind75-meeting-rooms",
+    "title": "Meeting Rooms",
+    "slug": "meeting-rooms",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/meeting-rooms/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-blind75-meeting-rooms-ii",
+    "title": "Meeting Rooms II",
+    "slug": "meeting-rooms-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/meeting-rooms-ii/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals",
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-blind75-reverse-linked-list",
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/reverse-linked-list/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal"
+    ]
+  },
+  {
+    "id": "p-blind75-linked-list-cycle",
+    "title": "Linked List Cycle",
+    "slug": "linked-list-cycle",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/linked-list-cycle/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-merge-two-sorted-lists",
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-merge-k-sorted-lists",
+    "title": "Merge k Sorted Lists",
+    "slug": "merge-k-sorted-lists",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/merge-k-sorted-lists/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-blind75-remove-nth-node-from-end-of-list",
+    "title": "Remove Nth Node From End of List",
+    "slug": "remove-nth-node-from-end-of-list",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-reorder-list",
+    "title": "Reorder List",
+    "slug": "reorder-list",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/reorder-list/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal",
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-set-matrix-zeroes",
+    "title": "Set Matrix Zeroes",
+    "slug": "set-matrix-zeroes",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/set-matrix-zeroes/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-spiral-matrix",
+    "title": "Spiral Matrix",
+    "slug": "spiral-matrix",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/spiral-matrix/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-rotate-image",
+    "title": "Rotate Image",
+    "slug": "rotate-image",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/rotate-image/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-word-search",
+    "title": "Word Search",
+    "slug": "word-search",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/word-search/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-blind75-longest-substring-without-repeating-characters",
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-blind75-longest-repeating-character-replacement",
+    "title": "Longest Repeating Character Replacement",
+    "slug": "longest-repeating-character-replacement",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-blind75-minimum-window-substring",
+    "title": "Minimum Window Substring",
+    "slug": "minimum-window-substring",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-window-substring/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-blind75-valid-anagram",
+    "title": "Valid Anagram",
+    "slug": "valid-anagram",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/valid-anagram/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-group-anagrams",
+    "title": "Group Anagrams",
+    "slug": "group-anagrams",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/group-anagrams/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-blind75-valid-parentheses",
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/valid-parentheses/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-blind75-valid-palindrome",
+    "title": "Valid Palindrome",
+    "slug": "valid-palindrome",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/valid-palindrome/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-blind75-longest-palindromic-substring",
+    "title": "Longest Palindromic Substring",
+    "slug": "longest-palindromic-substring",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-palindromic-substring/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-blind75-palindromic-substrings",
+    "title": "Palindromic Substrings",
+    "slug": "palindromic-substrings",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/palindromic-substrings/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-blind75-encode-and-decode-strings",
+    "title": "Encode and Decode Strings",
+    "slug": "encode-and-decode-strings",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/encode-and-decode-strings/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-blind75-maximum-depth-of-binary-tree",
+    "title": "Maximum Depth of Binary Tree",
+    "slug": "maximum-depth-of-binary-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-blind75-same-tree",
+    "title": "Same Tree",
+    "slug": "same-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/same-tree/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-blind75-invert-binary-tree",
+    "title": "Invert Binary Tree",
+    "slug": "invert-binary-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/invert-binary-tree/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-blind75-binary-tree-maximum-path-sum",
+    "title": "Binary Tree Maximum Path Sum",
+    "slug": "binary-tree-maximum-path-sum",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "graph-dfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-blind75-binary-tree-level-order-traversal",
+    "title": "Binary Tree Level Order Traversal",
+    "slug": "binary-tree-level-order-traversal",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-bfs"
+    ]
+  },
+  {
+    "id": "p-blind75-serialize-and-deserialize-binary-tree",
+    "title": "Serialize and Deserialize Binary Tree",
+    "slug": "serialize-and-deserialize-binary-tree",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-blind75-subtree-of-another-tree",
+    "title": "Subtree of Another Tree",
+    "slug": "subtree-of-another-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/subtree-of-another-tree/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-blind75-construct-binary-tree-from-preorder-and-inorder-traversal",
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal",
+      "tree-dfs",
+      "tree-bfs",
+      "topological-sort",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-blind75-validate-binary-search-tree",
+    "title": "Validate Binary Search Tree",
+    "slug": "validate-binary-search-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/validate-binary-search-tree/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-blind75-kth-smallest-element-in-a-bst",
+    "title": "Kth Smallest Element in a BST",
+    "slug": "kth-smallest-element-in-a-bst",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-blind75-lowest-common-ancestor-of-a-binary-search-tree",
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "binary-search"
+    ]
+  },
+  {
+    "id": "p-blind75-implement-trie-prefix-tree",
+    "title": "Implement Trie (Prefix Tree)",
+    "slug": "implement-trie-prefix-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-blind75-design-add-and-search-words-data-structure",
+    "title": "Design Add and Search Words Data Structure",
+    "slug": "design-add-and-search-words-data-structure",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-blind75-word-search-ii",
+    "title": "Word Search II",
+    "slug": "word-search-ii",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/word-search-ii/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-blind75-merge-k-sorted-lists",
+    "title": "Merge k Sorted Lists",
+    "slug": "merge-k-sorted-lists",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/merge-k-sorted-lists/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-blind75-top-k-frequent-elements",
+    "title": "Top K Frequent Elements",
+    "slug": "top-k-frequent-elements",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/top-k-frequent-elements/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-blind75-find-median-from-data-stream",
+    "title": "Find Median from Data Stream",
+    "slug": "find-median-from-data-stream",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/find-median-from-data-stream/",
+    "sourceSheets": [
+      "blind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-leetcode-top-150-find-users-with-persistent-behavior-patterns",
+    "title": "Find Users with Persistent Behavior Patterns",
+    "slug": "find-users-with-persistent-behavior-patterns",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/find-users-with-persistent-behavior-patterns/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 63.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-longest-almost-palindromic-substring",
+    "title": "Longest Almost-Palindromic Substring",
+    "slug": "longest-almost-palindromic-substring",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-almost-palindromic-substring/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 18.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-first-element-with-unique-frequency",
+    "title": "First Element with Unique Frequency",
+    "slug": "first-element-with-unique-frequency",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/first-element-with-unique-frequency/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 68.6,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-weighted-word-mapping",
+    "title": "Weighted Word Mapping",
+    "slug": "weighted-word-mapping",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/weighted-word-mapping/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 84.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-dominant-indices",
+    "title": "Count Dominant Indices",
+    "slug": "count-dominant-indices",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/count-dominant-indices/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 65.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-merge-adjacent-equal-elements",
+    "title": "Merge Adjacent Equal Elements",
+    "slug": "merge-adjacent-equal-elements",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/merge-adjacent-equal-elements/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ],
+    "acceptance": 41.6,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-toggle-light-bulbs",
+    "title": "Toggle Light Bulbs",
+    "slug": "toggle-light-bulbs",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/toggle-light-bulbs/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 71.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-subarrays-with-cost-less-than-or-equal-to-k",
+    "title": "Count Subarrays With Cost Less Than or Equal to K",
+    "slug": "count-subarrays-with-cost-less-than-or-equal-to-k",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/count-subarrays-with-cost-less-than-or-equal-to-k/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window",
+      "bit-manipulation"
+    ],
+    "acceptance": 45.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-palindromic-path-queries-in-a-tree",
+    "title": "Palindromic Path Queries in a Tree",
+    "slug": "palindromic-path-queries-in-a-tree",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/palindromic-path-queries-in-a-tree/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "graph-dfs"
+    ],
+    "acceptance": 32,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-find-emotionally-consistent-users",
+    "title": "Find Emotionally Consistent Users",
+    "slug": "find-emotionally-consistent-users",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/find-emotionally-consistent-users/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ],
+    "acceptance": 52.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-subarray-xor-with-bounded-range",
+    "title": "Maximum Subarray XOR with Bounded Range",
+    "slug": "maximum-subarray-xor-with-bounded-range",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window",
+      "cyclic-sort",
+      "merge-intervals",
+      "bit-manipulation"
+    ],
+    "acceptance": 25.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-score-using-exactly-k-pairs",
+    "title": "Maximum Score Using Exactly K Pairs",
+    "slug": "maximum-score-using-exactly-k-pairs",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/maximum-score-using-exactly-k-pairs/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 41.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-reverse-letters-then-special-characters-in-a-string",
+    "title": "Reverse Letters Then Special Characters in a String",
+    "slug": "reverse-letters-then-special-characters-in-a-string",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal"
+    ],
+    "acceptance": 81.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-prefix-removal-to-make-array-strictly-increasing",
+    "title": "Minimum Prefix Removal to Make Array Strictly Increasing",
+    "slug": "minimum-prefix-removal-to-make-array-strictly-increasing",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-prefix-removal-to-make-array-strictly-increasing/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 73.6,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-longest-alternating-subarray-after-removing-at-most-one-element",
+    "title": "Longest Alternating Subarray After Removing At Most One Element",
+    "slug": "longest-alternating-subarray-after-removing-at-most-one-element",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/longest-alternating-subarray-after-removing-at-most-one-element/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 30,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-find-users-with-high-token-usage",
+    "title": "Find Users with High Token Usage",
+    "slug": "find-users-with-high-token-usage",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/find-users-with-high-token-usage/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 58.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-monobit-integers",
+    "title": "Count Monobit Integers",
+    "slug": "count-monobit-integers",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/count-monobit-integers/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 65.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-operations-to-reach-target-array",
+    "title": "Minimum Operations to Reach Target Array",
+    "slug": "minimum-operations-to-reach-target-array",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-operations-to-reach-target-array/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 63.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-find-nth-smallest-integer-with-k-one-bits",
+    "title": "Find Nth Smallest Integer With K One Bits",
+    "slug": "find-nth-smallest-integer-with-k-one-bits",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking",
+      "top-k-elements",
+      "bit-manipulation"
+    ],
+    "acceptance": 33.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-best-reachable-tower",
+    "title": "Best Reachable Tower",
+    "slug": "best-reachable-tower",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/best-reachable-tower/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 55.6,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-residue-prefixes",
+    "title": "Count Residue Prefixes",
+    "slug": "count-residue-prefixes",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/count-residue-prefixes/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 65.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-caesar-cipher-pairs",
+    "title": "Count Caesar Cipher Pairs",
+    "slug": "count-caesar-cipher-pairs",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/count-caesar-cipher-pairs/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 50.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-edge-toggles-on-a-tree",
+    "title": "Minimum Edge Toggles on a Tree",
+    "slug": "minimum-edge-toggles-on-a-tree",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-edge-toggles-on-a-tree/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs"
+    ],
+    "acceptance": 68.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-pythagorean-distance-nodes-in-a-tree",
+    "title": "Pythagorean Distance Nodes in a Tree",
+    "slug": "pythagorean-distance-nodes-in-a-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "bit-manipulation"
+    ],
+    "acceptance": 57.6,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-largest-even-number",
+    "title": "Largest Even Number",
+    "slug": "largest-even-number",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/largest-even-number/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements"
+    ],
+    "acceptance": 69.2,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-vowel-consonant-score",
+    "title": "Vowel-Consonant Score",
+    "slug": "vowel-consonant-score",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/vowel-consonant-score/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 54.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-reverse-string-prefix",
+    "title": "Reverse String Prefix",
+    "slug": "reverse-string-prefix",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/reverse-string-prefix/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal"
+    ],
+    "acceptance": 89.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-k-to-reduce-array-within-limit",
+    "title": "Minimum K to Reduce Array Within Limit",
+    "slug": "minimum-k-to-reduce-array-within-limit",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-k-to-reduce-array-within-limit/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 41.2,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-smallest-all-ones-multiple",
+    "title": "Smallest All-Ones Multiple",
+    "slug": "smallest-all-ones-multiple",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/smallest-all-ones-multiple/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking",
+      "top-k-elements"
+    ],
+    "acceptance": 46.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-score-of-a-split",
+    "title": "Maximum Score of a Split",
+    "slug": "maximum-score-of-a-split",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-score-of-a-split/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 51.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-rotate-non-negative-elements",
+    "title": "Rotate Non Negative Elements",
+    "slug": "rotate-non-negative-elements",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/rotate-non-negative-elements/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 47.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-most-common-course-pairs",
+    "title": "Most Common Course Pairs",
+    "slug": "most-common-course-pairs",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/most-common-course-pairs/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "topological-sort"
+    ],
+    "acceptance": 52.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-mirror-distance-of-an-integer",
+    "title": "Mirror Distance of an Integer",
+    "slug": "mirror-distance-of-an-integer",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/mirror-distance-of-an-integer/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 87.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-last-remaining-integer-after-alternating-deletion-operations",
+    "title": "Last Remaining Integer After Alternating Deletion Operations",
+    "slug": "last-remaining-integer-after-alternating-deletion-operations",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/last-remaining-integer-after-alternating-deletion-operations/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 48.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-number-of-operations-to-have-distinct-elements",
+    "title": "Minimum Number of Operations to Have Distinct Elements",
+    "slug": "minimum-number-of-operations-to-have-distinct-elements",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-number-of-operations-to-have-distinct-elements/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 42,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-sum-of-three-numbers-divisible-by-three",
+    "title": "Maximum Sum of Three Numbers Divisible by Three",
+    "slug": "maximum-sum-of-three-numbers-divisible-by-three",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-sum-of-three-numbers-divisible-by-three/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 47.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-absolute-difference-between-maximum-and-minimum-k-elements",
+    "title": "Absolute Difference Between Maximum and Minimum K Elements",
+    "slug": "absolute-difference-between-maximum-and-minimum-k-elements",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/absolute-difference-between-maximum-and-minimum-k-elements/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 75.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-reverse-words-with-same-vowel-count",
+    "title": "Reverse Words With Same Vowel Count",
+    "slug": "reverse-words-with-same-vowel-count",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/reverse-words-with-same-vowel-count/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal",
+      "bit-manipulation"
+    ],
+    "acceptance": 66.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-cost-to-make-two-binary-strings-equal",
+    "title": "Minimum Cost to Make Two Binary Strings Equal",
+    "slug": "minimum-cost-to-make-two-binary-strings-equal",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-cost-to-make-two-binary-strings-equal/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 38.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-bitwise-and-after-increment-operations",
+    "title": "Maximum Bitwise AND After Increment Operations",
+    "slug": "maximum-bitwise-and-after-increment-operations",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/maximum-bitwise-and-after-increment-operations/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 30.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-routes-to-climb-a-rectangular-grid",
+    "title": "Count Routes to Climb a Rectangular Grid",
+    "slug": "count-routes-to-climb-a-rectangular-grid",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/count-routes-to-climb-a-rectangular-grid/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d",
+      "dynamic-programming-2d"
+    ],
+    "acceptance": 23.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-subarray-length-with-distinct-sum-at-least-k",
+    "title": "Minimum Subarray Length With Distinct Sum At Least K",
+    "slug": "minimum-subarray-length-with-distinct-sum-at-least-k",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-subarray-length-with-distinct-sum-at-least-k/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 31.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-subgraph-score-in-a-tree",
+    "title": "Maximum Subgraph Score in a Tree",
+    "slug": "maximum-subgraph-score-in-a-tree",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "graph-dfs",
+      "graph-bfs",
+      "bit-manipulation"
+    ],
+    "acceptance": 70.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-sort-integers-by-binary-reflection",
+    "title": "Sort Integers by Binary Reflection",
+    "slug": "sort-integers-by-binary-reflection",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/sort-integers-by-binary-reflection/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 60.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-cost-to-acquire-required-items",
+    "title": "Minimum Cost to Acquire Required Items",
+    "slug": "minimum-cost-to-acquire-required-items",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 34.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-total-score-of-dungeon-runs",
+    "title": "Total Score of Dungeon Runs",
+    "slug": "total-score-of-dungeon-runs",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/total-score-of-dungeon-runs/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 30.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-inversion-count-in-subarrays-of-fixed-length",
+    "title": "Minimum Inversion Count in Subarrays of Fixed Length",
+    "slug": "minimum-inversion-count-in-subarrays-of-fixed-length",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-inversion-count-in-subarrays-of-fixed-length/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 42.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-cost-to-merge-sorted-lists",
+    "title": "Minimum Cost to Merge Sorted Lists",
+    "slug": "minimum-cost-to-merge-sorted-lists",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-cost-to-merge-sorted-lists/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search",
+      "merge-intervals",
+      "bit-manipulation"
+    ],
+    "acceptance": 33.6,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-number-of-alternating-xor-partitions",
+    "title": "Number of Alternating XOR Partitions",
+    "slug": "number-of-alternating-xor-partitions",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/number-of-alternating-xor-partitions/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 26.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-elements-with-at-least-k-greater-values",
+    "title": "Count Elements With at Least K Greater Values",
+    "slug": "count-elements-with-at-least-k-greater-values",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/count-elements-with-at-least-k-greater-values/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 31.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-absolute-distance-between-mirror-pairs",
+    "title": "Minimum Absolute Distance Between Mirror Pairs",
+    "slug": "minimum-absolute-distance-between-mirror-pairs",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 44.2,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-deletion-cost-to-make-all-characters-equal",
+    "title": "Minimum Deletion Cost to Make All Characters Equal",
+    "slug": "minimum-deletion-cost-to-make-all-characters-equal",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-deletion-cost-to-make-all-characters-equal/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ],
+    "acceptance": 54.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-number-of-prefix-connected-groups",
+    "title": "Number of Prefix Connected Groups",
+    "slug": "number-of-prefix-connected-groups",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/number-of-prefix-connected-groups/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs"
+    ],
+    "acceptance": 60.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-concatenate-non-zero-digits-and-multiply-by-sum-ii",
+    "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
+    "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 24,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-concatenate-non-zero-digits-and-multiply-by-sum-i",
+    "title": "Concatenate Non-Zero Digits and Multiply by Sum I",
+    "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 55.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-number-of-effective-subsequences",
+    "title": "Number of Effective Subsequences",
+    "slug": "number-of-effective-subsequences",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/number-of-effective-subsequences/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d"
+    ],
+    "acceptance": 30.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-score-after-binary-swaps",
+    "title": "Maximum Score After Binary Swaps",
+    "slug": "maximum-score-after-binary-swaps",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-score-after-binary-swaps/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 34.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-number-of-centered-subarrays",
+    "title": "Number of Centered Subarrays",
+    "slug": "number-of-centered-subarrays",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/number-of-centered-subarrays/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 66.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-total-waviness-of-numbers-in-range-ii",
+    "title": "Total Waviness of Numbers in Range II",
+    "slug": "total-waviness-of-numbers-in-range-ii",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "cyclic-sort",
+      "merge-intervals"
+    ],
+    "acceptance": 24.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-number-of-flips-to-reverse-binary-string",
+    "title": "Minimum Number of Flips to Reverse Binary String",
+    "slug": "minimum-number-of-flips-to-reverse-binary-string",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/minimum-number-of-flips-to-reverse-binary-string/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal",
+      "bit-manipulation"
+    ],
+    "acceptance": 75.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-final-element-after-subarray-deletions",
+    "title": "Final Element After Subarray Deletions",
+    "slug": "final-element-after-subarray-deletions",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/final-element-after-subarray-deletions/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 39.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-partition-score",
+    "title": "Minimum Partition Score",
+    "slug": "minimum-partition-score",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-partition-score/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 33.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-distance-between-three-equal-elements-ii",
+    "title": "Minimum Distance Between Three Equal Elements II",
+    "slug": "minimum-distance-between-three-equal-elements-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 65.2,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-design-ride-sharing-system",
+    "title": "Design Ride Sharing System",
+    "slug": "design-ride-sharing-system",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/design-ride-sharing-system/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 63.2,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-moves-to-equal-array-elements-iii",
+    "title": "Minimum Moves to Equal Array Elements III",
+    "slug": "minimum-moves-to-equal-array-elements-iii",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/minimum-moves-to-equal-array-elements-iii/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 81.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-distance-between-three-equal-elements-i",
+    "title": "Minimum Distance Between Three Equal Elements I",
+    "slug": "minimum-distance-between-three-equal-elements-i",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/minimum-distance-between-three-equal-elements-i/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 60.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximize-expression-of-three-elements",
+    "title": "Maximize Expression of Three Elements",
+    "slug": "maximize-expression-of-three-elements",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/maximize-expression-of-three-elements/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 72.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-stable-subarrays",
+    "title": "Count Stable Subarrays",
+    "slug": "count-stable-subarrays",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/count-stable-subarrays/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 32.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-find-missing-elements",
+    "title": "Find Missing Elements",
+    "slug": "find-missing-elements",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/find-missing-elements/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 82.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-find-churn-risk-customers",
+    "title": "Find Churn Risk Customers",
+    "slug": "find-churn-risk-customers",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/find-churn-risk-customers/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 47.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-product-of-three-elements-after-one-replacement",
+    "title": "Maximum Product of Three Elements After One Replacement",
+    "slug": "maximum-product-of-three-elements-after-one-replacement",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-product-of-three-elements-after-one-replacement/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 47,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-complete-prime-number",
+    "title": "Complete Prime Number",
+    "slug": "complete-prime-number",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/complete-prime-number/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 37.2,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-operations-to-make-binary-palindrome",
+    "title": "Minimum Operations to Make Binary Palindrome",
+    "slug": "minimum-operations-to-make-binary-palindrome",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-operations-to-make-binary-palindrome/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 51.6,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-longest-non-decreasing-subarray-after-replacing-at-most-one-element",
+    "title": "Longest Non-Decreasing Subarray After Replacing at Most One Element",
+    "slug": "longest-non-decreasing-subarray-after-replacing-at-most-one-element",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-non-decreasing-subarray-after-replacing-at-most-one-element/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 21.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-number-of-balanced-integers-in-a-range",
+    "title": "Number of Balanced Integers in a Range",
+    "slug": "number-of-balanced-integers-in-a-range",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/number-of-balanced-integers-in-a-range/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "cyclic-sort",
+      "merge-intervals"
+    ],
+    "acceptance": 34.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-find-golden-hour-customers",
+    "title": "Find Golden Hour Customers",
+    "slug": "find-golden-hour-customers",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/find-golden-hour-customers/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 35.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-string-length-after-balanced-removals",
+    "title": "Minimum String Length After Balanced Removals",
+    "slug": "minimum-string-length-after-balanced-removals",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-string-length-after-balanced-removals/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 78.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximize-points-after-choosing-k-tasks",
+    "title": "Maximize Points After Choosing K Tasks",
+    "slug": "maximize-points-after-choosing-k-tasks",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximize-points-after-choosing-k-tasks/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 59.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-substrings-with-distinct-start",
+    "title": "Maximum Substrings With Distinct Start",
+    "slug": "maximum-substrings-with-distinct-start",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-substrings-with-distinct-start/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 91.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-lexicographically-smallest-string-after-deleting-duplicate-characters",
+    "title": "Lexicographically Smallest String After Deleting Duplicate Characters",
+    "slug": "lexicographically-smallest-string-after-deleting-duplicate-characters",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/lexicographically-smallest-string-after-deleting-duplicate-characters/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "cyclic-sort",
+      "graph-dfs",
+      "graph-bfs",
+      "backtracking",
+      "top-k-elements"
+    ],
+    "acceptance": 18.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-largest-prime-from-consecutive-prime-sum",
+    "title": "Largest Prime from Consecutive Prime Sum",
+    "slug": "largest-prime-from-consecutive-prime-sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/largest-prime-from-consecutive-prime-sum/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window",
+      "top-k-elements"
+    ],
+    "acceptance": 38.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximize-sum-of-squares-of-digits",
+    "title": "Maximize Sum of Squares of Digits",
+    "slug": "maximize-sum-of-squares-of-digits",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximize-sum-of-squares-of-digits/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 59,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-stable-subarrays-with-equal-boundary-and-interior-sum",
+    "title": "Stable Subarrays With Equal Boundary and Interior Sum",
+    "slug": "stable-subarrays-with-equal-boundary-and-interior-sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/stable-subarrays-with-equal-boundary-and-interior-sum/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window",
+      "bit-manipulation"
+    ],
+    "acceptance": 25.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-smallest-missing-multiple-of-k",
+    "title": "Smallest Missing Multiple of K",
+    "slug": "smallest-missing-multiple-of-k",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/smallest-missing-multiple-of-k/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking",
+      "top-k-elements"
+    ],
+    "acceptance": 63.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-capacity-within-budget",
+    "title": "Maximum Capacity Within Budget",
+    "slug": "maximum-capacity-within-budget",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-capacity-within-budget/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 19.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-alternating-sum-of-squares",
+    "title": "Maximum Alternating Sum of Squares",
+    "slug": "maximum-alternating-sum-of-squares",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-alternating-sum-of-squares/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 61,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-lexicographically-smallest-negated-permutation-that-sums-to-target",
+    "title": "Lexicographically Smallest Negated Permutation that Sums to Target",
+    "slug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs",
+      "graph-bfs",
+      "backtracking",
+      "top-k-elements"
+    ],
+    "acceptance": 30.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-subarrays-with-majority-element-ii",
+    "title": "Count Subarrays With Majority Element II",
+    "slug": "count-subarrays-with-majority-element-ii",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/count-subarrays-with-majority-element-ii/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window",
+      "bit-manipulation"
+    ],
+    "acceptance": 44.2,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-subarrays-with-majority-element-i",
+    "title": "Count Subarrays With Majority Element I",
+    "slug": "count-subarrays-with-majority-element-i",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/count-subarrays-with-majority-element-i/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window",
+      "bit-manipulation"
+    ],
+    "acceptance": 65,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-lexicographically-smallest-string-after-reverse",
+    "title": "Lexicographically Smallest String After Reverse",
+    "slug": "lexicographically-smallest-string-after-reverse",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal",
+      "graph-dfs",
+      "graph-bfs",
+      "backtracking",
+      "top-k-elements"
+    ],
+    "acceptance": 54.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-total-sum-of-interaction-cost-in-tree-groups",
+    "title": "Total Sum of Interaction Cost in Tree Groups",
+    "slug": "total-sum-of-interaction-cost-in-tree-groups",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/total-sum-of-interaction-cost-in-tree-groups/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs"
+    ],
+    "acceptance": 53.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-word-squares-ii",
+    "title": "Word Squares II",
+    "slug": "word-squares-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/word-squares-ii/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 54.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-ways-to-choose-coprime-integers-from-rows",
+    "title": "Count Ways to Choose Coprime Integers from Rows",
+    "slug": "count-ways-to-choose-coprime-integers-from-rows",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/count-ways-to-choose-coprime-integers-from-rows/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 48.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-sum-of-elements-with-frequency-divisible-by-k",
+    "title": "Sum of Elements With Frequency Divisible by K",
+    "slug": "sum-of-elements-with-frequency-divisible-by-k",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/sum-of-elements-with-frequency-divisible-by-k/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 77.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-design-auction-system",
+    "title": "Design Auction System",
+    "slug": "design-auction-system",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/design-auction-system/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 41.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-deletions-to-make-alternating-substring",
+    "title": "Minimum Deletions to Make Alternating Substring",
+    "slug": "minimum-deletions-to-make-alternating-substring",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-deletions-to-make-alternating-substring/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 44.6,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-distinct-subarrays-divisible-by-k-in-sorted-array",
+    "title": "Count Distinct Subarrays Divisible by K in Sorted Array",
+    "slug": "count-distinct-subarrays-divisible-by-k-in-sorted-array",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/count-distinct-subarrays-divisible-by-k-in-sorted-array/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window",
+      "binary-search",
+      "bit-manipulation"
+    ],
+    "acceptance": 27.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-house-robber-v",
+    "title": "House Robber V",
+    "slug": "house-robber-v",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/house-robber-v/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 52.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-swaps-to-avoid-forbidden-values",
+    "title": "Minimum Swaps to Avoid Forbidden Values",
+    "slug": "minimum-swaps-to-avoid-forbidden-values",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-swaps-to-avoid-forbidden-values/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 30.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-design-exam-scores-tracker",
+    "title": "Design Exam Scores Tracker",
+    "slug": "design-exam-scores-tracker",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/design-exam-scores-tracker/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 43.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-compute-alternating-sum",
+    "title": "Compute Alternating Sum",
+    "slug": "compute-alternating-sum",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/compute-alternating-sum/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 89.6,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-total-waviness-of-numbers-in-range-i",
+    "title": "Total Waviness of Numbers in Range I",
+    "slug": "total-waviness-of-numbers-in-range-i",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "cyclic-sort",
+      "merge-intervals"
+    ],
+    "acceptance": 80.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-longest-balanced-substring-ii",
+    "title": "Longest Balanced Substring II",
+    "slug": "longest-balanced-substring-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-balanced-substring-ii/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 42.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-longest-balanced-substring-i",
+    "title": "Longest Balanced Substring I",
+    "slug": "longest-balanced-substring-i",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-balanced-substring-i/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 69.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-distinct-integers-after-removing-zeros",
+    "title": "Count Distinct Integers After Removing Zeros",
+    "slug": "count-distinct-integers-after-removing-zeros",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/count-distinct-integers-after-removing-zeros/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 22.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-majority-frequency-characters",
+    "title": "Majority Frequency Characters",
+    "slug": "majority-frequency-characters",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/majority-frequency-characters/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 67.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-equal-score-substrings",
+    "title": "Equal Score Substrings",
+    "slug": "equal-score-substrings",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/equal-score-substrings/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window",
+      "bit-manipulation"
+    ],
+    "acceptance": 56.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-remove-zeros-in-decimal-representation",
+    "title": "Remove Zeros in Decimal Representation",
+    "slug": "remove-zeros-in-decimal-representation",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/remove-zeros-in-decimal-representation/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 76.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-no-zero-pairs-that-sum-to-n",
+    "title": "Count No-Zero Pairs That Sum to N",
+    "slug": "count-no-zero-pairs-that-sum-to-n",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 14.2,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-time-to-complete-all-deliveries",
+    "title": "Minimum Time to Complete All Deliveries",
+    "slug": "minimum-time-to-complete-all-deliveries",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-time-to-complete-all-deliveries/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ],
+    "acceptance": 34.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-longest-balanced-subarray-ii",
+    "title": "Longest Balanced Subarray II",
+    "slug": "longest-balanced-subarray-ii",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/longest-balanced-subarray-ii/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 33.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-longest-balanced-subarray-i",
+    "title": "Longest Balanced Subarray I",
+    "slug": "longest-balanced-subarray-i",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-balanced-subarray-i/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 65.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-find-zombie-sessions",
+    "title": "Find Zombie Sessions",
+    "slug": "find-zombie-sessions",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/find-zombie-sessions/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 48.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-operations-to-transform-array",
+    "title": "Minimum Operations to Transform Array",
+    "slug": "minimum-operations-to-transform-array",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-operations-to-transform-array/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 39.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-climbing-stairs-ii",
+    "title": "Climbing Stairs II",
+    "slug": "climbing-stairs-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/climbing-stairs-ii/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ],
+    "acceptance": 64,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-compute-decimal-representation",
+    "title": "Compute Decimal Representation",
+    "slug": "compute-decimal-representation",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/compute-decimal-representation/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 64.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-lexicographically-smallest-palindromic-permutation-greater-than-target",
+    "title": "Lexicographically Smallest Palindromic Permutation Greater Than Target",
+    "slug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs",
+      "graph-bfs",
+      "backtracking",
+      "top-k-elements"
+    ],
+    "acceptance": 24.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-partition-factor",
+    "title": "Maximum Partition Factor",
+    "slug": "maximum-partition-factor",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/maximum-partition-factor/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 31,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-longest-subsequence-with-non-zero-bitwise-xor",
+    "title": "Longest Subsequence With Non-Zero Bitwise XOR",
+    "slug": "longest-subsequence-with-non-zero-bitwise-xor",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d",
+      "bit-manipulation"
+    ],
+    "acceptance": 37.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-longest-strictly-increasing-subsequence-with-non-zero-bitwise-and",
+    "title": "Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND",
+    "slug": "longest-strictly-increasing-subsequence-with-non-zero-bitwise-and",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-strictly-increasing-subsequence-with-non-zero-bitwise-and/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d",
+      "bit-manipulation"
+    ],
+    "acceptance": 50.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximize-cyclic-partition-score",
+    "title": "Maximize Cyclic Partition Score",
+    "slug": "maximize-cyclic-partition-score",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/maximize-cyclic-partition-score/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "cyclic-sort",
+      "bit-manipulation"
+    ],
+    "acceptance": 12.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-number-of-stable-subsequences",
+    "title": "Number of Stable Subsequences",
+    "slug": "number-of-stable-subsequences",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/number-of-stable-subsequences/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d"
+    ],
+    "acceptance": 60.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-find-loyal-customers",
+    "title": "Find Loyal Customers",
+    "slug": "find-loyal-customers",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/find-loyal-customers/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 61.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-binary-palindromic-numbers",
+    "title": "Count Binary Palindromic Numbers",
+    "slug": "count-binary-palindromic-numbers",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/count-binary-palindromic-numbers/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 33.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-operations-to-equalize-subarrays",
+    "title": "Minimum Operations to Equalize Subarrays",
+    "slug": "minimum-operations-to-equalize-subarrays",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-operations-to-equalize-subarrays/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 19.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-distinct-points-reachable-after-substring-removal",
+    "title": "Distinct Points Reachable After Substring Removal",
+    "slug": "distinct-points-reachable-after-substring-removal",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 53.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-lexicographically-smallest-permutation-greater-than-target",
+    "title": "Lexicographically Smallest Permutation Greater Than Target",
+    "slug": "lexicographically-smallest-permutation-greater-than-target",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs",
+      "graph-bfs",
+      "backtracking",
+      "top-k-elements"
+    ],
+    "acceptance": 26.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-remove-k-balanced-substrings",
+    "title": "Remove K-Balanced Substrings",
+    "slug": "remove-k-balanced-substrings",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/remove-k-balanced-substrings/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 32.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-moves-to-balance-circular-array",
+    "title": "Minimum Moves to Balance Circular Array",
+    "slug": "minimum-moves-to-balance-circular-array",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-moves-to-balance-circular-array/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 40.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-split-array-with-minimum-difference",
+    "title": "Split Array With Minimum Difference",
+    "slug": "split-array-with-minimum-difference",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/split-array-with-minimum-difference/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 33.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-earliest-time-to-finish-one-task",
+    "title": "Earliest Time to Finish One Task",
+    "slug": "earliest-time-to-finish-one-task",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/earliest-time-to-finish-one-task/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 84.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-smallest-absent-positive-greater-than-average",
+    "title": "Smallest Absent Positive Greater Than Average",
+    "slug": "smallest-absent-positive-greater-than-average",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/smallest-absent-positive-greater-than-average/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking",
+      "top-k-elements"
+    ],
+    "acceptance": 34.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximize-alternating-sum-using-swaps",
+    "title": "Maximize Alternating Sum Using Swaps",
+    "slug": "maximize-alternating-sum-using-swaps",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/maximize-alternating-sum-using-swaps/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 64,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-bitwise-or-of-even-numbers-in-an-array",
+    "title": "Bitwise OR of Even Numbers in an Array",
+    "slug": "bitwise-or-of-even-numbers-in-an-array",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 84.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-restore-finishing-order",
+    "title": "Restore Finishing Order",
+    "slug": "restore-finishing-order",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/restore-finishing-order/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "topological-sort",
+      "bit-manipulation"
+    ],
+    "acceptance": 91,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-total-subarray-value-ii",
+    "title": "Maximum Total Subarray Value II",
+    "slug": "maximum-total-subarray-value-ii",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/maximum-total-subarray-value-ii/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 21.9,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-total-subarray-value-i",
+    "title": "Maximum Total Subarray Value I",
+    "slug": "maximum-total-subarray-value-i",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-total-subarray-value-i/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 64.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-longest-fibonacci-subarray",
+    "title": "Longest Fibonacci Subarray",
+    "slug": "longest-fibonacci-subarray",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-fibonacci-subarray/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window",
+      "dynamic-programming-1d"
+    ],
+    "acceptance": 69.4,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-count-bowl-subarrays",
+    "title": "Count Bowl Subarrays",
+    "slug": "count-bowl-subarrays",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/count-bowl-subarrays/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ],
+    "acceptance": 47.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-operations-to-transform-string",
+    "title": "Minimum Operations to Transform String",
+    "slug": "minimum-operations-to-transform-string",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/minimum-operations-to-transform-string/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 61.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-operations-to-equalize-array",
+    "title": "Minimum Operations to Equalize Array",
+    "slug": "minimum-operations-to-equalize-array",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/minimum-operations-to-equalize-array/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 60,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximize-sum-of-at-most-k-distinct-elements",
+    "title": "Maximize Sum of At Most K Distinct Elements",
+    "slug": "maximize-sum-of-at-most-k-distinct-elements",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 76.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-find-books-with-polarized-opinions",
+    "title": "Find Books with Polarized Opinions",
+    "slug": "find-books-with-polarized-opinions",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/find-books-with-polarized-opinions/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 41.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-gcd-of-odd-and-even-sums",
+    "title": "GCD of Odd and Even Sums",
+    "slug": "gcd-of-odd-and-even-sums",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/gcd-of-odd-and-even-sums/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 84.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-find-the-least-frequent-digit",
+    "title": "Find The Least Frequent Digit",
+    "slug": "find-the-least-frequent-digit",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/find-the-least-frequent-digit/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ],
+    "acceptance": 69.7,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-generate-schedule",
+    "title": "Generate Schedule",
+    "slug": "generate-schedule",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/generate-schedule/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ],
+    "acceptance": 23.8,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-xor-of-subsequences",
+    "title": "Maximum XOR of Subsequences",
+    "slug": "maximum-xor-of-subsequences",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/maximum-xor-of-subsequences/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d",
+      "bit-manipulation"
+    ],
+    "acceptance": 51.2,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-sum-of-beautiful-subsequences",
+    "title": "Sum of Beautiful Subsequences",
+    "slug": "sum-of-beautiful-subsequences",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/sum-of-beautiful-subsequences/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d"
+    ],
+    "acceptance": 31.1,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-maximum-path-score-in-a-grid",
+    "title": "Maximum Path Score in a Grid",
+    "slug": "maximum-path-score-in-a-grid",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-path-score-in-a-grid/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs",
+      "dynamic-programming-2d",
+      "bit-manipulation"
+    ],
+    "acceptance": 36.5,
+    "frequency": 0
+  },
+  {
+    "id": "p-leetcode-top-150-minimum-operations-to-equalize-binary-string",
+    "title": "Minimum Operations to Equalize Binary String",
+    "slug": "minimum-operations-to-equalize-binary-string",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/",
+    "sourceSheets": [
+      "leetcode-top-150"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ],
+    "acceptance": 20.3,
+    "frequency": 0
+  },
+  {
+    "id": "p-grind75-two-sum",
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/two-sum/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-grind75-valid-parentheses",
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/valid-parentheses/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-grind75-merge-two-sorted-lists",
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-grind75-best-time-to-buy-and-sell-stock",
+    "title": "Best Time to Buy and Sell Stock",
+    "slug": "best-time-to-buy-and-sell-stock",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-grind75-valid-palindrome",
+    "title": "Valid Palindrome",
+    "slug": "valid-palindrome",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/valid-palindrome/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-grind75-invert-binary-tree",
+    "title": "Invert Binary Tree",
+    "slug": "invert-binary-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/invert-binary-tree/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-grind75-valid-anagram",
+    "title": "Valid Anagram",
+    "slug": "valid-anagram",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/valid-anagram/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-grind75-binary-search",
+    "title": "Binary Search",
+    "slug": "binary-search",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/binary-search/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-grind75-flood-fill",
+    "title": "Flood Fill",
+    "slug": "flood-fill",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/flood-fill/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-grind75-lowest-common-ancestor-of-a-binary-search-tree",
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "binary-search"
+    ]
+  },
+  {
+    "id": "p-grind75-balanced-binary-tree",
+    "title": "Balanced Binary Tree",
+    "slug": "balanced-binary-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/balanced-binary-tree/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-grind75-linked-list-cycle",
+    "title": "Linked List Cycle",
+    "slug": "linked-list-cycle",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/linked-list-cycle/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-grind75-implement-queue-using-stacks",
+    "title": "Implement Queue using Stacks",
+    "slug": "implement-queue-using-stacks",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/implement-queue-using-stacks/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-bfs",
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-grind75-first-bad-version",
+    "title": "First Bad Version",
+    "slug": "first-bad-version",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/first-bad-version/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-grind75-ransom-note",
+    "title": "Ransom Note",
+    "slug": "ransom-note",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/ransom-note/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-grind75-climbing-stairs",
+    "title": "Climbing Stairs",
+    "slug": "climbing-stairs",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/climbing-stairs/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-grind75-longest-palindrome",
+    "title": "Longest Palindrome",
+    "slug": "longest-palindrome",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/longest-palindrome/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-grind75-reverse-linked-list",
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/reverse-linked-list/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal"
+    ]
+  },
+  {
+    "id": "p-grind75-majority-element",
+    "title": "Majority Element",
+    "slug": "majority-element",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/majority-element/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-grind75-add-binary",
+    "title": "Add Binary",
+    "slug": "add-binary",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/add-binary/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-grind75-diameter-of-binary-tree",
+    "title": "Diameter of Binary Tree",
+    "slug": "diameter-of-binary-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/diameter-of-binary-tree/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-grind75-middle-of-the-linked-list",
+    "title": "Middle of the Linked List",
+    "slug": "middle-of-the-linked-list",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/middle-of-the-linked-list/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-grind75-maximum-depth-of-binary-tree",
+    "title": "Maximum Depth of Binary Tree",
+    "slug": "maximum-depth-of-binary-tree",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-grind75-contains-duplicate",
+    "title": "Contains Duplicate",
+    "slug": "contains-duplicate",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/contains-duplicate/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-grind75-insert-interval",
+    "title": "Insert Interval",
+    "slug": "insert-interval",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/insert-interval/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-grind75-01-matrix",
+    "title": "01 Matrix",
+    "slug": "01-matrix",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/01-matrix/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d"
+    ]
+  },
+  {
+    "id": "p-grind75-k-closest-points-to-origin",
+    "title": "K Closest Points to Origin",
+    "slug": "k-closest-points-to-origin",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/k-closest-points-to-origin/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "top-k-elements",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-grind75-longest-substring-without-repeating-characters",
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-grind75-3sum",
+    "title": "3Sum",
+    "slug": "3sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/3sum/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-grind75-binary-tree-level-order-traversal",
+    "title": "Binary Tree Level Order Traversal",
+    "slug": "binary-tree-level-order-traversal",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-bfs"
+    ]
+  },
+  {
+    "id": "p-grind75-clone-graph",
+    "title": "Clone Graph",
+    "slug": "clone-graph",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/clone-graph/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs"
+    ]
+  },
+  {
+    "id": "p-grind75-evaluate-reverse-polish-notation",
+    "title": "Evaluate Reverse Polish Notation",
+    "slug": "evaluate-reverse-polish-notation",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-grind75-course-schedule",
+    "title": "Course Schedule",
+    "slug": "course-schedule",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/course-schedule/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "topological-sort"
+    ]
+  },
+  {
+    "id": "p-grind75-implement-trie-prefix-tree",
+    "title": "Implement Trie (Prefix Tree)",
+    "slug": "implement-trie-prefix-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-grind75-coin-change",
+    "title": "Coin Change",
+    "slug": "coin-change",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/coin-change/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-grind75-product-of-array-except-self",
+    "title": "Product of Array Except Self",
+    "slug": "product-of-array-except-self",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/product-of-array-except-self/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-grind75-min-stack",
+    "title": "Min Stack",
+    "slug": "min-stack",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/min-stack/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "monotonic-stack"
+    ]
+  },
+  {
+    "id": "p-grind75-validate-binary-search-tree",
+    "title": "Validate Binary Search Tree",
+    "slug": "validate-binary-search-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/validate-binary-search-tree/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs"
+    ]
+  },
+  {
+    "id": "p-grind75-number-of-islands",
+    "title": "Number of Islands",
+    "slug": "number-of-islands",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/number-of-islands/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "graph-dfs"
+    ]
+  },
+  {
+    "id": "p-grind75-rotting-oranges",
+    "title": "Rotting Oranges",
+    "slug": "rotting-oranges",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/rotting-oranges/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "cyclic-sort",
+      "merge-intervals",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-grind75-search-in-rotated-sorted-array",
+    "title": "Search in Rotated Sorted Array",
+    "slug": "search-in-rotated-sorted-array",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search"
+    ]
+  },
+  {
+    "id": "p-grind75-combination-sum",
+    "title": "Combination Sum",
+    "slug": "combination-sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/combination-sum/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-grind75-permutations",
+    "title": "Permutations",
+    "slug": "permutations",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/permutations/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "backtracking"
+    ]
+  },
+  {
+    "id": "p-grind75-merge-intervals",
+    "title": "Merge Intervals",
+    "slug": "merge-intervals",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/merge-intervals/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-grind75-lowest-common-ancestor-of-a-binary-tree",
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-tree",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-dfs",
+      "tree-bfs",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-grind75-time-based-key-value-store",
+    "title": "Time Based Key-Value Store",
+    "slug": "time-based-key-value-store",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/time-based-key-value-store/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-grind75-accounts-merge",
+    "title": "Accounts Merge",
+    "slug": "accounts-merge",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/accounts-merge/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-grind75-sort-colors",
+    "title": "Sort Colors",
+    "slug": "sort-colors",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/sort-colors/",
+    "sourceSheets": [
+      "grind75"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-two-sum",
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/two-sum/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-sort-colors",
+    "title": "Sort Colors",
+    "slug": "sort-colors",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/sort-colors/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-majority-element",
+    "title": "Majority Element",
+    "slug": "majority-element",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/majority-element/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-maximum-subarray",
+    "title": "Maximum Subarray",
+    "slug": "maximum-subarray",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/maximum-subarray/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-1d"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-kadanes-algorithm",
+    "title": "Kadanes Algorithm",
+    "slug": "kadanes-algorithm",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/kadanes-algorithm/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-merge-intervals",
+    "title": "Merge Intervals",
+    "slug": "merge-intervals",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/merge-intervals/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "merge-intervals"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-merge-sorted-array",
+    "title": "Merge Sorted Array",
+    "slug": "merge-sorted-array",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/merge-sorted-array/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search",
+      "merge-intervals",
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-find-the-duplicate-number",
+    "title": "Find the Duplicate Number",
+    "slug": "find-the-duplicate-number",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/find-the-duplicate-number/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers",
+      "cyclic-sort"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-missing-number",
+    "title": "Missing Number",
+    "slug": "missing-number",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/missing-number/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation",
+      "cyclic-sort"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-search-a-2d-matrix",
+    "title": "Search a 2D Matrix",
+    "slug": "search-a-2d-matrix",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/search-a-2d-matrix/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "binary-search",
+      "dynamic-programming-2d"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-powx-n",
+    "title": "Pow(x, n)",
+    "slug": "powx-n",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/powx-n/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-majority-element-ii",
+    "title": "Majority Element II",
+    "slug": "majority-element-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/majority-element-ii/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-unique-paths",
+    "title": "Unique Paths",
+    "slug": "unique-paths",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/unique-paths/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "dynamic-programming-2d"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-reverse-pairs",
+    "title": "Reverse Pairs",
+    "slug": "reverse-pairs",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/reverse-pairs/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-4sum",
+    "title": "4Sum",
+    "slug": "4sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/4sum/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-longest-consecutive-sequence",
+    "title": "Longest Consecutive Sequence",
+    "slug": "longest-consecutive-sequence",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/longest-consecutive-sequence/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-largest-subarray-with-zero-sum",
+    "title": "Largest Subarray With Zero Sum",
+    "slug": "largest-subarray-with-zero-sum",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/largest-subarray-with-zero-sum/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "sliding-window",
+      "top-k-elements"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-count-inversions",
+    "title": "Count Inversions",
+    "slug": "count-inversions",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/count-inversions/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-reverse-linked-list",
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/reverse-linked-list/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-middle-of-the-linked-list",
+    "title": "Middle of the Linked List",
+    "slug": "middle-of-the-linked-list",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/middle-of-the-linked-list/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-merge-two-sorted-lists",
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "two-pointers"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-remove-nth-node-from-end-of-list",
+    "title": "Remove Nth Node From End of List",
+    "slug": "remove-nth-node-from-end-of-list",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-add-two-numbers",
+    "title": "Add Two Numbers",
+    "slug": "add-two-numbers",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/add-two-numbers/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-delete-node-in-a-linked-list",
+    "title": "Delete Node in a Linked List",
+    "slug": "delete-node-in-a-linked-list",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-linked-list-cycle",
+    "title": "Linked List Cycle",
+    "slug": "linked-list-cycle",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/linked-list-cycle/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "fast-slow-pointers"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-palindrome-linked-list",
+    "title": "Palindrome Linked List",
+    "slug": "palindrome-linked-list",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/palindrome-linked-list/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-linked-list-cycle-ii",
+    "title": "Linked List Cycle II",
+    "slug": "linked-list-cycle-ii",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/linked-list-cycle-ii/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-intersection-of-two-linked-lists",
+    "title": "Intersection of Two Linked Lists",
+    "slug": "intersection-of-two-linked-lists",
+    "difficulty": "Easy",
+    "link": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-reverse-nodes-in-k-group",
+    "title": "Reverse Nodes in k-Group",
+    "slug": "reverse-nodes-in-k-group",
+    "difficulty": "Hard",
+    "link": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "linked-list-reversal"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-rotate-list",
+    "title": "Rotate List",
+    "slug": "rotate-list",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/rotate-list/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "array-hashing"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-flatten-a-multilevel-doubly-linked-list",
+    "title": "Flatten a Multilevel Doubly Linked List",
+    "slug": "flatten-a-multilevel-doubly-linked-list",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "tree-bfs",
+      "graph-bfs"
+    ]
+  },
+  {
+    "id": "p-striver-a2z-copy-list-with-random-pointer",
+    "title": "Copy List with Random Pointer",
+    "slug": "copy-list-with-random-pointer",
+    "difficulty": "Medium",
+    "link": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+    "sourceSheets": [
+      "striver-a2z"
+    ],
+    "tags": [],
+    "patterns": [
+      "bit-manipulation"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "lastUpdate": "2026-02-15T14:47:19.991Z",
+  "sheets": {
+    "neetcode150": {
+      "sheet": "neetcode150",
+      "lastFetched": "2026-02-15T14:47:19.990Z",
+      "problemCount": 150,
+      "success": true
+    },
+    "blind75": {
+      "sheet": "blind75",
+      "lastFetched": "2026-02-15T14:47:19.990Z",
+      "problemCount": 76,
+      "success": true
+    },
+    "leetcode-top-150": {
+      "sheet": "leetcode-top-150",
+      "lastFetched": "2026-02-15T14:47:19.991Z",
+      "problemCount": 150,
+      "success": true
+    },
+    "grind75": {
+      "sheet": "grind75",
+      "lastFetched": "2026-02-15T14:47:19.991Z",
+      "problemCount": 48,
+      "success": true
+    },
+    "striver-a2z": {
+      "sheet": "striver-a2z",
+      "lastFetched": "2026-02-15T14:47:19.991Z",
+      "problemCount": 32,
+      "success": true
+    }
+  }
+}

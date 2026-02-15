@@ -1,0 +1,17 @@
+Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
+Meeting Rooms,Easy,neetcode150; blind75,https://leetcode.com/problems/meeting-rooms/,N/A
+Merge Sorted Array,Easy,striver-a2z,https://leetcode.com/problems/merge-sorted-array/,N/A
+Accounts Merge,Medium,grind75,https://leetcode.com/problems/accounts-merge/,N/A
+Insert Interval,Medium,neetcode150; blind75; grind75,https://leetcode.com/problems/insert-interval/,N/A
+Meeting Rooms II,Medium,neetcode150; blind75,https://leetcode.com/problems/meeting-rooms-ii/,N/A
+Merge Adjacent Equal Elements,Medium,leetcode-top-150,https://leetcode.com/problems/merge-adjacent-equal-elements/,41.6%
+Merge Intervals,Medium,neetcode150; blind75; grind75; striver-a2z,https://leetcode.com/problems/merge-intervals/,N/A
+Merge Triplets to Form Target Triplet,Medium,neetcode150,https://leetcode.com/problems/merge-triplets-to-form-target-triplet/,N/A
+Non-overlapping Intervals,Medium,neetcode150; blind75,https://leetcode.com/problems/non-overlapping-intervals/,N/A
+Rotting Oranges,Medium,neetcode150; grind75,https://leetcode.com/problems/rotting-oranges/,N/A
+Total Waviness of Numbers in Range I,Medium,leetcode-top-150,https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/,80.4%
+Maximum Subarray XOR with Bounded Range,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/,25.5%
+Minimum Cost to Merge Sorted Lists,Hard,leetcode-top-150,https://leetcode.com/problems/minimum-cost-to-merge-sorted-lists/,33.6%
+Minimum Interval to Include Each Query,Hard,neetcode150,https://leetcode.com/problems/minimum-interval-to-include-each-query/,N/A
+Number of Balanced Integers in a Range,Hard,leetcode-top-150,https://leetcode.com/problems/number-of-balanced-integers-in-a-range/,34.7%
+Total Waviness of Numbers in Range II,Hard,leetcode-top-150,https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/,24.9%

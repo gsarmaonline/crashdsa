@@ -1,0 +1,10 @@
+Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
+Missing Number,Easy,neetcode150; blind75; striver-a2z,https://leetcode.com/problems/missing-number/,N/A
+Find the Duplicate Number,Medium,neetcode150; striver-a2z,https://leetcode.com/problems/find-the-duplicate-number/,N/A
+Rotting Oranges,Medium,neetcode150; grind75,https://leetcode.com/problems/rotting-oranges/,N/A
+Total Waviness of Numbers in Range I,Medium,leetcode-top-150,https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/,80.4%
+Lexicographically Smallest String After Deleting Duplicate Characters,Hard,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-string-after-deleting-duplicate-characters/,18.9%
+Maximize Cyclic Partition Score,Hard,leetcode-top-150,https://leetcode.com/problems/maximize-cyclic-partition-score/,12.1%
+Maximum Subarray XOR with Bounded Range,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/,25.5%
+Number of Balanced Integers in a Range,Hard,leetcode-top-150,https://leetcode.com/problems/number-of-balanced-integers-in-a-range/,34.7%
+Total Waviness of Numbers in Range II,Hard,leetcode-top-150,https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/,24.9%
