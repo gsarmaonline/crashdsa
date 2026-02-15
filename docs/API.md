@@ -6,38 +6,27 @@
 
 ---
 
-## Endpoints
+## UI Routes
 
 ### GET /
 
-Get welcome message
+Homepage with featured problems and statistics.
 
-**Description:** Returns a simple welcome message to verify the API is running.
+### GET /problems
 
-**Response:** `200 OK`
-```
-Content-Type: text/plain
+Problems listing page with client-side filtering by pattern, difficulty, and search. Supports `?pattern=<name>` query param to pre-select a pattern filter.
 
-Hello Hono!
-```
+### GET /patterns
 
-**Example Request:**
-```bash
-curl http://localhost:3000/
-```
-
-**Example Response:**
-```
-Hello Hono!
-```
+Patterns page showing all 20 solution patterns as cards with problem counts and difficulty breakdowns. Each card links to `/problems?pattern=<name>`.
 
 ---
 
+## API Endpoints
+
 ### GET /api/hello
 
-Get hello message
-
-**Description:** Returns a JSON response with a hello message from the Hono API.
+Returns a JSON hello message.
 
 **Response:** `200 OK`
 ```json
@@ -46,15 +35,112 @@ Get hello message
 }
 ```
 
-**Example Request:**
-```bash
-curl http://localhost:3000/api/hello
-```
+---
 
-**Example Response:**
+### GET /api/problems
+
+List all problems, optionally filtered by difficulty.
+
+**Query Parameters:**
+- `difficulty` (string, optional): Filter by `Easy`, `Medium`, or `Hard`
+
+**Response:** `200 OK`
 ```json
 {
-  "message": "Hello from Hono API!"
+  "problems": [
+    {
+      "name": "Two Sum",
+      "difficulty": "Easy",
+      "patterns": ["two-pointers"],
+      "sourceSheets": ["neetcode150", "blind75"],
+      "link": "https://leetcode.com/problems/two-sum/",
+      "acceptanceRate": "51.4%",
+      "tags": ["Array", "Hash Table"]
+    }
+  ],
+  "count": 326
+}
+```
+
+---
+
+### GET /api/problems/pattern/:pattern
+
+Get problems belonging to a specific solution pattern.
+
+**Path Parameters:**
+- `pattern` (string, required): Pattern slug (e.g. `two-pointers`, `sliding-window`, `dynamic-programming-1d`)
+
+**Response:** `200 OK`
+```json
+{
+  "pattern": "two-pointers",
+  "problems": [ ... ],
+  "count": 25
+}
+```
+
+**Error Response:** `404 Not Found`
+```json
+{
+  "error": "Pattern not found"
+}
+```
+
+---
+
+### GET /api/patterns
+
+List all available solution patterns with display names and problem counts.
+
+**Response:** `200 OK`
+```json
+{
+  "patterns": [
+    {
+      "name": "two-pointers",
+      "displayName": "Two Pointers",
+      "count": 25
+    }
+  ],
+  "total": 20
+}
+```
+
+---
+
+### GET /api/stats
+
+Returns aggregate statistics about the problem collection.
+
+**Response:** `200 OK`
+```json
+{
+  "total": 326,
+  "easy": 70,
+  "medium": 180,
+  "hard": 76,
+  "lastUpdated": "2026-02-15T00:00:00.000Z"
+}
+```
+
+---
+
+### POST /api/refresh
+
+Reloads all problem data from CSV files into the in-memory cache.
+
+**Response:** `200 OK`
+```json
+{
+  "message": "Cache refreshed successfully"
+}
+```
+
+**Error Response:** `500 Internal Server Error`
+```json
+{
+  "error": "Failed to refresh cache"
 }
 ```
 
@@ -62,7 +148,7 @@ curl http://localhost:3000/api/hello
 
 ## Error Responses
 
-All endpoints may return the following error responses:
+All endpoints may return:
 
 ### 404 Not Found
 ```json
@@ -93,12 +179,3 @@ bun run start
 ```
 
 The server will be available at `http://localhost:3000`
-
----
-
-## Notes
-
-- This is a minimal Hono API starter
-- All responses use UTF-8 encoding
-- No authentication required for current endpoints
-- No rate limiting configured

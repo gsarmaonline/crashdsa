@@ -4,94 +4,117 @@ This document contains practical cURL examples for all API endpoints.
 
 ---
 
-## General Endpoints
-
-### Get Welcome Message
-
-**Request:**
-```bash
-curl http://localhost:3000/
-```
-
-**Response:**
-```
-Hello Hono!
-```
-
----
-
 ## API Endpoints
 
-### Get Hello Message
+### Hello Message
 
-**Request:**
 ```bash
 curl http://localhost:3000/api/hello
 ```
 
-**Response:**
+Response:
 ```json
 {
   "message": "Hello from Hono API!"
 }
 ```
 
-**With pretty-printed JSON:**
+---
+
+### List All Problems
+
 ```bash
-curl http://localhost:3000/api/hello | jq
+curl http://localhost:3000/api/problems
+```
+
+### Filter Problems by Difficulty
+
+```bash
+curl http://localhost:3000/api/problems?difficulty=Easy
+curl http://localhost:3000/api/problems?difficulty=Medium
+curl http://localhost:3000/api/problems?difficulty=Hard
 ```
 
 ---
 
-## Testing from Different Tools
+### Get Problems by Pattern
 
-### Using HTTPie
 ```bash
-# Install: brew install httpie
-http GET http://localhost:3000/api/hello
+curl http://localhost:3000/api/problems/pattern/two-pointers
+curl http://localhost:3000/api/problems/pattern/sliding-window
+curl http://localhost:3000/api/problems/pattern/dynamic-programming-1d
 ```
-
-### Using wget
-```bash
-wget -qO- http://localhost:3000/api/hello
-```
-
-### Using Bun fetch (programmatic)
-```typescript
-const response = await fetch('http://localhost:3000/api/hello');
-const data = await response.json();
-console.log(data);
-```
-
-### Using browser
-Simply navigate to:
-- http://localhost:3000/
-- http://localhost:3000/api/hello
 
 ---
 
-## Advanced Examples
+### List All Patterns
 
-### Check response headers
 ```bash
-curl -i http://localhost:3000/api/hello
+curl http://localhost:3000/api/patterns
 ```
 
-### Measure response time
-```bash
-curl -w "@-" -o /dev/null -s http://localhost:3000/api/hello <<'EOF'
-    time_namelookup:  %{time_namelookup}s\n
-       time_connect:  %{time_connect}s\n
-    time_appconnect:  %{time_appconnect}s\n
-   time_pretransfer:  %{time_pretransfer}s\n
-      time_redirect:  %{time_redirect}s\n
- time_starttransfer:  %{time_starttransfer}s\n
-                    ----------\n
-         time_total:  %{time_total}s\n
-EOF
+Response:
+```json
+{
+  "patterns": [
+    { "name": "two-pointers", "displayName": "Two Pointers", "count": 25 },
+    { "name": "sliding-window", "displayName": "Sliding Window", "count": 18 }
+  ],
+  "total": 20
+}
 ```
 
-### Save response to file
+---
+
+### Get Statistics
+
 ```bash
-curl http://localhost:3000/api/hello -o response.json
+curl http://localhost:3000/api/stats
+```
+
+Response:
+```json
+{
+  "total": 326,
+  "easy": 70,
+  "medium": 180,
+  "hard": 76,
+  "lastUpdated": "2026-02-15T00:00:00.000Z"
+}
+```
+
+---
+
+### Refresh Cache
+
+```bash
+curl -X POST http://localhost:3000/api/refresh
+```
+
+Response:
+```json
+{
+  "message": "Cache refreshed successfully"
+}
+```
+
+---
+
+## UI Pages
+
+Open in a browser:
+- http://localhost:3000/ — Homepage
+- http://localhost:3000/problems — All problems with filters
+- http://localhost:3000/problems?pattern=two-pointers — Problems pre-filtered by pattern
+- http://localhost:3000/patterns — All solution patterns
+- http://localhost:3000/api-docs — Swagger UI documentation
+
+---
+
+## Pretty-Print JSON
+
+```bash
+curl http://localhost:3000/api/problems | jq
+curl http://localhost:3000/api/patterns | jq
+curl http://localhost:3000/api/stats | jq
 ```
