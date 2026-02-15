@@ -1,4 +1,4 @@
-import { html } from 'hono/html'
+import { html, raw } from 'hono/html'
 import { getProblemsCache } from '../data/csv-loader.js'
 
 export function homePageDynamic() {
@@ -26,6 +26,7 @@ export function homePageDynamic() {
       <div class="nav-links">
         <a href="/">Home</a>
         <a href="/problems">Problems</a>
+        <a href="/patterns">Patterns</a>
         <a href="#features">Features</a>
         <a href="/api-docs" target="_blank">API Docs</a>
       </div>
@@ -111,7 +112,7 @@ export function homePageDynamic() {
         <p class="section-subtitle">Start with these popular problems</p>
 
         <div class="problems-grid">
-          ${featuredProblems.map(problem => `
+          ${raw(featuredProblems.map(problem => `
             <div class="problem-card">
               <div class="problem-header">
                 <h3>${problem.name}</h3>
@@ -127,7 +128,7 @@ export function homePageDynamic() {
                 </a>
               </div>
             </div>
-          `).join('')}
+          `).join(''))}
         </div>
 
         <div style="text-align: center; margin-top: 2rem;">

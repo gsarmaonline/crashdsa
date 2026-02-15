@@ -127,6 +127,7 @@ export const problemsPage = html`
       <div class="nav-links">
         <a href="/">Home</a>
         <a href="/problems">Problems</a>
+        <a href="/patterns">Patterns</a>
         <a href="/api-docs" target="_blank">API Docs</a>
       </div>
     </div>
@@ -296,9 +297,16 @@ export const problemsPage = html`
     document.getElementById('difficulty-filter').addEventListener('change', filterProblems)
     document.getElementById('search-input').addEventListener('input', filterProblems)
 
-    // Initial load
-    loadPatterns()
-    loadProblems()
+    // Initial load - apply URL pattern filter after both data sources are ready
+    const urlParams = new URLSearchParams(window.location.search)
+    const preselectedPattern = urlParams.get('pattern')
+
+    Promise.all([loadPatterns(), loadProblems()]).then(() => {
+      if (preselectedPattern) {
+        document.getElementById('pattern-filter').value = preselectedPattern
+        filterProblems()
+      }
+    })
   </script>
 </body>
 </html>
