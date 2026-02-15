@@ -1,0 +1,13 @@
+{
+  "slug": "non-overlapping-intervals",
+  "functionName": "nonOverlappingIntervals",
+  "params": [
+    {
+      "name": "intervals",
+      "type": "Interval[]"
+    }
+  ],
+  "returnType": "Interval[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

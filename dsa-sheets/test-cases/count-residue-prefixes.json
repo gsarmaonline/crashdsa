@@ -1,0 +1,13 @@
+{
+  "slug": "count-residue-prefixes",
+  "functionName": "countResiduePrefixes",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

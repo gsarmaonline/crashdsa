@@ -1,0 +1,13 @@
+{
+  "slug": "spiral-matrix",
+  "functionName": "spiralMatrix",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

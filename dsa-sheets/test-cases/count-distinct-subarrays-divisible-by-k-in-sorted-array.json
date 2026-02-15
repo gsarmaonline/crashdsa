@@ -1,0 +1,13 @@
+{
+  "slug": "count-distinct-subarrays-divisible-by-k-in-sorted-array",
+  "functionName": "countDistinctSubarraysDivisibleByKInSortedArray",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

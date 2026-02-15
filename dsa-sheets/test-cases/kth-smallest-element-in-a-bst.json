@@ -1,0 +1,13 @@
+{
+  "slug": "kth-smallest-element-in-a-bst",
+  "functionName": "kthSmallestElementInABst",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

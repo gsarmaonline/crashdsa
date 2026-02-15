@@ -1,0 +1,13 @@
+{
+  "slug": "find-emotionally-consistent-users",
+  "functionName": "findEmotionallyConsistentUsers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

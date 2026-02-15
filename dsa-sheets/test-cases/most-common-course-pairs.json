@@ -1,0 +1,17 @@
+{
+  "slug": "most-common-course-pairs",
+  "functionName": "mostCommonCoursePairs",
+  "params": [
+    {
+      "name": "numCourses",
+      "type": "int"
+    },
+    {
+      "name": "prerequisites",
+      "type": "int[][]"
+    }
+  ],
+  "returnType": "boolean",
+  "testCases": [],
+  "_status": "scaffold"
+}

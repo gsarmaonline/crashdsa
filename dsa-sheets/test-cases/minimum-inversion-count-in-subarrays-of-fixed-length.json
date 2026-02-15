@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-inversion-count-in-subarrays-of-fixed-length",
+  "functionName": "minimumInversionCountInSubarraysOfFixedLength",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

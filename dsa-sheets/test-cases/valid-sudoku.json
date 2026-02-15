@@ -1,0 +1,13 @@
+{
+  "slug": "valid-sudoku",
+  "functionName": "validSudoku",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

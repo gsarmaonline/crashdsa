@@ -1,0 +1,17 @@
+{
+  "slug": "minimum-cost-to-merge-sorted-lists",
+  "functionName": "minimumCostToMergeSortedLists",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

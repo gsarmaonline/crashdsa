@@ -1,0 +1,13 @@
+{
+  "slug": "jump-game-ii",
+  "functionName": "jumpGameIi",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

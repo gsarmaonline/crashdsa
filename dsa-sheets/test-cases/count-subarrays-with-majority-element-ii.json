@@ -1,0 +1,13 @@
+{
+  "slug": "count-subarrays-with-majority-element-ii",
+  "functionName": "countSubarraysWithMajorityElementIi",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

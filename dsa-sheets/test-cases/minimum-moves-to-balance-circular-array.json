@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-moves-to-balance-circular-array",
+  "functionName": "minimumMovesToBalanceCircularArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

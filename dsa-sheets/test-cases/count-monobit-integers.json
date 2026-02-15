@@ -1,0 +1,13 @@
+{
+  "slug": "count-monobit-integers",
+  "functionName": "countMonobitIntegers",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

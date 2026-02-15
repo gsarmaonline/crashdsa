@@ -1,0 +1,13 @@
+{
+  "slug": "set-matrix-zeroes",
+  "functionName": "setMatrixZeroes",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

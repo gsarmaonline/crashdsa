@@ -1,0 +1,13 @@
+{
+  "slug": "count-caesar-cipher-pairs",
+  "functionName": "countCaesarCipherPairs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

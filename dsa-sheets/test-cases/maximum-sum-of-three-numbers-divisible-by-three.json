@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-sum-of-three-numbers-divisible-by-three",
+  "functionName": "maximumSumOfThreeNumbersDivisibleByThree",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

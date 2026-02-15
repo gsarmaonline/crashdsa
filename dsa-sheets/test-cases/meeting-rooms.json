@@ -1,0 +1,13 @@
+{
+  "slug": "meeting-rooms",
+  "functionName": "meetingRooms",
+  "params": [
+    {
+      "name": "intervals",
+      "type": "Interval[]"
+    }
+  ],
+  "returnType": "Interval[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

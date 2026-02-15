@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-cost-to-make-two-binary-strings-equal",
+  "functionName": "minimumCostToMakeTwoBinaryStringsEqual",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

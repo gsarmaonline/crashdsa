@@ -1,0 +1,13 @@
+{
+  "slug": "happy-number",
+  "functionName": "happyNumber",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

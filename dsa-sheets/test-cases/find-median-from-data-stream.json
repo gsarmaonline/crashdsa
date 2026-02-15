@@ -1,0 +1,17 @@
+{
+  "slug": "find-median-from-data-stream",
+  "functionName": "findMedianFromDataStream",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "returnType": "int[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

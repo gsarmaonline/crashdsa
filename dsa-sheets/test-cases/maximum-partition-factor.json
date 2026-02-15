@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-partition-factor",
+  "functionName": "maximumPartitionFactor",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "unique-paths",
+  "functionName": "uniquePaths",
+  "params": [
+    { "name": "m", "type": "int" },
+    { "name": "n", "type": "int" }
+  ],
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "m": 3, "n": 7 },
+      "expected": 28,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "m": 3, "n": 2 },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "m": 1, "n": 1 },
+      "expected": 1,
+      "explanation": "Already at destination",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "m": 1, "n": 5 },
+      "expected": 1,
+      "explanation": "Single row, only one path",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "m": 7, "n": 3 },
+      "expected": 28,
+      "explanation": "Same as tc-1 but transposed",
+      "tags": ["basic"]
+    }
+  ]
+}

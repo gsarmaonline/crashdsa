@@ -1,0 +1,13 @@
+{
+  "slug": "swim-in-rising-water",
+  "functionName": "swimInRisingWater",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-operations-to-transform-string",
+  "functionName": "minimumOperationsToTransformString",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

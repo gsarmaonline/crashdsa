@@ -1,0 +1,13 @@
+{
+  "slug": "ransom-note",
+  "functionName": "ransomNote",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

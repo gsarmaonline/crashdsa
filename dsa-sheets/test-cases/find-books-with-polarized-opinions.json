@@ -1,0 +1,13 @@
+{
+  "slug": "find-books-with-polarized-opinions",
+  "functionName": "findBooksWithPolarizedOpinions",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

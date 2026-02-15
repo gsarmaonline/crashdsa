@@ -1,0 +1,13 @@
+{
+  "slug": "toggle-light-bulbs",
+  "functionName": "toggleLightBulbs",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

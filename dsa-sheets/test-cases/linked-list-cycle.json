@@ -1,0 +1,44 @@
+{
+  "slug": "linked-list-cycle",
+  "functionName": "hasCycle",
+  "params": [
+    { "name": "head", "type": "ListNode" }
+  ],
+  "returnType": "boolean",
+  "notes": "For test inputs, 'pos' indicates the index (0-based) the tail connects to. -1 means no cycle. The 'pos' field is used to construct the linked list, not passed as a function argument.",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "head": [3, 2, 0, -4], "pos": 1 },
+      "expected": true,
+      "explanation": "Tail connects back to node at index 1",
+      "tags": ["basic", "cycle"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "head": [1, 2], "pos": 0 },
+      "expected": true,
+      "explanation": "Tail connects back to head",
+      "tags": ["basic", "cycle"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "head": [1], "pos": -1 },
+      "expected": false,
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "head": [], "pos": -1 },
+      "expected": false,
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "head": [1], "pos": 0 },
+      "expected": true,
+      "explanation": "Single node pointing to itself",
+      "tags": ["edge-case", "cycle"]
+    }
+  ]
+}

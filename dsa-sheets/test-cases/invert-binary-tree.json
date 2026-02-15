@@ -1,0 +1,42 @@
+{
+  "slug": "invert-binary-tree",
+  "functionName": "invertTree",
+  "params": [
+    { "name": "root", "type": "TreeNode" }
+  ],
+  "returnType": "TreeNode",
+  "notes": "Trees use LeetCode BFS serialization. null indicates absent children.",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "root": [4, 2, 7, 1, 3, 6, 9] },
+      "expected": [4, 7, 2, 9, 6, 3, 1],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "root": [2, 1, 3] },
+      "expected": [2, 3, 1],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "root": [] },
+      "expected": [],
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "root": [1] },
+      "expected": [1],
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "root": [1, 2, null] },
+      "expected": [1, null, 2],
+      "explanation": "Only left child becomes only right child",
+      "tags": ["edge-case"]
+    }
+  ]
+}

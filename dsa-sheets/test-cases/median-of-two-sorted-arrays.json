@@ -1,0 +1,17 @@
+{
+  "slug": "median-of-two-sorted-arrays",
+  "functionName": "medianOfTwoSortedArrays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

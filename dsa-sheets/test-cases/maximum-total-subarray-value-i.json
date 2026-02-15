@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-total-subarray-value-i",
+  "functionName": "maximumTotalSubarrayValueI",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

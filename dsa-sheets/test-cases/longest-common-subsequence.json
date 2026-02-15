@@ -1,0 +1,45 @@
+{
+  "slug": "longest-common-subsequence",
+  "functionName": "longestCommonSubsequence",
+  "params": [
+    { "name": "text1", "type": "string" },
+    { "name": "text2", "type": "string" }
+  ],
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "text1": "abcde", "text2": "ace" },
+      "expected": 3,
+      "explanation": "LCS is \"ace\"",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "text1": "abc", "text2": "abc" },
+      "expected": 3,
+      "explanation": "Identical strings",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "text1": "abc", "text2": "def" },
+      "expected": 0,
+      "explanation": "No common characters",
+      "tags": ["no-solution"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "text1": "a", "text2": "a" },
+      "expected": 1,
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "text1": "oxcpqrsvwf", "text2": "shmtulqrypy" },
+      "expected": 2,
+      "explanation": "LCS is \"qr\"",
+      "tags": ["basic"]
+    }
+  ]
+}

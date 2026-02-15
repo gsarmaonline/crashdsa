@@ -1,0 +1,13 @@
+{
+  "slug": "accounts-merge",
+  "functionName": "accountsMerge",
+  "params": [
+    {
+      "name": "intervals",
+      "type": "Interval[]"
+    }
+  ],
+  "returnType": "Interval[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

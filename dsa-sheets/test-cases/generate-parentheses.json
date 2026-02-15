@@ -1,0 +1,13 @@
+{
+  "slug": "generate-parentheses",
+  "functionName": "generateParentheses",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "interleaving-string",
+  "functionName": "interleavingString",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

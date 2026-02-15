@@ -1,0 +1,13 @@
+{
+  "slug": "distinct-points-reachable-after-substring-removal",
+  "functionName": "distinctPointsReachableAfterSubstringRemoval",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

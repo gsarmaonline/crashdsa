@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-swaps-to-avoid-forbidden-values",
+  "functionName": "minimumSwapsToAvoidForbiddenValues",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "coin-change-2",
+  "functionName": "coinChange2",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "search-a-2d-matrix",
+  "functionName": "searchA2dMatrix",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

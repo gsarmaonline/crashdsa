@@ -1,0 +1,13 @@
+{
+  "slug": "koko-eating-bananas",
+  "functionName": "kokoEatingBananas",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

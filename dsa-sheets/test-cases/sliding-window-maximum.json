@@ -1,0 +1,13 @@
+{
+  "slug": "sliding-window-maximum",
+  "functionName": "slidingWindowMaximum",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

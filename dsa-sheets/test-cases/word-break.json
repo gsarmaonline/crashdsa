@@ -1,0 +1,13 @@
+{
+  "slug": "word-break",
+  "functionName": "wordBreak",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

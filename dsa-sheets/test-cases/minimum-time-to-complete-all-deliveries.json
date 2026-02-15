@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-time-to-complete-all-deliveries",
+  "functionName": "minimumTimeToCompleteAllDeliveries",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

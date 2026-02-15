@@ -1,0 +1,13 @@
+{
+  "slug": "binary-tree-maximum-path-sum",
+  "functionName": "binaryTreeMaximumPathSum",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

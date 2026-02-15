@@ -1,0 +1,13 @@
+{
+  "slug": "design-twitter",
+  "functionName": "designTwitter",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

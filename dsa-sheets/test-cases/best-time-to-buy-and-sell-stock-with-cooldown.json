@@ -1,0 +1,13 @@
+{
+  "slug": "best-time-to-buy-and-sell-stock-with-cooldown",
+  "functionName": "bestTimeToBuyAndSellStockWithCooldown",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

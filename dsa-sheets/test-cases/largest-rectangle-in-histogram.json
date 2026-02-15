@@ -1,0 +1,17 @@
+{
+  "slug": "largest-rectangle-in-histogram",
+  "functionName": "largestRectangleInHistogram",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "returnType": "int[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

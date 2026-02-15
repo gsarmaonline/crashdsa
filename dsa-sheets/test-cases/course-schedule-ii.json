@@ -1,0 +1,17 @@
+{
+  "slug": "course-schedule-ii",
+  "functionName": "courseScheduleIi",
+  "params": [
+    {
+      "name": "numCourses",
+      "type": "int"
+    },
+    {
+      "name": "prerequisites",
+      "type": "int[][]"
+    }
+  ],
+  "returnType": "boolean",
+  "testCases": [],
+  "_status": "scaffold"
+}

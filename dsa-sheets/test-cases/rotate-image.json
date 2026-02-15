@@ -1,0 +1,13 @@
+{
+  "slug": "rotate-image",
+  "functionName": "rotateImage",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

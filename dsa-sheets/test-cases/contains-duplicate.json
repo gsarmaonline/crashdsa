@@ -1,0 +1,40 @@
+{
+  "slug": "contains-duplicate",
+  "functionName": "containsDuplicate",
+  "params": [
+    { "name": "nums", "type": "int[]" }
+  ],
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3, 1] },
+      "expected": true,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3, 4] },
+      "expected": false,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 1, 1, 3, 3, 4, 3, 2, 4, 2] },
+      "expected": true,
+      "tags": ["duplicates"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [] },
+      "expected": false,
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1] },
+      "expected": false,
+      "tags": ["single-element"]
+    }
+  ]
+}

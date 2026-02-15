@@ -15,7 +15,8 @@
     "dsa-sheets:categorize": "bun run scripts/dsa-sheets/categorize-problems.ts",
     "dsa-sheets:deduplicate": "bun run scripts/dsa-sheets/deduplicate.ts",
     "dsa-sheets:export": "bun run scripts/dsa-sheets/export-csv.ts",
-    "dsa-sheets:update": "bun run scripts/dsa-sheets/update-all.ts"
+    "dsa-sheets:update": "bun run scripts/dsa-sheets/update-all.ts",
+    "dsa-sheets:test-cases:generate": "bun run scripts/dsa-sheets/generate-test-cases.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",

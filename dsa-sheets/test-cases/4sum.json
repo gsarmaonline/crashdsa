@@ -1,0 +1,13 @@
+{
+  "slug": "4sum",
+  "functionName": "4sum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "implement-queue-using-stacks",
+  "functionName": "implementQueueUsingStacks",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

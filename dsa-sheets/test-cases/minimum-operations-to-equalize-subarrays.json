@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-operations-to-equalize-subarrays",
+  "functionName": "minimumOperationsToEqualizeSubarrays",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

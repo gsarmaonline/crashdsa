@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-number-of-flips-to-reverse-binary-string",
+  "functionName": "minimumNumberOfFlipsToReverseBinaryString",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "ListNode",
+  "testCases": [],
+  "_status": "scaffold"
+}

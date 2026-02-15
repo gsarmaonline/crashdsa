@@ -1,0 +1,13 @@
+{
+  "slug": "implement-trie-prefix-tree",
+  "functionName": "implementTriePrefixTree",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "count-inversions",
+  "functionName": "countInversions",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

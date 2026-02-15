@@ -1,0 +1,13 @@
+{
+  "slug": "longest-consecutive-sequence",
+  "functionName": "longestConsecutiveSequence",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

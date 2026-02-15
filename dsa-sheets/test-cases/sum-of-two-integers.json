@@ -1,0 +1,13 @@
+{
+  "slug": "sum-of-two-integers",
+  "functionName": "sumOfTwoIntegers",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

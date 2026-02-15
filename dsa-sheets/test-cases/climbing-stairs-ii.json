@@ -1,0 +1,13 @@
+{
+  "slug": "climbing-stairs-ii",
+  "functionName": "climbingStairsIi",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

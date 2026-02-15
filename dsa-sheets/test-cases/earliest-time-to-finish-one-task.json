@@ -1,0 +1,13 @@
+{
+  "slug": "earliest-time-to-finish-one-task",
+  "functionName": "earliestTimeToFinishOneTask",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

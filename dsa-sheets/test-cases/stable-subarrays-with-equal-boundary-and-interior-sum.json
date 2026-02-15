@@ -1,0 +1,13 @@
+{
+  "slug": "stable-subarrays-with-equal-boundary-and-interior-sum",
+  "functionName": "stableSubarraysWithEqualBoundaryAndInteriorSum",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

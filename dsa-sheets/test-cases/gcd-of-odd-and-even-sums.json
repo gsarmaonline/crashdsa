@@ -1,0 +1,13 @@
+{
+  "slug": "gcd-of-odd-and-even-sums",
+  "functionName": "gcdOfOddAndEvenSums",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "find-users-with-high-token-usage",
+  "functionName": "findUsersWithHighTokenUsage",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "top-k-frequent-elements",
+  "functionName": "topKFrequent",
+  "params": [
+    { "name": "nums", "type": "int[]" },
+    { "name": "k", "type": "int" }
+  ],
+  "returnType": "int[]",
+  "outputOrderMatters": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 1, 1, 2, 2, 3], "k": 2 },
+      "expected": [1, 2],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1], "k": 1 },
+      "expected": [1],
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [4, 1, -1, 2, -1, 2, 3], "k": 2 },
+      "expected": [-1, 2],
+      "tags": ["negative-numbers"]
+    }
+  ]
+}

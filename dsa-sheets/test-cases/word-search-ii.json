@@ -1,0 +1,13 @@
+{
+  "slug": "word-search-ii",
+  "functionName": "wordSearchIi",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

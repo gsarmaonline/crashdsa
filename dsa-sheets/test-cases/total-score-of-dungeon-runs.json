@@ -1,0 +1,13 @@
+{
+  "slug": "total-score-of-dungeon-runs",
+  "functionName": "totalScoreOfDungeonRuns",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

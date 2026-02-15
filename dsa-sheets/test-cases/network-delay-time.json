@@ -1,0 +1,13 @@
+{
+  "slug": "network-delay-time",
+  "functionName": "networkDelayTime",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

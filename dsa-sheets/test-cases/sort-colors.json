@@ -1,0 +1,13 @@
+{
+  "slug": "sort-colors",
+  "functionName": "sortColors",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "design-add-and-search-words-data-structure",
+  "functionName": "designAddAndSearchWordsDataStructure",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

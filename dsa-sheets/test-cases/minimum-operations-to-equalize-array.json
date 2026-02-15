@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-operations-to-equalize-array",
+  "functionName": "minimumOperationsToEqualizeArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

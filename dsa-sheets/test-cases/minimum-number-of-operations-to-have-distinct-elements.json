@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-number-of-operations-to-have-distinct-elements",
+  "functionName": "minimumNumberOfOperationsToHaveDistinctElements",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

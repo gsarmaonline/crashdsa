@@ -1,0 +1,13 @@
+{
+  "slug": "find-missing-elements",
+  "functionName": "findMissingElements",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

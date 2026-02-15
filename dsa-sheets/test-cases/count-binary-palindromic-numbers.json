@@ -1,0 +1,13 @@
+{
+  "slug": "count-binary-palindromic-numbers",
+  "functionName": "countBinaryPalindromicNumbers",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

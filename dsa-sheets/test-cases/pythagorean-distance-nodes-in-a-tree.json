@@ -1,0 +1,13 @@
+{
+  "slug": "pythagorean-distance-nodes-in-a-tree",
+  "functionName": "pythagoreanDistanceNodesInATree",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

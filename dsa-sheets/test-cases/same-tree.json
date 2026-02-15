@@ -1,0 +1,13 @@
+{
+  "slug": "same-tree",
+  "functionName": "sameTree",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

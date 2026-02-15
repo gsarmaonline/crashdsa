@@ -1,0 +1,13 @@
+{
+  "slug": "lexicographically-smallest-string-after-reverse",
+  "functionName": "lexicographicallySmallestStringAfterReverse",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "ListNode",
+  "testCases": [],
+  "_status": "scaffold"
+}

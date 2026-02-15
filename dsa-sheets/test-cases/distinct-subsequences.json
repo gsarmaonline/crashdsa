@@ -1,0 +1,13 @@
+{
+  "slug": "distinct-subsequences",
+  "functionName": "distinctSubsequences",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

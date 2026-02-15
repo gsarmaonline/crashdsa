@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-absolute-distance-between-mirror-pairs",
+  "functionName": "minimumAbsoluteDistanceBetweenMirrorPairs",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}
