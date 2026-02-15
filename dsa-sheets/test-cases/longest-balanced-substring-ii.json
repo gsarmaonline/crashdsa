@@ -1,0 +1,13 @@
+{
+  "slug": "longest-balanced-substring-ii",
+  "functionName": "longestBalancedSubstringIi",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "reverse-linked-list",
+  "functionName": "reverseList",
+  "params": [
+    { "name": "head", "type": "ListNode" }
+  ],
+  "returnType": "ListNode",
+  "notes": "Linked lists serialized as arrays. [1,2,3,4,5] represents 1->2->3->4->5.",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "head": [1, 2, 3, 4, 5] },
+      "expected": [5, 4, 3, 2, 1],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "head": [1, 2] },
+      "expected": [2, 1],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "head": [] },
+      "expected": [],
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "head": [1] },
+      "expected": [1],
+      "tags": ["single-element"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-score-after-binary-swaps",
+  "functionName": "maximumScoreAfterBinarySwaps",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

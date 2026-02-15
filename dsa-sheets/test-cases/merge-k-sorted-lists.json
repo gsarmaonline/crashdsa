@@ -1,0 +1,17 @@
+{
+  "slug": "merge-k-sorted-lists",
+  "functionName": "mergeKSortedLists",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "returnType": "int[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

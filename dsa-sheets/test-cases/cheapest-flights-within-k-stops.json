@@ -1,0 +1,17 @@
+{
+  "slug": "cheapest-flights-within-k-stops",
+  "functionName": "cheapestFlightsWithinKStops",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "returnType": "int[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "find-users-with-persistent-behavior-patterns",
+  "functionName": "findUsersWithPersistentBehaviorPatterns",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

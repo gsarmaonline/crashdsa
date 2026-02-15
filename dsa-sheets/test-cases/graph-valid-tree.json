@@ -1,0 +1,17 @@
+{
+  "slug": "graph-valid-tree",
+  "functionName": "graphValidTree",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

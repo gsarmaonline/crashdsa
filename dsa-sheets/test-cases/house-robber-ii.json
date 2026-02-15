@@ -1,0 +1,13 @@
+{
+  "slug": "house-robber-ii",
+  "functionName": "houseRobberIi",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

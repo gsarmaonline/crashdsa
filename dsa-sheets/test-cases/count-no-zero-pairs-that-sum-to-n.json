@@ -1,0 +1,13 @@
+{
+  "slug": "count-no-zero-pairs-that-sum-to-n",
+  "functionName": "countNoZeroPairsThatSumToN",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

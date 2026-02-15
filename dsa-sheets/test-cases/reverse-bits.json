@@ -1,0 +1,13 @@
+{
+  "slug": "reverse-bits",
+  "functionName": "reverseBits",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

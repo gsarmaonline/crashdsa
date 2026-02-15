@@ -1,0 +1,13 @@
+{
+  "slug": "find-nth-smallest-integer-with-k-one-bits",
+  "functionName": "findNthSmallestIntegerWithKOneBits",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

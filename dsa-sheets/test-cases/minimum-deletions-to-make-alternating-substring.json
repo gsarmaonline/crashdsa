@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-deletions-to-make-alternating-substring",
+  "functionName": "minimumDeletionsToMakeAlternatingSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

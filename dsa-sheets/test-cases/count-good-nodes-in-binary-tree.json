@@ -1,0 +1,13 @@
+{
+  "slug": "count-good-nodes-in-binary-tree",
+  "functionName": "countGoodNodesInBinaryTree",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

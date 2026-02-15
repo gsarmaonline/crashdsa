@@ -1,0 +1,13 @@
+{
+  "slug": "rotting-oranges",
+  "functionName": "rottingOranges",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -146,3 +146,75 @@ export interface ManualPatternMapping {
   patterns: PatternName[];
   reason?: string;  // Why this manual override exists
 }
+
+/**
+ * Test case types for DSA problems
+ */
+
+export type InputType =
+  | 'int'
+  | 'float'
+  | 'string'
+  | 'boolean'
+  | 'int[]'
+  | 'float[]'
+  | 'string[]'
+  | 'boolean[]'
+  | 'int[][]'
+  | 'string[][]'
+  | 'char[][]'
+  | 'ListNode'          // Linked list: serialized as int[]
+  | 'ListNode[]'        // Array of linked lists (merge k sorted)
+  | 'TreeNode'          // Binary tree: BFS level-order with nulls
+  | 'GraphNode'         // Graph: adjacency list int[][]
+  | 'Interval[]';       // Intervals: serialized as int[][]
+
+export type OutputType = InputType | 'void';
+
+export type TestCaseTag =
+  | 'basic'
+  | 'edge-case'
+  | 'empty-input'
+  | 'single-element'
+  | 'large-input'
+  | 'negative-numbers'
+  | 'duplicates'
+  | 'all-same'
+  | 'sorted'
+  | 'reverse-sorted'
+  | 'max-constraints'
+  | 'cycle'
+  | 'no-solution'
+  | 'multiple-solutions';
+
+export interface TestParam {
+  name: string;
+  type: InputType;
+}
+
+export interface TestCase {
+  id: string;
+  inputs: Record<string, unknown>;
+  expected: unknown;
+  explanation?: string;
+  tags?: TestCaseTag[];
+}
+
+export interface DesignMethod {
+  name: string;
+  params: TestParam[];
+  returnType: OutputType;
+}
+
+export interface ProblemTestCases {
+  slug: string;
+  functionName: string;
+  params: TestParam[];
+  returnType: OutputType;
+  testCases: TestCase[];
+  notes?: string;
+  outputOrderMatters?: boolean;
+  isDesignProblem?: boolean;
+  designMethods?: DesignMethod[];
+  _status?: 'scaffold' | 'complete';
+}

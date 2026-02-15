@@ -1,0 +1,13 @@
+{
+  "slug": "generate-schedule",
+  "functionName": "generateSchedule",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

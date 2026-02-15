@@ -1,0 +1,13 @@
+{
+  "slug": "mirror-distance-of-an-integer",
+  "functionName": "mirrorDistanceOfAnInteger",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

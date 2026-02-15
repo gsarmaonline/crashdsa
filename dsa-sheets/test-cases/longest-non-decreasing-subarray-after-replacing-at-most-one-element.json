@@ -1,0 +1,13 @@
+{
+  "slug": "longest-non-decreasing-subarray-after-replacing-at-most-one-element",
+  "functionName": "longestNonDecreasingSubarrayAfterReplacingAtMostOneElement",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

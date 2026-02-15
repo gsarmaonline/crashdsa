@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-string-length-after-balanced-removals",
+  "functionName": "minimumStringLengthAfterBalancedRemovals",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

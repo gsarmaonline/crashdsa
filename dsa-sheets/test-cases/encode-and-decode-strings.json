@@ -1,0 +1,13 @@
+{
+  "slug": "encode-and-decode-strings",
+  "functionName": "encodeAndDecodeStrings",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

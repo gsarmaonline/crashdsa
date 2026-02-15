@@ -1,0 +1,13 @@
+{
+  "slug": "first-element-with-unique-frequency",
+  "functionName": "firstElementWithUniqueFrequency",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

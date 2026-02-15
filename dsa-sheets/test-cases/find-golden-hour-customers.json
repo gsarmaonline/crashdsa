@@ -1,0 +1,13 @@
+{
+  "slug": "find-golden-hour-customers",
+  "functionName": "findGoldenHourCustomers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-subarray-length-with-distinct-sum-at-least-k",
+  "functionName": "minimumSubarrayLengthWithDistinctSumAtLeastK",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

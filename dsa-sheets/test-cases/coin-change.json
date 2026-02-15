@@ -1,0 +1,45 @@
+{
+  "slug": "coin-change",
+  "functionName": "coinChange",
+  "params": [
+    { "name": "coins", "type": "int[]" },
+    { "name": "amount", "type": "int" }
+  ],
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "coins": [1, 5, 10, 25], "amount": 11 },
+      "expected": 3,
+      "explanation": "10 + 1 = 11 (not optimal with greedy for all cases, but works here)",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "coins": [2], "amount": 3 },
+      "expected": -1,
+      "explanation": "Cannot make 3 with only coin 2",
+      "tags": ["no-solution"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "coins": [1], "amount": 0 },
+      "expected": 0,
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "coins": [1, 2, 5], "amount": 11 },
+      "expected": 3,
+      "explanation": "5 + 5 + 1 = 11",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "coins": [186, 419, 83, 408], "amount": 6249 },
+      "expected": 20,
+      "explanation": "Greedy won't work here, needs DP",
+      "tags": ["large-input"]
+    }
+  ]
+}

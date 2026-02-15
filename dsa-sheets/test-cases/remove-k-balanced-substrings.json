@@ -1,0 +1,13 @@
+{
+  "slug": "remove-k-balanced-substrings",
+  "functionName": "removeKBalancedSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

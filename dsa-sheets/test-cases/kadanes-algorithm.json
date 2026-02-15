@@ -1,0 +1,13 @@
+{
+  "slug": "kadanes-algorithm",
+  "functionName": "kadanesAlgorithm",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

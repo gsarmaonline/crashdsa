@@ -1,0 +1,13 @@
+{
+  "slug": "smallest-missing-multiple-of-k",
+  "functionName": "smallestMissingMultipleOfK",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

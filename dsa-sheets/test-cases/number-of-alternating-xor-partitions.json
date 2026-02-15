@@ -1,0 +1,13 @@
+{
+  "slug": "number-of-alternating-xor-partitions",
+  "functionName": "numberOfAlternatingXorPartitions",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

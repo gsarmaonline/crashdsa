@@ -1,0 +1,13 @@
+{
+  "slug": "smallest-absent-positive-greater-than-average",
+  "functionName": "smallestAbsentPositiveGreaterThanAverage",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "complete-prime-number",
+  "functionName": "completePrimeNumber",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

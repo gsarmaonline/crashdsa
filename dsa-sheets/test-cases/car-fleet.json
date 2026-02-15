@@ -1,0 +1,13 @@
+{
+  "slug": "car-fleet",
+  "functionName": "carFleet",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-product-subarray",
+  "functionName": "maximumProductSubarray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

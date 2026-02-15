@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-interval-to-include-each-query",
+  "functionName": "minimumIntervalToIncludeEachQuery",
+  "params": [
+    {
+      "name": "intervals",
+      "type": "Interval[]"
+    }
+  ],
+  "returnType": "Interval[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

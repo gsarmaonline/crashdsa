@@ -1,0 +1,13 @@
+{
+  "slug": "add-two-numbers",
+  "functionName": "addTwoNumbers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

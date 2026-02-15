@@ -1,0 +1,13 @@
+{
+  "slug": "pacific-atlantic-water-flow",
+  "functionName": "pacificAtlanticWaterFlow",
+  "params": [
+    {
+      "name": "grid",
+      "type": "char[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

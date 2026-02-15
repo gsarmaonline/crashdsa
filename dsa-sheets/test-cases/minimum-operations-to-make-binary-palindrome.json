@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-operations-to-make-binary-palindrome",
+  "functionName": "minimumOperationsToMakeBinaryPalindrome",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

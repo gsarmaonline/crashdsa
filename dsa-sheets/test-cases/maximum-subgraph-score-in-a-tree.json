@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-subgraph-score-in-a-tree",
+  "functionName": "maximumSubgraphScoreInATree",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

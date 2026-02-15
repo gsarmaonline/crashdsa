@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-moves-to-equal-array-elements-iii",
+  "functionName": "minimumMovesToEqualArrayElementsIii",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "find-zombie-sessions",
+  "functionName": "findZombieSessions",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

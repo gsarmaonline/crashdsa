@@ -1,0 +1,13 @@
+{
+  "slug": "last-stone-weight",
+  "functionName": "lastStoneWeight",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

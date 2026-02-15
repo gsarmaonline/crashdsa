@@ -1,0 +1,13 @@
+{
+  "slug": "longest-increasing-subsequence",
+  "functionName": "longestIncreasingSubsequence",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

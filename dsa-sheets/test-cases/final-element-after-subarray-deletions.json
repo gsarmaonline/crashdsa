@@ -1,0 +1,13 @@
+{
+  "slug": "final-element-after-subarray-deletions",
+  "functionName": "finalElementAfterSubarrayDeletions",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

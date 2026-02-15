@@ -1,0 +1,13 @@
+{
+  "slug": "count-ways-to-choose-coprime-integers-from-rows",
+  "functionName": "countWaysToChooseCoprimeIntegersFromRows",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

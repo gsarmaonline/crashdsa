@@ -1,0 +1,13 @@
+{
+  "slug": "serialize-and-deserialize-binary-tree",
+  "functionName": "serializeAndDeserializeBinaryTree",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -31,7 +31,7 @@ async function main() {
 
   try {
     // Stage 1: Fetch
-    console.log('📥 Stage 1/5: Fetching data from sources...\n');
+    console.log('📥 Stage 1/6: Fetching data from sources...\n');
     const fetchResult = await runStage(
       'Fetch',
       ['scripts/dsa-sheets/fetch-sheets.ts', ...(forceRefetch ? ['--force'] : [])]
@@ -42,7 +42,7 @@ async function main() {
     }
 
     // Stage 2: Process
-    console.log('\n🔄 Stage 2/5: Processing and normalizing data...\n');
+    console.log('\n🔄 Stage 2/6: Processing and normalizing data...\n');
     const processResult = await runStage(
       'Process',
       ['scripts/dsa-sheets/process-sheets.ts']
@@ -53,7 +53,7 @@ async function main() {
     }
 
     // Stage 3: Categorize
-    console.log('\n🏷️  Stage 3/5: Categorizing problems by patterns...\n');
+    console.log('\n🏷️  Stage 3/6: Categorizing problems by patterns...\n');
     const categorizeResult = await runStage(
       'Categorize',
       ['scripts/dsa-sheets/categorize-problems.ts']
@@ -64,7 +64,7 @@ async function main() {
     }
 
     // Stage 4: Deduplicate
-    console.log('\n🔍 Stage 4/5: Deduplicating problems...\n');
+    console.log('\n🔍 Stage 4/6: Deduplicating problems...\n');
     const deduplicateResult = await runStage(
       'Deduplicate',
       ['scripts/dsa-sheets/deduplicate.ts']
@@ -75,7 +75,7 @@ async function main() {
     }
 
     // Stage 5: Export CSV
-    console.log('\n📊 Stage 5/5: Exporting to CSV...\n');
+    console.log('\n📊 Stage 5/6: Exporting to CSV...\n');
     const exportResult = await runStage(
       'Export',
       ['scripts/dsa-sheets/export-csv.ts']
@@ -83,6 +83,17 @@ async function main() {
     results.push(exportResult);
     if (!exportResult.success) {
       throw new Error('Export stage failed');
+    }
+
+    // Stage 6: Generate test case scaffolds
+    console.log('\n🧪 Stage 6/6: Generating test case scaffolds...\n');
+    const testCasesResult = await runStage(
+      'Test Cases',
+      ['scripts/dsa-sheets/generate-test-cases.ts']
+    );
+    results.push(testCasesResult);
+    if (!testCasesResult.success) {
+      throw new Error('Test case generation failed');
     }
 
     // Success summary
@@ -171,6 +182,7 @@ function printSummary(
     console.log('\n📁 Output files:');
     console.log('   • dsa-sheets/csv/master.csv');
     console.log('   • dsa-sheets/csv/by-pattern/*.csv');
+    console.log('   • dsa-sheets/test-cases/*.json');
   } else {
     console.log('❌ Status: FAILED');
   }

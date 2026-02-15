@@ -1,0 +1,13 @@
+{
+  "slug": "count-dominant-indices",
+  "functionName": "countDominantIndices",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

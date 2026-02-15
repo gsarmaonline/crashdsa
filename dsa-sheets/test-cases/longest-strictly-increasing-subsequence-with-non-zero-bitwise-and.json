@@ -1,0 +1,13 @@
+{
+  "slug": "longest-strictly-increasing-subsequence-with-non-zero-bitwise-and",
+  "functionName": "longestStrictlyIncreasingSubsequenceWithNonZeroBitwiseAnd",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

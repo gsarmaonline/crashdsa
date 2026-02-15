@@ -1,0 +1,13 @@
+{
+  "slug": "number-of-effective-subsequences",
+  "functionName": "numberOfEffectiveSubsequences",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

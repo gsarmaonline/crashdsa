@@ -1,0 +1,13 @@
+{
+  "slug": "surrounded-regions",
+  "functionName": "surroundedRegions",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "course-schedule",
+  "functionName": "canFinish",
+  "params": [
+    { "name": "numCourses", "type": "int" },
+    { "name": "prerequisites", "type": "int[][]" }
+  ],
+  "returnType": "boolean",
+  "notes": "prerequisites[i] = [a, b] means you must take course b before course a.",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "numCourses": 2, "prerequisites": [[1, 0]] },
+      "expected": true,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "numCourses": 2, "prerequisites": [[1, 0], [0, 1]] },
+      "expected": false,
+      "explanation": "Circular dependency",
+      "tags": ["basic", "cycle"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "numCourses": 3, "prerequisites": [] },
+      "expected": true,
+      "explanation": "No prerequisites, all courses can be taken",
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "numCourses": 1, "prerequisites": [] },
+      "expected": true,
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "numCourses": 4, "prerequisites": [[1,0],[2,1],[3,2],[0,3]] },
+      "expected": false,
+      "explanation": "Longer cycle: 0->1->2->3->0",
+      "tags": ["cycle"]
+    }
+  ]
+}

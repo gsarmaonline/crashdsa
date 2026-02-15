@@ -1,0 +1,13 @@
+{
+  "slug": "walls-and-gates",
+  "functionName": "wallsAndGates",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

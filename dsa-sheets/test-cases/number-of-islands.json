@@ -1,0 +1,67 @@
+{
+  "slug": "number-of-islands",
+  "functionName": "numIslands",
+  "params": [
+    { "name": "grid", "type": "char[][]" }
+  ],
+  "returnType": "int",
+  "notes": "Grid values are strings '1' (land) and '0' (water).",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "grid": [
+          ["1","1","1","1","0"],
+          ["1","1","0","1","0"],
+          ["1","1","0","0","0"],
+          ["0","0","0","0","0"]
+        ]
+      },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "grid": [
+          ["1","1","0","0","0"],
+          ["1","1","0","0","0"],
+          ["0","0","1","0","0"],
+          ["0","0","0","1","1"]
+        ]
+      },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "grid": [["0","0"],["0","0"]]
+      },
+      "expected": 0,
+      "explanation": "All water",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "grid": [["1"]]
+      },
+      "expected": 1,
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "grid": [
+          ["1","0","1"],
+          ["0","1","0"],
+          ["1","0","1"]
+        ]
+      },
+      "expected": 5,
+      "explanation": "Checkerboard pattern, each land cell is isolated",
+      "tags": ["edge-case"]
+    }
+  ]
+}

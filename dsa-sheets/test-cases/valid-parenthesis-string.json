@@ -1,0 +1,13 @@
+{
+  "slug": "valid-parenthesis-string",
+  "functionName": "validParenthesisString",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

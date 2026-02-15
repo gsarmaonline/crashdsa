@@ -1,0 +1,13 @@
+{
+  "slug": "flatten-a-multilevel-doubly-linked-list",
+  "functionName": "flattenAMultilevelDoublyLinkedList",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

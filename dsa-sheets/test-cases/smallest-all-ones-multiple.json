@@ -1,0 +1,13 @@
+{
+  "slug": "smallest-all-ones-multiple",
+  "functionName": "smallestAllOnesMultiple",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

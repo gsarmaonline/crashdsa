@@ -1,0 +1,36 @@
+{
+  "slug": "group-anagrams",
+  "functionName": "groupAnagrams",
+  "params": [
+    { "name": "strs", "type": "string[]" }
+  ],
+  "returnType": "string[][]",
+  "outputOrderMatters": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "strs": ["eat", "tea", "tan", "ate", "nat", "bat"] },
+      "expected": [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "strs": [""] },
+      "expected": [[""]],
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "strs": ["a"] },
+      "expected": [["a"]],
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "strs": ["abc", "def", "ghi"] },
+      "expected": [["abc"], ["def"], ["ghi"]],
+      "explanation": "No anagrams, each string is its own group",
+      "tags": ["no-solution"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-operations-to-equalize-binary-string",
+  "functionName": "minimumOperationsToEqualizeBinaryString",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

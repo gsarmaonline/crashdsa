@@ -1,0 +1,13 @@
+{
+  "slug": "merge-adjacent-equal-elements",
+  "functionName": "mergeAdjacentEqualElements",
+  "params": [
+    {
+      "name": "intervals",
+      "type": "Interval[]"
+    }
+  ],
+  "returnType": "Interval[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

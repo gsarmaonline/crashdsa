@@ -1,0 +1,13 @@
+{
+  "slug": "letter-combinations-of-a-phone-number",
+  "functionName": "letterCombinationsOfAPhoneNumber",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

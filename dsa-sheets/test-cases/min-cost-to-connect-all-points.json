@@ -1,0 +1,13 @@
+{
+  "slug": "min-cost-to-connect-all-points",
+  "functionName": "minCostToConnectAllPoints",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

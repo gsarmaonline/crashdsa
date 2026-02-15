@@ -1,0 +1,13 @@
+{
+  "slug": "multiply-strings",
+  "functionName": "multiplyStrings",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

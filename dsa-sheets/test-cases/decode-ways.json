@@ -1,0 +1,13 @@
+{
+  "slug": "decode-ways",
+  "functionName": "decodeWays",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

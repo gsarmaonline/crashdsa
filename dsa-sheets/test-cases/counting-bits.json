@@ -1,0 +1,13 @@
+{
+  "slug": "counting-bits",
+  "functionName": "countingBits",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

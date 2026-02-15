@@ -1,0 +1,57 @@
+{
+  "slug": "word-search",
+  "functionName": "exist",
+  "params": [
+    { "name": "board", "type": "char[][]" },
+    { "name": "word", "type": "string" }
+  ],
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "board": [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]],
+        "word": "ABCCED"
+      },
+      "expected": true,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "board": [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]],
+        "word": "SEE"
+      },
+      "expected": true,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "board": [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]],
+        "word": "ABCB"
+      },
+      "expected": false,
+      "explanation": "Cannot reuse the same cell",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "board": [["a"]],
+        "word": "a"
+      },
+      "expected": true,
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "board": [["a"]],
+        "word": "b"
+      },
+      "expected": false,
+      "tags": ["single-element", "no-solution"]
+    }
+  ]
+}

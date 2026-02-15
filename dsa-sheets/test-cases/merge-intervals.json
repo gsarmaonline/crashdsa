@@ -1,0 +1,42 @@
+{
+  "slug": "merge-intervals",
+  "functionName": "merge",
+  "params": [
+    { "name": "intervals", "type": "Interval[]" }
+  ],
+  "returnType": "Interval[]",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "intervals": [[1, 3], [2, 6], [8, 10], [15, 18]] },
+      "expected": [[1, 6], [8, 10], [15, 18]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "intervals": [[1, 4], [4, 5]] },
+      "expected": [[1, 5]],
+      "explanation": "Touching intervals should merge",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "intervals": [[1, 4], [0, 4]] },
+      "expected": [[0, 4]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "intervals": [[1, 4], [2, 3]] },
+      "expected": [[1, 4]],
+      "explanation": "Fully nested interval",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "intervals": [[1, 2]] },
+      "expected": [[1, 2]],
+      "tags": ["single-element"]
+    }
+  ]
+}

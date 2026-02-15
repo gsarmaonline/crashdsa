@@ -1,0 +1,13 @@
+{
+  "slug": "middle-of-the-linked-list",
+  "functionName": "middleOfTheLinkedList",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "boolean",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "maximize-expression-of-three-elements",
+  "functionName": "maximizeExpressionOfThreeElements",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

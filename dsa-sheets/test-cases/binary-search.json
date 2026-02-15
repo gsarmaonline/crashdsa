@@ -1,0 +1,49 @@
+{
+  "slug": "binary-search",
+  "functionName": "search",
+  "params": [
+    { "name": "nums", "type": "int[]" },
+    { "name": "target", "type": "int" }
+  ],
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [-1, 0, 3, 5, 9, 12], "target": 9 },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [-1, 0, 3, 5, 9, 12], "target": 2 },
+      "expected": -1,
+      "tags": ["no-solution"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [5], "target": 5 },
+      "expected": 0,
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [5], "target": -5 },
+      "expected": -1,
+      "tags": ["single-element", "no-solution"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 2, 3, 4, 5], "target": 1 },
+      "expected": 0,
+      "explanation": "Target at the beginning",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-6",
+      "inputs": { "nums": [1, 2, 3, 4, 5], "target": 5 },
+      "expected": 4,
+      "explanation": "Target at the end",
+      "tags": ["edge-case"]
+    }
+  ]
+}

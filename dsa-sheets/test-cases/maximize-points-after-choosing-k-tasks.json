@@ -1,0 +1,13 @@
+{
+  "slug": "maximize-points-after-choosing-k-tasks",
+  "functionName": "maximizePointsAfterChoosingKTasks",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

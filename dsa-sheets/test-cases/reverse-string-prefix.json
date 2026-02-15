@@ -1,0 +1,13 @@
+{
+  "slug": "reverse-string-prefix",
+  "functionName": "reverseStringPrefix",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "ListNode",
+  "testCases": [],
+  "_status": "scaffold"
+}

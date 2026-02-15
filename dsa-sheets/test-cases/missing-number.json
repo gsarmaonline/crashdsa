@@ -1,0 +1,13 @@
+{
+  "slug": "missing-number",
+  "functionName": "missingNumber",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

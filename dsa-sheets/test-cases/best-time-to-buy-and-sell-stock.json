@@ -1,0 +1,42 @@
+{
+  "slug": "best-time-to-buy-and-sell-stock",
+  "functionName": "maxProfit",
+  "params": [
+    { "name": "prices", "type": "int[]" }
+  ],
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "prices": [7, 1, 5, 3, 6, 4] },
+      "expected": 5,
+      "explanation": "Buy on day 2 (price=1), sell on day 5 (price=6), profit=5",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "prices": [7, 6, 4, 3, 1] },
+      "expected": 0,
+      "explanation": "Prices only decrease, no profitable transaction",
+      "tags": ["no-solution", "reverse-sorted"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "prices": [1] },
+      "expected": 0,
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "prices": [2, 4, 1] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "prices": [1, 2] },
+      "expected": 1,
+      "tags": ["edge-case"]
+    }
+  ]
+}

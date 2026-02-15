@@ -1,0 +1,13 @@
+{
+  "slug": "longest-fibonacci-subarray",
+  "functionName": "longestFibonacciSubarray",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

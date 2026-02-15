@@ -1,0 +1,13 @@
+{
+  "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+  "functionName": "constructBinaryTreeFromPreorderAndInorderTraversal",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "ListNode",
+  "testCases": [],
+  "_status": "scaffold"
+}

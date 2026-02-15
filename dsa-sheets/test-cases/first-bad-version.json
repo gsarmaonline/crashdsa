@@ -1,0 +1,13 @@
+{
+  "slug": "first-bad-version",
+  "functionName": "firstBadVersion",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

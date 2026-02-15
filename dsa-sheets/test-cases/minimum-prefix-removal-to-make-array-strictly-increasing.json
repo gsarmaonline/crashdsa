@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-prefix-removal-to-make-array-strictly-increasing",
+  "functionName": "minimumPrefixRemovalToMakeArrayStrictlyIncreasing",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

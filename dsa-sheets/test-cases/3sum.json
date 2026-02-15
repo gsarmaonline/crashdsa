@@ -1,0 +1,41 @@
+{
+  "slug": "3sum",
+  "functionName": "threeSum",
+  "params": [
+    { "name": "nums", "type": "int[]" }
+  ],
+  "returnType": "int[][]",
+  "outputOrderMatters": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [-1, 0, 1, 2, -1, -4] },
+      "expected": [[-1, -1, 2], [-1, 0, 1]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [0, 1, 1] },
+      "expected": [],
+      "tags": ["no-solution"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [0, 0, 0] },
+      "expected": [[0, 0, 0]],
+      "tags": ["all-same", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [] },
+      "expected": [],
+      "tags": ["empty-input"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [-2, 0, 1, 1, 2] },
+      "expected": [[-2, 0, 2], [-2, 1, 1]],
+      "tags": ["duplicates"]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "two-sum",
+  "functionName": "twoSum",
+  "params": [
+    { "name": "nums", "type": "int[]" },
+    { "name": "target", "type": "int" }
+  ],
+  "returnType": "int[]",
+  "outputOrderMatters": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [2, 7, 11, 15], "target": 9 },
+      "expected": [0, 1],
+      "explanation": "nums[0] + nums[1] = 2 + 7 = 9",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [3, 2, 4], "target": 6 },
+      "expected": [1, 2],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [3, 3], "target": 6 },
+      "expected": [0, 1],
+      "explanation": "Both elements are the same value",
+      "tags": ["duplicates", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [-1, -2, -3, -4, -5], "target": -8 },
+      "expected": [2, 4],
+      "tags": ["negative-numbers"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [0, 4, 3, 0], "target": 0 },
+      "expected": [0, 3],
+      "explanation": "Two zeros sum to zero",
+      "tags": ["edge-case"]
+    }
+  ]
+}

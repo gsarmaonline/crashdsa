@@ -6,6 +6,7 @@ import { homePageDynamic } from './src/views/home-dynamic.js'
 import { problemsPage } from './src/views/problems.js'
 import { patternsPage } from './src/views/patterns.js'
 import { loadProblemsCache, getProblemsCache, refreshCache } from './src/data/csv-loader.js'
+import { getTestCasesForProblem, getTestCaseStats } from './src/data/test-case-loader.js'
 
 const app = new Hono()
 
@@ -100,6 +101,23 @@ app.get('/api/patterns', (c) => {
 app.get('/api/stats', (c) => {
   const cache = getProblemsCache()
   return c.json(cache.stats)
+})
+
+// Get test cases for a specific problem
+app.get('/api/problems/:slug/test-cases', (c) => {
+  const slug = c.req.param('slug')
+  const testCases = getTestCasesForProblem(slug)
+
+  if (!testCases) {
+    return c.json({ error: 'Test cases not found for this problem' }, 404)
+  }
+
+  return c.json(testCases)
+})
+
+// Get test case coverage statistics
+app.get('/api/test-cases/stats', (c) => {
+  return c.json(getTestCaseStats())
 })
 
 // Refresh cache (useful for updates)

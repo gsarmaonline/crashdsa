@@ -1,0 +1,13 @@
+{
+  "slug": "number-of-balanced-integers-in-a-range",
+  "functionName": "numberOfBalancedIntegersInARange",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

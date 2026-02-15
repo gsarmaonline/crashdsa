@@ -1,0 +1,38 @@
+{
+  "slug": "clone-graph",
+  "functionName": "cloneGraph",
+  "params": [
+    { "name": "adjList", "type": "GraphNode" }
+  ],
+  "returnType": "GraphNode",
+  "notes": "Graph as adjacency list. [[2,4],[1,3],[2,4],[1,3]] means node 1 connects to 2,4; node 2 to 1,3; etc. 1-indexed.",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "adjList": [[2,4],[1,3],[2,4],[1,3]] },
+      "expected": [[2,4],[1,3],[2,4],[1,3]],
+      "explanation": "4-node graph forming a square",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "adjList": [[]] },
+      "expected": [[]],
+      "explanation": "Single node with no neighbors",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "adjList": [] },
+      "expected": [],
+      "explanation": "Empty graph",
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "adjList": [[2],[1]] },
+      "expected": [[2],[1]],
+      "tags": ["basic"]
+    }
+  ]
+}

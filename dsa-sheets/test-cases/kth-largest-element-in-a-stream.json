@@ -1,0 +1,17 @@
+{
+  "slug": "kth-largest-element-in-a-stream",
+  "functionName": "kthLargestElementInAStream",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "k",
+      "type": "int"
+    }
+  ],
+  "returnType": "int[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

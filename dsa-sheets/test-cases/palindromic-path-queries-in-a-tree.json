@@ -1,0 +1,13 @@
+{
+  "slug": "palindromic-path-queries-in-a-tree",
+  "functionName": "palindromicPathQueriesInATree",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

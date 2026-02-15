@@ -1,0 +1,13 @@
+{
+  "slug": "subsets-ii",
+  "functionName": "subsetsIi",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}
