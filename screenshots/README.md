@@ -3,7 +3,7 @@
 Auto-generated screenshots of the CrashDSA application.
 
 **Last Updated:** 2026-02-15
-**Total Screenshots:** 3
+**Total Screenshots:** 9
 
 ## Viewports
 
@@ -14,9 +14,17 @@ Auto-generated screenshots of the CrashDSA application.
 ## Pages
 
 - `/` - home
+- `/problems` - problems
+- `/api-docs` - api-docs
 
 ## Files
 
 - home-desktop.png
 - home-tablet.png
 - home-mobile.png
+- problems-desktop.png
+- problems-tablet.png
+- problems-mobile.png
+- api-docs-desktop.png
+- api-docs-tablet.png
+- api-docs-mobile.png
