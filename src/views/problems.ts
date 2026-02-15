@@ -8,6 +8,7 @@ export const problemsPage = html`
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Problems - CrashDSA</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <style>
     .filters {
       display: flex;

@@ -32,6 +32,12 @@ app.get('/styles.css', (c) => {
   return c.body(css, 200, { 'Content-Type': 'text/css' })
 })
 
+// Serve favicon
+app.get('/favicon.svg', (c) => {
+  const svg = readFileSync(join(process.cwd(), 'public', 'favicon.svg'), 'utf-8')
+  return c.body(svg, 200, { 'Content-Type': 'image/svg+xml' })
+})
+
 // API Routes
 app.get('/api/hello', (c) => {
   return c.json({ message: 'Hello from Hono API!' })
