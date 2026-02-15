@@ -1,0 +1,294 @@
+{
+  "two-sum": {
+    "patterns": ["array-hashing"],
+    "reason": "Classic hash table problem"
+  },
+  "best-time-to-buy-and-sell-stock": {
+    "patterns": ["array-hashing", "dynamic-programming"],
+    "reason": "Can be solved with DP or greedy approach"
+  },
+  "contains-duplicate": {
+    "patterns": ["array-hashing"],
+    "reason": "Hash set for duplicate detection"
+  },
+  "product-of-array-except-self": {
+    "patterns": ["array-hashing"],
+    "reason": "Array manipulation problem"
+  },
+  "maximum-subarray": {
+    "patterns": ["array-hashing", "dynamic-programming"],
+    "reason": "Kadane's algorithm (DP)"
+  },
+  "maximum-product-subarray": {
+    "patterns": ["array-hashing", "dynamic-programming"],
+    "reason": "Similar to maximum subarray"
+  },
+  "find-minimum-in-rotated-sorted-array": {
+    "patterns": ["binary-search"],
+    "reason": "Binary search on rotated array"
+  },
+  "search-in-rotated-sorted-array": {
+    "patterns": ["binary-search"],
+    "reason": "Binary search variation"
+  },
+  "3sum": {
+    "patterns": ["two-pointers", "array-hashing"],
+    "reason": "Two pointers after sorting"
+  },
+  "container-with-most-water": {
+    "patterns": ["two-pointers"],
+    "reason": "Two pointer optimization problem"
+  },
+  "longest-substring-without-repeating-characters": {
+    "patterns": ["sliding-window", "array-hashing"],
+    "reason": "Classic sliding window with hash set"
+  },
+  "longest-repeating-character-replacement": {
+    "patterns": ["sliding-window"],
+    "reason": "Sliding window problem"
+  },
+  "minimum-window-substring": {
+    "patterns": ["sliding-window", "array-hashing"],
+    "reason": "Complex sliding window with hash map"
+  },
+  "valid-anagram": {
+    "patterns": ["array-hashing"],
+    "reason": "Character frequency counting"
+  },
+  "group-anagrams": {
+    "patterns": ["array-hashing"],
+    "reason": "Hash map grouping"
+  },
+  "valid-parentheses": {
+    "patterns": ["stack"],
+    "reason": "Classic stack problem"
+  },
+  "reverse-linked-list": {
+    "patterns": ["linked-list"],
+    "reason": "Basic linked list manipulation"
+  },
+  "merge-two-sorted-lists": {
+    "patterns": ["linked-list"],
+    "reason": "Linked list merging"
+  },
+  "linked-list-cycle": {
+    "patterns": ["linked-list", "two-pointers"],
+    "reason": "Fast/slow pointer detection"
+  },
+  "reorder-list": {
+    "patterns": ["linked-list"],
+    "reason": "Linked list manipulation"
+  },
+  "remove-nth-node-from-end-of-list": {
+    "patterns": ["linked-list", "two-pointers"],
+    "reason": "Two pointer technique on linked list"
+  },
+  "invert-binary-tree": {
+    "patterns": ["trees"],
+    "reason": "Basic tree traversal"
+  },
+  "maximum-depth-of-binary-tree": {
+    "patterns": ["trees"],
+    "reason": "Tree DFS/BFS"
+  },
+  "same-tree": {
+    "patterns": ["trees"],
+    "reason": "Tree comparison"
+  },
+  "subtree-of-another-tree": {
+    "patterns": ["trees"],
+    "reason": "Tree traversal and comparison"
+  },
+  "lowest-common-ancestor-of-a-binary-search-tree": {
+    "patterns": ["trees", "binary-search"],
+    "reason": "BST property exploitation"
+  },
+  "binary-tree-level-order-traversal": {
+    "patterns": ["trees"],
+    "reason": "BFS traversal"
+  },
+  "validate-binary-search-tree": {
+    "patterns": ["trees"],
+    "reason": "Tree validation with DFS"
+  },
+  "kth-smallest-element-in-a-bst": {
+    "patterns": ["trees", "binary-search"],
+    "reason": "BST inorder traversal"
+  },
+  "implement-trie-prefix-tree": {
+    "patterns": ["tries"],
+    "reason": "Trie implementation"
+  },
+  "design-add-and-search-words-data-structure": {
+    "patterns": ["tries"],
+    "reason": "Trie with wildcard search"
+  },
+  "word-search-ii": {
+    "patterns": ["tries", "backtracking"],
+    "reason": "Trie + DFS backtracking"
+  },
+  "merge-k-sorted-lists": {
+    "patterns": ["heap-priority-queue", "linked-list"],
+    "reason": "Min heap for merging"
+  },
+  "top-k-frequent-elements": {
+    "patterns": ["heap-priority-queue", "array-hashing"],
+    "reason": "Heap or bucket sort"
+  },
+  "find-median-from-data-stream": {
+    "patterns": ["heap-priority-queue"],
+    "reason": "Two heaps technique"
+  },
+  "combination-sum": {
+    "patterns": ["backtracking"],
+    "reason": "Backtracking combination generation"
+  },
+  "permutations": {
+    "patterns": ["backtracking"],
+    "reason": "Backtracking permutation generation"
+  },
+  "subsets": {
+    "patterns": ["backtracking"],
+    "reason": "Backtracking subset generation"
+  },
+  "word-search": {
+    "patterns": ["backtracking", "graphs"],
+    "reason": "DFS backtracking on grid"
+  },
+  "number-of-islands": {
+    "patterns": ["graphs"],
+    "reason": "DFS/BFS on grid graph"
+  },
+  "clone-graph": {
+    "patterns": ["graphs"],
+    "reason": "Graph traversal and copying"
+  },
+  "pacific-atlantic-water-flow": {
+    "patterns": ["graphs"],
+    "reason": "DFS/BFS on matrix"
+  },
+  "course-schedule": {
+    "patterns": ["graphs"],
+    "reason": "Topological sort, cycle detection"
+  },
+  "number-of-connected-components-in-an-undirected-graph": {
+    "patterns": ["graphs"],
+    "reason": "Union-find or DFS"
+  },
+  "graph-valid-tree": {
+    "patterns": ["graphs"],
+    "reason": "Graph cycle detection"
+  },
+  "climbing-stairs": {
+    "patterns": ["dynamic-programming"],
+    "reason": "Classic DP problem"
+  },
+  "coin-change": {
+    "patterns": ["dynamic-programming"],
+    "reason": "DP optimization problem"
+  },
+  "longest-increasing-subsequence": {
+    "patterns": ["dynamic-programming"],
+    "reason": "DP sequence problem"
+  },
+  "longest-common-subsequence": {
+    "patterns": ["dynamic-programming"],
+    "reason": "2D DP problem"
+  },
+  "word-break": {
+    "patterns": ["dynamic-programming"],
+    "reason": "DP string partition"
+  },
+  "house-robber": {
+    "patterns": ["dynamic-programming"],
+    "reason": "DP optimization"
+  },
+  "house-robber-ii": {
+    "patterns": ["dynamic-programming"],
+    "reason": "DP with circular dependency"
+  },
+  "decode-ways": {
+    "patterns": ["dynamic-programming"],
+    "reason": "DP counting problem"
+  },
+  "unique-paths": {
+    "patterns": ["dynamic-programming"],
+    "reason": "Grid DP"
+  },
+  "jump-game": {
+    "patterns": ["greedy", "dynamic-programming"],
+    "reason": "Can use greedy or DP"
+  },
+  "merge-intervals": {
+    "patterns": ["intervals"],
+    "reason": "Classic interval merging"
+  },
+  "insert-interval": {
+    "patterns": ["intervals"],
+    "reason": "Interval insertion"
+  },
+  "non-overlapping-intervals": {
+    "patterns": ["intervals", "greedy"],
+    "reason": "Greedy interval scheduling"
+  },
+  "meeting-rooms": {
+    "patterns": ["intervals"],
+    "reason": "Interval overlap check"
+  },
+  "meeting-rooms-ii": {
+    "patterns": ["intervals", "heap-priority-queue"],
+    "reason": "Interval scheduling with heap"
+  },
+  "rotate-image": {
+    "patterns": ["math-geometry"],
+    "reason": "Matrix rotation"
+  },
+  "spiral-matrix": {
+    "patterns": ["math-geometry"],
+    "reason": "Matrix traversal"
+  },
+  "set-matrix-zeroes": {
+    "patterns": ["math-geometry"],
+    "reason": "Matrix manipulation"
+  },
+  "number-of-1-bits": {
+    "patterns": ["bit-manipulation"],
+    "reason": "Bit counting"
+  },
+  "counting-bits": {
+    "patterns": ["bit-manipulation", "dynamic-programming"],
+    "reason": "Bit manipulation with DP"
+  },
+  "missing-number": {
+    "patterns": ["bit-manipulation", "math-geometry"],
+    "reason": "XOR or math approach"
+  },
+  "reverse-bits": {
+    "patterns": ["bit-manipulation"],
+    "reason": "Bit manipulation"
+  },
+  "sum-of-two-integers": {
+    "patterns": ["bit-manipulation"],
+    "reason": "Addition using bits"
+  },
+  "min-stack": {
+    "patterns": ["stack"],
+    "reason": "Stack design"
+  },
+  "evaluate-reverse-polish-notation": {
+    "patterns": ["stack"],
+    "reason": "Stack-based evaluation"
+  },
+  "generate-parentheses": {
+    "patterns": ["backtracking", "stack"],
+    "reason": "Backtracking or stack approach"
+  },
+  "daily-temperatures": {
+    "patterns": ["stack"],
+    "reason": "Monotonic stack"
+  },
+  "car-fleet": {
+    "patterns": ["stack"],
+    "reason": "Monotonic stack problem"
+  }
+}

@@ -23,7 +23,21 @@ crashdsa/
 ├── src/                  # Source code
 │   ├── views/           # HTML page templates
 │   ├── components/      # Reusable UI components (future)
-│   └── styles/          # CSS stylesheets
+│   ├── styles/          # CSS stylesheets
+│   └── dsa-sheets/      # DSA sheet aggregation system
+│       ├── types.ts           # Type definitions
+│       ├── patterns.ts        # Pattern definitions
+│       ├── categorizers.ts    # Categorization logic
+│       ├── fetchers.ts        # Fetch utilities
+│       ├── curated-lists.ts   # Curated problem lists
+│       └── mappings/          # Manual overrides
+├── dsa-sheets/          # DSA sheet data
+│   ├── raw/            # Fetched JSON data
+│   ├── processed/      # Normalized problems
+│   ├── csv/            # CSV exports
+│   │   ├── master.csv
+│   │   └── by-pattern/
+│   └── metadata/       # Fetch history
 ├── docs/                 # API documentation
 │   ├── API.md           # Human-readable API docs
 │   ├── openapi.json     # OpenAPI 3.0 specification
@@ -32,7 +46,14 @@ crashdsa/
 ├── screenshots/         # Auto-generated screenshots
 ├── scripts/             # Utility scripts
 │   ├── generate-api-docs.ts  # Documentation generator
-│   └── take-screenshots.ts   # Screenshot capture script
+│   ├── take-screenshots.ts   # Screenshot capture script
+│   └── dsa-sheets/           # DSA sheet pipeline scripts
+│       ├── fetch-sheets.ts
+│       ├── process-sheets.ts
+│       ├── categorize-problems.ts
+│       ├── deduplicate.ts
+│       ├── export-csv.ts
+│       └── update-all.ts     # Master orchestrator
 ├── package.json
 └── tsconfig.json
 ```
@@ -69,6 +90,18 @@ crashdsa/
 - Include screenshot comparisons in PR descriptions showing visual changes
 - Screenshots help reviewers understand visual impact of changes
 
+### DSA Sheet Aggregation
+
+- **Purpose**: Consolidate problems from 5 popular DSA practice sheets (NeetCode 150, Blind 75, LeetCode Top 150, Grind 75, Striver's A2Z)
+- **Features**: Categorizes by 16 solution patterns, removes duplicates, exports to CSV
+- **Usage**: Run `/update-dsa-sheets` or `bun run dsa-sheets:update` to refresh data
+- **Output**:
+  - `dsa-sheets/csv/master.csv` - All unique problems
+  - `dsa-sheets/csv/by-pattern/*.csv` - Problems grouped by pattern
+- **Cache**: Data cached for 24 hours, use `--force` to override
+- **Pipeline**: Fetch → Process → Categorize → Deduplicate → Export CSV
+- **Stats**: ~326 unique problems after deduplication from ~456 total
+
 ### Testing
 
 - Add tests for new endpoints (future)
@@ -83,6 +116,13 @@ crashdsa/
 - `bun run api-docs` - Generate/update API documentation
 - `bun run api-docs:serve` - Start server and view docs at http://localhost:3000/api-docs
 - `bun run screenshots` - Capture screenshots of all pages (desktop, tablet, mobile)
+- `bun run dsa-sheets:update` - Run full DSA sheet aggregation pipeline
+- `bun run dsa-sheets:update -- --force` - Force update, ignoring cache
+- `bun run dsa-sheets:fetch` - Fetch data from all sources
+- `bun run dsa-sheets:process` - Process and normalize data
+- `bun run dsa-sheets:categorize` - Categorize problems by patterns
+- `bun run dsa-sheets:deduplicate` - Remove duplicate problems
+- `bun run dsa-sheets:export` - Export to CSV files
 
 ### Documentation Workflow
 

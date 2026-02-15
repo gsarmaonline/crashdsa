@@ -1,0 +1,21 @@
+Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
+Kth Largest Element in a Stream,Easy,neetcode150,https://leetcode.com/problems/kth-largest-element-in-a-stream/,N/A
+Largest Even Number,Easy,leetcode-top-150,https://leetcode.com/problems/largest-even-number/,69.2%
+Smallest Absent Positive Greater Than Average,Easy,leetcode-top-150,https://leetcode.com/problems/smallest-absent-positive-greater-than-average/,34%
+Smallest Missing Multiple of K,Easy,leetcode-top-150,https://leetcode.com/problems/smallest-missing-multiple-of-k/,63.1%
+Cheapest Flights Within K Stops,Medium,neetcode150,https://leetcode.com/problems/cheapest-flights-within-k-stops/,N/A
+Kth Largest Element in an Array,Medium,neetcode150,https://leetcode.com/problems/kth-largest-element-in-an-array/,N/A
+Largest Prime from Consecutive Prime Sum,Medium,leetcode-top-150,https://leetcode.com/problems/largest-prime-from-consecutive-prime-sum/,38.8%
+Largest Subarray With Zero Sum,Medium,striver-a2z,https://leetcode.com/problems/largest-subarray-with-zero-sum/,N/A
+Lexicographically Smallest Negated Permutation that Sums to Target,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/,30.7%
+Lexicographically Smallest Permutation Greater Than Target,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/,26.5%
+Lexicographically Smallest String After Reverse,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/,54.7%
+Meeting Rooms II,Medium,neetcode150; blind75,https://leetcode.com/problems/meeting-rooms-ii/,N/A
+Smallest All-Ones Multiple,Medium,leetcode-top-150,https://leetcode.com/problems/smallest-all-ones-multiple/,46.8%
+Top K Frequent Elements,Medium,neetcode150; blind75,https://leetcode.com/problems/top-k-frequent-elements/,N/A
+Find Median from Data Stream,Hard,neetcode150; blind75,https://leetcode.com/problems/find-median-from-data-stream/,N/A
+Find Nth Smallest Integer With K One Bits,Hard,leetcode-top-150,https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/,33.8%
+Largest Rectangle in Histogram,Hard,neetcode150,https://leetcode.com/problems/largest-rectangle-in-histogram/,N/A
+Lexicographically Smallest Palindromic Permutation Greater Than Target,Hard,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/,24.8%
+Lexicographically Smallest String After Deleting Duplicate Characters,Hard,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-string-after-deleting-duplicate-characters/,18.9%
+Merge k Sorted Lists,Hard,neetcode150; blind75,https://leetcode.com/problems/merge-k-sorted-lists/,N/A

@@ -8,7 +8,13 @@
     "start": "bun run index.ts",
     "api-docs": "bun run scripts/generate-api-docs.ts",
     "api-docs:serve": "bun run dev",
-    "screenshots": "bun run scripts/take-screenshots.ts"
+    "screenshots": "bun run scripts/take-screenshots.ts",
+    "dsa-sheets:fetch": "bun run scripts/dsa-sheets/fetch-sheets.ts",
+    "dsa-sheets:process": "bun run scripts/dsa-sheets/process-sheets.ts",
+    "dsa-sheets:categorize": "bun run scripts/dsa-sheets/categorize-problems.ts",
+    "dsa-sheets:deduplicate": "bun run scripts/dsa-sheets/deduplicate.ts",
+    "dsa-sheets:export": "bun run scripts/dsa-sheets/export-csv.ts",
+    "dsa-sheets:update": "bun run scripts/dsa-sheets/update-all.ts"
   },
   "devDependencies": {
     "@hono/swagger-ui": "^0.5.3",
@@ -19,6 +25,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "csv-writer": "^1.6.0",
     "hono": "^4.11.9"
   }
 }

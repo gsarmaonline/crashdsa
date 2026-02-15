@@ -1,0 +1,17 @@
+Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
+Combination Sum,Medium,neetcode150; grind75,https://leetcode.com/problems/combination-sum/,N/A
+Combination Sum II,Medium,neetcode150,https://leetcode.com/problems/combination-sum-ii/,N/A
+Combination Sum IV,Medium,blind75,https://leetcode.com/problems/combination-sum-iv/,N/A
+Generate Parentheses,Medium,neetcode150,https://leetcode.com/problems/generate-parentheses/,N/A
+Generate Schedule,Medium,leetcode-top-150,https://leetcode.com/problems/generate-schedule/,23.8%
+Letter Combinations of a Phone Number,Medium,neetcode150,https://leetcode.com/problems/letter-combinations-of-a-phone-number/,N/A
+Lexicographically Smallest Negated Permutation that Sums to Target,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/,30.7%
+Lexicographically Smallest Permutation Greater Than Target,Medium,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/,26.5%
+Partition Equal Subset Sum,Medium,neetcode150,https://leetcode.com/problems/partition-equal-subset-sum/,N/A
+Permutation in String,Medium,neetcode150,https://leetcode.com/problems/permutation-in-string/,N/A
+Permutations,Medium,neetcode150; grind75,https://leetcode.com/problems/permutations/,N/A
+Subsets,Medium,neetcode150,https://leetcode.com/problems/subsets/,N/A
+Subsets II,Medium,neetcode150,https://leetcode.com/problems/subsets-ii/,N/A
+Word Search,Medium,neetcode150; blind75,https://leetcode.com/problems/word-search/,N/A
+Lexicographically Smallest Palindromic Permutation Greater Than Target,Hard,leetcode-top-150,https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/,24.8%
+Word Search II,Hard,neetcode150; blind75,https://leetcode.com/problems/word-search-ii/,N/A

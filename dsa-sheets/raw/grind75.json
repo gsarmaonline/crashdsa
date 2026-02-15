@@ -1,0 +1,244 @@
+{
+  "Grind 75": [
+    {
+      "name": "Two Sum",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "name": "Valid Parentheses",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/valid-parentheses/"
+    },
+    {
+      "name": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/merge-two-sorted-lists/"
+    },
+    {
+      "name": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    },
+    {
+      "name": "Valid Palindrome",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/valid-palindrome/"
+    },
+    {
+      "name": "Invert Binary Tree",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/invert-binary-tree/"
+    },
+    {
+      "name": "Valid Anagram",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/valid-anagram/"
+    },
+    {
+      "name": "Binary Search",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/binary-search/"
+    },
+    {
+      "name": "Flood Fill",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/flood-fill/"
+    },
+    {
+      "name": "Lowest Common Ancestor of a Binary Search Tree",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+    },
+    {
+      "name": "Balanced Binary Tree",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/balanced-binary-tree/"
+    },
+    {
+      "name": "Linked List Cycle",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/linked-list-cycle/"
+    },
+    {
+      "name": "Implement Queue using Stacks",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/implement-queue-using-stacks/"
+    },
+    {
+      "name": "First Bad Version",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/first-bad-version/"
+    },
+    {
+      "name": "Ransom Note",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/ransom-note/"
+    },
+    {
+      "name": "Climbing Stairs",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/climbing-stairs/"
+    },
+    {
+      "name": "Longest Palindrome",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/longest-palindrome/"
+    },
+    {
+      "name": "Reverse Linked List",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/reverse-linked-list/"
+    },
+    {
+      "name": "Majority Element",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/majority-element/"
+    },
+    {
+      "name": "Add Binary",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/add-binary/"
+    },
+    {
+      "name": "Diameter of Binary Tree",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/diameter-of-binary-tree/"
+    },
+    {
+      "name": "Middle of the Linked List",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/middle-of-the-linked-list/"
+    },
+    {
+      "name": "Maximum Depth of Binary Tree",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+    },
+    {
+      "name": "Contains Duplicate",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/contains-duplicate/"
+    },
+    {
+      "name": "Insert Interval",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/insert-interval/"
+    },
+    {
+      "name": "01 Matrix",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/01-matrix/"
+    },
+    {
+      "name": "K Closest Points to Origin",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/k-closest-points-to-origin/"
+    },
+    {
+      "name": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+    },
+    {
+      "name": "3Sum",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/3sum/"
+    },
+    {
+      "name": "Binary Tree Level Order Traversal",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+    },
+    {
+      "name": "Clone Graph",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/clone-graph/"
+    },
+    {
+      "name": "Evaluate Reverse Polish Notation",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/evaluate-reverse-polish-notation/"
+    },
+    {
+      "name": "Course Schedule",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/course-schedule/"
+    },
+    {
+      "name": "Implement Trie (Prefix Tree)",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+    },
+    {
+      "name": "Coin Change",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/coin-change/"
+    },
+    {
+      "name": "Product of Array Except Self",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/product-of-array-except-self/"
+    },
+    {
+      "name": "Min Stack",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/min-stack/"
+    },
+    {
+      "name": "Validate Binary Search Tree",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/validate-binary-search-tree/"
+    },
+    {
+      "name": "Number of Islands",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/number-of-islands/"
+    },
+    {
+      "name": "Rotting Oranges",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/rotting-oranges/"
+    },
+    {
+      "name": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+    },
+    {
+      "name": "Combination Sum",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/combination-sum/"
+    },
+    {
+      "name": "Permutations",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/permutations/"
+    },
+    {
+      "name": "Merge Intervals",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+      "name": "Lowest Common Ancestor of a Binary Tree",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+    },
+    {
+      "name": "Time Based Key-Value Store",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/time-based-key-value-store/"
+    },
+    {
+      "name": "Accounts Merge",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/accounts-merge/"
+    },
+    {
+      "name": "Sort Colors",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/sort-colors/"
+    }
+  ]
+}

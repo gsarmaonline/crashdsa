@@ -1,0 +1,84 @@
+Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
+Absolute Difference Between Maximum and Minimum K Elements,Easy,leetcode-top-150,https://leetcode.com/problems/absolute-difference-between-maximum-and-minimum-k-elements/,75.3%
+Add Binary,Easy,grind75,https://leetcode.com/problems/add-binary/,N/A
+Balanced Binary Tree,Easy,neetcode150; grind75,https://leetcode.com/problems/balanced-binary-tree/,N/A
+Binary Search,Easy,neetcode150; grind75,https://leetcode.com/problems/binary-search/,N/A
+Bitwise OR of Even Numbers in an Array,Easy,leetcode-top-150,https://leetcode.com/problems/bitwise-or-of-even-numbers-in-an-array/,84.7%
+Concatenate Non-Zero Digits and Multiply by Sum I,Easy,leetcode-top-150,https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/,55.7%
+Count Monobit Integers,Easy,leetcode-top-150,https://leetcode.com/problems/count-monobit-integers/,65.9%
+Counting Bits,Easy,neetcode150; blind75,https://leetcode.com/problems/counting-bits/,N/A
+Diameter of Binary Tree,Easy,neetcode150; grind75,https://leetcode.com/problems/diameter-of-binary-tree/,N/A
+Equal Score Substrings,Easy,leetcode-top-150,https://leetcode.com/problems/equal-score-substrings/,56.7%
+GCD of Odd and Even Sums,Easy,leetcode-top-150,https://leetcode.com/problems/gcd-of-odd-and-even-sums/,84.7%
+Majority Element,Easy,grind75; striver-a2z,https://leetcode.com/problems/majority-element/,N/A
+Majority Frequency Characters,Easy,leetcode-top-150,https://leetcode.com/problems/majority-frequency-characters/,67.1%
+Merge Sorted Array,Easy,striver-a2z,https://leetcode.com/problems/merge-sorted-array/,N/A
+Minimum Number of Flips to Reverse Binary String,Easy,leetcode-top-150,https://leetcode.com/problems/minimum-number-of-flips-to-reverse-binary-string/,75.7%
+Mirror Distance of an Integer,Easy,leetcode-top-150,https://leetcode.com/problems/mirror-distance-of-an-integer/,87.4%
+Missing Number,Easy,neetcode150; blind75; striver-a2z,https://leetcode.com/problems/missing-number/,N/A
+Number of 1 Bits,Easy,neetcode150; blind75,https://leetcode.com/problems/number-of-1-bits/,N/A
+Restore Finishing Order,Easy,leetcode-top-150,https://leetcode.com/problems/restore-finishing-order/,91%
+Reverse Bits,Easy,neetcode150; blind75,https://leetcode.com/problems/reverse-bits/,N/A
+Sort Integers by Binary Reflection,Easy,leetcode-top-150,https://leetcode.com/problems/sort-integers-by-binary-reflection/,60.7%
+Vowel-Consonant Score,Easy,leetcode-top-150,https://leetcode.com/problems/vowel-consonant-score/,54.1%
+Weighted Word Mapping,Easy,leetcode-top-150,https://leetcode.com/problems/weighted-word-mapping/,84.3%
+Best Time to Buy and Sell Stock with Cooldown,Medium,neetcode150,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/,N/A
+Binary Tree Right Side View,Medium,neetcode150,https://leetcode.com/problems/binary-tree-right-side-view/,N/A
+Concatenate Non-Zero Digits and Multiply by Sum II,Medium,leetcode-top-150,https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/,24%
+Construct Binary Tree from Preorder and Inorder Traversal,Medium,neetcode150; blind75,https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/,N/A
+Copy List with Random Pointer,Medium,neetcode150; striver-a2z,https://leetcode.com/problems/copy-list-with-random-pointer/,N/A
+Count Good Nodes in Binary Tree,Medium,neetcode150,https://leetcode.com/problems/count-good-nodes-in-binary-tree/,N/A
+Count Subarrays With Cost Less Than or Equal to K,Medium,leetcode-top-150,https://leetcode.com/problems/count-subarrays-with-cost-less-than-or-equal-to-k/,45.1%
+Count Subarrays With Majority Element I,Medium,leetcode-top-150,https://leetcode.com/problems/count-subarrays-with-majority-element-i/,65%
+Design Exam Scores Tracker,Medium,leetcode-top-150,https://leetcode.com/problems/design-exam-scores-tracker/,43.9%
+Encode and Decode Strings,Medium,neetcode150; blind75,https://leetcode.com/problems/encode-and-decode-strings/,N/A
+Hand of Straights,Medium,neetcode150,https://leetcode.com/problems/hand-of-straights/,N/A
+K Closest Points to Origin,Medium,neetcode150; grind75,https://leetcode.com/problems/k-closest-points-to-origin/,N/A
+Kadanes Algorithm,Medium,striver-a2z,https://leetcode.com/problems/kadanes-algorithm/,N/A
+Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND,Medium,leetcode-top-150,https://leetcode.com/problems/longest-strictly-increasing-subsequence-with-non-zero-bitwise-and/,50.9%
+Longest Subsequence With Non-Zero Bitwise XOR,Medium,leetcode-top-150,https://leetcode.com/problems/longest-subsequence-with-non-zero-bitwise-xor/,37.1%
+Lowest Common Ancestor of a Binary Tree,Medium,grind75,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/,N/A
+Majority Element II,Medium,striver-a2z,https://leetcode.com/problems/majority-element-ii/,N/A
+Max Area of Island,Medium,neetcode150,https://leetcode.com/problems/max-area-of-island/,N/A
+Maximum Path Score in a Grid,Medium,leetcode-top-150,https://leetcode.com/problems/maximum-path-score-in-a-grid/,36.5%
+Maximum Score After Binary Swaps,Medium,leetcode-top-150,https://leetcode.com/problems/maximum-score-after-binary-swaps/,34.9%
+Maximum Score of a Split,Medium,leetcode-top-150,https://leetcode.com/problems/maximum-score-of-a-split/,51.5%
+Merge Triplets to Form Target Triplet,Medium,neetcode150,https://leetcode.com/problems/merge-triplets-to-form-target-triplet/,N/A
+Minimum Absolute Distance Between Mirror Pairs,Medium,leetcode-top-150,https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/,44.2%
+Minimum Cost to Make Two Binary Strings Equal,Medium,leetcode-top-150,https://leetcode.com/problems/minimum-cost-to-make-two-binary-strings-equal/,38.5%
+Minimum Operations to Make Binary Palindrome,Medium,leetcode-top-150,https://leetcode.com/problems/minimum-operations-to-make-binary-palindrome/,51.6%
+Minimum Operations to Transform Array,Medium,leetcode-top-150,https://leetcode.com/problems/minimum-operations-to-transform-array/,39.3%
+Minimum Operations to Transform String,Medium,leetcode-top-150,https://leetcode.com/problems/minimum-operations-to-transform-string/,61.8%
+Network Delay Time,Medium,neetcode150,https://leetcode.com/problems/network-delay-time/,N/A
+Number of Alternating XOR Partitions,Medium,leetcode-top-150,https://leetcode.com/problems/number-of-alternating-xor-partitions/,26.5%
+Pythagorean Distance Nodes in a Tree,Medium,leetcode-top-150,https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/,57.6%
+Reverse Words With Same Vowel Count,Medium,leetcode-top-150,https://leetcode.com/problems/reverse-words-with-same-vowel-count/,66.5%
+Rotting Oranges,Medium,neetcode150; grind75,https://leetcode.com/problems/rotting-oranges/,N/A
+Sort Colors,Medium,grind75; striver-a2z,https://leetcode.com/problems/sort-colors/,N/A
+Stable Subarrays With Equal Boundary and Interior Sum,Medium,leetcode-top-150,https://leetcode.com/problems/stable-subarrays-with-equal-boundary-and-interior-sum/,25.9%
+Sum of Two Integers,Medium,neetcode150; blind75,https://leetcode.com/problems/sum-of-two-integers/,N/A
+Time Based Key-Value Store,Medium,neetcode150; grind75,https://leetcode.com/problems/time-based-key-value-store/,N/A
+Total Score of Dungeon Runs,Medium,leetcode-top-150,https://leetcode.com/problems/total-score-of-dungeon-runs/,30.3%
+Two Sum II - Input Array Is Sorted,Medium,neetcode150,https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/,N/A
+Walls and Gates,Medium,neetcode150,https://leetcode.com/problems/walls-and-gates/,N/A
+Word Squares II,Medium,leetcode-top-150,https://leetcode.com/problems/word-squares-ii/,54.8%
+Binary Tree Maximum Path Sum,Hard,neetcode150; blind75,https://leetcode.com/problems/binary-tree-maximum-path-sum/,N/A
+Count Binary Palindromic Numbers,Hard,leetcode-top-150,https://leetcode.com/problems/count-binary-palindromic-numbers/,33.7%
+Count Distinct Subarrays Divisible by K in Sorted Array,Hard,leetcode-top-150,https://leetcode.com/problems/count-distinct-subarrays-divisible-by-k-in-sorted-array/,27.3%
+Count Subarrays With Majority Element II,Hard,leetcode-top-150,https://leetcode.com/problems/count-subarrays-with-majority-element-ii/,44.2%
+Find Nth Smallest Integer With K One Bits,Hard,leetcode-top-150,https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/,33.8%
+Find Users with Persistent Behavior Patterns,Hard,leetcode-top-150,https://leetcode.com/problems/find-users-with-persistent-behavior-patterns/,63.6%
+Maximize Cyclic Partition Score,Hard,leetcode-top-150,https://leetcode.com/problems/maximize-cyclic-partition-score/,12.1%
+Maximum Bitwise AND After Increment Operations,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-bitwise-and-after-increment-operations/,30.7%
+Maximum Partition Factor,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-partition-factor/,31%
+Maximum Score Using Exactly K Pairs,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-score-using-exactly-k-pairs/,41.3%
+Maximum Subarray XOR with Bounded Range,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/,25.4%
+Maximum Subgraph Score in a Tree,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/,70.5%
+Maximum XOR of Subsequences,Hard,leetcode-top-150,https://leetcode.com/problems/maximum-xor-of-subsequences/,51.2%
+Median of Two Sorted Arrays,Hard,neetcode150,https://leetcode.com/problems/median-of-two-sorted-arrays/,N/A
+Minimum Cost to Merge Sorted Lists,Hard,leetcode-top-150,https://leetcode.com/problems/minimum-cost-to-merge-sorted-lists/,33.6%
+Minimum Operations to Equalize Binary String,Hard,leetcode-top-150,https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/,20.3%
+Minimum Partition Score,Hard,leetcode-top-150,https://leetcode.com/problems/minimum-partition-score/,33.8%
+Minimum Swaps to Avoid Forbidden Values,Hard,leetcode-top-150,https://leetcode.com/problems/minimum-swaps-to-avoid-forbidden-values/,30.1%
+Serialize and Deserialize Binary Tree,Hard,neetcode150; blind75,https://leetcode.com/problems/serialize-and-deserialize-binary-tree/,N/A
+Word Ladder,Hard,neetcode150,https://leetcode.com/problems/word-ladder/,N/A

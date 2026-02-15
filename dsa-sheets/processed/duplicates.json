@@ -1,0 +1,3881 @@
+[
+  {
+    "canonicalId": "p-neetcode150-two-sum",
+    "problems": [
+      {
+        "id": "p-neetcode150-two-sum",
+        "title": "Two Sum",
+        "slug": "two-sum",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/two-sum/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-blind75-two-sum",
+        "title": "Two Sum",
+        "slug": "two-sum",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/two-sum/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-grind75-two-sum",
+        "title": "Two Sum",
+        "slug": "two-sum",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/two-sum/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-two-sum",
+        "title": "Two Sum",
+        "slug": "two-sum",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/two-sum/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-best-time-to-buy-and-sell-stock",
+    "problems": [
+      {
+        "id": "p-neetcode150-best-time-to-buy-and-sell-stock",
+        "title": "Best Time to Buy and Sell Stock",
+        "slug": "best-time-to-buy-and-sell-stock",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing",
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-best-time-to-buy-and-sell-stock",
+        "title": "Best Time to Buy and Sell Stock",
+        "slug": "best-time-to-buy-and-sell-stock",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing",
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-grind75-best-time-to-buy-and-sell-stock",
+        "title": "Best Time to Buy and Sell Stock",
+        "slug": "best-time-to-buy-and-sell-stock",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing",
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-contains-duplicate",
+    "problems": [
+      {
+        "id": "p-neetcode150-contains-duplicate",
+        "title": "Contains Duplicate",
+        "slug": "contains-duplicate",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/contains-duplicate/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-blind75-contains-duplicate",
+        "title": "Contains Duplicate",
+        "slug": "contains-duplicate",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/contains-duplicate/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-grind75-contains-duplicate",
+        "title": "Contains Duplicate",
+        "slug": "contains-duplicate",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/contains-duplicate/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-product-of-array-except-self",
+    "problems": [
+      {
+        "id": "p-neetcode150-product-of-array-except-self",
+        "title": "Product of Array Except Self",
+        "slug": "product-of-array-except-self",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/product-of-array-except-self/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-blind75-product-of-array-except-self",
+        "title": "Product of Array Except Self",
+        "slug": "product-of-array-except-self",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/product-of-array-except-self/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-grind75-product-of-array-except-self",
+        "title": "Product of Array Except Self",
+        "slug": "product-of-array-except-self",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/product-of-array-except-self/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-maximum-subarray",
+    "problems": [
+      {
+        "id": "p-neetcode150-maximum-subarray",
+        "title": "Maximum Subarray",
+        "slug": "maximum-subarray",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/maximum-subarray/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing",
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-maximum-subarray",
+        "title": "Maximum Subarray",
+        "slug": "maximum-subarray",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/maximum-subarray/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing",
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-maximum-subarray",
+        "title": "Maximum Subarray",
+        "slug": "maximum-subarray",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/maximum-subarray/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing",
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-maximum-product-subarray",
+    "problems": [
+      {
+        "id": "p-neetcode150-maximum-product-subarray",
+        "title": "Maximum Product Subarray",
+        "slug": "maximum-product-subarray",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/maximum-product-subarray/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing",
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-maximum-product-subarray",
+        "title": "Maximum Product Subarray",
+        "slug": "maximum-product-subarray",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/maximum-product-subarray/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing",
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-find-minimum-in-rotated-sorted-array",
+    "problems": [
+      {
+        "id": "p-neetcode150-find-minimum-in-rotated-sorted-array",
+        "title": "Find Minimum in Rotated Sorted Array",
+        "slug": "find-minimum-in-rotated-sorted-array",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "binary-search"
+        ]
+      },
+      {
+        "id": "p-blind75-find-minimum-in-rotated-sorted-array",
+        "title": "Find Minimum in Rotated Sorted Array",
+        "slug": "find-minimum-in-rotated-sorted-array",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "binary-search"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-search-in-rotated-sorted-array",
+    "problems": [
+      {
+        "id": "p-neetcode150-search-in-rotated-sorted-array",
+        "title": "Search in Rotated Sorted Array",
+        "slug": "search-in-rotated-sorted-array",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "binary-search"
+        ]
+      },
+      {
+        "id": "p-blind75-search-in-rotated-sorted-array",
+        "title": "Search in Rotated Sorted Array",
+        "slug": "search-in-rotated-sorted-array",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "binary-search"
+        ]
+      },
+      {
+        "id": "p-grind75-search-in-rotated-sorted-array",
+        "title": "Search in Rotated Sorted Array",
+        "slug": "search-in-rotated-sorted-array",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "binary-search"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-3sum",
+    "problems": [
+      {
+        "id": "p-neetcode150-3sum",
+        "title": "3Sum",
+        "slug": "3sum",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/3sum/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "two-pointers",
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-blind75-3sum",
+        "title": "3Sum",
+        "slug": "3sum",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/3sum/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "two-pointers",
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-grind75-3sum",
+        "title": "3Sum",
+        "slug": "3sum",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/3sum/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "two-pointers",
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-container-with-most-water",
+    "problems": [
+      {
+        "id": "p-neetcode150-container-with-most-water",
+        "title": "Container With Most Water",
+        "slug": "container-with-most-water",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/container-with-most-water/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "two-pointers"
+        ]
+      },
+      {
+        "id": "p-blind75-container-with-most-water",
+        "title": "Container With Most Water",
+        "slug": "container-with-most-water",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/container-with-most-water/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "two-pointers"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-sum-of-two-integers",
+    "problems": [
+      {
+        "id": "p-neetcode150-sum-of-two-integers",
+        "title": "Sum of Two Integers",
+        "slug": "sum-of-two-integers",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/sum-of-two-integers/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-blind75-sum-of-two-integers",
+        "title": "Sum of Two Integers",
+        "slug": "sum-of-two-integers",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/sum-of-two-integers/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-number-of-1-bits",
+    "problems": [
+      {
+        "id": "p-neetcode150-number-of-1-bits",
+        "title": "Number of 1 Bits",
+        "slug": "number-of-1-bits",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/number-of-1-bits/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-blind75-number-of-1-bits",
+        "title": "Number of 1 Bits",
+        "slug": "number-of-1-bits",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/number-of-1-bits/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-counting-bits",
+    "problems": [
+      {
+        "id": "p-neetcode150-counting-bits",
+        "title": "Counting Bits",
+        "slug": "counting-bits",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/counting-bits/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation",
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-counting-bits",
+        "title": "Counting Bits",
+        "slug": "counting-bits",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/counting-bits/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation",
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-missing-number",
+    "problems": [
+      {
+        "id": "p-neetcode150-missing-number",
+        "title": "Missing Number",
+        "slug": "missing-number",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/missing-number/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation",
+          "math-geometry"
+        ]
+      },
+      {
+        "id": "p-blind75-missing-number",
+        "title": "Missing Number",
+        "slug": "missing-number",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/missing-number/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation",
+          "math-geometry"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-missing-number",
+        "title": "Missing Number",
+        "slug": "missing-number",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/missing-number/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation",
+          "math-geometry"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-reverse-bits",
+    "problems": [
+      {
+        "id": "p-neetcode150-reverse-bits",
+        "title": "Reverse Bits",
+        "slug": "reverse-bits",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/reverse-bits/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-blind75-reverse-bits",
+        "title": "Reverse Bits",
+        "slug": "reverse-bits",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/reverse-bits/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-climbing-stairs",
+    "problems": [
+      {
+        "id": "p-neetcode150-climbing-stairs",
+        "title": "Climbing Stairs",
+        "slug": "climbing-stairs",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/climbing-stairs/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-climbing-stairs",
+        "title": "Climbing Stairs",
+        "slug": "climbing-stairs",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/climbing-stairs/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-grind75-climbing-stairs",
+        "title": "Climbing Stairs",
+        "slug": "climbing-stairs",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/climbing-stairs/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-coin-change",
+    "problems": [
+      {
+        "id": "p-neetcode150-coin-change",
+        "title": "Coin Change",
+        "slug": "coin-change",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/coin-change/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-coin-change",
+        "title": "Coin Change",
+        "slug": "coin-change",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/coin-change/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-grind75-coin-change",
+        "title": "Coin Change",
+        "slug": "coin-change",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/coin-change/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-longest-increasing-subsequence",
+    "problems": [
+      {
+        "id": "p-neetcode150-longest-increasing-subsequence",
+        "title": "Longest Increasing Subsequence",
+        "slug": "longest-increasing-subsequence",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-increasing-subsequence/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-longest-increasing-subsequence",
+        "title": "Longest Increasing Subsequence",
+        "slug": "longest-increasing-subsequence",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-increasing-subsequence/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-longest-common-subsequence",
+    "problems": [
+      {
+        "id": "p-neetcode150-longest-common-subsequence",
+        "title": "Longest Common Subsequence",
+        "slug": "longest-common-subsequence",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-common-subsequence/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-longest-common-subsequence",
+        "title": "Longest Common Subsequence",
+        "slug": "longest-common-subsequence",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-common-subsequence/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-word-break",
+    "problems": [
+      {
+        "id": "p-neetcode150-word-break",
+        "title": "Word Break",
+        "slug": "word-break",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/word-break/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-word-break",
+        "title": "Word Break",
+        "slug": "word-break",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/word-break/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-house-robber",
+    "problems": [
+      {
+        "id": "p-neetcode150-house-robber",
+        "title": "House Robber",
+        "slug": "house-robber",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/house-robber/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-house-robber",
+        "title": "House Robber",
+        "slug": "house-robber",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/house-robber/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-house-robber-ii",
+    "problems": [
+      {
+        "id": "p-neetcode150-house-robber-ii",
+        "title": "House Robber II",
+        "slug": "house-robber-ii",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/house-robber-ii/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-house-robber-ii",
+        "title": "House Robber II",
+        "slug": "house-robber-ii",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/house-robber-ii/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-decode-ways",
+    "problems": [
+      {
+        "id": "p-neetcode150-decode-ways",
+        "title": "Decode Ways",
+        "slug": "decode-ways",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/decode-ways/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-decode-ways",
+        "title": "Decode Ways",
+        "slug": "decode-ways",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/decode-ways/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-unique-paths",
+    "problems": [
+      {
+        "id": "p-neetcode150-unique-paths",
+        "title": "Unique Paths",
+        "slug": "unique-paths",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/unique-paths/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-unique-paths",
+        "title": "Unique Paths",
+        "slug": "unique-paths",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/unique-paths/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-unique-paths",
+        "title": "Unique Paths",
+        "slug": "unique-paths",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/unique-paths/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-jump-game",
+    "problems": [
+      {
+        "id": "p-neetcode150-jump-game",
+        "title": "Jump Game",
+        "slug": "jump-game",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/jump-game/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "greedy",
+          "dynamic-programming"
+        ]
+      },
+      {
+        "id": "p-blind75-jump-game",
+        "title": "Jump Game",
+        "slug": "jump-game",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/jump-game/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "greedy",
+          "dynamic-programming"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-clone-graph",
+    "problems": [
+      {
+        "id": "p-neetcode150-clone-graph",
+        "title": "Clone Graph",
+        "slug": "clone-graph",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/clone-graph/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      },
+      {
+        "id": "p-blind75-clone-graph",
+        "title": "Clone Graph",
+        "slug": "clone-graph",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/clone-graph/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      },
+      {
+        "id": "p-grind75-clone-graph",
+        "title": "Clone Graph",
+        "slug": "clone-graph",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/clone-graph/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-course-schedule",
+    "problems": [
+      {
+        "id": "p-neetcode150-course-schedule",
+        "title": "Course Schedule",
+        "slug": "course-schedule",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/course-schedule/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      },
+      {
+        "id": "p-blind75-course-schedule",
+        "title": "Course Schedule",
+        "slug": "course-schedule",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/course-schedule/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      },
+      {
+        "id": "p-grind75-course-schedule",
+        "title": "Course Schedule",
+        "slug": "course-schedule",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/course-schedule/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-pacific-atlantic-water-flow",
+    "problems": [
+      {
+        "id": "p-neetcode150-pacific-atlantic-water-flow",
+        "title": "Pacific Atlantic Water Flow",
+        "slug": "pacific-atlantic-water-flow",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      },
+      {
+        "id": "p-blind75-pacific-atlantic-water-flow",
+        "title": "Pacific Atlantic Water Flow",
+        "slug": "pacific-atlantic-water-flow",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-number-of-islands",
+    "problems": [
+      {
+        "id": "p-neetcode150-number-of-islands",
+        "title": "Number of Islands",
+        "slug": "number-of-islands",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/number-of-islands/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      },
+      {
+        "id": "p-blind75-number-of-islands",
+        "title": "Number of Islands",
+        "slug": "number-of-islands",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/number-of-islands/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      },
+      {
+        "id": "p-grind75-number-of-islands",
+        "title": "Number of Islands",
+        "slug": "number-of-islands",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/number-of-islands/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-longest-consecutive-sequence",
+    "problems": [
+      {
+        "id": "p-neetcode150-longest-consecutive-sequence",
+        "title": "Longest Consecutive Sequence",
+        "slug": "longest-consecutive-sequence",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-consecutive-sequence/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window"
+        ]
+      },
+      {
+        "id": "p-blind75-longest-consecutive-sequence",
+        "title": "Longest Consecutive Sequence",
+        "slug": "longest-consecutive-sequence",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-consecutive-sequence/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-longest-consecutive-sequence",
+        "title": "Longest Consecutive Sequence",
+        "slug": "longest-consecutive-sequence",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-consecutive-sequence/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-alien-dictionary",
+    "problems": [
+      {
+        "id": "p-neetcode150-alien-dictionary",
+        "title": "Alien Dictionary",
+        "slug": "alien-dictionary",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/alien-dictionary/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-blind75-alien-dictionary",
+        "title": "Alien Dictionary",
+        "slug": "alien-dictionary",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/alien-dictionary/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-graph-valid-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-graph-valid-tree",
+        "title": "Graph Valid Tree",
+        "slug": "graph-valid-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/graph-valid-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      },
+      {
+        "id": "p-blind75-graph-valid-tree",
+        "title": "Graph Valid Tree",
+        "slug": "graph-valid-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/graph-valid-tree/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-number-of-connected-components-in-an-undirected-graph",
+    "problems": [
+      {
+        "id": "p-neetcode150-number-of-connected-components-in-an-undirected-graph",
+        "title": "Number of Connected Components in an Undirected Graph",
+        "slug": "number-of-connected-components-in-an-undirected-graph",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      },
+      {
+        "id": "p-blind75-number-of-connected-components-in-an-undirected-graph",
+        "title": "Number of Connected Components in an Undirected Graph",
+        "slug": "number-of-connected-components-in-an-undirected-graph",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "graphs"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-insert-interval",
+    "problems": [
+      {
+        "id": "p-neetcode150-insert-interval",
+        "title": "Insert Interval",
+        "slug": "insert-interval",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/insert-interval/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals"
+        ]
+      },
+      {
+        "id": "p-blind75-insert-interval",
+        "title": "Insert Interval",
+        "slug": "insert-interval",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/insert-interval/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals"
+        ]
+      },
+      {
+        "id": "p-grind75-insert-interval",
+        "title": "Insert Interval",
+        "slug": "insert-interval",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/insert-interval/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-merge-intervals",
+    "problems": [
+      {
+        "id": "p-neetcode150-merge-intervals",
+        "title": "Merge Intervals",
+        "slug": "merge-intervals",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/merge-intervals/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals"
+        ]
+      },
+      {
+        "id": "p-blind75-merge-intervals",
+        "title": "Merge Intervals",
+        "slug": "merge-intervals",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/merge-intervals/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals"
+        ]
+      },
+      {
+        "id": "p-grind75-merge-intervals",
+        "title": "Merge Intervals",
+        "slug": "merge-intervals",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/merge-intervals/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-merge-intervals",
+        "title": "Merge Intervals",
+        "slug": "merge-intervals",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/merge-intervals/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-non-overlapping-intervals",
+    "problems": [
+      {
+        "id": "p-neetcode150-non-overlapping-intervals",
+        "title": "Non-overlapping Intervals",
+        "slug": "non-overlapping-intervals",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/non-overlapping-intervals/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals",
+          "greedy"
+        ]
+      },
+      {
+        "id": "p-blind75-non-overlapping-intervals",
+        "title": "Non-overlapping Intervals",
+        "slug": "non-overlapping-intervals",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/non-overlapping-intervals/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals",
+          "greedy"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-meeting-rooms",
+    "problems": [
+      {
+        "id": "p-neetcode150-meeting-rooms",
+        "title": "Meeting Rooms",
+        "slug": "meeting-rooms",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/meeting-rooms/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals"
+        ]
+      },
+      {
+        "id": "p-blind75-meeting-rooms",
+        "title": "Meeting Rooms",
+        "slug": "meeting-rooms",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/meeting-rooms/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-meeting-rooms-ii",
+    "problems": [
+      {
+        "id": "p-neetcode150-meeting-rooms-ii",
+        "title": "Meeting Rooms II",
+        "slug": "meeting-rooms-ii",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/meeting-rooms-ii/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals",
+          "heap-priority-queue"
+        ]
+      },
+      {
+        "id": "p-blind75-meeting-rooms-ii",
+        "title": "Meeting Rooms II",
+        "slug": "meeting-rooms-ii",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/meeting-rooms-ii/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals",
+          "heap-priority-queue"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-reverse-linked-list",
+    "problems": [
+      {
+        "id": "p-neetcode150-reverse-linked-list",
+        "title": "Reverse Linked List",
+        "slug": "reverse-linked-list",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/reverse-linked-list/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-blind75-reverse-linked-list",
+        "title": "Reverse Linked List",
+        "slug": "reverse-linked-list",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/reverse-linked-list/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-grind75-reverse-linked-list",
+        "title": "Reverse Linked List",
+        "slug": "reverse-linked-list",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/reverse-linked-list/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-reverse-linked-list",
+        "title": "Reverse Linked List",
+        "slug": "reverse-linked-list",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/reverse-linked-list/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-linked-list-cycle",
+    "problems": [
+      {
+        "id": "p-neetcode150-linked-list-cycle",
+        "title": "Linked List Cycle",
+        "slug": "linked-list-cycle",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/linked-list-cycle/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list",
+          "two-pointers"
+        ]
+      },
+      {
+        "id": "p-blind75-linked-list-cycle",
+        "title": "Linked List Cycle",
+        "slug": "linked-list-cycle",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/linked-list-cycle/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list",
+          "two-pointers"
+        ]
+      },
+      {
+        "id": "p-grind75-linked-list-cycle",
+        "title": "Linked List Cycle",
+        "slug": "linked-list-cycle",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/linked-list-cycle/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list",
+          "two-pointers"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-linked-list-cycle",
+        "title": "Linked List Cycle",
+        "slug": "linked-list-cycle",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/linked-list-cycle/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list",
+          "two-pointers"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-merge-two-sorted-lists",
+    "problems": [
+      {
+        "id": "p-neetcode150-merge-two-sorted-lists",
+        "title": "Merge Two Sorted Lists",
+        "slug": "merge-two-sorted-lists",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-blind75-merge-two-sorted-lists",
+        "title": "Merge Two Sorted Lists",
+        "slug": "merge-two-sorted-lists",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-grind75-merge-two-sorted-lists",
+        "title": "Merge Two Sorted Lists",
+        "slug": "merge-two-sorted-lists",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-merge-two-sorted-lists",
+        "title": "Merge Two Sorted Lists",
+        "slug": "merge-two-sorted-lists",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-merge-k-sorted-lists",
+    "problems": [
+      {
+        "id": "p-neetcode150-merge-k-sorted-lists",
+        "title": "Merge k Sorted Lists",
+        "slug": "merge-k-sorted-lists",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/merge-k-sorted-lists/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "heap-priority-queue",
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-blind75-merge-k-sorted-lists",
+        "title": "Merge k Sorted Lists",
+        "slug": "merge-k-sorted-lists",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/merge-k-sorted-lists/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "heap-priority-queue",
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-blind75-merge-k-sorted-lists",
+        "title": "Merge k Sorted Lists",
+        "slug": "merge-k-sorted-lists",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/merge-k-sorted-lists/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "heap-priority-queue",
+          "linked-list"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-remove-nth-node-from-end-of-list",
+    "problems": [
+      {
+        "id": "p-neetcode150-remove-nth-node-from-end-of-list",
+        "title": "Remove Nth Node From End of List",
+        "slug": "remove-nth-node-from-end-of-list",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list",
+          "two-pointers"
+        ]
+      },
+      {
+        "id": "p-blind75-remove-nth-node-from-end-of-list",
+        "title": "Remove Nth Node From End of List",
+        "slug": "remove-nth-node-from-end-of-list",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list",
+          "two-pointers"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-remove-nth-node-from-end-of-list",
+        "title": "Remove Nth Node From End of List",
+        "slug": "remove-nth-node-from-end-of-list",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list",
+          "two-pointers"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-reorder-list",
+    "problems": [
+      {
+        "id": "p-neetcode150-reorder-list",
+        "title": "Reorder List",
+        "slug": "reorder-list",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/reorder-list/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-blind75-reorder-list",
+        "title": "Reorder List",
+        "slug": "reorder-list",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/reorder-list/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-set-matrix-zeroes",
+    "problems": [
+      {
+        "id": "p-neetcode150-set-matrix-zeroes",
+        "title": "Set Matrix Zeroes",
+        "slug": "set-matrix-zeroes",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/set-matrix-zeroes/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "math-geometry"
+        ]
+      },
+      {
+        "id": "p-blind75-set-matrix-zeroes",
+        "title": "Set Matrix Zeroes",
+        "slug": "set-matrix-zeroes",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/set-matrix-zeroes/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "math-geometry"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-spiral-matrix",
+    "problems": [
+      {
+        "id": "p-neetcode150-spiral-matrix",
+        "title": "Spiral Matrix",
+        "slug": "spiral-matrix",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/spiral-matrix/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "math-geometry"
+        ]
+      },
+      {
+        "id": "p-blind75-spiral-matrix",
+        "title": "Spiral Matrix",
+        "slug": "spiral-matrix",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/spiral-matrix/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "math-geometry"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-rotate-image",
+    "problems": [
+      {
+        "id": "p-neetcode150-rotate-image",
+        "title": "Rotate Image",
+        "slug": "rotate-image",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/rotate-image/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "math-geometry"
+        ]
+      },
+      {
+        "id": "p-blind75-rotate-image",
+        "title": "Rotate Image",
+        "slug": "rotate-image",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/rotate-image/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "math-geometry"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-word-search",
+    "problems": [
+      {
+        "id": "p-neetcode150-word-search",
+        "title": "Word Search",
+        "slug": "word-search",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/word-search/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "backtracking",
+          "graphs"
+        ]
+      },
+      {
+        "id": "p-blind75-word-search",
+        "title": "Word Search",
+        "slug": "word-search",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/word-search/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "backtracking",
+          "graphs"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-longest-substring-without-repeating-characters",
+    "problems": [
+      {
+        "id": "p-neetcode150-longest-substring-without-repeating-characters",
+        "title": "Longest Substring Without Repeating Characters",
+        "slug": "longest-substring-without-repeating-characters",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window",
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-blind75-longest-substring-without-repeating-characters",
+        "title": "Longest Substring Without Repeating Characters",
+        "slug": "longest-substring-without-repeating-characters",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window",
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-grind75-longest-substring-without-repeating-characters",
+        "title": "Longest Substring Without Repeating Characters",
+        "slug": "longest-substring-without-repeating-characters",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window",
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-longest-repeating-character-replacement",
+    "problems": [
+      {
+        "id": "p-neetcode150-longest-repeating-character-replacement",
+        "title": "Longest Repeating Character Replacement",
+        "slug": "longest-repeating-character-replacement",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window"
+        ]
+      },
+      {
+        "id": "p-blind75-longest-repeating-character-replacement",
+        "title": "Longest Repeating Character Replacement",
+        "slug": "longest-repeating-character-replacement",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-minimum-window-substring",
+    "problems": [
+      {
+        "id": "p-neetcode150-minimum-window-substring",
+        "title": "Minimum Window Substring",
+        "slug": "minimum-window-substring",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/minimum-window-substring/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window",
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-blind75-minimum-window-substring",
+        "title": "Minimum Window Substring",
+        "slug": "minimum-window-substring",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/minimum-window-substring/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window",
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-valid-anagram",
+    "problems": [
+      {
+        "id": "p-neetcode150-valid-anagram",
+        "title": "Valid Anagram",
+        "slug": "valid-anagram",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/valid-anagram/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-blind75-valid-anagram",
+        "title": "Valid Anagram",
+        "slug": "valid-anagram",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/valid-anagram/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-grind75-valid-anagram",
+        "title": "Valid Anagram",
+        "slug": "valid-anagram",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/valid-anagram/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-group-anagrams",
+    "problems": [
+      {
+        "id": "p-neetcode150-group-anagrams",
+        "title": "Group Anagrams",
+        "slug": "group-anagrams",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/group-anagrams/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-blind75-group-anagrams",
+        "title": "Group Anagrams",
+        "slug": "group-anagrams",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/group-anagrams/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-valid-parentheses",
+    "problems": [
+      {
+        "id": "p-neetcode150-valid-parentheses",
+        "title": "Valid Parentheses",
+        "slug": "valid-parentheses",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/valid-parentheses/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "stack"
+        ]
+      },
+      {
+        "id": "p-blind75-valid-parentheses",
+        "title": "Valid Parentheses",
+        "slug": "valid-parentheses",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/valid-parentheses/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "stack"
+        ]
+      },
+      {
+        "id": "p-grind75-valid-parentheses",
+        "title": "Valid Parentheses",
+        "slug": "valid-parentheses",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/valid-parentheses/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "stack"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-valid-palindrome",
+    "problems": [
+      {
+        "id": "p-neetcode150-valid-palindrome",
+        "title": "Valid Palindrome",
+        "slug": "valid-palindrome",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/valid-palindrome/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "stack"
+        ]
+      },
+      {
+        "id": "p-blind75-valid-palindrome",
+        "title": "Valid Palindrome",
+        "slug": "valid-palindrome",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/valid-palindrome/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "stack"
+        ]
+      },
+      {
+        "id": "p-grind75-valid-palindrome",
+        "title": "Valid Palindrome",
+        "slug": "valid-palindrome",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/valid-palindrome/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "stack"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-longest-palindromic-substring",
+    "problems": [
+      {
+        "id": "p-neetcode150-longest-palindromic-substring",
+        "title": "Longest Palindromic Substring",
+        "slug": "longest-palindromic-substring",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-palindromic-substring/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window",
+          "trees"
+        ]
+      },
+      {
+        "id": "p-blind75-longest-palindromic-substring",
+        "title": "Longest Palindromic Substring",
+        "slug": "longest-palindromic-substring",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/longest-palindromic-substring/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window",
+          "trees"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-palindromic-substrings",
+    "problems": [
+      {
+        "id": "p-neetcode150-palindromic-substrings",
+        "title": "Palindromic Substrings",
+        "slug": "palindromic-substrings",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/palindromic-substrings/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window",
+          "trees"
+        ]
+      },
+      {
+        "id": "p-blind75-palindromic-substrings",
+        "title": "Palindromic Substrings",
+        "slug": "palindromic-substrings",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/palindromic-substrings/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "sliding-window",
+          "trees"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-encode-and-decode-strings",
+    "problems": [
+      {
+        "id": "p-neetcode150-encode-and-decode-strings",
+        "title": "Encode and Decode Strings",
+        "slug": "encode-and-decode-strings",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/encode-and-decode-strings/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-blind75-encode-and-decode-strings",
+        "title": "Encode and Decode Strings",
+        "slug": "encode-and-decode-strings",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/encode-and-decode-strings/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-maximum-depth-of-binary-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-maximum-depth-of-binary-tree",
+        "title": "Maximum Depth of Binary Tree",
+        "slug": "maximum-depth-of-binary-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      },
+      {
+        "id": "p-blind75-maximum-depth-of-binary-tree",
+        "title": "Maximum Depth of Binary Tree",
+        "slug": "maximum-depth-of-binary-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      },
+      {
+        "id": "p-grind75-maximum-depth-of-binary-tree",
+        "title": "Maximum Depth of Binary Tree",
+        "slug": "maximum-depth-of-binary-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-same-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-same-tree",
+        "title": "Same Tree",
+        "slug": "same-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/same-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      },
+      {
+        "id": "p-blind75-same-tree",
+        "title": "Same Tree",
+        "slug": "same-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/same-tree/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-invert-binary-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-invert-binary-tree",
+        "title": "Invert Binary Tree",
+        "slug": "invert-binary-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/invert-binary-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      },
+      {
+        "id": "p-blind75-invert-binary-tree",
+        "title": "Invert Binary Tree",
+        "slug": "invert-binary-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/invert-binary-tree/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      },
+      {
+        "id": "p-grind75-invert-binary-tree",
+        "title": "Invert Binary Tree",
+        "slug": "invert-binary-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/invert-binary-tree/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-binary-tree-maximum-path-sum",
+    "problems": [
+      {
+        "id": "p-neetcode150-binary-tree-maximum-path-sum",
+        "title": "Binary Tree Maximum Path Sum",
+        "slug": "binary-tree-maximum-path-sum",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "graphs",
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-blind75-binary-tree-maximum-path-sum",
+        "title": "Binary Tree Maximum Path Sum",
+        "slug": "binary-tree-maximum-path-sum",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "graphs",
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-binary-tree-level-order-traversal",
+    "problems": [
+      {
+        "id": "p-neetcode150-binary-tree-level-order-traversal",
+        "title": "Binary Tree Level Order Traversal",
+        "slug": "binary-tree-level-order-traversal",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      },
+      {
+        "id": "p-blind75-binary-tree-level-order-traversal",
+        "title": "Binary Tree Level Order Traversal",
+        "slug": "binary-tree-level-order-traversal",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      },
+      {
+        "id": "p-grind75-binary-tree-level-order-traversal",
+        "title": "Binary Tree Level Order Traversal",
+        "slug": "binary-tree-level-order-traversal",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-serialize-and-deserialize-binary-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-serialize-and-deserialize-binary-tree",
+        "title": "Serialize and Deserialize Binary Tree",
+        "slug": "serialize-and-deserialize-binary-tree",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-blind75-serialize-and-deserialize-binary-tree",
+        "title": "Serialize and Deserialize Binary Tree",
+        "slug": "serialize-and-deserialize-binary-tree",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-subtree-of-another-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-subtree-of-another-tree",
+        "title": "Subtree of Another Tree",
+        "slug": "subtree-of-another-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/subtree-of-another-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      },
+      {
+        "id": "p-blind75-subtree-of-another-tree",
+        "title": "Subtree of Another Tree",
+        "slug": "subtree-of-another-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/subtree-of-another-tree/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-construct-binary-tree-from-preorder-and-inorder-traversal",
+    "problems": [
+      {
+        "id": "p-neetcode150-construct-binary-tree-from-preorder-and-inorder-traversal",
+        "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+        "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-blind75-construct-binary-tree-from-preorder-and-inorder-traversal",
+        "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+        "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-validate-binary-search-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-validate-binary-search-tree",
+        "title": "Validate Binary Search Tree",
+        "slug": "validate-binary-search-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/validate-binary-search-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      },
+      {
+        "id": "p-blind75-validate-binary-search-tree",
+        "title": "Validate Binary Search Tree",
+        "slug": "validate-binary-search-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/validate-binary-search-tree/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      },
+      {
+        "id": "p-grind75-validate-binary-search-tree",
+        "title": "Validate Binary Search Tree",
+        "slug": "validate-binary-search-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/validate-binary-search-tree/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-kth-smallest-element-in-a-bst",
+    "problems": [
+      {
+        "id": "p-neetcode150-kth-smallest-element-in-a-bst",
+        "title": "Kth Smallest Element in a BST",
+        "slug": "kth-smallest-element-in-a-bst",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "binary-search"
+        ]
+      },
+      {
+        "id": "p-blind75-kth-smallest-element-in-a-bst",
+        "title": "Kth Smallest Element in a BST",
+        "slug": "kth-smallest-element-in-a-bst",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "binary-search"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-lowest-common-ancestor-of-a-binary-search-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-lowest-common-ancestor-of-a-binary-search-tree",
+        "title": "Lowest Common Ancestor of a Binary Search Tree",
+        "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "binary-search"
+        ]
+      },
+      {
+        "id": "p-blind75-lowest-common-ancestor-of-a-binary-search-tree",
+        "title": "Lowest Common Ancestor of a Binary Search Tree",
+        "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "binary-search"
+        ]
+      },
+      {
+        "id": "p-grind75-lowest-common-ancestor-of-a-binary-search-tree",
+        "title": "Lowest Common Ancestor of a Binary Search Tree",
+        "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "binary-search"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-implement-trie-prefix-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-implement-trie-prefix-tree",
+        "title": "Implement Trie (Prefix Tree)",
+        "slug": "implement-trie-prefix-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "tries"
+        ]
+      },
+      {
+        "id": "p-blind75-implement-trie-prefix-tree",
+        "title": "Implement Trie (Prefix Tree)",
+        "slug": "implement-trie-prefix-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "tries"
+        ]
+      },
+      {
+        "id": "p-grind75-implement-trie-prefix-tree",
+        "title": "Implement Trie (Prefix Tree)",
+        "slug": "implement-trie-prefix-tree",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "tries"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-design-add-and-search-words-data-structure",
+    "problems": [
+      {
+        "id": "p-neetcode150-design-add-and-search-words-data-structure",
+        "title": "Design Add and Search Words Data Structure",
+        "slug": "design-add-and-search-words-data-structure",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "tries"
+        ]
+      },
+      {
+        "id": "p-blind75-design-add-and-search-words-data-structure",
+        "title": "Design Add and Search Words Data Structure",
+        "slug": "design-add-and-search-words-data-structure",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "tries"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-word-search-ii",
+    "problems": [
+      {
+        "id": "p-neetcode150-word-search-ii",
+        "title": "Word Search II",
+        "slug": "word-search-ii",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/word-search-ii/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "tries",
+          "backtracking"
+        ]
+      },
+      {
+        "id": "p-blind75-word-search-ii",
+        "title": "Word Search II",
+        "slug": "word-search-ii",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/word-search-ii/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "tries",
+          "backtracking"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-top-k-frequent-elements",
+    "problems": [
+      {
+        "id": "p-neetcode150-top-k-frequent-elements",
+        "title": "Top K Frequent Elements",
+        "slug": "top-k-frequent-elements",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/top-k-frequent-elements/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "heap-priority-queue",
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-blind75-top-k-frequent-elements",
+        "title": "Top K Frequent Elements",
+        "slug": "top-k-frequent-elements",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/top-k-frequent-elements/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "heap-priority-queue",
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-find-median-from-data-stream",
+    "problems": [
+      {
+        "id": "p-neetcode150-find-median-from-data-stream",
+        "title": "Find Median from Data Stream",
+        "slug": "find-median-from-data-stream",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/find-median-from-data-stream/",
+        "sourceSheets": [
+          "neetcode150",
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "heap-priority-queue"
+        ]
+      },
+      {
+        "id": "p-blind75-find-median-from-data-stream",
+        "title": "Find Median from Data Stream",
+        "slug": "find-median-from-data-stream",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/find-median-from-data-stream/",
+        "sourceSheets": [
+          "blind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "heap-priority-queue"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-binary-search",
+    "problems": [
+      {
+        "id": "p-neetcode150-binary-search",
+        "title": "Binary Search",
+        "slug": "binary-search",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/binary-search/",
+        "sourceSheets": [
+          "neetcode150",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "binary-search",
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-grind75-binary-search",
+        "title": "Binary Search",
+        "slug": "binary-search",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/binary-search/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "binary-search",
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-balanced-binary-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-balanced-binary-tree",
+        "title": "Balanced Binary Tree",
+        "slug": "balanced-binary-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/balanced-binary-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-grind75-balanced-binary-tree",
+        "title": "Balanced Binary Tree",
+        "slug": "balanced-binary-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/balanced-binary-tree/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-diameter-of-binary-tree",
+    "problems": [
+      {
+        "id": "p-neetcode150-diameter-of-binary-tree",
+        "title": "Diameter of Binary Tree",
+        "slug": "diameter-of-binary-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/diameter-of-binary-tree/",
+        "sourceSheets": [
+          "neetcode150",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-grind75-diameter-of-binary-tree",
+        "title": "Diameter of Binary Tree",
+        "slug": "diameter-of-binary-tree",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/diameter-of-binary-tree/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "trees",
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-k-closest-points-to-origin",
+    "problems": [
+      {
+        "id": "p-neetcode150-k-closest-points-to-origin",
+        "title": "K Closest Points to Origin",
+        "slug": "k-closest-points-to-origin",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/k-closest-points-to-origin/",
+        "sourceSheets": [
+          "neetcode150",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-grind75-k-closest-points-to-origin",
+        "title": "K Closest Points to Origin",
+        "slug": "k-closest-points-to-origin",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/k-closest-points-to-origin/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-evaluate-reverse-polish-notation",
+    "problems": [
+      {
+        "id": "p-neetcode150-evaluate-reverse-polish-notation",
+        "title": "Evaluate Reverse Polish Notation",
+        "slug": "evaluate-reverse-polish-notation",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+        "sourceSheets": [
+          "neetcode150",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "stack"
+        ]
+      },
+      {
+        "id": "p-grind75-evaluate-reverse-polish-notation",
+        "title": "Evaluate Reverse Polish Notation",
+        "slug": "evaluate-reverse-polish-notation",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "stack"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-min-stack",
+    "problems": [
+      {
+        "id": "p-neetcode150-min-stack",
+        "title": "Min Stack",
+        "slug": "min-stack",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/min-stack/",
+        "sourceSheets": [
+          "neetcode150",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "stack"
+        ]
+      },
+      {
+        "id": "p-grind75-min-stack",
+        "title": "Min Stack",
+        "slug": "min-stack",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/min-stack/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "stack"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-rotting-oranges",
+    "problems": [
+      {
+        "id": "p-neetcode150-rotting-oranges",
+        "title": "Rotting Oranges",
+        "slug": "rotting-oranges",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/rotting-oranges/",
+        "sourceSheets": [
+          "neetcode150",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals",
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-grind75-rotting-oranges",
+        "title": "Rotting Oranges",
+        "slug": "rotting-oranges",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/rotting-oranges/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "intervals",
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-combination-sum",
+    "problems": [
+      {
+        "id": "p-neetcode150-combination-sum",
+        "title": "Combination Sum",
+        "slug": "combination-sum",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/combination-sum/",
+        "sourceSheets": [
+          "neetcode150",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "backtracking"
+        ]
+      },
+      {
+        "id": "p-grind75-combination-sum",
+        "title": "Combination Sum",
+        "slug": "combination-sum",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/combination-sum/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "backtracking"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-permutations",
+    "problems": [
+      {
+        "id": "p-neetcode150-permutations",
+        "title": "Permutations",
+        "slug": "permutations",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/permutations/",
+        "sourceSheets": [
+          "neetcode150",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "backtracking"
+        ]
+      },
+      {
+        "id": "p-grind75-permutations",
+        "title": "Permutations",
+        "slug": "permutations",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/permutations/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "backtracking"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-time-based-key-value-store",
+    "problems": [
+      {
+        "id": "p-neetcode150-time-based-key-value-store",
+        "title": "Time Based Key-Value Store",
+        "slug": "time-based-key-value-store",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/time-based-key-value-store/",
+        "sourceSheets": [
+          "neetcode150",
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-grind75-time-based-key-value-store",
+        "title": "Time Based Key-Value Store",
+        "slug": "time-based-key-value-store",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/time-based-key-value-store/",
+        "sourceSheets": [
+          "grind75"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-grind75-sort-colors",
+    "problems": [
+      {
+        "id": "p-grind75-sort-colors",
+        "title": "Sort Colors",
+        "slug": "sort-colors",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/sort-colors/",
+        "sourceSheets": [
+          "grind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-sort-colors",
+        "title": "Sort Colors",
+        "slug": "sort-colors",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/sort-colors/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-grind75-majority-element",
+    "problems": [
+      {
+        "id": "p-grind75-majority-element",
+        "title": "Majority Element",
+        "slug": "majority-element",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/majority-element/",
+        "sourceSheets": [
+          "grind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-majority-element",
+        "title": "Majority Element",
+        "slug": "majority-element",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/majority-element/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-find-the-duplicate-number",
+    "problems": [
+      {
+        "id": "p-neetcode150-find-the-duplicate-number",
+        "title": "Find the Duplicate Number",
+        "slug": "find-the-duplicate-number",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/find-the-duplicate-number/",
+        "sourceSheets": [
+          "neetcode150",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-find-the-duplicate-number",
+        "title": "Find the Duplicate Number",
+        "slug": "find-the-duplicate-number",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/find-the-duplicate-number/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-search-a-2d-matrix",
+    "problems": [
+      {
+        "id": "p-neetcode150-search-a-2d-matrix",
+        "title": "Search a 2D Matrix",
+        "slug": "search-a-2d-matrix",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/search-a-2d-matrix/",
+        "sourceSheets": [
+          "neetcode150",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "binary-search",
+          "math-geometry"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-search-a-2d-matrix",
+        "title": "Search a 2D Matrix",
+        "slug": "search-a-2d-matrix",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/search-a-2d-matrix/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "binary-search",
+          "math-geometry"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-pow-x-n",
+    "problems": [
+      {
+        "id": "p-neetcode150-pow-x-n",
+        "title": "Pow X N",
+        "slug": "pow-x-n",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/pow-x-n/",
+        "sourceSheets": [
+          "neetcode150",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-powx-n",
+        "title": "Pow(x, n)",
+        "slug": "powx-n",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/powx-n/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "title"
+  },
+  {
+    "canonicalId": "p-grind75-middle-of-the-linked-list",
+    "problems": [
+      {
+        "id": "p-grind75-middle-of-the-linked-list",
+        "title": "Middle of the Linked List",
+        "slug": "middle-of-the-linked-list",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/middle-of-the-linked-list/",
+        "sourceSheets": [
+          "grind75",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-middle-of-the-linked-list",
+        "title": "Middle of the Linked List",
+        "slug": "middle-of-the-linked-list",
+        "difficulty": "Easy",
+        "link": "https://leetcode.com/problems/middle-of-the-linked-list/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-add-two-numbers",
+    "problems": [
+      {
+        "id": "p-neetcode150-add-two-numbers",
+        "title": "Add Two Numbers",
+        "slug": "add-two-numbers",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/add-two-numbers/",
+        "sourceSheets": [
+          "neetcode150",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-add-two-numbers",
+        "title": "Add Two Numbers",
+        "slug": "add-two-numbers",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/add-two-numbers/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "array-hashing"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-reverse-nodes-in-k-group",
+    "problems": [
+      {
+        "id": "p-neetcode150-reverse-nodes-in-k-group",
+        "title": "Reverse Nodes in k-Group",
+        "slug": "reverse-nodes-in-k-group",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+        "sourceSheets": [
+          "neetcode150",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-reverse-nodes-in-k-group",
+        "title": "Reverse Nodes in k-Group",
+        "slug": "reverse-nodes-in-k-group",
+        "difficulty": "Hard",
+        "link": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "linked-list"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  },
+  {
+    "canonicalId": "p-neetcode150-copy-list-with-random-pointer",
+    "problems": [
+      {
+        "id": "p-neetcode150-copy-list-with-random-pointer",
+        "title": "Copy List with Random Pointer",
+        "slug": "copy-list-with-random-pointer",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+        "sourceSheets": [
+          "neetcode150",
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      },
+      {
+        "id": "p-striver-a2z-copy-list-with-random-pointer",
+        "title": "Copy List with Random Pointer",
+        "slug": "copy-list-with-random-pointer",
+        "difficulty": "Medium",
+        "link": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+        "sourceSheets": [
+          "striver-a2z"
+        ],
+        "tags": [],
+        "patterns": [
+          "bit-manipulation"
+        ]
+      }
+    ],
+    "matchType": "slug"
+  }
+]

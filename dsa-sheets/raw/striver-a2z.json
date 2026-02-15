@@ -1,0 +1,164 @@
+{
+  "Striver A2Z": [
+    {
+      "name": "Two Sum",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "name": "Sort Colors",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/sort-colors/"
+    },
+    {
+      "name": "Majority Element",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/majority-element/"
+    },
+    {
+      "name": "Maximum Subarray",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/maximum-subarray/"
+    },
+    {
+      "name": "Kadanes Algorithm",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/kadanes-algorithm/"
+    },
+    {
+      "name": "Merge Intervals",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/merge-intervals/"
+    },
+    {
+      "name": "Merge Sorted Array",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/merge-sorted-array/"
+    },
+    {
+      "name": "Find the Duplicate Number",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/find-the-duplicate-number/"
+    },
+    {
+      "name": "Missing Number",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/missing-number/"
+    },
+    {
+      "name": "Search a 2D Matrix",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/search-a-2d-matrix/"
+    },
+    {
+      "name": "Pow(x, n)",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/powx-n/"
+    },
+    {
+      "name": "Majority Element II",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/majority-element-ii/"
+    },
+    {
+      "name": "Unique Paths",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/unique-paths/"
+    },
+    {
+      "name": "Reverse Pairs",
+      "difficulty": "Hard",
+      "leetCodeLink": "https://leetcode.com/problems/reverse-pairs/"
+    },
+    {
+      "name": "4Sum",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/4sum/"
+    },
+    {
+      "name": "Longest Consecutive Sequence",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/longest-consecutive-sequence/"
+    },
+    {
+      "name": "Largest Subarray With Zero Sum",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/largest-subarray-with-zero-sum/"
+    },
+    {
+      "name": "Count Inversions",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/count-inversions/"
+    },
+    {
+      "name": "Reverse Linked List",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/reverse-linked-list/"
+    },
+    {
+      "name": "Middle of the Linked List",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/middle-of-the-linked-list/"
+    },
+    {
+      "name": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/merge-two-sorted-lists/"
+    },
+    {
+      "name": "Remove Nth Node From End of List",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+    },
+    {
+      "name": "Add Two Numbers",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/add-two-numbers/"
+    },
+    {
+      "name": "Delete Node in a Linked List",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/delete-node-in-a-linked-list/"
+    },
+    {
+      "name": "Linked List Cycle",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/linked-list-cycle/"
+    },
+    {
+      "name": "Palindrome Linked List",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/palindrome-linked-list/"
+    },
+    {
+      "name": "Linked List Cycle II",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/linked-list-cycle-ii/"
+    },
+    {
+      "name": "Intersection of Two Linked Lists",
+      "difficulty": "Easy",
+      "leetCodeLink": "https://leetcode.com/problems/intersection-of-two-linked-lists/"
+    },
+    {
+      "name": "Reverse Nodes in k-Group",
+      "difficulty": "Hard",
+      "leetCodeLink": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+    },
+    {
+      "name": "Rotate List",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/rotate-list/"
+    },
+    {
+      "name": "Flatten a Multilevel Doubly Linked List",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/"
+    },
+    {
+      "name": "Copy List with Random Pointer",
+      "difficulty": "Medium",
+      "leetCodeLink": "https://leetcode.com/problems/copy-list-with-random-pointer/"
+    }
+  ]
+}

@@ -1,0 +1,3452 @@
+[
+  {
+    "stat": {
+      "question_id": 4227,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find Users with Persistent Behavior Patterns",
+      "question__title_slug": "find-users-with-persistent-behavior-patterns",
+      "question__hide": false,
+      "total_acs": 896,
+      "total_submitted": 1408,
+      "frontend_question_id": 3832,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4221,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Longest Almost-Palindromic Substring",
+      "question__title_slug": "longest-almost-palindromic-substring",
+      "question__hide": false,
+      "total_acs": 7624,
+      "total_submitted": 42175,
+      "frontend_question_id": 3844,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4217,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "First Element with Unique Frequency",
+      "question__title_slug": "first-element-with-unique-frequency",
+      "question__hide": false,
+      "total_acs": 31540,
+      "total_submitted": 45979,
+      "frontend_question_id": 3843,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4216,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Weighted Word Mapping",
+      "question__title_slug": "weighted-word-mapping",
+      "question__hide": false,
+      "total_acs": 38349,
+      "total_submitted": 45485,
+      "frontend_question_id": 3838,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4214,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Dominant Indices",
+      "question__title_slug": "count-dominant-indices",
+      "question__hide": false,
+      "total_acs": 51529,
+      "total_submitted": 78674,
+      "frontend_question_id": 3833,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4213,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Merge Adjacent Equal Elements",
+      "question__title_slug": "merge-adjacent-equal-elements",
+      "question__hide": false,
+      "total_acs": 39804,
+      "total_submitted": 95647,
+      "frontend_question_id": 3834,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4212,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Toggle Light Bulbs",
+      "question__title_slug": "toggle-light-bulbs",
+      "question__hide": false,
+      "total_acs": 39003,
+      "total_submitted": 54271,
+      "frontend_question_id": 3842,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4211,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Subarrays With Cost Less Than or Equal to K",
+      "question__title_slug": "count-subarrays-with-cost-less-than-or-equal-to-k",
+      "question__hide": false,
+      "total_acs": 19922,
+      "total_submitted": 44157,
+      "frontend_question_id": 3835,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4209,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Palindromic Path Queries in a Tree",
+      "question__title_slug": "palindromic-path-queries-in-a-tree",
+      "question__hide": false,
+      "total_acs": 2427,
+      "total_submitted": 7578,
+      "frontend_question_id": 3841,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4208,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find Emotionally Consistent Users",
+      "question__title_slug": "find-emotionally-consistent-users",
+      "question__hide": false,
+      "total_acs": 2135,
+      "total_submitted": 4102,
+      "frontend_question_id": 3808,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4204,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Subarray XOR with Bounded Range",
+      "question__title_slug": "maximum-subarray-xor-with-bounded-range",
+      "question__hide": false,
+      "total_acs": 2339,
+      "total_submitted": 9197,
+      "frontend_question_id": 3845,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4202,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Score Using Exactly K Pairs",
+      "question__title_slug": "maximum-score-using-exactly-k-pairs",
+      "question__hide": false,
+      "total_acs": 12976,
+      "total_submitted": 31451,
+      "frontend_question_id": 3836,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4200,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Reverse Letters Then Special Characters in a String",
+      "question__title_slug": "reverse-letters-then-special-characters-in-a-string",
+      "question__hide": false,
+      "total_acs": 47374,
+      "total_submitted": 58204,
+      "frontend_question_id": 3823,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4199,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Prefix Removal to Make Array Strictly Increasing",
+      "question__title_slug": "minimum-prefix-removal-to-make-array-strictly-increasing",
+      "question__hide": false,
+      "total_acs": 49160,
+      "total_submitted": 66822,
+      "frontend_question_id": 3818,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4198,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Longest Alternating Subarray After Removing At Most One Element",
+      "question__title_slug": "longest-alternating-subarray-after-removing-at-most-one-element",
+      "question__hide": false,
+      "total_acs": 7216,
+      "total_submitted": 24033,
+      "frontend_question_id": 3830,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4195,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find Users with High Token Usage",
+      "question__title_slug": "find-users-with-high-token-usage",
+      "question__hide": false,
+      "total_acs": 4644,
+      "total_submitted": 7933,
+      "frontend_question_id": 3793,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4194,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Monobit Integers",
+      "question__title_slug": "count-monobit-integers",
+      "question__hide": false,
+      "total_acs": 48141,
+      "total_submitted": 73004,
+      "frontend_question_id": 3827,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4190,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Operations to Reach Target Array",
+      "question__title_slug": "minimum-operations-to-reach-target-array",
+      "question__hide": false,
+      "total_acs": 24123,
+      "total_submitted": 38205,
+      "frontend_question_id": 3810,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4189,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find Nth Smallest Integer With K One Bits",
+      "question__title_slug": "find-nth-smallest-integer-with-k-one-bits",
+      "question__hide": false,
+      "total_acs": 8875,
+      "total_submitted": 26240,
+      "frontend_question_id": 3821,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4187,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Best Reachable Tower",
+      "question__title_slug": "best-reachable-tower",
+      "question__hide": false,
+      "total_acs": 30375,
+      "total_submitted": 54592,
+      "frontend_question_id": 3809,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4186,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Residue Prefixes",
+      "question__title_slug": "count-residue-prefixes",
+      "question__hide": false,
+      "total_acs": 44213,
+      "total_submitted": 67711,
+      "frontend_question_id": 3803,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4183,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Caesar Cipher Pairs",
+      "question__title_slug": "count-caesar-cipher-pairs",
+      "question__hide": false,
+      "total_acs": 24891,
+      "total_submitted": 49040,
+      "frontend_question_id": 3805,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4181,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Edge Toggles on a Tree",
+      "question__title_slug": "minimum-edge-toggles-on-a-tree",
+      "question__hide": false,
+      "total_acs": 5237,
+      "total_submitted": 7625,
+      "frontend_question_id": 3812,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4180,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Pythagorean Distance Nodes in a Tree",
+      "question__title_slug": "pythagorean-distance-nodes-in-a-tree",
+      "question__hide": false,
+      "total_acs": 19635,
+      "total_submitted": 34062,
+      "frontend_question_id": 3820,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4179,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Largest Even Number",
+      "question__title_slug": "largest-even-number",
+      "question__hide": false,
+      "total_acs": 41724,
+      "total_submitted": 60313,
+      "frontend_question_id": 3798,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4178,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Vowel-Consonant Score",
+      "question__title_slug": "vowel-consonant-score",
+      "question__hide": false,
+      "total_acs": 45196,
+      "total_submitted": 83563,
+      "frontend_question_id": 3813,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4177,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Reverse String Prefix",
+      "question__title_slug": "reverse-string-prefix",
+      "question__hide": false,
+      "total_acs": 50758,
+      "total_submitted": 56786,
+      "frontend_question_id": 3794,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4176,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum K to Reduce Array Within Limit",
+      "question__title_slug": "minimum-k-to-reduce-array-within-limit",
+      "question__hide": false,
+      "total_acs": 44898,
+      "total_submitted": 109082,
+      "frontend_question_id": 3824,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4175,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Smallest All-Ones Multiple",
+      "question__title_slug": "smallest-all-ones-multiple",
+      "question__hide": false,
+      "total_acs": 25819,
+      "total_submitted": 55117,
+      "frontend_question_id": 3790,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4173,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Score of a Split",
+      "question__title_slug": "maximum-score-of-a-split",
+      "question__hide": false,
+      "total_acs": 36655,
+      "total_submitted": 71231,
+      "frontend_question_id": 3788,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4171,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Rotate Non Negative Elements",
+      "question__title_slug": "rotate-non-negative-elements",
+      "question__hide": false,
+      "total_acs": 40357,
+      "total_submitted": 84617,
+      "frontend_question_id": 3819,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4169,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Most Common Course Pairs",
+      "question__title_slug": "most-common-course-pairs",
+      "question__hide": false,
+      "total_acs": 2213,
+      "total_submitted": 4234,
+      "frontend_question_id": 3764,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4168,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Mirror Distance of an Integer",
+      "question__title_slug": "mirror-distance-of-an-integer",
+      "question__hide": false,
+      "total_acs": 50314,
+      "total_submitted": 57547,
+      "frontend_question_id": 3783,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4164,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Last Remaining Integer After Alternating Deletion Operations",
+      "question__title_slug": "last-remaining-integer-after-alternating-deletion-operations",
+      "question__hide": false,
+      "total_acs": 7319,
+      "total_submitted": 15076,
+      "frontend_question_id": 3782,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4162,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Number of Operations to Have Distinct Elements",
+      "question__title_slug": "minimum-number-of-operations-to-have-distinct-elements",
+      "question__hide": false,
+      "total_acs": 26996,
+      "total_submitted": 64329,
+      "frontend_question_id": 3779,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4160,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Sum of Three Numbers Divisible by Three",
+      "question__title_slug": "maximum-sum-of-three-numbers-divisible-by-three",
+      "question__hide": false,
+      "total_acs": 21644,
+      "total_submitted": 45340,
+      "frontend_question_id": 3780,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4158,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Absolute Difference Between Maximum and Minimum K Elements",
+      "question__title_slug": "absolute-difference-between-maximum-and-minimum-k-elements",
+      "question__hide": false,
+      "total_acs": 43579,
+      "total_submitted": 57842,
+      "frontend_question_id": 3774,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4157,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Reverse Words With Same Vowel Count",
+      "question__title_slug": "reverse-words-with-same-vowel-count",
+      "question__hide": false,
+      "total_acs": 34269,
+      "total_submitted": 51535,
+      "frontend_question_id": 3775,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4156,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Cost to Make Two Binary Strings Equal",
+      "question__title_slug": "minimum-cost-to-make-two-binary-strings-equal",
+      "question__hide": false,
+      "total_acs": 8639,
+      "total_submitted": 22428,
+      "frontend_question_id": 3800,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4154,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Bitwise AND After Increment Operations",
+      "question__title_slug": "maximum-bitwise-and-after-increment-operations",
+      "question__hide": false,
+      "total_acs": 6258,
+      "total_submitted": 20369,
+      "frontend_question_id": 3806,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4153,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Routes to Climb a Rectangular Grid",
+      "question__title_slug": "count-routes-to-climb-a-rectangular-grid",
+      "question__hide": false,
+      "total_acs": 3364,
+      "total_submitted": 14326,
+      "frontend_question_id": 3797,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4152,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Subarray Length With Distinct Sum At Least K",
+      "question__title_slug": "minimum-subarray-length-with-distinct-sum-at-least-k",
+      "question__hide": false,
+      "total_acs": 27742,
+      "total_submitted": 87989,
+      "frontend_question_id": 3795,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4151,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Subgraph Score in a Tree",
+      "question__title_slug": "maximum-subgraph-score-in-a-tree",
+      "question__hide": false,
+      "total_acs": 5135,
+      "total_submitted": 7281,
+      "frontend_question_id": 3772,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4150,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Sort Integers by Binary Reflection",
+      "question__title_slug": "sort-integers-by-binary-reflection",
+      "question__hide": false,
+      "total_acs": 29142,
+      "total_submitted": 48043,
+      "frontend_question_id": 3769,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4147,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Cost to Acquire Required Items",
+      "question__title_slug": "minimum-cost-to-acquire-required-items",
+      "question__hide": false,
+      "total_acs": 23199,
+      "total_submitted": 66897,
+      "frontend_question_id": 3789,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4146,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Total Score of Dungeon Runs",
+      "question__title_slug": "total-score-of-dungeon-runs",
+      "question__hide": false,
+      "total_acs": 9891,
+      "total_submitted": 32600,
+      "frontend_question_id": 3771,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4145,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Inversion Count in Subarrays of Fixed Length",
+      "question__title_slug": "minimum-inversion-count-in-subarrays-of-fixed-length",
+      "question__hide": false,
+      "total_acs": 4636,
+      "total_submitted": 10944,
+      "frontend_question_id": 3768,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4144,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Cost to Merge Sorted Lists",
+      "question__title_slug": "minimum-cost-to-merge-sorted-lists",
+      "question__hide": false,
+      "total_acs": 3743,
+      "total_submitted": 11131,
+      "frontend_question_id": 3801,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4143,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Number of Alternating XOR Partitions",
+      "question__title_slug": "number-of-alternating-xor-partitions",
+      "question__hide": false,
+      "total_acs": 8072,
+      "total_submitted": 30425,
+      "frontend_question_id": 3811,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4141,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Elements With at Least K Greater Values",
+      "question__title_slug": "count-elements-with-at-least-k-greater-values",
+      "question__hide": false,
+      "total_acs": 30272,
+      "total_submitted": 97266,
+      "frontend_question_id": 3759,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4139,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Absolute Distance Between Mirror Pairs",
+      "question__title_slug": "minimum-absolute-distance-between-mirror-pairs",
+      "question__hide": false,
+      "total_acs": 21445,
+      "total_submitted": 48560,
+      "frontend_question_id": 3761,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4138,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Deletion Cost to Make All Characters Equal",
+      "question__title_slug": "minimum-deletion-cost-to-make-all-characters-equal",
+      "question__hide": false,
+      "total_acs": 35046,
+      "total_submitted": 63844,
+      "frontend_question_id": 3784,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4137,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Number of Prefix Connected Groups",
+      "question__title_slug": "number-of-prefix-connected-groups",
+      "question__hide": false,
+      "total_acs": 31850,
+      "total_submitted": 52453,
+      "frontend_question_id": 3839,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4136,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Concatenate Non-Zero Digits and Multiply by Sum II",
+      "question__title_slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+      "question__hide": false,
+      "total_acs": 9998,
+      "total_submitted": 41647,
+      "frontend_question_id": 3756,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4135,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Concatenate Non-Zero Digits and Multiply by Sum I",
+      "question__title_slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+      "question__hide": false,
+      "total_acs": 38355,
+      "total_submitted": 68917,
+      "frontend_question_id": 3754,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4134,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Number of Effective Subsequences",
+      "question__title_slug": "number-of-effective-subsequences",
+      "question__hide": false,
+      "total_acs": 2640,
+      "total_submitted": 8706,
+      "frontend_question_id": 3757,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4130,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Score After Binary Swaps",
+      "question__title_slug": "maximum-score-after-binary-swaps",
+      "question__hide": false,
+      "total_acs": 13762,
+      "total_submitted": 39391,
+      "frontend_question_id": 3781,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4129,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Number of Centered Subarrays",
+      "question__title_slug": "number-of-centered-subarrays",
+      "question__hide": false,
+      "total_acs": 36457,
+      "total_submitted": 54568,
+      "frontend_question_id": 3804,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4128,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Total Waviness of Numbers in Range II",
+      "question__title_slug": "total-waviness-of-numbers-in-range-ii",
+      "question__hide": false,
+      "total_acs": 3738,
+      "total_submitted": 15036,
+      "frontend_question_id": 3753,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4126,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Number of Flips to Reverse Binary String",
+      "question__title_slug": "minimum-number-of-flips-to-reverse-binary-string",
+      "question__hide": false,
+      "total_acs": 30058,
+      "total_submitted": 39717,
+      "frontend_question_id": 3750,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4122,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Final Element After Subarray Deletions",
+      "question__title_slug": "final-element-after-subarray-deletions",
+      "question__hide": false,
+      "total_acs": 29918,
+      "total_submitted": 75323,
+      "frontend_question_id": 3828,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4121,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Partition Score",
+      "question__title_slug": "minimum-partition-score",
+      "question__hide": false,
+      "total_acs": 6056,
+      "total_submitted": 17930,
+      "frontend_question_id": 3826,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4119,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Distance Between Three Equal Elements II",
+      "question__title_slug": "minimum-distance-between-three-equal-elements-ii",
+      "question__hide": false,
+      "total_acs": 30107,
+      "total_submitted": 46177,
+      "frontend_question_id": 3741,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4118,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Design Ride Sharing System",
+      "question__title_slug": "design-ride-sharing-system",
+      "question__hide": false,
+      "total_acs": 25598,
+      "total_submitted": 40517,
+      "frontend_question_id": 3829,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4116,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Moves to Equal Array Elements III",
+      "question__title_slug": "minimum-moves-to-equal-array-elements-iii",
+      "question__hide": false,
+      "total_acs": 35017,
+      "total_submitted": 43177,
+      "frontend_question_id": 3736,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4115,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Distance Between Three Equal Elements I",
+      "question__title_slug": "minimum-distance-between-three-equal-elements-i",
+      "question__hide": false,
+      "total_acs": 37398,
+      "total_submitted": 61886,
+      "frontend_question_id": 3740,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4112,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximize Expression of Three Elements",
+      "question__title_slug": "maximize-expression-of-three-elements",
+      "question__hide": false,
+      "total_acs": 43198,
+      "total_submitted": 59764,
+      "frontend_question_id": 3745,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4110,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Stable Subarrays",
+      "question__title_slug": "count-stable-subarrays",
+      "question__hide": false,
+      "total_acs": 5810,
+      "total_submitted": 18081,
+      "frontend_question_id": 3748,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4107,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find Missing Elements",
+      "question__title_slug": "find-missing-elements",
+      "question__hide": false,
+      "total_acs": 55982,
+      "total_submitted": 67644,
+      "frontend_question_id": 3731,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4103,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find Churn Risk Customers",
+      "question__title_slug": "find-churn-risk-customers",
+      "question__hide": false,
+      "total_acs": 4437,
+      "total_submitted": 9261,
+      "frontend_question_id": 3716,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4101,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Product of Three Elements After One Replacement",
+      "question__title_slug": "maximum-product-of-three-elements-after-one-replacement",
+      "question__hide": false,
+      "total_acs": 30428,
+      "total_submitted": 64722,
+      "frontend_question_id": 3732,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4100,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Complete Prime Number",
+      "question__title_slug": "complete-prime-number",
+      "question__hide": false,
+      "total_acs": 26038,
+      "total_submitted": 69961,
+      "frontend_question_id": 3765,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4099,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Operations to Make Binary Palindrome",
+      "question__title_slug": "minimum-operations-to-make-binary-palindrome",
+      "question__hide": false,
+      "total_acs": 16435,
+      "total_submitted": 31878,
+      "frontend_question_id": 3766,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4098,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Longest Non-Decreasing Subarray After Replacing at Most One Element",
+      "question__title_slug": "longest-non-decreasing-subarray-after-replacing-at-most-one-element",
+      "question__hide": false,
+      "total_acs": 13677,
+      "total_submitted": 64072,
+      "frontend_question_id": 3738,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4095,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Number of Balanced Integers in a Range",
+      "question__title_slug": "number-of-balanced-integers-in-a-range",
+      "question__hide": false,
+      "total_acs": 7249,
+      "total_submitted": 20902,
+      "frontend_question_id": 3791,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4091,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find Golden Hour Customers",
+      "question__title_slug": "find-golden-hour-customers",
+      "question__hide": false,
+      "total_acs": 4672,
+      "total_submitted": 13311,
+      "frontend_question_id": 3705,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4090,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum String Length After Balanced Removals",
+      "question__title_slug": "minimum-string-length-after-balanced-removals",
+      "question__hide": false,
+      "total_acs": 38121,
+      "total_submitted": 48648,
+      "frontend_question_id": 3746,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4089,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximize Points After Choosing K Tasks",
+      "question__title_slug": "maximize-points-after-choosing-k-tasks",
+      "question__hide": false,
+      "total_acs": 15628,
+      "total_submitted": 26122,
+      "frontend_question_id": 3767,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4087,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Substrings With Distinct Start",
+      "question__title_slug": "maximum-substrings-with-distinct-start",
+      "question__hide": false,
+      "total_acs": 44302,
+      "total_submitted": 48480,
+      "frontend_question_id": 3760,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4086,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Lexicographically Smallest String After Deleting Duplicate Characters",
+      "question__title_slug": "lexicographically-smallest-string-after-deleting-duplicate-characters",
+      "question__hide": false,
+      "total_acs": 4817,
+      "total_submitted": 25449,
+      "frontend_question_id": 3816,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4085,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Largest Prime from Consecutive Prime Sum",
+      "question__title_slug": "largest-prime-from-consecutive-prime-sum",
+      "question__hide": false,
+      "total_acs": 23809,
+      "total_submitted": 61386,
+      "frontend_question_id": 3770,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4084,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximize Sum of Squares of Digits",
+      "question__title_slug": "maximize-sum-of-squares-of-digits",
+      "question__hide": false,
+      "total_acs": 22568,
+      "total_submitted": 38269,
+      "frontend_question_id": 3723,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4083,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Stable Subarrays With Equal Boundary and Interior Sum",
+      "question__title_slug": "stable-subarrays-with-equal-boundary-and-interior-sum",
+      "question__hide": false,
+      "total_acs": 15518,
+      "total_submitted": 59918,
+      "frontend_question_id": 3728,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4080,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Smallest Missing Multiple of K",
+      "question__title_slug": "smallest-missing-multiple-of-k",
+      "question__hide": false,
+      "total_acs": 45758,
+      "total_submitted": 72554,
+      "frontend_question_id": 3718,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4079,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Capacity Within Budget",
+      "question__title_slug": "maximum-capacity-within-budget",
+      "question__hide": false,
+      "total_acs": 18047,
+      "total_submitted": 91117,
+      "frontend_question_id": 3814,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4078,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Alternating Sum of Squares",
+      "question__title_slug": "maximum-alternating-sum-of-squares",
+      "question__hide": false,
+      "total_acs": 32688,
+      "total_submitted": 53564,
+      "frontend_question_id": 3727,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4077,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Lexicographically Smallest Negated Permutation that Sums to Target",
+      "question__title_slug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
+      "question__hide": false,
+      "total_acs": 12617,
+      "total_submitted": 41079,
+      "frontend_question_id": 3752,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4075,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Subarrays With Majority Element II",
+      "question__title_slug": "count-subarrays-with-majority-element-ii",
+      "question__hide": false,
+      "total_acs": 6713,
+      "total_submitted": 15180,
+      "frontend_question_id": 3739,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4074,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Subarrays With Majority Element I",
+      "question__title_slug": "count-subarrays-with-majority-element-i",
+      "question__hide": false,
+      "total_acs": 25292,
+      "total_submitted": 38883,
+      "frontend_question_id": 3737,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4073,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Lexicographically Smallest String After Reverse",
+      "question__title_slug": "lexicographically-smallest-string-after-reverse",
+      "question__hide": false,
+      "total_acs": 24467,
+      "total_submitted": 44758,
+      "frontend_question_id": 3722,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4072,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Total Sum of Interaction Cost in Tree Groups",
+      "question__title_slug": "total-sum-of-interaction-cost-in-tree-groups",
+      "question__hide": false,
+      "total_acs": 6921,
+      "total_submitted": 12936,
+      "frontend_question_id": 3786,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4071,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Word Squares II",
+      "question__title_slug": "word-squares-ii",
+      "question__hide": false,
+      "total_acs": 18273,
+      "total_submitted": 33334,
+      "frontend_question_id": 3799,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4069,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Ways to Choose Coprime Integers from Rows",
+      "question__title_slug": "count-ways-to-choose-coprime-integers-from-rows",
+      "question__hide": false,
+      "total_acs": 9294,
+      "total_submitted": 19256,
+      "frontend_question_id": 3725,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4068,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Sum of Elements With Frequency Divisible by K",
+      "question__title_slug": "sum-of-elements-with-frequency-divisible-by-k",
+      "question__hide": false,
+      "total_acs": 49773,
+      "total_submitted": 64276,
+      "frontend_question_id": 3712,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4067,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Design Auction System",
+      "question__title_slug": "design-auction-system",
+      "question__hide": false,
+      "total_acs": 14178,
+      "total_submitted": 33956,
+      "frontend_question_id": 3815,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4064,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Deletions to Make Alternating Substring",
+      "question__title_slug": "minimum-deletions-to-make-alternating-substring",
+      "question__hide": false,
+      "total_acs": 5666,
+      "total_submitted": 12702,
+      "frontend_question_id": 3777,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4063,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Distinct Subarrays Divisible by K in Sorted Array",
+      "question__title_slug": "count-distinct-subarrays-divisible-by-k-in-sorted-array",
+      "question__hide": false,
+      "total_acs": 5784,
+      "total_submitted": 21191,
+      "frontend_question_id": 3729,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4062,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "House Robber V",
+      "question__title_slug": "house-robber-v",
+      "question__hide": false,
+      "total_acs": 22472,
+      "total_submitted": 42841,
+      "frontend_question_id": 3840,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4061,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Swaps to Avoid Forbidden Values",
+      "question__title_slug": "minimum-swaps-to-avoid-forbidden-values",
+      "question__hide": false,
+      "total_acs": 10996,
+      "total_submitted": 36501,
+      "frontend_question_id": 3785,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4059,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Design Exam Scores Tracker",
+      "question__title_slug": "design-exam-scores-tracker",
+      "question__hide": false,
+      "total_acs": 18635,
+      "total_submitted": 42459,
+      "frontend_question_id": 3709,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4058,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Compute Alternating Sum",
+      "question__title_slug": "compute-alternating-sum",
+      "question__hide": false,
+      "total_acs": 65190,
+      "total_submitted": 72741,
+      "frontend_question_id": 3701,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4057,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Total Waviness of Numbers in Range I",
+      "question__title_slug": "total-waviness-of-numbers-in-range-i",
+      "question__hide": false,
+      "total_acs": 25107,
+      "total_submitted": 31219,
+      "frontend_question_id": 3751,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4056,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Longest Balanced Substring II",
+      "question__title_slug": "longest-balanced-substring-ii",
+      "question__hide": false,
+      "total_acs": 71047,
+      "total_submitted": 168585,
+      "frontend_question_id": 3714,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4055,
+      "question__article__live": true,
+      "question__article__slug": "longest-balanced-substring-i",
+      "question__article__has_video_solution": false,
+      "question__title": "Longest Balanced Substring I",
+      "question__title_slug": "longest-balanced-substring-i",
+      "question__hide": false,
+      "total_acs": 128384,
+      "total_submitted": 184120,
+      "frontend_question_id": 3713,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4054,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Distinct Integers After Removing Zeros",
+      "question__title_slug": "count-distinct-integers-after-removing-zeros",
+      "question__hide": false,
+      "total_acs": 14791,
+      "total_submitted": 66210,
+      "frontend_question_id": 3747,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4053,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Majority Frequency Characters",
+      "question__title_slug": "majority-frequency-characters",
+      "question__hide": false,
+      "total_acs": 29299,
+      "total_submitted": 43689,
+      "frontend_question_id": 3692,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4052,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Equal Score Substrings",
+      "question__title_slug": "equal-score-substrings",
+      "question__hide": false,
+      "total_acs": 35649,
+      "total_submitted": 62903,
+      "frontend_question_id": 3707,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4051,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Remove Zeros in Decimal Representation",
+      "question__title_slug": "remove-zeros-in-decimal-representation",
+      "question__hide": false,
+      "total_acs": 48682,
+      "total_submitted": 63813,
+      "frontend_question_id": 3726,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4049,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count No-Zero Pairs That Sum to N",
+      "question__title_slug": "count-no-zero-pairs-that-sum-to-n",
+      "question__hide": false,
+      "total_acs": 5042,
+      "total_submitted": 35535,
+      "frontend_question_id": 3704,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4048,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Time to Complete All Deliveries",
+      "question__title_slug": "minimum-time-to-complete-all-deliveries",
+      "question__hide": false,
+      "total_acs": 13744,
+      "total_submitted": 40121,
+      "frontend_question_id": 3733,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4047,
+      "question__article__live": true,
+      "question__article__slug": "longest-balanced-subarray-ii",
+      "question__article__has_video_solution": false,
+      "question__title": "Longest Balanced Subarray II",
+      "question__title_slug": "longest-balanced-subarray-ii",
+      "question__hide": false,
+      "total_acs": 57906,
+      "total_submitted": 171488,
+      "frontend_question_id": 3721,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4045,
+      "question__article__live": true,
+      "question__article__slug": "longest-balanced-subarray-i",
+      "question__article__has_video_solution": false,
+      "question__title": "Longest Balanced Subarray I",
+      "question__title_slug": "longest-balanced-subarray-i",
+      "question__hide": false,
+      "total_acs": 138152,
+      "total_submitted": 210394,
+      "frontend_question_id": 3719,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4043,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find Zombie Sessions",
+      "question__title_slug": "find-zombie-sessions",
+      "question__hide": false,
+      "total_acs": 4708,
+      "total_submitted": 9791,
+      "frontend_question_id": 3673,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4042,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Operations to Transform Array",
+      "question__title_slug": "minimum-operations-to-transform-array",
+      "question__hide": false,
+      "total_acs": 13766,
+      "total_submitted": 35029,
+      "frontend_question_id": 3724,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4041,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Climbing Stairs II",
+      "question__title_slug": "climbing-stairs-ii",
+      "question__hide": false,
+      "total_acs": 26940,
+      "total_submitted": 42108,
+      "frontend_question_id": 3693,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4039,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Compute Decimal Representation",
+      "question__title_slug": "compute-decimal-representation",
+      "question__hide": false,
+      "total_acs": 59737,
+      "total_submitted": 92564,
+      "frontend_question_id": 3697,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4037,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Lexicographically Smallest Palindromic Permutation Greater Than Target",
+      "question__title_slug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+      "question__hide": false,
+      "total_acs": 4898,
+      "total_submitted": 19782,
+      "frontend_question_id": 3734,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4035,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Partition Factor",
+      "question__title_slug": "maximum-partition-factor",
+      "question__hide": false,
+      "total_acs": 6467,
+      "total_submitted": 20869,
+      "frontend_question_id": 3710,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4033,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Longest Subsequence With Non-Zero Bitwise XOR",
+      "question__title_slug": "longest-subsequence-with-non-zero-bitwise-xor",
+      "question__hide": false,
+      "total_acs": 31735,
+      "total_submitted": 85568,
+      "frontend_question_id": 3702,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4032,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND",
+      "question__title_slug": "longest-strictly-increasing-subsequence-with-non-zero-bitwise-and",
+      "question__hide": false,
+      "total_acs": 21432,
+      "total_submitted": 42072,
+      "frontend_question_id": 3825,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4030,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximize Cyclic Partition Score",
+      "question__title_slug": "maximize-cyclic-partition-score",
+      "question__hide": false,
+      "total_acs": 2534,
+      "total_submitted": 20971,
+      "frontend_question_id": 3743,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4027,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Number of Stable Subsequences",
+      "question__title_slug": "number-of-stable-subsequences",
+      "question__hide": false,
+      "total_acs": 23974,
+      "total_submitted": 39893,
+      "frontend_question_id": 3686,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4025,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find Loyal Customers",
+      "question__title_slug": "find-loyal-customers",
+      "question__hide": false,
+      "total_acs": 8179,
+      "total_submitted": 13317,
+      "frontend_question_id": 3657,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4023,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Binary Palindromic Numbers",
+      "question__title_slug": "count-binary-palindromic-numbers",
+      "question__hide": false,
+      "total_acs": 15667,
+      "total_submitted": 46537,
+      "frontend_question_id": 3677,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4022,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Operations to Equalize Subarrays",
+      "question__title_slug": "minimum-operations-to-equalize-subarrays",
+      "question__hide": false,
+      "total_acs": 2870,
+      "total_submitted": 14878,
+      "frontend_question_id": 3762,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4021,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Distinct Points Reachable After Substring Removal",
+      "question__title_slug": "distinct-points-reachable-after-substring-removal",
+      "question__hide": false,
+      "total_acs": 15915,
+      "total_submitted": 29610,
+      "frontend_question_id": 3694,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4020,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Lexicographically Smallest Permutation Greater Than Target",
+      "question__title_slug": "lexicographically-smallest-permutation-greater-than-target",
+      "question__hide": false,
+      "total_acs": 12498,
+      "total_submitted": 47164,
+      "frontend_question_id": 3720,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4019,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Remove K-Balanced Substrings",
+      "question__title_slug": "remove-k-balanced-substrings",
+      "question__hide": false,
+      "total_acs": 19195,
+      "total_submitted": 59329,
+      "frontend_question_id": 3703,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4018,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Moves to Balance Circular Array",
+      "question__title_slug": "minimum-moves-to-balance-circular-array",
+      "question__hide": false,
+      "total_acs": 20242,
+      "total_submitted": 50510,
+      "frontend_question_id": 3776,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4015,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Split Array With Minimum Difference",
+      "question__title_slug": "split-array-with-minimum-difference",
+      "question__hide": false,
+      "total_acs": 40045,
+      "total_submitted": 119402,
+      "frontend_question_id": 3698,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4012,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Earliest Time to Finish One Task",
+      "question__title_slug": "earliest-time-to-finish-one-task",
+      "question__hide": false,
+      "total_acs": 68617,
+      "total_submitted": 81385,
+      "frontend_question_id": 3683,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4011,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Smallest Absent Positive Greater Than Average",
+      "question__title_slug": "smallest-absent-positive-greater-than-average",
+      "question__hide": false,
+      "total_acs": 35784,
+      "total_submitted": 105102,
+      "frontend_question_id": 3678,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4010,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximize Alternating Sum Using Swaps",
+      "question__title_slug": "maximize-alternating-sum-using-swaps",
+      "question__hide": false,
+      "total_acs": 8796,
+      "total_submitted": 13737,
+      "frontend_question_id": 3695,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4009,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Bitwise OR of Even Numbers in an Array",
+      "question__title_slug": "bitwise-or-of-even-numbers-in-an-array",
+      "question__hide": false,
+      "total_acs": 69765,
+      "total_submitted": 82403,
+      "frontend_question_id": 3688,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4008,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Restore Finishing Order",
+      "question__title_slug": "restore-finishing-order",
+      "question__hide": false,
+      "total_acs": 90144,
+      "total_submitted": 99019,
+      "frontend_question_id": 3668,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4007,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Total Subarray Value II",
+      "question__title_slug": "maximum-total-subarray-value-ii",
+      "question__hide": false,
+      "total_acs": 11549,
+      "total_submitted": 52826,
+      "frontend_question_id": 3691,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4005,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Total Subarray Value I",
+      "question__title_slug": "maximum-total-subarray-value-i",
+      "question__hide": false,
+      "total_acs": 52830,
+      "total_submitted": 82213,
+      "frontend_question_id": 3689,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4003,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Longest Fibonacci Subarray",
+      "question__title_slug": "longest-fibonacci-subarray",
+      "question__hide": false,
+      "total_acs": 31473,
+      "total_submitted": 45363,
+      "frontend_question_id": 3708,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 4000,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Count Bowl Subarrays",
+      "question__title_slug": "count-bowl-subarrays",
+      "question__hide": false,
+      "total_acs": 29480,
+      "total_submitted": 61658,
+      "frontend_question_id": 3676,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3999,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Operations to Transform String",
+      "question__title_slug": "minimum-operations-to-transform-string",
+      "question__hide": false,
+      "total_acs": 50167,
+      "total_submitted": 81173,
+      "frontend_question_id": 3675,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3998,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Operations to Equalize Array",
+      "question__title_slug": "minimum-operations-to-equalize-array",
+      "question__hide": false,
+      "total_acs": 53465,
+      "total_submitted": 89099,
+      "frontend_question_id": 3674,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3997,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximize Sum of At Most K Distinct Elements",
+      "question__title_slug": "maximize-sum-of-at-most-k-distinct-elements",
+      "question__hide": false,
+      "total_acs": 60900,
+      "total_submitted": 79588,
+      "frontend_question_id": 3684,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3996,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find Books with Polarized Opinions",
+      "question__title_slug": "find-books-with-polarized-opinions",
+      "question__hide": false,
+      "total_acs": 8090,
+      "total_submitted": 19495,
+      "frontend_question_id": 3642,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3995,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "GCD of Odd and Even Sums",
+      "question__title_slug": "gcd-of-odd-and-even-sums",
+      "question__hide": false,
+      "total_acs": 86581,
+      "total_submitted": 102253,
+      "frontend_question_id": 3658,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3994,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Find The Least Frequent Digit",
+      "question__title_slug": "find-the-least-frequent-digit",
+      "question__hide": false,
+      "total_acs": 41367,
+      "total_submitted": 59348,
+      "frontend_question_id": 3663,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 1
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3991,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Generate Schedule",
+      "question__title_slug": "generate-schedule",
+      "question__hide": false,
+      "total_acs": 4494,
+      "total_submitted": 18884,
+      "frontend_question_id": 3680,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3990,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum XOR of Subsequences",
+      "question__title_slug": "maximum-xor-of-subsequences",
+      "question__hide": false,
+      "total_acs": 7413,
+      "total_submitted": 14467,
+      "frontend_question_id": 3681,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3989,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Sum of Beautiful Subsequences",
+      "question__title_slug": "sum-of-beautiful-subsequences",
+      "question__hide": false,
+      "total_acs": 8797,
+      "total_submitted": 28320,
+      "frontend_question_id": 3671,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3986,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Maximum Path Score in a Grid",
+      "question__title_slug": "maximum-path-score-in-a-grid",
+      "question__hide": false,
+      "total_acs": 17866,
+      "total_submitted": 48924,
+      "frontend_question_id": 3742,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 2
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  },
+  {
+    "stat": {
+      "question_id": 3983,
+      "question__article__live": null,
+      "question__article__slug": null,
+      "question__article__has_video_solution": null,
+      "question__title": "Minimum Operations to Equalize Binary String",
+      "question__title_slug": "minimum-operations-to-equalize-binary-string",
+      "question__hide": false,
+      "total_acs": 3152,
+      "total_submitted": 15527,
+      "frontend_question_id": 3666,
+      "is_new_question": false
+    },
+    "status": null,
+    "difficulty": {
+      "level": 3
+    },
+    "paid_only": false,
+    "is_favor": false,
+    "frequency": 0,
+    "progress": 0
+  }
+]

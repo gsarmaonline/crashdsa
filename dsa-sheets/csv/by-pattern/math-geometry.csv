@@ -1,0 +1,17 @@
+Problem Name,Difficulty,Source Sheets,Link,Acceptance Rate
+Minimum Distance Between Three Equal Elements I,Easy,leetcode-top-150,https://leetcode.com/problems/minimum-distance-between-three-equal-elements-i/,60.4%
+Mirror Distance of an Integer,Easy,leetcode-top-150,https://leetcode.com/problems/mirror-distance-of-an-integer/,87.4%
+Missing Number,Easy,neetcode150; blind75; striver-a2z,https://leetcode.com/problems/missing-number/,N/A
+01 Matrix,Medium,grind75,https://leetcode.com/problems/01-matrix/,N/A
+Edit Distance,Medium,neetcode150,https://leetcode.com/problems/edit-distance/,N/A
+Maximum Path Score in a Grid,Medium,leetcode-top-150,https://leetcode.com/problems/maximum-path-score-in-a-grid/,36.5%
+Minimum Absolute Distance Between Mirror Pairs,Medium,leetcode-top-150,https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/,44.2%
+Minimum Distance Between Three Equal Elements II,Medium,leetcode-top-150,https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/,65.2%
+Pythagorean Distance Nodes in a Tree,Medium,leetcode-top-150,https://leetcode.com/problems/pythagorean-distance-nodes-in-a-tree/,57.6%
+Rotate Image,Medium,neetcode150; blind75,https://leetcode.com/problems/rotate-image/,N/A
+Search a 2D Matrix,Medium,neetcode150; striver-a2z,https://leetcode.com/problems/search-a-2d-matrix/,N/A
+Set Matrix Zeroes,Medium,neetcode150; blind75,https://leetcode.com/problems/set-matrix-zeroes/,N/A
+Spiral Matrix,Medium,neetcode150; blind75,https://leetcode.com/problems/spiral-matrix/,N/A
+Count Routes to Climb a Rectangular Grid,Hard,leetcode-top-150,https://leetcode.com/problems/count-routes-to-climb-a-rectangular-grid/,23.5%
+Largest Rectangle in Histogram,Hard,neetcode150,https://leetcode.com/problems/largest-rectangle-in-histogram/,N/A
+Longest Increasing Path in a Matrix,Hard,neetcode150,https://leetcode.com/problems/longest-increasing-path-in-a-matrix/,N/A
