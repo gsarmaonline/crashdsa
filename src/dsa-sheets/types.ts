@@ -56,6 +56,7 @@ export interface Pattern {
   name: PatternName;
   displayName: string;
   description: string;
+  strategy: string;              // Detailed approach guide for the pattern
   keywords: string[];            // For keyword-based matching
   tagMappings: string[];         // LeetCode tags that map to this pattern
 }
