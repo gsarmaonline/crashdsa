@@ -69,6 +69,10 @@ export async function getProblemsByPattern(patternName: string) {
 
   return {
     pattern: patternName,
+    displayName: pattern.displayName,
+    description: pattern.description,
+    strategy: pattern.strategy,
+    keywords: pattern.keywords,
     problems: problems.map(mapProblem),
     count: problems.length,
   }
@@ -115,6 +119,15 @@ export async function getStats() {
   return { total, easy, medium, hard, lastUpdated: new Date() }
 }
 
+export interface PatternWithProblems {
+  name: string
+  displayName: string
+  description: string
+  strategy: string
+  keywords: string[]
+  problems: Problem[]
+}
+
 export async function getPatternProblems() {
   const patterns = await prisma.pattern.findMany({
     include: {
@@ -129,12 +142,14 @@ export async function getPatternProblems() {
     orderBy: { name: 'asc' },
   })
 
-  const byPattern: Record<string, Problem[]> = {}
-  for (const pattern of patterns) {
-    byPattern[pattern.name] = pattern.problems.map((pp) => mapProblem(pp.problem))
-  }
-
-  return byPattern
+  return patterns.map((pattern) => ({
+    name: pattern.name,
+    displayName: pattern.displayName,
+    description: pattern.description,
+    strategy: pattern.strategy,
+    keywords: pattern.keywords,
+    problems: pattern.problems.map((pp) => mapProblem(pp.problem)),
+  })) as PatternWithProblems[]
 }
 
 export async function getTestCasesForProblem(slug: string) {

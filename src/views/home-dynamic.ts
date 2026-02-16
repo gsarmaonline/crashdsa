@@ -1,22 +1,20 @@
 import { html, raw } from 'hono/html'
 import { getStats, getPatternProblems } from '../data/problem-repository.js'
-import { PATTERNS } from '../dsa-sheets/patterns.js'
 import { navbar } from '../components/navbar.js'
 import type { User } from '../db/users.js'
 
 export async function homePageDynamic(user: User | null = null) {
-  const [stats, byPattern] = await Promise.all([getStats(), getPatternProblems()])
-  const patternNames = Object.keys(byPattern).sort()
+  const [stats, allPatterns] = await Promise.all([getStats(), getPatternProblems()])
+  const patternNames = allPatterns.map(p => p.name)
 
   // Pick 6 featured patterns with problem counts
   const featuredPatternNames = ['two-pointers', 'sliding-window', 'binary-search', 'tree-dfs', 'dynamic-programming-1d', 'backtracking']
   const featuredPatterns = featuredPatternNames
     .map(name => {
-      const pattern = PATTERNS.find(p => p.name === name)
-      const count = byPattern[name]?.length ?? 0
-      return pattern ? { ...pattern, count } : null
+      const pattern = allPatterns.find(p => p.name === name)
+      return pattern ? { ...pattern, count: pattern.problems.length } : null
     })
-    .filter(Boolean) as (typeof PATTERNS[number] & { count: number })[]
+    .filter(Boolean) as { name: string; displayName: string; description: string; count: number }[]
 
   return html`
 <!DOCTYPE html>

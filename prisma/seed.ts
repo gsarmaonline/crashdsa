@@ -31,6 +31,7 @@ async function main() {
       update: {
         displayName: pattern.displayName,
         description: pattern.description,
+        strategy: pattern.strategy,
         keywords: pattern.keywords,
         tagMappings: pattern.tagMappings,
       },
@@ -38,6 +39,7 @@ async function main() {
         name: pattern.name,
         displayName: pattern.displayName,
         description: pattern.description,
+        strategy: pattern.strategy,
         keywords: pattern.keywords,
         tagMappings: pattern.tagMappings,
       },

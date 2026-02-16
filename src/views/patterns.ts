@@ -1,18 +1,16 @@
 import { html, raw } from 'hono/html'
 import { getStats, getPatternProblems } from '../data/problem-repository.js'
-import { PATTERNS } from '../dsa-sheets/patterns.js'
 import { navbar } from '../components/navbar.js'
 import type { User } from '../db/users.js'
 
 export async function patternsPage(user: User | null = null) {
-  const [stats, byPattern] = await Promise.all([getStats(), getPatternProblems()])
+  const [stats, patterns] = await Promise.all([getStats(), getPatternProblems()])
 
-  const patternCards = PATTERNS.map(pattern => {
-    const problems = byPattern[pattern.name] || []
-    const easy = problems.filter(p => p.difficulty === 'Easy').length
-    const medium = problems.filter(p => p.difficulty === 'Medium').length
-    const hard = problems.filter(p => p.difficulty === 'Hard').length
-    const total = problems.length
+  const patternCards = patterns.map(pattern => {
+    const easy = pattern.problems.filter(p => p.difficulty === 'Easy').length
+    const medium = pattern.problems.filter(p => p.difficulty === 'Medium').length
+    const hard = pattern.problems.filter(p => p.difficulty === 'Hard').length
+    const total = pattern.problems.length
 
     return { ...pattern, easy, medium, hard, total }
   })
@@ -168,11 +166,11 @@ export async function patternsPage(user: User | null = null) {
       <div class="patterns-header">
         <h1>Solution Patterns</h1>
         <p class="subtitle">
-          Master ${PATTERNS.length} algorithmic strategies used to solve DSA problems
+          Master ${patternCards.length} algorithmic strategies used to solve DSA problems
         </p>
         <div class="patterns-summary">
           <span class="summary-stat"><strong>${stats.total}</strong> total problems</span>
-          <span class="summary-stat"><strong>${PATTERNS.length}</strong> patterns</span>
+          <span class="summary-stat"><strong>${patternCards.length}</strong> patterns</span>
         </div>
       </div>
 

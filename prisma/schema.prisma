@@ -39,6 +39,7 @@ model Pattern {
   name        String   @id // e.g. "two-pointers"
   displayName String
   description String
+  strategy    String   @default("") // Detailed approach guide for the pattern
   keywords    String[] // PostgreSQL array
   tagMappings String[] // PostgreSQL array
 

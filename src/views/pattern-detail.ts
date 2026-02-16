@@ -1,6 +1,5 @@
 import { html, raw } from 'hono/html'
-import { getProblemsByPattern } from '../data/problem-repository.js'
-import { PATTERNS } from '../dsa-sheets/patterns.js'
+import { getProblemsByPattern, getPatternProblems } from '../data/problem-repository.js'
 import { navbar } from '../components/navbar.js'
 import type { User } from '../db/users.js'
 
@@ -8,19 +7,22 @@ export async function patternDetailPage(
   name: string,
   user: User | null = null
 ): Promise<ReturnType<typeof html> | null> {
-  const pattern = PATTERNS.find(p => p.name === name)
-  if (!pattern) return null
+  const [result, allPatterns] = await Promise.all([
+    getProblemsByPattern(name),
+    getPatternProblems(),
+  ])
+  if (!result) return null
 
-  const result = await getProblemsByPattern(name)
-  const problems = result?.problems ?? []
+  const pattern = result
+  const problems = result.problems ?? []
 
   const easy = problems.filter(p => p.difficulty === 'Easy')
   const medium = problems.filter(p => p.difficulty === 'Medium')
   const hard = problems.filter(p => p.difficulty === 'Hard')
 
-  const patternIndex = PATTERNS.findIndex(p => p.name === name)
-  const prevPattern = patternIndex > 0 ? PATTERNS[patternIndex - 1] : null
-  const nextPattern = patternIndex < PATTERNS.length - 1 ? PATTERNS[patternIndex + 1] : null
+  const patternIndex = allPatterns.findIndex(p => p.name === name)
+  const prevPattern = patternIndex > 0 ? allPatterns[patternIndex - 1] : null
+  const nextPattern = patternIndex < allPatterns.length - 1 ? allPatterns[patternIndex + 1] : null
 
   return html`
 <!DOCTYPE html>
@@ -53,6 +55,35 @@ export async function patternDetailPage(
     .animation-container img {
       max-width: 100%;
       height: auto;
+    }
+
+    .strategy-content {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.75rem;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+      color: #1e293b;
+      font-size: 0.95rem;
+    }
+    .strategy-content p {
+      margin: 0.75rem 0;
+    }
+    .strategy-content p:first-child {
+      margin-top: 0;
+    }
+    .strategy-section {
+      margin: 1.25rem 0;
+    }
+    .strategy-section h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 0.25rem;
+    }
+    .strategy-section p {
+      margin: 0;
     }
 
     .pattern-meta {
@@ -158,6 +189,19 @@ export async function patternDetailPage(
 
       <div class="animation-container">
         <img src="/animations/${pattern.name}.svg" alt="${pattern.displayName} animation" />
+      </div>
+
+      <h2 style="font-size: 1.15rem; margin-bottom: 0.75rem;">Strategy Guide</h2>
+      <div class="strategy-content">
+        ${raw(pattern.strategy.split('\n\n').map(paragraph => {
+          if (paragraph.startsWith('**') && paragraph.includes('**:')) {
+            const boldEnd = paragraph.indexOf('**:', 2)
+            const title = paragraph.slice(2, boldEnd)
+            const rest = paragraph.slice(boldEnd + 3)
+            return `<div class="strategy-section"><h3>${title}</h3><p>${rest.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')}</p></div>`
+          }
+          return `<p>${paragraph.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')}</p>`
+        }).join(''))}
       </div>
 
       <div class="pattern-meta">
