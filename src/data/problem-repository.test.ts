@@ -205,10 +205,11 @@ describe('problem-repository', () => {
 
       const result = await getPatternProblems()
 
-      expect(Object.keys(result)).toEqual(['two-pointers', 'binary-search'])
-      expect(result['two-pointers']).toHaveLength(1)
-      expect(result['two-pointers'][0].name).toBe('Two Sum')
-      expect(result['binary-search'][0].name).toBe('Median of Two Sorted Arrays')
+      expect(result).toHaveLength(2)
+      expect(result.map(p => p.name)).toEqual(['two-pointers', 'binary-search'])
+      expect(result[0].problems).toHaveLength(1)
+      expect(result[0].problems[0].name).toBe('Two Sum')
+      expect(result[1].problems[0].name).toBe('Median of Two Sorted Arrays')
     })
   })
 
