@@ -22,10 +22,6 @@ mock.module('./src/data/db.js', () => ({
   },
 }))
 
-mock.module('./src/db/migrate.js', () => ({
-  runMigrations: mock(() => Promise.resolve()),
-}))
-
 mock.module('./src/db/sessions.js', () => ({
   findSessionWithUser: mock(() => Promise.resolve({
     session: { id: 'test-session', user_id: 1, expires_at: new Date(Date.now() + 86400000), created_at: new Date() },

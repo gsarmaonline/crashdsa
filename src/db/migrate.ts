@@ -1,6 +1,6 @@
-import sql from './connection.js'
+import defaultSql from './connection.js'
 
-export async function runMigrations() {
+export async function runMigrations(sql = defaultSql) {
   if (!sql) {
     console.log('DATABASE_URL not set, skipping migrations')
     return
