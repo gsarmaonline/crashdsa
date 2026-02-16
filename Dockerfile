@@ -30,6 +30,7 @@ COPY --from=prerelease /app/src ./src
 COPY --from=prerelease /app/docs ./docs
 COPY --from=prerelease /app/dsa-sheets ./dsa-sheets
 COPY --from=prerelease /app/prisma ./prisma
+COPY --from=install /temp/prod/src/generated ./src/generated
 
 # Expose port
 EXPOSE 3000
