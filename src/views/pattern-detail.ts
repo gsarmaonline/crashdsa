@@ -1,6 +1,5 @@
 import { html, raw } from 'hono/html'
-import { getProblemsByPattern } from '../data/problem-repository.js'
-import { PATTERNS } from '../dsa-sheets/patterns.js'
+import { getProblemsByPattern, getPatternProblems } from '../data/problem-repository.js'
 import { navbar } from '../components/navbar.js'
 import type { User } from '../db/users.js'
 
@@ -8,19 +7,22 @@ export async function patternDetailPage(
   name: string,
   user: User | null = null
 ): Promise<ReturnType<typeof html> | null> {
-  const pattern = PATTERNS.find(p => p.name === name)
-  if (!pattern) return null
+  const [result, allPatterns] = await Promise.all([
+    getProblemsByPattern(name),
+    getPatternProblems(),
+  ])
+  if (!result) return null
 
-  const result = await getProblemsByPattern(name)
-  const problems = result?.problems ?? []
+  const pattern = result
+  const problems = result.problems ?? []
 
   const easy = problems.filter(p => p.difficulty === 'Easy')
   const medium = problems.filter(p => p.difficulty === 'Medium')
   const hard = problems.filter(p => p.difficulty === 'Hard')
 
-  const patternIndex = PATTERNS.findIndex(p => p.name === name)
-  const prevPattern = patternIndex > 0 ? PATTERNS[patternIndex - 1] : null
-  const nextPattern = patternIndex < PATTERNS.length - 1 ? PATTERNS[patternIndex + 1] : null
+  const patternIndex = allPatterns.findIndex(p => p.name === name)
+  const prevPattern = patternIndex > 0 ? allPatterns[patternIndex - 1] : null
+  const nextPattern = patternIndex < allPatterns.length - 1 ? allPatterns[patternIndex + 1] : null
 
   return html`
 <!DOCTYPE html>
