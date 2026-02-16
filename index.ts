@@ -14,24 +14,34 @@ import {
 import { homePageDynamic } from './src/views/home-dynamic.js'
 import { problemsPage } from './src/views/problems.js'
 import { patternsPage } from './src/views/patterns.js'
+import { authMiddleware, type AuthVariables } from './src/auth/middleware.js'
+import authRoutes from './src/auth/routes.js'
+import { runMigrations } from './src/db/migrate.js'
 
-const app = new Hono()
+const app = new Hono<{ Variables: AuthVariables }>()
 
 // Eagerly connect to database
 console.log('Initializing CrashDSA...')
 prisma.$connect().then(() => console.log('Database connected'))
+await runMigrations()
+
+// Auth middleware - loads user from session on every request
+app.use('*', authMiddleware)
+
+// Auth routes
+app.route('/', authRoutes)
 
 // UI Routes
 app.get('/', async (c) => {
-  return c.html(await homePageDynamic())
+  return c.html(await homePageDynamic(c.get('user')))
 })
 
 app.get('/problems', (c) => {
-  return c.html(problemsPage)
+  return c.html(problemsPage(c.get('user')))
 })
 
 app.get('/patterns', async (c) => {
-  return c.html(await patternsPage())
+  return c.html(await patternsPage(c.get('user')))
 })
 
 // Serve CSS
