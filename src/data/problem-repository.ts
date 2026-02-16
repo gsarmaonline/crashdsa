@@ -68,6 +68,7 @@ export async function getProblemsByPattern(patternName: string) {
   })
 
   return {
+    name: patternName,
     pattern: patternName,
     displayName: pattern.displayName,
     description: pattern.description,
