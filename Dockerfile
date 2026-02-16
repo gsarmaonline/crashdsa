@@ -31,6 +31,7 @@ COPY --from=prerelease /app/public ./public
 COPY --from=prerelease /app/docs ./docs
 COPY --from=prerelease /app/dsa-sheets ./dsa-sheets
 COPY --from=prerelease /app/prisma ./prisma
+COPY --from=prerelease /app/prisma.config.ts .
 COPY --from=install /temp/prod/src/generated ./src/generated
 
 # Expose port
