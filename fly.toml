@@ -7,9 +7,6 @@ primary_region = 'ord'
 
 [build]
 
-[deploy]
-  release_command = "bunx prisma migrate deploy"
-
 [http_service]
   internal_port = 3000
   force_https = true
