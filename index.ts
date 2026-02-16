@@ -54,8 +54,12 @@ app.get('/patterns/:name', async (c) => {
 
 // Serve CSS
 app.get('/styles.css', (c) => {
-  const css = readFileSync(join(process.cwd(), 'src', 'styles', 'styles.css'), 'utf-8')
-  return c.body(css, 200, { 'Content-Type': 'text/css' })
+  try {
+    const css = readFileSync(join(process.cwd(), 'src', 'styles', 'styles.css'), 'utf-8')
+    return c.body(css, 200, { 'Content-Type': 'text/css' })
+  } catch {
+    return c.text('Not found', 404)
+  }
 })
 
 // Serve favicon
@@ -151,8 +155,12 @@ app.get('/api-docs', swaggerUI({
 
 // Serve OpenAPI spec
 app.get('/openapi.json', (c) => {
-  const spec = readFileSync(join(process.cwd(), 'docs', 'openapi.json'), 'utf-8')
-  return c.json(JSON.parse(spec))
+  try {
+    const spec = readFileSync(join(process.cwd(), 'docs', 'openapi.json'), 'utf-8')
+    return c.json(JSON.parse(spec))
+  } catch {
+    return c.json({ error: 'OpenAPI spec not found' }, 404)
+  }
 })
 
 export default {
