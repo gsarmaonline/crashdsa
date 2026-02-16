@@ -54,7 +54,17 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
+      - name: Check for seed data changes
+        id: seed-check
+        run: |
+          if git diff HEAD~1 --name-only | grep -qE '^(prisma/seed\.ts|src/dsa-sheets/patterns\.ts|dsa-sheets/)'; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Seed database
+        if: steps.seed-check.outputs.changed == 'true'
         run: bun run db:seed
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
