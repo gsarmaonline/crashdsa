@@ -21,6 +21,7 @@ export function navbar(user: User | null): string {
           <a href="/">Home</a>
           <a href="/problems">Problems</a>
           <a href="/patterns">Patterns</a>
+          ${user ? '<a href="/progress">Progress</a>' : ''}
           <a href="/api-docs" target="_blank">API Docs</a>
         </div>
         <div class="nav-auth">
