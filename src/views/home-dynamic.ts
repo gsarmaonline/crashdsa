@@ -121,7 +121,7 @@ export async function homePageDynamic(user: User | null = null) {
                 <p class="problem-description">${pattern.description}</p>
               </div>
               <div class="problem-footer">
-                <a href="/patterns" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
+                <a href="/problems?pattern=${pattern.name}" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
                   Explore Pattern
                 </a>
               </div>
