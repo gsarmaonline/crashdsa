@@ -155,8 +155,12 @@ app.get('/api-docs', swaggerUI({
 
 // Serve OpenAPI spec
 app.get('/openapi.json', (c) => {
-  const spec = readFileSync(join(process.cwd(), 'docs', 'openapi.json'), 'utf-8')
-  return c.json(JSON.parse(spec))
+  try {
+    const spec = readFileSync(join(process.cwd(), 'docs', 'openapi.json'), 'utf-8')
+    return c.json(JSON.parse(spec))
+  } catch {
+    return c.json({ error: 'OpenAPI spec not found' }, 404)
+  }
 })
 
 export default {
