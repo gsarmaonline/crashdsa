@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  <style>
+    .uf-set-a {
+      animation: ufSetA 7s infinite;
+    }
+    @keyframes ufSetA {
+      0%, 35% { cx: attr(cx); }
+      50%, 80% { transform: translateX(100px); }
+      90%, 100% { transform: translateX(0); }
+    }
+    .uf-set-b {
+      animation: ufSetB 7s infinite;
+    }
+    @keyframes ufSetB {
+      0%, 35% { cx: attr(cx); }
+      50%, 80% { transform: translateX(-100px); }
+      90%, 100% { transform: translateX(0); }
+    }
+    .uf-circle-a {
+      animation: ufCircleA 7s infinite;
+    }
+    @keyframes ufCircleA {
+      0%, 35% { stroke-dashoffset: 0; }
+      40%, 80% { r: 90; }
+      90%, 100% { stroke-dashoffset: 0; }
+    }
+    .uf-bridge {
+      animation: ufBridge 7s infinite;
+    }
+    @keyframes ufBridge {
+      0%, 30% { opacity: 0; stroke-dashoffset: 200; }
+      35%, 80% { opacity: 1; stroke-dashoffset: 0; }
+      90%, 100% { opacity: 0; stroke-dashoffset: 200; }
+    }
+  </style>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="35" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Union Find</text>
+<text x="400" y="58" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Merge disjoint sets when an edge connects them</text>
+<ellipse cx="180" cy="220" rx="100" ry="70" fill="none" stroke="#10b981" stroke-width="2" stroke-dasharray="8 4" opacity="0.5"/>
+<ellipse cx="560" cy="220" rx="100" ry="70" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="8 4" opacity="0.5"/>
+<ellipse cx="370" cy="220" rx="280" ry="85" fill="none" stroke="#c4b5fd" stroke-width="3" stroke-dasharray="8 4" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.6;0.6;0" dur="7s" repeatCount="indefinite" keyTimes="0;0.35;0.40;0.85;1" calcMode="discrete"/>
+  </ellipse>
+<line x1="180" y1="202" x2="120" y2="238" stroke="#10b981" stroke-width="2"/>
+<line x1="180" y1="202" x2="240" y2="238" stroke="#10b981" stroke-width="2"/>
+<line x1="560" y1="202" x2="500" y2="238" stroke="#3b82f6" stroke-width="2"/>
+<line x1="560" y1="202" x2="620" y2="238" stroke="#3b82f6" stroke-width="2"/>
+<line x1="262" y1="260" x2="478" y2="260" stroke="#f59e0b" stroke-width="3" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" dur="7s" repeatCount="indefinite" keyTimes="0;0.30;0.35;0.85;1" calcMode="discrete"/>
+  </line>
+<g ><circle cx="180" cy="180" r="24" fill="#f3f4f6" stroke="#10b981" stroke-width="2"/>
+<text x="180" y="180" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><circle cx="120" cy="260" r="24" fill="#f3f4f6" stroke="#10b981" stroke-width="2"/>
+<text x="120" y="260" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">2</text></g>
+<g ><circle cx="240" cy="260" r="24" fill="#f3f4f6" stroke="#10b981" stroke-width="2"/>
+<text x="240" y="260" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<g ><circle cx="560" cy="180" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2"/>
+<text x="560" y="180" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">4</text></g>
+<g ><circle cx="500" cy="260" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2"/>
+<text x="500" y="260" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">5</text></g>
+<g ><circle cx="620" cy="260" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2"/>
+<text x="620" y="260" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">6</text></g>
+<text x="400" y="360" text-anchor="middle" font-size="14" fill="#6b7280"
+      font-family="system-ui, -apple-system, sans-serif">
+      <animate attributeName="textContent" values="Two separate sets: {1,2,3} and {4,5,6};Two separate sets: {1,2,3} and {4,5,6};Union(3, 4) → merge into one set;Union(3, 4) → merge into one set;Two separate sets: {1,2,3} and {4,5,6}" dur="7s" repeatCount="indefinite" keyTimes="0;0.30;0.35;0.85;1" calcMode="discrete"/>
+      Two separate sets: {1,2,3} and {4,5,6}
+    </text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="35" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Fast & Slow Pointers</text>
+<text x="400" y="58" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Slow moves 1 step, Fast moves 2 steps — they meet in a cycle</text>
+<line x1="422.5166604983954" y1="103" x2="472.7461339178928" y2="132" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="495.2627944162882" y1="171" x2="495.2627944162883" y2="228.99999999999997" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="472.74613391789285" y1="268" x2="422.5166604983954" y2="297" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="377.4833395016046" y1="297" x2="327.2538660821072" y2="268" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="304.7372055837118" y1="229.00000000000003" x2="304.7372055837118" y2="171" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="327.2538660821072" y1="132" x2="377.4833395016046" y2="103" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<g ><circle cx="400" cy="90" r="24" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+<text x="400" y="90" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><circle cx="495.2627944162882" cy="145" r="24" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+<text x="495.2627944162882" y="145" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">2</text></g>
+<g ><circle cx="495.2627944162883" cy="254.99999999999997" r="24" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+<text x="495.2627944162883" y="254.99999999999997" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<g ><circle cx="400" cy="310" r="24" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+<text x="400" y="310" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">4</text></g>
+<g ><circle cx="304.7372055837118" cy="255.00000000000003" r="24" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+<text x="304.7372055837118" y="255.00000000000003" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">5</text></g>
+<g ><circle cx="304.7372055837118" cy="145" r="24" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2"/>
+<text x="304.7372055837118" y="145" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">6</text></g>
+<circle r="26" fill="none" stroke="#10b981" stroke-width="3" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate"
+      values="400 90;495.2627944162882 145;495.2627944162883 254.99999999999997;400 310;304.7372055837118 255.00000000000003;304.7372055837118 145;400 90;495.2627944162882 145"
+      keyTimes="0.000;0.143;0.286;0.429;0.571;0.714;0.857;1.000" dur="7s" repeatCount="indefinite" calcMode="discrete"/>
+  </circle>
+<circle r="30" fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="6 4" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate"
+      values="400 90;495.2627944162883 254.99999999999997;304.7372055837118 255.00000000000003;400 90;495.2627944162883 254.99999999999997;304.7372055837118 255.00000000000003;400 90;495.2627944162883 254.99999999999997"
+      keyTimes="0.000;0.143;0.286;0.429;0.571;0.714;0.857;1.000" dur="7s" repeatCount="indefinite" calcMode="discrete"/>
+  </circle>
+<circle cx="280" cy="370" r="6" fill="#10b981"/>
+<text x="298" y="370" fill="#6b7280" font-size="12" text-anchor="start" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Slow (1x)</text>
+<circle cx="430" cy="370" r="6" fill="#3b82f6"/>
+<text x="448" y="370" fill="#6b7280" font-size="12" text-anchor="start" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Fast (2x)</text>
+</svg>
