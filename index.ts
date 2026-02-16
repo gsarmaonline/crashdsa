@@ -14,6 +14,7 @@ import {
 import { homePageDynamic } from './src/views/home-dynamic.js'
 import { problemsPage } from './src/views/problems.js'
 import { patternsPage } from './src/views/patterns.js'
+import { patternDetailPage } from './src/views/pattern-detail.js'
 import { authMiddleware, type AuthVariables } from './src/auth/middleware.js'
 import authRoutes from './src/auth/routes.js'
 import { runMigrations } from './src/db/migrate.js'
@@ -44,6 +45,13 @@ app.get('/patterns', async (c) => {
   return c.html(await patternsPage(c.get('user')))
 })
 
+app.get('/patterns/:name', async (c) => {
+  const name = c.req.param('name')
+  const page = await patternDetailPage(name, c.get('user'))
+  if (!page) return c.text('Pattern not found', 404)
+  return c.html(page)
+})
+
 // Serve CSS
 app.get('/styles.css', (c) => {
   const css = readFileSync(join(process.cwd(), 'src', 'styles', 'styles.css'), 'utf-8')
@@ -54,6 +62,20 @@ app.get('/styles.css', (c) => {
 app.get('/favicon.svg', (c) => {
   const svg = readFileSync(join(process.cwd(), 'public', 'favicon.svg'), 'utf-8')
   return c.body(svg, 200, { 'Content-Type': 'image/svg+xml' })
+})
+
+// Serve pattern animation SVGs
+app.get('/animations/:name', (c) => {
+  const name = c.req.param('name')
+  if (!/^[a-z0-9-]+\.svg$/.test(name)) {
+    return c.text('Not found', 404)
+  }
+  try {
+    const svg = readFileSync(join(process.cwd(), 'public', 'animations', name), 'utf-8')
+    return c.body(svg, 200, { 'Content-Type': 'image/svg+xml' })
+  } catch {
+    return c.text('Not found', 404)
+  }
 })
 
 // API Routes
@@ -121,6 +143,6 @@ app.get('/openapi.json', (c) => {
 })
 
 export default {
-  port: 3000,
+  port: Number(process.env.PORT) || 3000,
   fetch: app.fetch,
 }

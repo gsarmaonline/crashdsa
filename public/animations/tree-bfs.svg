@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  <style>
+      .bfs-level-0 {
+        animation: bfsLevel0 6s infinite;
+      }
+      @keyframes bfsLevel0 {
+        0%, 20.0% { fill: #f3f4f6; stroke: #e5e7eb; }
+        28.0%, 80.0% { fill: #3b82f6; stroke: #3b82f6; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .bfs-level-1 {
+        animation: bfsLevel1 6s infinite;
+      }
+      @keyframes bfsLevel1 {
+        0%, 40.0% { fill: #f3f4f6; stroke: #e5e7eb; }
+        48.0%, 80.0% { fill: #6366f1; stroke: #6366f1; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .bfs-level-2 {
+        animation: bfsLevel2 6s infinite;
+      }
+      @keyframes bfsLevel2 {
+        0%, 60.0% { fill: #f3f4f6; stroke: #e5e7eb; }
+        68.0%, 80.0% { fill: #8b5cf6; stroke: #8b5cf6; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    </style>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="35" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Tree BFS (Level-order)</text>
+<text x="400" y="58" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Visit all nodes at each level before going deeper</text>
+<line x1="400" y1="100" x2="250" y2="190" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="400" y1="100" x2="550" y2="190" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="250" y1="190" x2="175" y2="280" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="250" y1="190" x2="325" y2="280" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="550" y1="190" x2="475" y2="280" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="550" y1="190" x2="625" y2="280" stroke="#e5e7eb" stroke-width="2"/>
+<g ><circle cx="400" cy="100" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="bfs-level-0"/>
+<text x="400" y="100" fill="#fff" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><circle cx="250" cy="190" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="bfs-level-1"/>
+<text x="250" y="190" fill="#fff" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">2</text></g>
+<g ><circle cx="550" cy="190" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="bfs-level-1"/>
+<text x="550" y="190" fill="#fff" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<g ><circle cx="175" cy="280" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="bfs-level-2"/>
+<text x="175" y="280" fill="#fff" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">4</text></g>
+<g ><circle cx="325" cy="280" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="bfs-level-2"/>
+<text x="325" y="280" fill="#fff" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">5</text></g>
+<g ><circle cx="475" cy="280" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="bfs-level-2"/>
+<text x="475" y="280" fill="#fff" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">6</text></g>
+<g ><circle cx="625" cy="280" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="bfs-level-2"/>
+<text x="625" y="280" fill="#fff" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">7</text></g>
+<text x="400" y="370" fill="#6b7280" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Level 0: [1] → Level 1: [2, 3] → Level 2: [4, 5, 6, 7]</text>
+</svg>

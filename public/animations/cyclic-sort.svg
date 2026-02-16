@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  <style>
+    @keyframes csSwap {
+      0%, 24% { opacity: 1; }
+      25%, 49% { opacity: 1; }
+      50%, 74% { opacity: 1; }
+      75%, 100% { opacity: 1; }
+    }
+    
+      .cs-0-0 {
+        animation: csShow0 8s infinite;
+      }
+      @keyframes csShow0 {
+        
+        0%, 24% { opacity: 1; }
+        25%, 100% { opacity: 0; }
+      }
+    
+      .cs-0-1 {
+        animation: csShow0 8s infinite;
+      }
+      @keyframes csShow0 {
+        
+        0%, 24% { opacity: 1; }
+        25%, 100% { opacity: 0; }
+      }
+    
+      .cs-0-2 {
+        animation: csShow0 8s infinite;
+      }
+      @keyframes csShow0 {
+        
+        0%, 24% { opacity: 1; }
+        25%, 100% { opacity: 0; }
+      }
+    
+      .cs-0-3 {
+        animation: csShow0 8s infinite;
+      }
+      @keyframes csShow0 {
+        
+        0%, 24% { opacity: 1; }
+        25%, 100% { opacity: 0; }
+      }
+    
+      .cs-1-0 {
+        animation: csShow1 8s infinite;
+      }
+      @keyframes csShow1 {
+        0%, 24% { opacity: 0; }
+        25%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+    
+      .cs-1-1 {
+        animation: csShow1 8s infinite;
+      }
+      @keyframes csShow1 {
+        0%, 24% { opacity: 0; }
+        25%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+    
+      .cs-1-2 {
+        animation: csShow1 8s infinite;
+      }
+      @keyframes csShow1 {
+        0%, 24% { opacity: 0; }
+        25%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+    
+      .cs-1-3 {
+        animation: csShow1 8s infinite;
+      }
+      @keyframes csShow1 {
+        0%, 24% { opacity: 0; }
+        25%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+    
+      .cs-2-0 {
+        animation: csShow2 8s infinite;
+      }
+      @keyframes csShow2 {
+        0%, 49% { opacity: 0; }
+        50%, 74% { opacity: 1; }
+        75%, 100% { opacity: 0; }
+      }
+    
+      .cs-2-1 {
+        animation: csShow2 8s infinite;
+      }
+      @keyframes csShow2 {
+        0%, 49% { opacity: 0; }
+        50%, 74% { opacity: 1; }
+        75%, 100% { opacity: 0; }
+      }
+    
+      .cs-2-2 {
+        animation: csShow2 8s infinite;
+      }
+      @keyframes csShow2 {
+        0%, 49% { opacity: 0; }
+        50%, 74% { opacity: 1; }
+        75%, 100% { opacity: 0; }
+      }
+    
+      .cs-2-3 {
+        animation: csShow2 8s infinite;
+      }
+      @keyframes csShow2 {
+        0%, 49% { opacity: 0; }
+        50%, 74% { opacity: 1; }
+        75%, 100% { opacity: 0; }
+      }
+    
+      .cs-3-0 {
+        animation: csShow3 8s infinite;
+      }
+      @keyframes csShow3 {
+        0%, 74% { opacity: 0; }
+        75%, 100% { opacity: 1; }
+        
+      }
+    
+      .cs-3-1 {
+        animation: csShow3 8s infinite;
+      }
+      @keyframes csShow3 {
+        0%, 74% { opacity: 0; }
+        75%, 100% { opacity: 1; }
+        
+      }
+    
+      .cs-3-2 {
+        animation: csShow3 8s infinite;
+      }
+      @keyframes csShow3 {
+        0%, 74% { opacity: 0; }
+        75%, 100% { opacity: 1; }
+        
+      }
+    
+      .cs-3-3 {
+        animation: csShow3 8s infinite;
+      }
+      @keyframes csShow3 {
+        0%, 74% { opacity: 0; }
+        75%, 100% { opacity: 1; }
+        
+      }
+    
+  </style>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="40" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Cyclic Sort</text>
+<text x="400" y="65" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Place each number at its correct index</text>
+<text x="271" y="145" fill="#6b7280" font-size="11" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">idx 0</text>
+<text x="357" y="145" fill="#6b7280" font-size="11" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">idx 1</text>
+<text x="443" y="145" fill="#6b7280" font-size="11" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">idx 2</text>
+<text x="529" y="145" fill="#6b7280" font-size="11" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">idx 3</text>
+<g class="cs-layer-0"><g ><rect x="236" y="160" width="70" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-0-0"/>
+<text x="271" y="185" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<g ><rect x="322" y="160" width="70" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-0-1"/>
+<text x="357" y="185" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="408" y="160" width="70" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-0-2"/>
+<text x="443" y="185" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">4</text></g>
+<g ><rect x="494" y="160" width="70" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-0-3"/>
+<text x="529" y="185" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">2</text></g></g>
+<g class="cs-layer-1"><g ><rect x="236" y="160" width="70" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-1-0"/>
+<text x="271" y="185" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">4</text></g>
+<g ><rect x="322" y="160" width="70" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-1-1"/>
+<text x="357" y="185" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="408" y="160" width="70" height="50" fill="#10b981" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-1-2"/>
+<text x="443" y="185" fill="#fff" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<g ><rect x="494" y="160" width="70" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-1-3"/>
+<text x="529" y="185" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">2</text></g></g>
+<g class="cs-layer-2"><g ><rect x="236" y="160" width="70" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-2-0"/>
+<text x="271" y="185" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">2</text></g>
+<g ><rect x="322" y="160" width="70" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-2-1"/>
+<text x="357" y="185" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="408" y="160" width="70" height="50" fill="#10b981" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-2-2"/>
+<text x="443" y="185" fill="#fff" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<g ><rect x="494" y="160" width="70" height="50" fill="#10b981" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-2-3"/>
+<text x="529" y="185" fill="#fff" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">4</text></g></g>
+<g class="cs-layer-3"><g ><rect x="236" y="160" width="70" height="50" fill="#10b981" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-3-0"/>
+<text x="271" y="185" fill="#fff" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="322" y="160" width="70" height="50" fill="#10b981" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-3-1"/>
+<text x="357" y="185" fill="#fff" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">2</text></g>
+<g ><rect x="408" y="160" width="70" height="50" fill="#10b981" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-3-2"/>
+<text x="443" y="185" fill="#fff" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<g ><rect x="494" y="160" width="70" height="50" fill="#10b981" stroke="#e5e7eb" stroke-width="1" rx="6" class="cs-3-3"/>
+<text x="529" y="185" fill="#fff" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">4</text></g></g>
+<text x="400" y="310" text-anchor="middle" font-size="14" fill="#3b82f6"
+      font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+      <animate attributeName="textContent" values="arr[0]=3, swap with arr[2];arr[0]=4, swap with arr[3];arr[0]=2, swap with arr[1];Sorted!" dur="8s" repeatCount="indefinite" keyTimes="0;0.25;0.50;0.75" calcMode="discrete"/>
+      arr[0]=3, swap with arr[2]
+    </text>
+</svg>

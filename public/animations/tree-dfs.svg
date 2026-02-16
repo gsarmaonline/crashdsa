@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  <style>
+      .dfs-node-0 {
+        animation: dfsVisit0 7s infinite;
+      }
+      @keyframes dfsVisit0 {
+        0%, 11.1% { fill: #f3f4f6; stroke: #e5e7eb; }
+        16.7%, 88.9% { fill: #10b981; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .dfs-node-1 {
+        animation: dfsVisit1 7s infinite;
+      }
+      @keyframes dfsVisit1 {
+        0%, 22.2% { fill: #f3f4f6; stroke: #e5e7eb; }
+        27.8%, 88.9% { fill: #10b981; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .dfs-node-3 {
+        animation: dfsVisit3 7s infinite;
+      }
+      @keyframes dfsVisit3 {
+        0%, 33.3% { fill: #f3f4f6; stroke: #e5e7eb; }
+        38.9%, 88.9% { fill: #10b981; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .dfs-node-4 {
+        animation: dfsVisit4 7s infinite;
+      }
+      @keyframes dfsVisit4 {
+        0%, 44.4% { fill: #f3f4f6; stroke: #e5e7eb; }
+        50.0%, 88.9% { fill: #10b981; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .dfs-node-2 {
+        animation: dfsVisit2 7s infinite;
+      }
+      @keyframes dfsVisit2 {
+        0%, 55.6% { fill: #f3f4f6; stroke: #e5e7eb; }
+        61.1%, 88.9% { fill: #10b981; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .dfs-node-5 {
+        animation: dfsVisit5 7s infinite;
+      }
+      @keyframes dfsVisit5 {
+        0%, 66.7% { fill: #f3f4f6; stroke: #e5e7eb; }
+        72.2%, 88.9% { fill: #10b981; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .dfs-node-6 {
+        animation: dfsVisit6 7s infinite;
+      }
+      @keyframes dfsVisit6 {
+        0%, 77.8% { fill: #f3f4f6; stroke: #e5e7eb; }
+        83.3%, 88.9% { fill: #10b981; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    </style>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="35" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Tree DFS (Pre-order)</text>
+<text x="400" y="58" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Visit: root → left subtree → right subtree</text>
+<line x1="400" y1="100" x2="250" y2="190" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="400" y1="100" x2="550" y2="190" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="250" y1="190" x2="175" y2="280" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="250" y1="190" x2="325" y2="280" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="550" y1="190" x2="475" y2="280" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="550" y1="190" x2="625" y2="280" stroke="#e5e7eb" stroke-width="2"/>
+<g ><circle cx="400" cy="100" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="dfs-node-0"/>
+<text x="400" y="100" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><circle cx="250" cy="190" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="dfs-node-1"/>
+<text x="250" y="190" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">2</text></g>
+<g ><circle cx="550" cy="190" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="dfs-node-2"/>
+<text x="550" y="190" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<g ><circle cx="175" cy="280" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="dfs-node-3"/>
+<text x="175" y="280" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">4</text></g>
+<g ><circle cx="325" cy="280" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="dfs-node-4"/>
+<text x="325" y="280" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">5</text></g>
+<g ><circle cx="475" cy="280" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="dfs-node-5"/>
+<text x="475" y="280" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">6</text></g>
+<g ><circle cx="625" cy="280" r="22" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="2" class="dfs-node-6"/>
+<text x="625" y="280" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">7</text></g>
+<text x="428" y="82" font-size="11" fill="#10b981"
+      font-weight="700" font-family="system-ui, -apple-system, sans-serif" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="7s" repeatCount="indefinite" keyTimes="0;0.111;0.121;0.889;1" calcMode="discrete"/>
+      #1
+    </text>
+<text x="278" y="172" font-size="11" fill="#10b981"
+      font-weight="700" font-family="system-ui, -apple-system, sans-serif" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="7s" repeatCount="indefinite" keyTimes="0;0.222;0.232;0.889;1" calcMode="discrete"/>
+      #2
+    </text>
+<text x="203" y="262" font-size="11" fill="#10b981"
+      font-weight="700" font-family="system-ui, -apple-system, sans-serif" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="7s" repeatCount="indefinite" keyTimes="0;0.333;0.343;0.889;1" calcMode="discrete"/>
+      #3
+    </text>
+<text x="353" y="262" font-size="11" fill="#10b981"
+      font-weight="700" font-family="system-ui, -apple-system, sans-serif" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="7s" repeatCount="indefinite" keyTimes="0;0.444;0.454;0.889;1" calcMode="discrete"/>
+      #4
+    </text>
+<text x="578" y="172" font-size="11" fill="#10b981"
+      font-weight="700" font-family="system-ui, -apple-system, sans-serif" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="7s" repeatCount="indefinite" keyTimes="0;0.556;0.566;0.889;1" calcMode="discrete"/>
+      #5
+    </text>
+<text x="503" y="262" font-size="11" fill="#10b981"
+      font-weight="700" font-family="system-ui, -apple-system, sans-serif" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="7s" repeatCount="indefinite" keyTimes="0;0.667;0.677;0.889;1" calcMode="discrete"/>
+      #6
+    </text>
+<text x="653" y="262" font-size="11" fill="#10b981"
+      font-weight="700" font-family="system-ui, -apple-system, sans-serif" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="7s" repeatCount="indefinite" keyTimes="0;0.778;0.788;0.889;1" calcMode="discrete"/>
+      #7
+    </text>
+<text x="400" y="370" fill="#6b7280" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Visit order: 1 → 2 → 4 → 5 → 3 → 6 → 7</text>
+</svg>
