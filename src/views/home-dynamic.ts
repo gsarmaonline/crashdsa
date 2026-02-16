@@ -34,30 +34,39 @@ export async function homePageDynamic(user: User | null = null) {
   <main class="main-content">
     <section class="container hero">
       <h1>DSA Interview Prep for Senior Engineers</h1>
-      <p class="tagline">Less is more.</p>
+      <p class="tagline">Master the pattern, solve any problem.</p>
       <p class="subtitle">
-        You already know how to code. Now crush the interview. ${stats.total} curated problems from top prep sheets, organized by solution pattern — built for experienced engineers.
+        You already know how to code. Every interview question is a variation of ${patternNames.length} core patterns. Learn to recognize them, and no problem is new.
       </p>
       <div class="hero-stats">
+        <div class="stat stat-featured">
+          <div class="stat-number">${patternNames.length}</div>
+          <div class="stat-label">Solution Patterns</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Sheets Consolidated</div>
+        </div>
         <div class="stat">
           <div class="stat-number">${stats.total}</div>
-          <div class="stat-label">Problems</div>
+          <div class="stat-label">Practice Problems</div>
         </div>
-        <div class="stat">
-          <div class="stat-number">${patternNames.length}</div>
-          <div class="stat-label">Patterns</div>
+      </div>
+
+      <div class="how-it-works">
+        <div class="how-step">
+          <div class="how-step-number">1</div>
+          <div class="how-step-text">Learn the Pattern</div>
         </div>
-        <div class="stat">
-          <div class="stat-number">${stats.easy}</div>
-          <div class="stat-label">Easy</div>
+        <div class="how-arrow">&rarr;</div>
+        <div class="how-step">
+          <div class="how-step-number">2</div>
+          <div class="how-step-text">Practice Targeted Problems</div>
         </div>
-        <div class="stat">
-          <div class="stat-number">${stats.medium}</div>
-          <div class="stat-label">Medium</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">${stats.hard}</div>
-          <div class="stat-label">Hard</div>
+        <div class="how-arrow">&rarr;</div>
+        <div class="how-step">
+          <div class="how-step-number">3</div>
+          <div class="how-step-text">Recognize It in Any Interview</div>
         </div>
       </div>
     </section>
@@ -67,15 +76,15 @@ export async function homePageDynamic(user: User | null = null) {
         <h2 class="section-title">Built for Engineers Who Ship Production Code</h2>
         <div class="features">
           <div class="feature-card">
-            <div class="feature-icon">📚</div>
-            <h3>Senior-Level Curation</h3>
-            <p>${stats.total} problems hand-picked from NeetCode 150, Blind 75, LeetCode Top 150, Grind 75, and Striver's A2Z — no beginner fluff</p>
+            <div class="feature-icon">🎯</div>
+            <h3>Pattern-First Approach</h3>
+            <p>${patternNames.length} solution patterns that map to how senior interviews actually test you — learn the strategy, not just the solution</p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">🎯</div>
-            <h3>Pattern-Based Learning</h3>
-            <p>${patternNames.length} solution patterns that map to how senior interviews actually test you — not textbook chapter order</p>
+            <div class="feature-icon">📚</div>
+            <h3>5 Sheets, One Place</h3>
+            <p>Consolidated from NeetCode 150, Blind 75, LeetCode Top 150, Grind 75, and Striver's A2Z — deduplicated and pattern-tagged</p>
           </div>
 
           <div class="feature-card">
@@ -107,8 +116,8 @@ export async function homePageDynamic(user: User | null = null) {
 
     <section id="patterns" class="problems-section">
       <div class="container">
-        <h2 class="section-title">Solution Patterns</h2>
-        <p class="section-subtitle">Master the strategies that repeat across senior-level interviews</p>
+        <h2 class="section-title">${patternNames.length} Patterns. That's All You Need.</h2>
+        <p class="section-subtitle">Every interview question maps to one of these core strategies</p>
 
         <div class="problems-grid">
           ${raw(featuredPatterns.map(pattern => `
@@ -138,10 +147,10 @@ export async function homePageDynamic(user: User | null = null) {
     <section class="cta-section">
       <div class="container">
         <h2>Ready to Land Your Next Senior Role?</h2>
-        <p>Skip the basics. Focus on the patterns that matter at the senior and staff level.</p>
+        <p>Stop grinding random problems. Start mastering the ${patternNames.length} patterns that actually repeat.</p>
         <div class="cta">
-          <a href="/problems" class="btn btn-primary">Browse Problems</a>
-          <a href="/api-docs" class="btn btn-secondary">View API Docs</a>
+          <a href="/patterns" class="btn btn-primary">Explore Patterns</a>
+          <a href="/problems" class="btn btn-secondary">Browse Problems</a>
         </div>
       </div>
     </section>
