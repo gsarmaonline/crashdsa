@@ -13,7 +13,7 @@ export interface GitHubUser {
 export function getGitHubAuthURL(state: string): string {
   const params = new URLSearchParams({
     client_id: process.env.GITHUB_CLIENT_ID!,
-    redirect_uri: `${process.env.APP_URL}/auth/github/callback`,
+    redirect_uri: `${process.env.APP_URL || 'https://crashdsa.com'}/auth/github/callback`,
     scope: 'read:user user:email',
     state,
   })
