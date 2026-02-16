@@ -1,6 +1,9 @@
-import { html } from 'hono/html'
+import { html, raw } from 'hono/html'
+import { navbar } from '../components/navbar.js'
+import type { User } from '../db/users.js'
 
-export const problemsPage = html`
+export function problemsPage(user: User | null = null) {
+  return html`
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,19 +123,7 @@ export const problemsPage = html`
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-brand">
-        <a href="/">🚀 CrashDSA</a>
-      </div>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/problems">Problems</a>
-        <a href="/patterns">Patterns</a>
-        <a href="/api-docs" target="_blank">API Docs</a>
-      </div>
-    </div>
-  </nav>
+  ${raw(navbar(user))}
 
   <main class="main-content">
     <section class="container">
@@ -312,3 +303,4 @@ export const problemsPage = html`
 </body>
 </html>
 `
+}

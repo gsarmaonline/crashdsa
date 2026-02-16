@@ -422,6 +422,98 @@ h3 {
   gap: 0.25rem;
 }
 
+/* Auth - Navbar */
+.nav-auth {
+  display: flex;
+  align-items: center;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-username {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+/* Auth - Login Page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.login-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 3rem;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.login-card h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-card .subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  background: #24292e;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-github:hover {
+  background: #1b1f23;
+}
+
+.login-note {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.login-error {
+  padding: 0.75rem 1rem;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .navbar .container {
@@ -431,6 +523,15 @@ h3 {
 
   .nav-links {
     gap: 1rem;
+  }
+
+  .nav-avatar {
+    width: 28px;
+    height: 28px;
+  }
+
+  .nav-username {
+    display: none;
   }
 
   h1 {
@@ -448,5 +549,9 @@ h3 {
 
   .problems-grid {
     grid-template-columns: 1fr;
+  }
+
+  .login-card {
+    padding: 2rem 1.5rem;
   }
 }

@@ -1,8 +1,10 @@
 import { html, raw } from 'hono/html'
 import { getStats, getPatternProblems } from '../data/problem-repository.js'
 import { PATTERNS } from '../dsa-sheets/patterns.js'
+import { navbar } from '../components/navbar.js'
+import type { User } from '../db/users.js'
 
-export async function homePageDynamic() {
+export async function homePageDynamic(user: User | null = null) {
   const [stats, byPattern] = await Promise.all([getStats(), getPatternProblems()])
   const patternNames = Object.keys(byPattern).sort()
 
@@ -27,20 +29,7 @@ export async function homePageDynamic() {
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-brand">
-        <a href="/">🚀 CrashDSA</a>
-      </div>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/problems">Problems</a>
-        <a href="/patterns">Patterns</a>
-        <a href="#features">Features</a>
-        <a href="/api-docs" target="_blank">API Docs</a>
-      </div>
-    </div>
-  </nav>
+  ${raw(navbar(user))}
 
   <main class="main-content">
     <section class="container hero">
