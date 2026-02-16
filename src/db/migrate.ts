@@ -32,5 +32,17 @@ export async function runMigrations() {
   await sql`CREATE INDEX IF NOT EXISTS idx_sessions_expires_at ON sessions(expires_at)`
   await sql`CREATE INDEX IF NOT EXISTS idx_users_github_id ON users(github_id)`
 
+  await sql`
+    CREATE TABLE IF NOT EXISTS user_solved_problems (
+      id            SERIAL PRIMARY KEY,
+      user_id       INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      problem_slug  VARCHAR(255) NOT NULL,
+      solved_at     TIMESTAMPTZ DEFAULT NOW(),
+      UNIQUE(user_id, problem_slug)
+    )
+  `
+  await sql`CREATE INDEX IF NOT EXISTS idx_solved_user ON user_solved_problems(user_id)`
+  await sql`CREATE INDEX IF NOT EXISTS idx_solved_slug ON user_solved_problems(problem_slug)`
+
   console.log('Database migrations complete')
 }

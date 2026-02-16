@@ -17,9 +17,11 @@ import { problemsPage } from './src/views/problems.js'
 import { problemDetailPage } from './src/views/problem-detail.js'
 import { patternsPage } from './src/views/patterns.js'
 import { patternDetailPage } from './src/views/pattern-detail.js'
+import { progressPage } from './src/views/progress.js'
 import { authMiddleware, requireAuthUI, requireAuthAPI, type AuthVariables } from './src/auth/middleware.js'
 import authRoutes from './src/auth/routes.js'
 import { runMigrations } from './src/db/migrate.js'
+import { markProblemSolved, getUserSolvedProblems, getUserSolvedSlugs } from './src/db/solved-problems.js'
 
 const app = new Hono<{ Variables: AuthVariables }>()
 
@@ -39,6 +41,7 @@ app.use('/problems', requireAuthUI)
 app.use('/problems/*', requireAuthUI)
 app.use('/patterns', requireAuthUI)
 app.use('/patterns/*', requireAuthUI)
+app.use('/progress', requireAuthUI)
 
 // Protected API routes - require GitHub login
 app.use('/api/problems', requireAuthAPI)
@@ -48,6 +51,7 @@ app.use('/api/patterns/*', requireAuthAPI)
 app.use('/api/stats', requireAuthAPI)
 app.use('/api/judge/*', requireAuthAPI)
 app.use('/api/test-cases/*', requireAuthAPI)
+app.use('/api/user/*', requireAuthAPI)
 
 // UI Routes
 app.get('/', async (c) => {
@@ -60,6 +64,10 @@ app.get('/problems', (c) => {
 
 app.get('/patterns', async (c) => {
   return c.html(await patternsPage(c.get('user')))
+})
+
+app.get('/progress', (c) => {
+  return c.html(progressPage(c.get('user')))
 })
 
 app.get('/patterns/:name', async (c) => {
@@ -235,6 +243,64 @@ app.get('/api/judge/problems', (c) => {
 // Get test case coverage statistics
 app.get('/api/test-cases/stats', async (c) => {
   return c.json(await getTestCaseStats())
+})
+
+// Mark problem as solved
+app.post('/api/problems/:slug/solve', async (c) => {
+  const user = c.get('user')!
+  const slug = c.req.param('slug')
+
+  const problem = await getProblemBySlug(slug)
+  if (!problem) {
+    return c.json({ error: 'Problem not found' }, 404)
+  }
+
+  const result = await markProblemSolved(user.id, slug)
+  return c.json({ solved: true, firstSolve: result.firstSolve })
+})
+
+// Get user's solved slugs (lightweight, for problem list checkmarks)
+app.get('/api/user/solved-slugs', async (c) => {
+  const user = c.get('user')!
+  const slugs = await getUserSolvedSlugs(user.id)
+  return c.json({ slugs })
+})
+
+// Get user's full progress data
+app.get('/api/user/progress', async (c) => {
+  const user = c.get('user')!
+  const [solvedProblems, allProblemsData, patternsData] = await Promise.all([
+    getUserSolvedProblems(user.id),
+    getAllProblems(),
+    getPatterns(),
+  ])
+
+  const solvedSlugs = new Set(solvedProblems.map(s => s.problem_slug))
+  const allProblems = allProblemsData.problems
+
+  const byDifficulty = { Easy: { solved: 0, total: 0 }, Medium: { solved: 0, total: 0 }, Hard: { solved: 0, total: 0 } }
+  for (const p of allProblems) {
+    byDifficulty[p.difficulty].total++
+    if (solvedSlugs.has(p.slug)) byDifficulty[p.difficulty].solved++
+  }
+
+  const byPattern: Record<string, { solved: number; total: number }> = {}
+  for (const p of allProblems) {
+    for (const pat of p.patterns) {
+      if (!byPattern[pat]) byPattern[pat] = { solved: 0, total: 0 }
+      byPattern[pat].total++
+      if (solvedSlugs.has(p.slug)) byPattern[pat].solved++
+    }
+  }
+
+  return c.json({
+    total: allProblems.length,
+    solved: solvedSlugs.size,
+    byDifficulty,
+    byPattern,
+    recentSolves: solvedProblems.slice(0, 10),
+    patterns: patternsData.patterns,
+  })
 })
 
 // Swagger UI Documentation

@@ -120,6 +120,18 @@ export function problemsPage(user: User | null = null) {
     .empty-state h3 {
       margin-bottom: 0.5rem;
     }
+
+    .solved-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.15rem 0.5rem;
+      background: #d1fae5;
+      color: #065f46;
+      border-radius: 0.25rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
@@ -147,6 +159,15 @@ export function problemsPage(user: User | null = null) {
             <option value="Easy">Easy</option>
             <option value="Medium">Medium</option>
             <option value="Hard">Hard</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="status-filter">Status</label>
+          <select id="status-filter" class="filter-select">
+            <option value="">All</option>
+            <option value="solved">Solved</option>
+            <option value="unsolved">Unsolved</option>
           </select>
         </div>
 
@@ -178,6 +199,7 @@ export function problemsPage(user: User | null = null) {
   <script>
     let allProblems = []
     let allPatterns = []
+    let solvedSlugs = new Set()
 
     async function loadPatterns() {
       try {
@@ -194,6 +216,16 @@ export function problemsPage(user: User | null = null) {
         })
       } catch (error) {
         console.error('Error loading patterns:', error)
+      }
+    }
+
+    async function loadSolvedSlugs() {
+      try {
+        const response = await fetch('/api/user/solved-slugs')
+        const data = await response.json()
+        solvedSlugs = new Set(data.slugs)
+      } catch (error) {
+        console.error('Error loading solved slugs:', error)
       }
     }
 
@@ -218,6 +250,7 @@ export function problemsPage(user: User | null = null) {
     function filterProblems() {
       const pattern = document.getElementById('pattern-filter').value
       const difficulty = document.getElementById('difficulty-filter').value
+      const status = document.getElementById('status-filter').value
       const searchTerm = document.getElementById('search-input').value.toLowerCase()
 
       let filtered = allProblems
@@ -228,6 +261,12 @@ export function problemsPage(user: User | null = null) {
 
       if (difficulty) {
         filtered = filtered.filter(p => p.difficulty === difficulty)
+      }
+
+      if (status === 'solved') {
+        filtered = filtered.filter(p => solvedSlugs.has(p.slug))
+      } else if (status === 'unsolved') {
+        filtered = filtered.filter(p => !solvedSlugs.has(p.slug))
       }
 
       if (searchTerm) {
@@ -263,7 +302,10 @@ export function problemsPage(user: User | null = null) {
                 \${problem.name}
               </a>
             </h3>
-            <span class="badge badge-\${problem.difficulty.toLowerCase()}">\${problem.difficulty}</span>
+            <div style="display:flex;gap:0.5rem;align-items:center;">
+              \${solvedSlugs.has(problem.slug) ? '<span class="solved-badge">Solved</span>' : ''}
+              <span class="badge badge-\${problem.difficulty.toLowerCase()}">\${problem.difficulty}</span>
+            </div>
           </div>
           <div class="problem-body">
             <p class="problem-category">
@@ -287,13 +329,16 @@ export function problemsPage(user: User | null = null) {
     // Event listeners
     document.getElementById('pattern-filter').addEventListener('change', filterProblems)
     document.getElementById('difficulty-filter').addEventListener('change', filterProblems)
+    document.getElementById('status-filter').addEventListener('change', filterProblems)
     document.getElementById('search-input').addEventListener('input', filterProblems)
 
     // Initial load - apply URL pattern filter after both data sources are ready
     const urlParams = new URLSearchParams(window.location.search)
     const preselectedPattern = urlParams.get('pattern')
 
-    Promise.all([loadPatterns(), loadProblems()]).then(() => {
+    Promise.all([loadPatterns(), loadProblems(), loadSolvedSlugs()]).then(() => {
+      // Re-render with solved badges now that all data is loaded
+      renderProblems(allProblems)
       if (preselectedPattern) {
         document.getElementById('pattern-filter').value = preselectedPattern
         filterProblems()

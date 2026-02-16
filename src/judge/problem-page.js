@@ -218,6 +218,16 @@
     document.getElementById('console-output').innerHTML = '';
   }
 
+  // --- Solved Banner ---
+
+  function showSolvedBanner() {
+    var banner = document.createElement('div');
+    banner.style.cssText = 'position:fixed;top:1rem;left:50%;transform:translateX(-50%);background:#10b981;color:white;padding:0.75rem 1.5rem;border-radius:0.5rem;font-weight:600;z-index:1000;box-shadow:0 4px 12px rgba(0,0,0,0.15);';
+    banner.textContent = 'Problem Solved!';
+    document.body.appendChild(banner);
+    setTimeout(function() { banner.remove(); }, 3000);
+  }
+
   // --- Run / Submit ---
 
   async function runTests() {
@@ -237,6 +247,18 @@
       var passed = results.filter(function(r) { return r.passed; }).length;
       logToConsole(passed + '/' + results.length + ' tests passed', passed === results.length ? 'success' : 'error');
       renderTestResults(results);
+
+      // Auto-mark as solved when all tests pass
+      if (passed === results.length && results.length > 0) {
+        fetch('/api/problems/' + SLUG + '/solve', { method: 'POST' })
+          .then(function(r) { return r.json(); })
+          .then(function(data) {
+            if (data.firstSolve) {
+              showSolvedBanner();
+            }
+          })
+          .catch(function() {}); // Silently fail - solving is best-effort
+      }
     } catch (err) {
       logToConsole('Error: ' + err.message, 'error');
       renderError(err.message);
