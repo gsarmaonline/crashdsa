@@ -1,0 +1,163 @@
+{
+  "slug": "number-of-islands",
+  "title": "Number of Islands",
+  "description": "Solve the **Number of Islands** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/number-of-islands/).",
+  "examples": [
+    {
+      "input": "grid = [[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]",
+      "output": "1"
+    },
+    {
+      "input": "grid = [[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"1\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"1\",\"1\"]]",
+      "output": "3"
+    },
+    {
+      "input": "grid = [[\"1\"]]",
+      "output": "1"
+    }
+  ],
+  "constraints": [],
+  "function": {
+    "name": "numIslands",
+    "params": [
+      {
+        "name": "grid",
+        "type": "char[][]"
+      }
+    ],
+    "returnType": "int"
+  },
+  "testCases": [
+    {
+      "input": {
+        "grid": [
+          [
+            "1",
+            "1",
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "input": {
+        "grid": [
+          [
+            "1",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "1"
+          ]
+        ]
+      },
+      "expected": 3
+    },
+    {
+      "input": {
+        "grid": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "expected": 0
+    },
+    {
+      "input": {
+        "grid": [
+          [
+            "1"
+          ]
+        ]
+      },
+      "expected": 1
+    },
+    {
+      "input": {
+        "grid": [
+          [
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "expected": 5
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string[][]} grid\n * @return {number}\n */\nfunction numIslands(grid) {\n  // Write your solution here\n}",
+    "typescript": "function numIslands(grid: string[][]): number {\n  // Write your solution here\n}",
+    "python": "def num_islands(grid: list[list[str]]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint numIslands(vector<vector<char>>& grid) {\n    // Write your solution here\n}",
+    "go": "func numIslands(grid [][]byte) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "numIslands",
+    "typescript": "numIslands",
+    "python": "num_islands",
+    "cpp": "numIslands",
+    "go": "NumIslands"
+  }
+}

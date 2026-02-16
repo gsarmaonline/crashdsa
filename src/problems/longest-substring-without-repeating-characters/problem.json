@@ -1,0 +1,78 @@
+{
+  "slug": "longest-substring-without-repeating-characters",
+  "title": "Longest Substring Without Repeating Characters",
+  "description": "Solve the **Longest Substring Without Repeating Characters** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/).",
+  "examples": [
+    {
+      "input": "s = \"abcabcbb\"",
+      "output": "3",
+      "explanation": "\"abc\" is the longest substring without repeating characters"
+    },
+    {
+      "input": "s = \"bbbbb\"",
+      "output": "1"
+    },
+    {
+      "input": "s = \"pwwkew\"",
+      "output": "3",
+      "explanation": "\"wke\" is the answer"
+    }
+  ],
+  "constraints": [],
+  "function": {
+    "name": "lengthOfLongestSubstring",
+    "params": [
+      {
+        "name": "s",
+        "type": "string"
+      }
+    ],
+    "returnType": "int"
+  },
+  "testCases": [
+    {
+      "input": {
+        "s": "abcabcbb"
+      },
+      "expected": 3
+    },
+    {
+      "input": {
+        "s": "bbbbb"
+      },
+      "expected": 1
+    },
+    {
+      "input": {
+        "s": "pwwkew"
+      },
+      "expected": 3
+    },
+    {
+      "input": {
+        "s": ""
+      },
+      "expected": 0
+    },
+    {
+      "input": {
+        "s": " "
+      },
+      "expected": 1
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nfunction lengthOfLongestSubstring(s) {\n  // Write your solution here\n}",
+    "typescript": "function lengthOfLongestSubstring(s: string): number {\n  // Write your solution here\n}",
+    "python": "def length_of_longest_substring(s: str) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <string>\nusing namespace std;\nint lengthOfLongestSubstring(string& s) {\n    // Write your solution here\n}",
+    "go": "func lengthOfLongestSubstring(s string) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "lengthOfLongestSubstring",
+    "typescript": "lengthOfLongestSubstring",
+    "python": "length_of_longest_substring",
+    "cpp": "lengthOfLongestSubstring",
+    "go": "LengthOfLongestSubstring"
+  }
+}

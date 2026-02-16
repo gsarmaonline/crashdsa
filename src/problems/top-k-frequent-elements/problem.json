@@ -1,0 +1,99 @@
+{
+  "slug": "top-k-frequent-elements",
+  "title": "Top K Frequent Elements",
+  "description": "Solve the **Top K Frequent Elements** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/).",
+  "examples": [
+    {
+      "input": "nums = [1,1,1,2,2,3], k = 2",
+      "output": "[1,2]"
+    },
+    {
+      "input": "nums = [1], k = 1",
+      "output": "[1]"
+    },
+    {
+      "input": "nums = [4,1,-1,2,-1,2,3], k = 2",
+      "output": "[-1,2]"
+    }
+  ],
+  "constraints": [],
+  "function": {
+    "name": "topKFrequent",
+    "params": [
+      {
+        "name": "nums",
+        "type": "int[]"
+      },
+      {
+        "name": "k",
+        "type": "int"
+      }
+    ],
+    "returnType": "int[]"
+  },
+  "testCases": [
+    {
+      "input": {
+        "nums": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "k": 2
+      },
+      "expected": [
+        1,
+        2
+      ],
+      "orderMatters": false
+    },
+    {
+      "input": {
+        "nums": [
+          1
+        ],
+        "k": 1
+      },
+      "expected": [
+        1
+      ],
+      "orderMatters": false
+    },
+    {
+      "input": {
+        "nums": [
+          4,
+          1,
+          -1,
+          2,
+          -1,
+          2,
+          3
+        ],
+        "k": 2
+      },
+      "expected": [
+        -1,
+        2
+      ],
+      "orderMatters": false
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nfunction topKFrequent(nums, k) {\n  // Write your solution here\n}",
+    "typescript": "function topKFrequent(nums: number[], k: number): number[] {\n  // Write your solution here\n}",
+    "python": "def top_k_frequent(nums: list[int], k: int) -> list[int]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nvector<int> topKFrequent(vector<int>& nums, int k) {\n    // Write your solution here\n}",
+    "go": "func topKFrequent(nums []int, k int) []int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "topKFrequent",
+    "typescript": "topKFrequent",
+    "python": "top_k_frequent",
+    "cpp": "topKFrequent",
+    "go": "TopKFrequent"
+  }
+}

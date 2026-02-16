@@ -1,0 +1,150 @@
+{
+  "slug": "word-search",
+  "title": "Word Search",
+  "description": "Solve the **Word Search** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/word-search/).",
+  "examples": [
+    {
+      "input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCCED\"",
+      "output": "true"
+    },
+    {
+      "input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"SEE\"",
+      "output": "true"
+    },
+    {
+      "input": "board = [[\"a\"]], word = \"a\"",
+      "output": "true"
+    }
+  ],
+  "constraints": [],
+  "function": {
+    "name": "exist",
+    "params": [
+      {
+        "name": "board",
+        "type": "char[][]"
+      },
+      {
+        "name": "word",
+        "type": "string"
+      }
+    ],
+    "returnType": "boolean"
+  },
+  "testCases": [
+    {
+      "input": {
+        "board": [
+          [
+            "A",
+            "B",
+            "C",
+            "E"
+          ],
+          [
+            "S",
+            "F",
+            "C",
+            "S"
+          ],
+          [
+            "A",
+            "D",
+            "E",
+            "E"
+          ]
+        ],
+        "word": "ABCCED"
+      },
+      "expected": true
+    },
+    {
+      "input": {
+        "board": [
+          [
+            "A",
+            "B",
+            "C",
+            "E"
+          ],
+          [
+            "S",
+            "F",
+            "C",
+            "S"
+          ],
+          [
+            "A",
+            "D",
+            "E",
+            "E"
+          ]
+        ],
+        "word": "SEE"
+      },
+      "expected": true
+    },
+    {
+      "input": {
+        "board": [
+          [
+            "A",
+            "B",
+            "C",
+            "E"
+          ],
+          [
+            "S",
+            "F",
+            "C",
+            "S"
+          ],
+          [
+            "A",
+            "D",
+            "E",
+            "E"
+          ]
+        ],
+        "word": "ABCB"
+      },
+      "expected": false
+    },
+    {
+      "input": {
+        "board": [
+          [
+            "a"
+          ]
+        ],
+        "word": "a"
+      },
+      "expected": true
+    },
+    {
+      "input": {
+        "board": [
+          [
+            "a"
+          ]
+        ],
+        "word": "b"
+      },
+      "expected": false
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string[][]} board\n * @param {string} word\n * @return {boolean}\n */\nfunction exist(board, word) {\n  // Write your solution here\n}",
+    "typescript": "function exist(board: string[][], word: string): boolean {\n  // Write your solution here\n}",
+    "python": "def exist(board: list[list[str]], word: str) -> bool:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nbool exist(vector<vector<char>>& board, string& word) {\n    // Write your solution here\n}",
+    "go": "func exist(board [][]byte, word string) bool {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "exist",
+    "typescript": "exist",
+    "python": "exist",
+    "cpp": "exist",
+    "go": "Exist"
+  }
+}

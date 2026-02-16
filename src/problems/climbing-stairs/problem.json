@@ -1,0 +1,78 @@
+{
+  "slug": "climbing-stairs",
+  "title": "Climbing Stairs",
+  "description": "Solve the **Climbing Stairs** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/climbing-stairs/).",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "2",
+      "explanation": "1+1 or 2"
+    },
+    {
+      "input": "n = 3",
+      "output": "3",
+      "explanation": "1+1+1, 1+2, 2+1"
+    },
+    {
+      "input": "n = 5",
+      "output": "8"
+    }
+  ],
+  "constraints": [],
+  "function": {
+    "name": "climbStairs",
+    "params": [
+      {
+        "name": "n",
+        "type": "int"
+      }
+    ],
+    "returnType": "int"
+  },
+  "testCases": [
+    {
+      "input": {
+        "n": 2
+      },
+      "expected": 2
+    },
+    {
+      "input": {
+        "n": 3
+      },
+      "expected": 3
+    },
+    {
+      "input": {
+        "n": 1
+      },
+      "expected": 1
+    },
+    {
+      "input": {
+        "n": 5
+      },
+      "expected": 8
+    },
+    {
+      "input": {
+        "n": 10
+      },
+      "expected": 89
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {number}\n */\nfunction climbStairs(n) {\n  // Write your solution here\n}",
+    "typescript": "function climbStairs(n: number): number {\n  // Write your solution here\n}",
+    "python": "def climb_stairs(n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int climbStairs(int n) {\n    // Write your solution here\n}",
+    "go": "func climbStairs(n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "climbStairs",
+    "typescript": "climbStairs",
+    "python": "climb_stairs",
+    "cpp": "climbStairs",
+    "go": "ClimbStairs"
+  }
+}
