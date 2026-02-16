@@ -27,6 +27,7 @@ COPY --from=install /temp/prod/node_modules node_modules
 COPY --from=prerelease /app/index.ts .
 COPY --from=prerelease /app/package.json .
 COPY --from=prerelease /app/src ./src
+COPY --from=prerelease /app/public ./public
 COPY --from=prerelease /app/docs ./docs
 COPY --from=prerelease /app/dsa-sheets ./dsa-sheets
 COPY --from=prerelease /app/prisma ./prisma

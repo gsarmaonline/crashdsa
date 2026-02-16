@@ -60,8 +60,21 @@ app.get('/styles.css', (c) => {
 
 // Serve favicon
 app.get('/favicon.svg', (c) => {
-  const svg = readFileSync(join(process.cwd(), 'public', 'favicon.svg'), 'utf-8')
-  return c.body(svg, 200, { 'Content-Type': 'image/svg+xml' })
+  try {
+    const svg = readFileSync(join(process.cwd(), 'public', 'favicon.svg'), 'utf-8')
+    return c.body(svg, 200, { 'Content-Type': 'image/svg+xml' })
+  } catch {
+    return c.text('Not found', 404)
+  }
+})
+
+app.get('/favicon.ico', (c) => {
+  try {
+    const svg = readFileSync(join(process.cwd(), 'public', 'favicon.svg'), 'utf-8')
+    return c.body(svg, 200, { 'Content-Type': 'image/svg+xml' })
+  } catch {
+    return c.text('Not found', 404)
+  }
 })
 
 // Serve pattern animation SVGs
