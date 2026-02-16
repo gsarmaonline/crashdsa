@@ -1,7 +1,7 @@
 import { PrismaClient } from '../src/generated/prisma/client.js'
 import { PrismaPg } from '@prisma/adapter-pg'
 import pg from 'pg'
-import { readFileSync, readdirSync } from 'fs'
+import { readFileSync, readdirSync, existsSync } from 'fs'
 import { join } from 'path'
 import { PATTERNS } from '../src/dsa-sheets/patterns.js'
 import type { Problem as RawProblem, ProblemTestCases } from '../src/dsa-sheets/types.js'
@@ -184,6 +184,48 @@ async function main() {
     testSetsSeeded++
   }
   console.log(`  Seeded ${testSetsSeeded} test case sets`)
+
+  // 5. Seed problem descriptions and starter code from problem.json files
+  console.log('Seeding problem descriptions and starter code...')
+  const problemDefsDir = join(process.cwd(), 'src', 'problems')
+  let descSeeded = 0
+
+  if (existsSync(problemDefsDir)) {
+    const slugDirs = readdirSync(problemDefsDir).filter((f) =>
+      existsSync(join(problemDefsDir, f, 'problem.json')),
+    )
+
+    for (const slug of slugDirs) {
+      const problemJson = JSON.parse(
+        readFileSync(join(problemDefsDir, slug, 'problem.json'), 'utf-8'),
+      )
+
+      // Update Problem with description, examples, constraints
+      await prisma.problem.updateMany({
+        where: { slug },
+        data: {
+          description: problemJson.description ?? null,
+          examples: problemJson.examples ?? undefined,
+          constraints: problemJson.constraints ?? undefined,
+        },
+      })
+
+      // Update TestCaseSet with starterCode and functionNameMap
+      const existingSet = await prisma.testCaseSet.findUnique({ where: { slug } })
+      if (existingSet) {
+        await prisma.testCaseSet.update({
+          where: { slug },
+          data: {
+            starterCode: problemJson.starterCode ?? undefined,
+            functionNameMap: problemJson.functionNameMap ?? undefined,
+          },
+        })
+      }
+
+      descSeeded++
+    }
+  }
+  console.log(`  Seeded ${descSeeded} problem descriptions`)
 
   console.log('Seed completed!')
 }

@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 import { swaggerUI } from '@hono/swagger-ui'
-import { readFileSync, readdirSync, existsSync } from 'fs'
+import { readFileSync } from 'fs'
 import { join } from 'path'
 import { prisma } from './src/data/db.js'
 import {
@@ -11,6 +11,8 @@ import {
   getStats,
   getTestCasesForProblem,
   getTestCaseStats,
+  getJudgeDefinition,
+  getJudgeReadySlugs,
 } from './src/data/problem-repository.js'
 import { homePageDynamic } from './src/views/home-dynamic.js'
 import { problemsPage } from './src/views/problems.js'
@@ -195,16 +197,15 @@ app.get('/api/problems/:slug', async (c) => {
 })
 
 // Get problem judge definition (test cases + function signatures)
-app.get('/api/problems/:slug/judge', (c) => {
+app.get('/api/problems/:slug/judge', async (c) => {
   const slug = c.req.param('slug')
-  const problemPath = join(process.cwd(), 'src', 'problems', slug, 'problem.json')
+  const judgeDef = await getJudgeDefinition(slug)
 
-  try {
-    const content = readFileSync(problemPath, 'utf-8')
-    return c.json(JSON.parse(content))
-  } catch {
+  if (!judgeDef) {
     return c.json({ error: 'Problem definition not found' }, 404)
   }
+
+  return c.json(judgeDef)
 })
 
 // Get test cases for a specific problem
@@ -220,16 +221,9 @@ app.get('/api/problems/:slug/test-cases', async (c) => {
 })
 
 // List problems with judge support
-app.get('/api/judge/problems', (c) => {
-  const problemsDir = join(process.cwd(), 'src', 'problems')
-  try {
-    const slugs = readdirSync(problemsDir).filter(f => {
-      return existsSync(join(problemsDir, f, 'problem.json'))
-    })
-    return c.json({ slugs })
-  } catch {
-    return c.json({ slugs: [] })
-  }
+app.get('/api/judge/problems', async (c) => {
+  const slugs = await getJudgeReadySlugs()
+  return c.json({ slugs })
 })
 
 // Get test case coverage statistics

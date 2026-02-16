@@ -165,6 +165,56 @@ export async function getTestCasesForProblem(slug: string) {
   }
 }
 
+export async function getJudgeDefinition(slug: string) {
+  const problem = await prisma.problem.findUnique({
+    where: { slug },
+    include: {
+      testCaseSet: {
+        include: { testCases: true },
+      },
+    },
+  })
+
+  if (!problem || !problem.testCaseSet || !problem.description) return null
+
+  const tcs = problem.testCaseSet
+
+  return {
+    slug: problem.slug,
+    title: problem.title,
+    description: problem.description,
+    examples: (problem.examples as any[]) ?? [],
+    constraints: (problem.constraints as any[]) ?? [],
+    function: {
+      name: tcs.functionName,
+      params: tcs.params,
+      returnType: tcs.returnType,
+    },
+    testCases: tcs.testCases.map((tc) => ({
+      input: tc.inputs,
+      expected: tc.expected,
+      ...(tcs.outputOrderMatters === false ? { orderMatters: false } : {}),
+    })),
+    starterCode: tcs.starterCode ?? {},
+    functionNameMap: tcs.functionNameMap ?? {},
+  }
+}
+
+export async function getJudgeReadySlugs() {
+  const problems = await prisma.problem.findMany({
+    where: {
+      description: { not: null },
+      testCaseSet: {
+        starterCode: { not: { equals: null } },
+      },
+    },
+    select: { slug: true },
+    orderBy: { slug: 'asc' },
+  })
+
+  return problems.map((p) => p.slug)
+}
+
 export async function getTestCaseStats() {
   const [total, withTestCases, scaffoldsOnly] = await Promise.all([
     prisma.testCaseSet.count(),

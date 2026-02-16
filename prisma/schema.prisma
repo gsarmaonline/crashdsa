@@ -14,15 +14,18 @@ enum Difficulty {
 }
 
 model Problem {
-  id         String     @id // e.g. "p-neetcode150-two-sum"
-  title      String
-  slug       String     @unique
-  difficulty Difficulty
-  link       String
-  acceptance Float?
-  frequency  Float?
-  createdAt  DateTime   @default(now())
-  updatedAt  DateTime   @updatedAt
+  id          String     @id // e.g. "p-neetcode150-two-sum"
+  title       String
+  slug        String     @unique
+  difficulty  Difficulty
+  link        String
+  acceptance  Float?
+  frequency   Float?
+  description String? // Problem description (markdown)
+  examples    Json? // Array of { input, output, explanation }
+  constraints Json? // Array of constraint strings
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
 
   patterns     ProblemPattern[]
   sourceSheets ProblemSheet[]
@@ -99,6 +102,8 @@ model TestCaseSet {
   isDesignProblem    Boolean @default(false)
   designMethods      Json? // Array of {name, params, returnType}
   status             String  @default("scaffold") // "scaffold" or "complete"
+  starterCode        Json? // { javascript, typescript, python, cpp, go }
+  functionNameMap    Json? // { javascript, typescript, python, cpp, go }
 
   problemId String  @unique
   problem   Problem @relation(fields: [problemId], references: [id], onDelete: Cascade)
