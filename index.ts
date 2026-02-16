@@ -17,7 +17,7 @@ import { problemsPage } from './src/views/problems.js'
 import { problemDetailPage } from './src/views/problem-detail.js'
 import { patternsPage } from './src/views/patterns.js'
 import { patternDetailPage } from './src/views/pattern-detail.js'
-import { authMiddleware, type AuthVariables } from './src/auth/middleware.js'
+import { authMiddleware, requireAuthUI, requireAuthAPI, type AuthVariables } from './src/auth/middleware.js'
 import authRoutes from './src/auth/routes.js'
 import { runMigrations } from './src/db/migrate.js'
 
@@ -33,6 +33,21 @@ app.use('*', authMiddleware)
 
 // Auth routes
 app.route('/', authRoutes)
+
+// Protected UI routes - require GitHub login
+app.use('/problems', requireAuthUI)
+app.use('/problems/*', requireAuthUI)
+app.use('/patterns', requireAuthUI)
+app.use('/patterns/*', requireAuthUI)
+
+// Protected API routes - require GitHub login
+app.use('/api/problems', requireAuthAPI)
+app.use('/api/problems/*', requireAuthAPI)
+app.use('/api/patterns', requireAuthAPI)
+app.use('/api/patterns/*', requireAuthAPI)
+app.use('/api/stats', requireAuthAPI)
+app.use('/api/judge/*', requireAuthAPI)
+app.use('/api/test-cases/*', requireAuthAPI)
 
 // UI Routes
 app.get('/', async (c) => {
