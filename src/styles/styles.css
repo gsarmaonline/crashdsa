@@ -335,6 +335,16 @@ h3 {
   text-align: center;
 }
 
+.stat-featured .stat-number {
+  font-size: 4rem;
+  color: var(--primary);
+}
+
+.stat-featured .stat-label {
+  color: var(--primary);
+  font-weight: 700;
+}
+
 .stat-number {
   font-size: 3rem;
   font-weight: bold;
@@ -347,6 +357,50 @@ h3 {
   color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+/* How It Works */
+.how-it-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+}
+
+.how-step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.how-step-number {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.how-step-text {
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.how-arrow {
+  color: var(--text-secondary);
+  font-size: 1.25rem;
 }
 
 /* Sections */
@@ -549,6 +603,20 @@ h3 {
 
   .problems-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    gap: 2rem;
+  }
+
+  .how-it-works {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+  }
+
+  .how-arrow {
+    transform: rotate(90deg);
   }
 
   .login-card {
