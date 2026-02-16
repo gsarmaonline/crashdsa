@@ -1,2 +1,2 @@
 -- AlterTable
-ALTER TABLE "Pattern" ADD COLUMN "strategy" TEXT NOT NULL DEFAULT '';
+ALTER TABLE "Pattern" ADD COLUMN IF NOT EXISTS "strategy" TEXT NOT NULL DEFAULT '';
