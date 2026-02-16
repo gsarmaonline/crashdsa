@@ -83,7 +83,7 @@ describe('problem-repository', () => {
       expect(result.problems[0].patterns).toEqual(['two-pointers'])
       expect(result.problems[0].sourceSheets).toEqual(['neetcode150'])
       expect(result.problems[0].tags).toEqual(['Array'])
-      expect(result.problems[0].link).toBe('https://leetcode.com/problems/two-sum')
+      expect(result.problems[0].link).toBe('/problems/two-sum')
       expect(result.problems[0].acceptanceRate).toBe('49.5%')
     })
 

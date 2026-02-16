@@ -259,7 +259,7 @@ export function problemsPage(user: User | null = null) {
         <div class="problem-card">
           <div class="problem-header">
             <h3>
-              <a href="\${problem.link}" target="_blank" class="problem-link">
+              <a href="/problems/\${problem.slug}" class="problem-link">
                 \${problem.name}
               </a>
             </h3>
@@ -276,8 +276,8 @@ export function problemsPage(user: User | null = null) {
             </div>
           </div>
           <div class="problem-footer">
-            <a href="\${problem.link}" target="_blank" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
-              Solve on LeetCode
+            <a href="/problems/\${problem.slug}" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
+              Solve Problem
             </a>
           </div>
         </div>

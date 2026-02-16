@@ -32,7 +32,6 @@ export function problemDetailPage(problem: ProblemWithSlug, user: User | null = 
           ${raw(problem.patterns.map(p =>
             `<span class="badge" style="background:#e0e7ff;color:#3730a3">${p}</span>`
           ).join(' '))}
-          <a href="${problem.link}" target="_blank" rel="noopener" style="font-size:0.85rem;color:#6366f1">View on LeetCode</a>
         </div>
       </div>
       <div id="problem-description">
