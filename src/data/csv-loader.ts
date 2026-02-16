@@ -3,6 +3,7 @@ import { join } from 'path'
 
 export interface Problem {
   name: string
+  slug: string
   difficulty: 'Easy' | 'Medium' | 'Hard'
   patterns: string[]
   sourceSheets: string[]
@@ -17,6 +18,7 @@ export interface ProblemsByPattern {
 
 interface ProblemsCache {
   all: Problem[]
+  bySlug: Record<string, Problem>
   byPattern: ProblemsByPattern
   patterns: string[]
   stats: {
@@ -51,6 +53,11 @@ function parseCSVLine(line: string): string[] {
   return result
 }
 
+function slugFromLink(link: string): string {
+  const match = link.match(/leetcode\.com\/problems\/([^/]+)/)
+  return match ? match[1] : ''
+}
+
 function parseCSVMaster(content: string): Problem[] {
   const lines = content.split('\n').filter(line => line.trim())
   if (lines.length === 0) return []
@@ -60,12 +67,14 @@ function parseCSVMaster(content: string): Problem[] {
 
   return dataLines.map(line => {
     const fields = parseCSVLine(line)
+    const link = fields[4] || ''
     return {
       name: fields[0] || '',
+      slug: slugFromLink(link),
       difficulty: (fields[1] || 'Medium') as 'Easy' | 'Medium' | 'Hard',
       patterns: fields[2] ? fields[2].split(';').map(p => p.trim()).filter(Boolean) : [],
       sourceSheets: fields[3] ? fields[3].split(';').map(s => s.trim()).filter(Boolean) : [],
-      link: fields[4] || '',
+      link,
       acceptanceRate: fields[5] || 'N/A',
       tags: fields[6] ? fields[6].split(';').map(t => t.trim()).filter(Boolean) : []
     }
@@ -81,12 +90,14 @@ function parseCSVPattern(content: string, patternName: string): Problem[] {
 
   return dataLines.map(line => {
     const fields = parseCSVLine(line)
+    const link = fields[3] || ''
     return {
       name: fields[0] || '',
+      slug: slugFromLink(link),
       difficulty: (fields[1] || 'Medium') as 'Easy' | 'Medium' | 'Hard',
       patterns: [patternName], // Use the pattern from filename
       sourceSheets: fields[2] ? fields[2].split(';').map(s => s.trim()).filter(Boolean) : [],
-      link: fields[3] || '',
+      link,
       acceptanceRate: fields[4] || 'N/A',
       tags: []
     }
@@ -143,9 +154,14 @@ export function loadProblemsCache(): ProblemsCache {
   const allProblems = loadMasterCSV()
   const byPattern = loadPatternCSVs()
   const patterns = Object.keys(byPattern).sort()
+  const bySlug: Record<string, Problem> = {}
+  for (const p of allProblems) {
+    if (p.slug) bySlug[p.slug] = p
+  }
 
   cache = {
     all: allProblems,
+    bySlug,
     byPattern,
     patterns,
     stats: calculateStats(allProblems)
