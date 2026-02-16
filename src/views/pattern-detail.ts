@@ -52,9 +52,10 @@ export async function patternDetailPage(
       text-align: center;
       overflow: hidden;
     }
-    .animation-container img {
+    .animation-container object {
       max-width: 100%;
       height: auto;
+      pointer-events: none;
     }
 
     .strategy-content {
@@ -188,7 +189,7 @@ export async function patternDetailPage(
       </p>
 
       <div class="animation-container">
-        <img src="/animations/${pattern.name}.svg" alt="${pattern.displayName} animation" />
+        <object data="/animations/${pattern.name}.svg" type="image/svg+xml" aria-label="${pattern.displayName} animation"></object>
       </div>
 
       <h2 style="font-size: 1.15rem; margin-bottom: 0.75rem;">Strategy Guide</h2>
