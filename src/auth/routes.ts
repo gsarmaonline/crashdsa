@@ -13,6 +13,7 @@ const isSecure = () => (process.env.APP_URL || '').startsWith('https')
 // Initiate GitHub OAuth
 auth.get('/auth/github', (c) => {
   const state = crypto.randomUUID()
+  const redirectTo = c.req.query('redirect')
 
   setCookie(c, 'crashdsa_oauth_state', state, {
     httpOnly: true,
@@ -21,6 +22,16 @@ auth.get('/auth/github', (c) => {
     path: '/',
     maxAge: 600, // 10 minutes
   })
+
+  if (redirectTo) {
+    setCookie(c, 'crashdsa_redirect', redirectTo, {
+      httpOnly: true,
+      secure: isSecure(),
+      sameSite: 'Lax',
+      path: '/',
+      maxAge: 600,
+    })
+  }
 
   return c.redirect(getGitHubAuthURL(state))
 })
@@ -52,7 +63,14 @@ auth.get('/auth/github/callback', async (c) => {
       maxAge: 30 * 24 * 60 * 60, // 30 days
     })
 
-    return c.redirect('/')
+    // Redirect to original page or home
+    const redirectTo = getCookie(c, 'crashdsa_redirect')
+    deleteCookie(c, 'crashdsa_redirect')
+    const safePath = redirectTo && redirectTo.startsWith('/') && !redirectTo.startsWith('//')
+      ? redirectTo
+      : '/'
+
+    return c.redirect(safePath)
   } catch (error) {
     console.error('GitHub OAuth error:', error)
     return c.redirect('/login?error=auth_failed')
@@ -80,7 +98,8 @@ auth.get('/login', (c) => {
   if (user) return c.redirect('/')
 
   const error = c.req.query('error')
-  return c.html(loginPage(error))
+  const redirectTo = c.req.query('redirect')
+  return c.html(loginPage(error, redirectTo))
 })
 
 export default auth

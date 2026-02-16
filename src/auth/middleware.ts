@@ -43,6 +43,26 @@ export function verifySessionCookie(cookie: string): string | null {
   return mismatch === 0 ? sessionId : null
 }
 
+// Requires authentication for UI routes - redirects to /login with redirect param
+export const requireAuthUI = createMiddleware<{ Variables: AuthVariables }>(async (c, next) => {
+  const user = c.get('user')
+  if (!user) {
+    const url = new URL(c.req.url)
+    const redirectTarget = url.pathname + url.search
+    return c.redirect(`/login?redirect=${encodeURIComponent(redirectTarget)}`)
+  }
+  await next()
+})
+
+// Requires authentication for API routes - returns 401 JSON
+export const requireAuthAPI = createMiddleware<{ Variables: AuthVariables }>(async (c, next) => {
+  const user = c.get('user')
+  if (!user) {
+    return c.json({ error: 'Authentication required' }, 401)
+  }
+  await next()
+})
+
 export const authMiddleware = createMiddleware<{ Variables: AuthVariables }>(async (c, next) => {
   const sessionCookie = getCookie(c, 'crashdsa_session')
 
