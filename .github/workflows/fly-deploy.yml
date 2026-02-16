@@ -54,6 +54,11 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
+      - name: Seed database
+        run: bun run db:seed
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
       - name: Setup Flyctl
         uses: superfly/flyctl-actions/setup-flyctl@master
 
