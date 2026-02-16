@@ -87,6 +87,20 @@ export async function getPatterns() {
   }
 }
 
+export async function getProblemBySlug(slug: string) {
+  const problem = await prisma.problem.findUnique({
+    where: { slug },
+    include: problemInclude,
+  })
+
+  if (!problem) return null
+
+  return {
+    ...mapProblem(problem),
+    slug: problem.slug,
+  }
+}
+
 export async function getStats() {
   const [total, easy, medium, hard] = await Promise.all([
     prisma.problem.count(),
