@@ -1,7 +1,7 @@
 import { PrismaClient } from '../src/generated/prisma/client.js'
 import { PrismaPg } from '@prisma/adapter-pg'
 import pg from 'pg'
-import { readFileSync, readdirSync, existsSync } from 'fs'
+import { readFileSync, readdirSync } from 'fs'
 import { join } from 'path'
 import { PATTERNS } from '../src/dsa-sheets/patterns.js'
 import type { Problem as RawProblem, ProblemTestCases } from '../src/dsa-sheets/types.js'
@@ -133,20 +133,34 @@ async function main() {
   }
   console.log(`  Seeded ${seeded} problems`)
 
-  // 4. Seed test cases
-  console.log('Seeding test cases...')
+  // 4. Seed test cases, problem definitions, and starter code
+  console.log('Seeding test cases and problem definitions...')
   const testCasesDir = join(process.cwd(), 'dsa-sheets', 'test-cases')
   const testFiles = readdirSync(testCasesDir).filter(
     (f) => f.endsWith('.json') && f !== '_index.json',
   )
 
   let testSetsSeeded = 0
+  let defsSeeded = 0
   for (const file of testFiles) {
     const testData: ProblemTestCases = JSON.parse(readFileSync(join(testCasesDir, file), 'utf-8'))
 
     // Find the problem by slug
     const problem = await prisma.problem.findUnique({ where: { slug: testData.slug } })
     if (!problem) continue
+
+    // Update problem with description, examples, constraints (if present)
+    if (testData.description) {
+      await prisma.problem.update({
+        where: { id: problem.id },
+        data: {
+          description: testData.description,
+          examples: testData.examples ?? undefined,
+          constraints: testData.constraints ?? undefined,
+        },
+      })
+      defsSeeded++
+    }
 
     // Delete existing test case set and its cases (cascade)
     await prisma.testCaseSet.deleteMany({ where: { problemId: problem.id } })
@@ -163,6 +177,8 @@ async function main() {
         isDesignProblem: testData.isDesignProblem ?? false,
         designMethods: testData.designMethods ? (testData.designMethods as any) : null,
         status: testData._status ?? 'scaffold',
+        starterCode: testData.starterCode ? (testData.starterCode as any) : null,
+        functionNameMap: testData.functionNameMap ? (testData.functionNameMap as any) : null,
         problemId: problem.id,
       },
     })
@@ -183,49 +199,7 @@ async function main() {
 
     testSetsSeeded++
   }
-  console.log(`  Seeded ${testSetsSeeded} test case sets`)
-
-  // 5. Seed problem descriptions and starter code from problem.json files
-  console.log('Seeding problem descriptions and starter code...')
-  const problemDefsDir = join(process.cwd(), 'src', 'problems')
-  let descSeeded = 0
-
-  if (existsSync(problemDefsDir)) {
-    const slugDirs = readdirSync(problemDefsDir).filter((f) =>
-      existsSync(join(problemDefsDir, f, 'problem.json')),
-    )
-
-    for (const slug of slugDirs) {
-      const problemJson = JSON.parse(
-        readFileSync(join(problemDefsDir, slug, 'problem.json'), 'utf-8'),
-      )
-
-      // Update Problem with description, examples, constraints
-      await prisma.problem.updateMany({
-        where: { slug },
-        data: {
-          description: problemJson.description ?? null,
-          examples: problemJson.examples ?? undefined,
-          constraints: problemJson.constraints ?? undefined,
-        },
-      })
-
-      // Update TestCaseSet with starterCode and functionNameMap
-      const existingSet = await prisma.testCaseSet.findUnique({ where: { slug } })
-      if (existingSet) {
-        await prisma.testCaseSet.update({
-          where: { slug },
-          data: {
-            starterCode: problemJson.starterCode ?? undefined,
-            functionNameMap: problemJson.functionNameMap ?? undefined,
-          },
-        })
-      }
-
-      descSeeded++
-    }
-  }
-  console.log(`  Seeded ${descSeeded} problem descriptions`)
+  console.log(`  Seeded ${testSetsSeeded} test case sets (${defsSeeded} with full definitions)`)
 
   console.log('Seed completed!')
 }

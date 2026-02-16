@@ -2,41 +2,104 @@
   "slug": "valid-anagram",
   "functionName": "isAnagram",
   "params": [
-    { "name": "s", "type": "string" },
-    { "name": "t", "type": "string" }
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
   ],
   "returnType": "boolean",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "s": "anagram", "t": "nagaram" },
+      "inputs": {
+        "s": "anagram",
+        "t": "nagaram"
+      },
       "expected": true,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "s": "rat", "t": "car" },
+      "inputs": {
+        "s": "rat",
+        "t": "car"
+      },
       "expected": false,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "s": "", "t": "" },
+      "inputs": {
+        "s": "",
+        "t": ""
+      },
       "expected": true,
-      "tags": ["empty-input", "edge-case"]
+      "tags": [
+        "empty-input",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "s": "a", "t": "a" },
+      "inputs": {
+        "s": "a",
+        "t": "a"
+      },
       "expected": true,
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "s": "ab", "t": "a" },
+      "inputs": {
+        "s": "ab",
+        "t": "a"
+      },
       "expected": false,
       "explanation": "Different lengths cannot be anagrams",
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     }
-  ]
+  ],
+  "description": "Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.\n\nAn anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.",
+  "examples": [
+    {
+      "input": "s = \"anagram\", t = \"nagaram\"",
+      "output": "true",
+      "explanation": "\"nagaram\" is an anagram of \"anagram\"."
+    },
+    {
+      "input": "s = \"rat\", t = \"car\"",
+      "output": "false",
+      "explanation": "\"car\" is not an anagram of \"rat\"."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length, t.length <= 5 * 10^4",
+    "s and t consist of lowercase English letters."
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @param {string} t\n * @return {boolean}\n */\nfunction isAnagram(s, t) {\n  // Write your solution here\n}",
+    "typescript": "function isAnagram(s: string, t: string): boolean {\n  // Write your solution here\n}",
+    "python": "def is_anagram(s: str, t: str) -> bool:\n    # Write your solution here\n    pass",
+    "cpp": "bool isAnagram(string s, string t) {\n    // Write your solution here\n}",
+    "go": "func isAnagram(s string, t string) bool {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "isAnagram",
+    "typescript": "isAnagram",
+    "python": "is_anagram",
+    "cpp": "isAnagram",
+    "go": "IsAnagram"
+  }
 }

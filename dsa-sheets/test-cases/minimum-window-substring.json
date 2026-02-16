@@ -2,41 +2,103 @@
   "slug": "minimum-window-substring",
   "functionName": "minWindow",
   "params": [
-    { "name": "s", "type": "string" },
-    { "name": "t", "type": "string" }
+    {
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
+    }
   ],
   "returnType": "string",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "s": "ADOBECODEBANC", "t": "ABC" },
+      "inputs": {
+        "s": "ADOBECODEBANC",
+        "t": "ABC"
+      },
       "expected": "BANC",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "s": "a", "t": "a" },
+      "inputs": {
+        "s": "a",
+        "t": "a"
+      },
       "expected": "a",
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "s": "a", "t": "aa" },
+      "inputs": {
+        "s": "a",
+        "t": "aa"
+      },
       "expected": "",
       "explanation": "t has two 'a's but s only has one",
-      "tags": ["no-solution"]
+      "tags": [
+        "no-solution"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "s": "aa", "t": "aa" },
+      "inputs": {
+        "s": "aa",
+        "t": "aa"
+      },
       "expected": "aa",
-      "tags": ["duplicates"]
+      "tags": [
+        "duplicates"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "s": "abc", "t": "d" },
+      "inputs": {
+        "s": "abc",
+        "t": "d"
+      },
       "expected": "",
-      "tags": ["no-solution"]
+      "tags": [
+        "no-solution"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Minimum Window Substring** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/minimum-window-substring/).",
+  "examples": [
+    {
+      "input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
+      "output": "\"BANC\""
+    },
+    {
+      "input": "s = \"a\", t = \"a\"",
+      "output": "\"a\""
+    },
+    {
+      "input": "s = \"a\", t = \"aa\"",
+      "output": "\"\"",
+      "explanation": "t has two 'a's but s only has one"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @param {string} t\n * @return {string}\n */\nfunction minWindow(s, t) {\n  // Write your solution here\n}",
+    "typescript": "function minWindow(s: string, t: string): string {\n  // Write your solution here\n}",
+    "python": "def min_window(s: str, t: str) -> str:\n    # Write your solution here\n    pass",
+    "cpp": "#include <string>\nusing namespace std;\nstring minWindow(string& s, string& t) {\n    // Write your solution here\n}",
+    "go": "func minWindow(s string, t string) string {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minWindow",
+    "typescript": "minWindow",
+    "python": "min_window",
+    "cpp": "minWindow",
+    "go": "MinWindow"
+  }
 }

@@ -2,40 +2,147 @@
   "slug": "3sum",
   "functionName": "threeSum",
   "params": [
-    { "name": "nums", "type": "int[]" }
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
   ],
   "returnType": "int[][]",
   "outputOrderMatters": false,
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "nums": [-1, 0, 1, 2, -1, -4] },
-      "expected": [[-1, -1, 2], [-1, 0, 1]],
-      "tags": ["basic"]
+      "inputs": {
+        "nums": [
+          -1,
+          0,
+          1,
+          2,
+          -1,
+          -4
+        ]
+      },
+      "expected": [
+        [
+          -1,
+          -1,
+          2
+        ],
+        [
+          -1,
+          0,
+          1
+        ]
+      ],
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "nums": [0, 1, 1] },
+      "inputs": {
+        "nums": [
+          0,
+          1,
+          1
+        ]
+      },
       "expected": [],
-      "tags": ["no-solution"]
+      "tags": [
+        "no-solution"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "nums": [0, 0, 0] },
-      "expected": [[0, 0, 0]],
-      "tags": ["all-same", "edge-case"]
+      "inputs": {
+        "nums": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "tags": [
+        "all-same",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "nums": [] },
+      "inputs": {
+        "nums": []
+      },
       "expected": [],
-      "tags": ["empty-input"]
+      "tags": [
+        "empty-input"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "nums": [-2, 0, 1, 1, 2] },
-      "expected": [[-2, 0, 2], [-2, 1, 1]],
-      "tags": ["duplicates"]
+      "inputs": {
+        "nums": [
+          -2,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      "expected": [
+        [
+          -2,
+          0,
+          2
+        ],
+        [
+          -2,
+          1,
+          1
+        ]
+      ],
+      "tags": [
+        "duplicates"
+      ]
     }
-  ]
+  ],
+  "description": "Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.\n\nNotice that the solution set must not contain duplicate triplets.",
+  "examples": [
+    {
+      "input": "nums = [-1,0,1,2,-1,-4]",
+      "output": "[[-1,-1,2],[-1,0,1]]",
+      "explanation": "nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.\nnums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.\nnums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.\nThe distinct triplets are [-1,0,1] and [-1,-1,2].\nNotice that the order of the output and the order of the triplets does not matter."
+    },
+    {
+      "input": "nums = [0,1,1]",
+      "output": "[]"
+    },
+    {
+      "input": "nums = [0,0,0]",
+      "output": "[[0,0,0]]"
+    }
+  ],
+  "constraints": [
+    "3 <= nums.length <= 3000",
+    "-10^5 <= nums[i] <= 10^5"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number[][]}\n */\nfunction threeSum(nums) {\n  // Write your solution here\n}",
+    "typescript": "function threeSum(nums: number[]): number[][] {\n  // Write your solution here\n}",
+    "python": "def three_sum(nums: list[int]) -> list[list[int]]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\n\nvector<vector<int>> threeSum(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func threeSum(nums []int) [][]int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "threeSum",
+    "typescript": "threeSum",
+    "python": "three_sum",
+    "cpp": "threeSum",
+    "go": "ThreeSum"
+  }
 }

@@ -2,40 +2,116 @@
   "slug": "maximum-depth-of-binary-tree",
   "functionName": "maxDepth",
   "params": [
-    { "name": "root", "type": "TreeNode" }
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
   ],
   "returnType": "int",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "root": [3, 9, 20, null, null, 15, 7] },
+      "inputs": {
+        "root": [
+          3,
+          9,
+          20,
+          null,
+          null,
+          15,
+          7
+        ]
+      },
       "expected": 3,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "root": [1, null, 2] },
+      "inputs": {
+        "root": [
+          1,
+          null,
+          2
+        ]
+      },
       "expected": 2,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "root": [] },
+      "inputs": {
+        "root": []
+      },
       "expected": 0,
-      "tags": ["empty-input", "edge-case"]
+      "tags": [
+        "empty-input",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "root": [1] },
+      "inputs": {
+        "root": [
+          1
+        ]
+      },
       "expected": 1,
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "root": [1, 2, null, 3, null, 4, null] },
+      "inputs": {
+        "root": [
+          1,
+          2,
+          null,
+          3,
+          null,
+          4,
+          null
+        ]
+      },
       "expected": 4,
       "explanation": "Left-skewed tree with depth 4",
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Maximum Depth of Binary Tree** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree/).",
+  "examples": [
+    {
+      "input": "root = [3,9,20,null,null,15,7]",
+      "output": "3"
+    },
+    {
+      "input": "root = [1,null,2]",
+      "output": "2"
+    },
+    {
+      "input": "root = [1]",
+      "output": "1"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {TreeNode} root\n * @return {number}\n */\nfunction maxDepth(root) {\n  // Write your solution here\n}",
+    "typescript": "function maxDepth(root: TreeNode | null): number {\n  // Write your solution here\n}",
+    "python": "def max_depth(root: Optional[TreeNode]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int maxDepth(TreeNode* root) {\n    // Write your solution here\n}",
+    "go": "func maxDepth(root *TreeNode) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maxDepth",
+    "typescript": "maxDepth",
+    "python": "max_depth",
+    "cpp": "maxDepth",
+    "go": "MaxDepth"
+  }
 }

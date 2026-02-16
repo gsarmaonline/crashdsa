@@ -2,35 +2,110 @@
   "slug": "container-with-most-water",
   "functionName": "maxArea",
   "params": [
-    { "name": "height", "type": "int[]" }
+    {
+      "name": "height",
+      "type": "int[]"
+    }
   ],
   "returnType": "int",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "height": [1, 8, 6, 2, 5, 4, 8, 3, 7] },
+      "inputs": {
+        "height": [
+          1,
+          8,
+          6,
+          2,
+          5,
+          4,
+          8,
+          3,
+          7
+        ]
+      },
       "expected": 49,
       "explanation": "Lines at index 1 (h=8) and 8 (h=7): min(8,7) * (8-1) = 49",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "height": [1, 1] },
+      "inputs": {
+        "height": [
+          1,
+          1
+        ]
+      },
       "expected": 1,
-      "tags": ["single-element", "edge-case"]
+      "tags": [
+        "single-element",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "height": [4, 3, 2, 1, 4] },
+      "inputs": {
+        "height": [
+          4,
+          3,
+          2,
+          1,
+          4
+        ]
+      },
       "expected": 16,
       "explanation": "min(4,4) * (4-0) = 16",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "height": [1, 2, 1] },
+      "inputs": {
+        "height": [
+          1,
+          2,
+          1
+        ]
+      },
       "expected": 2,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Container With Most Water** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/container-with-most-water/).",
+  "examples": [
+    {
+      "input": "height = [1,8,6,2,5,4,8,3,7]",
+      "output": "49",
+      "explanation": "Lines at index 1 (h=8) and 8 (h=7): min(8,7) * (8-1) = 49"
+    },
+    {
+      "input": "height = [4,3,2,1,4]",
+      "output": "16",
+      "explanation": "min(4,4) * (4-0) = 16"
+    },
+    {
+      "input": "height = [1,2,1]",
+      "output": "2"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} height\n * @return {number}\n */\nfunction maxArea(height) {\n  // Write your solution here\n}",
+    "typescript": "function maxArea(height: number[]): number {\n  // Write your solution here\n}",
+    "python": "def max_area(height: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint maxArea(vector<int>& height) {\n    // Write your solution here\n}",
+    "go": "func maxArea(height []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maxArea",
+    "typescript": "maxArea",
+    "python": "max_area",
+    "cpp": "maxArea",
+    "go": "MaxArea"
+  }
 }

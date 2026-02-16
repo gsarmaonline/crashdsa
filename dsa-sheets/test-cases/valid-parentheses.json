@@ -2,46 +2,104 @@
   "slug": "valid-parentheses",
   "functionName": "isValid",
   "params": [
-    { "name": "s", "type": "string" }
+    {
+      "name": "s",
+      "type": "string"
+    }
   ],
   "returnType": "boolean",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "s": "()" },
+      "inputs": {
+        "s": "()"
+      },
       "expected": true,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "s": "()[]{}" },
+      "inputs": {
+        "s": "()[]{}"
+      },
       "expected": true,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "s": "(]" },
+      "inputs": {
+        "s": "(]"
+      },
       "expected": false,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "s": "([)]" },
+      "inputs": {
+        "s": "([)]"
+      },
       "expected": false,
       "explanation": "Interleaved brackets are invalid",
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "s": "{[]}" },
+      "inputs": {
+        "s": "{[]}"
+      },
       "expected": true,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-6",
-      "inputs": { "s": "" },
+      "inputs": {
+        "s": ""
+      },
       "expected": true,
-      "tags": ["empty-input", "edge-case"]
+      "tags": [
+        "empty-input",
+        "edge-case"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Valid Parentheses** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/valid-parentheses/).",
+  "examples": [
+    {
+      "input": "s = \"()\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \"()[]{}\"",
+      "output": "true"
+    },
+    {
+      "input": "s = \"(]\"",
+      "output": "false"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @return {boolean}\n */\nfunction isValid(s) {\n  // Write your solution here\n}",
+    "typescript": "function isValid(s: string): boolean {\n  // Write your solution here\n}",
+    "python": "def is_valid(s: str) -> bool:\n    # Write your solution here\n    pass",
+    "cpp": "#include <string>\nusing namespace std;\nbool isValid(string& s) {\n    // Write your solution here\n}",
+    "go": "func isValid(s string) bool {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "isValid",
+    "typescript": "isValid",
+    "python": "is_valid",
+    "cpp": "isValid",
+    "go": "IsValid"
+  }
 }

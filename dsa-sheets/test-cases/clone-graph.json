@@ -2,37 +2,141 @@
   "slug": "clone-graph",
   "functionName": "cloneGraph",
   "params": [
-    { "name": "adjList", "type": "GraphNode" }
+    {
+      "name": "adjList",
+      "type": "GraphNode"
+    }
   ],
   "returnType": "GraphNode",
   "notes": "Graph as adjacency list. [[2,4],[1,3],[2,4],[1,3]] means node 1 connects to 2,4; node 2 to 1,3; etc. 1-indexed.",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "adjList": [[2,4],[1,3],[2,4],[1,3]] },
-      "expected": [[2,4],[1,3],[2,4],[1,3]],
+      "inputs": {
+        "adjList": [
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "expected": [
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ],
       "explanation": "4-node graph forming a square",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "adjList": [[]] },
-      "expected": [[]],
+      "inputs": {
+        "adjList": [
+          []
+        ]
+      },
+      "expected": [
+        []
+      ],
       "explanation": "Single node with no neighbors",
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "adjList": [] },
+      "inputs": {
+        "adjList": []
+      },
       "expected": [],
       "explanation": "Empty graph",
-      "tags": ["empty-input", "edge-case"]
+      "tags": [
+        "empty-input",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "adjList": [[2],[1]] },
-      "expected": [[2],[1]],
-      "tags": ["basic"]
+      "inputs": {
+        "adjList": [
+          [
+            2
+          ],
+          [
+            1
+          ]
+        ]
+      },
+      "expected": [
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "tags": [
+        "basic"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Clone Graph** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/clone-graph/).",
+  "examples": [
+    {
+      "input": "adjList = [[2,4],[1,3],[2,4],[1,3]]",
+      "output": "[[2,4],[1,3],[2,4],[1,3]]",
+      "explanation": "4-node graph forming a square"
+    },
+    {
+      "input": "adjList = [[]]",
+      "output": "[[]]",
+      "explanation": "Single node with no neighbors"
+    },
+    {
+      "input": "adjList = [[2],[1]]",
+      "output": "[[2],[1]]"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {GraphNode} adjList\n * @return {GraphNode}\n */\nfunction cloneGraph(adjList) {\n  // Write your solution here\n}",
+    "typescript": "function cloneGraph(adjList: GraphNode | null): GraphNode | null {\n  // Write your solution here\n}",
+    "python": "def clone_graph(adjList: Optional[GraphNode]) -> Optional[GraphNode]:\n    # Write your solution here\n    pass",
+    "cpp": "GraphNode* cloneGraph(GraphNode* adjList) {\n    // Write your solution here\n}",
+    "go": "func cloneGraph(adjList *GraphNode) *GraphNode {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "cloneGraph",
+    "typescript": "cloneGraph",
+    "python": "clone_graph",
+    "cpp": "cloneGraph",
+    "go": "CloneGraph"
+  }
 }

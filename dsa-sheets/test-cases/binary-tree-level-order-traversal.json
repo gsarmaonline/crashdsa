@@ -2,41 +2,165 @@
   "slug": "binary-tree-level-order-traversal",
   "functionName": "levelOrder",
   "params": [
-    { "name": "root", "type": "TreeNode" }
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
   ],
   "returnType": "int[][]",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "root": [3, 9, 20, null, null, 15, 7] },
-      "expected": [[3], [9, 20], [15, 7]],
-      "tags": ["basic"]
+      "inputs": {
+        "root": [
+          3,
+          9,
+          20,
+          null,
+          null,
+          15,
+          7
+        ]
+      },
+      "expected": [
+        [
+          3
+        ],
+        [
+          9,
+          20
+        ],
+        [
+          15,
+          7
+        ]
+      ],
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "root": [1] },
-      "expected": [[1]],
-      "tags": ["single-element"]
+      "inputs": {
+        "root": [
+          1
+        ]
+      },
+      "expected": [
+        [
+          1
+        ]
+      ],
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "root": [] },
+      "inputs": {
+        "root": []
+      },
       "expected": [],
-      "tags": ["empty-input", "edge-case"]
+      "tags": [
+        "empty-input",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "root": [1, 2, 3, 4, 5, 6, 7] },
-      "expected": [[1], [2, 3], [4, 5, 6, 7]],
+      "inputs": {
+        "root": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "expected": [
+        [
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
       "explanation": "Complete binary tree with 3 levels",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "root": [1, 2, null, 3, null, 4, null] },
-      "expected": [[1], [2], [3], [4]],
+      "inputs": {
+        "root": [
+          1,
+          2,
+          null,
+          3,
+          null,
+          4,
+          null
+        ]
+      },
+      "expected": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
       "explanation": "Left-skewed tree, each level has one node",
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Binary Tree Level Order Traversal** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal/).",
+  "examples": [
+    {
+      "input": "root = [3,9,20,null,null,15,7]",
+      "output": "[[3],[9,20],[15,7]]"
+    },
+    {
+      "input": "root = [1]",
+      "output": "[[1]]"
+    },
+    {
+      "input": "root = [1,2,3,4,5,6,7]",
+      "output": "[[1],[2,3],[4,5,6,7]]",
+      "explanation": "Complete binary tree with 3 levels"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {TreeNode} root\n * @return {number[][]}\n */\nfunction levelOrder(root) {\n  // Write your solution here\n}",
+    "typescript": "function levelOrder(root: TreeNode | null): number[][] {\n  // Write your solution here\n}",
+    "python": "def level_order(root: Optional[TreeNode]) -> list[list[int]]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nvector<vector<int>> levelOrder(TreeNode* root) {\n    // Write your solution here\n}",
+    "go": "func levelOrder(root *TreeNode) [][]int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "levelOrder",
+    "typescript": "levelOrder",
+    "python": "level_order",
+    "cpp": "levelOrder",
+    "go": "LevelOrder"
+  }
 }

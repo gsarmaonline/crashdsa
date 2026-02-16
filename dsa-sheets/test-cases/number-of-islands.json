@@ -2,7 +2,10 @@
   "slug": "number-of-islands",
   "functionName": "numIslands",
   "params": [
-    { "name": "grid", "type": "char[][]" }
+    {
+      "name": "grid",
+      "type": "char[][]"
+    }
   ],
   "returnType": "int",
   "notes": "Grid values are strings '1' (land) and '0' (water).",
@@ -11,57 +14,170 @@
       "id": "tc-1",
       "inputs": {
         "grid": [
-          ["1","1","1","1","0"],
-          ["1","1","0","1","0"],
-          ["1","1","0","0","0"],
-          ["0","0","0","0","0"]
+          [
+            "1",
+            "1",
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
         ]
       },
       "expected": 1,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
       "inputs": {
         "grid": [
-          ["1","1","0","0","0"],
-          ["1","1","0","0","0"],
-          ["0","0","1","0","0"],
-          ["0","0","0","1","1"]
+          [
+            "1",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "1"
+          ]
         ]
       },
       "expected": 3,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
       "inputs": {
-        "grid": [["0","0"],["0","0"]]
+        "grid": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
       },
       "expected": 0,
       "explanation": "All water",
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
       "inputs": {
-        "grid": [["1"]]
+        "grid": [
+          [
+            "1"
+          ]
+        ]
       },
       "expected": 1,
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-5",
       "inputs": {
         "grid": [
-          ["1","0","1"],
-          ["0","1","0"],
-          ["1","0","1"]
+          [
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ]
         ]
       },
       "expected": 5,
       "explanation": "Checkerboard pattern, each land cell is isolated",
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Number of Islands** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/number-of-islands/).",
+  "examples": [
+    {
+      "input": "grid = [[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]",
+      "output": "1"
+    },
+    {
+      "input": "grid = [[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"1\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"1\",\"1\"]]",
+      "output": "3"
+    },
+    {
+      "input": "grid = [[\"1\"]]",
+      "output": "1"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {string[][]} grid\n * @return {number}\n */\nfunction numIslands(grid) {\n  // Write your solution here\n}",
+    "typescript": "function numIslands(grid: string[][]): number {\n  // Write your solution here\n}",
+    "python": "def num_islands(grid: list[list[str]]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint numIslands(vector<vector<char>>& grid) {\n    // Write your solution here\n}",
+    "go": "func numIslands(grid [][]byte) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "numIslands",
+    "typescript": "numIslands",
+    "python": "num_islands",
+    "cpp": "numIslands",
+    "go": "NumIslands"
+  }
 }

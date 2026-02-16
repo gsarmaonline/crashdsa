@@ -2,44 +2,126 @@
   "slug": "coin-change",
   "functionName": "coinChange",
   "params": [
-    { "name": "coins", "type": "int[]" },
-    { "name": "amount", "type": "int" }
+    {
+      "name": "coins",
+      "type": "int[]"
+    },
+    {
+      "name": "amount",
+      "type": "int"
+    }
   ],
   "returnType": "int",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "coins": [1, 5, 10, 25], "amount": 11 },
+      "inputs": {
+        "coins": [
+          1,
+          5,
+          10,
+          25
+        ],
+        "amount": 11
+      },
       "expected": 3,
       "explanation": "10 + 1 = 11 (not optimal with greedy for all cases, but works here)",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "coins": [2], "amount": 3 },
+      "inputs": {
+        "coins": [
+          2
+        ],
+        "amount": 3
+      },
       "expected": -1,
       "explanation": "Cannot make 3 with only coin 2",
-      "tags": ["no-solution"]
+      "tags": [
+        "no-solution"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "coins": [1], "amount": 0 },
+      "inputs": {
+        "coins": [
+          1
+        ],
+        "amount": 0
+      },
       "expected": 0,
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "coins": [1, 2, 5], "amount": 11 },
+      "inputs": {
+        "coins": [
+          1,
+          2,
+          5
+        ],
+        "amount": 11
+      },
       "expected": 3,
       "explanation": "5 + 5 + 1 = 11",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "coins": [186, 419, 83, 408], "amount": 6249 },
+      "inputs": {
+        "coins": [
+          186,
+          419,
+          83,
+          408
+        ],
+        "amount": 6249
+      },
       "expected": 20,
       "explanation": "Greedy won't work here, needs DP",
-      "tags": ["large-input"]
+      "tags": [
+        "large-input"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Coin Change** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/coin-change/).",
+  "examples": [
+    {
+      "input": "coins = [1,5,10,25], amount = 11",
+      "output": "3",
+      "explanation": "10 + 1 = 11 (not optimal with greedy for all cases, but works here)"
+    },
+    {
+      "input": "coins = [2], amount = 3",
+      "output": "-1",
+      "explanation": "Cannot make 3 with only coin 2"
+    },
+    {
+      "input": "coins = [1,2,5], amount = 11",
+      "output": "3",
+      "explanation": "5 + 5 + 1 = 11"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} coins\n * @param {number} amount\n * @return {number}\n */\nfunction coinChange(coins, amount) {\n  // Write your solution here\n}",
+    "typescript": "function coinChange(coins: number[], amount: number): number {\n  // Write your solution here\n}",
+    "python": "def coin_change(coins: list[int], amount: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint coinChange(vector<int>& coins, int amount) {\n    // Write your solution here\n}",
+    "go": "func coinChange(coins []int, amount int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "coinChange",
+    "typescript": "coinChange",
+    "python": "coin_change",
+    "cpp": "coinChange",
+    "go": "CoinChange"
+  }
 }

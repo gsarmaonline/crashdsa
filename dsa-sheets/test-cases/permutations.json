@@ -2,28 +2,126 @@
   "slug": "permutations",
   "functionName": "permute",
   "params": [
-    { "name": "nums", "type": "int[]" }
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
   ],
   "returnType": "int[][]",
   "outputOrderMatters": false,
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "nums": [1, 2, 3] },
-      "expected": [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]],
-      "tags": ["basic"]
+      "inputs": {
+        "nums": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          3,
+          2,
+          1
+        ]
+      ],
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "nums": [0, 1] },
-      "expected": [[0,1],[1,0]],
-      "tags": ["basic"]
+      "inputs": {
+        "nums": [
+          0,
+          1
+        ]
+      },
+      "expected": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "nums": [1] },
-      "expected": [[1]],
-      "tags": ["single-element"]
+      "inputs": {
+        "nums": [
+          1
+        ]
+      },
+      "expected": [
+        [
+          1
+        ]
+      ],
+      "tags": [
+        "single-element"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Permutations** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/permutations/).",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]"
+    },
+    {
+      "input": "nums = [0,1]",
+      "output": "[[0,1],[1,0]]"
+    },
+    {
+      "input": "nums = [1]",
+      "output": "[[1]]"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number[][]}\n */\nfunction permute(nums) {\n  // Write your solution here\n}",
+    "typescript": "function permute(nums: number[]): number[][] {\n  // Write your solution here\n}",
+    "python": "def permute(nums: list[int]) -> list[list[int]]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nvector<vector<int>> permute(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func permute(nums []int) [][]int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "permute",
+    "typescript": "permute",
+    "python": "permute",
+    "cpp": "permute",
+    "go": "Permute"
+  }
 }

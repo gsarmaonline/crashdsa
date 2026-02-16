@@ -2,42 +2,118 @@
   "slug": "house-robber",
   "functionName": "rob",
   "params": [
-    { "name": "nums", "type": "int[]" }
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
   ],
   "returnType": "int",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "nums": [1, 2, 3, 1] },
+      "inputs": {
+        "nums": [
+          1,
+          2,
+          3,
+          1
+        ]
+      },
       "expected": 4,
       "explanation": "Rob house 1 (1) and house 3 (3) = 4",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "nums": [2, 7, 9, 3, 1] },
+      "inputs": {
+        "nums": [
+          2,
+          7,
+          9,
+          3,
+          1
+        ]
+      },
       "expected": 12,
       "explanation": "Rob house 1 (2) + house 3 (9) + house 5 (1) = 12",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "nums": [0] },
+      "inputs": {
+        "nums": [
+          0
+        ]
+      },
       "expected": 0,
-      "tags": ["single-element", "edge-case"]
+      "tags": [
+        "single-element",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "nums": [100] },
+      "inputs": {
+        "nums": [
+          100
+        ]
+      },
       "expected": 100,
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "nums": [2, 1, 1, 2] },
+      "inputs": {
+        "nums": [
+          2,
+          1,
+          1,
+          2
+        ]
+      },
       "expected": 4,
       "explanation": "Rob first and last: 2 + 2 = 4",
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **House Robber** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/house-robber/).",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,1]",
+      "output": "4",
+      "explanation": "Rob house 1 (1) and house 3 (3) = 4"
+    },
+    {
+      "input": "nums = [2,7,9,3,1]",
+      "output": "12",
+      "explanation": "Rob house 1 (2) + house 3 (9) + house 5 (1) = 12"
+    },
+    {
+      "input": "nums = [100]",
+      "output": "100"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number}\n */\nfunction rob(nums) {\n  // Write your solution here\n}",
+    "typescript": "function rob(nums: number[]): number {\n  // Write your solution here\n}",
+    "python": "def rob(nums: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint rob(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func rob(nums []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "rob",
+    "typescript": "rob",
+    "python": "rob",
+    "cpp": "rob",
+    "go": "Rob"
+  }
 }
