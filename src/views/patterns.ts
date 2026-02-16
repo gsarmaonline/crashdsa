@@ -1,12 +1,12 @@
 import { html, raw } from 'hono/html'
-import { getProblemsCache } from '../data/csv-loader.js'
+import { getStats, getPatternProblems } from '../data/problem-repository.js'
 import { PATTERNS } from '../dsa-sheets/patterns.js'
 
-export function patternsPage() {
-  const cache = getProblemsCache()
+export async function patternsPage() {
+  const [stats, byPattern] = await Promise.all([getStats(), getPatternProblems()])
 
   const patternCards = PATTERNS.map(pattern => {
-    const problems = cache.byPattern[pattern.name] || []
+    const problems = byPattern[pattern.name] || []
     const easy = problems.filter(p => p.difficulty === 'Easy').length
     const medium = problems.filter(p => p.difficulty === 'Medium').length
     const hard = problems.filter(p => p.difficulty === 'Hard').length
@@ -181,7 +181,7 @@ export function patternsPage() {
           Master ${PATTERNS.length} algorithmic strategies used to solve DSA problems
         </p>
         <div class="patterns-summary">
-          <span class="summary-stat"><strong>${cache.stats.total}</strong> total problems</span>
+          <span class="summary-stat"><strong>${stats.total}</strong> total problems</span>
           <span class="summary-stat"><strong>${PATTERNS.length}</strong> patterns</span>
         </div>
       </div>

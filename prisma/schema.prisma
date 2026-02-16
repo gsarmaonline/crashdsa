@@ -1,0 +1,120 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Difficulty {
+  Easy
+  Medium
+  Hard
+}
+
+model Problem {
+  id         String     @id // e.g. "p-neetcode150-two-sum"
+  title      String
+  slug       String     @unique
+  difficulty Difficulty
+  link       String
+  acceptance Float?
+  frequency  Float?
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+
+  patterns     ProblemPattern[]
+  sourceSheets ProblemSheet[]
+  tags         ProblemTag[]
+  testCaseSet  TestCaseSet?
+
+  @@index([difficulty])
+}
+
+model Pattern {
+  name        String   @id // e.g. "two-pointers"
+  displayName String
+  description String
+  keywords    String[] // PostgreSQL array
+  tagMappings String[] // PostgreSQL array
+
+  problems ProblemPattern[]
+}
+
+model SourceSheet {
+  name        String @id // e.g. "neetcode150"
+  displayName String
+
+  problems ProblemSheet[]
+}
+
+model Tag {
+  name String @id
+
+  problems ProblemTag[]
+}
+
+model ProblemPattern {
+  problemId   String
+  patternName String
+
+  problem Problem @relation(fields: [problemId], references: [id], onDelete: Cascade)
+  pattern Pattern @relation(fields: [patternName], references: [name], onDelete: Cascade)
+
+  @@id([problemId, patternName])
+  @@index([patternName])
+}
+
+model ProblemSheet {
+  problemId String
+  sheetName String
+
+  problem     Problem     @relation(fields: [problemId], references: [id], onDelete: Cascade)
+  sourceSheet SourceSheet @relation(fields: [sheetName], references: [name], onDelete: Cascade)
+
+  @@id([problemId, sheetName])
+  @@index([sheetName])
+}
+
+model ProblemTag {
+  problemId String
+  tagName   String
+
+  problem Problem @relation(fields: [problemId], references: [id], onDelete: Cascade)
+  tag     Tag     @relation(fields: [tagName], references: [name], onDelete: Cascade)
+
+  @@id([problemId, tagName])
+  @@index([tagName])
+}
+
+model TestCaseSet {
+  id                 String  @id @default(cuid())
+  slug               String  @unique
+  functionName       String
+  params             Json // Array of {name, type}
+  returnType         String
+  notes              String?
+  outputOrderMatters Boolean @default(true)
+  isDesignProblem    Boolean @default(false)
+  designMethods      Json? // Array of {name, params, returnType}
+  status             String  @default("scaffold") // "scaffold" or "complete"
+
+  problemId String  @unique
+  problem   Problem @relation(fields: [problemId], references: [id], onDelete: Cascade)
+
+  testCases TestCase[]
+}
+
+model TestCase {
+  id          String   @id // e.g. "tc-1"
+  inputs      Json // Record<string, unknown>
+  expected    Json // unknown
+  explanation String?
+  tags        String[] // PostgreSQL array
+
+  testCaseSetId String
+  testCaseSet   TestCaseSet @relation(fields: [testCaseSetId], references: [id], onDelete: Cascade)
+
+  @@index([testCaseSetId])
+}
