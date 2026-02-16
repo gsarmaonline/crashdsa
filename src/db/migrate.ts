@@ -44,5 +44,13 @@ export async function runMigrations() {
   await sql`CREATE INDEX IF NOT EXISTS idx_solved_user ON user_solved_problems(user_id)`
   await sql`CREATE INDEX IF NOT EXISTS idx_solved_slug ON user_solved_problems(problem_slug)`
 
+  // Prisma schema column additions (idempotent with IF NOT EXISTS)
+  await sql`ALTER TABLE "Problem" ADD COLUMN IF NOT EXISTS "description" TEXT`
+  await sql`ALTER TABLE "Problem" ADD COLUMN IF NOT EXISTS "examples" JSONB`
+  await sql`ALTER TABLE "Problem" ADD COLUMN IF NOT EXISTS "constraints" JSONB`
+  await sql`ALTER TABLE "TestCaseSet" ADD COLUMN IF NOT EXISTS "starterCode" JSONB`
+  await sql`ALTER TABLE "TestCaseSet" ADD COLUMN IF NOT EXISTS "functionNameMap" JSONB`
+  await sql`ALTER TABLE "Pattern" ADD COLUMN IF NOT EXISTS "strategy" TEXT NOT NULL DEFAULT ''`
+
   console.log('Database migrations complete')
 }
