@@ -2,44 +2,152 @@
   "slug": "two-sum",
   "functionName": "twoSum",
   "params": [
-    { "name": "nums", "type": "int[]" },
-    { "name": "target", "type": "int" }
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
   ],
   "returnType": "int[]",
   "outputOrderMatters": false,
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "nums": [2, 7, 11, 15], "target": 9 },
-      "expected": [0, 1],
+      "inputs": {
+        "nums": [
+          2,
+          7,
+          11,
+          15
+        ],
+        "target": 9
+      },
+      "expected": [
+        0,
+        1
+      ],
       "explanation": "nums[0] + nums[1] = 2 + 7 = 9",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "nums": [3, 2, 4], "target": 6 },
-      "expected": [1, 2],
-      "tags": ["basic"]
+      "inputs": {
+        "nums": [
+          3,
+          2,
+          4
+        ],
+        "target": 6
+      },
+      "expected": [
+        1,
+        2
+      ],
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "nums": [3, 3], "target": 6 },
-      "expected": [0, 1],
+      "inputs": {
+        "nums": [
+          3,
+          3
+        ],
+        "target": 6
+      },
+      "expected": [
+        0,
+        1
+      ],
       "explanation": "Both elements are the same value",
-      "tags": ["duplicates", "edge-case"]
+      "tags": [
+        "duplicates",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "nums": [-1, -2, -3, -4, -5], "target": -8 },
-      "expected": [2, 4],
-      "tags": ["negative-numbers"]
+      "inputs": {
+        "nums": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5
+        ],
+        "target": -8
+      },
+      "expected": [
+        2,
+        4
+      ],
+      "tags": [
+        "negative-numbers"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "nums": [0, 4, 3, 0], "target": 0 },
-      "expected": [0, 3],
+      "inputs": {
+        "nums": [
+          0,
+          4,
+          3,
+          0
+        ],
+        "target": 0
+      },
+      "expected": [
+        0,
+        3
+      ],
       "explanation": "Two zeros sum to zero",
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     }
-  ]
+  ],
+  "description": "Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.\n\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\n\nYou can return the answer in any order.",
+  "examples": [
+    {
+      "input": "nums = [2,7,11,15], target = 9",
+      "output": "[0,1]",
+      "explanation": "Because nums[0] + nums[1] == 9, we return [0, 1]."
+    },
+    {
+      "input": "nums = [3,2,4], target = 6",
+      "output": "[1,2]",
+      "explanation": "Because nums[1] + nums[2] == 6, we return [1, 2]."
+    },
+    {
+      "input": "nums = [3,3], target = 6",
+      "output": "[0,1]",
+      "explanation": "Because nums[0] + nums[1] == 6, we return [0, 1]."
+    }
+  ],
+  "constraints": [
+    "2 <= nums.length <= 10^4",
+    "-10^9 <= nums[i] <= 10^9",
+    "-10^9 <= target <= 10^9",
+    "Only one valid answer exists."
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number[]}\n */\nfunction twoSum(nums, target) {\n  // Write your solution here\n}",
+    "typescript": "function twoSum(nums: number[], target: number): number[] {\n  // Write your solution here\n}",
+    "python": "def two_sum(nums: list[int], target: int) -> list[int]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\n\nvector<int> twoSum(vector<int>& nums, int target) {\n    // Write your solution here\n}",
+    "go": "func twoSum(nums []int, target int) []int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "twoSum",
+    "typescript": "twoSum",
+    "python": "two_sum",
+    "cpp": "twoSum",
+    "go": "TwoSum"
+  }
 }

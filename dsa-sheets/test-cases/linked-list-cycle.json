@@ -2,43 +2,119 @@
   "slug": "linked-list-cycle",
   "functionName": "hasCycle",
   "params": [
-    { "name": "head", "type": "ListNode" }
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
   ],
   "returnType": "boolean",
   "notes": "For test inputs, 'pos' indicates the index (0-based) the tail connects to. -1 means no cycle. The 'pos' field is used to construct the linked list, not passed as a function argument.",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "head": [3, 2, 0, -4], "pos": 1 },
+      "inputs": {
+        "head": [
+          3,
+          2,
+          0,
+          -4
+        ],
+        "pos": 1
+      },
       "expected": true,
       "explanation": "Tail connects back to node at index 1",
-      "tags": ["basic", "cycle"]
+      "tags": [
+        "basic",
+        "cycle"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "head": [1, 2], "pos": 0 },
+      "inputs": {
+        "head": [
+          1,
+          2
+        ],
+        "pos": 0
+      },
       "expected": true,
       "explanation": "Tail connects back to head",
-      "tags": ["basic", "cycle"]
+      "tags": [
+        "basic",
+        "cycle"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "head": [1], "pos": -1 },
+      "inputs": {
+        "head": [
+          1
+        ],
+        "pos": -1
+      },
       "expected": false,
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "head": [], "pos": -1 },
+      "inputs": {
+        "head": [],
+        "pos": -1
+      },
       "expected": false,
-      "tags": ["empty-input", "edge-case"]
+      "tags": [
+        "empty-input",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "head": [1], "pos": 0 },
+      "inputs": {
+        "head": [
+          1
+        ],
+        "pos": 0
+      },
       "expected": true,
       "explanation": "Single node pointing to itself",
-      "tags": ["edge-case", "cycle"]
+      "tags": [
+        "edge-case",
+        "cycle"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Linked List Cycle** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/linked-list-cycle/).",
+  "examples": [
+    {
+      "input": "head = [3,2,0,-4]",
+      "output": "true",
+      "explanation": "Tail connects back to node at index 1"
+    },
+    {
+      "input": "head = [1,2]",
+      "output": "true",
+      "explanation": "Tail connects back to head"
+    },
+    {
+      "input": "head = [1]",
+      "output": "false"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {ListNode} head\n * @return {boolean}\n */\nfunction hasCycle(head) {\n  // Write your solution here\n}",
+    "typescript": "function hasCycle(head: ListNode | null): boolean {\n  // Write your solution here\n}",
+    "python": "def has_cycle(head: Optional[ListNode]) -> bool:\n    # Write your solution here\n    pass",
+    "cpp": "bool hasCycle(ListNode* head) {\n    // Write your solution here\n}",
+    "go": "func hasCycle(head *ListNode) bool {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "hasCycle",
+    "typescript": "hasCycle",
+    "python": "has_cycle",
+    "cpp": "hasCycle",
+    "go": "HasCycle"
+  }
 }

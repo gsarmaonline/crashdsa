@@ -2,41 +2,118 @@
   "slug": "best-time-to-buy-and-sell-stock",
   "functionName": "maxProfit",
   "params": [
-    { "name": "prices", "type": "int[]" }
+    {
+      "name": "prices",
+      "type": "int[]"
+    }
   ],
   "returnType": "int",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "prices": [7, 1, 5, 3, 6, 4] },
+      "inputs": {
+        "prices": [
+          7,
+          1,
+          5,
+          3,
+          6,
+          4
+        ]
+      },
       "expected": 5,
       "explanation": "Buy on day 2 (price=1), sell on day 5 (price=6), profit=5",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "prices": [7, 6, 4, 3, 1] },
+      "inputs": {
+        "prices": [
+          7,
+          6,
+          4,
+          3,
+          1
+        ]
+      },
       "expected": 0,
       "explanation": "Prices only decrease, no profitable transaction",
-      "tags": ["no-solution", "reverse-sorted"]
+      "tags": [
+        "no-solution",
+        "reverse-sorted"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "prices": [1] },
+      "inputs": {
+        "prices": [
+          1
+        ]
+      },
       "expected": 0,
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "prices": [2, 4, 1] },
+      "inputs": {
+        "prices": [
+          2,
+          4,
+          1
+        ]
+      },
       "expected": 2,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "prices": [1, 2] },
+      "inputs": {
+        "prices": [
+          1,
+          2
+        ]
+      },
       "expected": 1,
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     }
-  ]
+  ],
+  "description": "You are given an array `prices` where `prices[i]` is the price of a given stock on the `i`th day.\n\nYou want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.\n\nReturn the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return `0`.",
+  "examples": [
+    {
+      "input": "prices = [7,1,5,3,6,4]",
+      "output": "5",
+      "explanation": "Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5."
+    },
+    {
+      "input": "prices = [7,6,4,3,1]",
+      "output": "0",
+      "explanation": "No transactions are done and the max profit = 0."
+    }
+  ],
+  "constraints": [
+    "1 <= prices.length <= 10^5",
+    "0 <= prices[i] <= 10^4"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} prices\n * @return {number}\n */\nfunction maxProfit(prices) {\n  // Write your solution here\n}",
+    "typescript": "function maxProfit(prices: number[]): number {\n  // Write your solution here\n}",
+    "python": "def max_profit(prices: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int maxProfit(vector<int>& prices) {\n    // Write your solution here\n}",
+    "go": "func maxProfit(prices []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maxProfit",
+    "typescript": "maxProfit",
+    "python": "max_profit",
+    "cpp": "maxProfit",
+    "go": "MaxProfit"
+  }
 }

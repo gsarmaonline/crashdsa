@@ -133,20 +133,34 @@ async function main() {
   }
   console.log(`  Seeded ${seeded} problems`)
 
-  // 4. Seed test cases
-  console.log('Seeding test cases...')
+  // 4. Seed test cases, problem definitions, and starter code
+  console.log('Seeding test cases and problem definitions...')
   const testCasesDir = join(process.cwd(), 'dsa-sheets', 'test-cases')
   const testFiles = readdirSync(testCasesDir).filter(
     (f) => f.endsWith('.json') && f !== '_index.json',
   )
 
   let testSetsSeeded = 0
+  let defsSeeded = 0
   for (const file of testFiles) {
     const testData: ProblemTestCases = JSON.parse(readFileSync(join(testCasesDir, file), 'utf-8'))
 
     // Find the problem by slug
     const problem = await prisma.problem.findUnique({ where: { slug: testData.slug } })
     if (!problem) continue
+
+    // Update problem with description, examples, constraints (if present)
+    if (testData.description) {
+      await prisma.problem.update({
+        where: { id: problem.id },
+        data: {
+          description: testData.description,
+          examples: testData.examples ?? undefined,
+          constraints: testData.constraints ?? undefined,
+        },
+      })
+      defsSeeded++
+    }
 
     // Delete existing test case set and its cases (cascade)
     await prisma.testCaseSet.deleteMany({ where: { problemId: problem.id } })
@@ -163,6 +177,8 @@ async function main() {
         isDesignProblem: testData.isDesignProblem ?? false,
         designMethods: testData.designMethods ? (testData.designMethods as any) : null,
         status: testData._status ?? 'scaffold',
+        starterCode: testData.starterCode ? (testData.starterCode as any) : null,
+        functionNameMap: testData.functionNameMap ? (testData.functionNameMap as any) : null,
         problemId: problem.id,
       },
     })
@@ -183,7 +199,7 @@ async function main() {
 
     testSetsSeeded++
   }
-  console.log(`  Seeded ${testSetsSeeded} test case sets`)
+  console.log(`  Seeded ${testSetsSeeded} test case sets (${defsSeeded} with full definitions)`)
 
   console.log('Seed completed!')
 }

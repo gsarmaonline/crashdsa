@@ -206,6 +206,12 @@ export interface DesignMethod {
   returnType: OutputType;
 }
 
+export interface ProblemExample {
+  input: string;
+  output: string;
+  explanation?: string;
+}
+
 export interface ProblemTestCases {
   slug: string;
   functionName: string;
@@ -217,4 +223,10 @@ export interface ProblemTestCases {
   isDesignProblem?: boolean;
   designMethods?: DesignMethod[];
   _status?: 'scaffold' | 'complete';
+  // Problem definition fields (for judge support)
+  description?: string;
+  examples?: ProblemExample[];
+  constraints?: string[];
+  starterCode?: Record<string, string>;
+  functionNameMap?: Record<string, string>;
 }

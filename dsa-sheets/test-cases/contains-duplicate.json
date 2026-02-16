@@ -2,39 +2,122 @@
   "slug": "contains-duplicate",
   "functionName": "containsDuplicate",
   "params": [
-    { "name": "nums", "type": "int[]" }
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
   ],
   "returnType": "boolean",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "nums": [1, 2, 3, 1] },
+      "inputs": {
+        "nums": [
+          1,
+          2,
+          3,
+          1
+        ]
+      },
       "expected": true,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "nums": [1, 2, 3, 4] },
+      "inputs": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
       "expected": false,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "nums": [1, 1, 1, 3, 3, 4, 3, 2, 4, 2] },
+      "inputs": {
+        "nums": [
+          1,
+          1,
+          1,
+          3,
+          3,
+          4,
+          3,
+          2,
+          4,
+          2
+        ]
+      },
       "expected": true,
-      "tags": ["duplicates"]
+      "tags": [
+        "duplicates"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "nums": [] },
+      "inputs": {
+        "nums": []
+      },
       "expected": false,
-      "tags": ["empty-input", "edge-case"]
+      "tags": [
+        "empty-input",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "nums": [1] },
+      "inputs": {
+        "nums": [
+          1
+        ]
+      },
       "expected": false,
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     }
-  ]
+  ],
+  "description": "Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,1]",
+      "output": "true",
+      "explanation": "The element 1 occurs at indices 0 and 3."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "false",
+      "explanation": "All elements are distinct."
+    },
+    {
+      "input": "nums = [1,1,1,3,3,4,3,2,4,2]",
+      "output": "true",
+      "explanation": "Multiple elements repeat."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "-10^9 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {boolean}\n */\nfunction containsDuplicate(nums) {\n  // Write your solution here\n}",
+    "typescript": "function containsDuplicate(nums: number[]): boolean {\n  // Write your solution here\n}",
+    "python": "def contains_duplicate(nums: list[int]) -> bool:\n    # Write your solution here\n    pass",
+    "cpp": "bool containsDuplicate(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func containsDuplicate(nums []int) bool {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "containsDuplicate",
+    "typescript": "containsDuplicate",
+    "python": "contains_duplicate",
+    "cpp": "containsDuplicate",
+    "go": "ContainsDuplicate"
+  }
 }

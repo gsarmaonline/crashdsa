@@ -2,35 +2,131 @@
   "slug": "group-anagrams",
   "functionName": "groupAnagrams",
   "params": [
-    { "name": "strs", "type": "string[]" }
+    {
+      "name": "strs",
+      "type": "string[]"
+    }
   ],
   "returnType": "string[][]",
   "outputOrderMatters": false,
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "strs": ["eat", "tea", "tan", "ate", "nat", "bat"] },
-      "expected": [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]],
-      "tags": ["basic"]
+      "inputs": {
+        "strs": [
+          "eat",
+          "tea",
+          "tan",
+          "ate",
+          "nat",
+          "bat"
+        ]
+      },
+      "expected": [
+        [
+          "bat"
+        ],
+        [
+          "nat",
+          "tan"
+        ],
+        [
+          "ate",
+          "eat",
+          "tea"
+        ]
+      ],
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "strs": [""] },
-      "expected": [[""]],
-      "tags": ["edge-case"]
+      "inputs": {
+        "strs": [
+          ""
+        ]
+      },
+      "expected": [
+        [
+          ""
+        ]
+      ],
+      "tags": [
+        "edge-case"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "strs": ["a"] },
-      "expected": [["a"]],
-      "tags": ["single-element"]
+      "inputs": {
+        "strs": [
+          "a"
+        ]
+      },
+      "expected": [
+        [
+          "a"
+        ]
+      ],
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "strs": ["abc", "def", "ghi"] },
-      "expected": [["abc"], ["def"], ["ghi"]],
+      "inputs": {
+        "strs": [
+          "abc",
+          "def",
+          "ghi"
+        ]
+      },
+      "expected": [
+        [
+          "abc"
+        ],
+        [
+          "def"
+        ],
+        [
+          "ghi"
+        ]
+      ],
       "explanation": "No anagrams, each string is its own group",
-      "tags": ["no-solution"]
+      "tags": [
+        "no-solution"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Group Anagrams** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/group-anagrams/).",
+  "examples": [
+    {
+      "input": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "output": "[[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]"
+    },
+    {
+      "input": "strs = [\"a\"]",
+      "output": "[[\"a\"]]"
+    },
+    {
+      "input": "strs = [\"abc\",\"def\",\"ghi\"]",
+      "output": "[[\"abc\"],[\"def\"],[\"ghi\"]]",
+      "explanation": "No anagrams, each string is its own group"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {string[]} strs\n * @return {string[][]}\n */\nfunction groupAnagrams(strs) {\n  // Write your solution here\n}",
+    "typescript": "function groupAnagrams(strs: string[]): string[][] {\n  // Write your solution here\n}",
+    "python": "def group_anagrams(strs: list[str]) -> list[list[str]]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nvector<vector<string>> groupAnagrams(vector<string>& strs) {\n    // Write your solution here\n}",
+    "go": "func groupAnagrams(strs []string) [][]string {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "groupAnagrams",
+    "typescript": "groupAnagrams",
+    "python": "group_anagrams",
+    "cpp": "groupAnagrams",
+    "go": "GroupAnagrams"
+  }
 }

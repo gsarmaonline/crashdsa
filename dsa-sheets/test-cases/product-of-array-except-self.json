@@ -2,35 +2,114 @@
   "slug": "product-of-array-except-self",
   "functionName": "productExceptSelf",
   "params": [
-    { "name": "nums", "type": "int[]" }
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
   ],
   "returnType": "int[]",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "nums": [1, 2, 3, 4] },
-      "expected": [24, 12, 8, 6],
-      "tags": ["basic"]
+      "inputs": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected": [
+        24,
+        12,
+        8,
+        6
+      ],
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "nums": [-1, 1, 0, -3, 3] },
-      "expected": [0, 0, 9, 0, 0],
+      "inputs": {
+        "nums": [
+          -1,
+          1,
+          0,
+          -3,
+          3
+        ]
+      },
+      "expected": [
+        0,
+        0,
+        9,
+        0,
+        0
+      ],
       "explanation": "Zero in array makes all other products zero except at zero's position",
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "nums": [0, 0] },
-      "expected": [0, 0],
+      "inputs": {
+        "nums": [
+          0,
+          0
+        ]
+      },
+      "expected": [
+        0,
+        0
+      ],
       "explanation": "Multiple zeros make all products zero",
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "nums": [2, 3] },
-      "expected": [3, 2],
-      "tags": ["single-element"]
+      "inputs": {
+        "nums": [
+          2,
+          3
+        ]
+      },
+      "expected": [
+        3,
+        2
+      ],
+      "tags": [
+        "single-element"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Product of Array Except Self** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/product-of-array-except-self/).",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "[24,12,8,6]"
+    },
+    {
+      "input": "nums = [2,3]",
+      "output": "[3,2]"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number[]}\n */\nfunction productExceptSelf(nums) {\n  // Write your solution here\n}",
+    "typescript": "function productExceptSelf(nums: number[]): number[] {\n  // Write your solution here\n}",
+    "python": "def product_except_self(nums: list[int]) -> list[int]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nvector<int> productExceptSelf(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func productExceptSelf(nums []int) []int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "productExceptSelf",
+    "typescript": "productExceptSelf",
+    "python": "product_except_self",
+    "cpp": "productExceptSelf",
+    "go": "ProductExceptSelf"
+  }
 }

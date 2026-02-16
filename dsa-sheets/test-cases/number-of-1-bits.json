@@ -2,42 +2,98 @@
   "slug": "number-of-1-bits",
   "functionName": "hammingWeight",
   "params": [
-    { "name": "n", "type": "int" }
+    {
+      "name": "n",
+      "type": "int"
+    }
   ],
   "returnType": "int",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "n": 11 },
+      "inputs": {
+        "n": 11
+      },
       "expected": 3,
       "explanation": "11 in binary is 1011, three 1-bits",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "n": 128 },
+      "inputs": {
+        "n": 128
+      },
       "expected": 1,
       "explanation": "128 = 10000000, one 1-bit",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "n": 0 },
+      "inputs": {
+        "n": 0
+      },
       "expected": 0,
-      "tags": ["edge-case"]
+      "tags": [
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "n": 2147483647 },
+      "inputs": {
+        "n": 2147483647
+      },
       "expected": 31,
       "explanation": "2^31 - 1, all 31 bits set",
-      "tags": ["max-constraints"]
+      "tags": [
+        "max-constraints"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "n": 1 },
+      "inputs": {
+        "n": 1
+      },
       "expected": 1,
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Number of 1 Bits** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/number-of-1-bits/).",
+  "examples": [
+    {
+      "input": "n = 11",
+      "output": "3",
+      "explanation": "11 in binary is 1011, three 1-bits"
+    },
+    {
+      "input": "n = 128",
+      "output": "1",
+      "explanation": "128 = 10000000, one 1-bit"
+    },
+    {
+      "input": "n = 2147483647",
+      "output": "31",
+      "explanation": "2^31 - 1, all 31 bits set"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {number}\n */\nfunction hammingWeight(n) {\n  // Write your solution here\n}",
+    "typescript": "function hammingWeight(n: number): number {\n  // Write your solution here\n}",
+    "python": "def hamming_weight(n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int hammingWeight(int n) {\n    // Write your solution here\n}",
+    "go": "func hammingWeight(n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "hammingWeight",
+    "typescript": "hammingWeight",
+    "python": "hamming_weight",
+    "cpp": "hammingWeight",
+    "go": "HammingWeight"
+  }
 }

@@ -2,44 +2,108 @@
   "slug": "longest-common-subsequence",
   "functionName": "longestCommonSubsequence",
   "params": [
-    { "name": "text1", "type": "string" },
-    { "name": "text2", "type": "string" }
+    {
+      "name": "text1",
+      "type": "string"
+    },
+    {
+      "name": "text2",
+      "type": "string"
+    }
   ],
   "returnType": "int",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "text1": "abcde", "text2": "ace" },
+      "inputs": {
+        "text1": "abcde",
+        "text2": "ace"
+      },
       "expected": 3,
       "explanation": "LCS is \"ace\"",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "text1": "abc", "text2": "abc" },
+      "inputs": {
+        "text1": "abc",
+        "text2": "abc"
+      },
       "expected": 3,
       "explanation": "Identical strings",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "text1": "abc", "text2": "def" },
+      "inputs": {
+        "text1": "abc",
+        "text2": "def"
+      },
       "expected": 0,
       "explanation": "No common characters",
-      "tags": ["no-solution"]
+      "tags": [
+        "no-solution"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "text1": "a", "text2": "a" },
+      "inputs": {
+        "text1": "a",
+        "text2": "a"
+      },
       "expected": 1,
-      "tags": ["single-element"]
+      "tags": [
+        "single-element"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "text1": "oxcpqrsvwf", "text2": "shmtulqrypy" },
+      "inputs": {
+        "text1": "oxcpqrsvwf",
+        "text2": "shmtulqrypy"
+      },
       "expected": 2,
       "explanation": "LCS is \"qr\"",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Longest Common Subsequence** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/longest-common-subsequence/).",
+  "examples": [
+    {
+      "input": "text1 = \"abcde\", text2 = \"ace\"",
+      "output": "3",
+      "explanation": "LCS is \"ace\""
+    },
+    {
+      "input": "text1 = \"abc\", text2 = \"abc\"",
+      "output": "3",
+      "explanation": "Identical strings"
+    },
+    {
+      "input": "text1 = \"abc\", text2 = \"def\"",
+      "output": "0",
+      "explanation": "No common characters"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} text1\n * @param {string} text2\n * @return {number}\n */\nfunction longestCommonSubsequence(text1, text2) {\n  // Write your solution here\n}",
+    "typescript": "function longestCommonSubsequence(text1: string, text2: string): number {\n  // Write your solution here\n}",
+    "python": "def longest_common_subsequence(text1: str, text2: str) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <string>\nusing namespace std;\nint longestCommonSubsequence(string& text1, string& text2) {\n    // Write your solution here\n}",
+    "go": "func longestCommonSubsequence(text1 string, text2 string) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "longestCommonSubsequence",
+    "typescript": "longestCommonSubsequence",
+    "python": "longest_common_subsequence",
+    "cpp": "longestCommonSubsequence",
+    "go": "LongestCommonSubsequence"
+  }
 }

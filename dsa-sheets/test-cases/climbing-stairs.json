@@ -2,42 +2,98 @@
   "slug": "climbing-stairs",
   "functionName": "climbStairs",
   "params": [
-    { "name": "n", "type": "int" }
+    {
+      "name": "n",
+      "type": "int"
+    }
   ],
   "returnType": "int",
   "testCases": [
     {
       "id": "tc-1",
-      "inputs": { "n": 2 },
+      "inputs": {
+        "n": 2
+      },
       "expected": 2,
       "explanation": "1+1 or 2",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-2",
-      "inputs": { "n": 3 },
+      "inputs": {
+        "n": 3
+      },
       "expected": 3,
       "explanation": "1+1+1, 1+2, 2+1",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-3",
-      "inputs": { "n": 1 },
+      "inputs": {
+        "n": 1
+      },
       "expected": 1,
-      "tags": ["single-element", "edge-case"]
+      "tags": [
+        "single-element",
+        "edge-case"
+      ]
     },
     {
       "id": "tc-4",
-      "inputs": { "n": 5 },
+      "inputs": {
+        "n": 5
+      },
       "expected": 8,
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     },
     {
       "id": "tc-5",
-      "inputs": { "n": 10 },
+      "inputs": {
+        "n": 10
+      },
       "expected": 89,
       "explanation": "Fibonacci pattern: 1,2,3,5,8,13,21,34,55,89",
-      "tags": ["basic"]
+      "tags": [
+        "basic"
+      ]
     }
-  ]
+  ],
+  "description": "Solve the **Climbing Stairs** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/climbing-stairs/).",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "2",
+      "explanation": "1+1 or 2"
+    },
+    {
+      "input": "n = 3",
+      "output": "3",
+      "explanation": "1+1+1, 1+2, 2+1"
+    },
+    {
+      "input": "n = 5",
+      "output": "8"
+    }
+  ],
+  "constraints": [],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {number}\n */\nfunction climbStairs(n) {\n  // Write your solution here\n}",
+    "typescript": "function climbStairs(n: number): number {\n  // Write your solution here\n}",
+    "python": "def climb_stairs(n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int climbStairs(int n) {\n    // Write your solution here\n}",
+    "go": "func climbStairs(n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "climbStairs",
+    "typescript": "climbStairs",
+    "python": "climb_stairs",
+    "cpp": "climbStairs",
+    "go": "ClimbStairs"
+  }
 }
