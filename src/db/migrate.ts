@@ -52,5 +52,7 @@ export async function runMigrations(sql = defaultSql) {
   await sql`ALTER TABLE "TestCaseSet" ADD COLUMN IF NOT EXISTS "functionNameMap" JSONB`
   await sql`ALTER TABLE "Pattern" ADD COLUMN IF NOT EXISTS "strategy" TEXT NOT NULL DEFAULT ''`
 
+  await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login_at TIMESTAMPTZ`
+
   console.log('Database migrations complete')
 }
