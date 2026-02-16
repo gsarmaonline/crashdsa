@@ -185,7 +185,7 @@ export async function patternDetailPage(
           <tbody>
             ${problems.map(p => `
               <tr>
-                <td><a href="${p.link}" target="_blank" rel="noopener" class="problem-link">${p.name}</a></td>
+                <td><a href="/problems/${p.slug}" class="problem-link">${p.name}</a></td>
                 <td><span class="badge badge-${p.difficulty.toLowerCase()}">${p.difficulty}</span></td>
                 <td>${p.sourceSheets.map(s => `<span class="source-badge">${s}</span>`).join('')}</td>
               </tr>

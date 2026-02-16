@@ -3,6 +3,7 @@ import { Difficulty } from '../generated/prisma/client.js'
 
 export interface Problem {
   name: string
+  slug: string
   difficulty: 'Easy' | 'Medium' | 'Hard'
   patterns: string[]
   sourceSheets: string[]
@@ -13,6 +14,7 @@ export interface Problem {
 
 function mapProblem(p: {
   title: string
+  slug: string
   difficulty: Difficulty
   link: string
   acceptance: number | null
@@ -22,10 +24,11 @@ function mapProblem(p: {
 }): Problem {
   return {
     name: p.title,
+    slug: p.slug,
     difficulty: p.difficulty,
     patterns: p.patterns.map((pp) => pp.patternName),
     sourceSheets: p.sourceSheets.map((ps) => ps.sheetName),
-    link: p.link,
+    link: `/problems/${p.slug}`,
     acceptanceRate: p.acceptance ? `${p.acceptance}%` : 'N/A',
     tags: p.tags.map((pt) => pt.tagName),
   }
