@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  <style>
+      .gdfs-0 {
+        animation: gdfsVisit0 8s infinite;
+      }
+      @keyframes gdfsVisit0 {
+        0%, 12.5% { fill: #f3f4f6; }
+        17.5%, 87.5% { fill: #10b981; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .gdfs-1 {
+        animation: gdfsVisit1 8s infinite;
+      }
+      @keyframes gdfsVisit1 {
+        0%, 25.0% { fill: #f3f4f6; }
+        30.0%, 87.5% { fill: #10b981; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .gdfs-2 {
+        animation: gdfsVisit2 8s infinite;
+      }
+      @keyframes gdfsVisit2 {
+        0%, 37.5% { fill: #f3f4f6; }
+        42.5%, 87.5% { fill: #10b981; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .gdfs-5 {
+        animation: gdfsVisit5 8s infinite;
+      }
+      @keyframes gdfsVisit5 {
+        0%, 50.0% { fill: #f3f4f6; }
+        55.0%, 87.5% { fill: #10b981; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .gdfs-4 {
+        animation: gdfsVisit4 8s infinite;
+      }
+      @keyframes gdfsVisit4 {
+        0%, 62.5% { fill: #f3f4f6; }
+        67.5%, 87.5% { fill: #10b981; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .gdfs-3 {
+        animation: gdfsVisit3 8s infinite;
+      }
+      @keyframes gdfsVisit3 {
+        0%, 75.0% { fill: #f3f4f6; }
+        80.0%, 87.5% { fill: #10b981; }
+        100% { fill: #f3f4f6; }
+      }
+    </style>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="35" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Graph DFS</text>
+<text x="400" y="58" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Explore as deep as possible, then backtrack</text>
+<line x1="155.8219157123948" y1="116.96212756324768" x2="274.1780842876052" y2="103.03787243675232" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="137.75514982153462" y1="144.81647942891078" x2="172.24485017846538" y2="255.18352057108922" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="325.8219157123948" y1="103.03787243675232" x2="444.1780842876052" y2="116.96212756324768" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="313.7799724400827" y1="122.0479559041323" x2="386.2200275599173" y2="237.9520440958677" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="483.7799724400827" y1="142.0479559041323" x2="556.2200275599173" y2="257.95204409586773" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="205.8932233681603" y1="277.6460706028945" x2="374.1067766318397" y2="262.3539293971055" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="425.8219157123948" y1="263.0378724367523" x2="544.1780842876052" y2="276.9621275632477" stroke="#e5e7eb" stroke-width="2"/>
+<g ><circle cx="130" cy="120" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="gdfs-0"/>
+<text x="130" y="120" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">A</text></g>
+<g ><circle cx="300" cy="100" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="gdfs-1"/>
+<text x="300" y="100" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">B</text></g>
+<g ><circle cx="470" cy="120" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="gdfs-2"/>
+<text x="470" y="120" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">C</text></g>
+<g ><circle cx="180" cy="280" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="gdfs-3"/>
+<text x="180" y="280" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">D</text></g>
+<g ><circle cx="400" cy="260" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="gdfs-4"/>
+<text x="400" y="260" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">E</text></g>
+<g ><circle cx="570" cy="280" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="gdfs-5"/>
+<text x="570" y="280" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">F</text></g>
+<text x="400" y="370" fill="#6b7280" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">DFS from A: A → B → C → F → E → D</text>
+</svg>

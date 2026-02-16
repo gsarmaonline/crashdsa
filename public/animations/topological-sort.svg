@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  <style>
+      .topo-0 {
+        animation: topoVisit0 8s infinite;
+      }
+      @keyframes topoVisit0 {
+        0%, 14.3% { fill: #f3f4f6; }
+        20.0%, 85.7% { fill: #3b82f6; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .topo-1 {
+        animation: topoVisit1 8s infinite;
+      }
+      @keyframes topoVisit1 {
+        0%, 28.6% { fill: #f3f4f6; }
+        34.3%, 85.7% { fill: #3b82f6; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .topo-2 {
+        animation: topoVisit2 8s infinite;
+      }
+      @keyframes topoVisit2 {
+        0%, 42.9% { fill: #f3f4f6; }
+        48.6%, 85.7% { fill: #3b82f6; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .topo-3 {
+        animation: topoVisit3 8s infinite;
+      }
+      @keyframes topoVisit3 {
+        0%, 57.1% { fill: #f3f4f6; }
+        62.9%, 85.7% { fill: #3b82f6; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .topo-4 {
+        animation: topoVisit4 8s infinite;
+      }
+      @keyframes topoVisit4 {
+        0%, 71.4% { fill: #f3f4f6; }
+        77.1%, 85.7% { fill: #3b82f6; }
+        100% { fill: #f3f4f6; }
+      }
+    </style>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="35" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Topological Sort</text>
+<text x="400" y="58" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Process nodes with no remaining dependencies first</text>
+<line x1="185.84097710151408" y1="117.12878032205398" x2="314.1590228984859" y2="102.87121967794602" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="182.72808917915998" y1="132.62671621064445" x2="317.27191082084005" y2="207.37328378935555" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="364.6657657493134" y1="108.2219219164378" x2="495.3342342506866" y2="151.7780780835622" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="364.6657657493134" y1="211.7780780835622" x2="495.3342342506866" y2="168.2219219164378" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="365.5546768602924" y1="215.2084980886952" x2="634.4453231397076" y2="164.7915019113048" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="546" y1="160" x2="634" y2="160" stroke="#e5e7eb" stroke-width="2" marker-end="url(#arrow)"/>
+<g ><circle cx="160" cy="120" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="topo-0"/>
+<text x="160" y="120" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">A</text></g>
+<g ><circle cx="340" cy="100" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="topo-1"/>
+<text x="340" y="100" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">B</text></g>
+<g ><circle cx="340" cy="220" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="topo-2"/>
+<text x="340" y="220" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">C</text></g>
+<g ><circle cx="520" cy="160" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="topo-3"/>
+<text x="520" y="160" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">D</text></g>
+<g ><circle cx="660" cy="160" r="24" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2" class="topo-4"/>
+<text x="660" y="160" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">E</text></g>
+<text x="240" y="298" fill="#6b7280" font-size="12" text-anchor="end" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Result:</text>
+<g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="8s" repeatCount="indefinite" keyTimes="0;0.143;0.153;0.857;1" calcMode="discrete"/>
+      <g ><rect x="240" y="310" width="55" height="40" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="267.5" y="330" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">A</text></g>
+    </g>
+<g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="8s" repeatCount="indefinite" keyTimes="0;0.286;0.296;0.857;1" calcMode="discrete"/>
+      <g ><rect x="301" y="310" width="55" height="40" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="328.5" y="330" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">B</text></g>
+    </g>
+<g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="8s" repeatCount="indefinite" keyTimes="0;0.429;0.439;0.857;1" calcMode="discrete"/>
+      <g ><rect x="362" y="310" width="55" height="40" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="389.5" y="330" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">C</text></g>
+    </g>
+<g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="8s" repeatCount="indefinite" keyTimes="0;0.571;0.581;0.857;1" calcMode="discrete"/>
+      <g ><rect x="423" y="310" width="55" height="40" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="450.5" y="330" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">D</text></g>
+    </g>
+<g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="8s" repeatCount="indefinite" keyTimes="0;0.714;0.724;0.857;1" calcMode="discrete"/>
+      <g ><rect x="484" y="310" width="55" height="40" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="511.5" y="330" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">E</text></g>
+    </g>
+</svg>

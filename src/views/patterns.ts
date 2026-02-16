@@ -178,7 +178,7 @@ export async function patternsPage(user: User | null = null) {
 
       <div class="patterns-grid">
         ${raw(patternCards.map(p => `
-          <a href="/problems?pattern=${p.name}" class="pattern-card">
+          <a href="/patterns/${p.name}" class="pattern-card">
             <h3>${p.displayName}</h3>
             <p class="description">${p.description}</p>
             <div class="pattern-stats">

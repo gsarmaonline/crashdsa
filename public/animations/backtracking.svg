@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  <style>
+      .bt-0 {
+        animation: btVisit0 8s infinite;
+      }
+      @keyframes btVisit0 {
+        0%, 11.1% { fill: #f3f4f6; stroke: #e5e7eb; }
+        14.4%, 88.9% { fill: #dbeafe; stroke: #f59e0b; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .bt-1 {
+        animation: btVisit1 8s infinite;
+      }
+      @keyframes btVisit1 {
+        0%, 22.2% { fill: #f3f4f6; stroke: #e5e7eb; }
+        25.6%, 88.9% { fill: #dbeafe; stroke: #f59e0b; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .bt-3 {
+        animation: btVisit3 8s infinite;
+      }
+      @keyframes btVisit3 {
+        0%, 33.3% { fill: #f3f4f6; stroke: #e5e7eb; }
+        36.7%, 88.9% { fill: #d1fae5; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .bt-4 {
+        animation: btVisit4 8s infinite;
+      }
+      @keyframes btVisit4 {
+        0%, 44.4% { fill: #f3f4f6; stroke: #e5e7eb; }
+        47.8%, 88.9% { fill: #d1fae5; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .bt-2 {
+        animation: btVisit2 8s infinite;
+      }
+      @keyframes btVisit2 {
+        0%, 55.6% { fill: #f3f4f6; stroke: #e5e7eb; }
+        58.9%, 88.9% { fill: #dbeafe; stroke: #f59e0b; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .bt-5 {
+        animation: btVisit5 8s infinite;
+      }
+      @keyframes btVisit5 {
+        0%, 66.7% { fill: #f3f4f6; stroke: #e5e7eb; }
+        70.0%, 88.9% { fill: #d1fae5; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    
+      .bt-6 {
+        animation: btVisit6 8s infinite;
+      }
+      @keyframes btVisit6 {
+        0%, 77.8% { fill: #f3f4f6; stroke: #e5e7eb; }
+        81.1%, 88.9% { fill: #d1fae5; stroke: #10b981; }
+        100% { fill: #f3f4f6; stroke: #e5e7eb; }
+      }
+    </style>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="30" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Backtracking</text>
+<text x="400" y="52" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Explore all branches, collect valid results (subsets of {1,2})</text>
+<line x1="400" y1="96" x2="250" y2="154" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="400" y1="96" x2="550" y2="154" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="250" y1="186" x2="170" y2="254" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="250" y1="186" x2="330" y2="254" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="550" y1="186" x2="470" y2="254" stroke="#e5e7eb" stroke-width="2"/>
+<line x1="550" y1="186" x2="630" y2="254" stroke="#e5e7eb" stroke-width="2"/>
+<g ><rect x="368" y="64" width="64" height="32" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="8" class="bt-0"/>
+<text x="400" y="80" fill="#1f2937" font-size="12" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">{ }</text></g>
+<g ><rect x="218" y="154" width="64" height="32" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="8" class="bt-1"/>
+<text x="250" y="170" fill="#1f2937" font-size="12" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">+1</text></g>
+<g ><rect x="518" y="154" width="64" height="32" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="8" class="bt-2"/>
+<text x="550" y="170" fill="#1f2937" font-size="12" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">skip</text></g>
+<g ><rect x="138" y="254" width="64" height="32" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="8" class="bt-3"/>
+<text x="170" y="270" fill="#1f2937" font-size="12" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">{1,2}</text></g>
+<g ><rect x="298" y="254" width="64" height="32" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="8" class="bt-4"/>
+<text x="330" y="270" fill="#1f2937" font-size="12" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">{1}</text></g>
+<g ><rect x="438" y="254" width="64" height="32" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="8" class="bt-5"/>
+<text x="470" y="270" fill="#1f2937" font-size="12" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">{2}</text></g>
+<g ><rect x="598" y="254" width="64" height="32" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="8" class="bt-6"/>
+<text x="630" y="270" fill="#1f2937" font-size="12" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">{ }</text></g>
+<text x="400" y="360" fill="#10b981" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">Results: {1,2}, {1}, {2}, { }</text>
+</svg>

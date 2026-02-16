@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  <style>
+      .bit-a-0, .bit-b-0 {
+        animation: bitHL0 8s infinite;
+      }
+      @keyframes bitHL0 {
+        0%, 10.0% { stroke: #e5e7eb; }
+        10.5%, 19.5% { stroke: #f59e0b; stroke-width: 3; }
+        20.0%, 100% { stroke: #e5e7eb; }
+      }
+      .bit-r-0 {
+        animation: bitRes0 8s infinite;
+      }
+      @keyframes bitRes0 {
+        0%, 10.0% { fill: #f3f4f6; }
+        13.0%, 90.0% { fill: #f3f4f6; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .bit-a-1, .bit-b-1 {
+        animation: bitHL1 8s infinite;
+      }
+      @keyframes bitHL1 {
+        0%, 20.0% { stroke: #e5e7eb; }
+        20.5%, 29.5% { stroke: #f59e0b; stroke-width: 3; }
+        30.0%, 100% { stroke: #e5e7eb; }
+      }
+      .bit-r-1 {
+        animation: bitRes1 8s infinite;
+      }
+      @keyframes bitRes1 {
+        0%, 20.0% { fill: #f3f4f6; }
+        23.0%, 90.0% { fill: #d1fae5; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .bit-a-2, .bit-b-2 {
+        animation: bitHL2 8s infinite;
+      }
+      @keyframes bitHL2 {
+        0%, 30.0% { stroke: #e5e7eb; }
+        30.5%, 39.5% { stroke: #f59e0b; stroke-width: 3; }
+        40.0%, 100% { stroke: #e5e7eb; }
+      }
+      .bit-r-2 {
+        animation: bitRes2 8s infinite;
+      }
+      @keyframes bitRes2 {
+        0%, 30.0% { fill: #f3f4f6; }
+        33.0%, 90.0% { fill: #d1fae5; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .bit-a-3, .bit-b-3 {
+        animation: bitHL3 8s infinite;
+      }
+      @keyframes bitHL3 {
+        0%, 40.0% { stroke: #e5e7eb; }
+        40.5%, 49.5% { stroke: #f59e0b; stroke-width: 3; }
+        50.0%, 100% { stroke: #e5e7eb; }
+      }
+      .bit-r-3 {
+        animation: bitRes3 8s infinite;
+      }
+      @keyframes bitRes3 {
+        0%, 40.0% { fill: #f3f4f6; }
+        43.0%, 90.0% { fill: #f3f4f6; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .bit-a-4, .bit-b-4 {
+        animation: bitHL4 8s infinite;
+      }
+      @keyframes bitHL4 {
+        0%, 50.0% { stroke: #e5e7eb; }
+        50.5%, 59.5% { stroke: #f59e0b; stroke-width: 3; }
+        60.0%, 100% { stroke: #e5e7eb; }
+      }
+      .bit-r-4 {
+        animation: bitRes4 8s infinite;
+      }
+      @keyframes bitRes4 {
+        0%, 50.0% { fill: #f3f4f6; }
+        53.0%, 90.0% { fill: #d1fae5; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .bit-a-5, .bit-b-5 {
+        animation: bitHL5 8s infinite;
+      }
+      @keyframes bitHL5 {
+        0%, 60.0% { stroke: #e5e7eb; }
+        60.5%, 69.5% { stroke: #f59e0b; stroke-width: 3; }
+        70.0%, 100% { stroke: #e5e7eb; }
+      }
+      .bit-r-5 {
+        animation: bitRes5 8s infinite;
+      }
+      @keyframes bitRes5 {
+        0%, 60.0% { fill: #f3f4f6; }
+        63.0%, 90.0% { fill: #d1fae5; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .bit-a-6, .bit-b-6 {
+        animation: bitHL6 8s infinite;
+      }
+      @keyframes bitHL6 {
+        0%, 70.0% { stroke: #e5e7eb; }
+        70.5%, 79.5% { stroke: #f59e0b; stroke-width: 3; }
+        80.0%, 100% { stroke: #e5e7eb; }
+      }
+      .bit-r-6 {
+        animation: bitRes6 8s infinite;
+      }
+      @keyframes bitRes6 {
+        0%, 70.0% { fill: #f3f4f6; }
+        73.0%, 90.0% { fill: #f3f4f6; }
+        100% { fill: #f3f4f6; }
+      }
+    
+      .bit-a-7, .bit-b-7 {
+        animation: bitHL7 8s infinite;
+      }
+      @keyframes bitHL7 {
+        0%, 80.0% { stroke: #e5e7eb; }
+        80.5%, 89.5% { stroke: #f59e0b; stroke-width: 3; }
+        90.0%, 100% { stroke: #e5e7eb; }
+      }
+      .bit-r-7 {
+        animation: bitRes7 8s infinite;
+      }
+      @keyframes bitRes7 {
+        0%, 80.0% { fill: #f3f4f6; }
+        83.0%, 90.0% { fill: #f3f4f6; }
+        100% { fill: #f3f4f6; }
+      }
+    </style>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="35" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Bit Manipulation</text>
+<text x="400" y="58" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">XOR operation — bits differ → 1, same → 0</text>
+<text x="137" y="135" fill="#3b82f6" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">A</text>
+<text x="137" y="210" fill="#10b981" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">B</text>
+<text x="137" y="305" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">R</text>
+<text x="137" y="172.5" fill="#f59e0b" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">⊕</text>
+<line x1="152" y1="270" x2="648" y2="270" stroke="#1f2937" stroke-width="2"/>
+<g ><rect x="152" y="110" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-a-0"/>
+<text x="179.5" y="135" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="215" y="110" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-a-1"/>
+<text x="242.5" y="135" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="278" y="110" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-a-2"/>
+<text x="305.5" y="135" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="341" y="110" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-a-3"/>
+<text x="368.5" y="135" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="404" y="110" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-a-4"/>
+<text x="431.5" y="135" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="467" y="110" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-a-5"/>
+<text x="494.5" y="135" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="530" y="110" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-a-6"/>
+<text x="557.5" y="135" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="593" y="110" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-a-7"/>
+<text x="620.5" y="135" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="152" y="185" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-b-0"/>
+<text x="179.5" y="210" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="215" y="185" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-b-1"/>
+<text x="242.5" y="210" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="278" y="185" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-b-2"/>
+<text x="305.5" y="210" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="341" y="185" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-b-3"/>
+<text x="368.5" y="210" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="404" y="185" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-b-4"/>
+<text x="431.5" y="210" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="467" y="185" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-b-5"/>
+<text x="494.5" y="210" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="530" y="185" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-b-6"/>
+<text x="557.5" y="210" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="593" y="185" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-b-7"/>
+<text x="620.5" y="210" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="152" y="280" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-r-0"/>
+<text x="179.5" y="305" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="215" y="280" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-r-1"/>
+<text x="242.5" y="305" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="278" y="280" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-r-2"/>
+<text x="305.5" y="305" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="341" y="280" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-r-3"/>
+<text x="368.5" y="305" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="404" y="280" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-r-4"/>
+<text x="431.5" y="305" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="467" y="280" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-r-5"/>
+<text x="494.5" y="305" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="530" y="280" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-r-6"/>
+<text x="557.5" y="305" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<g ><rect x="593" y="280" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="bit-r-7"/>
+<text x="620.5" y="305" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">0</text></g>
+<text x="400" y="365" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">A = 90 (01011010)    B = 54 (00110110)    A ⊕ B = 108 (01101100)</text>
+</svg>

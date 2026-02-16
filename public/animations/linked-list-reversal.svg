@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  <style>
+      .fwd-0 {
+        animation: fadeOut0 8s infinite;
+      }
+      @keyframes fadeOut0 {
+        0%, 16.7% { opacity: 1; }
+        25.0%, 100% { opacity: 0.15; }
+      }
+      .rev-0 {
+        animation: fadeIn0 8s infinite;
+      }
+      @keyframes fadeIn0 {
+        0%, 16.7% { opacity: 0; }
+        25.0%, 83.3% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+    
+      .fwd-1 {
+        animation: fadeOut1 8s infinite;
+      }
+      @keyframes fadeOut1 {
+        0%, 33.3% { opacity: 1; }
+        41.7%, 100% { opacity: 0.15; }
+      }
+      .rev-1 {
+        animation: fadeIn1 8s infinite;
+      }
+      @keyframes fadeIn1 {
+        0%, 33.3% { opacity: 0; }
+        41.7%, 83.3% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+    
+      .fwd-2 {
+        animation: fadeOut2 8s infinite;
+      }
+      @keyframes fadeOut2 {
+        0%, 50.0% { opacity: 1; }
+        58.3%, 100% { opacity: 0.15; }
+      }
+      .rev-2 {
+        animation: fadeIn2 8s infinite;
+      }
+      @keyframes fadeIn2 {
+        0%, 50.0% { opacity: 0; }
+        58.3%, 83.3% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+    
+      .fwd-3 {
+        animation: fadeOut3 8s infinite;
+      }
+      @keyframes fadeOut3 {
+        0%, 66.7% { opacity: 1; }
+        75.0%, 100% { opacity: 0.15; }
+      }
+      .rev-3 {
+        animation: fadeIn3 8s infinite;
+      }
+      @keyframes fadeIn3 {
+        0%, 66.7% { opacity: 0; }
+        75.0%, 83.3% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+    </style>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="40" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">In-place Linked List Reversal</text>
+<text x="400" y="65" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Reverse arrow direction one link at a time</text>
+<line x1="186" y1="180" x2="254" y2="180" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)" class="fwd-0"/>
+<line x1="306" y1="180" x2="374" y2="180" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)" class="fwd-1"/>
+<line x1="426" y1="180" x2="494" y2="180" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)" class="fwd-2"/>
+<line x1="546" y1="180" x2="614" y2="180" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)" class="fwd-3"/>
+<line x1="254" y1="180" x2="186" y2="180" stroke="#10b981" stroke-width="2" marker-end="url(#arrow-green)" class="rev-0"/>
+<line x1="374" y1="180" x2="306" y2="180" stroke="#10b981" stroke-width="2" marker-end="url(#arrow-green)" class="rev-1"/>
+<line x1="494" y1="180" x2="426" y2="180" stroke="#10b981" stroke-width="2" marker-end="url(#arrow-green)" class="rev-2"/>
+<line x1="614" y1="180" x2="546" y2="180" stroke="#10b981" stroke-width="2" marker-end="url(#arrow-green)" class="rev-3"/>
+<g ><circle cx="160" cy="180" r="22" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2"/>
+<text x="160" y="180" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><circle cx="280" cy="180" r="22" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2"/>
+<text x="280" y="180" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">2</text></g>
+<g ><circle cx="400" cy="180" r="22" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2"/>
+<text x="400" y="180" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<g ><circle cx="520" cy="180" r="22" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2"/>
+<text x="520" y="180" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">4</text></g>
+<g ><circle cx="640" cy="180" r="22" fill="#f3f4f6" stroke="#3b82f6" stroke-width="2"/>
+<text x="640" y="180" fill="#1f2937" font-size="14" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">5</text></g>
+<text x="400" y="310" fill="#6b7280" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">1 → 2 → 3 → 4 → 5  becomes  5 → 4 → 3 → 2 → 1</text>
+</svg>

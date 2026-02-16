@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+  </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+  </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+  </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#e5e7eb"/>
+  </marker>
+  </defs>
+  <style>
+      .ms-arr-0 {
+        animation: msHighlight0 9s infinite;
+      }
+      @keyframes msHighlight0 {
+        0%, 14.3% { fill: #f3f4f6; }
+        14.8%, 28.1% { fill: #f59e0b; }
+        28.6%, 100% { fill: #f3f4f6; }
+      }
+    
+      .ms-arr-1 {
+        animation: msHighlight1 9s infinite;
+      }
+      @keyframes msHighlight1 {
+        0%, 28.6% { fill: #f3f4f6; }
+        29.1%, 42.4% { fill: #f59e0b; }
+        42.9%, 100% { fill: #f3f4f6; }
+      }
+    
+      .ms-arr-2 {
+        animation: msHighlight2 9s infinite;
+      }
+      @keyframes msHighlight2 {
+        0%, 42.9% { fill: #f3f4f6; }
+        43.4%, 56.6% { fill: #f59e0b; }
+        57.1%, 100% { fill: #f3f4f6; }
+      }
+    
+      .ms-arr-3 {
+        animation: msHighlight3 9s infinite;
+      }
+      @keyframes msHighlight3 {
+        0%, 57.1% { fill: #f3f4f6; }
+        57.6%, 70.9% { fill: #f59e0b; }
+        71.4%, 100% { fill: #f3f4f6; }
+      }
+    
+      .ms-arr-4 {
+        animation: msHighlight4 9s infinite;
+      }
+      @keyframes msHighlight4 {
+        0%, 71.4% { fill: #f3f4f6; }
+        71.9%, 85.2% { fill: #f59e0b; }
+        85.7%, 100% { fill: #f3f4f6; }
+      }
+    
+      .ms-arr-5 {
+        animation: msHighlight5 9s infinite;
+      }
+      @keyframes msHighlight5 {
+        0%, 85.7% { fill: #f3f4f6; }
+        86.2%, 99.5% { fill: #f59e0b; }
+        100.0%, 100% { fill: #f3f4f6; }
+      }
+    </style>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
+  <text x="400" y="30" fill="#1f2937" font-size="20" text-anchor="middle" dominant-baseline="central" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Monotonic Stack</text>
+<text x="400" y="52" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Find Next Greater Element using a decreasing stack</text>
+<text x="215" y="105" fill="#6b7280" font-size="12" text-anchor="end" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Input:</text>
+<g ><rect x="220" y="80" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="ms-arr-0"/>
+<text x="247.5" y="105" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">2</text></g>
+<g ><rect x="281" y="80" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="ms-arr-1"/>
+<text x="308.5" y="105" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">1</text></g>
+<g ><rect x="342" y="80" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="ms-arr-2"/>
+<text x="369.5" y="105" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">5</text></g>
+<g ><rect x="403" y="80" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="ms-arr-3"/>
+<text x="430.5" y="105" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">6</text></g>
+<g ><rect x="464" y="80" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="ms-arr-4"/>
+<text x="491.5" y="105" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">2</text></g>
+<g ><rect x="525" y="80" width="55" height="50" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="6" class="ms-arr-5"/>
+<text x="552.5" y="105" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<text x="215" y="205" fill="#6b7280" font-size="12" text-anchor="end" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">NGE:</text>
+<g ><rect x="220" y="180" width="55" height="50" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="247.5" y="205" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">5</text></g>
+<g ><rect x="281" y="180" width="55" height="50" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="308.5" y="205" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">5</text></g>
+<g ><rect x="342" y="180" width="55" height="50" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="369.5" y="205" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">6</text></g>
+<g ><rect x="403" y="180" width="55" height="50" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="430.5" y="205" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">-1</text></g>
+<g ><rect x="464" y="180" width="55" height="50" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="491.5" y="205" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">3</text></g>
+<g ><rect x="525" y="180" width="55" height="50" fill="#dbeafe" stroke="#e5e7eb" stroke-width="1" rx="6"/>
+<text x="552.5" y="205" fill="#1f2937" font-size="16" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">-1</text></g>
+<text x="655" y="345" fill="#3b82f6" font-size="12" text-anchor="middle" dominant-baseline="central" font-weight="600" font-family="system-ui, -apple-system, sans-serif">Stack</text>
+<rect x="615" y="212" width="80" height="118" fill="none" stroke="#3b82f6" stroke-width="1" rx="4"/>
+<g ><rect x="620" y="288" width="70" height="32" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" rx="4"/>
+<text x="655" y="306" text-anchor="middle" dominant-baseline="central"
+        font-size="14" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, sans-serif">
+        <animate attributeName="textContent" values="2;2;5;6;6;6; " dur="9s" repeatCount="indefinite" keyTimes="0.000;0.167;0.333;0.500;0.667;0.833;1.000" calcMode="discrete"/>
+      </text></g>
+<g ><rect x="620" y="252" width="70" height="32" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" rx="4"/>
+<text x="655" y="270" text-anchor="middle" dominant-baseline="central"
+        font-size="14" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, sans-serif">
+        <animate attributeName="textContent" values=" ;1; ; ;2;3; " dur="9s" repeatCount="indefinite" keyTimes="0.000;0.167;0.333;0.500;0.667;0.833;1.000" calcMode="discrete"/>
+      </text></g>
+<g ><rect x="620" y="216" width="70" height="32" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" rx="4"/>
+<text x="655" y="234" text-anchor="middle" dominant-baseline="central"
+        font-size="14" font-weight="700" fill="#1f2937" font-family="system-ui, -apple-system, sans-serif">
+        <animate attributeName="textContent" values=" ; ; ; ; ; ; " dur="9s" repeatCount="indefinite" keyTimes="0.000;0.167;0.333;0.500;0.667;0.833;1.000" calcMode="discrete"/>
+      </text></g>
+<text x="400" y="380" fill="#6b7280" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif">Pop smaller elements, they found their next greater</text>
+</svg>
