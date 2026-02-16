@@ -111,6 +111,11 @@ crashdsa/
 - **Pipeline**: Fetch → Process → Categorize → Deduplicate → Export CSV
 - **Stats**: ~326 unique problems after deduplication from ~456 total
 
+### Database & Migrations
+
+- All migration SQL must be idempotent (use `IF NOT EXISTS` for `ADD COLUMN`, `CREATE TABLE IF NOT EXISTS`, etc.)
+- This project has two migration runners: `scripts/migrate.ts` (Prisma-compatible, runs as Fly.io release_command) and `src/db/migrate.ts` (runs at app startup). Both may execute against the same database, so migrations must be safe to re-run.
+
 ### Testing
 
 - Add tests for new endpoints (future)
