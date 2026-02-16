@@ -6,11 +6,13 @@ WORKDIR /app
 FROM base AS install
 RUN mkdir -p /temp/dev
 COPY package.json bun.lock /temp/dev/
+COPY prisma/schema.prisma /temp/dev/prisma/schema.prisma
 RUN cd /temp/dev && bun install --frozen-lockfile
 
 # Install with --production (exclude devDependencies)
 RUN mkdir -p /temp/prod
 COPY package.json bun.lock /temp/prod/
+COPY prisma/schema.prisma /temp/prod/prisma/schema.prisma
 RUN cd /temp/prod && bun install --frozen-lockfile --production
 
 # Copy node_modules from temp directory
@@ -27,6 +29,7 @@ COPY --from=prerelease /app/package.json .
 COPY --from=prerelease /app/src ./src
 COPY --from=prerelease /app/docs ./docs
 COPY --from=prerelease /app/dsa-sheets ./dsa-sheets
+COPY --from=prerelease /app/prisma ./prisma
 
 # Expose port
 EXPOSE 3000
