@@ -1,3 +1,5 @@
+process.env.SESSION_SECRET = 'test-secret'
+
 import { describe, it, expect, mock, beforeEach } from 'bun:test'
 
 // Mock all external dependencies before importing the app
@@ -25,7 +27,10 @@ mock.module('./src/db/migrate.js', () => ({
 }))
 
 mock.module('./src/db/sessions.js', () => ({
-  findSessionWithUser: mock(() => Promise.resolve(null)),
+  findSessionWithUser: mock(() => Promise.resolve({
+    session: { id: 'test-session', user_id: 1, expires_at: new Date(Date.now() + 86400000), created_at: new Date() },
+    user: { id: 1, github_id: 12345, username: 'testuser', display_name: 'Test User', avatar_url: null, email: null, created_at: new Date(), updated_at: new Date() },
+  })),
   createSession: mock(() => Promise.resolve({ id: 'test' })),
   deleteSession: mock(() => Promise.resolve()),
 }))
@@ -35,13 +40,20 @@ mock.module('./src/db/connection.js', () => ({
 }))
 
 import { prisma } from './src/data/db.js'
+import { createSignedCookie } from './src/auth/middleware.js'
 
 // Import the app after mocks are set up
 const { default: server } = await import('./index.js')
 
-// Helper to make requests to the Hono app
+const testSessionCookie = createSignedCookie('test-session')
+
+// Helper to make requests to the Hono app (with auth cookie)
 async function request(path: string) {
-  const req = new Request(`http://localhost${path}`)
+  const req = new Request(`http://localhost${path}`, {
+    headers: {
+      Cookie: `crashdsa_session=${testSessionCookie}`,
+    },
+  })
   return server.fetch(req)
 }
 
