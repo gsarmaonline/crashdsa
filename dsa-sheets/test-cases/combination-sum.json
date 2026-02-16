@@ -1,0 +1,13 @@
+{
+  "slug": "combination-sum",
+  "functionName": "combinationSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

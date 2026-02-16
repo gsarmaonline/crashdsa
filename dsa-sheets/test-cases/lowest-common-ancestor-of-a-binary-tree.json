@@ -1,0 +1,13 @@
+{
+  "slug": "lowest-common-ancestor-of-a-binary-tree",
+  "functionName": "lowestCommonAncestorOfABinaryTree",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

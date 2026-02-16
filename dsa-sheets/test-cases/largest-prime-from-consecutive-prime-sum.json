@@ -1,0 +1,13 @@
+{
+  "slug": "largest-prime-from-consecutive-prime-sum",
+  "functionName": "largestPrimeFromConsecutivePrimeSum",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

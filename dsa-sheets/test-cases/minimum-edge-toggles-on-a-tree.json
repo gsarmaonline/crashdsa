@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-edge-toggles-on-a-tree",
+  "functionName": "minimumEdgeTogglesOnATree",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

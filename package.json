@@ -15,18 +15,36 @@
     "dsa-sheets:categorize": "bun run scripts/dsa-sheets/categorize-problems.ts",
     "dsa-sheets:deduplicate": "bun run scripts/dsa-sheets/deduplicate.ts",
     "dsa-sheets:export": "bun run scripts/dsa-sheets/export-csv.ts",
-    "dsa-sheets:update": "bun run scripts/dsa-sheets/update-all.ts"
+    "dsa-sheets:update": "bun run scripts/dsa-sheets/update-all.ts",
+    "dsa-sheets:test-cases:generate": "bun run scripts/dsa-sheets/generate-test-cases.ts",
+    "postinstall": "bunx prisma generate",
+    "db:generate": "bunx prisma generate",
+    "db:migrate": "bunx prisma migrate dev",
+    "db:migrate:deploy": "bunx prisma migrate deploy",
+    "db:seed": "bunx prisma db seed",
+    "db:studio": "bunx prisma studio",
+    "db:push": "bunx prisma db push"
+  },
+  "prisma": {
+    "seed": "bun run prisma/seed.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "@types/pg": "^8.16.0",
     "puppeteer": "^24.37.3"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "csv-writer": "^1.6.0",
     "@hono/swagger-ui": "^0.5.3",
-    "hono": "^4.11.9"
+    "@prisma/adapter-pg": "^7.4.0",
+    "@prisma/client": "^7.4.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^17.3.1",
+    "hono": "^4.11.9",
+    "pg": "^8.18.0",
+    "postgres": "^3.4.8",
+    "prisma": "^7.4.0"
   }
 }

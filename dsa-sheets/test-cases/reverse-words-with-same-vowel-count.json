@@ -1,0 +1,13 @@
+{
+  "slug": "reverse-words-with-same-vowel-count",
+  "functionName": "reverseWordsWithSameVowelCount",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "ListNode",
+  "testCases": [],
+  "_status": "scaffold"
+}

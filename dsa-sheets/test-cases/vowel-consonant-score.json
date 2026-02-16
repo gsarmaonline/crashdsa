@@ -1,0 +1,13 @@
+{
+  "slug": "vowel-consonant-score",
+  "functionName": "vowelConsonantScore",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

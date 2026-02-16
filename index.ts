@@ -2,37 +2,60 @@ import { Hono } from 'hono'
 import { swaggerUI } from '@hono/swagger-ui'
 import { readFileSync, readdirSync, existsSync } from 'fs'
 import { join } from 'path'
+import { prisma } from './src/data/db.js'
+import {
+  getAllProblems,
+  getProblemBySlug,
+  getProblemsByPattern,
+  getPatterns,
+  getStats,
+  getTestCasesForProblem,
+  getTestCaseStats,
+} from './src/data/problem-repository.js'
 import { homePageDynamic } from './src/views/home-dynamic.js'
 import { problemsPage } from './src/views/problems.js'
 import { problemDetailPage } from './src/views/problem-detail.js'
-import { loadProblemsCache, getProblemsCache, refreshCache } from './src/data/csv-loader.js'
+import { patternsPage } from './src/views/patterns.js'
+import { authMiddleware, type AuthVariables } from './src/auth/middleware.js'
+import authRoutes from './src/auth/routes.js'
+import { runMigrations } from './src/db/migrate.js'
 
-const app = new Hono()
+const app = new Hono<{ Variables: AuthVariables }>()
 
-// Load problems cache at startup
+// Eagerly connect to database
 console.log('Initializing CrashDSA...')
-loadProblemsCache()
+prisma.$connect().then(() => console.log('Database connected'))
+await runMigrations()
+
+// Auth middleware - loads user from session on every request
+app.use('*', authMiddleware)
+
+// Auth routes
+app.route('/', authRoutes)
 
 // UI Routes
-app.get('/', (c) => {
-  return c.html(homePageDynamic())
+app.get('/', async (c) => {
+  return c.html(await homePageDynamic(c.get('user')))
 })
 
 app.get('/problems', (c) => {
-  return c.html(problemsPage)
+  return c.html(problemsPage(c.get('user')))
+})
+
+app.get('/patterns', async (c) => {
+  return c.html(await patternsPage(c.get('user')))
 })
 
 // Problem detail page (judge)
-app.get('/problems/:slug', (c) => {
+app.get('/problems/:slug', async (c) => {
   const slug = c.req.param('slug')
-  const cache = getProblemsCache()
-  const problem = cache.bySlug[slug]
+  const problem = await getProblemBySlug(slug)
 
   if (!problem) {
     return c.html('<h1>Problem not found</h1>', 404)
   }
 
-  return c.html(problemDetailPage(problem))
+  return c.html(problemDetailPage(problem, c.get('user')))
 })
 
 // Serve judge static files (JS, CSS)
@@ -63,75 +86,52 @@ app.get('/styles.css', (c) => {
   return c.body(css, 200, { 'Content-Type': 'text/css' })
 })
 
+// Serve favicon
+app.get('/favicon.svg', (c) => {
+  const svg = readFileSync(join(process.cwd(), 'public', 'favicon.svg'), 'utf-8')
+  return c.body(svg, 200, { 'Content-Type': 'image/svg+xml' })
+})
+
 // API Routes
 app.get('/api/hello', (c) => {
   return c.json({ message: 'Hello from Hono API!' })
 })
 
 // Get all problems or filter by difficulty
-app.get('/api/problems', (c) => {
-  const cache = getProblemsCache()
+app.get('/api/problems', async (c) => {
   const difficulty = c.req.query('difficulty')
-
-  let problems = cache.all
-
-  if (difficulty) {
-    problems = problems.filter(p =>
-      p.difficulty.toLowerCase() === difficulty.toLowerCase()
-    )
-  }
-
-  return c.json({
-    problems,
-    count: problems.length
-  })
+  const result = await getAllProblems(difficulty)
+  return c.json(result)
 })
 
 // Get problems by pattern
-app.get('/api/problems/pattern/:pattern', (c) => {
+app.get('/api/problems/pattern/:pattern', async (c) => {
   const pattern = c.req.param('pattern')
-  const cache = getProblemsCache()
+  const result = await getProblemsByPattern(pattern)
 
-  if (!cache.byPattern[pattern]) {
+  if (!result) {
     return c.json({ error: 'Pattern not found' }, 404)
   }
 
-  return c.json({
-    pattern,
-    problems: cache.byPattern[pattern],
-    count: cache.byPattern[pattern].length
-  })
+  return c.json(result)
 })
 
 // Get all available patterns
-app.get('/api/patterns', (c) => {
-  const cache = getProblemsCache()
-
-  const patternsWithCounts = cache.patterns.map(pattern => ({
-    name: pattern,
-    displayName: pattern.split('-').map(w =>
-      w.charAt(0).toUpperCase() + w.slice(1)
-    ).join(' '),
-    count: cache.byPattern[pattern]?.length || 0
-  }))
-
-  return c.json({
-    patterns: patternsWithCounts,
-    total: cache.patterns.length
-  })
+app.get('/api/patterns', async (c) => {
+  const result = await getPatterns()
+  return c.json(result)
 })
 
 // Get statistics
-app.get('/api/stats', (c) => {
-  const cache = getProblemsCache()
-  return c.json(cache.stats)
+app.get('/api/stats', async (c) => {
+  const stats = await getStats()
+  return c.json(stats)
 })
 
 // Get single problem by slug
-app.get('/api/problems/:slug', (c) => {
+app.get('/api/problems/:slug', async (c) => {
   const slug = c.req.param('slug')
-  const cache = getProblemsCache()
-  const problem = cache.bySlug[slug]
+  const problem = await getProblemBySlug(slug)
 
   if (!problem) {
     return c.json({ error: 'Problem not found' }, 404)
@@ -153,6 +153,18 @@ app.get('/api/problems/:slug/judge', (c) => {
   }
 })
 
+// Get test cases for a specific problem
+app.get('/api/problems/:slug/test-cases', async (c) => {
+  const slug = c.req.param('slug')
+  const testCases = await getTestCasesForProblem(slug)
+
+  if (!testCases) {
+    return c.json({ error: 'Test cases not found for this problem' }, 404)
+  }
+
+  return c.json(testCases)
+})
+
 // List problems with judge support
 app.get('/api/judge/problems', (c) => {
   const problemsDir = join(process.cwd(), 'src', 'problems')
@@ -166,14 +178,9 @@ app.get('/api/judge/problems', (c) => {
   }
 })
 
-// Refresh cache (useful for updates)
-app.post('/api/refresh', (c) => {
-  try {
-    refreshCache()
-    return c.json({ message: 'Cache refreshed successfully' })
-  } catch (error) {
-    return c.json({ error: 'Failed to refresh cache' }, 500)
-  }
+// Get test case coverage statistics
+app.get('/api/test-cases/stats', async (c) => {
+  return c.json(await getTestCaseStats())
 })
 
 // Swagger UI Documentation

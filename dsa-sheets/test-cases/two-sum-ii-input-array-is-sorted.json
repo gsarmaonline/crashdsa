@@ -1,0 +1,17 @@
+{
+  "slug": "two-sum-ii-input-array-is-sorted",
+  "functionName": "twoSumIiInputArrayIsSorted",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

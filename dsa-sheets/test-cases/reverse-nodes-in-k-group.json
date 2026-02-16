@@ -1,0 +1,13 @@
+{
+  "slug": "reverse-nodes-in-k-group",
+  "functionName": "reverseNodesInKGroup",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "ListNode",
+  "testCases": [],
+  "_status": "scaffold"
+}

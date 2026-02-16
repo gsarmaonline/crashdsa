@@ -1,0 +1,13 @@
+{
+  "slug": "min-stack",
+  "functionName": "minStack",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

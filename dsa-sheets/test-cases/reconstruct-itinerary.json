@@ -1,0 +1,13 @@
+{
+  "slug": "reconstruct-itinerary",
+  "functionName": "reconstructItinerary",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

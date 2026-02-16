@@ -1,6 +1,9 @@
-import { html } from 'hono/html'
+import { html, raw } from 'hono/html'
+import { navbar } from '../components/navbar.js'
+import type { User } from '../db/users.js'
 
-export const problemsPage = html`
+export function problemsPage(user: User | null = null) {
+  return html`
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,7 @@ export const problemsPage = html`
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Problems - CrashDSA</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <style>
     .filters {
       display: flex;
@@ -119,18 +123,7 @@ export const problemsPage = html`
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-brand">
-        <a href="/">🚀 CrashDSA</a>
-      </div>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/problems">Problems</a>
-        <a href="/api-docs" target="_blank">API Docs</a>
-      </div>
-    </div>
-  </nav>
+  ${raw(navbar(user))}
 
   <main class="main-content">
     <section class="container">
@@ -296,10 +289,18 @@ export const problemsPage = html`
     document.getElementById('difficulty-filter').addEventListener('change', filterProblems)
     document.getElementById('search-input').addEventListener('input', filterProblems)
 
-    // Initial load
-    loadPatterns()
-    loadProblems()
+    // Initial load - apply URL pattern filter after both data sources are ready
+    const urlParams = new URLSearchParams(window.location.search)
+    const preselectedPattern = urlParams.get('pattern')
+
+    Promise.all([loadPatterns(), loadProblems()]).then(() => {
+      if (preselectedPattern) {
+        document.getElementById('pattern-filter').value = preselectedPattern
+        filterProblems()
+      }
+    })
   </script>
 </body>
 </html>
 `
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "burst-balloons",
+  "functionName": "burstBalloons",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

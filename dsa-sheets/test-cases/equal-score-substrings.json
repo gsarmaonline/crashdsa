@@ -1,0 +1,13 @@
+{
+  "slug": "equal-score-substrings",
+  "functionName": "equalScoreSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "target-sum",
+  "functionName": "targetSum",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

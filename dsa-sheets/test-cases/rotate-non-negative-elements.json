@@ -1,0 +1,13 @@
+{
+  "slug": "rotate-non-negative-elements",
+  "functionName": "rotateNonNegativeElements",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "reverse-letters-then-special-characters-in-a-string",
+  "functionName": "reverseLettersThenSpecialCharactersInAString",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "ListNode",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-bitwise-and-after-increment-operations",
+  "functionName": "maximumBitwiseAndAfterIncrementOperations",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

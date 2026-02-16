@@ -1,0 +1,13 @@
+{
+  "slug": "find-the-duplicate-number",
+  "functionName": "findTheDuplicateNumber",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "boolean",
+  "testCases": [],
+  "_status": "scaffold"
+}

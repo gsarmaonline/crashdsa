@@ -1,0 +1,36 @@
+{
+  "slug": "product-of-array-except-self",
+  "functionName": "productExceptSelf",
+  "params": [
+    { "name": "nums", "type": "int[]" }
+  ],
+  "returnType": "int[]",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3, 4] },
+      "expected": [24, 12, 8, 6],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [-1, 1, 0, -3, 3] },
+      "expected": [0, 0, 9, 0, 0],
+      "explanation": "Zero in array makes all other products zero except at zero's position",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [0, 0] },
+      "expected": [0, 0],
+      "explanation": "Multiple zeros make all products zero",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [2, 3] },
+      "expected": [3, 2],
+      "tags": ["single-element"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "delete-node-in-a-linked-list",
+  "functionName": "deleteNodeInALinkedList",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

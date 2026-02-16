@@ -1,0 +1,13 @@
+{
+  "slug": "maximize-alternating-sum-using-swaps",
+  "functionName": "maximizeAlternatingSumUsingSwaps",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

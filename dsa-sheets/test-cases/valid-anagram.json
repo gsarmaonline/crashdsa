@@ -1,0 +1,42 @@
+{
+  "slug": "valid-anagram",
+  "functionName": "isAnagram",
+  "params": [
+    { "name": "s", "type": "string" },
+    { "name": "t", "type": "string" }
+  ],
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "anagram", "t": "nagaram" },
+      "expected": true,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "rat", "t": "car" },
+      "expected": false,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "", "t": "" },
+      "expected": true,
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "a", "t": "a" },
+      "expected": true,
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "ab", "t": "a" },
+      "expected": false,
+      "explanation": "Different lengths cannot be anagrams",
+      "tags": ["edge-case"]
+    }
+  ]
+}

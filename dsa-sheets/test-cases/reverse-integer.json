@@ -1,0 +1,13 @@
+{
+  "slug": "reverse-integer",
+  "functionName": "reverseInteger",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "ListNode",
+  "testCases": [],
+  "_status": "scaffold"
+}

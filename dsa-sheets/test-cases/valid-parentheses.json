@@ -1,0 +1,47 @@
+{
+  "slug": "valid-parentheses",
+  "functionName": "isValid",
+  "params": [
+    { "name": "s", "type": "string" }
+  ],
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "()" },
+      "expected": true,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "()[]{}" },
+      "expected": true,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "(]" },
+      "expected": false,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "([)]" },
+      "expected": false,
+      "explanation": "Interleaved brackets are invalid",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "{[]}" },
+      "expected": true,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-6",
+      "inputs": { "s": "" },
+      "expected": true,
+      "tags": ["empty-input", "edge-case"]
+    }
+  ]
+}

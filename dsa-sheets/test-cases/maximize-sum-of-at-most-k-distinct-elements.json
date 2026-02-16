@@ -1,0 +1,13 @@
+{
+  "slug": "maximize-sum-of-at-most-k-distinct-elements",
+  "functionName": "maximizeSumOfAtMostKDistinctElements",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

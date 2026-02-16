@@ -1,0 +1,43 @@
+{
+  "slug": "longest-substring-without-repeating-characters",
+  "functionName": "lengthOfLongestSubstring",
+  "params": [
+    { "name": "s", "type": "string" }
+  ],
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "abcabcbb" },
+      "expected": 3,
+      "explanation": "\"abc\" is the longest substring without repeating characters",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "bbbbb" },
+      "expected": 1,
+      "tags": ["all-same"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "pwwkew" },
+      "expected": 3,
+      "explanation": "\"wke\" is the answer",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "" },
+      "expected": 0,
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": " " },
+      "expected": 1,
+      "explanation": "Space is a valid character",
+      "tags": ["edge-case"]
+    }
+  ]
+}

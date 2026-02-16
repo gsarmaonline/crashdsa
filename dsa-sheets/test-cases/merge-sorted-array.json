@@ -1,0 +1,17 @@
+{
+  "slug": "merge-sorted-array",
+  "functionName": "mergeSortedArray",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "target",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

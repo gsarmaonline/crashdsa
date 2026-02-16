@@ -1,0 +1,13 @@
+{
+  "slug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+  "functionName": "lexicographicallySmallestPalindromicPermutationGreaterThanTarget",
+  "params": [
+    {
+      "name": "grid",
+      "type": "char[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

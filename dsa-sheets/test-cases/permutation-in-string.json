@@ -1,0 +1,13 @@
+{
+  "slug": "permutation-in-string",
+  "functionName": "permutationInString",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

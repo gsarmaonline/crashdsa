@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-k-to-reduce-array-within-limit",
+  "functionName": "minimumKToReduceArrayWithinLimit",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

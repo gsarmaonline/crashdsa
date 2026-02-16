@@ -1,0 +1,43 @@
+{
+  "slug": "number-of-1-bits",
+  "functionName": "hammingWeight",
+  "params": [
+    { "name": "n", "type": "int" }
+  ],
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "n": 11 },
+      "expected": 3,
+      "explanation": "11 in binary is 1011, three 1-bits",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "n": 128 },
+      "expected": 1,
+      "explanation": "128 = 10000000, one 1-bit",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "n": 0 },
+      "expected": 0,
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "n": 2147483647 },
+      "expected": 31,
+      "explanation": "2^31 - 1, all 31 bits set",
+      "tags": ["max-constraints"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "n": 1 },
+      "expected": 1,
+      "tags": ["single-element"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "lexicographically-smallest-string-after-deleting-duplicate-characters",
+  "functionName": "lexicographicallySmallestStringAfterDeletingDuplicateCharacters",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

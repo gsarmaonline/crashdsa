@@ -1,0 +1,13 @@
+{
+  "slug": "largest-subarray-with-zero-sum",
+  "functionName": "largestSubarrayWithZeroSum",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

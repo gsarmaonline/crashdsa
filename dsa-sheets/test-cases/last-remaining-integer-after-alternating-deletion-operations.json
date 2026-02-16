@@ -1,0 +1,13 @@
+{
+  "slug": "last-remaining-integer-after-alternating-deletion-operations",
+  "functionName": "lastRemainingIntegerAfterAlternatingDeletionOperations",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

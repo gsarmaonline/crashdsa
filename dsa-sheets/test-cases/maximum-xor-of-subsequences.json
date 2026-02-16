@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-xor-of-subsequences",
+  "functionName": "maximumXorOfSubsequences",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

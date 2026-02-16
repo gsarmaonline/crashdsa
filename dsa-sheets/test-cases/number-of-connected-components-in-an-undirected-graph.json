@@ -1,0 +1,17 @@
+{
+  "slug": "number-of-connected-components-in-an-undirected-graph",
+  "functionName": "numberOfConnectedComponentsInAnUndirectedGraph",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "edges",
+      "type": "int[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

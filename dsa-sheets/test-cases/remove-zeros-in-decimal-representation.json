@@ -1,0 +1,13 @@
+{
+  "slug": "remove-zeros-in-decimal-representation",
+  "functionName": "removeZerosInDecimalRepresentation",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

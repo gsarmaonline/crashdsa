@@ -1,0 +1,13 @@
+{
+  "slug": "insert-interval",
+  "functionName": "insertInterval",
+  "params": [
+    {
+      "name": "intervals",
+      "type": "Interval[]"
+    }
+  ],
+  "returnType": "Interval[]",
+  "testCases": [],
+  "_status": "scaffold"
+}

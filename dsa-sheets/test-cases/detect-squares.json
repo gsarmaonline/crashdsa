@@ -1,0 +1,13 @@
+{
+  "slug": "detect-squares",
+  "functionName": "detectSquares",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

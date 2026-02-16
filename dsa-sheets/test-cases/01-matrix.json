@@ -1,0 +1,13 @@
+{
+  "slug": "01-matrix",
+  "functionName": "01Matrix",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

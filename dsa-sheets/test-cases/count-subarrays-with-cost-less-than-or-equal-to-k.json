@@ -1,0 +1,13 @@
+{
+  "slug": "count-subarrays-with-cost-less-than-or-equal-to-k",
+  "functionName": "countSubarraysWithCostLessThanOrEqualToK",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-subarray-xor-with-bounded-range",
+  "functionName": "maximumSubarrayXorWithBoundedRange",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

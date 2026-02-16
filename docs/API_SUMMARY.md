@@ -3,54 +3,83 @@
 **Project:** CrashDSA
 **Framework:** Hono + Bun
 **Last Updated:** 2026-02-15
-**Total Endpoints:** 2
+**Total Endpoints:** 9
 
 ---
 
 ## Quick Stats
 
-- **Total Endpoints:** 2
-- **GET Endpoints:** 2
-- **POST Endpoints:** 0
-- **PUT Endpoints:** 0
-- **DELETE Endpoints:** 0
-- **PATCH Endpoints:** 0
+- **Total Endpoints:** 9
+- **UI Routes:** 3
+- **GET Endpoints:** 8
+- **POST Endpoints:** 1
 
 ---
 
 ## Endpoints Overview
 
-### General (1 endpoint)
-- `GET /` - Get welcome message
+### UI (3 routes)
+- `GET /` - Homepage with featured problems
+- `GET /problems` - Problems listing with filters (supports `?pattern=` query)
+- `GET /patterns` - Solution patterns overview with difficulty breakdowns
 
 ### API (1 endpoint)
-- `GET /api/hello` - Get hello message
+- `GET /api/hello` - Hello message
 
----
+### Problems (2 endpoints)
+- `GET /api/problems` - List all problems (filterable by difficulty)
+- `GET /api/problems/pattern/:pattern` - Get problems by pattern
 
-## Response Types
+### Patterns (1 endpoint)
+- `GET /api/patterns` - List all patterns with counts
 
-### Text Responses
-- `GET /` - Returns plain text
+### Stats (1 endpoint)
+- `GET /api/stats` - Aggregate statistics
 
-### JSON Responses
-- `GET /api/hello` - Returns JSON object with message property
+### Admin (1 endpoint)
+- `POST /api/refresh` - Refresh data cache
 
 ---
 
 ## Type Definitions
 
-### HelloResponse
+### Problem
 ```typescript
-interface HelloResponse {
-  message: string;
+interface Problem {
+  name: string
+  difficulty: 'Easy' | 'Medium' | 'Hard'
+  patterns: string[]
+  sourceSheets: string[]
+  link: string
+  acceptanceRate: string
+  tags: string[]
+}
+```
+
+### PatternInfo
+```typescript
+interface PatternInfo {
+  name: string
+  displayName: string
+  count: number
+}
+```
+
+### StatsResponse
+```typescript
+interface StatsResponse {
+  total: number
+  easy: number
+  medium: number
+  hard: number
+  lastUpdated: Date
 }
 ```
 
 ### ErrorResponse
 ```typescript
 interface ErrorResponse {
-  error: string;
+  error: string
 }
 ```
 
@@ -62,53 +91,9 @@ Currently, no authentication is required for any endpoints.
 
 ---
 
-## Rate Limiting
-
-Currently, no rate limiting is configured.
-
----
-
-## CORS
-
-CORS configuration: Not yet configured (uses Hono defaults)
-
----
-
 ## Documentation Resources
 
-- 📄 [Full API Documentation](./API.md)
-- 🔍 [OpenAPI Specification](./openapi.json)
-- 💻 [cURL Examples](./API_EXAMPLES.md)
-- 🌐 [Swagger UI](http://localhost:3000/api-docs) (when server is running)
-
----
-
-## Server Information
-
-**Development Server:**
-```bash
-bun run dev
-```
-
-**Production Server:**
-```bash
-bun run start
-```
-
-**Default Port:** 3000
-
----
-
-## Future Enhancements
-
-Consider adding:
-- [ ] Authentication endpoints (login, register, refresh token)
-- [ ] User management (CRUD operations)
-- [ ] Data persistence (database integration)
-- [ ] Input validation
-- [ ] Error handling middleware
-- [ ] Rate limiting
-- [ ] CORS configuration
-- [ ] API versioning (e.g., /api/v1/)
-- [ ] Health check endpoint
-- [ ] Metrics endpoint
+- [Full API Documentation](./API.md)
+- [OpenAPI Specification](./openapi.json)
+- [cURL Examples](./API_EXAMPLES.md)
+- [Swagger UI](http://localhost:3000/api-docs) (when server is running)

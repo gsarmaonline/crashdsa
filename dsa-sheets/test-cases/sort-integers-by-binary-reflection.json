@@ -1,0 +1,13 @@
+{
+  "slug": "sort-integers-by-binary-reflection",
+  "functionName": "sortIntegersByBinaryReflection",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

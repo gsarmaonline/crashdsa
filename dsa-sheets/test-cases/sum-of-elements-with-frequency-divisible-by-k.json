@@ -1,0 +1,13 @@
+{
+  "slug": "sum-of-elements-with-frequency-divisible-by-k",
+  "functionName": "sumOfElementsWithFrequencyDivisibleByK",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

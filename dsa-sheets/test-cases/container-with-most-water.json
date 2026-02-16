@@ -1,0 +1,36 @@
+{
+  "slug": "container-with-most-water",
+  "functionName": "maxArea",
+  "params": [
+    { "name": "height", "type": "int[]" }
+  ],
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "height": [1, 8, 6, 2, 5, 4, 8, 3, 7] },
+      "expected": 49,
+      "explanation": "Lines at index 1 (h=8) and 8 (h=7): min(8,7) * (8-1) = 49",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "height": [1, 1] },
+      "expected": 1,
+      "tags": ["single-element", "edge-case"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "height": [4, 3, 2, 1, 4] },
+      "expected": 16,
+      "explanation": "min(4,4) * (4-0) = 16",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "height": [1, 2, 1] },
+      "expected": 2,
+      "tags": ["basic"]
+    }
+  ]
+}

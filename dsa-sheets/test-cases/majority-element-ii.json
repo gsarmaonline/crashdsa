@@ -1,0 +1,13 @@
+{
+  "slug": "majority-element-ii",
+  "functionName": "majorityElementIi",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

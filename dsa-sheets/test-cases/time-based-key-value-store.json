@@ -1,0 +1,13 @@
+{
+  "slug": "time-based-key-value-store",
+  "functionName": "timeBasedKeyValueStore",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

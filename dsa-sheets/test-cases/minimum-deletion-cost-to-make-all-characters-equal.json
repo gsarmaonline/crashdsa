@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-deletion-cost-to-make-all-characters-equal",
+  "functionName": "minimumDeletionCostToMakeAllCharactersEqual",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int[][]",
+  "testCases": [],
+  "_status": "scaffold"
+}

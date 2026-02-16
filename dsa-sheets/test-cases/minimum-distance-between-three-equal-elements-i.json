@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-distance-between-three-equal-elements-i",
+  "functionName": "minimumDistanceBetweenThreeEqualElementsI",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

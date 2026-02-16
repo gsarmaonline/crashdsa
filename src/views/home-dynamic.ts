@@ -1,12 +1,22 @@
 import { html, raw } from 'hono/html'
-import { getProblemsCache } from '../data/csv-loader.js'
+import { getStats, getPatternProblems } from '../data/problem-repository.js'
+import { PATTERNS } from '../dsa-sheets/patterns.js'
+import { navbar } from '../components/navbar.js'
+import type { User } from '../db/users.js'
 
-export function homePageDynamic() {
-  const cache = getProblemsCache()
-  const { stats, patterns } = cache
+export async function homePageDynamic(user: User | null = null) {
+  const [stats, byPattern] = await Promise.all([getStats(), getPatternProblems()])
+  const patternNames = Object.keys(byPattern).sort()
 
-  // Get a sample of problems for featured section
-  const featuredProblems = cache.all.slice(0, 6)
+  // Pick 6 featured patterns with problem counts
+  const featuredPatternNames = ['two-pointers', 'sliding-window', 'binary-search', 'tree-dfs', 'dynamic-programming-1d', 'backtracking']
+  const featuredPatterns = featuredPatternNames
+    .map(name => {
+      const pattern = PATTERNS.find(p => p.name === name)
+      const count = byPattern[name]?.length ?? 0
+      return pattern ? { ...pattern, count } : null
+    })
+    .filter(Boolean) as (typeof PATTERNS[number] & { count: number })[]
 
   return html`
 <!DOCTYPE html>
@@ -14,29 +24,19 @@ export function homePageDynamic() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CrashDSA - Master Data Structures & Algorithms</title>
+  <title>CrashDSA - DSA Interview Prep for Senior Engineers</title>
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-brand">
-        <a href="/">🚀 CrashDSA</a>
-      </div>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/problems">Problems</a>
-        <a href="#features">Features</a>
-        <a href="/api-docs" target="_blank">API Docs</a>
-      </div>
-    </div>
-  </nav>
+  ${raw(navbar(user))}
 
   <main class="main-content">
     <section class="container hero">
-      <h1>Welcome to CrashDSA</h1>
+      <h1>DSA Interview Prep for Senior Engineers</h1>
+      <p class="tagline">Less is more.</p>
       <p class="subtitle">
-        Master Data Structures & Algorithms with ${stats.total} curated problems from top interview prep sheets
+        You already know how to code. Now crush the interview. ${stats.total} curated problems from top prep sheets, organized by solution pattern — built for experienced engineers.
       </p>
       <div class="hero-stats">
         <div class="stat">
@@ -44,7 +44,7 @@ export function homePageDynamic() {
           <div class="stat-label">Problems</div>
         </div>
         <div class="stat">
-          <div class="stat-number">${patterns.length}</div>
+          <div class="stat-number">${patternNames.length}</div>
           <div class="stat-label">Patterns</div>
         </div>
         <div class="stat">
@@ -64,18 +64,18 @@ export function homePageDynamic() {
 
     <section id="features" class="features-section">
       <div class="container">
-        <h2 class="section-title">Why CrashDSA?</h2>
+        <h2 class="section-title">Built for Engineers Who Ship Production Code</h2>
         <div class="features">
           <div class="feature-card">
             <div class="feature-icon">📚</div>
-            <h3>Comprehensive Problems</h3>
-            <p>Curated collection of ${stats.total} DSA problems from NeetCode 150, Blind 75, LeetCode Top 150, Grind 75, and Striver's A2Z</p>
+            <h3>Senior-Level Curation</h3>
+            <p>${stats.total} problems hand-picked from NeetCode 150, Blind 75, LeetCode Top 150, Grind 75, and Striver's A2Z — no beginner fluff</p>
           </div>
 
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
             <h3>Pattern-Based Learning</h3>
-            <p>Problems organized by ${patterns.length} solution patterns to master algorithmic strategies</p>
+            <p>${patternNames.length} solution patterns that map to how senior interviews actually test you — not textbook chapter order</p>
           </div>
 
           <div class="feature-card">
@@ -105,25 +105,24 @@ export function homePageDynamic() {
       </div>
     </section>
 
-    <section id="problems" class="problems-section">
+    <section id="patterns" class="problems-section">
       <div class="container">
-        <h2 class="section-title">Featured Problems</h2>
-        <p class="section-subtitle">Start with these popular problems</p>
+        <h2 class="section-title">Solution Patterns</h2>
+        <p class="section-subtitle">Master the strategies that repeat across senior-level interviews</p>
 
         <div class="problems-grid">
-          ${raw(featuredProblems.map(problem => `
+          ${raw(featuredPatterns.map(pattern => `
             <div class="problem-card">
               <div class="problem-header">
-                <h3>${problem.name}</h3>
-                <span class="badge badge-${problem.difficulty.toLowerCase()}">${problem.difficulty}</span>
+                <h3>${pattern.displayName}</h3>
+                <span class="badge badge-medium">${pattern.count} problems</span>
               </div>
               <div class="problem-body">
-                <p class="problem-category"><strong>Patterns:</strong> ${problem.patterns.join(', ') || 'N/A'}</p>
-                <p class="problem-category"><strong>Sources:</strong> ${problem.sourceSheets.join(', ')}</p>
+                <p class="problem-description">${pattern.description}</p>
               </div>
               <div class="problem-footer">
-                <a href="${problem.link}" target="_blank" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
-                  Solve on LeetCode
+                <a href="/problems?pattern=${pattern.name}" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">
+                  Explore Pattern
                 </a>
               </div>
             </div>
@@ -131,39 +130,15 @@ export function homePageDynamic() {
         </div>
 
         <div style="text-align: center; margin-top: 2rem;">
-          <a href="/problems" class="btn btn-primary">View All ${stats.total} Problems</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="tech-section">
-      <div class="container">
-        <h2 class="section-title">Built with Modern Tech</h2>
-        <div class="tech-stack">
-          <div class="tech-item">
-            <div class="tech-name">Bun</div>
-            <div class="tech-desc">Fast JavaScript runtime</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-name">Hono</div>
-            <div class="tech-desc">Lightweight web framework</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-name">TypeScript</div>
-            <div class="tech-desc">Type-safe development</div>
-          </div>
-          <div class="tech-item">
-            <div class="tech-name">Server-Side</div>
-            <div class="tech-desc">Fast rendering</div>
-          </div>
+          <a href="/patterns" class="btn btn-primary">View All ${patternNames.length} Patterns</a>
         </div>
       </div>
     </section>
 
     <section class="cta-section">
       <div class="container">
-        <h2>Ready to Master DSA?</h2>
-        <p>Start solving problems and prepare for your next technical interview</p>
+        <h2>Ready to Land Your Next Senior Role?</h2>
+        <p>Skip the basics. Focus on the patterns that matter at the senior and staff level.</p>
         <div class="cta">
           <a href="/problems" class="btn btn-primary">Browse Problems</a>
           <a href="/api-docs" class="btn btn-secondary">View API Docs</a>
@@ -174,7 +149,7 @@ export function homePageDynamic() {
 
   <footer class="footer">
     <div class="container">
-      <p>© 2026 CrashDSA - Master Data Structures & Algorithms</p>
+      <p>© 2026 CrashDSA - DSA Interview Prep for Senior Engineers</p>
       <p>Built with ❤️ using Hono + Bun</p>
     </div>
   </footer>

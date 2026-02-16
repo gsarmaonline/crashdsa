@@ -1,0 +1,13 @@
+{
+  "slug": "remove-nth-node-from-end-of-list",
+  "functionName": "removeNthNodeFromEndOfList",
+  "params": [
+    {
+      "name": "head",
+      "type": "ListNode"
+    }
+  ],
+  "returnType": "boolean",
+  "testCases": [],
+  "_status": "scaffold"
+}

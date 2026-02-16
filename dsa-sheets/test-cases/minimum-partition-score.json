@@ -1,0 +1,13 @@
+{
+  "slug": "minimum-partition-score",
+  "functionName": "minimumPartitionScore",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

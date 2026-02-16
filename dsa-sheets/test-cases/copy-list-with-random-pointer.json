@@ -1,0 +1,13 @@
+{
+  "slug": "copy-list-with-random-pointer",
+  "functionName": "copyListWithRandomPointer",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

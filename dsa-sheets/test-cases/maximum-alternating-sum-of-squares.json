@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-alternating-sum-of-squares",
+  "functionName": "maximumAlternatingSumOfSquares",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "bitwise-or-of-even-numbers-in-an-array",
+  "functionName": "bitwiseOrOfEvenNumbersInAnArray",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

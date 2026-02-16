@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-product-of-three-elements-after-one-replacement",
+  "functionName": "maximumProductOfThreeElementsAfterOneReplacement",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

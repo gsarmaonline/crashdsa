@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-substrings-with-distinct-start",
+  "functionName": "maximumSubstringsWithDistinctStart",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

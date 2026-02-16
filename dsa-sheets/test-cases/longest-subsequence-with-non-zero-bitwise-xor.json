@@ -1,0 +1,13 @@
+{
+  "slug": "longest-subsequence-with-non-zero-bitwise-xor",
+  "functionName": "longestSubsequenceWithNonZeroBitwiseXor",
+  "params": [
+    {
+      "name": "grid",
+      "type": "int[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

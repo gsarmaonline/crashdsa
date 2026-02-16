@@ -1,0 +1,13 @@
+{
+  "slug": "total-waviness-of-numbers-in-range-ii",
+  "functionName": "totalWavinessOfNumbersInRangeIi",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

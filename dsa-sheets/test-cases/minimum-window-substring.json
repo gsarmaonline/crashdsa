@@ -1,0 +1,42 @@
+{
+  "slug": "minimum-window-substring",
+  "functionName": "minWindow",
+  "params": [
+    { "name": "s", "type": "string" },
+    { "name": "t", "type": "string" }
+  ],
+  "returnType": "string",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "ADOBECODEBANC", "t": "ABC" },
+      "expected": "BANC",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "a", "t": "a" },
+      "expected": "a",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "a", "t": "aa" },
+      "expected": "",
+      "explanation": "t has two 'a's but s only has one",
+      "tags": ["no-solution"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "aa", "t": "aa" },
+      "expected": "aa",
+      "tags": ["duplicates"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "abc", "t": "d" },
+      "expected": "",
+      "tags": ["no-solution"]
+    }
+  ]
+}

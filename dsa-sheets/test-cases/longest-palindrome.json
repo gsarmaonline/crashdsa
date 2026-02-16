@@ -1,0 +1,13 @@
+{
+  "slug": "longest-palindrome",
+  "functionName": "longestPalindrome",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

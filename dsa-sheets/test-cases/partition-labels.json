@@ -1,0 +1,13 @@
+{
+  "slug": "partition-labels",
+  "functionName": "partitionLabels",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

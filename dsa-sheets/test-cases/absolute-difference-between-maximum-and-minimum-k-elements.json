@@ -1,0 +1,13 @@
+{
+  "slug": "absolute-difference-between-maximum-and-minimum-k-elements",
+  "functionName": "absoluteDifferenceBetweenMaximumAndMinimumKElements",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

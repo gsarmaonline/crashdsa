@@ -1,0 +1,13 @@
+{
+  "slug": "number-of-centered-subarrays",
+  "functionName": "numberOfCenteredSubarrays",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

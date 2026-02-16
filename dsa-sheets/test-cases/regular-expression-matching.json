@@ -1,0 +1,13 @@
+{
+  "slug": "regular-expression-matching",
+  "functionName": "regularExpressionMatching",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

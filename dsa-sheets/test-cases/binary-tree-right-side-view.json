@@ -1,0 +1,13 @@
+{
+  "slug": "binary-tree-right-side-view",
+  "functionName": "binaryTreeRightSideView",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

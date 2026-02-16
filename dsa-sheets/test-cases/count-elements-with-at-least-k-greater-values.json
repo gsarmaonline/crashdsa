@@ -1,0 +1,13 @@
+{
+  "slug": "count-elements-with-at-least-k-greater-values",
+  "functionName": "countElementsWithAtLeastKGreaterValues",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

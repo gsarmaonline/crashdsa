@@ -1,0 +1,13 @@
+{
+  "slug": "maximize-cyclic-partition-score",
+  "functionName": "maximizeCyclicPartitionScore",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

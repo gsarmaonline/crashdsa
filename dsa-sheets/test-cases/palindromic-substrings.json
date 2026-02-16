@@ -1,0 +1,13 @@
+{
+  "slug": "palindromic-substrings",
+  "functionName": "palindromicSubstrings",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

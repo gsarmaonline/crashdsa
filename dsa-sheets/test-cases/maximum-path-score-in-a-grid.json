@@ -1,0 +1,13 @@
+{
+  "slug": "maximum-path-score-in-a-grid",
+  "functionName": "maximumPathScoreInAGrid",
+  "params": [
+    {
+      "name": "grid",
+      "type": "char[][]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

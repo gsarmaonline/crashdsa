@@ -1,0 +1,13 @@
+{
+  "slug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+  "functionName": "concatenateNonZeroDigitsAndMultiplyBySumI",
+  "params": [
+    {
+      "name": "n",
+      "type": "int"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

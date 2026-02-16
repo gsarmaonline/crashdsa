@@ -1,7 +1,13 @@
 import { html, raw } from 'hono/html'
-import type { Problem } from '../data/csv-loader.js'
+import type { Problem } from '../data/problem-repository.js'
+import type { User } from '../db/users.js'
+import { navbar } from '../components/navbar.js'
 
-export function problemDetailPage(problem: Problem) {
+interface ProblemWithSlug extends Problem {
+  slug: string
+}
+
+export function problemDetailPage(problem: ProblemWithSlug, user: User | null = null) {
   const difficultyClass = problem.difficulty.toLowerCase()
 
   return html`
@@ -15,18 +21,7 @@ export function problemDetailPage(problem: Problem) {
   <link rel="stylesheet" href="/judge/editor.css">
 </head>
 <body class="problem-detail-body">
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-brand">
-        <a href="/">CrashDSA</a>
-      </div>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/problems">Problems</a>
-        <a href="/api-docs" target="_blank">API Docs</a>
-      </div>
-    </div>
-  </nav>
+  ${raw(navbar(user))}
 
   <div class="judge-layout">
     <div class="judge-left">

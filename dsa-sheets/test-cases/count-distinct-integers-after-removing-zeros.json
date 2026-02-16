@@ -1,0 +1,13 @@
+{
+  "slug": "count-distinct-integers-after-removing-zeros",
+  "functionName": "countDistinctIntegersAfterRemovingZeros",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

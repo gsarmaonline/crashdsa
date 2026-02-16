@@ -1,0 +1,13 @@
+{
+  "slug": "longest-almost-palindromic-substring",
+  "functionName": "longestAlmostPalindromicSubstring",
+  "params": [
+    {
+      "name": "s",
+      "type": "string"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

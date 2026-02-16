@@ -1,0 +1,13 @@
+{
+  "slug": "balanced-binary-tree",
+  "functionName": "balancedBinaryTree",
+  "params": [
+    {
+      "name": "root",
+      "type": "TreeNode"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

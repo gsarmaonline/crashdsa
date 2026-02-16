@@ -1,0 +1,42 @@
+{
+  "slug": "binary-tree-level-order-traversal",
+  "functionName": "levelOrder",
+  "params": [
+    { "name": "root", "type": "TreeNode" }
+  ],
+  "returnType": "int[][]",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "root": [3, 9, 20, null, null, 15, 7] },
+      "expected": [[3], [9, 20], [15, 7]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "root": [1] },
+      "expected": [[1]],
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "root": [] },
+      "expected": [],
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "root": [1, 2, 3, 4, 5, 6, 7] },
+      "expected": [[1], [2, 3], [4, 5, 6, 7]],
+      "explanation": "Complete binary tree with 3 levels",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "root": [1, 2, null, 3, null, 4, null] },
+      "expected": [[1], [2], [3], [4]],
+      "explanation": "Left-skewed tree, each level has one node",
+      "tags": ["edge-case"]
+    }
+  ]
+}

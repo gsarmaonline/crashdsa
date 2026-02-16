@@ -1,0 +1,13 @@
+{
+  "slug": "split-array-with-minimum-difference",
+  "functionName": "splitArrayWithMinimumDifference",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "find-loyal-customers",
+  "functionName": "findLoyalCustomers",
+  "params": [
+    {
+      "name": "nums",
+      "type": "int[]"
+    }
+  ],
+  "returnType": "int",
+  "testCases": [],
+  "_status": "scaffold"
+}
