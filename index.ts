@@ -2,29 +2,36 @@ import { Hono } from 'hono'
 import { swaggerUI } from '@hono/swagger-ui'
 import { readFileSync } from 'fs'
 import { join } from 'path'
+import { prisma } from './src/data/db.js'
+import {
+  getAllProblems,
+  getProblemsByPattern,
+  getPatterns,
+  getStats,
+  getTestCasesForProblem,
+  getTestCaseStats,
+} from './src/data/problem-repository.js'
 import { homePageDynamic } from './src/views/home-dynamic.js'
 import { problemsPage } from './src/views/problems.js'
 import { patternsPage } from './src/views/patterns.js'
-import { loadProblemsCache, getProblemsCache, refreshCache } from './src/data/csv-loader.js'
-import { getTestCasesForProblem, getTestCaseStats } from './src/data/test-case-loader.js'
 
 const app = new Hono()
 
-// Load problems cache at startup
+// Eagerly connect to database
 console.log('Initializing CrashDSA...')
-loadProblemsCache()
+prisma.$connect().then(() => console.log('Database connected'))
 
 // UI Routes
-app.get('/', (c) => {
-  return c.html(homePageDynamic())
+app.get('/', async (c) => {
+  return c.html(await homePageDynamic())
 })
 
 app.get('/problems', (c) => {
   return c.html(problemsPage)
 })
 
-app.get('/patterns', (c) => {
-  return c.html(patternsPage())
+app.get('/patterns', async (c) => {
+  return c.html(await patternsPage())
 })
 
 // Serve CSS
@@ -45,68 +52,40 @@ app.get('/api/hello', (c) => {
 })
 
 // Get all problems or filter by difficulty
-app.get('/api/problems', (c) => {
-  const cache = getProblemsCache()
+app.get('/api/problems', async (c) => {
   const difficulty = c.req.query('difficulty')
-
-  let problems = cache.all
-
-  if (difficulty) {
-    problems = problems.filter(p =>
-      p.difficulty.toLowerCase() === difficulty.toLowerCase()
-    )
-  }
-
-  return c.json({
-    problems,
-    count: problems.length
-  })
+  const result = await getAllProblems(difficulty)
+  return c.json(result)
 })
 
 // Get problems by pattern
-app.get('/api/problems/pattern/:pattern', (c) => {
+app.get('/api/problems/pattern/:pattern', async (c) => {
   const pattern = c.req.param('pattern')
-  const cache = getProblemsCache()
+  const result = await getProblemsByPattern(pattern)
 
-  if (!cache.byPattern[pattern]) {
+  if (!result) {
     return c.json({ error: 'Pattern not found' }, 404)
   }
 
-  return c.json({
-    pattern,
-    problems: cache.byPattern[pattern],
-    count: cache.byPattern[pattern].length
-  })
+  return c.json(result)
 })
 
 // Get all available patterns
-app.get('/api/patterns', (c) => {
-  const cache = getProblemsCache()
-
-  const patternsWithCounts = cache.patterns.map(pattern => ({
-    name: pattern,
-    displayName: pattern.split('-').map(w =>
-      w.charAt(0).toUpperCase() + w.slice(1)
-    ).join(' '),
-    count: cache.byPattern[pattern]?.length || 0
-  }))
-
-  return c.json({
-    patterns: patternsWithCounts,
-    total: cache.patterns.length
-  })
+app.get('/api/patterns', async (c) => {
+  const result = await getPatterns()
+  return c.json(result)
 })
 
 // Get statistics
-app.get('/api/stats', (c) => {
-  const cache = getProblemsCache()
-  return c.json(cache.stats)
+app.get('/api/stats', async (c) => {
+  const stats = await getStats()
+  return c.json(stats)
 })
 
 // Get test cases for a specific problem
-app.get('/api/problems/:slug/test-cases', (c) => {
+app.get('/api/problems/:slug/test-cases', async (c) => {
   const slug = c.req.param('slug')
-  const testCases = getTestCasesForProblem(slug)
+  const testCases = await getTestCasesForProblem(slug)
 
   if (!testCases) {
     return c.json({ error: 'Test cases not found for this problem' }, 404)
@@ -116,18 +95,8 @@ app.get('/api/problems/:slug/test-cases', (c) => {
 })
 
 // Get test case coverage statistics
-app.get('/api/test-cases/stats', (c) => {
-  return c.json(getTestCaseStats())
-})
-
-// Refresh cache (useful for updates)
-app.post('/api/refresh', (c) => {
-  try {
-    refreshCache()
-    return c.json({ message: 'Cache refreshed successfully' })
-  } catch (error) {
-    return c.json({ error: 'Failed to refresh cache' }, 500)
-  }
+app.get('/api/test-cases/stats', async (c) => {
+  return c.json(await getTestCaseStats())
 })
 
 // Swagger UI Documentation

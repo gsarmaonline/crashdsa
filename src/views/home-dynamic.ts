@@ -1,17 +1,17 @@
 import { html, raw } from 'hono/html'
-import { getProblemsCache } from '../data/csv-loader.js'
+import { getStats, getPatternProblems } from '../data/problem-repository.js'
 import { PATTERNS } from '../dsa-sheets/patterns.js'
 
-export function homePageDynamic() {
-  const cache = getProblemsCache()
-  const { stats, patterns } = cache
+export async function homePageDynamic() {
+  const [stats, byPattern] = await Promise.all([getStats(), getPatternProblems()])
+  const patternNames = Object.keys(byPattern).sort()
 
   // Pick 6 featured patterns with problem counts
   const featuredPatternNames = ['two-pointers', 'sliding-window', 'binary-search', 'tree-dfs', 'dynamic-programming-1d', 'backtracking']
   const featuredPatterns = featuredPatternNames
     .map(name => {
       const pattern = PATTERNS.find(p => p.name === name)
-      const count = cache.byPattern[name]?.length ?? 0
+      const count = byPattern[name]?.length ?? 0
       return pattern ? { ...pattern, count } : null
     })
     .filter(Boolean) as (typeof PATTERNS[number] & { count: number })[]
@@ -55,7 +55,7 @@ export function homePageDynamic() {
           <div class="stat-label">Problems</div>
         </div>
         <div class="stat">
-          <div class="stat-number">${patterns.length}</div>
+          <div class="stat-number">${patternNames.length}</div>
           <div class="stat-label">Patterns</div>
         </div>
         <div class="stat">
@@ -86,7 +86,7 @@ export function homePageDynamic() {
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
             <h3>Pattern-Based Learning</h3>
-            <p>${patterns.length} solution patterns that map to how senior interviews actually test you — not textbook chapter order</p>
+            <p>${patternNames.length} solution patterns that map to how senior interviews actually test you — not textbook chapter order</p>
           </div>
 
           <div class="feature-card">
@@ -141,7 +141,7 @@ export function homePageDynamic() {
         </div>
 
         <div style="text-align: center; margin-top: 2rem;">
-          <a href="/patterns" class="btn btn-primary">View All ${patterns.length} Patterns</a>
+          <a href="/patterns" class="btn btn-primary">View All ${patternNames.length} Patterns</a>
         </div>
       </div>
     </section>
