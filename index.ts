@@ -54,8 +54,12 @@ app.get('/patterns/:name', async (c) => {
 
 // Serve CSS
 app.get('/styles.css', (c) => {
-  const css = readFileSync(join(process.cwd(), 'src', 'styles', 'styles.css'), 'utf-8')
-  return c.body(css, 200, { 'Content-Type': 'text/css' })
+  try {
+    const css = readFileSync(join(process.cwd(), 'src', 'styles', 'styles.css'), 'utf-8')
+    return c.body(css, 200, { 'Content-Type': 'text/css' })
+  } catch {
+    return c.text('Not found', 404)
+  }
 })
 
 // Serve favicon
