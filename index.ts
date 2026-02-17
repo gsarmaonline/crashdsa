@@ -20,6 +20,8 @@ import { problemDetailPage } from './src/views/problem-detail.js'
 import { patternsPage } from './src/views/patterns.js'
 import { patternDetailPage } from './src/views/pattern-detail.js'
 import { progressPage } from './src/views/progress.js'
+import { groupsPage } from './src/views/groups.js'
+import { groupDetailPage } from './src/views/group-detail.js'
 import { authMiddleware, requireAuthUI, requireAuthAPI, type AuthVariables } from './src/auth/middleware.js'
 import authRoutes from './src/auth/routes.js'
 import groupRoutes from './src/groups/routes.js'
@@ -48,6 +50,8 @@ app.use('/problems/*', requireAuthUI)
 app.use('/patterns', requireAuthUI)
 app.use('/patterns/*', requireAuthUI)
 app.use('/progress', requireAuthUI)
+app.use('/groups', requireAuthUI)
+app.use('/groups/*', requireAuthUI)
 
 // Protected API routes - require GitHub login
 app.use('/api/problems', requireAuthAPI)
@@ -76,6 +80,16 @@ app.get('/patterns', async (c) => {
 
 app.get('/progress', (c) => {
   return c.html(progressPage(c.get('user')))
+})
+
+app.get('/groups', (c) => {
+  return c.html(groupsPage(c.get('user')))
+})
+
+app.get('/groups/:id', (c) => {
+  const id = parseInt(c.req.param('id'), 10)
+  if (isNaN(id)) return c.text('Invalid group ID', 400)
+  return c.html(groupDetailPage(id, c.get('user')))
 })
 
 app.get('/patterns/:name', async (c) => {
