@@ -54,5 +54,33 @@ export async function runMigrations(sql = defaultSql) {
 
   await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login_at TIMESTAMPTZ`
 
+  // Study groups
+  await sql`
+    CREATE TABLE IF NOT EXISTS study_groups (
+      id            SERIAL PRIMARY KEY,
+      name          VARCHAR(255) NOT NULL,
+      description   TEXT,
+      invite_code   VARCHAR(32) UNIQUE NOT NULL,
+      created_by    INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      created_at    TIMESTAMPTZ DEFAULT NOW(),
+      updated_at    TIMESTAMPTZ DEFAULT NOW()
+    )
+  `
+  await sql`CREATE INDEX IF NOT EXISTS idx_study_groups_created_by ON study_groups(created_by)`
+  await sql`CREATE INDEX IF NOT EXISTS idx_study_groups_invite_code ON study_groups(invite_code)`
+
+  await sql`
+    CREATE TABLE IF NOT EXISTS study_group_members (
+      id          SERIAL PRIMARY KEY,
+      group_id    INTEGER NOT NULL REFERENCES study_groups(id) ON DELETE CASCADE,
+      user_id     INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      role        VARCHAR(20) NOT NULL DEFAULT 'member',
+      joined_at   TIMESTAMPTZ DEFAULT NOW(),
+      UNIQUE(group_id, user_id)
+    )
+  `
+  await sql`CREATE INDEX IF NOT EXISTS idx_sgm_group_id ON study_group_members(group_id)`
+  await sql`CREATE INDEX IF NOT EXISTS idx_sgm_user_id ON study_group_members(user_id)`
+
   console.log('Database migrations complete')
 }
