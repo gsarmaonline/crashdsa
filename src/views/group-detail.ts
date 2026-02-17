@@ -319,13 +319,80 @@ export function groupDetailPage(groupId: number, user: User | null = null) {
     }
 
     @media (max-width: 768px) {
-      .invite-box {
+      .group-title-row {
         flex-direction: column;
-        align-items: flex-start;
       }
 
-      .leaderboard-bar-container {
-        min-width: 80px;
+      .group-actions {
+        width: 100%;
+      }
+
+      .group-actions .btn {
+        flex: 1;
+        text-align: center;
+      }
+
+      .invite-box {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+      }
+
+      .invite-code {
+        font-size: 0.95rem;
+        word-break: break-all;
+      }
+
+      .btn-copy {
+        align-self: flex-start;
+      }
+
+      .tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .tab {
+        padding: 0.75rem 1rem;
+        font-size: 0.85rem;
+        white-space: nowrap;
+      }
+
+      .progress-section {
+        padding: 1rem;
+      }
+
+      .leaderboard th,
+      .leaderboard td {
+        padding: 0.5rem;
+      }
+
+      .leaderboard th:nth-child(3),
+      .leaderboard td:nth-child(3) {
+        display: none;
+      }
+
+      .leaderboard-avatar {
+        width: 28px;
+        height: 28px;
+      }
+
+      .leaderboard-name {
+        font-size: 0.9rem;
+      }
+
+      .member-item {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .member-avatar {
+        width: 34px;
+        height: 34px;
+      }
+
+      .settings-section {
+        padding: 1.25rem;
       }
     }
   </style>

@@ -216,8 +216,35 @@ export function groupsPage(user: User | null = null) {
     }
 
     @media (max-width: 768px) {
+      .groups-header {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .header-actions {
+        width: 100%;
+      }
+
+      .header-actions .btn {
+        flex: 1;
+        text-align: center;
+      }
+
       .groups-grid {
         grid-template-columns: 1fr;
+      }
+
+      .group-card {
+        padding: 1.25rem;
+      }
+
+      .modal {
+        width: 95%;
+        padding: 1.5rem;
+      }
+
+      .empty-state {
+        padding: 2.5rem 1rem;
       }
     }
   </style>

@@ -14,19 +14,28 @@ export function navbar(user: User | null): string {
   return `
     <nav class="navbar">
       <div class="container">
-        <div class="nav-brand">
-          <a href="/">🚀 CrashDSA</a>
+        <div class="nav-top">
+          <div class="nav-brand">
+            <a href="/">🚀 CrashDSA</a>
+          </div>
+          <button class="nav-toggle" onclick="document.querySelector('.navbar').classList.toggle('nav-open')" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
         </div>
-        <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="/problems">Problems</a>
-          <a href="/patterns">Patterns</a>
-          ${user ? '<a href="/progress">Progress</a>' : ''}
-          ${user ? '<a href="/groups">Groups</a>' : ''}
-          <a href="/api-docs" target="_blank">API Docs</a>
-        </div>
-        <div class="nav-auth">
-          ${authSection}
+        <div class="nav-menu">
+          <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/problems">Problems</a>
+            <a href="/patterns">Patterns</a>
+            ${user ? '<a href="/progress">Progress</a>' : ''}
+            ${user ? '<a href="/groups">Groups</a>' : ''}
+            <a href="/api-docs" target="_blank">API Docs</a>
+          </div>
+          <div class="nav-auth">
+            ${authSection}
+          </div>
         </div>
       </div>
     </nav>
