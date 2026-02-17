@@ -104,6 +104,12 @@ export async function homePageDynamic(user: User | null = null) {
           </div>
 
           <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>Study Groups</h3>
+            <p>Create private groups with friends, share invite codes, and track each other's progress to stay motivated</p>
+          </div>
+
+          <div class="feature-card">
             <div class="feature-icon">📱</div>
             <h3>Responsive Design</h3>
             <p>Learn anywhere - desktop, tablet, or mobile device</p>
@@ -149,6 +155,7 @@ export async function homePageDynamic(user: User | null = null) {
         <div class="cta">
           <a href="/patterns" class="btn btn-primary">Explore Patterns</a>
           <a href="/problems" class="btn btn-secondary">Browse Problems</a>
+          <a href="/groups" class="btn btn-secondary">Study Groups</a>
         </div>
       </div>
     </section>
