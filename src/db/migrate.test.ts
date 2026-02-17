@@ -76,11 +76,19 @@ describe('runMigrations', () => {
     expect(match).toContain("DEFAULT ''")
   })
 
+  it('adds last_login_at column to users table', async () => {
+    const { fn, calls } = createMockSql()
+    await runMigrations(fn as any)
+    const match = calls.find(s => s.includes('users') && s.includes('last_login_at'))
+    expect(match).toBeDefined()
+    expect(match).toContain('TIMESTAMPTZ')
+  })
+
   it('uses IF NOT EXISTS for all ALTER TABLE statements', async () => {
     const { fn, calls } = createMockSql()
     await runMigrations(fn as any)
     const alterCalls = calls.filter(s => s.includes('ALTER TABLE'))
-    expect(alterCalls.length).toBe(6)
+    expect(alterCalls.length).toBe(7)
     for (const call of alterCalls) {
       expect(call).toContain('IF NOT EXISTS')
     }
