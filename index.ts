@@ -41,9 +41,6 @@ app.use('*', authMiddleware)
 // Auth routes
 app.route('/', authRoutes)
 
-// Study group routes
-app.route('/', groupRoutes)
-
 // Protected UI routes - require GitHub login
 app.use('/problems', requireAuthUI)
 app.use('/problems/*', requireAuthUI)
@@ -64,6 +61,9 @@ app.use('/api/test-cases/*', requireAuthAPI)
 app.use('/api/user/*', requireAuthAPI)
 app.use('/api/groups', requireAuthAPI)
 app.use('/api/groups/*', requireAuthAPI)
+
+// Study group API routes (must be after auth middleware)
+app.route('/', groupRoutes)
 
 // UI Routes
 app.get('/', async (c) => {
