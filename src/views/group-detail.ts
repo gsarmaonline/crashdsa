@@ -484,10 +484,10 @@ export function groupDetailPage(groupId: number, user: User | null = null) {
 
       // Tabs
       html += '<div class="tabs">'
-      html += '<button class="tab active" onclick="switchTab(\'progress\')">Progress</button>'
-      html += '<button class="tab" onclick="switchTab(\'members\')">Members (' + members.length + ')</button>'
+      html += '<button class="tab active" onclick="switchTab(\\'progress\\')">Progress</button>'
+      html += '<button class="tab" onclick="switchTab(\\'members\\')">Members (' + members.length + ')</button>'
       if (userRole === 'admin') {
-        html += '<button class="tab" onclick="switchTab(\'settings\')">Settings</button>'
+        html += '<button class="tab" onclick="switchTab(\\'settings\\')">Settings</button>'
       }
       html += '</div>'
 
