@@ -8,9 +8,22 @@ if (!DATABASE_URL) {
   process.exit(0)
 }
 
-const sql = postgres(DATABASE_URL, { max: 1, connect_timeout: 10 })
+const sql = postgres(DATABASE_URL, { max: 1, connect_timeout: 10, idle_timeout: 20, max_lifetime: 120 })
 
 async function migrate() {
+  // Acquire advisory lock to prevent conflicts with src/db/migrate.ts (app startup migrations)
+  const LOCK_ID = 728374 // arbitrary unique ID for migration lock
+  await sql`SELECT pg_advisory_lock(${LOCK_ID})`
+
+  try {
+    await migrateInner()
+  } finally {
+    await sql`SELECT pg_advisory_unlock(${LOCK_ID})`
+    await sql.end()
+  }
+}
+
+async function migrateInner() {
   // Create Prisma's migration tracking table (compatible format)
   await sql`
     CREATE TABLE IF NOT EXISTS "_prisma_migrations" (
@@ -68,7 +81,6 @@ async function migrate() {
   }
 
   console.log(count > 0 ? `Applied ${count} migration(s)` : 'No pending migrations')
-  await sql.end()
 }
 
 function checksum(content: string): string {
@@ -77,4 +89,12 @@ function checksum(content: string): string {
   return hasher.digest('hex')
 }
 
+// Hard timeout to prevent the release command from hanging indefinitely
+const TIMEOUT_MS = 120_000 // 2 minutes
+const timeout = setTimeout(() => {
+  console.error('Migration timed out after 2 minutes')
+  process.exit(1)
+}, TIMEOUT_MS)
+
 await migrate()
+clearTimeout(timeout)
