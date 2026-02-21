@@ -6,6 +6,18 @@ export async function runMigrations(sql = defaultSql) {
     return
   }
 
+  // Acquire advisory lock to prevent conflicts with scripts/migrate.ts (release command)
+  const LOCK_ID = 728374
+  await sql`SELECT pg_advisory_lock(${LOCK_ID})`
+
+  try {
+    await runMigrationsInner(sql)
+  } finally {
+    await sql`SELECT pg_advisory_unlock(${LOCK_ID})`
+  }
+}
+
+async function runMigrationsInner(sql: NonNullable<typeof defaultSql>) {
   await sql`
     CREATE TABLE IF NOT EXISTS users (
       id            SERIAL PRIMARY KEY,
