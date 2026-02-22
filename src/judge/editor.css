@@ -272,6 +272,34 @@
   margin-top: 0.25rem;
 }
 
+/* Run loader (shown in results panel while executing) */
+.run-loader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.75rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.run-loader .spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d1d5db;
+  border-top-color: #6b7280;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  flex-shrink: 0;
+}
+
+/* Run metadata line (timestamp + elapsed) */
+.run-meta {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Courier New', monospace;
+  margin-bottom: 0.75rem;
+}
+
 /* Runtime loading indicator */
 .runtime-loading {
   display: flex;

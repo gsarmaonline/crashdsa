@@ -161,13 +161,16 @@
 
   // --- Test Results Rendering ---
 
-  function renderTestResults(results) {
+  function renderTestResults(results, wallStart) {
     var panel = document.getElementById('test-results');
     var passed = results.filter(function(r) { return r.passed; }).length;
     var total = results.length;
     var allPassed = passed === total;
+    var elapsed = Date.now() - wallStart;
+    var timestamp = new Date().toLocaleTimeString();
 
-    var html = '<h3>Test Results</h3>';
+    var html = '<div class="run-meta">Ran at ' + timestamp + ' &middot; ' + elapsed + 'ms total</div>';
+    html += '<h3>Test Results</h3>';
     html += '<div class="test-results-summary ' + (allPassed ? 'all-passed' : 'some-failed') + '">';
     html += (allPassed ? 'All tests passed!' : passed + '/' + total + ' tests passed');
     html += '</div>';
@@ -197,9 +200,12 @@
     panel.innerHTML = html;
   }
 
-  function renderError(message) {
+  function renderError(message, wallStart) {
     var panel = document.getElementById('test-results');
-    panel.innerHTML = '<h3>Test Results</h3>' +
+    var elapsed = Date.now() - wallStart;
+    var timestamp = new Date().toLocaleTimeString();
+    panel.innerHTML = '<div class="run-meta">Ran at ' + timestamp + ' &middot; ' + elapsed + 'ms total</div>' +
+      '<h3>Test Results</h3>' +
       '<div class="test-results-summary some-failed">' + escapeHtml(message) + '</div>';
   }
 
@@ -233,11 +239,13 @@
   async function runTests() {
     var runBtn = document.getElementById('run-btn');
     var submitBtn = document.getElementById('submit-btn');
+    var wallStart = Date.now();
     runBtn.disabled = true;
     submitBtn.disabled = true;
     runBtn.textContent = 'Running...';
     clearConsole();
-    document.getElementById('test-results').innerHTML = '';
+    document.getElementById('test-results').innerHTML =
+      '<div class="run-loader"><div class="spinner"></div><span>Running tests...</span></div>';
 
     logToConsole('Running tests with ' + currentLanguage + '...', 'info');
 
@@ -246,7 +254,7 @@
       var results = await window.JudgeClient.runTests(code, currentLanguage, problemDef);
       var passed = results.filter(function(r) { return r.passed; }).length;
       logToConsole(passed + '/' + results.length + ' tests passed', passed === results.length ? 'success' : 'error');
-      renderTestResults(results);
+      renderTestResults(results, wallStart);
 
       // Auto-mark as solved when all tests pass
       if (passed === results.length && results.length > 0) {
@@ -261,7 +269,7 @@
       }
     } catch (err) {
       logToConsole('Error: ' + err.message, 'error');
-      renderError(err.message);
+      renderError(err.message, wallStart);
     } finally {
       runBtn.disabled = false;
       submitBtn.disabled = false;
