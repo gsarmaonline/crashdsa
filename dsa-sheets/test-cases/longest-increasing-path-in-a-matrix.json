@@ -3,11 +3,63 @@
   "functionName": "longestIncreasingPathInAMatrix",
   "params": [
     {
-      "name": "grid",
-      "type": "char[][]"
+      "name": "matrix",
+      "type": "int[][]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "matrix": [[9, 9, 4], [6, 6, 8], [2, 1, 1]] },
+      "expected": 4,
+      "explanation": "Longest path is [1,2,6,9] moving through adjacent cells with strictly increasing values",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "matrix": [[3, 4, 5], [3, 2, 6], [2, 2, 1]] },
+      "expected": 4,
+      "explanation": "Longest path is [3,4,5,6], length 4",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "matrix": [[1]] },
+      "expected": 1,
+      "explanation": "Single cell matrix; longest path is 1",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "matrix": [[1, 2], [4, 3]] },
+      "expected": 4,
+      "explanation": "Path 4->3->2->1 or 1->2->3->4 (reversed), all adjacent, length 4",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "matrix": [[1, 2, 3], [6, 5, 4], [7, 8, 9]] },
+      "expected": 9,
+      "explanation": "Snake path 1->2->3->4->5->6->7->8->9 through adjacent cells, length 9",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an m x n integers matrix, return the length of the longest increasing path in matrix. From each cell, you can move in four directions: left, right, up, or down. You may not move diagonally or move outside the boundary. You may not move to a cell with equal or smaller value.",
+  "examples": [
+    {
+      "input": "matrix = [[9,9,4],[6,6,8],[2,1,1]]",
+      "output": "4",
+      "explanation": "The longest increasing path is [1, 2, 6, 9]."
+    }
+  ],
+  "constraints": [
+    "m == matrix.length",
+    "n == matrix[i].length",
+    "1 <= m, n <= 200",
+    "0 <= matrix[i][j] <= 2^31 - 1"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

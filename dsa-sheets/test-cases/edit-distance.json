@@ -3,11 +3,65 @@
   "functionName": "editDistance",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "word1",
+      "type": "string"
+    },
+    {
+      "name": "word2",
+      "type": "string"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "word1": "horse", "word2": "ros" },
+      "expected": 3,
+      "explanation": "horse->rorse (replace h with r), rorse->rose (delete r), rose->ros (delete e)",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "word1": "intention", "word2": "execution" },
+      "expected": 5,
+      "explanation": "Five operations needed to transform 'intention' into 'execution'",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "word1": "", "word2": "a" },
+      "expected": 1,
+      "explanation": "Insert 'a' into empty string",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "word1": "a", "word2": "" },
+      "expected": 1,
+      "explanation": "Delete 'a' from word1",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "word1": "abc", "word2": "abc" },
+      "expected": 0,
+      "explanation": "Identical strings; zero operations needed",
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2. Allowed operations: insert a character, delete a character, replace a character.",
+  "examples": [
+    {
+      "input": "word1 = \"horse\", word2 = \"ros\"",
+      "output": "3",
+      "explanation": "horse -> rorse -> rose -> ros"
+    }
+  ],
+  "constraints": [
+    "0 <= word1.length, word2.length <= 500",
+    "word1 and word2 consist of lowercase English letters"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

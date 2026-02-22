@@ -1,13 +1,64 @@
 {
   "slug": "largest-subarray-with-zero-sum",
-  "functionName": "largestSubarrayWithZeroSum",
+  "functionName": "maxLen",
   "params": [
-    {
-      "name": "s",
-      "type": "string"
-    }
+    {"name": "arr", "type": "int[]"}
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"arr": [15,-2,2,-8,1,7,10,23]},
+      "expected": 5,
+      "explanation": "The subarray [-2,2,-8,1,7] from index 1 to 5 sums to 0 and has length 5. This is the largest such subarray.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"arr": [1,2,3]},
+      "expected": 0,
+      "explanation": "No subarray sums to 0 since all elements are positive.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"arr": [1,-1]},
+      "expected": 2,
+      "explanation": "The entire array [1,-1] sums to 0 and has length 2.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"arr": [0]},
+      "expected": 1,
+      "explanation": "A single 0 element is itself a subarray with sum 0, length 1.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"arr": [1,0,-1]},
+      "expected": 3,
+      "explanation": "The entire array [1,0,-1] sums to 0 and has length 3. Subarrays [0] (length 1) and [1,-1] (length 2) are shorter.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array arr of integers, find the length of the largest subarray with sum equal to 0. If no such subarray exists, return 0. Uses prefix sum with a hash map for O(n) solution.",
+  "examples": [
+    {
+      "input": "arr = [15,-2,2,-8,1,7,10,23]",
+      "output": "5",
+      "explanation": "Subarray [-2,2,-8,1,7] has sum 0 and length 5."
+    },
+    {
+      "input": "arr = [1,2,3]",
+      "output": "0"
+    }
+  ],
+  "constraints": [
+    "1 <= arr.length <= 10^5",
+    "-10^4 <= arr[i] <= 10^4"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

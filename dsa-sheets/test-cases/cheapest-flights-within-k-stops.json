@@ -1,17 +1,139 @@
 {
   "slug": "cheapest-flights-within-k-stops",
-  "functionName": "cheapestFlightsWithinKStops",
+  "functionName": "findCheapestPrice",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "n",
+      "type": "int"
+    },
+    {
+      "name": "flights",
+      "type": "int[][]"
+    },
+    {
+      "name": "src",
+      "type": "int"
+    },
+    {
+      "name": "dst",
+      "type": "int"
     },
     {
       "name": "k",
       "type": "int"
     }
   ],
-  "returnType": "int[]",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int",
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "n": 4,
+        "flights": [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]],
+        "src": 0,
+        "dst": 3,
+        "k": 1
+      },
+      "expected": 700,
+      "explanation": "With at most 1 stop: 0->1->3 costs 100+600=700. The path 0->1->2->3 requires 2 stops.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "n": 3,
+        "flights": [[0,1,100],[1,2,100],[0,2,500]],
+        "src": 0,
+        "dst": 2,
+        "k": 1
+      },
+      "expected": 200,
+      "explanation": "With 1 stop allowed: 0->1->2 costs 200, cheaper than 0->2 direct at 500.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "n": 3,
+        "flights": [[0,1,100],[1,2,100],[0,2,500]],
+        "src": 0,
+        "dst": 2,
+        "k": 0
+      },
+      "expected": 500,
+      "explanation": "With 0 stops (direct only): must take 0->2 costing 500.",
+      "tags": ["basic", "no-stops"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "n": 2,
+        "flights": [[0,1,100]],
+        "src": 0,
+        "dst": 1,
+        "k": 0
+      },
+      "expected": 100,
+      "explanation": "Direct flight from 0 to 1 with 0 stops costs 100.",
+      "tags": ["edge-case", "direct"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "n": 2,
+        "flights": [[0,1,100]],
+        "src": 0,
+        "dst": 1,
+        "k": 1
+      },
+      "expected": 100,
+      "explanation": "Direct flight from 0 to 1 costs 100; having extra stop allowance doesn't change cost.",
+      "tags": ["edge-case", "extra-stops-allowed"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Cheapest Flights Within K Stops** problem.\n\nThere are n cities and m flights. flights[i] = [from, to, price]. Given src, dst, and k, find the cheapest price from src to dst with at most k stops. Return -1 if no such route exists.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/cheapest-flights-within-k-stops/).",
+  "examples": [
+    {
+      "input": "n = 4, flights = [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]], src = 0, dst = 3, k = 1",
+      "output": "700",
+      "explanation": "0->1->3 costs 700 with 1 stop."
+    },
+    {
+      "input": "n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 1",
+      "output": "200",
+      "explanation": "0->1->2 costs 200."
+    },
+    {
+      "input": "n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 0",
+      "output": "500",
+      "explanation": "Only direct flight 0->2 at 500."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 100",
+    "0 <= flights.length <= (n * (n - 1) / 2)",
+    "flights[i].length == 3",
+    "0 <= from, to < n",
+    "from != to",
+    "1 <= price <= 10^4",
+    "0 <= k < n",
+    "There are no duplicate flights"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @param {number[][]} flights\n * @param {number} src\n * @param {number} dst\n * @param {number} k\n * @return {number}\n */\nfunction findCheapestPrice(n, flights, src, dst, k) {\n  // Write your solution here\n}",
+    "typescript": "function findCheapestPrice(n: number, flights: number[][], src: number, dst: number, k: number): number {\n  // Write your solution here\n}",
+    "python": "def find_cheapest_price(n: int, flights: list[list[int]], src: int, dst: int, k: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {\n    // Write your solution here\n}",
+    "go": "func findCheapestPrice(n int, flights [][]int, src int, dst int, k int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "findCheapestPrice",
+    "typescript": "findCheapestPrice",
+    "python": "find_cheapest_price",
+    "cpp": "findCheapestPrice",
+    "go": "FindCheapestPrice"
+  }
 }

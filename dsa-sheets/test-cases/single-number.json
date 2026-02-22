@@ -64,6 +64,21 @@
       "tags": [
         "negative-numbers"
       ]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [
+          0,
+          1,
+          0
+        ]
+      },
+      "expected": 1,
+      "explanation": "Zero appears twice, 1 is the single number",
+      "tags": [
+        "edge-case"
+      ]
     }
   ],
   "description": "Solve the **Single Number** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/single-number/).",
@@ -95,5 +110,6 @@
     "python": "single_number",
     "cpp": "singleNumber",
     "go": "SingleNumber"
-  }
+  },
+  "_status": "complete"
 }

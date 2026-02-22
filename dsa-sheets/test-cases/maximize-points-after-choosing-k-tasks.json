@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [3, 4, 2, 1] },
+      "expected": 7,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3, 4, 5] },
+      "expected": 9,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [5] },
+      "expected": 5,
+      "tags": ["basic", "single"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [10, 1, 1, 1, 1] },
+      "expected": 14,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [2, 2, 2, 2] },
+      "expected": 8,
+      "tags": ["medium", "all-equal"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array nums representing task point values, choose at most k tasks to maximize total points. The number of tasks k is sqrt(n) where n is the array length. Sort tasks and use a greedy or prefix sum approach. Return the maximum total points achievable.",
+  "examples": [
+    {
+      "input": "nums = [3, 4, 2, 1]",
+      "output": "7",
+      "explanation": "k = sqrt(4) = 2. Choose tasks with values 4 and 3. Total = 7."
+    },
+    {
+      "input": "nums = [1, 2, 3, 4, 5]",
+      "output": "9",
+      "explanation": "k = sqrt(5) ~ 2. Choose top 2 tasks: 5 + 4 = 9."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef maximizePointsAfterChoosingKTasks(nums: List[int]) -> int:\n    pass",
+    "javascript": "function maximizePointsAfterChoosingKTasks(nums) {\n\n}",
+    "typescript": "function maximizePointsAfterChoosingKTasks(nums: number[]): number {\n\n}",
+    "java": "class Solution {\n    public int maximizePointsAfterChoosingKTasks(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int maximizePointsAfterChoosingKTasks(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "maximizePointsAfterChoosingKTasks",
+    "javascript": "maximizePointsAfterChoosingKTasks",
+    "typescript": "maximizePointsAfterChoosingKTasks",
+    "java": "maximizePointsAfterChoosingKTasks",
+    "cpp": "maximizePointsAfterChoosingKTasks"
+  }
 }

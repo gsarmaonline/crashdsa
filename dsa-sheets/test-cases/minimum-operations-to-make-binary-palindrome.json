@@ -8,6 +8,67 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "n": 0 },
+      "expected": 0,
+      "tags": ["basic", "edge"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "n": 3 },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "n": 5 },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "n": 6 },
+      "expected": 1,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "n": 9 },
+      "expected": 0,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer n, convert it to its binary representation and count the minimum number of bit flip operations needed to make the binary string a palindrome. Each operation flips exactly one bit (0 to 1 or 1 to 0).",
+  "examples": [
+    {
+      "input": "n = 6",
+      "output": "1",
+      "explanation": "6 in binary is '110'. To make it a palindrome: '111' (flip last bit) or '010' (flip first bit). One operation needed."
+    },
+    {
+      "input": "n = 3",
+      "output": "0",
+      "explanation": "3 in binary is '11'. It is already a palindrome. 0 operations needed."
+    }
+  ],
+  "constraints": [
+    "0 <= n <= 10^9"
+  ],
+  "starterCode": {
+    "python": "def minimumOperationsToMakeBinaryPalindrome(n: int) -> int:\n    pass",
+    "javascript": "function minimumOperationsToMakeBinaryPalindrome(n) {\n\n}",
+    "typescript": "function minimumOperationsToMakeBinaryPalindrome(n: number): number {\n\n}",
+    "java": "class Solution {\n    public int minimumOperationsToMakeBinaryPalindrome(int n) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int minimumOperationsToMakeBinaryPalindrome(int n) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "minimumOperationsToMakeBinaryPalindrome",
+    "javascript": "minimumOperationsToMakeBinaryPalindrome",
+    "typescript": "minimumOperationsToMakeBinaryPalindrome",
+    "java": "minimumOperationsToMakeBinaryPalindrome",
+    "cpp": "minimumOperationsToMakeBinaryPalindrome"
+  }
 }

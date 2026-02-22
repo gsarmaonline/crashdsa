@@ -1,17 +1,24 @@
 {
   "slug": "find-median-from-data-stream",
   "functionName": "findMedianFromDataStream",
-  "params": [
+  "params": [],
+  "returnType": "void",
+  "isDesignProblem": true,
+  "testCases": [],
+  "_status": "complete",
+  "description": "Design a data structure that supports adding numbers from a data stream and finding the median of all elements so far.\n\n- `MedianFinder()` initializes the MedianFinder object.\n- `void addNum(int num)` adds the integer `num` from the data stream to the data structure.\n- `double findMedian()` returns the median of all elements so far. Answers within 10^-5 of the actual answer will be accepted.\n\nSee the full problem on [LeetCode 295](https://leetcode.com/problems/find-median-from-data-stream/).",
+  "examples": [
     {
-      "name": "nums",
-      "type": "int[]"
-    },
-    {
-      "name": "k",
-      "type": "int"
+      "input": "[\"MedianFinder\",\"addNum\",\"addNum\",\"findMedian\",\"addNum\",\"findMedian\"]\n[[],[1],[2],[],[3],[]]",
+      "output": "[null,null,null,1.5,null,2.0]",
+      "explanation": "addNum(1): stream=[1]. addNum(2): stream=[1,2]. findMedian()=1.5 (avg of 1 and 2). addNum(3): stream=[1,2,3]. findMedian()=2.0."
     }
   ],
-  "returnType": "int[]",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "-10^5 <= num <= 10^5",
+    "There will be at least one element in the data structure before calling findMedian",
+    "At most 5 * 10^4 calls will be made to addNum and findMedian"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

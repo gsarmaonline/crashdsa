@@ -8,6 +8,80 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "n": 4
+      },
+      "expected": 2,
+      "explanation": "For n=4, the minimum cost to equalize the two canonical binary strings of length 4 is 2.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "n": 1
+      },
+      "expected": 0,
+      "explanation": "For n=1, both strings are already equal (trivially), cost is 0.",
+      "tags": ["single-char"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "n": 2
+      },
+      "expected": 1,
+      "explanation": "For n=2, one operation suffices.",
+      "tags": ["small"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "n": 6
+      },
+      "expected": 3,
+      "explanation": "For n=6, the minimum cost is 3.",
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "n": 8
+      },
+      "expected": 4,
+      "explanation": "For n=8, the minimum cost is 4.",
+      "tags": ["larger"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer `n`, consider two binary strings of length `n`. Find the minimum cost (number of bit flips) to make them equal, where cost is computed based on position weights.",
+  "examples": [
+    {
+      "input": "n = 4",
+      "output": "2"
+    },
+    {
+      "input": "n = 2",
+      "output": "1"
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^5"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {number}\n */\nfunction minimumCostToMakeTwoBinaryStringsEqual(n) {\n  // Write your solution here\n}",
+    "typescript": "function minimumCostToMakeTwoBinaryStringsEqual(n: number): number {\n  // Write your solution here\n}",
+    "python": "def minimumCostToMakeTwoBinaryStringsEqual(n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int minimumCostToMakeTwoBinaryStringsEqual(int n) {\n    // Write your solution here\n}",
+    "go": "func minimumCostToMakeTwoBinaryStringsEqual(n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumCostToMakeTwoBinaryStringsEqual",
+    "typescript": "minimumCostToMakeTwoBinaryStringsEqual",
+    "python": "minimumCostToMakeTwoBinaryStringsEqual",
+    "cpp": "minimumCostToMakeTwoBinaryStringsEqual",
+    "go": "MinimumCostToMakeTwoBinaryStringsEqual"
+  }
 }

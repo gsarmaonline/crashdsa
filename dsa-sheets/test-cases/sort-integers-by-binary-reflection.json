@@ -8,6 +8,82 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "n": 2
+      },
+      "expected": 3,
+      "explanation": "For n=2, binary reflection (Gray code) sequence is [0,1,3,2]. The number of integers in this reflected sequence up to n=2 that satisfy the ordering property is 3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "n": 1
+      },
+      "expected": 1,
+      "explanation": "For n=1, only integer 1 in the binary reflected order.",
+      "tags": ["single"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "n": 4
+      },
+      "expected": 5,
+      "explanation": "For n=4, sorting by binary reflection gives a specific count of 5.",
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "n": 3
+      },
+      "expected": 4,
+      "explanation": "For n=3, the result is 4 in binary reflected ordering.",
+      "tags": ["small"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "n": 5
+      },
+      "expected": 6,
+      "explanation": "For n=5, sorting by binary reflection yields 6.",
+      "tags": ["larger"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer `n`, return the `n`-th integer in the binary-reflected Gray code sequence (0-indexed). In a Gray code sequence, consecutive integers differ by exactly one bit.",
+  "examples": [
+    {
+      "input": "n = 2",
+      "output": "3",
+      "explanation": "Gray code sequence: 0(00),1(01),3(11),2(10). The 2nd element (0-indexed) is 3."
+    },
+    {
+      "input": "n = 1",
+      "output": "1",
+      "explanation": "Gray code sequence: 0,1,3,2,... The 1st element is 1."
+    }
+  ],
+  "constraints": [
+    "0 <= n <= 30"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {number}\n */\nfunction sortIntegersByBinaryReflection(n) {\n  // Write your solution here\n}",
+    "typescript": "function sortIntegersByBinaryReflection(n: number): number {\n  // Write your solution here\n}",
+    "python": "def sortIntegersByBinaryReflection(n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int sortIntegersByBinaryReflection(int n) {\n    // Write your solution here\n}",
+    "go": "func sortIntegersByBinaryReflection(n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "sortIntegersByBinaryReflection",
+    "typescript": "sortIntegersByBinaryReflection",
+    "python": "sortIntegersByBinaryReflection",
+    "cpp": "sortIntegersByBinaryReflection",
+    "go": "SortIntegersByBinaryReflection"
+  }
 }

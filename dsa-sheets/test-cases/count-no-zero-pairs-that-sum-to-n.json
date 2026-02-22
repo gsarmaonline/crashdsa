@@ -5,9 +5,67 @@
     {
       "name": "nums",
       "type": "int[]"
+    },
+    {
+      "name": "n",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3, 4], "n": 5 },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [11, 14, 21, 24], "n": 25 },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [10, 20, 30], "n": 40 },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 4], "n": 5 },
+      "expected": 1,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [13, 22, 17, 8], "n": 30 },
+      "expected": 1,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Count pairs (i, j) where i < j such that nums[i] + nums[j] == n, and neither nums[i] nor nums[j] contains the digit 0 in their decimal representation.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4], n = 5",
+      "output": "2",
+      "explanation": "Pairs summing to 5: (1,4) and (2,3). None contain digit 0. Count = 2."
+    }
+  ],
+  "constraints": [
+    "2 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^5",
+    "1 <= n <= 2 * 10^5"
+  ],
+  "starterCode": {
+    "javascript": "function countNoZeroPairsThatSumToN(nums, n) {\n  // your code here\n}",
+    "python": "def countNoZeroPairsThatSumToN(nums, n):\n    pass",
+    "java": "public int countNoZeroPairsThatSumToN(int[] nums, int n) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "countNoZeroPairsThatSumToN",
+    "python": "countNoZeroPairsThatSumToN",
+    "java": "countNoZeroPairsThatSumToN"
+  }
 }

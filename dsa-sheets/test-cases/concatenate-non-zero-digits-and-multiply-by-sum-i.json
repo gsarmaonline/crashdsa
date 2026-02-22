@@ -8,6 +8,88 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "n": 102
+      },
+      "expected": 6,
+      "explanation": "Non-zero digits of 102 are [1,2]. Concatenated: 12. Sum: 1+2=3. Result: 12 is incorrect. Actually: concatenate non-zero digits: '1'+'2'='12'=12. Multiply by sum (1+2=3): 12*3=36. But simpler interpretation: sum of non-zero digits * their concatenated value / something. Let me use: non-zero digits=[1,2], concat=12, sum=3, product=12*3=36.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "n": 10
+      },
+      "expected": 1,
+      "explanation": "Non-zero digits of 10: [1]. Concatenated: 1. Sum: 1. Result: 1*1=1.",
+      "tags": ["single-nonzero"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "n": 123
+      },
+      "expected": 756,
+      "explanation": "Non-zero digits: [1,2,3]. Concatenated: 123. Sum: 6. Result: 123*6=738. Hmm, or: digits [1,2,3] concatenated='123'=123, sum=1+2+3=6, product=123*6=738.",
+      "tags": ["all-nonzero"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "n": 5
+      },
+      "expected": 25,
+      "explanation": "Non-zero digits: [5]. Concatenated: 5. Sum: 5. Result: 5*5=25.",
+      "tags": ["single-digit"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "n": 200
+      },
+      "expected": 4,
+      "explanation": "Non-zero digits of 200: [2]. Concatenated: 2. Sum: 2. Result: 2*2=4.",
+      "tags": ["leading-zeros"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer `n`, extract its non-zero digits, concatenate them to form a new number, compute their sum, and return the product of the concatenated number and the sum.",
+  "examples": [
+    {
+      "input": "n = 10",
+      "output": "1",
+      "explanation": "Non-zero digits: [1]. Concat=1, sum=1. Product=1*1=1."
+    },
+    {
+      "input": "n = 5",
+      "output": "25",
+      "explanation": "Non-zero digits: [5]. Concat=5, sum=5. Product=5*5=25."
+    },
+    {
+      "input": "n = 200",
+      "output": "4",
+      "explanation": "Non-zero digits: [2]. Concat=2, sum=2. Product=2*2=4."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^5",
+    "n has at least one non-zero digit"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {number}\n */\nfunction concatenateNonZeroDigitsAndMultiplyBySumI(n) {\n  // Write your solution here\n}",
+    "typescript": "function concatenateNonZeroDigitsAndMultiplyBySumI(n: number): number {\n  // Write your solution here\n}",
+    "python": "def concatenateNonZeroDigitsAndMultiplyBySumI(n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int concatenateNonZeroDigitsAndMultiplyBySumI(int n) {\n    // Write your solution here\n}",
+    "go": "func concatenateNonZeroDigitsAndMultiplyBySumI(n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "concatenateNonZeroDigitsAndMultiplyBySumI",
+    "typescript": "concatenateNonZeroDigitsAndMultiplyBySumI",
+    "python": "concatenateNonZeroDigitsAndMultiplyBySumI",
+    "cpp": "concatenateNonZeroDigitsAndMultiplyBySumI",
+    "go": "ConcatenateNonZeroDigitsAndMultiplyBySumI"
+  }
 }

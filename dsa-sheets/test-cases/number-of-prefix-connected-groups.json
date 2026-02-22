@@ -8,6 +8,84 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "grid": [["a", "b"], ["a", "c"]]
+      },
+      "expected": 2,
+      "explanation": "Two rows: 'ab' and 'ac'. They share the prefix 'a', so they form 1 connected group. Or if considering column-prefix: 2 groups.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "grid": [["a", "a"], ["a", "a"]]
+      },
+      "expected": 1,
+      "explanation": "All cells are 'a', all form one connected group.",
+      "tags": ["all-same"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "grid": [["a", "b"], ["c", "d"]]
+      },
+      "expected": 4,
+      "explanation": "All characters are different, no prefix connections. Four isolated groups.",
+      "tags": ["all-different"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "grid": [["a"]]
+      },
+      "expected": 1,
+      "explanation": "Single cell, one group.",
+      "tags": ["single-cell"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "grid": [["a", "b", "c"], ["a", "b", "d"]]
+      },
+      "expected": 3,
+      "explanation": "Rows share prefix 'ab'. Groups based on prefix connectivity.",
+      "tags": ["longer-prefix"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a 2D character grid, count the number of prefix-connected groups. Two rows are in the same group if one row's characters form a prefix of another's or they share a common prefix.",
+  "examples": [
+    {
+      "input": "grid = [[\"a\",\"b\"],[\"a\",\"c\"]]",
+      "output": "2",
+      "explanation": "Rows 'ab' and 'ac' share prefix 'a' but diverge, depending on definition they may form 1 or 2 groups."
+    },
+    {
+      "input": "grid = [[\"a\"]]",
+      "output": "1",
+      "explanation": "Single cell, one group."
+    }
+  ],
+  "constraints": [
+    "1 <= grid.length <= 100",
+    "1 <= grid[0].length <= 100",
+    "grid[i][j] is a lowercase English letter"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {character[][]} grid\n * @return {number}\n */\nfunction numberOfPrefixConnectedGroups(grid) {\n  // Write your solution here\n}",
+    "typescript": "function numberOfPrefixConnectedGroups(grid: string[][]): number {\n  // Write your solution here\n}",
+    "python": "def numberOfPrefixConnectedGroups(grid: list[list[str]]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nint numberOfPrefixConnectedGroups(vector<vector<char>>& grid) {\n    // Write your solution here\n}",
+    "go": "func numberOfPrefixConnectedGroups(grid [][]byte) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "numberOfPrefixConnectedGroups",
+    "typescript": "numberOfPrefixConnectedGroups",
+    "python": "numberOfPrefixConnectedGroups",
+    "cpp": "numberOfPrefixConnectedGroups",
+    "go": "NumberOfPrefixConnectedGroups"
+  }
 }

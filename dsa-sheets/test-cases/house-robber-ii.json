@@ -1,6 +1,6 @@
 {
   "slug": "house-robber-ii",
-  "functionName": "houseRobberIi",
+  "functionName": "rob",
   "params": [
     {
       "name": "nums",
@@ -8,6 +8,85 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "nums": [2,3,2]
+      },
+      "expected": 3,
+      "explanation": "Cannot rob both house 0 and house 2 (they are adjacent in the circle). Rob only house 1 for max 3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "nums": [1,2,3,1]
+      },
+      "expected": 4,
+      "explanation": "Rob house 0 and house 2: 1+3=4. Houses 0 and 3 are adjacent in the circle, so can't rob both.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "nums": [1,2,3]
+      },
+      "expected": 3,
+      "explanation": "Rob house 2 for 3, or rob houses 0: 1. Max is 3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [0]
+      },
+      "expected": 0,
+      "explanation": "Single house with value 0.",
+      "tags": ["edge-case", "single-house"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [200,3,140,20,10]
+      },
+      "expected": 340,
+      "explanation": "Rob houses 0 and 2: 200+140=340. Houses 0 and 4 are adjacent in the circle, so can't rob both 0 and 4.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **House Robber II** problem.\n\nAll houses are arranged in a circle. You cannot rob two adjacent houses (including the first and last). Find the maximum amount you can rob.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/house-robber-ii/).",
+  "examples": [
+    {
+      "input": "nums = [2,3,2]",
+      "output": "3",
+      "explanation": "Cannot rob house 0 and house 2 together. Best is house 1."
+    },
+    {
+      "input": "nums = [1,2,3,1]",
+      "output": "4",
+      "explanation": "Rob house 0 (1) and house 2 (3)."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "0 <= nums[i] <= 1000"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number}\n */\nfunction rob(nums) {\n  // Write your solution here\n}",
+    "typescript": "function rob(nums: number[]): number {\n  // Write your solution here\n}",
+    "python": "def rob(nums: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint rob(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func rob(nums []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "rob",
+    "typescript": "rob",
+    "python": "rob",
+    "cpp": "rob",
+    "go": "Rob"
+  }
 }

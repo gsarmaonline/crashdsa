@@ -3,11 +3,69 @@
   "functionName": "gcdOfOddAndEvenSums",
   "params": [
     {
-      "name": "n",
-      "type": "int"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3, 4] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 1, 1, 1] },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [6, 4] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [5] },
+      "expected": 5,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [2, 6, 4, 8] },
+      "expected": 2,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of integers, compute the GCD of the sum of elements at even indices (0-based) and the sum of elements at odd indices. If one sum is 0, GCD(a, 0) = a.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "2",
+      "explanation": "Even-index elements (idx 0,2): 1+3=4. Odd-index elements (idx 1,3): 2+4=6. GCD(4,6)=2."
+    },
+    {
+      "input": "nums = [5]",
+      "output": "5",
+      "explanation": "Even-index sum = 5, odd-index sum = 0. GCD(5,0) = 5."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "function gcdOfOddAndEvenSums(nums) {\n  // your code here\n}",
+    "python": "def gcdOfOddAndEvenSums(nums):\n    pass",
+    "java": "public int gcdOfOddAndEvenSums(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "gcdOfOddAndEvenSums",
+    "python": "gcdOfOddAndEvenSums",
+    "java": "gcdOfOddAndEvenSums"
+  }
 }

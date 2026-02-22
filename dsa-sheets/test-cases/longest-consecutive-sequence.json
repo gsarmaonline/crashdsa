@@ -1,13 +1,80 @@
 {
   "slug": "longest-consecutive-sequence",
-  "functionName": "longestConsecutiveSequence",
+  "functionName": "longestConsecutive",
   "params": [
     {
-      "name": "s",
-      "type": "string"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.\n\nYou must write an algorithm that runs in O(n) time.",
+  "examples": [
+    {
+      "input": "nums = [100,4,200,1,3,2]",
+      "output": "4",
+      "explanation": "The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4."
+    },
+    {
+      "input": "nums = [0,3,7,2,5,8,4,6,0,1]",
+      "output": "9",
+      "explanation": "The longest consecutive sequence is [0,1,2,3,4,5,6,7,8], with length 9."
+    }
+  ],
+  "constraints": [
+    "0 <= nums.length <= 10^5",
+    "-10^9 <= nums[i] <= 10^9"
+  ],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [100, 4, 200, 1, 3, 2] },
+      "expected": 4,
+      "explanation": "Consecutive sequence [1,2,3,4] has length 4.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [0, 3, 7, 2, 5, 8, 4, 6, 0, 1] },
+      "expected": 9,
+      "explanation": "Consecutive sequence [0,1,2,3,4,5,6,7,8] has length 9.",
+      "tags": ["basic", "duplicates"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [] },
+      "expected": 0,
+      "explanation": "Empty array has no consecutive sequence.",
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1] },
+      "expected": 1,
+      "explanation": "Single element array has a consecutive sequence of length 1.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [9, 1, 4, 7, 3, -1, 0, 5, 8, -2, 6] },
+      "expected": 7,
+      "explanation": "Consecutive sequence [-2,-1,0,1,...] — wait: -2,-1,0,1 is 4; but 3,4,5,6,7,8,9 is 7. Longest is [3,4,5,6,7,8,9] with length 7.",
+      "tags": ["basic", "negative-numbers"]
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number}\n */\nfunction longestConsecutive(nums) {\n  // Write your solution here\n}",
+    "typescript": "function longestConsecutive(nums: number[]): number {\n  // Write your solution here\n}",
+    "python": "def longest_consecutive(nums: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int longestConsecutive(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func longestConsecutive(nums []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "longestConsecutive",
+    "typescript": "longestConsecutive",
+    "python": "longest_consecutive",
+    "cpp": "longestConsecutive",
+    "go": "LongestConsecutive"
+  }
 }

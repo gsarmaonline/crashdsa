@@ -1,17 +1,101 @@
 {
   "slug": "search-a-2d-matrix",
-  "functionName": "searchA2dMatrix",
+  "functionName": "searchMatrix",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "matrix",
+      "type": "int[][]"
     },
     {
       "name": "target",
       "type": "int"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "_status": "complete",
+  "description": "You are given an m x n integer matrix `matrix` with the following two properties:\n\n- Each row is sorted in non-decreasing order.\n- The first integer of each row is greater than the last integer of the previous row.\n\nGiven an integer `target`, return `true` if `target` is in `matrix`, or `false` otherwise.\n\nYou must write a solution in O(log(m * n)) time complexity.",
+  "examples": [
+    {
+      "input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3",
+      "output": "true",
+      "explanation": "3 is found at matrix[0][1]."
+    },
+    {
+      "input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13",
+      "output": "false",
+      "explanation": "13 is not present in the matrix."
+    }
+  ],
+  "constraints": [
+    "m == matrix.length",
+    "n == matrix[i].length",
+    "1 <= m, n <= 100",
+    "-10^4 <= matrix[i][j], target <= 10^4"
+  ],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "matrix": [[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]],
+        "target": 3
+      },
+      "expected": true,
+      "explanation": "3 is at position matrix[0][1].",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "matrix": [[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]],
+        "target": 13
+      },
+      "expected": false,
+      "explanation": "13 falls between row 1 (ends at 20) and row 2 (starts at 23) — not present.",
+      "tags": ["basic", "no-solution"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "matrix": [[1]],
+        "target": 1
+      },
+      "expected": true,
+      "explanation": "1x1 matrix with only element 1 — target found.",
+      "tags": ["single-element", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "matrix": [[1]],
+        "target": 2
+      },
+      "expected": false,
+      "explanation": "1x1 matrix with only element 1 — target 2 not found.",
+      "tags": ["single-element", "edge-case", "no-solution"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "matrix": [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+        "target": 5
+      },
+      "expected": true,
+      "explanation": "5 is at position matrix[1][1] in the 3x3 matrix.",
+      "tags": ["basic"]
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[][]} matrix\n * @param {number} target\n * @return {boolean}\n */\nfunction searchMatrix(matrix, target) {\n  // Write your solution here\n}",
+    "typescript": "function searchMatrix(matrix: number[][], target: number): boolean {\n  // Write your solution here\n}",
+    "python": "def search_matrix(matrix: list[list[int]], target: int) -> bool:\n    # Write your solution here\n    pass",
+    "cpp": "bool searchMatrix(vector<vector<int>>& matrix, int target) {\n    // Write your solution here\n}",
+    "go": "func searchMatrix(matrix [][]int, target int) bool {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "searchMatrix",
+    "typescript": "searchMatrix",
+    "python": "search_matrix",
+    "cpp": "searchMatrix",
+    "go": "SearchMatrix"
+  }
 }

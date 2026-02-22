@@ -95,5 +95,6 @@
     "python": "hamming_weight",
     "cpp": "hammingWeight",
     "go": "HammingWeight"
-  }
+  },
+  "_status": "complete"
 }

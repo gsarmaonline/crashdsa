@@ -107,6 +107,33 @@
       "tags": [
         "basic"
       ]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [
+          -1,
+          0
+        ]
+      },
+      "expected": [
+        [],
+        [
+          -1
+        ],
+        [
+          0
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "explanation": "Subsets with negative numbers and zero",
+      "tags": [
+        "negative-numbers",
+        "edge-case"
+      ]
     }
   ],
   "description": "Solve the **Subsets** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/subsets/).",
@@ -138,5 +165,6 @@
     "python": "subsets",
     "cpp": "subsets",
     "go": "Subsets"
-  }
+  },
+  "_status": "complete"
 }

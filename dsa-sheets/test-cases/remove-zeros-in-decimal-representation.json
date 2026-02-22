@@ -7,7 +7,60 @@
       "type": "int[]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int[]",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [102, 203, 304] },
+      "expected": [12, 23, 34],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [100, 200] },
+      "expected": [1, 2],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": [1, 2, 3],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1000] },
+      "expected": [1],
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1020, 3040] },
+      "expected": [12, 34],
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of integers, remove all zero digits from each number's decimal representation and return the resulting array of integers.",
+  "examples": [
+    {
+      "input": "nums = [102, 203, 304]",
+      "output": "[12, 23, 34]",
+      "explanation": "102 → remove 0 → 12, 203 → 23, 304 → 34."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^4",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "function removeZerosInDecimalRepresentation(nums) {\n  // your code here\n}",
+    "python": "def removeZerosInDecimalRepresentation(nums):\n    pass",
+    "java": "public int[] removeZerosInDecimalRepresentation(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "removeZerosInDecimalRepresentation",
+    "python": "removeZerosInDecimalRepresentation",
+    "java": "removeZerosInDecimalRepresentation"
+  }
 }

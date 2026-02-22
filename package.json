@@ -18,6 +18,7 @@
     "dsa-sheets:export": "bun run scripts/dsa-sheets/export-csv.ts",
     "dsa-sheets:update": "bun run scripts/dsa-sheets/update-all.ts",
     "dsa-sheets:test-cases:generate": "bun run scripts/dsa-sheets/generate-test-cases.ts",
+    "dsa-sheets:test-cases:fill": "bun run scripts/dsa-sheets/fill-test-cases.ts",
     "postinstall": "bunx prisma generate",
     "db:generate": "bunx prisma generate",
     "db:migrate": "bunx prisma migrate dev",
@@ -38,6 +39,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
     "@hono/swagger-ui": "^0.5.3",
     "@prisma/adapter-pg": "^7.4.0",
     "@prisma/client": "^7.4.0",

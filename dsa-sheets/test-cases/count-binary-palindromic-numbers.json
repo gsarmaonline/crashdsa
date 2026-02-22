@@ -8,6 +8,58 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "n": 5 },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "n": 10 },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "n": 1 },
+      "expected": 1,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "n": 7 },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "n": 20 },
+      "expected": 5,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer n, count how many integers from 1 to n have a palindromic binary representation (the binary string reads the same forwards and backwards).",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "3",
+      "explanation": "1 → binary 1 (palindrome), 3 → 11 (palindrome), 5 → 101 (palindrome). Count = 3."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^7"
+  ],
+  "starterCode": {
+    "javascript": "function countBinaryPalindromicNumbers(n) {\n  // your code here\n}",
+    "python": "def countBinaryPalindromicNumbers(n):\n    pass",
+    "java": "public int countBinaryPalindromicNumbers(int n) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "countBinaryPalindromicNumbers",
+    "python": "countBinaryPalindromicNumbers",
+    "java": "countBinaryPalindromicNumbers"
+  }
 }

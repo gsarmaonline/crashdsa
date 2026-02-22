@@ -9,5 +9,19 @@
   ],
   "returnType": "int",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "SQL/database problem: Find books with polarized opinions — books that have both very high ratings (>= 4.5) and very low ratings (<= 2.0) from different users. This is a SQL aggregation problem.",
+  "examples": [],
+  "constraints": [
+    "Ratings table with book_id, user_id, rating (1.0-5.0)",
+    "A polarized book has at least one rating >= 4.5 and at least one rating <= 2.0",
+    "Return book IDs sorted ascending"
+  ],
+  "starterCode": {
+    "sql": "SELECT DISTINCT book_id\nFROM Ratings\nWHERE book_id IN (\n  SELECT book_id FROM Ratings WHERE rating >= 4.5\n)\nAND book_id IN (\n  SELECT book_id FROM Ratings WHERE rating <= 2.0\n)\nORDER BY book_id;"
+  },
+  "functionNameMap": {
+    "sql": "findBooksWithPolarizedOpinions"
+  }
 }

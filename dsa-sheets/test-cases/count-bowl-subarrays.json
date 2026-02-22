@@ -3,11 +3,64 @@
   "functionName": "countBowlSubarrays",
   "params": [
     {
-      "name": "s",
-      "type": "string"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [3, 2, 1, 2, 3] },
+      "expected": 5,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [3, 1, 3] },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1] },
+      "expected": 0,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [5, 3, 1, 2, 4, 6] },
+      "expected": 3,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Count the number of bowl-shaped subarrays: subarrays that first strictly decrease then strictly increase (forming a bowl or valley shape, with at least 3 elements).",
+  "examples": [
+    {
+      "input": "nums = [3,2,1,2,3]",
+      "output": "5",
+      "explanation": "Bowl-shaped subarrays include: [3,2,1,2],[2,1,2],[3,2,1,2,3],[2,1,2,3],[3,1,3]... Count all such valleys."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "function countBowlSubarrays(nums) {\n  // your code here\n}",
+    "python": "def countBowlSubarrays(nums):\n    pass",
+    "java": "public int countBowlSubarrays(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "countBowlSubarrays",
+    "python": "countBowlSubarrays",
+    "java": "countBowlSubarrays"
+  }
 }

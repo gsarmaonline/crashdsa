@@ -1,15 +1,14 @@
 {
   "slug": "valid-palindrome",
-  "functionName": "validPalindrome",
+  "functionName": "isPalindrome",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "s",
+      "type": "string"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold",
+  "returnType": "boolean",
+  "_status": "complete",
   "description": "A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.\n\nGiven a string `s`, return `true` if it is a palindrome, or `false` otherwise.",
   "examples": [
     {
@@ -31,6 +30,43 @@
   "constraints": [
     "1 <= s.length <= 2 * 10^5",
     "s consists only of printable ASCII characters."
+  ],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "A man, a plan, a canal: Panama" },
+      "expected": true,
+      "explanation": "Cleaned: 'amanaplanacanalpanama' — reads the same forwards and backwards.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "race a car" },
+      "expected": false,
+      "explanation": "Cleaned: 'raceacar' — 'r' != 'r'... reversed is 'racaer', not equal.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": " " },
+      "expected": true,
+      "explanation": "Only a space — after stripping non-alphanumeric chars the string is empty, which is a palindrome.",
+      "tags": ["edge-case", "empty-input"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "0P" },
+      "expected": false,
+      "explanation": "Cleaned: '0p' — '0' != 'p', not a palindrome.",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "Was it a car or a cat I saw?" },
+      "expected": true,
+      "explanation": "Cleaned: 'wasitacaroracatisaw' — reads the same forwards and backwards.",
+      "tags": ["basic"]
+    }
   ],
   "starterCode": {
     "javascript": "/**\n * @param {string} s\n * @return {boolean}\n */\nfunction isPalindrome(s) {\n  // Write your solution here\n}",

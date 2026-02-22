@@ -8,6 +8,81 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "n": 7
+      },
+      "expected": 6,
+      "explanation": "For n=7 (binary 111), after increment operations on pairs, maximum AND achievable is 6 (110).",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "n": 1
+      },
+      "expected": 0,
+      "explanation": "For n=1, only one element, no AND pair possible, result is 0.",
+      "tags": ["single"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "n": 4
+      },
+      "expected": 4,
+      "explanation": "For n=4 (100), the maximum AND after increment is 4.",
+      "tags": ["power-of-two"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "n": 15
+      },
+      "expected": 14,
+      "explanation": "For n=15 (1111), maximum AND is 14 (1110).",
+      "tags": ["all-ones"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "n": 8
+      },
+      "expected": 8,
+      "explanation": "For n=8 (1000), maximum AND is 8.",
+      "tags": ["power-of-two"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a positive integer `n`, you can increment any element of the array [1, 2, ..., n] any number of times. Find the maximum bitwise AND of any two elements after all operations.",
+  "examples": [
+    {
+      "input": "n = 7",
+      "output": "6",
+      "explanation": "Increment 6 to 7: 7 AND 7 = 7? Or increment to make two consecutive even numbers. Max AND = 6."
+    },
+    {
+      "input": "n = 4",
+      "output": "4"
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {number}\n */\nfunction maximumBitwiseAndAfterIncrementOperations(n) {\n  // Write your solution here\n}",
+    "typescript": "function maximumBitwiseAndAfterIncrementOperations(n: number): number {\n  // Write your solution here\n}",
+    "python": "def maximumBitwiseAndAfterIncrementOperations(n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int maximumBitwiseAndAfterIncrementOperations(int n) {\n    // Write your solution here\n}",
+    "go": "func maximumBitwiseAndAfterIncrementOperations(n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maximumBitwiseAndAfterIncrementOperations",
+    "typescript": "maximumBitwiseAndAfterIncrementOperations",
+    "python": "maximumBitwiseAndAfterIncrementOperations",
+    "cpp": "maximumBitwiseAndAfterIncrementOperations",
+    "go": "MaximumBitwiseAndAfterIncrementOperations"
+  }
 }

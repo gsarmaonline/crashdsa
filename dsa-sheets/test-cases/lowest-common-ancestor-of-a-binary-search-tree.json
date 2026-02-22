@@ -5,9 +5,80 @@
     {
       "name": "root",
       "type": "TreeNode"
+    },
+    {
+      "name": "p",
+      "type": "int"
+    },
+    {
+      "name": "q",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "root": [6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], "p": 2, "q": 8 },
+      "expected": 6,
+      "explanation": "2 is in the left subtree of 6, 8 is in the right subtree; LCA is the root 6",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "root": [6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], "p": 2, "q": 4 },
+      "expected": 2,
+      "explanation": "4 is in the right subtree of 2; so 2 is the LCA of 2 and 4",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "root": [2, 1], "p": 2, "q": 1 },
+      "expected": 2,
+      "explanation": "1 is a descendant of 2; LCA is 2",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "root": [6, 2, 8], "p": 2, "q": 8 },
+      "expected": 6,
+      "explanation": "2 in left subtree, 8 in right subtree; LCA is root 6",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "root": [6, 2, 8, 0, 4, 7, 9], "p": 0, "q": 4 },
+      "expected": 2,
+      "explanation": "0 is in left subtree of 2, 4 is in right subtree of 2; LCA is 2",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST. The LCA is defined as the lowest node in the tree that has both p and q as descendants (a node is allowed to be a descendant of itself). Return the value of the LCA node.",
+  "examples": [
+    {
+      "input": "root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8",
+      "output": "6",
+      "explanation": "The LCA of nodes 2 and 8 is 6, since 6 is the root and both are in different subtrees."
+    },
+    {
+      "input": "root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4",
+      "output": "2",
+      "explanation": "The LCA of nodes 2 and 4 is 2, since 4 is a descendant of 2."
+    },
+    {
+      "input": "root = [2,1], p = 2, q = 1",
+      "output": "2",
+      "explanation": "The LCA of nodes 2 and 1 is 2."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in the tree is in the range [2, 10^5]",
+    "-10^9 <= Node.val <= 10^9",
+    "All Node.val are unique",
+    "p != q",
+    "p and q will exist in the BST"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

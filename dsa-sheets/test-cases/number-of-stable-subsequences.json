@@ -3,11 +3,65 @@
   "functionName": "numberOfStableSubsequences",
   "params": [
     {
-      "name": "grid",
-      "type": "int[][]"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 7,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 1] },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [2, 1, 3] },
+      "expected": 7,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1] },
+      "expected": 1,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [3, 3, 3] },
+      "expected": 7,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Count the number of stable subsequences of the array. A stable subsequence is one where no element is strictly greater than its previous element in the subsequence (non-increasing).",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "7",
+      "explanation": "All 2^3-1=7 non-empty subsequences are counted here. Stable subsequences: all non-empty non-increasing subsequences."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 20",
+    "1 <= nums[i] <= 10^9",
+    "Answer modulo 10^9+7"
+  ],
+  "starterCode": {
+    "javascript": "function numberOfStableSubsequences(nums) {\n  // your code here\n}",
+    "python": "def numberOfStableSubsequences(nums):\n    pass",
+    "java": "public int numberOfStableSubsequences(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "numberOfStableSubsequences",
+    "python": "numberOfStableSubsequences",
+    "java": "numberOfStableSubsequences"
+  }
 }

@@ -9,5 +9,19 @@
   ],
   "returnType": "int",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "SQL/database problem: Find zombie sessions — sessions that are still active but have had no recent activity. This is a SQL query problem that identifies stale/zombie sessions from session logs.",
+  "examples": [],
+  "constraints": [
+    "Sessions table with session_id, user_id, start_time, last_activity_time",
+    "A zombie session is one where last_activity_time is more than N minutes ago but session is still marked active",
+    "Return session IDs sorted ascending"
+  ],
+  "starterCode": {
+    "sql": "SELECT session_id\nFROM Sessions\nWHERE is_active = 1\n  AND last_activity_time < NOW() - INTERVAL N MINUTE\nORDER BY session_id;"
+  },
+  "functionNameMap": {
+    "sql": "findZombieSessions"
+  }
 }

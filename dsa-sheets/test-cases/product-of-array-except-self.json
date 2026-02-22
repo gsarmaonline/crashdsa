@@ -82,7 +82,26 @@
         2
       ],
       "tags": [
-        "single-element"
+        "minimum-input"
+      ]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [
+          -2,
+          3,
+          -4
+        ]
+      },
+      "expected": [
+        -12,
+        8,
+        -6
+      ],
+      "explanation": "product(-2,3,-4)=24; index0: 3*-4=-12; index1: -2*-4=8; index2: -2*3=-6",
+      "tags": [
+        "negative-numbers"
       ]
     }
   ],
@@ -111,5 +130,6 @@
     "python": "product_except_self",
     "cpp": "productExceptSelf",
     "go": "ProductExceptSelf"
-  }
+  },
+  "_status": "complete"
 }

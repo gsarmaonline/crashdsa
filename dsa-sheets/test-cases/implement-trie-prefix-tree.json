@@ -1,13 +1,24 @@
 {
   "slug": "implement-trie-prefix-tree",
   "functionName": "implementTriePrefixTree",
-  "params": [
+  "params": [],
+  "returnType": "void",
+  "isDesignProblem": true,
+  "testCases": [],
+  "_status": "complete",
+  "description": "Implement a Trie (prefix tree) data structure with insert, search, and startsWith methods.\n\n- `Trie()` initializes the trie object.\n- `void insert(String word)` inserts the string `word` into the trie.\n- `boolean search(String word)` returns `true` if the string `word` is in the trie (i.e., was inserted before), and `false` otherwise.\n- `boolean startsWith(String prefix)` returns `true` if there is a previously inserted string that has the prefix `prefix`, and `false` otherwise.\n\nSee the full problem on [LeetCode 208](https://leetcode.com/problems/implement-trie-prefix-tree/).",
+  "examples": [
     {
-      "name": "root",
-      "type": "TreeNode"
+      "input": "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]",
+      "output": "[null,null,true,false,true,null,true]",
+      "explanation": "After inserting 'apple', search('apple')=true, search('app')=false (not inserted), startsWith('app')=true. After inserting 'app', search('app')=true."
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "1 <= word.length, prefix.length <= 2000",
+    "word and prefix consist only of lowercase English letters",
+    "At most 3 * 10^4 calls in total will be made to insert, search, and startsWith"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

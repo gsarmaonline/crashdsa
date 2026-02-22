@@ -9,5 +9,23 @@
   ],
   "returnType": "int",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "Given a target string, find the lexicographically smallest palindromic permutation of the same characters that is strictly greater than the target. This is a complex combinatorial problem.",
+  "examples": [],
+  "constraints": [
+    "1 <= target.length <= 10^5",
+    "target consists of lowercase English letters",
+    "A valid palindromic permutation must exist"
+  ],
+  "starterCode": {
+    "javascript": "function lexicographicallySmallestPalindromicPermutationGreaterThanTarget(target) {\n  // your code here\n}",
+    "python": "def lexicographicallySmallestPalindromicPermutationGreaterThanTarget(target):\n    pass",
+    "java": "public String lexicographicallySmallestPalindromicPermutationGreaterThanTarget(String target) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "lexicographicallySmallestPalindromicPermutationGreaterThanTarget",
+    "python": "lexicographicallySmallestPalindromicPermutationGreaterThanTarget",
+    "java": "lexicographicallySmallestPalindromicPermutationGreaterThanTarget"
+  }
 }

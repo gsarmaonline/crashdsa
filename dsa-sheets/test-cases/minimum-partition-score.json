@@ -8,6 +8,67 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "n": 1 },
+      "expected": 0,
+      "tags": ["basic", "edge"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "n": 2 },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "n": 4 },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "n": 6 },
+      "expected": 3,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "n": 10 },
+      "expected": 5,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given n, find the minimum score when partitioning numbers from 1 to n into two groups. The score is defined as the maximum element in the smaller-sum partition. Optimally split numbers to minimize this score.",
+  "examples": [
+    {
+      "input": "n = 4",
+      "output": "2",
+      "explanation": "Partition [1,4] and [2,3]; the minimum achievable score is 2."
+    },
+    {
+      "input": "n = 2",
+      "output": "1",
+      "explanation": "Partition [2] and [1]; score is 1."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^5"
+  ],
+  "starterCode": {
+    "python": "def minimumPartitionScore(n: int) -> int:\n    pass",
+    "javascript": "function minimumPartitionScore(n) {\n\n}",
+    "typescript": "function minimumPartitionScore(n: number): number {\n\n}",
+    "java": "class Solution {\n    public int minimumPartitionScore(int n) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int minimumPartitionScore(int n) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "minimumPartitionScore",
+    "javascript": "minimumPartitionScore",
+    "typescript": "minimumPartitionScore",
+    "java": "minimumPartitionScore",
+    "cpp": "minimumPartitionScore"
+  }
 }

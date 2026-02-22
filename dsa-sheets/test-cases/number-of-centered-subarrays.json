@@ -8,6 +8,88 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "s": "321"
+      },
+      "expected": 1,
+      "explanation": "String '321' encodes array [3,2,1]. Centered subarrays (odd-length, center > all others): [3,2,1] has center 2, but 2<3 so not centered. Single elements are trivially centered: [3],[2],[1]=3, plus any 3-length: center must be max. None qualify in this array for length>1. Or check: length-1 subarrays always centered = 3, but problem may require length>=3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "s": "132"
+      },
+      "expected": 1,
+      "explanation": "Array [1,3,2]. Subarray [1,3,2]: center=3 > 1 and 3 > 2. Yes! 1 centered subarray of length 3.",
+      "tags": ["one-centered"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "s": "1"
+      },
+      "expected": 1,
+      "explanation": "Single character, 1 trivially centered subarray.",
+      "tags": ["single-char"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "s": "12321"
+      },
+      "expected": 3,
+      "explanation": "Array [1,2,3,2,1]. Centered subarrays: [1,2,1](center=2>1), [2,3,2](center=3>2), [1,2,3,2,1](center=3>all). Count=3.",
+      "tags": ["multiple-centered"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "s": "111"
+      },
+      "expected": 0,
+      "explanation": "Array [1,1,1]. No element is strictly greater than its neighbors. 0 centered subarrays of length >= 3.",
+      "tags": ["all-same"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string `s` where each character is a digit representing an array element, count the number of **centered subarrays**. A subarray of odd length is centered if its middle element is strictly greater than all other elements in the subarray.",
+  "examples": [
+    {
+      "input": "s = \"132\"",
+      "output": "1",
+      "explanation": "Array [1,3,2]. The subarray [1,3,2] has center 3 > 1 and 3 > 2. Count=1."
+    },
+    {
+      "input": "s = \"12321\"",
+      "output": "3",
+      "explanation": "Three centered subarrays: [1,2,1], [2,3,2], [1,2,3,2,1]."
+    },
+    {
+      "input": "s = \"111\"",
+      "output": "0",
+      "explanation": "No element is strictly greater than its neighbors."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of digit characters '1'-'9'"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nfunction numberOfCenteredSubarrays(s) {\n  // Write your solution here\n}",
+    "typescript": "function numberOfCenteredSubarrays(s: string): number {\n  // Write your solution here\n}",
+    "python": "def numberOfCenteredSubarrays(s: str) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <string>\nusing namespace std;\nint numberOfCenteredSubarrays(string s) {\n    // Write your solution here\n}",
+    "go": "func numberOfCenteredSubarrays(s string) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "numberOfCenteredSubarrays",
+    "typescript": "numberOfCenteredSubarrays",
+    "python": "numberOfCenteredSubarrays",
+    "cpp": "numberOfCenteredSubarrays",
+    "go": "NumberOfCenteredSubarrays"
+  }
 }

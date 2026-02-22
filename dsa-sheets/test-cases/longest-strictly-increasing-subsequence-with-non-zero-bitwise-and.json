@@ -3,11 +3,64 @@
   "functionName": "longestStrictlyIncreasingSubsequenceWithNonZeroBitwiseAnd",
   "params": [
     {
-      "name": "grid",
-      "type": "int[][]"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [3, 7, 15] },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 4, 8] },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [5, 7, 6] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1] },
+      "expected": 1,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [3, 5, 7, 11] },
+      "expected": 3,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Find the length of the longest strictly increasing subsequence of nums such that the bitwise AND of all selected elements is non-zero.",
+  "examples": [
+    {
+      "input": "nums = [3,7,15]",
+      "output": "3",
+      "explanation": "3&7&15 = 3 (non-zero), and [3,7,15] is strictly increasing. Length = 3."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^4",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "function longestStrictlyIncreasingSubsequenceWithNonZeroBitwiseAnd(nums) {\n  // your code here\n}",
+    "python": "def longestStrictlyIncreasingSubsequenceWithNonZeroBitwiseAnd(nums):\n    pass",
+    "java": "public int longestStrictlyIncreasingSubsequenceWithNonZeroBitwiseAnd(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "longestStrictlyIncreasingSubsequenceWithNonZeroBitwiseAnd",
+    "python": "longestStrictlyIncreasingSubsequenceWithNonZeroBitwiseAnd",
+    "java": "longestStrictlyIncreasingSubsequenceWithNonZeroBitwiseAnd"
+  }
 }

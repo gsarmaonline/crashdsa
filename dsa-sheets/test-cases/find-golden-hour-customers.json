@@ -8,6 +8,35 @@
     }
   ],
   "returnType": "int",
+  "isDesignProblem": true,
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "A SQL-style analytical problem: Given transaction logs with timestamps, identify 'golden hour' customers who make purchases during a business's peak sales hours (typically the hour with the most transactions). Return the customer IDs who transacted during the identified golden hour window, sorted by customer ID.",
+  "examples": [
+    {
+      "input": "Transactions table: transaction_id, customer_id, amount, transaction_time",
+      "output": "List of customer_ids who transacted during the hour with highest total transaction volume",
+      "explanation": "Find the hour H such that total transactions in [H, H+1) is maximum, then return all distinct customer_ids who transacted in that window."
+    }
+  ],
+  "constraints": [
+    "This is a SQL/analytical design problem",
+    "Assume standard SQL datetime functions are available",
+    "At least one transaction exists in the table",
+    "Customer IDs are unique positive integers"
+  ],
+  "starterCode": {
+    "python": "# SQL-style problem\n# Write a query or function to find golden hour customers\ndef findGoldenHourCustomers(transactions):\n    \"\"\"\n    transactions: list of dicts with keys:\n      - transaction_id (int)\n      - customer_id (int)\n      - amount (float)\n      - hour (int, 0-23)\n    Returns sorted list of customer_ids in the peak hour\n    \"\"\"\n    pass",
+    "javascript": "// SQL-style problem\nfunction findGoldenHourCustomers(transactions) {\n    // transactions: array of {transaction_id, customer_id, amount, hour}\n    // Return sorted array of customer_ids in the peak hour\n}",
+    "typescript": "// SQL-style problem\ninterface Transaction {\n    transaction_id: number;\n    customer_id: number;\n    amount: number;\n    hour: number;\n}\nfunction findGoldenHourCustomers(transactions: Transaction[]): number[] {\n\n}",
+    "java": "// SQL-style problem\nimport java.util.*;\nclass Solution {\n    public List<Integer> findGoldenHourCustomers(int[][] transactions) {\n        // transactions[i] = [transaction_id, customer_id, amount_cents, hour]\n        return new ArrayList<>();\n    }\n}",
+    "cpp": "// SQL-style problem\nclass Solution {\npublic:\n    vector<int> findGoldenHourCustomers(vector<vector<int>>& transactions) {\n        // transactions[i] = {transaction_id, customer_id, amount_cents, hour}\n        return {};\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "findGoldenHourCustomers",
+    "javascript": "findGoldenHourCustomers",
+    "typescript": "findGoldenHourCustomers",
+    "java": "findGoldenHourCustomers",
+    "cpp": "findGoldenHourCustomers"
+  }
 }

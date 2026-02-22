@@ -120,5 +120,6 @@
     "python": "is_valid_b_s_t",
     "cpp": "isValidBST",
     "go": "IsValidBST"
-  }
+  },
+  "_status": "complete"
 }

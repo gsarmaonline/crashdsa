@@ -8,6 +8,57 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [2, 3, 1, 1, 4] },
+      "expected": 2,
+      "explanation": "Jump from index 0 to index 1 (jump 1), then from index 1 to index 4 (jump 3). 2 jumps total.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [2, 3, 0, 1, 4] },
+      "expected": 2,
+      "explanation": "Jump from index 0 to index 1, then to index 4. 2 jumps total.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 2,
+      "explanation": "Jump from index 0 to index 1 (jump 1), then from index 1 to index 2 (jump 2). 2 jumps.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [0] },
+      "expected": 0,
+      "explanation": "Already at the last index; 0 jumps needed",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 1, 1, 1] },
+      "expected": 3,
+      "explanation": "Must jump one step at a time; 3 jumps needed to reach index 3",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of non-negative integers nums where you are at index 0, return the minimum number of jumps to reach the last index. You can jump at most nums[i] steps forward from index i. It is guaranteed you can reach the last index.",
+  "examples": [
+    {
+      "input": "nums = [2,3,1,1,4]",
+      "output": "2",
+      "explanation": "The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^4",
+    "0 <= nums[i] <= 1000",
+    "It is guaranteed that you can reach nums[n-1]"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

@@ -3,11 +3,69 @@
   "functionName": "multiplyStrings",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "num1",
+      "type": "string"
+    },
+    {
+      "name": "num2",
+      "type": "string"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "string",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "num1": "2", "num2": "3" },
+      "expected": "6",
+      "explanation": "2 * 3 = 6",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "num1": "123", "num2": "456" },
+      "expected": "56088",
+      "explanation": "123 * 456 = 56088",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "num1": "0", "num2": "12345" },
+      "expected": "0",
+      "explanation": "Any number multiplied by 0 is 0",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "num1": "999", "num2": "999" },
+      "expected": "998001",
+      "explanation": "999 * 999 = 998001",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "num1": "12", "num2": "11" },
+      "expected": "132",
+      "explanation": "12 * 11 = 132",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string. You must not use any built-in BigInteger library or convert the inputs to integer directly.",
+  "examples": [
+    {
+      "input": "num1 = \"2\", num2 = \"3\"",
+      "output": "\"6\""
+    },
+    {
+      "input": "num1 = \"123\", num2 = \"456\"",
+      "output": "\"56088\""
+    }
+  ],
+  "constraints": [
+    "1 <= num1.length, num2.length <= 200",
+    "num1 and num2 consist of digits only",
+    "Both num1 and num2 do not contain any leading zeros, except the number 0 itself"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

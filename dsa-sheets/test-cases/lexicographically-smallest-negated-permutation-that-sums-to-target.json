@@ -7,7 +7,71 @@
       "type": "char[][]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int[]",
+  "outputOrderMatters": true,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "grid": [["1", "2", "3"], ["0"]] },
+      "expected": [-3, -2, -1],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "grid": [["1", "2", "3"], ["3"]] },
+      "expected": [-3, -2, 1],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "grid": [["1", "2", "3"], ["6"]] },
+      "expected": [1, 2, 3],
+      "tags": ["basic", "no-negation"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "grid": [["1", "2", "3", "4"], ["-2"]] },
+      "expected": [-4, -3, -2, 1],
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "grid": [["2", "3", "5"], ["4"]] },
+      "expected": [-5, -3, 2],
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a permutation of integers [1..n] and a target sum, negate the minimum number of elements (choosing which ones greedily) to produce the lexicographically smallest permutation that sums to the target. The grid encodes [elements_row, target_row] where grid[0] contains the n integers and grid[1] contains the target. Return the resulting array.",
+  "examples": [
+    {
+      "input": "grid = [[\"1\",\"2\",\"3\"], [\"3\"]]",
+      "output": "[-3, -2, 1]",
+      "explanation": "Original sum = 6, target = 3, need to reduce by 3. Negate largest values first for lex smallest result: negate 3 (change by -6 -> -3), negate 2 (change by -4 -> sum changes), adjust to exactly hit target."
+    },
+    {
+      "input": "grid = [[\"1\",\"2\",\"3\"], [\"6\"]]",
+      "output": "[1, 2, 3]",
+      "explanation": "Sum already equals target 6. No negations needed."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^5",
+    "The target sum is achievable by some negation of elements",
+    "Elements are a permutation of [1..n]"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef lexicographicallySmallestNegatedPermutationThatSumsToTarget(grid: List[List[str]]) -> List[int]:\n    pass",
+    "javascript": "function lexicographicallySmallestNegatedPermutationThatSumsToTarget(grid) {\n\n}",
+    "typescript": "function lexicographicallySmallestNegatedPermutationThatSumsToTarget(grid: string[][]): number[] {\n\n}",
+    "java": "class Solution {\n    public int[] lexicographicallySmallestNegatedPermutationThatSumsToTarget(char[][] grid) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    vector<int> lexicographicallySmallestNegatedPermutationThatSumsToTarget(vector<vector<char>>& grid) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "lexicographicallySmallestNegatedPermutationThatSumsToTarget",
+    "javascript": "lexicographicallySmallestNegatedPermutationThatSumsToTarget",
+    "typescript": "lexicographicallySmallestNegatedPermutationThatSumsToTarget",
+    "java": "lexicographicallySmallestNegatedPermutationThatSumsToTarget",
+    "cpp": "lexicographicallySmallestNegatedPermutationThatSumsToTarget"
+  }
 }

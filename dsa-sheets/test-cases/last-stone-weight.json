@@ -2,12 +2,75 @@
   "slug": "last-stone-weight",
   "functionName": "lastStoneWeight",
   "params": [
-    {
-      "name": "nums",
-      "type": "int[]"
-    }
+    { "name": "stones", "type": "int[]" }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "stones": [2,7,4,1,8,1] },
+      "expected": 1,
+      "explanation": "Smash 7 and 8 → 1 left. Smash 2 and 4 → 2 left. Now [1,1,2,1]. Smash 2 and 1 → 1. Now [1,1,1]. Smash 1 and 1 → 0. Now [1]. Result=1.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "stones": [1] },
+      "expected": 1,
+      "explanation": "Only one stone, it remains.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "stones": [2,2] },
+      "expected": 0,
+      "explanation": "Smash 2 and 2 → both destroyed, result is 0.",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "stones": [3,3,3] },
+      "expected": 3,
+      "explanation": "Smash 3 and 3 → 0, leaving [3]. Result=3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "stones": [1,3] },
+      "expected": 2,
+      "explanation": "Smash 1 and 3 → |3-1|=2 remains.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "You are given an array of integers `stones` where `stones[i]` is the weight of the i-th stone.\n\nWe are playing a game with the stones. On each turn, we choose the **two heaviest stones** and smash them together. Suppose the heaviest stones have weights `x` and `y` with `x <= y`:\n- If `x == y`, both stones are destroyed.\n- If `x != y`, the stone of weight `x` is destroyed, and the stone of weight `y` becomes `y - x`.\n\nReturn the weight of the last remaining stone. If there are no stones left, return `0`.\n\nSee the full problem on [LeetCode 1046](https://leetcode.com/problems/last-stone-weight/).",
+  "examples": [
+    {
+      "input": "stones = [2,7,4,1,8,1]",
+      "output": "1",
+      "explanation": "Smash 7 and 8 → remainder 1. Smash 2 and 4 → remainder 2. Smash 1 and 2 → remainder 1. Smash 1 and 1 → both destroyed. Last stone = 1."
+    },
+    {
+      "input": "stones = [1]",
+      "output": "1"
+    }
+  ],
+  "constraints": [
+    "1 <= stones.length <= 30",
+    "1 <= stones[i] <= 1000"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} stones\n * @return {number}\n */\nfunction lastStoneWeight(stones) {\n  // Write your solution here\n}",
+    "typescript": "function lastStoneWeight(stones: number[]): number {\n  // Write your solution here\n}",
+    "python": "def last_stone_weight(stones: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint lastStoneWeight(vector<int>& stones) {\n    // Write your solution here\n}",
+    "go": "func lastStoneWeight(stones []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "lastStoneWeight",
+    "typescript": "lastStoneWeight",
+    "python": "last_stone_weight",
+    "cpp": "lastStoneWeight",
+    "go": "LastStoneWeight"
+  }
 }

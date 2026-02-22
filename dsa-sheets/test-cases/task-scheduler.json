@@ -2,12 +2,83 @@
   "slug": "task-scheduler",
   "functionName": "taskScheduler",
   "params": [
-    {
-      "name": "nums",
-      "type": "int[]"
-    }
+    { "name": "tasks", "type": "string[]" },
+    { "name": "n", "type": "int" }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "tasks": ["A","A","A","B","B","B"], "n": 2 },
+      "expected": 8,
+      "explanation": "Optimal schedule: A→B→idle→A→B→idle→A→B = 8 intervals.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "tasks": ["A","A","A","B","B","B"], "n": 0 },
+      "expected": 6,
+      "explanation": "No cooldown needed, just execute all 6 tasks: A→B→A→B→A→B = 6 intervals.",
+      "tags": ["edge-case", "no-cooldown"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "tasks": ["A","A","A","A","A","A","B","C","D","E","F","G"], "n": 2 },
+      "expected": 16,
+      "explanation": "A appears 6 times. Schedule: A→B→C→A→D→E→A→F→G→A→idle→idle→A→idle→idle→A = 16 intervals.",
+      "tags": ["basic", "dominant-task"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "tasks": ["A","B","C"], "n": 5 },
+      "expected": 3,
+      "explanation": "All tasks are distinct and only appear once. No cooldown conflicts. Total = 3 intervals.",
+      "tags": ["edge-case", "all-distinct"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "tasks": ["A","A","A","B","B","B","C","C","C","D","D","E"], "n": 2 },
+      "expected": 12,
+      "explanation": "A,B,C each appear 3 times; D appears twice; E once. Schedule fits without idle: A→B→C→A→B→C→A→B→C→D→D→E = 12.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "You are given an array of CPU `tasks`, each labeled with a letter from A to Z, and a number `n`. Each CPU interval can be idle or allow the completion of one task. Tasks can be completed in any order, but there is a cooldown interval of length `n` between two tasks with the same label.\n\nReturn the minimum number of CPU intervals required to complete all the given tasks.\n\nSee the full problem on [LeetCode 621](https://leetcode.com/problems/task-scheduler/).",
+  "examples": [
+    {
+      "input": "tasks = [\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"], n = 2",
+      "output": "8",
+      "explanation": "A -> B -> idle -> A -> B -> idle -> A -> B"
+    },
+    {
+      "input": "tasks = [\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"], n = 0",
+      "output": "6",
+      "explanation": "On this case any permutation of size 6 would work since n = 0. For example, A -> A -> A -> B -> B -> B."
+    },
+    {
+      "input": "tasks = [\"A\",\"A\",\"A\",\"A\",\"A\",\"A\",\"B\",\"C\",\"D\",\"E\",\"F\",\"G\"], n = 2",
+      "output": "16",
+      "explanation": "One possible solution is: A -> B -> C -> A -> D -> E -> A -> F -> G -> A -> idle -> idle -> A -> idle -> idle -> A."
+    }
+  ],
+  "constraints": [
+    "1 <= tasks.length <= 10^4",
+    "tasks[i] is an uppercase English letter",
+    "0 <= n <= 100"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string[]} tasks\n * @param {number} n\n * @return {number}\n */\nfunction taskScheduler(tasks, n) {\n  // Write your solution here\n}",
+    "typescript": "function taskScheduler(tasks: string[], n: number): number {\n  // Write your solution here\n}",
+    "python": "def task_scheduler(tasks: list[str], n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nint taskScheduler(vector<char>& tasks, int n) {\n    // Write your solution here\n}",
+    "go": "func taskScheduler(tasks []byte, n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "taskScheduler",
+    "typescript": "taskScheduler",
+    "python": "task_scheduler",
+    "cpp": "taskScheduler",
+    "go": "TaskScheduler"
+  }
 }

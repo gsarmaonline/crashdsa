@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "abcde" },
+      "expected": 5,
+      "tags": ["basic", "already-sorted"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "dcba" },
+      "expected": 2,
+      "tags": ["basic", "descending"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "abdc" },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "azbcd" },
+      "expected": 5,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "abzcd" },
+      "expected": 5,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string s, you may replace at most one character with any other character. Return the length of the longest non-decreasing substring (subarray of characters in non-decreasing alphabetical order) achievable.",
+  "examples": [
+    {
+      "input": "s = \"abdc\"",
+      "output": "4",
+      "explanation": "Replace 'd' with 'c' (or 'b') to get 'abcc' or 'abbc', both fully non-decreasing. Length = 4."
+    },
+    {
+      "input": "s = \"dcba\"",
+      "output": "2",
+      "explanation": "Fully descending; replacing one char can extend a window at most to length 2."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of lowercase English letters"
+  ],
+  "starterCode": {
+    "python": "def longestNonDecreasingSubarrayAfterReplacingAtMostOneElement(s: str) -> int:\n    pass",
+    "javascript": "function longestNonDecreasingSubarrayAfterReplacingAtMostOneElement(s) {\n\n}",
+    "typescript": "function longestNonDecreasingSubarrayAfterReplacingAtMostOneElement(s: string): number {\n\n}",
+    "java": "class Solution {\n    public int longestNonDecreasingSubarrayAfterReplacingAtMostOneElement(String s) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int longestNonDecreasingSubarrayAfterReplacingAtMostOneElement(string s) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "longestNonDecreasingSubarrayAfterReplacingAtMostOneElement",
+    "javascript": "longestNonDecreasingSubarrayAfterReplacingAtMostOneElement",
+    "typescript": "longestNonDecreasingSubarrayAfterReplacingAtMostOneElement",
+    "java": "longestNonDecreasingSubarrayAfterReplacingAtMostOneElement",
+    "cpp": "longestNonDecreasingSubarrayAfterReplacingAtMostOneElement"
+  }
 }

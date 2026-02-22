@@ -8,6 +8,59 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [2, 7, 9, 3, 1] },
+      "expected": 12,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3, 1] },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [5] },
+      "expected": 5,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [2, 1, 1, 2] },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [10, 1, 1, 10] },
+      "expected": 20,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "House Robber variant V: rob houses in a row without robbing two adjacent houses, with additional constraints unique to this variant. Return the maximum money you can rob.",
+  "examples": [
+    {
+      "input": "nums = [2,7,9,3,1]",
+      "output": "12",
+      "explanation": "Rob houses 0, 2, 4 for values 2+9+1=12."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "0 <= nums[i] <= 400"
+  ],
+  "starterCode": {
+    "javascript": "function houseRobberV(nums) {\n  // your code here\n}",
+    "python": "def houseRobberV(nums):\n    pass",
+    "java": "public int houseRobberV(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "houseRobberV",
+    "python": "houseRobberV",
+    "java": "houseRobberV"
+  }
 }

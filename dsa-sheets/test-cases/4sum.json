@@ -1,13 +1,66 @@
 {
   "slug": "4sum",
-  "functionName": "4sum",
+  "functionName": "fourSum",
   "params": [
+    {"name": "nums", "type": "int[]"},
+    {"name": "target", "type": "int"}
+  ],
+  "returnType": "int[][]",
+  "outputOrderMatters": false,
+  "testCases": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "id": "tc-1",
+      "inputs": {"nums": [1,0,-1,0,-2,2], "target": 0},
+      "expected": [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]],
+      "explanation": "Three unique quadruplets sum to 0: [-2,-1,1,2], [-2,0,0,2], [-1,0,0,1].",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [2,2,2,2,2], "target": 8},
+      "expected": [[2,2,2,2]],
+      "explanation": "Only one unique quadruplet [2,2,2,2] sums to 8.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [1,2,3,4], "target": 100},
+      "expected": [],
+      "explanation": "No quadruplet sums to 100. Maximum possible sum is 1+2+3+4=10.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [-2,-1,0,0,1,2], "target": 0},
+      "expected": [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]],
+      "explanation": "Three unique quadruplets sum to 0 from the sorted input.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [0,0,0,0], "target": 0},
+      "expected": [[0,0,0,0]],
+      "explanation": "Only quadruplet of all zeros sums to target 0.",
+      "tags": ["edge"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an array nums of n integers and an integer target, return all unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that a, b, c, d are distinct indices and nums[a] + nums[b] + nums[c] + nums[d] == target. The solution set must not contain duplicate quadruplets.",
+  "examples": [
+    {
+      "input": "nums = [1,0,-1,0,-2,2], target = 0",
+      "output": "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]"
+    },
+    {
+      "input": "nums = [2,2,2,2,2], target = 8",
+      "output": "[[2,2,2,2]]"
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 200",
+    "-10^9 <= nums[i] <= 10^9",
+    "-10^9 <= target <= 10^9"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

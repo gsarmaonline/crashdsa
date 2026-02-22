@@ -3,11 +3,60 @@
   "functionName": "happyNumber",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "n",
+      "type": "int"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "n": 19 },
+      "expected": true,
+      "explanation": "1^2+9^2=82, 8^2+2^2=68, 6^2+8^2=100, 1^2+0^2+0^2=1. Happy!",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "n": 2 },
+      "expected": false,
+      "explanation": "2 enters a cycle and never reaches 1; not a happy number",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "n": 1 },
+      "expected": true,
+      "explanation": "1 is already a happy number (1^2=1)",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "n": 7 },
+      "expected": true,
+      "explanation": "7->49->97->130->10->1. Happy!",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "n": 4 },
+      "expected": false,
+      "explanation": "4 enters the unhappy cycle: 4->16->37->58->89->145->42->20->4",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "A happy number is defined by: starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat until the number equals 1 (happy) or loops endlessly in a cycle that does not include 1 (unhappy). Return true if n is a happy number, false otherwise.",
+  "examples": [
+    {
+      "input": "n = 19",
+      "output": "true",
+      "explanation": "1^2 + 9^2 = 82 -> 8^2 + 2^2 = 68 -> 6^2 + 8^2 = 100 -> 1^2 + 0^2 + 0^2 = 1"
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 2^31 - 1"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

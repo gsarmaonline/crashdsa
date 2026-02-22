@@ -2,12 +2,75 @@
   "slug": "palindrome-partitioning",
   "functionName": "palindromePartitioning",
   "params": [
+    { "name": "s", "type": "string" }
+  ],
+  "returnType": "string[][]",
+  "outputOrderMatters": false,
+  "testCases": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "id": "tc-1",
+      "inputs": { "s": "aab" },
+      "expected": [["a","a","b"],["aa","b"]],
+      "explanation": "'aab' can be split as ['a','a','b'] (all single chars are palindromes) or ['aa','b'] ('aa' is a palindrome).",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "a" },
+      "expected": [["a"]],
+      "explanation": "Single character is always a palindrome.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "ab" },
+      "expected": [["a","b"]],
+      "explanation": "Only valid partition: each character separately. 'ab' itself is not a palindrome.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "aa" },
+      "expected": [["a","a"],["aa"]],
+      "explanation": "Can split as two single 'a's or as one palindrome 'aa'.",
+      "tags": ["basic", "duplicates"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "aba" },
+      "expected": [["a","b","a"],["aba"]],
+      "explanation": "Either each char individually, or 'aba' itself which is a palindrome.",
+      "tags": ["basic"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given a string `s`, partition `s` such that every substring of the partition is a palindrome. Return all possible palindrome partitioning of `s`.\n\nSee the full problem on [LeetCode 131](https://leetcode.com/problems/palindrome-partitioning/).",
+  "examples": [
+    {
+      "input": "s = \"aab\"",
+      "output": "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]"
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "[[\"a\"]]"
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 16",
+    "s consists only of lowercase English letters"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @return {string[][]}\n */\nfunction palindromePartitioning(s) {\n  // Write your solution here\n}",
+    "typescript": "function palindromePartitioning(s: string): string[][] {\n  // Write your solution here\n}",
+    "python": "def palindrome_partitioning(s: str) -> list[list[str]]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nvector<vector<string>> palindromePartitioning(string s) {\n    // Write your solution here\n}",
+    "go": "func palindromePartitioning(s string) [][]string {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "palindromePartitioning",
+    "typescript": "palindromePartitioning",
+    "python": "palindrome_partitioning",
+    "cpp": "palindromePartitioning",
+    "go": "PalindromePartitioning"
+  }
 }

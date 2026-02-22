@@ -3,11 +3,63 @@
   "functionName": "sumOfTwoIntegers",
   "params": [
     {
-      "name": "n",
+      "name": "a",
+      "type": "int"
+    },
+    {
+      "name": "b",
       "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "a": 1, "b": 2 },
+      "expected": 3,
+      "explanation": "1 + 2 = 3 using bitwise operations only",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "a": 2, "b": 3 },
+      "expected": 5,
+      "explanation": "2 + 3 = 5",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "a": 0, "b": 5 },
+      "expected": 5,
+      "explanation": "0 + 5 = 5",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "a": -1, "b": 1 },
+      "expected": 0,
+      "explanation": "-1 + 1 = 0",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "a": 100, "b": -100 },
+      "expected": 0,
+      "explanation": "100 + (-100) = 0",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given two integers a and b, return the sum of the two integers without using the operators + or -. Use only bitwise operations.",
+  "examples": [
+    {
+      "input": "a = 1, b = 2",
+      "output": "3"
+    }
+  ],
+  "constraints": [
+    "-1000 <= a, b <= 1000"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "1" },
+      "expected": 0,
+      "tags": ["basic", "single"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "121" },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "1221" },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "12321" },
+      "expected": 2,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "111" },
+      "expected": 1,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string of digit characters s, count subarrays of length >= 3 where the sum of the boundary elements (first + last) equals the sum of all interior elements. A subarray [l..r] is stable if s[l] + s[r] == s[l+1] + s[l+2] + ... + s[r-1] (as digit values).",
+  "examples": [
+    {
+      "input": "s = \"121\"",
+      "output": "1",
+      "explanation": "Subarray '121': boundary sum = 1+1 = 2, interior sum = 2. Equal, so it is stable. Count = 1."
+    },
+    {
+      "input": "s = \"1221\"",
+      "output": "1",
+      "explanation": "Subarray '1221': boundary = 1+1=2, interior = 2+2=4. Not stable. Subarrays '122': 1+2=3, interior=2; not stable. '221': 2+1=3, interior=2; not stable. No stable subarrays with this interpretation."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^4",
+    "s consists of digit characters '1'-'9'"
+  ],
+  "starterCode": {
+    "python": "def stableSubarraysWithEqualBoundaryAndInteriorSum(s: str) -> int:\n    pass",
+    "javascript": "function stableSubarraysWithEqualBoundaryAndInteriorSum(s) {\n\n}",
+    "typescript": "function stableSubarraysWithEqualBoundaryAndInteriorSum(s: string): number {\n\n}",
+    "java": "class Solution {\n    public int stableSubarraysWithEqualBoundaryAndInteriorSum(String s) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int stableSubarraysWithEqualBoundaryAndInteriorSum(string s) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "stableSubarraysWithEqualBoundaryAndInteriorSum",
+    "javascript": "stableSubarraysWithEqualBoundaryAndInteriorSum",
+    "typescript": "stableSubarraysWithEqualBoundaryAndInteriorSum",
+    "java": "stableSubarraysWithEqualBoundaryAndInteriorSum",
+    "cpp": "stableSubarraysWithEqualBoundaryAndInteriorSum"
+  }
 }

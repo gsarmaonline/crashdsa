@@ -3,11 +3,64 @@
   "functionName": "longestBalancedSubarrayI",
   "params": [
     {
-      "name": "s",
-      "type": "string"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [0, 1, 0, 1] },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [0, 0, 1] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 1, 0, 0] },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1] },
+      "expected": 0,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [0, 1, 1, 0, 0, 1] },
+      "expected": 6,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Longest Balanced Subarray version I: find the maximum length of a contiguous subarray containing an equal number of 0s and 1s.",
+  "examples": [
+    {
+      "input": "nums = [0,1,0,1]",
+      "output": "4",
+      "explanation": "The full array has 2 zeros and 2 ones."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "nums[i] is either 0 or 1"
+  ],
+  "starterCode": {
+    "javascript": "function longestBalancedSubarrayI(nums) {\n  // your code here\n}",
+    "python": "def longestBalancedSubarrayI(nums):\n    pass",
+    "java": "public int longestBalancedSubarrayI(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "longestBalancedSubarrayI",
+    "python": "longestBalancedSubarrayI",
+    "java": "longestBalancedSubarrayI"
+  }
 }

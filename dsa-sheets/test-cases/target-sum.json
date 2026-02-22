@@ -5,9 +5,65 @@
     {
       "name": "nums",
       "type": "int[]"
+    },
+    {
+      "name": "target",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 1, 1, 1, 1], "target": 3 },
+      "expected": 5,
+      "explanation": "Five ways to assign + and - to reach 3: e.g. +1+1+1+1-1, +1+1+1-1+1, etc.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1], "target": 1 },
+      "expected": 1,
+      "explanation": "Only one way: +1 = 1",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1], "target": 2 },
+      "expected": 0,
+      "explanation": "No way to reach target 2 from a single element [1] with +/- assignment",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [0, 0, 0, 0, 0, 0, 0, 0, 1], "target": 1 },
+      "expected": 256,
+      "explanation": "Each of the 8 zeros can be + or -, sum stays 1. 2^8 = 256 ways",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 2, 3, 4], "target": 0 },
+      "expected": 2,
+      "explanation": "Two ways: subsets summing to 5 are {1,4} and {2,3}; assign + to one and - to other",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array nums and an integer target, assign '+' or '-' to each element and return the number of different expressions that evaluate to target.",
+  "examples": [
+    {
+      "input": "nums = [1,1,1,1,1], target = 3",
+      "output": "5",
+      "explanation": "There are 5 ways to assign symbols to make the sum of nums be target 3."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 20",
+    "0 <= nums[i] <= 1000",
+    "0 <= sum(nums[i]) <= 1000",
+    "-1000 <= target <= 1000"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

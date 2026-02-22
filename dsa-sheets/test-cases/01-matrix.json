@@ -1,13 +1,67 @@
 {
   "slug": "01-matrix",
-  "functionName": "01Matrix",
+  "functionName": "updateMatrix",
   "params": [
+    {"name": "mat", "type": "int[][]"}
+  ],
+  "returnType": "int[][]",
+  "testCases": [
     {
-      "name": "grid",
-      "type": "int[][]"
+      "id": "tc-1",
+      "inputs": {"mat": [[0,0,0],[0,1,0],[0,0,0]]},
+      "expected": [[0,0,0],[0,1,0],[0,0,0]],
+      "explanation": "The cell at (1,1) has value 1 and its nearest 0 is 1 step away. All 0 cells have distance 0.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"mat": [[0,0,0],[0,1,0],[1,1,1]]},
+      "expected": [[0,0,0],[0,1,0],[1,2,1]],
+      "explanation": "The cell at (2,1) is distance 2 from the nearest 0 (via (1,1) to (0,1) or (1,0) or (1,2)). Cells (2,0) and (2,2) are distance 1 from the 0s in row 1.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"mat": [[0]]},
+      "expected": [[0]],
+      "explanation": "Single cell with value 0: distance is 0.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"mat": [[1,0]]},
+      "expected": [[1,0]],
+      "explanation": "Cell (0,0) has value 1 and its nearest 0 is at (0,1), distance 1. Cell (0,1) is 0 with distance 0.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"mat": [[0,1,1],[1,1,1],[1,1,0]]},
+      "expected": [[0,1,2],[1,2,1],[2,1,0]],
+      "explanation": "BFS from both 0 cells at (0,0) and (2,2) simultaneously. Each cell gets its minimum distance to either 0.",
+      "tags": ["basic"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an m x n binary matrix mat, return the distance of the nearest 0 for each cell. The distance between two adjacent cells is 1.",
+  "examples": [
+    {
+      "input": "mat = [[0,0,0],[0,1,0],[0,0,0]]",
+      "output": "[[0,0,0],[0,1,0],[0,0,0]]"
+    },
+    {
+      "input": "mat = [[0,0,0],[0,1,0],[1,1,1]]",
+      "output": "[[0,0,0],[0,1,0],[1,2,1]]"
+    }
+  ],
+  "constraints": [
+    "m == mat.length",
+    "n == mat[i].length",
+    "1 <= m, n <= 10^4",
+    "1 <= m * n <= 10^4",
+    "mat[i][j] is either 0 or 1",
+    "There is at least one 0 in mat"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

@@ -9,5 +9,23 @@
   ],
   "returnType": "int",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "Design an auction system that supports placing bids, tracking the highest bidder, and querying auction results. This is a design/OOP problem requiring a class with multiple methods.",
+  "examples": [],
+  "constraints": [
+    "Support at most 10^4 bids",
+    "Bid amounts are positive integers",
+    "All bidder IDs are unique strings"
+  ],
+  "starterCode": {
+    "javascript": "class AuctionSystem {\n  constructor() {\n    // initialize\n  }\n  placeBid(auctionId, bidderId, amount) {\n    // your code here\n  }\n  getHighestBid(auctionId) {\n    // your code here\n  }\n}",
+    "python": "class AuctionSystem:\n    def __init__(self):\n        pass\n    def place_bid(self, auction_id, bidder_id, amount):\n        pass\n    def get_highest_bid(self, auction_id):\n        pass",
+    "java": "class AuctionSystem {\n    public AuctionSystem() {}\n    public void placeBid(String auctionId, String bidderId, int amount) {}\n    public int getHighestBid(String auctionId) { return 0; }\n}"
+  },
+  "functionNameMap": {
+    "javascript": "designAuctionSystem",
+    "python": "designAuctionSystem",
+    "java": "designAuctionSystem"
+  }
 }

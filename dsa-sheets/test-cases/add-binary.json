@@ -2,12 +2,64 @@
   "slug": "add-binary",
   "functionName": "addBinary",
   "params": [
+    {"name": "a", "type": "string"},
+    {"name": "b", "type": "string"}
+  ],
+  "returnType": "string",
+  "testCases": [
     {
-      "name": "n",
-      "type": "int"
+      "id": "tc-1",
+      "inputs": {"a": "11", "b": "1"},
+      "expected": "100",
+      "explanation": "Binary: 3 + 1 = 4. In binary: 11 + 01 = 100.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"a": "1010", "b": "1011"},
+      "expected": "10101",
+      "explanation": "Binary: 10 + 11 = 21. In binary: 1010 + 1011 = 10101.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"a": "0", "b": "0"},
+      "expected": "0",
+      "explanation": "0 + 0 = 0.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"a": "1", "b": "1"},
+      "expected": "10",
+      "explanation": "Binary: 1 + 1 = 2. In binary: 1 + 1 = 10 (with carry).",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"a": "111", "b": "111"},
+      "expected": "1110",
+      "explanation": "Binary: 7 + 7 = 14. In binary: 111 + 111 = 1110.",
+      "tags": ["basic"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given two binary strings a and b, return their sum as a binary string.",
+  "examples": [
+    {
+      "input": "a = \"11\", b = \"1\"",
+      "output": "\"100\""
+    },
+    {
+      "input": "a = \"1010\", b = \"1011\"",
+      "output": "\"10101\""
+    }
+  ],
+  "constraints": [
+    "1 <= a.length, b.length <= 10^4",
+    "a and b consist only of '0' or '1' characters",
+    "Each string does not contain leading zeros except for the zero itself"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

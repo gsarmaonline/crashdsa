@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Return the count of indices i such that nums[i] is at least twice the value of every other element in the array.",
+  "examples": [
+    {"input": "nums=[3,6,1,0]", "output": "1"},
+    {"input": "nums=[1,2,3,4]", "output": "0"}
+  ],
+  "constraints": ["1 <= nums.length <= 50", "0 <= nums[i] <= 100"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"nums": [3, 6, 1, 0]},
+      "expected": 1,
+      "explanation": "nums[1]=6 >= 2*3=6, 2*1=2, 2*0=0. Index 1 is dominant. Count=1.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [1, 2, 3, 4]},
+      "expected": 0,
+      "explanation": "Max is 4 but 4 >= 2*3=6 is false. No dominant index exists.",
+      "tags": ["basic", "none"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [0, 0, 0, 1]},
+      "expected": 1,
+      "explanation": "nums[3]=1 >= 2*0=0 for all others. Only index 3 is dominant.",
+      "tags": ["zeros"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [10]},
+      "expected": 1,
+      "explanation": "Single element is trivially dominant over all other elements (there are none).",
+      "tags": ["edge", "single"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [2, 2, 2]},
+      "expected": 0,
+      "explanation": "All elements are equal; 2 >= 2*2=4 is false, so no dominant index.",
+      "tags": ["equal-elements"]
+    }
+  ]
 }

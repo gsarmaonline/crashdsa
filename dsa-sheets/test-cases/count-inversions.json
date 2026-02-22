@@ -2,12 +2,63 @@
   "slug": "count-inversions",
   "functionName": "countInversions",
   "params": [
-    {
-      "name": "nums",
-      "type": "int[]"
-    }
+    {"name": "arr", "type": "int[]"}
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"arr": [2,4,1,3,5]},
+      "expected": 3,
+      "explanation": "Inversions: (2,1), (4,1), (4,3). Pairs (i,j) where i<j and arr[i]>arr[j]: (0,2)→2>1, (1,2)→4>1, (1,3)→4>3. Total=3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"arr": [5,4,3,2,1]},
+      "expected": 10,
+      "explanation": "Strictly decreasing array: every pair is an inversion. C(5,2) = 10 total inversions.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"arr": [1,2,3,4,5]},
+      "expected": 0,
+      "explanation": "Strictly increasing (sorted) array: no inversions.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"arr": [1]},
+      "expected": 0,
+      "explanation": "Single element: no pairs possible, so 0 inversions.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"arr": [2,1]},
+      "expected": 1,
+      "explanation": "One inversion: (0,1) where arr[0]=2 > arr[1]=1.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array arr, count the number of inversions. An inversion is a pair (i, j) where i < j and arr[i] > arr[j]. Efficiently solvable using a modified merge sort in O(n log n).",
+  "examples": [
+    {
+      "input": "arr = [2,4,1,3,5]",
+      "output": "3",
+      "explanation": "Inversions: (2,1), (4,1), (4,3)."
+    },
+    {
+      "input": "arr = [5,4,3,2,1]",
+      "output": "10"
+    }
+  ],
+  "constraints": [
+    "1 <= arr.length <= 10^5",
+    "1 <= arr[i] <= 10^9"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

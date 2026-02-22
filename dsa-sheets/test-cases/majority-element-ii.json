@@ -1,13 +1,64 @@
 {
   "slug": "majority-element-ii",
-  "functionName": "majorityElementIi",
+  "functionName": "majorityElement",
   "params": [
+    {"name": "nums", "type": "int[]"}
+  ],
+  "returnType": "int[]",
+  "outputOrderMatters": false,
+  "testCases": [
     {
-      "name": "n",
-      "type": "int"
+      "id": "tc-1",
+      "inputs": {"nums": [3,2,3]},
+      "expected": [3],
+      "explanation": "3 appears 2 times out of 3. 2/3 > 1/3, so 3 is a majority element. 2 appears once, not more than n/3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [1]},
+      "expected": [1],
+      "explanation": "Single element: 1 appears 1 time out of 1. 1/1 > 1/3, so it qualifies.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [1,2]},
+      "expected": [1,2],
+      "explanation": "Both 1 and 2 appear once out of 2 elements. 1/2 > 1/3, so both qualify. At most 2 elements can appear more than n/3 times.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [3,2,3,2,3]},
+      "expected": [3,2],
+      "explanation": "3 appears 3 times out of 5 (3/5 > 1/3). 2 appears 2 times out of 5 (2/5 > 1/3). Both qualify.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [0,0,0]},
+      "expected": [0],
+      "explanation": "0 appears 3 times out of 3. 3/3 > 1/3, so 0 is the only majority element.",
+      "tags": ["edge"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an integer array of size n, find all elements that appear more than n/3 times. Return all such elements in any order. There can be at most two such elements.",
+  "examples": [
+    {
+      "input": "nums = [3,2,3]",
+      "output": "[3]"
+    },
+    {
+      "input": "nums = [1,2]",
+      "output": "[1,2]"
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 5 * 10^4",
+    "-10^9 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

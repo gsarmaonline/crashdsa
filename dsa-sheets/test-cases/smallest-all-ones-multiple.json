@@ -8,6 +8,49 @@
     }
   ],
   "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an array of query integers, for each query n return the smallest multiple of n whose decimal representation consists entirely of 1s (repunit), returning [n, repunit_multiple] pairs.",
+  "examples": [
+    {"input": "nums=[1,3]", "output": "[[1,1],[3,111]]"},
+    {"input": "nums=[7]", "output": "[[7,111111]]"}
+  ],
+  "constraints": ["1 <= nums.length <= 100", "1 <= nums[i] <= 10^6"],
+  "outputOrderMatters": true,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"nums": [1, 3]},
+      "expected": [[1, 1], [3, 111]],
+      "explanation": "For n=1: smallest repunit multiple is 1. For n=3: 111=3*37, so 111 is divisible by 3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [7]},
+      "expected": [[7, 111111]],
+      "explanation": "For n=7: smallest repunit divisible by 7 is 111111 (six 1s), since 111111 = 7 * 15873.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [1]},
+      "expected": [[1, 1]],
+      "explanation": "For n=1: any repunit is divisible by 1; smallest is 1.",
+      "tags": ["edge", "trivial"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [9]},
+      "expected": [[9, 111111111]],
+      "explanation": "For n=9: repunit with 9 ones: 111111111=9*12345679. So smallest repunit multiple of 9 has 9 ones.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [11]},
+      "expected": [[11, 11]],
+      "explanation": "For n=11: 11 itself is a repunit (11). 11/11=1. Smallest repunit multiple is 11.",
+      "tags": ["repunit-itself"]
+    }
+  ]
 }

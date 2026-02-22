@@ -1,13 +1,63 @@
 {
   "slug": "palindrome-linked-list",
-  "functionName": "palindromeLinkedList",
+  "functionName": "isPalindrome",
   "params": [
+    {"name": "head", "type": "ListNode"}
+  ],
+  "returnType": "boolean",
+  "testCases": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "id": "tc-1",
+      "inputs": {"head": [1,2,2,1]},
+      "expected": true,
+      "explanation": "The list [1,2,2,1] reads the same forwards and backwards.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"head": [1,2]},
+      "expected": false,
+      "explanation": "The list [1,2] is not a palindrome since reversed it reads [2,1].",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"head": [1]},
+      "expected": true,
+      "explanation": "A single node is trivially a palindrome.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"head": [1,2,3,2,1]},
+      "expected": true,
+      "explanation": "The list [1,2,3,2,1] is a palindrome with 3 as the center element.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"head": [1,2,3]},
+      "expected": false,
+      "explanation": "The list [1,2,3] reversed is [3,2,1], which differs from the original.",
+      "tags": ["basic"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given the head of a singly linked list, return true if it is a palindrome, or false otherwise. An efficient solution runs in O(n) time and O(1) space by reversing the second half and comparing.",
+  "examples": [
+    {
+      "input": "head = [1,2,2,1]",
+      "output": "true"
+    },
+    {
+      "input": "head = [1,2]",
+      "output": "false"
+    }
+  ],
+  "constraints": [
+    "The number of nodes in the list is in the range [1, 10^5]",
+    "0 <= Node.val <= 9"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

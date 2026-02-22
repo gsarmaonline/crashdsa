@@ -3,11 +3,63 @@
   "functionName": "plusOne",
   "params": [
     {
-      "name": "nums",
+      "name": "digits",
       "type": "int[]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int[]",
+  "outputOrderMatters": true,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "digits": [1, 2, 3] },
+      "expected": [1, 2, 4],
+      "explanation": "123 + 1 = 124",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "digits": [4, 3, 2, 1] },
+      "expected": [4, 3, 2, 2],
+      "explanation": "4321 + 1 = 4322",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "digits": [9] },
+      "expected": [1, 0],
+      "explanation": "9 + 1 = 10; result has one more digit",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "digits": [9, 9, 9] },
+      "expected": [1, 0, 0, 0],
+      "explanation": "999 + 1 = 1000; cascading carry adds a new leading digit",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "digits": [0] },
+      "expected": [1],
+      "explanation": "0 + 1 = 1",
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant. Increment the large integer by one and return the resulting array of digits.",
+  "examples": [
+    {
+      "input": "digits = [1,2,3]",
+      "output": "[1,2,4]",
+      "explanation": "The array represents the integer 123. Incrementing by one gives 124."
+    }
+  ],
+  "constraints": [
+    "1 <= digits.length <= 100",
+    "0 <= digits[i] <= 9",
+    "digits does not contain any leading 0's"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given a binary string s, count the number of subarrays whose cost (number of 1s multiplied by subarray length) is less than or equal to k.",
+  "examples": [
+    {"input": "s=\"0101\", k=5", "output": "9"},
+    {"input": "s=\"11\", k=1", "output": "2"}
+  ],
+  "constraints": ["1 <= s.length <= 10^5", "s consists of '0' and '1' only", "1 <= k <= 10^6"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"s": "0101"},
+      "expected": 6,
+      "explanation": "Subarrays of '0101' with cost (ones * length) <= 5: all length-1 subarrays (4) plus '01','10','01' (3 length-2) minus those exceeding k.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"s": "11"},
+      "expected": 2,
+      "explanation": "'1' has cost 1*1=1<=5, '1' has cost 1*1=1<=5, '11' has cost 2*2=4<=5. But with k=default counting all sub.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"s": "0"},
+      "expected": 1,
+      "explanation": "Single '0' has cost 0*1=0 which is <= k for any k >= 0.",
+      "tags": ["edge", "single-zero"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"s": "1"},
+      "expected": 1,
+      "explanation": "Single '1' has cost 1*1=1 which is <= k for k >= 1.",
+      "tags": ["edge", "single-one"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"s": "000"},
+      "expected": 6,
+      "explanation": "All subarrays of '000' have cost 0 (no 1s), so all 6 subarrays qualify.",
+      "tags": ["all-zeros"]
+    }
+  ]
 }

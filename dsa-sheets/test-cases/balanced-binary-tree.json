@@ -7,7 +7,67 @@
       "type": "TreeNode"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "root": [3, 9, 20, null, null, 15, 7] },
+      "expected": true,
+      "explanation": "Left subtree height=1, right subtree height=2; difference is 1, balanced",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "root": [1, 2, 2, 3, 3, null, null, 4, 4] },
+      "expected": false,
+      "explanation": "Left subtree has height 3, right subtree height 1; difference > 1, not balanced",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "root": [] },
+      "expected": true,
+      "explanation": "Empty tree is considered balanced",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "root": [1] },
+      "expected": true,
+      "explanation": "Single node tree is balanced",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "root": [1, 2, 3, 4, null, null, null, 5] },
+      "expected": false,
+      "explanation": "Left subtree: 1→2→4→5 has height 3; right subtree: 1→3 has height 1; difference is 2, not balanced",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a binary tree, determine if it is height-balanced. A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.",
+  "examples": [
+    {
+      "input": "root = [3,9,20,null,null,15,7]",
+      "output": "true",
+      "explanation": "The heights of left and right subtrees differ by at most 1 at every node."
+    },
+    {
+      "input": "root = [1,2,2,3,3,null,null,4,4]",
+      "output": "false",
+      "explanation": "The left subtree is much deeper than the right, making it unbalanced."
+    },
+    {
+      "input": "root = []",
+      "output": "true",
+      "explanation": "An empty tree is balanced."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in the tree is in the range [0, 5000]",
+    "-10^4 <= Node.val <= 10^4"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

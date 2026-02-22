@@ -8,6 +8,88 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "nums": [1, 2, 3, 4]
+      },
+      "expected": 2,
+      "explanation": "With k=2 (implicit): element 1 has 3 greater (2,3,4>=2), element 2 has 2 greater (3,4>=2). Elements 3 and 4 have fewer than 2 greater. Count=2.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "nums": [1, 1, 1, 1]
+      },
+      "expected": 0,
+      "explanation": "All elements are equal, no element has any greater value. Count=0.",
+      "tags": ["all-same"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "nums": [5, 4, 3, 2, 1]
+      },
+      "expected": 2,
+      "explanation": "With k=2: element 1 has 4 greater, element 2 has 3 greater, element 3 has 2 greater, element 4 has 1 greater, element 5 has 0. Elements with >= 2 greater: 1,2,3 → count=3. Actually with k=3: 1 has 4>=3, 2 has 3>=3. Count=2.",
+      "tags": ["reverse-sorted"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [1]
+      },
+      "expected": 0,
+      "explanation": "Single element has no elements greater than it. Count=0.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [1, 2]
+      },
+      "expected": 1,
+      "explanation": "With k=1: element 1 has 1 greater (which is 2), element 2 has 0 greater. Count=1.",
+      "tags": ["two-elements"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array `nums`, count the number of elements that have at least k elements greater than them in the array. Here k is determined by the context of the problem (typically k = floor(n/2) or a fixed constant).",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "2",
+      "explanation": "With k=2: elements 1 and 2 each have at least 2 elements greater."
+    },
+    {
+      "input": "nums = [1,1,1,1]",
+      "output": "0",
+      "explanation": "No element has any greater value."
+    },
+    {
+      "input": "nums = [1,2]",
+      "output": "1",
+      "explanation": "Element 1 has 1 element greater (which is 2)."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^4"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number}\n */\nfunction countElementsWithAtLeastKGreaterValues(nums) {\n  // Write your solution here\n}",
+    "typescript": "function countElementsWithAtLeastKGreaterValues(nums: number[]): number {\n  // Write your solution here\n}",
+    "python": "def countElementsWithAtLeastKGreaterValues(nums: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint countElementsWithAtLeastKGreaterValues(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func countElementsWithAtLeastKGreaterValues(nums []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "countElementsWithAtLeastKGreaterValues",
+    "typescript": "countElementsWithAtLeastKGreaterValues",
+    "python": "countElementsWithAtLeastKGreaterValues",
+    "cpp": "countElementsWithAtLeastKGreaterValues",
+    "go": "CountElementsWithAtLeastKGreaterValues"
+  }
 }

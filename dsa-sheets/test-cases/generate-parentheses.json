@@ -1,13 +1,81 @@
 {
   "slug": "generate-parentheses",
-  "functionName": "generateParentheses",
+  "functionName": "generateParenthesis",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "n",
+      "type": "int"
     }
   ],
-  "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "string[]",
+  "outputOrderMatters": false,
+  "_status": "complete",
+  "description": "Given `n` pairs of parentheses, write a function to generate all combinations of well-formed (valid) parentheses.\n\nA combination of parentheses is well-formed if every opening parenthesis has a corresponding closing parenthesis in the correct order.",
+  "examples": [
+    {
+      "input": "n = 3",
+      "output": "[\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]",
+      "explanation": "There are 5 valid combinations of 3 pairs of parentheses (Catalan number C(3) = 5)."
+    },
+    {
+      "input": "n = 1",
+      "output": "[\"()\"]",
+      "explanation": "With 1 pair, the only valid combination is \"()\"."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 8"
+  ],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "n": 1 },
+      "expected": ["()"],
+      "explanation": "Only one valid combination for 1 pair.",
+      "tags": ["basic", "single-element"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "n": 2 },
+      "expected": ["(())", "()()"],
+      "explanation": "Two valid combinations for 2 pairs: \"(())\" and \"()()\".",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "n": 3 },
+      "expected": ["((()))", "(()())", "(())()", "()(())", "()()()"],
+      "explanation": "Five valid combinations for 3 pairs (Catalan number C(3) = 5).",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "n": 4 },
+      "expected": ["(((())))", "((()()))", "((())())", "((()))()", "(()(()))", "(()()())", "(()())()", "(())(())", "(())()()", "()((()))", "()(()())", "()(())()", "()()(())", "()()()()"],
+      "explanation": "14 valid combinations for 4 pairs (Catalan number C(4) = 14).",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "n": 8 },
+      "expected_count": 1430,
+      "expected": null,
+      "explanation": "For n=8, the Catalan number C(8)=1430. This test case validates the count of generated combinations rather than their exact content.",
+      "tags": ["edge-case"]
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {string[]}\n */\nfunction generateParenthesis(n) {\n  // Write your solution here\n}",
+    "typescript": "function generateParenthesis(n: number): string[] {\n  // Write your solution here\n}",
+    "python": "def generate_parenthesis(n: int) -> list[str]:\n    # Write your solution here\n    pass",
+    "cpp": "vector<string> generateParenthesis(int n) {\n    // Write your solution here\n}",
+    "go": "func generateParenthesis(n int) []string {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "generateParenthesis",
+    "typescript": "generateParenthesis",
+    "python": "generate_parenthesis",
+    "cpp": "generateParenthesis",
+    "go": "GenerateParenthesis"
+  }
 }

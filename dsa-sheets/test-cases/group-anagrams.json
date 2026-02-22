@@ -96,6 +96,35 @@
       "tags": [
         "no-solution"
       ]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "strs": [
+          "ab",
+          "ba",
+          "cd",
+          "dc",
+          "ef"
+        ]
+      },
+      "expected": [
+        [
+          "ab",
+          "ba"
+        ],
+        [
+          "cd",
+          "dc"
+        ],
+        [
+          "ef"
+        ]
+      ],
+      "explanation": "Two pairs of anagrams and one singleton",
+      "tags": [
+        "basic"
+      ]
     }
   ],
   "description": "Solve the **Group Anagrams** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/group-anagrams/).",
@@ -128,5 +157,6 @@
     "python": "group_anagrams",
     "cpp": "groupAnagrams",
     "go": "GroupAnagrams"
-  }
+  },
+  "_status": "complete"
 }

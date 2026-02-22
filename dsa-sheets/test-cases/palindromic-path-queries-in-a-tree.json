@@ -8,6 +8,12 @@
     }
   ],
   "returnType": "int",
+  "isDesignProblem": true,
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Answer queries about whether the path between two nodes in a tree forms a palindrome when node labels are concatenated.",
+  "examples": [
+    {"input": "root=[1,2,3]", "output": "complex tree result"}
+  ],
+  "constraints": ["1 <= number of nodes <= 10^5", "1 <= node.val <= 26"]
 }

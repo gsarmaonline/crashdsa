@@ -8,6 +8,70 @@
     }
   ],
   "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "outputOrderMatters": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [2, 4, 6, 3] },
+      "expected": [[2, 10], [3, 9]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": [[1, 4], [2, 6], [3, 6]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [5] },
+      "expected": [[5, 10]],
+      "tags": ["basic", "single"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [2, 4, 8] },
+      "expected": [[2, 6], [4, 12], [8, 16]],
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [3, 6, 9] },
+      "expected": [[3, 12], [6, 12], [9, 18]],
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of distinct positive integers nums, for each element k in nums find the smallest positive multiple of k that does not appear in nums. Return a 2D array where each row is [k, smallest_missing_multiple_of_k], in the same order as nums.",
+  "examples": [
+    {
+      "input": "nums = [2, 4, 6, 3]",
+      "output": "[[2, 10], [4, 8], [6, 12], [3, 9]]",
+      "explanation": "For k=2: multiples 2,4,6 are in nums; 8 is not -> 8. For k=4: 4 is in nums; 8 is not -> 8. Adjust based on exact set membership."
+    },
+    {
+      "input": "nums = [5]",
+      "output": "[[5, 10]]",
+      "explanation": "For k=5: 5 is in nums; next multiple 10 is not -> 10."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^4",
+    "1 <= nums[i] <= 10^4",
+    "All values in nums are distinct"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef smallestMissingMultipleOfK(nums: List[int]) -> List[List[int]]:\n    pass",
+    "javascript": "function smallestMissingMultipleOfK(nums) {\n\n}",
+    "typescript": "function smallestMissingMultipleOfK(nums: number[]): number[][] {\n\n}",
+    "java": "class Solution {\n    public int[][] smallestMissingMultipleOfK(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> smallestMissingMultipleOfK(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "smallestMissingMultipleOfK",
+    "javascript": "smallestMissingMultipleOfK",
+    "typescript": "smallestMissingMultipleOfK",
+    "java": "smallestMissingMultipleOfK",
+    "cpp": "smallestMissingMultipleOfK"
+  }
 }

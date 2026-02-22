@@ -2,12 +2,62 @@
   "slug": "accounts-merge",
   "functionName": "accountsMerge",
   "params": [
+    {"name": "accounts", "type": "string[][]"}
+  ],
+  "returnType": "string[][]",
+  "outputOrderMatters": false,
+  "testCases": [
     {
-      "name": "intervals",
-      "type": "Interval[]"
+      "id": "tc-1",
+      "inputs": {"accounts": [["John","johnsmith@mail.com","john_newyork@mail.com"],["John","johnsmith@mail.com","john00@mail.com"],["Mary","mary@mail.com"],["John","johnnybravo@mail.com"]]},
+      "expected": [["John","john00@mail.com","john_newyork@mail.com","johnsmith@mail.com"],["Mary","mary@mail.com"],["John","johnnybravo@mail.com"]],
+      "explanation": "The first two John accounts share 'johnsmith@mail.com' so they merge. Emails within each account are sorted alphabetically. Mary and the last John have no overlapping emails.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"accounts": [["Gabe","Gabe0@m.co","Gabe3@m.co","Gabe1@m.co"],["Kevin","Kevin3@m.co","Kevin5@m.co"],["Ethan","Ethan5@m.co","Ethan4@m.co"],["Hanzo","Hanzo3@m.co","Hanzo1@m.co","Hanzo0@m.co"],["Layla","Layla2@m.co","Layla1@m.co","Layla0@m.co"]]},
+      "expected": [["Ethan","Ethan4@m.co","Ethan5@m.co"],["Gabe","Gabe0@m.co","Gabe1@m.co","Gabe3@m.co"],["Hanzo","Hanzo0@m.co","Hanzo1@m.co","Hanzo3@m.co"],["Kevin","Kevin3@m.co","Kevin5@m.co"],["Layla","Layla0@m.co","Layla1@m.co","Layla2@m.co"]],
+      "explanation": "All accounts have disjoint email sets, so no merging occurs. Each account's emails are sorted alphabetically.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"accounts": [["a","a@a.com"]]},
+      "expected": [["a","a@a.com"]],
+      "explanation": "Single account with one email: no merging needed.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"accounts": [["a","a@a.com"],["a","a@a.com"]]},
+      "expected": [["a","a@a.com"]],
+      "explanation": "Two identical accounts with the same email merge into one account.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"accounts": [["a","a@a.com","b@a.com"],["b","b@a.com","c@a.com"]]},
+      "expected": [["a","a@a.com","b@a.com","c@a.com"]],
+      "explanation": "Account 'a' and account 'b' share email 'b@a.com', so they merge. The merged account keeps the name from the first account and combines all emails sorted.",
+      "tags": ["basic"]
     }
   ],
-  "returnType": "Interval[]",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given a list of accounts where each account is a list of strings (the first element is the name, and the rest are emails), merge accounts that share a common email. Return the merged accounts with emails sorted and the account name as the first element. Account order in output does not matter.",
+  "examples": [
+    {
+      "input": "accounts = [[\"John\",\"johnsmith@mail.com\",\"john_newyork@mail.com\"],[\"John\",\"johnsmith@mail.com\",\"john00@mail.com\"],[\"Mary\",\"mary@mail.com\"],[\"John\",\"johnnybravo@mail.com\"]]",
+      "output": "[[\"John\",\"john00@mail.com\",\"john_newyork@mail.com\",\"johnsmith@mail.com\"],[\"Mary\",\"mary@mail.com\"],[\"John\",\"johnnybravo@mail.com\"]]"
+    }
+  ],
+  "constraints": [
+    "1 <= accounts.length <= 1000",
+    "2 <= accounts[i].length <= 10",
+    "1 <= accounts[i][j].length <= 30",
+    "accounts[i][0] consists of English letters",
+    "accounts[i][j] (for j > 0) is a valid email"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

@@ -3,11 +3,67 @@
   "functionName": "reverseInteger",
   "params": [
     {
-      "name": "head",
-      "type": "ListNode"
+      "name": "x",
+      "type": "int"
     }
   ],
-  "returnType": "ListNode",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "x": 123 },
+      "expected": 321,
+      "explanation": "123 reversed is 321",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "x": -123 },
+      "expected": -321,
+      "explanation": "-123 reversed is -321",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "x": 120 },
+      "expected": 21,
+      "explanation": "120 reversed is 021 = 21 (leading zero dropped)",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "x": 0 },
+      "expected": 0,
+      "explanation": "0 reversed is 0",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "x": 1534236469 },
+      "expected": 0,
+      "explanation": "9646324351 overflows 32-bit integer range; return 0",
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], return 0.",
+  "examples": [
+    {
+      "input": "x = 123",
+      "output": "321"
+    },
+    {
+      "input": "x = -123",
+      "output": "-321"
+    },
+    {
+      "input": "x = 120",
+      "output": "21"
+    }
+  ],
+  "constraints": [
+    "-2^31 <= x <= 2^31 - 1"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

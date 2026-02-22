@@ -4,10 +4,61 @@
   "params": [
     {
       "name": "intervals",
-      "type": "Interval[]"
+      "type": "int[][]"
     }
   ],
-  "returnType": "Interval[]",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "intervals": [[1, 2], [2, 3], [3, 4], [1, 3]] },
+      "expected": 1,
+      "explanation": "Remove [1,3] to have [1,2],[2,3],[3,4] which are non-overlapping",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "intervals": [[1, 2], [1, 2], [1, 2]] },
+      "expected": 2,
+      "explanation": "Remove two overlapping copies; keep only one [1,2]",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "intervals": [[1, 2], [2, 3]] },
+      "expected": 0,
+      "explanation": "Touching intervals [1,2] and [2,3] are considered non-overlapping; remove 0",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "intervals": [[1, 4], [2, 3]] },
+      "expected": 1,
+      "explanation": "[2,3] is inside [1,4]; remove [1,4] to keep [2,3]. 1 removal.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "intervals": [[1, 3], [2, 4], [3, 5]] },
+      "expected": 1,
+      "explanation": "[1,3] and [2,4] overlap; remove [2,4] so [1,3] and [3,5] remain non-overlapping",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of intervals, return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.",
+  "examples": [
+    {
+      "input": "intervals = [[1,2],[2,3],[3,4],[1,3]]",
+      "output": "1",
+      "explanation": "[1,3] can be removed and the rest of the intervals are non-overlapping."
+    }
+  ],
+  "constraints": [
+    "1 <= intervals.length <= 10^5",
+    "intervals[i].length == 2",
+    "-5 * 10^4 <= starti < endi <= 5 * 10^4"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

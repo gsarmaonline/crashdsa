@@ -2,12 +2,69 @@
   "slug": "flood-fill",
   "functionName": "floodFill",
   "params": [
+    {"name": "image", "type": "int[][]"},
+    {"name": "sr", "type": "int"},
+    {"name": "sc", "type": "int"},
+    {"name": "color", "type": "int"}
+  ],
+  "returnType": "int[][]",
+  "testCases": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "id": "tc-1",
+      "inputs": {"image": [[1,1,1],[1,1,0],[1,0,1]], "sr": 1, "sc": 1, "color": 2},
+      "expected": [[2,2,2],[2,2,0],[2,0,1]],
+      "explanation": "Starting at (1,1) with value 1, flood fill replaces all connected 1s with 2. The isolated 1 at (2,2) is not 4-directionally connected.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"image": [[0,0,0],[0,0,0]], "sr": 0, "sc": 0, "color": 0},
+      "expected": [[0,0,0],[0,0,0]],
+      "explanation": "The new color (0) is the same as the starting cell's color (0), so no change is made.",
+      "tags": ["basic", "edge"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"image": [[1,1]], "sr": 0, "sc": 0, "color": 1},
+      "expected": [[1,1]],
+      "explanation": "The new color (1) equals the original color (1), so the image remains unchanged.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"image": [[1,1,1],[1,1,0],[1,0,1]], "sr": 0, "sc": 0, "color": 3},
+      "expected": [[3,3,3],[3,3,0],[3,0,1]],
+      "explanation": "Starting at (0,0), all 4-directionally connected cells with value 1 get filled with 3. The isolated 1 at (2,2) remains.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"image": [[0]], "sr": 0, "sc": 0, "color": 5},
+      "expected": [[5]],
+      "explanation": "Single cell grid: the only cell gets filled with color 5.",
+      "tags": ["edge"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an image represented as a 2D integer grid, perform a flood fill starting from pixel (sr, sc) with the given color. Replace the color of the starting pixel and all 4-directionally connected pixels of the same original color with the new color.",
+  "examples": [
+    {
+      "input": "image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2",
+      "output": "[[2,2,2],[2,2,0],[2,0,1]]"
+    },
+    {
+      "input": "image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0",
+      "output": "[[0,0,0],[0,0,0]]"
+    }
+  ],
+  "constraints": [
+    "m == image.length",
+    "n == image[i].length",
+    "1 <= m, n <= 50",
+    "0 <= image[i][j], color < 2^16",
+    "0 <= sr < m",
+    "0 <= sc < n"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

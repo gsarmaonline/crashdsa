@@ -3,11 +3,68 @@
   "functionName": "regularExpressionMatching",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "p",
+      "type": "string"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "aa", "p": "a" },
+      "expected": false,
+      "explanation": "'a' matches only one 'a', not 'aa'",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "aa", "p": "a*" },
+      "expected": true,
+      "explanation": "'a*' means zero or more 'a's, which matches 'aa'",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "ab", "p": ".*" },
+      "expected": true,
+      "explanation": "'.*' matches any sequence of characters, including 'ab'",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "aab", "p": "c*a*b" },
+      "expected": true,
+      "explanation": "'c*' matches empty, 'a*' matches 'aa', 'b' matches 'b'",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "mississippi", "p": "mis*is*p*." },
+      "expected": false,
+      "explanation": "Pattern does not match 'mississippi'",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*'. '.' matches any single character. '*' matches zero or more of the preceding element. The matching should cover the entire input string.",
+  "examples": [
+    {
+      "input": "s = \"aa\", p = \"a*\"",
+      "output": "true",
+      "explanation": "'a*' means zero or more 'a's, which matches 'aa'."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 20",
+    "1 <= p.length <= 30",
+    "s contains only lowercase English letters",
+    "p contains only lowercase English letters, '.', and '*'",
+    "It is guaranteed for each occurrence of '*', there will be a previous valid character to match"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

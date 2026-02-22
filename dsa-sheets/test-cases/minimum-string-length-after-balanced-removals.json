@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 1] },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3, 2, 1] },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1] },
+      "expected": 1,
+      "tags": ["basic", "single"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 3,
+      "tags": ["medium", "no-removal"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [3, 1, 2, 1, 3] },
+      "expected": 1,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array nums, repeatedly remove balanced pairs of elements: a pair (nums[i], nums[j]) where i < j and nums[i] == nums[j] and no element between them is equal to nums[i]. Return the minimum possible length of the array after all valid balanced removals.",
+  "examples": [
+    {
+      "input": "nums = [1, 2, 1]",
+      "output": "1",
+      "explanation": "Remove the pair (nums[0]=1, nums[2]=1) since no 1 lies between indices 0 and 2. Remaining: [2]. Length = 1."
+    },
+    {
+      "input": "nums = [1, 2, 3]",
+      "output": "3",
+      "explanation": "No balanced pairs exist (all elements are distinct). Length stays 3."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef minimumStringLengthAfterBalancedRemovals(nums: List[int]) -> int:\n    pass",
+    "javascript": "function minimumStringLengthAfterBalancedRemovals(nums) {\n\n}",
+    "typescript": "function minimumStringLengthAfterBalancedRemovals(nums: number[]): number {\n\n}",
+    "java": "class Solution {\n    public int minimumStringLengthAfterBalancedRemovals(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int minimumStringLengthAfterBalancedRemovals(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "minimumStringLengthAfterBalancedRemovals",
+    "javascript": "minimumStringLengthAfterBalancedRemovals",
+    "typescript": "minimumStringLengthAfterBalancedRemovals",
+    "java": "minimumStringLengthAfterBalancedRemovals",
+    "cpp": "minimumStringLengthAfterBalancedRemovals"
+  }
 }

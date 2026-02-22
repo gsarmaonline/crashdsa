@@ -9,5 +9,32 @@
   ],
   "returnType": "ListNode",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "Given a linked list where each node contains a binary digit (0 or 1), find the minimum number of bit flips needed to make the linked list represent the reverse of its current binary string. Return the head of the modified list.",
+  "examples": [
+    {
+      "input": "head = [0,1,0,0,1]",
+      "output": "[1,0,0,1,0]",
+      "explanation": "The binary string '01001'. Its reverse is '10010'. Positions that differ: index 0 (0→1), index 1 (1→0), index 3 (0→1), index 4 (1→0). Minimum flips = 4."
+    }
+  ],
+  "constraints": [
+    "1 <= length of linked list <= 10^5",
+    "Each node value is 0 or 1"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {ListNode} head\n * @return {ListNode}\n */\nfunction minimumNumberOfFlipsToReverseBinaryString(head) {\n  // Write your solution here\n}",
+    "typescript": "function minimumNumberOfFlipsToReverseBinaryString(head: ListNode | null): ListNode | null {\n  // Write your solution here\n}",
+    "python": "def minimumNumberOfFlipsToReverseBinaryString(head):\n    # Write your solution here\n    pass",
+    "cpp": "ListNode* minimumNumberOfFlipsToReverseBinaryString(ListNode* head) {\n    // Write your solution here\n}",
+    "go": "func minimumNumberOfFlipsToReverseBinaryString(head *ListNode) *ListNode {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumNumberOfFlipsToReverseBinaryString",
+    "typescript": "minimumNumberOfFlipsToReverseBinaryString",
+    "python": "minimumNumberOfFlipsToReverseBinaryString",
+    "cpp": "minimumNumberOfFlipsToReverseBinaryString",
+    "go": "MinimumNumberOfFlipsToReverseBinaryString"
+  }
 }

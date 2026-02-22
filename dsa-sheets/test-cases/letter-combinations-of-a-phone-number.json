@@ -2,12 +2,79 @@
   "slug": "letter-combinations-of-a-phone-number",
   "functionName": "letterCombinationsOfAPhoneNumber",
   "params": [
+    { "name": "digits", "type": "string" }
+  ],
+  "returnType": "string[]",
+  "outputOrderMatters": false,
+  "testCases": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "id": "tc-1",
+      "inputs": { "digits": "23" },
+      "expected": ["ad","ae","af","bd","be","bf","cd","ce","cf"],
+      "explanation": "2 maps to abc, 3 maps to def. All combinations of one letter from each group.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "digits": "" },
+      "expected": [],
+      "explanation": "Empty string input returns empty list.",
+      "tags": ["empty-input", "edge-case"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "digits": "2" },
+      "expected": ["a","b","c"],
+      "explanation": "2 maps to abc. Single digit yields all its mapped letters.",
+      "tags": ["single-digit"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "digits": "9" },
+      "expected": ["w","x","y","z"],
+      "explanation": "9 maps to wxyz (4 letters).",
+      "tags": ["single-digit", "four-letter-key"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "digits": "79" },
+      "expected": ["pw","px","py","pz","qw","qx","qy","qz","rw","rx","ry","rz","sw","sx","sy","sz"],
+      "explanation": "7 maps to pqrs, 9 maps to wxyz. All 4x4=16 combinations.",
+      "tags": ["basic", "four-letter-keys"]
     }
   ],
-  "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.\n\nA mapping of digits to letters (just like on a telephone keypad) is:\n- 2: abc, 3: def, 4: ghi, 5: jkl, 6: mno, 7: pqrs, 8: tuv, 9: wxyz\n\nSee the full problem on [LeetCode 17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/).",
+  "examples": [
+    {
+      "input": "digits = \"23\"",
+      "output": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"
+    },
+    {
+      "input": "digits = \"\"",
+      "output": "[]"
+    },
+    {
+      "input": "digits = \"2\"",
+      "output": "[\"a\",\"b\",\"c\"]"
+    }
+  ],
+  "constraints": [
+    "0 <= digits.length <= 4",
+    "digits[i] is a digit in the range ['2', '9']"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} digits\n * @return {string[]}\n */\nfunction letterCombinationsOfAPhoneNumber(digits) {\n  // Write your solution here\n}",
+    "typescript": "function letterCombinationsOfAPhoneNumber(digits: string): string[] {\n  // Write your solution here\n}",
+    "python": "def letter_combinations_of_a_phone_number(digits: str) -> list[str]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nvector<string> letterCombinationsOfAPhoneNumber(string digits) {\n    // Write your solution here\n}",
+    "go": "func letterCombinationsOfAPhoneNumber(digits string) []string {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "letterCombinationsOfAPhoneNumber",
+    "typescript": "letterCombinationsOfAPhoneNumber",
+    "python": "letter_combinations_of_a_phone_number",
+    "cpp": "letterCombinationsOfAPhoneNumber",
+    "go": "LetterCombinationsOfAPhoneNumber"
+  }
 }

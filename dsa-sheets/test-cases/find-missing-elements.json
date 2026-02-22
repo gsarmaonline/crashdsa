@@ -7,7 +7,71 @@
       "type": "int[]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int[]",
+  "outputOrderMatters": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 4] },
+      "expected": [3],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": [],
+      "tags": ["basic", "no-missing"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [2, 3, 4] },
+      "expected": [1],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 3, 5] },
+      "expected": [2, 4],
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [2, 4, 6] },
+      "expected": [1, 3, 5],
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of integers nums containing n distinct positive integers, find all integers in the range [1, n] that do not appear in nums. Return the missing numbers in any order.",
+  "examples": [
+    {
+      "input": "nums = [1, 2, 4]",
+      "output": "[3]",
+      "explanation": "The range is [1, 3]. The number 3 is missing."
+    },
+    {
+      "input": "nums = [1, 3, 5]",
+      "output": "[2, 4]",
+      "explanation": "The range is [1, 5]. Numbers 2 and 4 are missing."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= nums.length",
+    "All integers in nums are distinct"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef findMissingElements(nums: List[int]) -> List[int]:\n    pass",
+    "javascript": "function findMissingElements(nums) {\n\n}",
+    "typescript": "function findMissingElements(nums: number[]): number[] {\n\n}",
+    "java": "class Solution {\n    public List<Integer> findMissingElements(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    vector<int> findMissingElements(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "findMissingElements",
+    "javascript": "findMissingElements",
+    "typescript": "findMissingElements",
+    "java": "findMissingElements",
+    "cpp": "findMissingElements"
+  }
 }

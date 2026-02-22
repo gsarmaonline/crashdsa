@@ -1,13 +1,97 @@
 {
   "slug": "min-cost-to-connect-all-points",
-  "functionName": "minCostToConnectAllPoints",
+  "functionName": "minCostConnectPoints",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "points",
+      "type": "int[][]"
     }
   ],
-  "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int",
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "points": [[0,0],[2,2],[3,10],[5,2],[7,0]]
+      },
+      "expected": 20,
+      "explanation": "The minimum spanning tree connects all 5 points with total Manhattan distance cost of 20.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "points": [[3,12],[-2,5],[-4,1]]
+      },
+      "expected": 18,
+      "explanation": "MST of 3 points: |3-(-2)|+|12-5| = 12, |(-2)-(-4)|+|5-1| = 6; total 18.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "points": [[0,0],[1,1],[1,0],[-1,1]]
+      },
+      "expected": 4,
+      "explanation": "Optimal MST connecting all 4 points has total cost 4.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "points": [[0,0]]
+      },
+      "expected": 0,
+      "explanation": "Single point requires no connections.",
+      "tags": ["edge-case", "single-point"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "points": [[0,0],[1,0]]
+      },
+      "expected": 1,
+      "explanation": "Two points connected by Manhattan distance |1-0|+|0-0| = 1.",
+      "tags": ["edge-case", "two-points"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Min Cost to Connect All Points** problem.\n\nGiven an array of points, find the minimum cost to connect all points. The cost to connect two points is the Manhattan distance between them: |x1 - x2| + |y1 - y2|. This is equivalent to finding the Minimum Spanning Tree.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/min-cost-to-connect-all-points/).",
+  "examples": [
+    {
+      "input": "points = [[0,0],[2,2],[3,10],[5,2],[7,0]]",
+      "output": "20",
+      "explanation": "Minimum spanning tree cost using Manhattan distances."
+    },
+    {
+      "input": "points = [[3,12],[-2,5],[-4,1]]",
+      "output": "18"
+    },
+    {
+      "input": "points = [[0,0]]",
+      "output": "0",
+      "explanation": "Only one point, no connections needed."
+    }
+  ],
+  "constraints": [
+    "1 <= points.length <= 1000",
+    "-10^6 <= x, y <= 10^6",
+    "All points are distinct"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[][]} points\n * @return {number}\n */\nfunction minCostConnectPoints(points) {\n  // Write your solution here\n}",
+    "typescript": "function minCostConnectPoints(points: number[][]): number {\n  // Write your solution here\n}",
+    "python": "def min_cost_connect_points(points: list[list[int]]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint minCostConnectPoints(vector<vector<int>>& points) {\n    // Write your solution here\n}",
+    "go": "func minCostConnectPoints(points [][]int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minCostConnectPoints",
+    "typescript": "minCostConnectPoints",
+    "python": "min_cost_connect_points",
+    "cpp": "minCostConnectPoints",
+    "go": "MinCostConnectPoints"
+  }
 }

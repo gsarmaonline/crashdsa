@@ -3,11 +3,90 @@
   "functionName": "minCostClimbingStairs",
   "params": [
     {
-      "name": "nums",
+      "name": "cost",
       "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "cost": [10,15,20]
+      },
+      "expected": 15,
+      "explanation": "Start at index 1 (cost 15), jump 2 steps to reach top. Total: 15.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "cost": [1,100,1,1,1,100,1,1,100,1]
+      },
+      "expected": 6,
+      "explanation": "Optimal path skips expensive steps: 1+1+1+1+1+1 = 6.",
+      "tags": ["basic", "greedy-naive-fails"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "cost": [0,0]
+      },
+      "expected": 0,
+      "explanation": "All costs are 0, so the minimum cost is 0.",
+      "tags": ["edge-case", "zero-cost"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "cost": [1,2]
+      },
+      "expected": 1,
+      "explanation": "Start at index 0 (cost 1), jump 2 steps to top. Or start at index 1 (cost 2). Min is 1.",
+      "tags": ["edge-case", "two-steps"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "cost": [10,15]
+      },
+      "expected": 10,
+      "explanation": "Start at index 0 (cost 10) and jump 2 steps to top. Min is 10.",
+      "tags": ["edge-case"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Min Cost Climbing Stairs** problem.\n\nEach index of the array cost represents a stair. From stair i, you can climb 1 or 2 steps. You can start from index 0 or index 1. Find the minimum cost to reach the top (past the last index).\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/min-cost-climbing-stairs/).",
+  "examples": [
+    {
+      "input": "cost = [10,15,20]",
+      "output": "15",
+      "explanation": "Start at index 1 and jump 2 steps."
+    },
+    {
+      "input": "cost = [1,100,1,1,1,100,1,1,100,1]",
+      "output": "6",
+      "explanation": "Pay cost at indices 0,2,4,6,7,9 = 6."
+    }
+  ],
+  "constraints": [
+    "2 <= cost.length <= 1000",
+    "0 <= cost[i] <= 999"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} cost\n * @return {number}\n */\nfunction minCostClimbingStairs(cost) {\n  // Write your solution here\n}",
+    "typescript": "function minCostClimbingStairs(cost: number[]): number {\n  // Write your solution here\n}",
+    "python": "def min_cost_climbing_stairs(cost: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint minCostClimbingStairs(vector<int>& cost) {\n    // Write your solution here\n}",
+    "go": "func minCostClimbingStairs(cost []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minCostClimbingStairs",
+    "typescript": "minCostClimbingStairs",
+    "python": "min_cost_climbing_stairs",
+    "cpp": "minCostClimbingStairs",
+    "go": "MinCostClimbingStairs"
+  }
 }

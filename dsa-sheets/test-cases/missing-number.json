@@ -3,11 +3,63 @@
   "functionName": "missingNumber",
   "params": [
     {
-      "name": "n",
-      "type": "int"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [3, 0, 1] },
+      "expected": 2,
+      "explanation": "n=3, range [0,3]; 2 is missing",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [0, 1] },
+      "expected": 2,
+      "explanation": "n=2, range [0,2]; 2 is missing",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [9, 6, 4, 2, 3, 5, 7, 0, 1] },
+      "expected": 8,
+      "explanation": "n=9, range [0,9]; 8 is missing",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [0] },
+      "expected": 1,
+      "explanation": "n=1, range [0,1]; 1 is missing",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1] },
+      "expected": 0,
+      "explanation": "n=1, range [0,1]; 0 is missing",
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.",
+  "examples": [
+    {
+      "input": "nums = [3,0,1]",
+      "output": "2",
+      "explanation": "n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number."
+    }
+  ],
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 10^4",
+    "0 <= nums[i] <= n",
+    "All the numbers of nums are unique"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

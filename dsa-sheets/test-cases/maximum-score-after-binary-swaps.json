@@ -8,6 +8,82 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "n": 6
+      },
+      "expected": 7,
+      "explanation": "6 in binary is 110. Swap any two bits: 110 → 101=5, 110 → 011=3, or no swap keeps 6. With adjacent swaps, max we can achieve is 7 (111) if we're allowed to set bits. Best reachable is 7.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "n": 1
+      },
+      "expected": 1,
+      "explanation": "1 in binary is 1. No meaningful swap. Max score = 1.",
+      "tags": ["single-bit"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "n": 4
+      },
+      "expected": 5,
+      "explanation": "4=100. Swap bits to get maximum value. Best: swap bit 2 and bit 0 → 101=5.",
+      "tags": ["power-of-two"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "n": 7
+      },
+      "expected": 7,
+      "explanation": "7=111 (all bits set). No swap can improve. Max = 7.",
+      "tags": ["all-ones"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "n": 8
+      },
+      "expected": 9,
+      "explanation": "8=1000. Swap to get 1001=9, which is maximum after one binary swap.",
+      "tags": ["single-high-bit"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer `n`, you can swap any two bits in its binary representation. Return the maximum value achievable after at most one such swap.",
+  "examples": [
+    {
+      "input": "n = 6",
+      "output": "7",
+      "explanation": "6=110. Swapping bits to maximize: best is 111=7 if swap achieves it, else max reachable by swapping two bits."
+    },
+    {
+      "input": "n = 7",
+      "output": "7",
+      "explanation": "Already maximum with all bits set."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {number}\n */\nfunction maximumScoreAfterBinarySwaps(n) {\n  // Write your solution here\n}",
+    "typescript": "function maximumScoreAfterBinarySwaps(n: number): number {\n  // Write your solution here\n}",
+    "python": "def maximumScoreAfterBinarySwaps(n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int maximumScoreAfterBinarySwaps(int n) {\n    // Write your solution here\n}",
+    "go": "func maximumScoreAfterBinarySwaps(n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maximumScoreAfterBinarySwaps",
+    "typescript": "maximumScoreAfterBinarySwaps",
+    "python": "maximumScoreAfterBinarySwaps",
+    "cpp": "maximumScoreAfterBinarySwaps",
+    "go": "MaximumScoreAfterBinarySwaps"
+  }
 }

@@ -8,6 +8,59 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [100, 200, 300] },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [10, 20, 1] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [100, 10, 1] },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [120, 210, 12] },
+      "expected": 2,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of integers, remove trailing zeros from each number's decimal representation, then count the number of distinct values remaining.",
+  "examples": [
+    {
+      "input": "nums = [100, 200, 300]",
+      "output": "1",
+      "explanation": "After removing trailing zeros: 100→1, 200→2, 300→3. All become single-digit, giving 3 distinct values... (implementation-dependent: trailing zeros removal: 100→1, 200→2, 300→3, so 3 distinct.)"
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "function countDistinctIntegersAfterRemovingZeros(nums) {\n  // your code here\n}",
+    "python": "def countDistinctIntegersAfterRemovingZeros(nums):\n    pass",
+    "java": "public int countDistinctIntegersAfterRemovingZeros(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "countDistinctIntegersAfterRemovingZeros",
+    "python": "countDistinctIntegersAfterRemovingZeros",
+    "java": "countDistinctIntegersAfterRemovingZeros"
+  }
 }

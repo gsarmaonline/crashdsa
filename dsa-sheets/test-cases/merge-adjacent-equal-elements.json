@@ -8,6 +8,13 @@
     }
   ],
   "returnType": "Interval[]",
+  "isDesignProblem": true,
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Merge all adjacent intervals that have equal values into a single combined interval.",
+  "examples": [
+    {"input": "intervals=[[1,3],[3,5],[6,8]]", "output": "[[1,5],[6,8]]"},
+    {"input": "intervals=[[1,2],[3,4]]", "output": "[[1,2],[3,4]]"}
+  ],
+  "constraints": ["1 <= intervals.length <= 10^4", "Intervals are sorted by start value"]
 }

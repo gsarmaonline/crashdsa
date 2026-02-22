@@ -8,6 +8,13 @@
     }
   ],
   "returnType": "ListNode",
+  "isDesignProblem": true,
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given a linked list representing a string and a target character ch, reverse the prefix of the list from the head up to and including the first occurrence of ch.",
+  "examples": [
+    {"input": "head=a->b->c->d->e->f->d, ch='d'", "output": "d->c->b->a->e->f->d"},
+    {"input": "head=a->b->c->d, ch='z'", "output": "a->b->c->d"}
+  ],
+  "constraints": ["1 <= list length <= 10^5", "ch is a lowercase English letter", "s consists of lowercase English letters"]
 }

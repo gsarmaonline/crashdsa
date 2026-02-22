@@ -71,6 +71,52 @@
       "tags": [
         "negative-numbers"
       ]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "k": 1
+      },
+      "expected": [
+        1
+      ],
+      "explanation": "k=1, only the most frequent element",
+      "tags": [
+        "basic"
+      ]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [
+          5,
+          5,
+          4,
+          4,
+          3,
+          3,
+          2,
+          1
+        ],
+        "k": 3
+      },
+      "expected": [
+        5,
+        4,
+        3
+      ],
+      "explanation": "Three elements tied at 2 occurrences each, element 2 and 1 have one occurrence",
+      "tags": [
+        "basic"
+      ]
     }
   ],
   "description": "Solve the **Top K Frequent Elements** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/top-k-frequent-elements/).",
@@ -102,5 +148,6 @@
     "python": "top_k_frequent",
     "cpp": "topKFrequent",
     "go": "TopKFrequent"
-  }
+  },
+  "_status": "complete"
 }

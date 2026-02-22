@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given a binary string representing an array, find the maximum XOR value achievable by selecting a contiguous subarray within a bounded range.",
+  "examples": [
+    {"input": "s=\"1101\"", "output": "7"},
+    {"input": "s=\"0\"", "output": "0"}
+  ],
+  "constraints": ["1 <= s.length <= 10^4", "s consists of '0' and '1' only"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"s": "1101"},
+      "expected": 7,
+      "explanation": "The binary string '111' as a subarray XOR prefix gives value 7 (binary 111).",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"s": "0"},
+      "expected": 0,
+      "explanation": "Single '0' gives XOR value 0.",
+      "tags": ["edge", "single-zero"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"s": "1"},
+      "expected": 1,
+      "explanation": "Single '1' gives XOR value 1.",
+      "tags": ["edge", "single-one"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"s": "1111"},
+      "expected": 15,
+      "explanation": "The full subarray '1111' gives XOR value 15 (binary 1111).",
+      "tags": ["all-ones"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"s": "0110"},
+      "expected": 6,
+      "explanation": "Subarray '110' gives value 6 (binary 110), which is the maximum achievable XOR in bounded range.",
+      "tags": ["basic"]
+    }
+  ]
 }

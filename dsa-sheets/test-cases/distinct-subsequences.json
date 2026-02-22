@@ -3,11 +3,65 @@
   "functionName": "distinctSubsequences",
   "params": [
     {
-      "name": "grid",
-      "type": "int[][]"
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "rabbbit", "t": "rabbit" },
+      "expected": 3,
+      "explanation": "Three distinct ways to choose 'rabbit' from 'rabbbit' by picking different 'b's",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "babgbag", "t": "bag" },
+      "expected": 5,
+      "explanation": "Five distinct subsequences of 'babgbag' equal 'bag'",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "a", "t": "a" },
+      "expected": 1,
+      "explanation": "One way: pick the only 'a'",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "a", "t": "b" },
+      "expected": 0,
+      "explanation": "No way to form 'b' from 'a'",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "aaa", "t": "aa" },
+      "expected": 3,
+      "explanation": "Three ways to pick two 'a's from three: positions (0,1), (0,2), (1,2)",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given two strings s and t, return the number of distinct subsequences of s which equals t. A subsequence of a string is formed by deleting some (or no) characters without changing the relative order.",
+  "examples": [
+    {
+      "input": "s = \"rabbbit\", t = \"rabbit\"",
+      "output": "3",
+      "explanation": "As shown below, there are 3 ways you can generate \"rabbit\" from s."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length, t.length <= 1000",
+    "s and t consist of English letters"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

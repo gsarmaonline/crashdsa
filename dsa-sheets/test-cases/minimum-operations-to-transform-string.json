@@ -3,11 +3,68 @@
   "functionName": "minimumOperationsToTransformString",
   "params": [
     {
-      "name": "n",
-      "type": "int"
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "t",
+      "type": "string"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "abc", "t": "abc" },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "abc", "t": "xyz" },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "abc", "t": "abd" },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "a", "t": "z" },
+      "expected": 1,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "abcde", "t": "abcdf" },
+      "expected": 1,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given two strings s and t of the same length, return the minimum number of operations to transform s into t. Each operation changes one character of s to any other character.",
+  "examples": [
+    {
+      "input": "s = \"abc\", t = \"xyz\"",
+      "output": "3",
+      "explanation": "All 3 characters differ: a→x, b→y, c→z. Minimum 3 operations."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length == t.length <= 10^5",
+    "s and t consist of lowercase English letters"
+  ],
+  "starterCode": {
+    "javascript": "function minimumOperationsToTransformString(s, t) {\n  // your code here\n}",
+    "python": "def minimumOperationsToTransformString(s, t):\n    pass",
+    "java": "public int minimumOperationsToTransformString(String s, String t) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumOperationsToTransformString",
+    "python": "minimumOperationsToTransformString",
+    "java": "minimumOperationsToTransformString"
+  }
 }

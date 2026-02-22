@@ -2,12 +2,87 @@
   "slug": "max-area-of-island",
   "functionName": "maxAreaOfIsland",
   "params": [
-    {
-      "name": "grid",
-      "type": "char[][]"
-    }
+    { "name": "grid", "type": "int[][]" }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "grid": [
+          [0,0,1,0,0,0,0,1,0,0,0,0,0],
+          [0,0,0,0,0,0,0,1,1,1,0,0,0],
+          [0,1,1,0,1,0,0,0,0,0,0,0,0],
+          [0,1,0,0,1,1,0,0,1,0,1,0,0],
+          [0,1,0,0,1,1,0,0,1,1,1,0,0],
+          [0,0,0,0,0,0,0,0,0,0,1,0,0],
+          [0,0,0,0,0,0,0,1,1,1,0,0,0],
+          [0,0,0,0,0,0,0,1,1,0,0,0,0]
+        ]
+      },
+      "expected": 6,
+      "explanation": "The largest island has area 6, found in the bottom-right region.",
+      "tags": ["basic", "large-grid"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "grid": [[0,0,0,0,0,0,0,0]] },
+      "expected": 0,
+      "explanation": "All zeros, no islands present.",
+      "tags": ["no-solution", "edge-case"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "grid": [[1]] },
+      "expected": 1,
+      "explanation": "Single cell grid with one land cell has area 1.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "grid": [[1,1],[1,1]] },
+      "expected": 4,
+      "explanation": "All four cells are land and connected, forming one island of area 4.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "grid": [[1,0],[0,1]] },
+      "expected": 1,
+      "explanation": "Two diagonal land cells are not connected (only 4-directional adjacency), each island has area 1.",
+      "tags": ["edge-case", "diagonal"]
+    }
+  ],
+  "_status": "complete",
+  "description": "You are given an m x n binary matrix `grid`. An island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical). You may assume all four edges of the grid are surrounded by water.\n\nReturn the maximum area of an island in `grid`. If there is no island, return 0.\n\nSee the full problem on [LeetCode 695](https://leetcode.com/problems/max-area-of-island/).",
+  "examples": [
+    {
+      "input": "grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]",
+      "output": "6"
+    },
+    {
+      "input": "grid = [[0,0,0,0,0,0,0,0]]",
+      "output": "0"
+    }
+  ],
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 50",
+    "grid[i][j] is either 0 or 1"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nfunction maxAreaOfIsland(grid) {\n  // Write your solution here\n}",
+    "typescript": "function maxAreaOfIsland(grid: number[][]): number {\n  // Write your solution here\n}",
+    "python": "def max_area_of_island(grid: list[list[int]]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint maxAreaOfIsland(vector<vector<int>>& grid) {\n    // Write your solution here\n}",
+    "go": "func maxAreaOfIsland(grid [][]int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maxAreaOfIsland",
+    "typescript": "maxAreaOfIsland",
+    "python": "max_area_of_island",
+    "cpp": "maxAreaOfIsland",
+    "go": "MaxAreaOfIsland"
+  }
 }

@@ -3,11 +3,75 @@
   "functionName": "sameTree",
   "params": [
     {
-      "name": "root",
+      "name": "p",
+      "type": "TreeNode"
+    },
+    {
+      "name": "q",
       "type": "TreeNode"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "p": [1, 2, 3], "q": [1, 2, 3] },
+      "expected": true,
+      "explanation": "Both trees have identical structure and node values",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "p": [1, 2], "q": [1, null, 2] },
+      "expected": false,
+      "explanation": "Same values but different structure: p has 2 as left child, q has 2 as right child",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "p": [1, 2, 1], "q": [1, 1, 2] },
+      "expected": false,
+      "explanation": "Same values but children are swapped at root level",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "p": [], "q": [] },
+      "expected": true,
+      "explanation": "Two empty trees are the same",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "p": [1], "q": [1] },
+      "expected": true,
+      "explanation": "Two single-node trees with the same value are the same",
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given the roots of two binary trees p and q, write a function to check if they are the same or not. Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.",
+  "examples": [
+    {
+      "input": "p = [1,2,3], q = [1,2,3]",
+      "output": "true",
+      "explanation": "Both trees are structurally identical with the same node values."
+    },
+    {
+      "input": "p = [1,2], q = [1,null,2]",
+      "output": "false",
+      "explanation": "Although both have the same values, the structure differs."
+    },
+    {
+      "input": "p = [1,2,1], q = [1,1,2]",
+      "output": "false",
+      "explanation": "The values at the same positions differ."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in both trees is in the range [0, 100]",
+    "-10^4 <= Node.val <= 10^4"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

@@ -8,6 +8,58 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "n": 6 },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "n": 12 },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "n": 1 },
+      "expected": 1,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "n": 7 },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "n": 100 },
+      "expected": 25,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer n, find the maximum partition factor: the largest divisor of n such that the remaining quotient is also a divisor. Return the maximum such factor.",
+  "examples": [
+    {
+      "input": "n = 6",
+      "output": "3",
+      "explanation": "Divisors of 6 are 1,2,3,6. The maximum partition factor is 3 (6/3=2, both are divisors)."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "function maximumPartitionFactor(n) {\n  // your code here\n}",
+    "python": "def maximumPartitionFactor(n):\n    pass",
+    "java": "public int maximumPartitionFactor(int n) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maximumPartitionFactor",
+    "python": "maximumPartitionFactor",
+    "java": "maximumPartitionFactor"
+  }
 }

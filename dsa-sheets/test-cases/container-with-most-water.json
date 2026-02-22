@@ -74,6 +74,25 @@
       "tags": [
         "basic"
       ]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "height": [
+          2,
+          3,
+          4,
+          5,
+          18,
+          17,
+          6
+        ]
+      },
+      "expected": 17,
+      "explanation": "Lines at index 4 (h=18) and index 5 (h=17): min(18,17)*(5-4)=17",
+      "tags": [
+        "edge-case"
+      ]
     }
   ],
   "description": "Solve the **Container With Most Water** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/container-with-most-water/).",
@@ -107,5 +126,6 @@
     "python": "max_area",
     "cpp": "maxArea",
     "go": "MaxArea"
-  }
+  },
+  "_status": "complete"
 }

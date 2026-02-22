@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Return the count of integers from 1 to n where the number of set bits (popcount) equals the number of digits in its decimal representation.",
+  "examples": [
+    {"input": "n=10", "output": "5"},
+    {"input": "n=1", "output": "1"}
+  ],
+  "constraints": ["1 <= n <= 10^6"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"n": 10},
+      "expected": 5,
+      "explanation": "1: 1 bit, 1 digit ✓; 2: 1 bit, 1 digit ✓; 3: 2 bits, 1 digit ✗; 4: 1 bit, 1 digit ✓; 5: 2 bits, 1 digit ✗; 6: 2 bits, 1 digit ✗; 7: 3 bits, 1 digit ✗; 8: 1 bit, 1 digit ✓; 9: 2 bits, 1 digit ✗; 10: 2 bits, 2 digits ✓. Count=5.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"n": 1},
+      "expected": 1,
+      "explanation": "1 has 1 set bit and 1 decimal digit, so it qualifies. Count=1.",
+      "tags": ["edge", "minimal"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"n": 8},
+      "expected": 4,
+      "explanation": "1-digit numbers with exactly 1 set bit: 1(1),2(10),4(100),8(1000) → 1,2,4,8. Count=4.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"n": 3},
+      "expected": 2,
+      "explanation": "1: 1 bit, 1 digit ✓; 2: 1 bit, 1 digit ✓; 3: 2 bits, 1 digit ✗. Count=2.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"n": 100},
+      "expected": 21,
+      "explanation": "1-digit with 1 bit: 1,2,4,8 → 4. 2-digit (10-99) with 2 bits: 10,12 (4-bit); 17,18,20,24 (5-bit); 33,34,36,40,48 (6-bit); 65,66,68,72,80,96 (7-bit) → 17. Total=4+17=21.",
+      "tags": ["larger"]
+    }
+  ]
 }

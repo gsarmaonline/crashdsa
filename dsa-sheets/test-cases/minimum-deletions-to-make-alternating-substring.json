@@ -8,6 +8,59 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "aaabbb" },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "abab" },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "aabb" },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "a" },
+      "expected": 0,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "aaaa" },
+      "expected": 3,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a binary string s (only '0' and '1'), return the minimum number of deletions to make it alternating (no two adjacent characters are the same).",
+  "examples": [
+    {
+      "input": "s = \"aaabbb\"",
+      "output": "4",
+      "explanation": "Delete 2 'a's and 2 'b's to get \"ab\". Or delete to get \"ab\" or \"ba\". Min deletions = len - longest alternating subsequence."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists only of '0' and '1'"
+  ],
+  "starterCode": {
+    "javascript": "function minimumDeletionsToMakeAlternatingSubstring(s) {\n  // your code here\n}",
+    "python": "def minimumDeletionsToMakeAlternatingSubstring(s):\n    pass",
+    "java": "public int minimumDeletionsToMakeAlternatingSubstring(String s) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumDeletionsToMakeAlternatingSubstring",
+    "python": "minimumDeletionsToMakeAlternatingSubstring",
+    "java": "minimumDeletionsToMakeAlternatingSubstring"
+  }
 }

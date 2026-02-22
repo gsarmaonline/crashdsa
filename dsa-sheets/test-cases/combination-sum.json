@@ -2,12 +2,83 @@
   "slug": "combination-sum",
   "functionName": "combinationSum",
   "params": [
-    {
-      "name": "nums",
-      "type": "int[]"
-    }
+    { "name": "candidates", "type": "int[]" },
+    { "name": "target", "type": "int" }
   ],
   "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "outputOrderMatters": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "candidates": [2,3,6,7], "target": 7 },
+      "expected": [[2,2,3],[7]],
+      "explanation": "2+2+3=7 and 7=7. Candidates can be reused.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "candidates": [2,3,5], "target": 8 },
+      "expected": [[2,2,2,2],[2,3,3],[3,5]],
+      "explanation": "2+2+2+2=8, 2+3+3=8, 3+5=8.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "candidates": [2], "target": 1 },
+      "expected": [],
+      "explanation": "Cannot reach target 1 with only candidate 2.",
+      "tags": ["no-solution"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "candidates": [1], "target": 1 },
+      "expected": [[1]],
+      "explanation": "1=1.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "candidates": [1,2], "target": 4 },
+      "expected": [[1,1,1,1],[1,1,2],[2,2]],
+      "explanation": "1+1+1+1=4, 1+1+2=4, 2+2=4.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of distinct integers `candidates` and a target integer `target`, return a list of all unique combinations of `candidates` where the chosen numbers sum to `target`. You may return the combinations in any order.\n\nThe same number may be chosen from `candidates` an unlimited number of times. Two combinations are unique if the frequency of at least one of the chosen numbers is different.\n\nSee the full problem on [LeetCode 39](https://leetcode.com/problems/combination-sum/).",
+  "examples": [
+    {
+      "input": "candidates = [2,3,6,7], target = 7",
+      "output": "[[2,2,3],[7]]",
+      "explanation": "2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times. 7 is a candidate, and 7 = 7."
+    },
+    {
+      "input": "candidates = [2,3,5], target = 8",
+      "output": "[[2,2,2,2],[2,3,3],[3,5]]"
+    },
+    {
+      "input": "candidates = [2], target = 1",
+      "output": "[]"
+    }
+  ],
+  "constraints": [
+    "1 <= candidates.length <= 30",
+    "2 <= candidates[i] <= 40",
+    "All elements of candidates are distinct",
+    "1 <= target <= 40"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} candidates\n * @param {number} target\n * @return {number[][]}\n */\nfunction combinationSum(candidates, target) {\n  // Write your solution here\n}",
+    "typescript": "function combinationSum(candidates: number[], target: number): number[][] {\n  // Write your solution here\n}",
+    "python": "def combination_sum(candidates: list[int], target: int) -> list[list[int]]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nvector<vector<int>> combinationSum(vector<int>& candidates, int target) {\n    // Write your solution here\n}",
+    "go": "func combinationSum(candidates []int, target int) [][]int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "combinationSum",
+    "typescript": "combinationSum",
+    "python": "combination_sum",
+    "cpp": "combinationSum",
+    "go": "CombinationSum"
+  }
 }

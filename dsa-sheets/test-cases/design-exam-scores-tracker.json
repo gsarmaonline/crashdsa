@@ -9,5 +9,23 @@
   ],
   "returnType": "int",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "Design an exam scores tracker that supports adding student scores, querying the top-k scores, and computing average scores. This is a design problem requiring a class with multiple methods.",
+  "examples": [],
+  "constraints": [
+    "Up to 10^4 operations",
+    "Scores are integers in range [0, 100]",
+    "Student IDs are positive integers"
+  ],
+  "starterCode": {
+    "javascript": "class ExamScoresTracker {\n  constructor() {\n    // initialize\n  }\n  addScore(studentId, score) {\n    // your code here\n  }\n  getTopK(k) {\n    // your code here\n  }\n  getAverage() {\n    // your code here\n  }\n}",
+    "python": "class ExamScoresTracker:\n    def __init__(self):\n        pass\n    def add_score(self, student_id, score):\n        pass\n    def get_top_k(self, k):\n        pass\n    def get_average(self):\n        pass",
+    "java": "class ExamScoresTracker {\n    public ExamScoresTracker() {}\n    public void addScore(int studentId, int score) {}\n    public List<Integer> getTopK(int k) { return null; }\n    public double getAverage() { return 0.0; }\n}"
+  },
+  "functionNameMap": {
+    "javascript": "designExamScoresTracker",
+    "python": "designExamScoresTracker",
+    "java": "designExamScoresTracker"
+  }
 }

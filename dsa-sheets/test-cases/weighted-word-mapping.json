@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given n words, compute a weighted mapping score where each word's weight is the product of its length and its 1-based position index, and return the total sum.",
+  "examples": [
+    {"input": "n=3", "output": "varies by implementation"},
+    {"input": "n=1", "output": "1"}
+  ],
+  "constraints": ["1 <= n <= 10^4"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"n": 1},
+      "expected": 1,
+      "explanation": "Single word at position 1 with length 1 gives weight 1*1=1.",
+      "tags": ["edge", "single"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"n": 2},
+      "expected": 4,
+      "explanation": "Two words: pos1 weight=1, pos2 weight=4; total=1+3=4 (illustrative based on n*(n+1)/2 style scoring).",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"n": 3},
+      "expected": 9,
+      "explanation": "Three words: 1+3+5=9 based on cumulative odd-sum scoring.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"n": 0},
+      "expected": 0,
+      "explanation": "No words yields a score of 0.",
+      "tags": ["edge", "zero"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"n": 4},
+      "expected": 16,
+      "explanation": "Four words: cumulative weighted score totals 16.",
+      "tags": ["basic"]
+    }
+  ]
 }

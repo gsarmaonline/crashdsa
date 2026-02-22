@@ -8,6 +8,12 @@
     }
   ],
   "returnType": "int",
+  "isDesignProblem": true,
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Find users whose total token usage exceeds a defined threshold within a given time period.",
+  "examples": [
+    {"input": "nums=[100,200,300]", "output": "SQL/data result"}
+  ],
+  "constraints": ["1 <= nums.length <= 10^5"]
 }

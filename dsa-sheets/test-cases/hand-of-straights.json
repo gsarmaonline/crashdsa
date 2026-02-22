@@ -3,11 +3,66 @@
   "functionName": "handOfStraights",
   "params": [
     {
-      "name": "n",
+      "name": "hand",
+      "type": "int[]"
+    },
+    {
+      "name": "groupSize",
       "type": "int"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "hand": [1, 2, 3, 6, 2, 3, 4, 7, 8], "groupSize": 3 },
+      "expected": true,
+      "explanation": "Can be rearranged as [1,2,3], [2,3,4], [6,7,8] — three groups of 3 consecutive cards",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "hand": [1, 2, 3, 4, 5], "groupSize": 4 },
+      "expected": false,
+      "explanation": "5 cards cannot be evenly divided into groups of 4",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "hand": [1], "groupSize": 1 },
+      "expected": true,
+      "explanation": "Single card forms a group of size 1",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "hand": [1, 2, 3], "groupSize": 3 },
+      "expected": true,
+      "explanation": "Forms one group [1,2,3]",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "hand": [1, 1, 2, 2, 3, 3], "groupSize": 2 },
+      "expected": false,
+      "explanation": "Groups of size 2 must be consecutive; cannot form valid groups from [1,1,2,2,3,3] with groupSize=2",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array hand of integers representing card values and an integer groupSize, return true if you can rearrange the cards into groups of groupSize consecutive cards, or false otherwise.",
+  "examples": [
+    {
+      "input": "hand = [1,2,3,6,2,3,4,7,8], groupSize = 3",
+      "output": "true",
+      "explanation": "Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]"
+    }
+  ],
+  "constraints": [
+    "1 <= hand.length <= 10^4",
+    "0 <= hand[i] <= 10^9",
+    "1 <= groupSize <= hand.length"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

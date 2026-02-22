@@ -9,5 +9,19 @@
   ],
   "returnType": "int",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "SQL/database problem: Find loyal customers who have made purchases in every month for the past N months. This is a SQL query problem that identifies consistently purchasing customers.",
+  "examples": [],
+  "constraints": [
+    "Purchases table with customer_id, purchase_date, amount",
+    "A loyal customer has purchases in each of the last 12 months",
+    "Return customer IDs sorted ascending"
+  ],
+  "starterCode": {
+    "sql": "SELECT customer_id\nFROM Purchases\nWHERE purchase_date >= DATE_SUB(CURDATE(), INTERVAL 12 MONTH)\nGROUP BY customer_id\nHAVING COUNT(DISTINCT DATE_FORMAT(purchase_date, '%Y-%m')) = 12\nORDER BY customer_id;"
+  },
+  "functionNameMap": {
+    "sql": "findLoyalCustomers"
+  }
 }

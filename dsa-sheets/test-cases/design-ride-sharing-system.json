@@ -8,6 +8,34 @@
     }
   ],
   "returnType": "int",
+  "isDesignProblem": true,
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Design a ride-sharing system that supports operations such as requesting a ride, assigning a driver, completing a ride, and querying driver or passenger status. The system should efficiently match passengers with available nearby drivers and track ongoing rides.",
+  "examples": [
+    {
+      "input": "[\"RideSharingSystem\", \"requestRide\", \"assignDriver\", \"completeRide\", \"getAvailableDrivers\"]\n[[5], [\"Alice\", 1, 2], [\"Alice\", \"Bob\"], [\"Alice\"], []]",
+      "output": "[null, \"REQUESTED\", \"ASSIGNED\", \"COMPLETED\", 4]",
+      "explanation": "Initialize system with 5 drivers. Alice requests a ride, Bob is assigned, ride completes, 4 drivers remain available."
+    }
+  ],
+  "constraints": [
+    "At most 10^4 operations will be made",
+    "Driver and passenger names are unique strings",
+    "All ride IDs are positive integers"
+  ],
+  "starterCode": {
+    "python": "class RideSharingSystem:\n    def __init__(self, numDrivers: int):\n        pass\n\n    def requestRide(self, passengerId: str, src: int, dst: int) -> str:\n        pass\n\n    def assignDriver(self, passengerId: str, driverId: str) -> bool:\n        pass\n\n    def completeRide(self, passengerId: str) -> bool:\n        pass\n\n    def getAvailableDrivers(self) -> int:\n        pass",
+    "javascript": "class RideSharingSystem {\n    constructor(numDrivers) {\n\n    }\n\n    requestRide(passengerId, src, dst) {\n\n    }\n\n    assignDriver(passengerId, driverId) {\n\n    }\n\n    completeRide(passengerId) {\n\n    }\n\n    getAvailableDrivers() {\n\n    }\n}",
+    "typescript": "class RideSharingSystem {\n    constructor(numDrivers: number) {\n\n    }\n\n    requestRide(passengerId: string, src: number, dst: number): string {\n\n    }\n\n    assignDriver(passengerId: string, driverId: string): boolean {\n\n    }\n\n    completeRide(passengerId: string): boolean {\n\n    }\n\n    getAvailableDrivers(): number {\n\n    }\n}",
+    "java": "class RideSharingSystem {\n    public RideSharingSystem(int numDrivers) {\n\n    }\n\n    public String requestRide(String passengerId, int src, int dst) {\n\n    }\n\n    public boolean assignDriver(String passengerId, String driverId) {\n\n    }\n\n    public boolean completeRide(String passengerId) {\n\n    }\n\n    public int getAvailableDrivers() {\n\n    }\n}",
+    "cpp": "class RideSharingSystem {\npublic:\n    RideSharingSystem(int numDrivers) {\n\n    }\n\n    string requestRide(string passengerId, int src, int dst) {\n\n    }\n\n    bool assignDriver(string passengerId, string driverId) {\n\n    }\n\n    bool completeRide(string passengerId) {\n\n    }\n\n    int getAvailableDrivers() {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "RideSharingSystem",
+    "javascript": "RideSharingSystem",
+    "typescript": "RideSharingSystem",
+    "java": "RideSharingSystem",
+    "cpp": "RideSharingSystem"
+  }
 }

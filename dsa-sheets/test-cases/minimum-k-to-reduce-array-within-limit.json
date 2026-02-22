@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Return the minimum value k such that replacing every element greater than k with k makes the sum of the array at most equal to a given limit.",
+  "examples": [
+    {"input": "nums=[3,4,5], limit=8", "output": "3"},
+    {"input": "nums=[1,1,1], limit=10", "output": "1"}
+  ],
+  "constraints": ["1 <= nums.length <= 10^5", "1 <= nums[i] <= 10^9", "nums.length <= limit <= sum(nums)"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"nums": [3, 4, 5]},
+      "expected": 3,
+      "explanation": "With k=3, replace all elements > 3 with 3: [3,3,3], sum=9. If limit=8, k=2: [2,2,2] sum=6<=8. Minimum k satisfying the limit depends on the limit parameter.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [1, 1, 1]},
+      "expected": 1,
+      "explanation": "All elements are already 1; minimum k=1 as no reduction is needed.",
+      "tags": ["basic", "already-small"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [5]},
+      "expected": 5,
+      "explanation": "Single element; k must be at least the element itself if the limit is met at that value.",
+      "tags": ["edge", "single"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [10, 10, 10]},
+      "expected": 1,
+      "explanation": "With very tight limit, minimum k=1 reduces all elements to 1, sum=3.",
+      "tags": ["large-values"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [2, 4, 6, 8]},
+      "expected": 4,
+      "explanation": "With k=4: [2,4,4,4] sum=14. Depending on limit=14, minimum k=4.",
+      "tags": ["basic"]
+    }
+  ]
 }

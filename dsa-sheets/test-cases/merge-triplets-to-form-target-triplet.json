@@ -3,11 +3,66 @@
   "functionName": "mergeTripletsToFormTargetTriplet",
   "params": [
     {
-      "name": "intervals",
-      "type": "Interval[]"
+      "name": "triplets",
+      "type": "int[][]"
+    },
+    {
+      "name": "target",
+      "type": "int[]"
     }
   ],
-  "returnType": "Interval[]",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "triplets": [[2, 5, 3], [1, 8, 4], [1, 7, 5]], "target": [2, 7, 5] },
+      "expected": true,
+      "explanation": "Merge triplets [2,5,3] and [1,7,5] to get max([2,5,3],[1,7,5])=[2,7,5] which equals target",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "triplets": [[3, 4, 5], [4, 5, 6]], "target": [3, 2, 5] },
+      "expected": false,
+      "explanation": "No valid combination of triplets can produce target [3,2,5]; target[1]=2 cannot be achieved",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "triplets": [[2, 5, 3], [2, 3, 4], [1, 2, 5], [5, 5, 1]], "target": [5, 5, 5] },
+      "expected": true,
+      "explanation": "Merge [2,5,3] and [1,2,5] and [5,5,1] to reach max = [5,5,5]",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "triplets": [[1, 1, 1]], "target": [1, 1, 1] },
+      "expected": true,
+      "explanation": "The single triplet already equals the target",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "triplets": [[1, 2, 3]], "target": [2, 3, 4] },
+      "expected": false,
+      "explanation": "No triplet or combination can reach target [2,3,4] since all values exceed available triplets",
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "A triplet is an array of three integers. You may apply a merge operation: choose two triplets [a,b,c] and [d,e,f] and update the second to [max(a,d), max(b,e), max(c,f)]. Return true if it is possible to obtain the target triplet [x,y,z] as an element of triplets after some number of merge operations.",
+  "examples": [
+    {
+      "input": "triplets = [[2,5,3],[1,8,4],[1,7,5]], target = [2,7,5]",
+      "output": "true",
+      "explanation": "Perform the following operations: Choose the first and third triplets. Update the third to [max(2,1), max(5,7), max(3,5)] = [2,7,5]."
+    }
+  ],
+  "constraints": [
+    "1 <= triplets.length <= 10^5",
+    "triplets[i].length == target.length == 3",
+    "1 <= ai, bi, ci, x, y, z <= 1000"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

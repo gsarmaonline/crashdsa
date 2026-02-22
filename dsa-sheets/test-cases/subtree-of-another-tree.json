@@ -5,9 +5,70 @@
     {
       "name": "root",
       "type": "TreeNode"
+    },
+    {
+      "name": "subRoot",
+      "type": "TreeNode"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "root": [3, 4, 5, 1, 2], "subRoot": [4, 1, 2] },
+      "expected": true,
+      "explanation": "The subtree rooted at node 4 in root is identical to subRoot",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "root": [3, 4, 5, 1, 2, null, null, null, null, 0], "subRoot": [4, 1, 2] },
+      "expected": false,
+      "explanation": "Node 4's subtree in root has an extra child 0, so it doesn't match subRoot exactly",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "root": [1], "subRoot": [1] },
+      "expected": true,
+      "explanation": "Single node root equals single node subRoot",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "root": [1, 1], "subRoot": [1] },
+      "expected": true,
+      "explanation": "Leaf node with value 1 matches subRoot [1]",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "root": [1, 2, 3], "subRoot": [2] },
+      "expected": true,
+      "explanation": "Node 2 in root (leaf) matches subRoot [2]",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise. A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself.",
+  "examples": [
+    {
+      "input": "root = [3,4,5,1,2], subRoot = [4,1,2]",
+      "output": "true",
+      "explanation": "The subtree rooted at 4 matches subRoot."
+    },
+    {
+      "input": "root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]",
+      "output": "false",
+      "explanation": "The node 4 has an extra child 0, so it does not match subRoot."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in the root tree is in the range [1, 2000]",
+    "The number of nodes in the subRoot tree is in the range [1, 1000]",
+    "-10^4 <= root.val <= 10^4",
+    "-10^4 <= subRoot.val <= 10^4"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

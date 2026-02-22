@@ -4,10 +4,60 @@
   "params": [
     {
       "name": "intervals",
-      "type": "Interval[]"
+      "type": "int[][]"
     }
   ],
-  "returnType": "Interval[]",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "intervals": [[0, 30], [5, 10], [15, 20]] },
+      "expected": false,
+      "explanation": "[0,30] overlaps with both [5,10] and [15,20]; cannot attend all meetings",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "intervals": [[7, 10], [2, 4]] },
+      "expected": true,
+      "explanation": "[2,4] and [7,10] do not overlap; can attend both",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "intervals": [] },
+      "expected": true,
+      "explanation": "No meetings; trivially true",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "intervals": [[1, 5], [5, 10]] },
+      "expected": true,
+      "explanation": "End time equals start time is not considered overlapping; can attend both",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "intervals": [[1, 10], [2, 5]] },
+      "expected": false,
+      "explanation": "[2,5] is fully inside [1,10]; they overlap",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of meeting time intervals where intervals[i] = [starti, endi], determine if a person could attend all meetings (i.e., no two meetings overlap).",
+  "examples": [
+    {
+      "input": "intervals = [[0,30],[5,10],[15,20]]",
+      "output": "false"
+    }
+  ],
+  "constraints": [
+    "0 <= intervals.length <= 10^4",
+    "intervals[i].length == 2",
+    "0 <= starti < endi <= 10^6"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

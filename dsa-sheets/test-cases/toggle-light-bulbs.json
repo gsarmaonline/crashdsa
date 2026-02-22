@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an array representing light bulb states (0=off, 1=on), toggle bulb i for every divisor d of i, and return the count of bulbs that remain on after all toggles.",
+  "examples": [
+    {"input": "nums=[0,0,0,0,0]", "output": "2"},
+    {"input": "nums=[0,0,0]", "output": "1"}
+  ],
+  "constraints": ["1 <= nums.length <= 10^4"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"nums": [0, 0, 0, 0, 0]},
+      "expected": 2,
+      "explanation": "Bulbs 1-5: only perfect squares (1 and 4) remain on after toggling by all divisors. Count=2.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [0, 0, 0]},
+      "expected": 1,
+      "explanation": "Bulbs 1-3: only bulb 1 (perfect square) remains on. Count=1.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [0]},
+      "expected": 1,
+      "explanation": "Single bulb 1 is toggled once (by divisor 1) and stays on.",
+      "tags": ["edge", "single"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [0, 0, 0, 0, 0, 0, 0, 0, 0]},
+      "expected": 3,
+      "explanation": "Bulbs 1-9: perfect squares are 1, 4, 9. Count=3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]},
+      "expected": 4,
+      "explanation": "Bulbs 1-16: perfect squares are 1, 4, 9, 16. Count=4.",
+      "tags": ["basic"]
+    }
+  ]
 }

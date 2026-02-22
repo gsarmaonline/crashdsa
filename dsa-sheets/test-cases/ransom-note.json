@@ -1,13 +1,64 @@
 {
   "slug": "ransom-note",
-  "functionName": "ransomNote",
+  "functionName": "canConstruct",
   "params": [
+    {"name": "ransomNote", "type": "string"},
+    {"name": "magazine", "type": "string"}
+  ],
+  "returnType": "boolean",
+  "testCases": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "id": "tc-1",
+      "inputs": {"ransomNote": "a", "magazine": "b"},
+      "expected": false,
+      "explanation": "The letter 'a' is not in the magazine, so the ransom note cannot be constructed.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"ransomNote": "aa", "magazine": "ab"},
+      "expected": false,
+      "explanation": "Two 'a's are needed but the magazine only has one 'a'.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"ransomNote": "aa", "magazine": "aab"},
+      "expected": true,
+      "explanation": "Two 'a's are needed and the magazine has two 'a's. The extra 'b' is unused.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"ransomNote": "abc", "magazine": "def"},
+      "expected": false,
+      "explanation": "None of the letters in the ransom note appear in the magazine.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"ransomNote": "aab", "magazine": "aabb"},
+      "expected": true,
+      "explanation": "The ransom note needs two 'a's and one 'b'. The magazine has two 'a's and two 'b's, so construction is possible.",
+      "tags": ["basic"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given two strings ransomNote and magazine, return true if the ransomNote can be constructed by using the letters from magazine, and false otherwise. Each letter in magazine can only be used once in ransomNote.",
+  "examples": [
+    {
+      "input": "ransomNote = \"a\", magazine = \"b\"",
+      "output": "false"
+    },
+    {
+      "input": "ransomNote = \"aa\", magazine = \"aab\"",
+      "output": "true"
+    }
+  ],
+  "constraints": [
+    "1 <= ransomNote.length, magazine.length <= 10^5",
+    "ransomNote and magazine consist of lowercase English letters"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

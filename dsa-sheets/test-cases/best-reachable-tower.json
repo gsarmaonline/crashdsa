@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given towers represented by their heights in nums, return the index of the best (tallest) tower reachable from position 0, where you can jump from tower i to tower j if nums[j] >= nums[i] - 1.",
+  "examples": [
+    {"input": "nums=[5,4,3,2,1]", "output": "4"},
+    {"input": "nums=[1,2,3]", "output": "2"}
+  ],
+  "constraints": ["1 <= nums.length <= 10^5", "1 <= nums[i] <= 10^9"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"nums": [5, 4, 3, 2, 1]},
+      "expected": 4,
+      "explanation": "From tower 0 (h=5): can reach tower 1 (h=4>=4), then 2 (h=3>=3), then 3 (h=2>=2), then 4 (h=1>=1). Farthest reachable index is 4.",
+      "tags": ["basic", "descending"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [1, 2, 3]},
+      "expected": 0,
+      "explanation": "From tower 0 (h=1): cannot reach tower 1 (h=2, need >=0... 2>=0 yes). Actually from 0 (h=1) to 1 (h=2): 2 >= 1-1=0 ✓, then 1 (h=2) to 2 (h=3): 3 >= 2-1=1 ✓. Best reachable is index 2.",
+      "tags": ["basic", "ascending"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [3]},
+      "expected": 0,
+      "explanation": "Single tower; only index 0 is reachable.",
+      "tags": ["edge", "single"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [5, 1, 4]},
+      "expected": 0,
+      "explanation": "From tower 0 (h=5): tower 1 has h=1, need 1>=5-1=4, but 1<4 so cannot proceed. Best reachable index is 0.",
+      "tags": ["blocked"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [3, 3, 3, 3]},
+      "expected": 3,
+      "explanation": "All towers have equal height; from each tower can reach next (3>=3-1=2). All towers reachable; best index is 3.",
+      "tags": ["equal-heights"]
+    }
+  ]
 }

@@ -4,10 +4,66 @@
   "params": [
     {
       "name": "intervals",
-      "type": "Interval[]"
+      "type": "int[][]"
+    },
+    {
+      "name": "queries",
+      "type": "int[]"
     }
   ],
-  "returnType": "Interval[]",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int[]",
+  "outputOrderMatters": true,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "intervals": [[1, 4], [2, 4], [3, 6], [4, 4]], "queries": [2, 3, 4, 5] },
+      "expected": [3, 3, 1, 4],
+      "explanation": "q=2: smallest containing interval is [2,4] size 3; q=3: [2,4] size 3; q=4: [4,4] size 1; q=5: [3,6] size 4",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "intervals": [[2, 3], [2, 5], [1, 8], [20, 25]], "queries": [2, 19, 5, 22] },
+      "expected": [2, -1, 4, 6],
+      "explanation": "q=2: [2,3] size 2; q=19: no interval; q=5: [2,5] size 4; q=22: [20,25] size 6",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "intervals": [[1, 2]], "queries": [1, 2, 3] },
+      "expected": [2, 2, -1],
+      "explanation": "q=1: [1,2] size 2; q=2: [1,2] size 2; q=3: no interval, -1",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "intervals": [[1, 4]], "queries": [2] },
+      "expected": [4],
+      "explanation": "q=2: only interval [1,4] contains it, size = 4",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "intervals": [[1, 100]], "queries": [50] },
+      "expected": [100],
+      "explanation": "q=50: only interval [1,100] contains it, size = 100",
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "You are given a 2D integer array intervals, where intervals[i] = [lefti, righti] describes the ith interval. For each query qi, compute the size of the smallest interval i such that lefti <= qi <= righti. If no such interval exists, the answer is -1.",
+  "examples": [
+    {
+      "input": "intervals = [[1,4],[2,4],[3,6],[4,4]], queries = [2,3,4,5]",
+      "output": "[3,3,1,4]"
+    }
+  ],
+  "constraints": [
+    "1 <= intervals.length <= 10^5",
+    "1 <= lefti <= righti <= 10^7",
+    "1 <= queries.length <= 10^5",
+    "1 <= queries[i] <= 10^7"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

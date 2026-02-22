@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Return the length of the longest alternating (alternating between '0' and '1') subarray after removing at most one element from the binary string.",
+  "examples": [
+    {"input": "s=\"010\"", "output": "3"},
+    {"input": "s=\"1100\"", "output": "3"}
+  ],
+  "constraints": ["1 <= s.length <= 10^5", "s consists of '0' and '1' only"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"s": "010"},
+      "expected": 3,
+      "explanation": "'010' is already alternating with length 3; no removal needed.",
+      "tags": ["basic", "already-alternating"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"s": "1100"},
+      "expected": 3,
+      "explanation": "Remove one '1' to get '100' or remove one '1' to get '010'; longest alternating subarray has length 3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"s": "0"},
+      "expected": 1,
+      "explanation": "Single character is trivially alternating.",
+      "tags": ["edge", "single"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"s": "1111"},
+      "expected": 2,
+      "explanation": "Remove one '1' to get '111'; best alternating subarray after one removal has length 2 (e.g., keep one '1' and the gap).",
+      "tags": ["all-same"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"s": "01001"},
+      "expected": 5,
+      "explanation": "Remove the second '0' (index 3) to get '0101'; full string of length 4, but original length-1=4; check '01001': remove '0' at idx 2 → '0101' length 4. Max=4.",
+      "tags": ["basic"]
+    }
+  ]
 }

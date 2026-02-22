@@ -2,12 +2,63 @@
   "slug": "longest-palindrome",
   "functionName": "longestPalindrome",
   "params": [
-    {
-      "name": "nums",
-      "type": "int[]"
-    }
+    {"name": "s", "type": "string"}
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"s": "abccccdd"},
+      "expected": 7,
+      "explanation": "One longest palindrome: 'dccaccd' (length 7). Use all 4 'c's, 2 'd's, and 1 'a' in center. Pairs: cc, cc, dd = 6 chars + 1 center = 7.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"s": "a"},
+      "expected": 1,
+      "explanation": "Single character is itself a palindrome of length 1.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"s": "aaaaaccc"},
+      "expected": 7,
+      "explanation": "5 'a's and 3 'c's. Use 4 'a's (2 pairs) + 2 'c's (1 pair) = 6 paired chars + 1 center odd char = 7.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"s": "bb"},
+      "expected": 2,
+      "explanation": "Two 'b's form a palindrome 'bb' of length 2. No odd character needed since all counts are even.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"s": "ccc"},
+      "expected": 3,
+      "explanation": "Three 'c's: use all three. 'ccc' is a palindrome of length 3.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters. Letters are case sensitive.",
+  "examples": [
+    {
+      "input": "s = \"abccccdd\"",
+      "output": "7",
+      "explanation": "One longest palindrome that can be built is \"dccaccd\", whose length is 7."
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "1"
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 2000",
+    "s consists of lowercase and/or uppercase English letters only"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

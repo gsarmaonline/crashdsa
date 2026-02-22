@@ -95,5 +95,6 @@
     "python": "climb_stairs",
     "cpp": "climbStairs",
     "go": "ClimbStairs"
-  }
+  },
+  "_status": "complete"
 }

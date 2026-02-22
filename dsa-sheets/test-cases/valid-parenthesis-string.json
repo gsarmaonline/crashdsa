@@ -3,11 +3,60 @@
   "functionName": "validParenthesisString",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "s",
+      "type": "string"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "()" },
+      "expected": true,
+      "explanation": "Simple valid parentheses",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "(*)" },
+      "expected": true,
+      "explanation": "'*' treated as empty string makes '()' which is valid",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "(*))" },
+      "expected": true,
+      "explanation": "'*' treated as '(' makes '(())' which is valid",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "(*(" },
+      "expected": false,
+      "explanation": "Even replacing '*' with ')', we get '()(': one unmatched '(' remains",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "" },
+      "expected": true,
+      "explanation": "Empty string is trivially valid",
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string s containing only '(', ')' and '*', return true if s is valid. '(' must be closed by a corresponding ')'. Every ')' must have a corresponding '('. '*' can be treated as '(', ')' or an empty string.",
+  "examples": [
+    {
+      "input": "s = \"(**)\"",
+      "output": "true"
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s[i] is '(', ')' or '*'"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

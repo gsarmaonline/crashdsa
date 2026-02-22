@@ -5,9 +5,69 @@
     {
       "name": "root",
       "type": "TreeNode"
+    },
+    {
+      "name": "k",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "root": [3, 1, 4, null, 2], "k": 1 },
+      "expected": 1,
+      "explanation": "In-order traversal: [1,2,3,4]; 1st smallest is 1",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "root": [5, 3, 6, 2, 4, null, null, 1], "k": 3 },
+      "expected": 3,
+      "explanation": "In-order traversal: [1,2,3,4,5,6]; 3rd smallest is 3",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "root": [1], "k": 1 },
+      "expected": 1,
+      "explanation": "Single node BST; 1st smallest is 1",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "root": [3, 1, 4, null, 2], "k": 2 },
+      "expected": 2,
+      "explanation": "In-order traversal: [1,2,3,4]; 2nd smallest is 2",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "root": [5, 3, 6, 2, 4], "k": 4 },
+      "expected": 5,
+      "explanation": "In-order traversal: [2,3,4,5,6]; 4th smallest is 5",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) of all the values of the nodes in the tree.",
+  "examples": [
+    {
+      "input": "root = [3,1,4,null,2], k = 1",
+      "output": "1",
+      "explanation": "The in-order traversal gives [1,2,3,4]. The 1st smallest is 1."
+    },
+    {
+      "input": "root = [5,3,6,2,4,null,null,1], k = 3",
+      "output": "3",
+      "explanation": "The in-order traversal gives [1,2,3,4,5,6]. The 3rd smallest is 3."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in the tree is n",
+    "1 <= k <= n <= 10^4",
+    "0 <= Node.val <= 10^4"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

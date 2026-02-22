@@ -8,6 +8,83 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "s": "3214"
+      },
+      "expected": 2,
+      "explanation": "Subarray [3,2,1,4] has inversions (3,2),(3,1),(2,1)=3. In windows of some fixed length, minimum inversions is 2.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "s": "1234"
+      },
+      "expected": 0,
+      "explanation": "Already sorted ascending, 0 inversions in any subarray.",
+      "tags": ["sorted"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "s": "4321"
+      },
+      "expected": 1,
+      "explanation": "Fully reversed string; minimum inversions in best fixed-length window.",
+      "tags": ["reverse-sorted"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "s": "21"
+      },
+      "expected": 1,
+      "explanation": "String '21' encodes [2,1], which has 1 inversion.",
+      "tags": ["two-chars"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "s": "1"
+      },
+      "expected": 0,
+      "explanation": "Single character, 0 inversions.",
+      "tags": ["single-char"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string `s` representing a sequence of digits (each digit is an element), find the minimum inversion count among all subarrays of a fixed length.",
+  "examples": [
+    {
+      "input": "s = \"1234\"",
+      "output": "0",
+      "explanation": "Sorted sequence has no inversions."
+    },
+    {
+      "input": "s = \"21\"",
+      "output": "1",
+      "explanation": "[2,1] has 1 inversion: pair (2,1)."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^4",
+    "s consists of digit characters '1'-'9'"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nfunction minimumInversionCountInSubarraysOfFixedLength(s) {\n  // Write your solution here\n}",
+    "typescript": "function minimumInversionCountInSubarraysOfFixedLength(s: string): number {\n  // Write your solution here\n}",
+    "python": "def minimumInversionCountInSubarraysOfFixedLength(s: str) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <string>\nusing namespace std;\nint minimumInversionCountInSubarraysOfFixedLength(string s) {\n    // Write your solution here\n}",
+    "go": "func minimumInversionCountInSubarraysOfFixedLength(s string) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumInversionCountInSubarraysOfFixedLength",
+    "typescript": "minimumInversionCountInSubarraysOfFixedLength",
+    "python": "minimumInversionCountInSubarraysOfFixedLength",
+    "cpp": "minimumInversionCountInSubarraysOfFixedLength",
+    "go": "MinimumInversionCountInSubarraysOfFixedLength"
+  }
 }

@@ -8,6 +8,49 @@
     }
   ],
   "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an array of query pairs [n, k], return for each query the nth smallest positive integer that has exactly k set bits in its binary representation.",
+  "examples": [
+    {"input": "nums=[[1,1],[2,1]]", "output": "[[1],[2]]"},
+    {"input": "nums=[[1,2],[4,2]]", "output": "[[3],[9]]"}
+  ],
+  "constraints": ["1 <= nums.length <= 100", "1 <= n <= 10^4", "1 <= k <= 20"],
+  "outputOrderMatters": true,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"nums": [[1, 1], [2, 1], [3, 1]]},
+      "expected": [[1], [2], [4]],
+      "explanation": "k=1 integers in order: 1(1),2(10),4(100),8(1000)... n=1→1, n=2→2, n=3→4.",
+      "tags": ["basic", "k=1"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [[1, 2], [2, 2], [3, 2], [4, 2]]},
+      "expected": [[3], [5], [6], [9]],
+      "explanation": "k=2 integers: 3(11),5(101),6(110),9(1001). n=1→3, n=2→5, n=3→6, n=4→9.",
+      "tags": ["basic", "k=2"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [[1, 3]]},
+      "expected": [[7]],
+      "explanation": "k=3 integers: smallest is 7(111). n=1→7.",
+      "tags": ["k=3"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [[2, 3]]},
+      "expected": [[11]],
+      "explanation": "k=3 integers: 7(111), 11(1011). n=2→11.",
+      "tags": ["k=3"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [[1, 1]]},
+      "expected": [[1]],
+      "explanation": "The 1st positive integer with exactly 1 set bit is 1 (binary: 1).",
+      "tags": ["edge", "minimal"]
+    }
+  ]
 }

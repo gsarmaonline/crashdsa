@@ -12,6 +12,66 @@
     }
   ],
   "returnType": "boolean",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "numCourses": 2, "prerequisites": [[1, 0]] },
+      "expected": true,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "numCourses": 2, "prerequisites": [[1, 0], [0, 1]] },
+      "expected": false,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "numCourses": 4, "prerequisites": [[1, 0], [2, 1], [3, 2]] },
+      "expected": true,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "numCourses": 1, "prerequisites": [] },
+      "expected": true,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "numCourses": 3, "prerequisites": [[0, 1], [1, 2], [2, 0]] },
+      "expected": false,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given the number of courses and their prerequisites as pairs [a, b] (meaning b must be taken before a), determine if it is possible to finish all courses (i.e., there is no cycle in the prerequisite graph).",
+  "examples": [
+    {
+      "input": "numCourses = 2, prerequisites = [[1,0]]",
+      "output": "true",
+      "explanation": "Take course 0 first, then course 1. Possible to finish all."
+    },
+    {
+      "input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
+      "output": "false",
+      "explanation": "Cycle detected: 0 requires 1 and 1 requires 0."
+    }
+  ],
+  "constraints": [
+    "1 <= numCourses <= 2000",
+    "0 <= prerequisites.length <= 5000",
+    "prerequisites[i].length == 2",
+    "0 <= prerequisites[i][0], prerequisites[i][1] < numCourses"
+  ],
+  "starterCode": {
+    "javascript": "function restoreFinishingOrder(numCourses, prerequisites) {\n  // your code here\n}",
+    "python": "def restoreFinishingOrder(numCourses, prerequisites):\n    pass",
+    "java": "public boolean restoreFinishingOrder(int numCourses, int[][] prerequisites) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "restoreFinishingOrder",
+    "python": "restoreFinishingOrder",
+    "java": "restoreFinishingOrder"
+  }
 }

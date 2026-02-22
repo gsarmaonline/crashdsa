@@ -1,13 +1,65 @@
 {
   "slug": "middle-of-the-linked-list",
-  "functionName": "middleOfTheLinkedList",
+  "functionName": "middleNode",
   "params": [
+    {"name": "head", "type": "ListNode"}
+  ],
+  "returnType": "ListNode",
+  "testCases": [
     {
-      "name": "head",
-      "type": "ListNode"
+      "id": "tc-1",
+      "inputs": {"head": [1,2,3,4,5]},
+      "expected": [3,4,5],
+      "explanation": "The list has 5 nodes. The middle node is the 3rd node (value 3). Return the list from node 3 onward: [3,4,5].",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"head": [1,2,3,4,5,6]},
+      "expected": [4,5,6],
+      "explanation": "The list has 6 nodes. Two middles exist (3 and 4). Return the second middle (node 4) and the rest: [4,5,6].",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"head": [1]},
+      "expected": [1],
+      "explanation": "Single node list: the only node is the middle.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"head": [1,2]},
+      "expected": [2],
+      "explanation": "Two node list: two middles exist (1 and 2). Return the second middle: [2].",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"head": [1,2,3]},
+      "expected": [2,3],
+      "explanation": "Three node list: the middle node is the 2nd node (value 2). Return [2,3].",
+      "tags": ["basic"]
     }
   ],
-  "returnType": "boolean",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given the head of a singly linked list, return the middle node. If there are two middle nodes, return the second middle node. The returned value is serialized as the array starting from the middle node to the end.",
+  "examples": [
+    {
+      "input": "head = [1,2,3,4,5]",
+      "output": "[3,4,5]",
+      "explanation": "The middle node of the list is node 3."
+    },
+    {
+      "input": "head = [1,2,3,4,5,6]",
+      "output": "[4,5,6]",
+      "explanation": "Since the list has two middle nodes with values 3 and 4, we return the second one."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in the list is in the range [1, 100]",
+    "1 <= Node.val <= 100"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

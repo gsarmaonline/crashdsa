@@ -2,12 +2,89 @@
   "slug": "n-queens",
   "functionName": "nQueens",
   "params": [
+    { "name": "n", "type": "int" }
+  ],
+  "returnType": "string[][]",
+  "outputOrderMatters": false,
+  "testCases": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "id": "tc-1",
+      "inputs": { "n": 1 },
+      "expected": [["Q"]],
+      "explanation": "A 1x1 board with a single queen is the only solution.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "n": 2 },
+      "expected": [],
+      "explanation": "No valid arrangement exists for 2 queens on a 2x2 board.",
+      "tags": ["no-solution", "edge-case"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "n": 3 },
+      "expected": [],
+      "explanation": "No valid arrangement exists for 3 queens on a 3x3 board.",
+      "tags": ["no-solution", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "n": 4 },
+      "expected": [
+        [".Q..","...Q","Q...","..Q."],
+        ["..Q.","Q...","...Q",".Q.."]
+      ],
+      "explanation": "Exactly 2 distinct solutions for n=4. Queens placed such that no two share a row, column, or diagonal.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "n": 5 },
+      "expected": [
+        ["Q....","..Q..","....Q",".Q...","...Q."],
+        ["Q....","...Q.",".Q...","....Q","..Q.."],
+        [".Q...","...Q.","Q....","..Q..","....Q"],
+        [".Q...","....Q","..Q..","Q....","...Q."],
+        ["..Q..","Q....","...Q.",".Q...","....Q"],
+        ["..Q..","....Q",".Q...","...Q.","Q...."],
+        ["...Q.","Q....","..Q..","....Q",".Q..."],
+        ["...Q.",".Q...","....Q","..Q..","Q...."],
+        ["....Q",".Q...","...Q.","Q....","..Q.."],
+        ["....Q","..Q..","Q....","...Q.",".Q..."]
+      ],
+      "explanation": "10 distinct solutions exist for n=5.",
+      "tags": ["basic", "large"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "The n-queens puzzle is the problem of placing `n` queens on an `n x n` chessboard such that no two queens attack each other.\n\nGiven an integer `n`, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.\n\nEach solution contains a distinct board configuration of the n-queens' placement, where `'Q'` and `'.'` both indicate a queen and an empty space, respectively.\n\nSee the full problem on [LeetCode 51](https://leetcode.com/problems/n-queens/).",
+  "examples": [
+    {
+      "input": "n = 4",
+      "output": "[[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\")]",
+      "explanation": "There exist two distinct solutions to the 4-queens puzzle."
+    },
+    {
+      "input": "n = 1",
+      "output": "[[\"Q\"]]"
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 9"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {string[][]}\n */\nfunction nQueens(n) {\n  // Write your solution here\n}",
+    "typescript": "function nQueens(n: number): string[][] {\n  // Write your solution here\n}",
+    "python": "def n_queens(n: int) -> list[list[str]]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nvector<vector<string>> nQueens(int n) {\n    // Write your solution here\n}",
+    "go": "func nQueens(n int) [][]string {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "nQueens",
+    "typescript": "nQueens",
+    "python": "n_queens",
+    "cpp": "nQueens",
+    "go": "NQueens"
+  }
 }

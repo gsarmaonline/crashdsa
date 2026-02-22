@@ -8,6 +8,89 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "nums": [3, 6, 5, 1, 8]
+      },
+      "expected": 15,
+      "explanation": "All triples: 3+6+8=17, 6+1+8=15 (div by 3), 3+1+8=12 (div by 3), 6+5+1=12 (div by 3). Max divisible by 3 is 15.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "nums": [3, 6, 9, 12]
+      },
+      "expected": 27,
+      "explanation": "Pick the three largest: 6+9+12=27, divisible by 3.",
+      "tags": ["all-divisible"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "nums": [1, 2, 3, 4, 5]
+      },
+      "expected": 12,
+      "explanation": "Combinations divisible by 3: 1+2+3=6,1+5+3=9,2+4+3=9,3+4+5=12,2+5+5 invalid,4+5+3=12. Max=12.",
+      "tags": ["mixed"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [9, 9, 9]
+      },
+      "expected": 27,
+      "explanation": "Only one combination of 3: 9+9+9=27.",
+      "tags": ["single-combination"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [1, 1, 1, 1]
+      },
+      "expected": 3,
+      "explanation": "Any three 1s: 1+1+1=3, divisible by 3.",
+      "tags": ["all-same"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array `nums`, return the **maximum sum** of exactly 3 elements from `nums` such that their sum is divisible by 3.",
+  "examples": [
+    {
+      "input": "nums = [3,6,5,1,8]",
+      "output": "15",
+      "explanation": "6+1+8=15, which is divisible by 3 and is the maximum such sum."
+    },
+    {
+      "input": "nums = [3,6,9,12]",
+      "output": "27",
+      "explanation": "6+9+12=27."
+    },
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "12",
+      "explanation": "3+4+5=12."
+    }
+  ],
+  "constraints": [
+    "3 <= nums.length <= 10^4",
+    "1 <= nums[i] <= 10^4",
+    "It is guaranteed that at least one valid triple exists."
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number}\n */\nfunction maximumSumOfThreeNumbersDivisibleByThree(nums) {\n  // Write your solution here\n}",
+    "typescript": "function maximumSumOfThreeNumbersDivisibleByThree(nums: number[]): number {\n  // Write your solution here\n}",
+    "python": "def maximumSumOfThreeNumbersDivisibleByThree(nums: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint maximumSumOfThreeNumbersDivisibleByThree(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func maximumSumOfThreeNumbersDivisibleByThree(nums []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maximumSumOfThreeNumbersDivisibleByThree",
+    "typescript": "maximumSumOfThreeNumbersDivisibleByThree",
+    "python": "maximumSumOfThreeNumbersDivisibleByThree",
+    "cpp": "maximumSumOfThreeNumbersDivisibleByThree",
+    "go": "MaximumSumOfThreeNumbersDivisibleByThree"
+  }
 }

@@ -8,6 +8,67 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "100" },
+      "expected": 41,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "20" },
+      "expected": 17,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "5" },
+      "expected": 5,
+      "tags": ["basic", "small"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "50" },
+      "expected": 41,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "200" },
+      "expected": 197,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an upper bound n (provided as string), find the largest prime number that can be expressed as a sum of consecutive prime numbers, where the sum does not exceed n. Primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, ... Consecutive prime sums: 2+3=5, 2+3+5=10, 2+3+5+7=17, 3+5+7=15, etc.",
+  "examples": [
+    {
+      "input": "s = \"20\"",
+      "output": "17",
+      "explanation": "2+3+5+7=17 (prime, <=20). Also 2+3+5=10 (not prime), 5+7+11=23>20. Largest valid = 17."
+    },
+    {
+      "input": "s = \"5\"",
+      "output": "5",
+      "explanation": "2+3=5 which is prime and <=5. That is the largest."
+    }
+  ],
+  "constraints": [
+    "2 <= n <= 10^6 (given as string s)"
+  ],
+  "starterCode": {
+    "python": "def largestPrimeFromConsecutivePrimeSum(s: str) -> int:\n    pass",
+    "javascript": "function largestPrimeFromConsecutivePrimeSum(s) {\n\n}",
+    "typescript": "function largestPrimeFromConsecutivePrimeSum(s: string): number {\n\n}",
+    "java": "class Solution {\n    public int largestPrimeFromConsecutivePrimeSum(String s) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int largestPrimeFromConsecutivePrimeSum(string s) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "largestPrimeFromConsecutivePrimeSum",
+    "javascript": "largestPrimeFromConsecutivePrimeSum",
+    "typescript": "largestPrimeFromConsecutivePrimeSum",
+    "java": "largestPrimeFromConsecutivePrimeSum",
+    "cpp": "largestPrimeFromConsecutivePrimeSum"
+  }
 }

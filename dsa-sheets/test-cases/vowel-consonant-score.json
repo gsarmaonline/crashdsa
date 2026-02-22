@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Return the total score of the first n lowercase English letters, where each vowel contributes 1 point and each consonant contributes 2 points.",
+  "examples": [
+    {"input": "n=5", "output": "8"},
+    {"input": "n=1", "output": "1"}
+  ],
+  "constraints": ["1 <= n <= 26"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"n": 5},
+      "expected": 8,
+      "explanation": "First 5 letters: a(vowel=1), b(consonant=2), c(consonant=2), d(consonant=2), e(vowel=1). Score=1+2+2+2+1=8.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"n": 1},
+      "expected": 1,
+      "explanation": "First letter 'a' is a vowel, score=1.",
+      "tags": ["edge", "single-vowel"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"n": 2},
+      "expected": 3,
+      "explanation": "a(1) + b(2) = 3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"n": 3},
+      "expected": 5,
+      "explanation": "a(1) + b(2) + c(2) = 5.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"n": 26},
+      "expected": 47,
+      "explanation": "All 26 letters: 5 vowels (a,e,i,o,u) each score 1, and 21 consonants each score 2. Total = 5*1 + 21*2 = 5 + 42 = 47.",
+      "tags": ["full-alphabet"]
+    }
+  ]
 }

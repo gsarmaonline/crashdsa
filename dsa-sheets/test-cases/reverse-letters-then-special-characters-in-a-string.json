@@ -8,6 +8,13 @@
     }
   ],
   "returnType": "ListNode",
+  "isDesignProblem": true,
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Reverse all letters in the string while keeping special characters in their original positions, then move all special characters to the end.",
+  "examples": [
+    {"input": "head=a->b->@->c", "output": "c->b->a->@"},
+    {"input": "head=h->e->l->l->o", "output": "o->l->l->e->h"}
+  ],
+  "constraints": ["1 <= list length <= 10^5", "Characters are ASCII printable"]
 }

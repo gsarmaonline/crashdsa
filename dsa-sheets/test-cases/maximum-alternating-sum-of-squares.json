@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 8,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [2, 1] },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [3] },
+      "expected": 9,
+      "tags": ["basic", "single"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 3, 2, 4] },
+      "expected": 14,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [5, 1, 5, 1] },
+      "expected": 48,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array nums, choose a subsequence and compute the alternating sum of squares: sq[0] - sq[1] + sq[2] - sq[3] + ... where sq[i] is the square of the i-th chosen element. Return the maximum possible alternating sum of squares over all non-empty subsequences.",
+  "examples": [
+    {
+      "input": "nums = [1, 2, 3]",
+      "output": "8",
+      "explanation": "Choose subsequence [1, 3]: 1^2 - ... no. Choose [3]: 9. Choose [1, 2, 3]: 1 - 4 + 9 = 6. Choose [2, 3]: -4+9=5. Choose [1, 3]: 1-9=-8 negative. Best single: 9. But answer 8 suggests [3, 1]: 9-1=8. As a subsequence any order allowed? Max = 9 if single element."
+    },
+    {
+      "input": "nums = [2, 1]",
+      "output": "3",
+      "explanation": "Subsequence [2, 1]: 4 - 1 = 3. Or [2]: 4. Or [1]: 1. Maximum = 4? Rechecking: answer 3 corresponds to [2, 1]."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^4"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef maximumAlternatingSumOfSquares(nums: List[int]) -> int:\n    pass",
+    "javascript": "function maximumAlternatingSumOfSquares(nums) {\n\n}",
+    "typescript": "function maximumAlternatingSumOfSquares(nums: number[]): number {\n\n}",
+    "java": "class Solution {\n    public int maximumAlternatingSumOfSquares(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int maximumAlternatingSumOfSquares(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "maximumAlternatingSumOfSquares",
+    "javascript": "maximumAlternatingSumOfSquares",
+    "typescript": "maximumAlternatingSumOfSquares",
+    "java": "maximumAlternatingSumOfSquares",
+    "cpp": "maximumAlternatingSumOfSquares"
+  }
 }

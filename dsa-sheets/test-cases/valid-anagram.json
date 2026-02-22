@@ -101,5 +101,6 @@
     "python": "is_anagram",
     "cpp": "isAnagram",
     "go": "IsAnagram"
-  }
+  },
+  "_status": "complete"
 }

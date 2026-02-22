@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "abcd" },
+      "expected": 4,
+      "tags": ["basic", "all-distinct"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "aab" },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "aaaa" },
+      "expected": 1,
+      "tags": ["basic", "all-same"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "abab" },
+      "expected": 2,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "abcabc" },
+      "expected": 3,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string s, partition it into the maximum number of non-overlapping substrings such that each substring starts with a distinct character. Greedily assign the shortest possible substring to each unique starting character. Return the maximum number of substrings achievable.",
+  "examples": [
+    {
+      "input": "s = \"aab\"",
+      "output": "2",
+      "explanation": "Partition into 'a' or 'aa' and 'b'. With distinct start chars 'a' and 'b', we get 2 substrings."
+    },
+    {
+      "input": "s = \"abcd\"",
+      "output": "4",
+      "explanation": "Each character is unique, so we can split into 4 single-character substrings each with distinct start."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of lowercase English letters"
+  ],
+  "starterCode": {
+    "python": "def maximumSubstringsWithDistinctStart(s: str) -> int:\n    pass",
+    "javascript": "function maximumSubstringsWithDistinctStart(s) {\n\n}",
+    "typescript": "function maximumSubstringsWithDistinctStart(s: string): number {\n\n}",
+    "java": "class Solution {\n    public int maximumSubstringsWithDistinctStart(String s) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int maximumSubstringsWithDistinctStart(string s) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "maximumSubstringsWithDistinctStart",
+    "javascript": "maximumSubstringsWithDistinctStart",
+    "typescript": "maximumSubstringsWithDistinctStart",
+    "java": "maximumSubstringsWithDistinctStart",
+    "cpp": "maximumSubstringsWithDistinctStart"
+  }
 }

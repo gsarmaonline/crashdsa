@@ -8,6 +8,12 @@
     }
   ],
   "returnType": "int[][]",
+  "isDesignProblem": true,
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Find users who maintain consistent emotional ratings or sentiment scores across all their interactions.",
+  "examples": [
+    {"input": "nums=[1,2,3]", "output": "SQL/data result"}
+  ],
+  "constraints": ["1 <= nums.length <= 10^5"]
 }

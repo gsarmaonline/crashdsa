@@ -1,13 +1,25 @@
 {
   "slug": "design-twitter",
   "functionName": "designTwitter",
-  "params": [
+  "params": [],
+  "returnType": "void",
+  "isDesignProblem": true,
+  "testCases": [],
+  "_status": "complete",
+  "description": "Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and see the 10 most recent tweets in their news feed.\n\n- `Twitter()` initializes your twitter object.\n- `void postTweet(int userId, int tweetId)` composes a new tweet with id `tweetId` by the user `userId`.\n- `List<Integer> getNewsFeed(int userId)` retrieves the 10 most recent tweet ids in the user's news feed. Each item must be posted by users who the user followed or by the user themselves.\n- `void follow(int followerId, int followeeId)` the user with id `followerId` follows the user with id `followeeId`.\n- `void unfollow(int followerId, int followeeId)` the user with id `followerId` unfollows the user with id `followeeId`.\n\nSee the full problem on [LeetCode 355](https://leetcode.com/problems/design-twitter/).",
+  "examples": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "input": "[\"Twitter\",\"postTweet\",\"getNewsFeed\",\"follow\",\"postTweet\",\"getNewsFeed\",\"unfollow\",\"getNewsFeed\"]\n[[],[1,5],[1],[1,2],[2,6],[1],[1,2],[1]]",
+      "output": "[null,null,[5],null,null,[6,5],null,[5]]",
+      "explanation": "User 1 posts tweet 5. getNewsFeed(1)=[5]. User 1 follows user 2. User 2 posts tweet 6. getNewsFeed(1)=[6,5] (most recent first). User 1 unfollows user 2. getNewsFeed(1)=[5]."
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "1 <= userId, followerId, followeeId <= 500",
+    "0 <= tweetId <= 10^4",
+    "All the tweets have unique IDs",
+    "At most 3 * 10^4 calls will be made to postTweet, getNewsFeed, follow, and unfollow"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

@@ -1,17 +1,27 @@
 {
   "slug": "kth-largest-element-in-a-stream",
   "functionName": "kthLargestElementInAStream",
-  "params": [
+  "params": [],
+  "returnType": "void",
+  "isDesignProblem": true,
+  "testCases": [],
+  "_status": "complete",
+  "description": "Design a class to find the k-th largest element in a stream.\n\n- `KthLargest(int k, int[] nums)` initializes the object with the integer `k` and the stream of integers `nums`.\n- `int add(int val)` appends the integer `val` to the stream and returns the element representing the k-th largest element in the stream.\n\nNote: It is the k-th largest element in sorted order, not the k-th distinct element.\n\nSee the full problem on [LeetCode 703](https://leetcode.com/problems/kth-largest-element-in-a-stream/).",
+  "examples": [
     {
-      "name": "nums",
-      "type": "int[]"
-    },
-    {
-      "name": "k",
-      "type": "int"
+      "input": "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\",\"add\"]\n[[3,[4,5,8,2]],[3],[5],[10],[9],[4]]",
+      "output": "[null,4,5,5,8,8]",
+      "explanation": "KthLargest(3,[4,5,8,2]): 3rd largest in [2,4,5,8] is 4. add(3): [2,3,4,5,8], 3rd=4. add(5): [2,3,4,5,5,8], 3rd=5. add(10): [2,3,4,5,5,8,10], 3rd=5. add(9): 3rd=8. add(4): 3rd=8."
     }
   ],
-  "returnType": "int[]",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "1 <= k <= 10^4",
+    "0 <= nums.length <= 10^4",
+    "-10^4 <= nums[i] <= 10^4",
+    "-10^4 <= val <= 10^4",
+    "At most 10^4 calls will be made to add",
+    "It is guaranteed that there will be at least k elements in the array when you search for the k-th element"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

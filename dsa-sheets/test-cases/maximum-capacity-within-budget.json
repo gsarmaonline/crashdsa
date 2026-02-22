@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [10, 5, 20, 3] },
+      "expected": 20,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3, 4, 5] },
+      "expected": 5,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [100] },
+      "expected": 100,
+      "tags": ["basic", "single"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [5, 10, 3, 8, 12] },
+      "expected": 12,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [7, 14, 21, 28] },
+      "expected": 28,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array nums where nums[i] represents the capacity at cost i+1, find the maximum capacity achievable within a budget equal to the array length. Binary search on capacity value to find the maximum capacity c such that the total cost of all capacities >= c does not exceed the budget (array length).",
+  "examples": [
+    {
+      "input": "nums = [10, 5, 20, 3]",
+      "output": "20",
+      "explanation": "Budget = 4. Any single item at cost 1 gives capacity up to 20. Maximum = 20."
+    },
+    {
+      "input": "nums = [1, 2, 3, 4, 5]",
+      "output": "5",
+      "explanation": "Budget = 5. Maximum single capacity = 5."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef maximumCapacityWithinBudget(nums: List[int]) -> int:\n    pass",
+    "javascript": "function maximumCapacityWithinBudget(nums) {\n\n}",
+    "typescript": "function maximumCapacityWithinBudget(nums: number[]): number {\n\n}",
+    "java": "class Solution {\n    public int maximumCapacityWithinBudget(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int maximumCapacityWithinBudget(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "maximumCapacityWithinBudget",
+    "javascript": "maximumCapacityWithinBudget",
+    "typescript": "maximumCapacityWithinBudget",
+    "java": "maximumCapacityWithinBudget",
+    "cpp": "maximumCapacityWithinBudget"
+  }
 }

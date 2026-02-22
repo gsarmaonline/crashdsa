@@ -8,6 +8,55 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "n": 0 },
+      "expected": 0,
+      "explanation": "All 32 bits are 0; reversed is still 0",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "n": 1 },
+      "expected": 2147483648,
+      "explanation": "00000000000000000000000000000001 reversed is 10000000000000000000000000000000 = 2^31",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "n": 2147483648 },
+      "expected": 1,
+      "explanation": "10000000000000000000000000000000 reversed is 00000000000000000000000000000001 = 1",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "n": 43261596 },
+      "expected": 964176192,
+      "explanation": "00000010100101000001111010011100 reversed is 00111001011110000010100101000000 = 964176192",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "n": 4294967293 },
+      "expected": 3221225471,
+      "explanation": "11111111111111111111111111111101 reversed is 10111111111111111111111111111111 = 3221225471",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Reverse bits of a given 32-bit unsigned integer and return the result as an unsigned integer.",
+  "examples": [
+    {
+      "input": "n = 00000010100101000001111010011100",
+      "output": "964176192 (00111001011110000010100101000000)",
+      "explanation": "The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 whose binary representation is 00111001011110000010100101000000."
+    }
+  ],
+  "constraints": [
+    "The input must be a binary string of length 32"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

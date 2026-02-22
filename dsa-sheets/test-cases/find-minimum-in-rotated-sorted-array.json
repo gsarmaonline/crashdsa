@@ -115,5 +115,6 @@
     "python": "find_min",
     "cpp": "findMin",
     "go": "FindMin"
-  }
+  },
+  "_status": "complete"
 }

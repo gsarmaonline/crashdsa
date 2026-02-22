@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Return the first element in the array whose frequency count is unique (not shared by any other element's frequency).",
+  "examples": [
+    {"input": "nums=[1,1,2,3,3]", "output": "2"},
+    {"input": "nums=[1,2,2,3,3,3]", "output": "1"}
+  ],
+  "constraints": ["1 <= nums.length <= 10^5", "1 <= nums[i] <= 10^5"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"nums": [1, 1, 2, 3, 3]},
+      "expected": 2,
+      "explanation": "Frequencies: 1->2, 2->1, 3->2. Only 2 has frequency 1 which is unique. First element with unique freq is 2.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [1, 2, 2, 3, 3, 3]},
+      "expected": 1,
+      "explanation": "Frequencies: 1->1, 2->2, 3->3. All frequencies are unique. First element by order of first appearance is 1.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [5]},
+      "expected": 5,
+      "explanation": "Single element with frequency 1, which is trivially unique.",
+      "tags": ["edge", "single-element"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [4, 4, 4, 2, 2, 1]},
+      "expected": 1,
+      "explanation": "Frequencies: 4->3, 2->2, 1->1. All frequencies unique; 4 appears first but 1 is at position 5; first element in array order with unique freq: 4 has freq 3 (unique), so answer is 4.",
+      "tags": ["order-matters"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [1, 1, 2, 2, 3]},
+      "expected": 3,
+      "explanation": "Frequencies: 1->2, 2->2, 3->1. Freq 2 is shared; only 3 has unique frequency 1. First element with unique freq is 3.",
+      "tags": ["basic"]
+    }
+  ]
 }

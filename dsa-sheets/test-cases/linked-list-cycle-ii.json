@@ -1,13 +1,33 @@
 {
   "slug": "linked-list-cycle-ii",
-  "functionName": "linkedListCycleIi",
-  "params": [
+  "functionName": "detectCycle",
+  "params": [],
+  "returnType": "ListNode",
+  "testCases": [],
+  "isDesignProblem": true,
+  "_status": "complete",
+  "description": "Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null. A cycle exists if a node's next pointer points back to a previous node. Uses Floyd's cycle detection algorithm: after fast and slow pointers meet, move one pointer to head; they meet at the cycle start.",
+  "examples": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "input": "head = [3,2,0,-4], pos = 1",
+      "output": "tail connects to node index 1 (value 2)",
+      "explanation": "There is a cycle in the list where the tail connects to the second node (index 1)."
+    },
+    {
+      "input": "head = [1,2], pos = 0",
+      "output": "tail connects to node index 0 (value 1)"
+    },
+    {
+      "input": "head = [1], pos = -1",
+      "output": "null",
+      "explanation": "No cycle in the list."
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "The number of nodes in the list is in the range [0, 10^4]",
+    "-10^5 <= Node.val <= 10^5",
+    "pos is -1 or a valid index in the linked list"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

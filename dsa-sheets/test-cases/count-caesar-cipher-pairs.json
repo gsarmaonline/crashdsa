@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an array of integers representing encoded words, count the number of pairs (i, j) where i < j such that nums[j] is a Caesar cipher shift of nums[i] by some fixed shift amount applied to all digits.",
+  "examples": [
+    {"input": "nums=[11,22,33]", "output": "3"},
+    {"input": "nums=[11,12,13]", "output": "0"}
+  ],
+  "constraints": ["2 <= nums.length <= 10^4", "10 <= nums[i] <= 10^9"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"nums": [11, 22, 33]},
+      "expected": 3,
+      "explanation": "All pairs are Caesar cipher shifts of each other with shift 11 (mod 10 on each digit). (11,22) ✓ (11,33) ✓ (22,33) ✓. Count=3.",
+      "tags": ["basic", "all-pairs"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [11, 12, 13]},
+      "expected": 0,
+      "explanation": "No two numbers form a valid Caesar cipher pair (different digit shift patterns). Count=0.",
+      "tags": ["basic", "no-pairs"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [12, 34]},
+      "expected": 1,
+      "explanation": "12 and 34 share a shift of 2 on each digit (1+2=3, 2+2=4). One pair. Count=1.",
+      "tags": ["single-pair"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [10, 10]},
+      "expected": 1,
+      "explanation": "Both numbers are identical, which is a Caesar cipher with shift 0. Count=1.",
+      "tags": ["equal-elements"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [13, 57, 24]},
+      "expected": 1,
+      "explanation": "13 and 57 differ by shift 4 per digit (1+4=5, 3+4=7 mod 10). 57 and 24 differ by a non-uniform shift. Only (13,57) is a valid Caesar cipher pair. Count=1.",
+      "tags": ["mixed"]
+    }
+  ]
 }

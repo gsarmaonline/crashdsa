@@ -7,7 +7,69 @@
       "type": "int[]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "string",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": "123",
+      "tags": ["basic", "already-unique"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 1, 2] },
+      "expected": "12",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [3, 3, 3] },
+      "expected": "3",
+      "tags": ["basic", "all-same"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [2, 1, 2, 1] },
+      "expected": "21",
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 2, 1, 3, 2] },
+      "expected": "132",
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a sequence of integers (treated as character codes), delete duplicate occurrences while keeping the last occurrence of each element, then return the lexicographically smallest resulting sequence as a string. Use a monotone stack approach: keep elements in increasing order while ensuring each character's last occurrence is preserved.",
+  "examples": [
+    {
+      "input": "nums = [2, 1, 2, 1]",
+      "output": "\"21\"",
+      "explanation": "Keep the last occurrence of each: last '2' at index 2, last '1' at index 3. Sequence = [2, 1] -> '21'."
+    },
+    {
+      "input": "nums = [1, 2, 1, 3, 2]",
+      "output": "\"132\"",
+      "explanation": "Last occurrences: 1->idx 2, 2->idx 4, 3->idx 3. Result in order: 1,3,2 -> '132'."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 9"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef lexicographicallySmallestStringAfterDeletingDuplicateCharacters(nums: List[int]) -> str:\n    pass",
+    "javascript": "function lexicographicallySmallestStringAfterDeletingDuplicateCharacters(nums) {\n\n}",
+    "typescript": "function lexicographicallySmallestStringAfterDeletingDuplicateCharacters(nums: number[]): string {\n\n}",
+    "java": "class Solution {\n    public String lexicographicallySmallestStringAfterDeletingDuplicateCharacters(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    string lexicographicallySmallestStringAfterDeletingDuplicateCharacters(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "lexicographicallySmallestStringAfterDeletingDuplicateCharacters",
+    "javascript": "lexicographicallySmallestStringAfterDeletingDuplicateCharacters",
+    "typescript": "lexicographicallySmallestStringAfterDeletingDuplicateCharacters",
+    "java": "lexicographicallySmallestStringAfterDeletingDuplicateCharacters",
+    "cpp": "lexicographicallySmallestStringAfterDeletingDuplicateCharacters"
+  }
 }

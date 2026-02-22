@@ -8,6 +8,87 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "n": 123
+      },
+      "expected": 198,
+      "explanation": "Mirror of 123 is 321. Distance = |321 - 123| = 198",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "n": 1
+      },
+      "expected": 0,
+      "explanation": "Mirror of 1 is 1. Distance = |1 - 1| = 0",
+      "tags": ["single-digit", "palindrome"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "n": 12
+      },
+      "expected": 9,
+      "explanation": "Mirror of 12 is 21. Distance = |21 - 12| = 9",
+      "tags": ["two-digit"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "n": 121
+      },
+      "expected": 0,
+      "explanation": "Mirror of 121 is 121 (palindrome). Distance = 0",
+      "tags": ["palindrome"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "n": 9
+      },
+      "expected": 0,
+      "explanation": "Mirror of 9 is 9. Distance = 0",
+      "tags": ["single-digit"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a non-negative integer `n`, compute the **mirror distance** of `n`, defined as the absolute difference between `n` and its digit-reversed (mirror) value.",
+  "examples": [
+    {
+      "input": "n = 123",
+      "output": "198",
+      "explanation": "Mirror of 123 is 321. |321 - 123| = 198."
+    },
+    {
+      "input": "n = 121",
+      "output": "0",
+      "explanation": "121 is a palindrome, so its mirror equals itself. Distance = 0."
+    },
+    {
+      "input": "n = 12",
+      "output": "9",
+      "explanation": "Mirror of 12 is 21. |21 - 12| = 9."
+    }
+  ],
+  "constraints": [
+    "0 <= n <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {number}\n */\nfunction mirrorDistanceOfAnInteger(n) {\n  // Write your solution here\n}",
+    "typescript": "function mirrorDistanceOfAnInteger(n: number): number {\n  // Write your solution here\n}",
+    "python": "def mirrorDistanceOfAnInteger(n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int mirrorDistanceOfAnInteger(int n) {\n    // Write your solution here\n}",
+    "go": "func mirrorDistanceOfAnInteger(n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "mirrorDistanceOfAnInteger",
+    "typescript": "mirrorDistanceOfAnInteger",
+    "python": "mirrorDistanceOfAnInteger",
+    "cpp": "mirrorDistanceOfAnInteger",
+    "go": "MirrorDistanceOfAnInteger"
+  }
 }

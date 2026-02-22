@@ -1,13 +1,99 @@
 {
   "slug": "alien-dictionary",
-  "functionName": "alienDictionary",
+  "functionName": "alienOrder",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "words",
+      "type": "string[]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "string",
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "words": ["wrt","wrf","er","ett","rftt"]
+      },
+      "expected": "wertf",
+      "explanation": "Derived ordering: t<f, w<e, r<t, e<r. One valid topological order is 'wertf'.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "words": ["z","x"]
+      },
+      "expected": "zx",
+      "explanation": "z comes before x in alien alphabet.",
+      "tags": ["basic", "two-chars"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "words": ["z","x","z"]
+      },
+      "expected": "",
+      "explanation": "Cycle detected: z<x and x<z, which is contradictory. Return empty string.",
+      "tags": ["cycle", "invalid"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "words": ["abc","ab"]
+      },
+      "expected": "",
+      "explanation": "Invalid input: 'abc' comes before 'ab' but 'ab' is a prefix of 'abc', which is impossible in a valid sorted dictionary.",
+      "tags": ["invalid", "prefix-violation"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "words": ["ab","adc"]
+      },
+      "expected": "abdc",
+      "explanation": "Comparing 'ab' and 'adc': b<d. Valid orderings include 'abdc' or 'abcd'.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Alien Dictionary** problem.\n\nGiven a list of words sorted lexicographically according to an alien language's alphabet, derive the order of characters in that alphabet. Return any valid ordering as a string. Return an empty string if no valid ordering exists (e.g., cycle or prefix violation).\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/alien-dictionary/).",
+  "examples": [
+    {
+      "input": "words = [\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]",
+      "output": "\"wertf\"",
+      "explanation": "One valid character ordering derived from adjacent word comparisons."
+    },
+    {
+      "input": "words = [\"z\",\"x\"]",
+      "output": "\"zx\"",
+      "explanation": "z comes before x."
+    },
+    {
+      "input": "words = [\"z\",\"x\",\"z\"]",
+      "output": "\"\"",
+      "explanation": "Cycle detected, no valid ordering."
+    }
+  ],
+  "constraints": [
+    "1 <= words.length <= 100",
+    "1 <= words[i].length <= 100",
+    "words[i] consists of only lowercase English letters",
+    "All words are unique in the given dictionary"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string[]} words\n * @return {string}\n */\nfunction alienOrder(words) {\n  // Write your solution here\n}",
+    "typescript": "function alienOrder(words: string[]): string {\n  // Write your solution here\n}",
+    "python": "def alien_order(words: list[str]) -> str:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nstring alienOrder(vector<string>& words) {\n    // Write your solution here\n}",
+    "go": "func alienOrder(words []string) string {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "alienOrder",
+    "typescript": "alienOrder",
+    "python": "alien_order",
+    "cpp": "alienOrder",
+    "go": "AlienOrder"
+  }
 }

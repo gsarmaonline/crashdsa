@@ -8,6 +8,98 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "nums": [
+          1,
+          0,
+          1
+        ]
+      },
+      "expected": 5,
+      "tags": [
+        "basic"
+      ]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "nums": [
+          1,
+          1,
+          1
+        ]
+      },
+      "expected": 7,
+      "tags": [
+        "basic"
+      ]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "nums": [
+          0
+        ]
+      },
+      "expected": 0,
+      "tags": [
+        "edge"
+      ]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [
+          1,
+          0,
+          0
+        ]
+      },
+      "expected": 4,
+      "tags": [
+        "basic"
+      ]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [
+          1,
+          1,
+          0,
+          1
+        ]
+      },
+      "expected": 13,
+      "tags": [
+        "basic"
+      ]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of binary digits (0s and 1s), compute the decimal value of the binary number represented by the array (most significant bit first).",
+  "examples": [
+    {
+      "input": "nums = [1,0,1]",
+      "output": "5",
+      "explanation": "Binary 101 = 4 + 0 + 1 = 5 in decimal."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 32",
+    "nums[i] is either 0 or 1"
+  ],
+  "starterCode": {
+    "javascript": "function computeDecimalRepresentation(nums) {\n  // your code here\n}",
+    "python": "def computeDecimalRepresentation(nums):\n    pass",
+    "java": "public int computeDecimalRepresentation(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "computeDecimalRepresentation",
+    "python": "computeDecimalRepresentation",
+    "java": "computeDecimalRepresentation"
+  }
 }

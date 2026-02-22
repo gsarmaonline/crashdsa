@@ -115,5 +115,6 @@
     "python": "max_profit",
     "cpp": "maxProfit",
     "go": "MaxProfit"
-  }
+  },
+  "_status": "complete"
 }

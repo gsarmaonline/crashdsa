@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [13, 24] },
+      "expected": 20,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [9, 1] },
+      "expected": 82,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 14,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [99, 11] },
+      "expected": 164,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [10, 20, 30] },
+      "expected": 14,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of integers nums, for each number compute the sum of squares of its digits, then return the maximum such value across all numbers in the array. For example, 13 has digit squares 1^2 + 3^2 = 10; 24 has 2^2 + 4^2 = 20.",
+  "examples": [
+    {
+      "input": "nums = [13, 24]",
+      "output": "20",
+      "explanation": "13: 1+9=10. 24: 4+16=20. Maximum = 20."
+    },
+    {
+      "input": "nums = [9, 1]",
+      "output": "81",
+      "explanation": "9: 9^2=81. 1: 1^2=1. Maximum = 81."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^4",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef maximizeSumOfSquaresOfDigits(nums: List[int]) -> int:\n    pass",
+    "javascript": "function maximizeSumOfSquaresOfDigits(nums) {\n\n}",
+    "typescript": "function maximizeSumOfSquaresOfDigits(nums: number[]): number {\n\n}",
+    "java": "class Solution {\n    public int maximizeSumOfSquaresOfDigits(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int maximizeSumOfSquaresOfDigits(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "maximizeSumOfSquaresOfDigits",
+    "javascript": "maximizeSumOfSquaresOfDigits",
+    "typescript": "maximizeSumOfSquaresOfDigits",
+    "java": "maximizeSumOfSquaresOfDigits",
+    "cpp": "maximizeSumOfSquaresOfDigits"
+  }
 }

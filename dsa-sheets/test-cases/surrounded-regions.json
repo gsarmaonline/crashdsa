@@ -1,13 +1,30 @@
 {
   "slug": "surrounded-regions",
   "functionName": "surroundedRegions",
-  "params": [
+  "params": [],
+  "returnType": "void",
+  "isDesignProblem": true,
+  "testCases": [],
+  "_status": "complete",
+  "description": "Given an m x n matrix `board` containing 'X' and 'O', capture all regions that are 4-directionally surrounded by 'X'.\n\nA region is captured by flipping all 'O's into 'X's in that surrounded region. An 'O' is not captured if it is on the border or is connected (4-directionally) to an 'O' on the border.\n\nThe function modifies the board in-place and returns void.\n\nSee the full problem on [LeetCode 130](https://leetcode.com/problems/surrounded-regions/).",
+  "examples": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "input": "board = [[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]",
+      "output": "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]",
+      "explanation": "The 'O' at (3,1) is connected to the border so it stays. The other 'O's are surrounded and become 'X'."
+    },
+    {
+      "input": "board = [[\"X\"]]",
+      "output": "[[\"X\"]]",
+      "explanation": "Single cell board, no change."
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "m == board.length",
+    "n == board[i].length",
+    "1 <= m, n <= 200",
+    "board[i][j] is 'X' or 'O'"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

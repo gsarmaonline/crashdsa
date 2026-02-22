@@ -1,13 +1,81 @@
 {
   "slug": "trapping-rain-water",
-  "functionName": "trappingRainWater",
+  "functionName": "trap",
   "params": [
     {
-      "name": "nums",
+      "name": "height",
       "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given `n` non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
+  "examples": [
+    {
+      "input": "height = [0,1,0,2,1,0,1,3,2,1,2,1]",
+      "output": "6",
+      "explanation": "The elevation map is represented by the array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water are being trapped."
+    },
+    {
+      "input": "height = [4,2,0,3,2,5]",
+      "output": "9",
+      "explanation": "Water trapped: 2 units between index 0 and index 3, then additional units fill up to the min of surrounding walls."
+    }
+  ],
+  "constraints": [
+    "n == height.length",
+    "1 <= n <= 2 * 10^4",
+    "0 <= height[i] <= 10^5"
+  ],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "height": [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1] },
+      "expected": 6,
+      "explanation": "Standard LeetCode example — 6 units of water trapped.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "height": [4, 2, 0, 3, 2, 5] },
+      "expected": 9,
+      "explanation": "9 units trapped: positions 1-4 fill to varying heights bounded by walls of 4 and 5.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "height": [1, 0, 1] },
+      "expected": 1,
+      "explanation": "One unit of water trapped in the valley between the two walls of height 1.",
+      "tags": ["basic", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "height": [3, 0, 0, 2, 0, 4] },
+      "expected": 10,
+      "explanation": "Water levels: pos1=3, pos2=3, pos3=2, pos4=2, pos5=4 — trapped: 3+3+2+2=10 units.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "height": [1, 2, 3, 4, 5] },
+      "expected": 0,
+      "explanation": "Monotonically increasing — no water can be trapped.",
+      "tags": ["sorted", "edge-case"]
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} height\n * @return {number}\n */\nfunction trap(height) {\n  // Write your solution here\n}",
+    "typescript": "function trap(height: number[]): number {\n  // Write your solution here\n}",
+    "python": "def trap(height: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int trap(vector<int>& height) {\n    // Write your solution here\n}",
+    "go": "func trap(height []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "trap",
+    "typescript": "trap",
+    "python": "trap",
+    "cpp": "trap",
+    "go": "Trap"
+  }
 }

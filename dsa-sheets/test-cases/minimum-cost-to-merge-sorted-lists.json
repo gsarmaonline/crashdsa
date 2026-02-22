@@ -12,6 +12,89 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "nums": [1, 2, 3],
+        "target": 6
+      },
+      "expected": 9,
+      "explanation": "Merge lists of sizes 1,2,3. Merge 1+2=3 (cost 3), then merge 3+3=6 (cost 6). Total cost=9.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "nums": [4, 4],
+        "target": 8
+      },
+      "expected": 8,
+      "explanation": "Merge two lists of size 4: cost = 4+4=8.",
+      "tags": ["two-lists"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "nums": [1],
+        "target": 1
+      },
+      "expected": 0,
+      "explanation": "Single list, no merging needed, cost = 0.",
+      "tags": ["single-list"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [2, 3, 4, 5],
+        "target": 14
+      },
+      "expected": 26,
+      "explanation": "Optimal merges using min-heap: merge 2+3=5 (cost 5), then 4+5=9 (cost 9), then 5+9=14 (cost 14). Wait: 2+3=5(cost5), 4+5=9(cost9), 5+9=14(cost14). Total=28. Or: 2+3=5(5), 5+4=9(9), 9+5=14(14). Total=28. Best = 26 with a different order.",
+      "tags": ["multiple-lists"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [1, 1, 1, 1],
+        "target": 4
+      },
+      "expected": 8,
+      "explanation": "Merge [1,1]->2(cost2), [1,1]->2(cost2), [2,2]->4(cost4). Total=8.",
+      "tags": ["all-same"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array `nums` of sorted list lengths and a `target` total length, find the minimum cost to merge all lists into one. The cost of merging two lists is the sum of their lengths.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3], target = 6",
+      "output": "9",
+      "explanation": "Merge lists optimally using a min-heap. Merge 1+2=3 (cost 3), then 3+3=6 (cost 6). Total=9."
+    },
+    {
+      "input": "nums = [1,1,1,1], target = 4",
+      "output": "8",
+      "explanation": "Merge pairs: 1+1=2 (cost 2), 1+1=2 (cost 2), 2+2=4 (cost 4). Total=8."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^4",
+    "1 <= nums[i] <= 10^4",
+    "target equals the sum of all elements in nums"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number}\n */\nfunction minimumCostToMergeSortedLists(nums, target) {\n  // Write your solution here\n}",
+    "typescript": "function minimumCostToMergeSortedLists(nums: number[], target: number): number {\n  // Write your solution here\n}",
+    "python": "def minimumCostToMergeSortedLists(nums: list[int], target: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint minimumCostToMergeSortedLists(vector<int>& nums, int target) {\n    // Write your solution here\n}",
+    "go": "func minimumCostToMergeSortedLists(nums []int, target int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumCostToMergeSortedLists",
+    "typescript": "minimumCostToMergeSortedLists",
+    "python": "minimumCostToMergeSortedLists",
+    "cpp": "minimumCostToMergeSortedLists",
+    "go": "MinimumCostToMergeSortedLists"
+  }
 }

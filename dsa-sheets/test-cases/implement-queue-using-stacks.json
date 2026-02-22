@@ -1,13 +1,23 @@
 {
   "slug": "implement-queue-using-stacks",
   "functionName": "implementQueueUsingStacks",
-  "params": [
+  "params": [],
+  "returnType": "void",
+  "testCases": [],
+  "isDesignProblem": true,
+  "_status": "complete",
+  "description": "Implement a first-in-first-out (FIFO) queue using only two stacks. The queue should support push, pop, peek, and empty operations. Each operation must be amortized O(1) time.",
+  "examples": [
     {
-      "name": "root",
-      "type": "TreeNode"
+      "input": "MyQueue myQueue = new MyQueue(); myQueue.push(1); myQueue.push(2); myQueue.peek(); myQueue.pop(); myQueue.empty();",
+      "output": "null, null, 1, 1, false"
     }
   ],
-  "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "1 <= x <= 9",
+    "At most 100 calls will be made to push, pop, peek, and empty",
+    "All calls to pop and peek are valid"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

@@ -8,6 +8,69 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 1, 3, 1] },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 1, 1] },
+      "expected": 2,
+      "tags": ["basic", "minimal"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [2, 1, 2, 3, 2] },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 3, 2, 1, 3, 2, 1] },
+      "expected": 6,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [4, 1, 4, 2, 4] },
+      "expected": 4,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array nums, find three indices i < j < k such that nums[i] == nums[j] == nums[k] and the total distance (j - i) + (k - j) = k - i is minimized. This is version II, which may involve multiple equal triples or extended constraints. Return the minimum total distance.",
+  "examples": [
+    {
+      "input": "nums = [1, 2, 1, 3, 1]",
+      "output": "4",
+      "explanation": "Indices 0, 2, 4 all have value 1; distance = (2-0) + (4-2) = 4."
+    },
+    {
+      "input": "nums = [1, 1, 1]",
+      "output": "2",
+      "explanation": "Indices 0, 1, 2 all have value 1; distance = 2."
+    }
+  ],
+  "constraints": [
+    "3 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^5",
+    "It is guaranteed that at least one element appears at least 3 times"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef minimumDistanceBetweenThreeEqualElementsIi(nums: List[int]) -> int:\n    pass",
+    "javascript": "function minimumDistanceBetweenThreeEqualElementsIi(nums) {\n\n}",
+    "typescript": "function minimumDistanceBetweenThreeEqualElementsIi(nums: number[]): number {\n\n}",
+    "java": "class Solution {\n    public int minimumDistanceBetweenThreeEqualElementsIi(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int minimumDistanceBetweenThreeEqualElementsIi(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "minimumDistanceBetweenThreeEqualElementsIi",
+    "javascript": "minimumDistanceBetweenThreeEqualElementsIi",
+    "typescript": "minimumDistanceBetweenThreeEqualElementsIi",
+    "java": "minimumDistanceBetweenThreeEqualElementsIi",
+    "cpp": "minimumDistanceBetweenThreeEqualElementsIi"
+  }
 }

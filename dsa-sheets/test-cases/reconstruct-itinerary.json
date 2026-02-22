@@ -1,13 +1,95 @@
 {
   "slug": "reconstruct-itinerary",
-  "functionName": "reconstructItinerary",
+  "functionName": "findItinerary",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "tickets",
+      "type": "string[][]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "string[]",
+  "outputOrderMatters": true,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "tickets": [["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]]
+      },
+      "expected": ["JFK","MUC","LHR","SFO","SJC"],
+      "explanation": "Starting from JFK, the only valid itinerary using all tickets is JFK->MUC->LHR->SFO->SJC.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "tickets": [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
+      },
+      "expected": ["JFK","ATL","JFK","SFO","ATL","SFO"],
+      "explanation": "Lexicographically smallest valid itinerary using all tickets.",
+      "tags": ["basic", "lexicographic-order"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "tickets": [["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]
+      },
+      "expected": ["JFK","NRT","JFK","KUL"],
+      "explanation": "Must visit NRT before KUL to use all tickets; KUL is a dead end.",
+      "tags": ["dead-end", "backtracking"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "tickets": [["JFK","ATL"],["ATL","JFK"]]
+      },
+      "expected": ["JFK","ATL","JFK"],
+      "explanation": "Simple round trip: JFK->ATL->JFK.",
+      "tags": ["edge-case", "round-trip"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "tickets": [["JFK","A"],["A","B"],["B","JFK"]]
+      },
+      "expected": ["JFK","A","B","JFK"],
+      "explanation": "Linear chain ending back at JFK.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Reconstruct Itinerary** problem.\n\nGiven a list of airline tickets represented as [from, to] pairs, reconstruct the itinerary starting from JFK. Use all tickets exactly once. If multiple valid itineraries exist, return the one with the smallest lexicographic order.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/reconstruct-itinerary/).",
+  "examples": [
+    {
+      "input": "tickets = [[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]",
+      "output": "[\"JFK\",\"MUC\",\"LHR\",\"SFO\",\"SJC\"]"
+    },
+    {
+      "input": "tickets = [[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]",
+      "output": "[\"JFK\",\"ATL\",\"JFK\",\"SFO\",\"ATL\",\"SFO\"]",
+      "explanation": "Lexicographically smallest valid itinerary."
+    }
+  ],
+  "constraints": [
+    "1 <= tickets.length <= 300",
+    "tickets[i].length == 2",
+    "tickets[i][0].length == 3",
+    "tickets[i][1].length == 3",
+    "tickets[i][0] and tickets[i][1] consist of uppercase English letters",
+    "It is guaranteed that a valid itinerary exists"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string[][]} tickets\n * @return {string[]}\n */\nfunction findItinerary(tickets) {\n  // Write your solution here\n}",
+    "typescript": "function findItinerary(tickets: string[][]): string[] {\n  // Write your solution here\n}",
+    "python": "def find_itinerary(tickets: list[list[str]]) -> list[str]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nvector<string> findItinerary(vector<vector<string>>& tickets) {\n    // Write your solution here\n}",
+    "go": "func findItinerary(tickets [][]string) []string {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "findItinerary",
+    "typescript": "findItinerary",
+    "python": "find_itinerary",
+    "cpp": "findItinerary",
+    "go": "FindItinerary"
+  }
 }

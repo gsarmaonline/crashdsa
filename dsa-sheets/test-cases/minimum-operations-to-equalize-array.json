@@ -8,6 +8,59 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 1, 1] },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [3, 1, 5] },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [5] },
+      "expected": 0,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [4, 2, 6, 8] },
+      "expected": 8,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of integers, return the minimum number of operations (increment or decrement any element by 1) to make all elements equal.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "2",
+      "explanation": "Make all elements 2: change 1→2 (1 op) and 3→2 (1 op). Total = 2."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "function minimumOperationsToEqualizeArray(nums) {\n  // your code here\n}",
+    "python": "def minimumOperationsToEqualizeArray(nums):\n    pass",
+    "java": "public int minimumOperationsToEqualizeArray(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumOperationsToEqualizeArray",
+    "python": "minimumOperationsToEqualizeArray",
+    "java": "minimumOperationsToEqualizeArray"
+  }
 }

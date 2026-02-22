@@ -1,17 +1,80 @@
 {
   "slug": "largest-rectangle-in-histogram",
-  "functionName": "largestRectangleInHistogram",
+  "functionName": "largestRectangleArea",
   "params": [
     {
-      "name": "nums",
+      "name": "heights",
       "type": "int[]"
-    },
-    {
-      "name": "k",
-      "type": "int"
     }
   ],
-  "returnType": "int[]",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int",
+  "_status": "complete",
+  "description": "Given an array of integers `heights` representing the histogram's bar heights where the width of each bar is 1, return the area of the largest rectangle in the histogram.",
+  "examples": [
+    {
+      "input": "heights = [2,1,5,6,2,3]",
+      "output": "10",
+      "explanation": "The largest rectangle has an area = 10 units (bars of height 5 and 6, width 2)."
+    },
+    {
+      "input": "heights = [2,4]",
+      "output": "4",
+      "explanation": "The largest rectangle is the bar of height 4 with width 1, area = 4."
+    }
+  ],
+  "constraints": [
+    "1 <= heights.length <= 10^5",
+    "0 <= heights[i] <= 10^4"
+  ],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "heights": [2, 1, 5, 6, 2, 3] },
+      "expected": 10,
+      "explanation": "Bars at indices 2 and 3 (heights 5 and 6) form a rectangle of width 2 and height 5, area = 10.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "heights": [2, 4] },
+      "expected": 4,
+      "explanation": "Best rectangle: single bar of height 4, area = 4.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "heights": [1] },
+      "expected": 1,
+      "explanation": "Single bar of height 1, area = 1.",
+      "tags": ["single-element", "edge-case"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "heights": [3, 3, 3, 3] },
+      "expected": 12,
+      "explanation": "All bars height 3, width 4 — largest rectangle spans all bars: 3 * 4 = 12.",
+      "tags": ["all-same"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "heights": [6, 7, 5, 2, 4, 5, 9, 3] },
+      "expected": 16,
+      "explanation": "Bars at indices 4-6 (heights 4,5,9) can form rectangle of height 4 width 3 = 12. Bars 0-2 (6,7,5) with height 5 width 3 = 15. Wait — bars 0-1 (6,7) with height 6 width 2 = 12. Bars 4-6 height 4 width 3 = 12. Bar 1 alone = 7. Recalculate: indices 0-2 min=5 width=3 area=15; indices 0-1 min=6 width=2 area=12; full span min=2 width=8 area=16. Yes, full span area = 2*8 = 16.",
+      "tags": ["basic"]
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} heights\n * @return {number}\n */\nfunction largestRectangleArea(heights) {\n  // Write your solution here\n}",
+    "typescript": "function largestRectangleArea(heights: number[]): number {\n  // Write your solution here\n}",
+    "python": "def largest_rectangle_area(heights: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int largestRectangleArea(vector<int>& heights) {\n    // Write your solution here\n}",
+    "go": "func largestRectangleArea(heights []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "largestRectangleArea",
+    "typescript": "largestRectangleArea",
+    "python": "largest_rectangle_area",
+    "cpp": "largestRectangleArea",
+    "go": "LargestRectangleArea"
+  }
 }

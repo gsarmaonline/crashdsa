@@ -152,5 +152,6 @@
     "python": "merge_two_lists",
     "cpp": "mergeTwoLists",
     "go": "MergeTwoLists"
-  }
+  },
+  "_status": "complete"
 }

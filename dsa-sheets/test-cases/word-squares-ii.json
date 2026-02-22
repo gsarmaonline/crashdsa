@@ -3,11 +3,66 @@
   "functionName": "wordSquaresIi",
   "params": [
     {
-      "name": "n",
-      "type": "int"
+      "name": "words",
+      "type": "string[]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "string[][]",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "words": ["area", "lead", "wall", "lady", "ball"] },
+      "expected": [["wall","area","lead","lady"],["ball","area","lead","lady"]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "words": ["abat","baba","atan","atal"] },
+      "expected": [["baba","abat","baba","atan"],["baba","abat","baba","atal"]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "words": ["ab","ba"] },
+      "expected": [["ab","ba"],["ba","ab"]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "words": ["aa"] },
+      "expected": [["aa","aa"]],
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "words": ["abc","bcd","cde"] },
+      "expected": [],
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Find all word squares that can be formed from the given list of words. A word square is a set of words where the kth row and kth column read the same string.",
+  "examples": [
+    {
+      "input": "words = [\"area\",\"lead\",\"wall\",\"lady\",\"ball\"]",
+      "output": "[[\"wall\",\"area\",\"lead\",\"lady\"],[\"ball\",\"area\",\"lead\",\"lady\"]]",
+      "explanation": "The words form valid word squares where row i equals column i."
+    }
+  ],
+  "constraints": [
+    "1 <= words.length <= 1000",
+    "1 <= words[i].length <= 5",
+    "All words have the same length",
+    "words[i] consists of lowercase English letters"
+  ],
+  "starterCode": {
+    "javascript": "function wordSquaresIi(words) {\n  // your code here\n}",
+    "python": "def wordSquaresIi(words):\n    pass",
+    "java": "public List<List<String>> wordSquaresIi(String[] words) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "wordSquaresIi",
+    "python": "wordSquaresIi",
+    "java": "wordSquaresIi"
+  }
 }

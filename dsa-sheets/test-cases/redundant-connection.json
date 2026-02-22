@@ -1,13 +1,97 @@
 {
   "slug": "redundant-connection",
-  "functionName": "redundantConnection",
+  "functionName": "findRedundantConnection",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "edges",
+      "type": "int[][]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int[]",
+  "outputOrderMatters": true,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "edges": [[1,2],[1,3],[2,3]]
+      },
+      "expected": [2,3],
+      "explanation": "Edges [1,2] and [1,3] form a tree; [2,3] is the redundant edge that creates a cycle.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "edges": [[1,2],[2,3],[3,4],[1,4],[1,5]]
+      },
+      "expected": [1,4],
+      "explanation": "[1,4] is the last edge that creates a cycle in the 1-2-3-4 loop.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "edges": [[1,2],[2,3],[1,3]]
+      },
+      "expected": [1,3],
+      "explanation": "[1,3] completes the cycle 1-2-3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "edges": [[1,2],[1,3],[2,4],[3,4]]
+      },
+      "expected": [3,4],
+      "explanation": "[3,4] is the last edge added that creates a cycle.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "edges": [[1,2],[2,3],[3,1]]
+      },
+      "expected": [3,1],
+      "explanation": "[3,1] closes the triangle cycle 1-2-3.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Redundant Connection** problem.\n\nIn an undirected graph of n nodes (labeled 1 to n), one additional edge was added to a tree. Find and return that redundant edge. If multiple answers exist, return the last edge in the input.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/redundant-connection/).",
+  "examples": [
+    {
+      "input": "edges = [[1,2],[1,3],[2,3]]",
+      "output": "[2,3]",
+      "explanation": "[2,3] is the edge that creates a cycle."
+    },
+    {
+      "input": "edges = [[1,2],[2,3],[3,4],[1,4],[1,5]]",
+      "output": "[1,4]",
+      "explanation": "[1,4] closes the cycle among nodes 1, 2, 3, 4."
+    }
+  ],
+  "constraints": [
+    "n == edges.length",
+    "3 <= n <= 1000",
+    "edges[i].length == 2",
+    "1 <= a, b <= n",
+    "a != b",
+    "There are no repeated edges",
+    "The given graph is connected"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[][]} edges\n * @return {number[]}\n */\nfunction findRedundantConnection(edges) {\n  // Write your solution here\n}",
+    "typescript": "function findRedundantConnection(edges: number[][]): number[] {\n  // Write your solution here\n}",
+    "python": "def find_redundant_connection(edges: list[list[int]]) -> list[int]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nvector<int> findRedundantConnection(vector<vector<int>>& edges) {\n    // Write your solution here\n}",
+    "go": "func findRedundantConnection(edges [][]int) []int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "findRedundantConnection",
+    "typescript": "findRedundantConnection",
+    "python": "find_redundant_connection",
+    "cpp": "findRedundantConnection",
+    "go": "FindRedundantConnection"
+  }
 }

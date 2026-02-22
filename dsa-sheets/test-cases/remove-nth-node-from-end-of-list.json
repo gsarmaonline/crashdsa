@@ -5,9 +5,70 @@
     {
       "name": "head",
       "type": "ListNode"
+    },
+    {
+      "name": "n",
+      "type": "int"
     }
   ],
-  "returnType": "boolean",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "ListNode",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "head": [1, 2, 3, 4, 5], "n": 2 },
+      "expected": [1, 2, 3, 5],
+      "explanation": "Remove the 2nd node from end (node with value 4), leaving [1,2,3,5]",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "head": [1], "n": 1 },
+      "expected": [],
+      "explanation": "Single node list, removing the only node yields empty list",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "head": [1, 2], "n": 1 },
+      "expected": [1],
+      "explanation": "Remove last node (value 2) from two-node list",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "head": [1, 2], "n": 2 },
+      "expected": [2],
+      "explanation": "Remove first node (value 1, which is 2nd from end) from two-node list",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "head": [1, 2, 3], "n": 3 },
+      "expected": [2, 3],
+      "explanation": "Remove the head node (value 1, which is 3rd from end)",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given the head of a linked list, remove the nth node from the end of the list and return its head.",
+  "examples": [
+    {
+      "input": "head = [1,2,3,4,5], n = 2",
+      "output": "[1,2,3,5]",
+      "explanation": "The 2nd node from the end is the node with value 4. After removing it, the list becomes [1,2,3,5]."
+    },
+    {
+      "input": "head = [1], n = 1",
+      "output": "[]",
+      "explanation": "The only node is removed, resulting in an empty list."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in the list is sz",
+    "1 <= sz <= 30",
+    "0 <= Node.val <= 100",
+    "1 <= n <= sz"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

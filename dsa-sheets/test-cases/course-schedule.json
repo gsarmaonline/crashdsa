@@ -136,5 +136,6 @@
     "python": "can_finish",
     "cpp": "canFinish",
     "go": "CanFinish"
-  }
+  },
+  "_status": "complete"
 }

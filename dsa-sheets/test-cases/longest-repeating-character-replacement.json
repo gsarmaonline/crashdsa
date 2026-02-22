@@ -1,13 +1,85 @@
 {
   "slug": "longest-repeating-character-replacement",
-  "functionName": "longestRepeatingCharacterReplacement",
+  "functionName": "characterReplacement",
   "params": [
     {
       "name": "s",
       "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "You are given a string `s` and an integer `k`. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most `k` times.\n\nReturn the length of the longest substring containing the same letter you can get after performing the above operations.",
+  "examples": [
+    {
+      "input": "s = \"ABAB\", k = 2",
+      "output": "4",
+      "explanation": "Replace the two 'A's with two 'B's or vice versa. The resulting substring \"BBBB\" or \"AAAA\" has length 4."
+    },
+    {
+      "input": "s = \"AABABBA\", k = 1",
+      "output": "4",
+      "explanation": "Replace the one 'A' in the middle with 'B' — substring \"BBBB\" starting at index 1 has length 4. Or the answer \"AABA\" with one replacement gives \"AAAA\" of length 4."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of only uppercase English letters.",
+    "0 <= k <= s.length"
+  ],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "ABAB", "k": 2 },
+      "expected": 4,
+      "explanation": "Replace both 'A's (or 'B's) — entire string becomes uniform; length 4.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "AABABBA", "k": 1 },
+      "expected": 4,
+      "explanation": "Best window of length 4 with at most 1 replacement: e.g., 'AABA' -> 'AAAA'.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "AAAA", "k": 2 },
+      "expected": 4,
+      "explanation": "All characters are already the same — entire string of length 4 is the answer.",
+      "tags": ["all-same"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "ABCDE", "k": 1 },
+      "expected": 2,
+      "explanation": "With k=1, any window of 2 has 1 minority char to replace — max length is 2.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "ABCDE", "k": 4 },
+      "expected": 5,
+      "explanation": "With k=4, we can replace all but one character — the entire string of length 5 works.",
+      "tags": ["edge-case"]
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nfunction characterReplacement(s, k) {\n  // Write your solution here\n}",
+    "typescript": "function characterReplacement(s: string, k: number): number {\n  // Write your solution here\n}",
+    "python": "def character_replacement(s: str, k: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int characterReplacement(string s, int k) {\n    // Write your solution here\n}",
+    "go": "func characterReplacement(s string, k int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "characterReplacement",
+    "typescript": "characterReplacement",
+    "python": "character_replacement",
+    "cpp": "characterReplacement",
+    "go": "CharacterReplacement"
+  }
 }

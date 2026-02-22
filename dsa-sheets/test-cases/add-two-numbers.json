@@ -3,11 +3,76 @@
   "functionName": "addTwoNumbers",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "l1",
+      "type": "ListNode"
+    },
+    {
+      "name": "l2",
+      "type": "ListNode"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "ListNode",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "l1": [2, 4, 3], "l2": [5, 6, 4] },
+      "expected": [7, 0, 8],
+      "explanation": "342 + 465 = 807, stored in reverse as [7,0,8]",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "l1": [0], "l2": [0] },
+      "expected": [0],
+      "explanation": "0 + 0 = 0",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "l1": [9, 9, 9, 9, 9, 9, 9], "l2": [9, 9, 9, 9] },
+      "expected": [8, 9, 9, 9, 0, 0, 0, 1],
+      "explanation": "9999999 + 9999 = 10009998, stored in reverse as [8,9,9,9,0,0,0,1]",
+      "tags": ["carry", "different-lengths"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "l1": [2, 4, 9], "l2": [5, 6, 4, 9] },
+      "expected": [7, 0, 4, 0, 1],
+      "explanation": "942 + 9465 = 10407, stored in reverse as [7,0,4,0,1]",
+      "tags": ["carry", "different-lengths"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "l1": [1], "l2": [9, 9] },
+      "expected": [0, 0, 1],
+      "explanation": "1 + 99 = 100, stored in reverse as [0,0,1]",
+      "tags": ["carry"]
+    }
+  ],
+  "_status": "complete",
+  "description": "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list. You may assume the two numbers do not have leading zeros, except the number 0 itself.",
+  "examples": [
+    {
+      "input": "l1 = [2,4,3], l2 = [5,6,4]",
+      "output": "[7,0,8]",
+      "explanation": "342 + 465 = 807."
+    },
+    {
+      "input": "l1 = [0], l2 = [0]",
+      "output": "[0]",
+      "explanation": "0 + 0 = 0."
+    },
+    {
+      "input": "l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]",
+      "output": "[8,9,9,9,0,0,0,1]",
+      "explanation": "9999999 + 9999 = 10009998."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in each linked list is in the range [1, 100]",
+    "0 <= Node.val <= 9",
+    "It is guaranteed that the list represents a number that does not have leading zeros"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

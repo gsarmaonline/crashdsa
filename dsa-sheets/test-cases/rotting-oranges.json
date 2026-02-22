@@ -1,13 +1,99 @@
 {
   "slug": "rotting-oranges",
-  "functionName": "rottingOranges",
+  "functionName": "orangesRotting",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "grid",
+      "type": "int[][]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "grid": [[2,1,1],[1,1,0],[0,1,1]]
+      },
+      "expected": 4,
+      "explanation": "BFS from the initial rotten orange spreads to all fresh oranges in 4 minutes.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "grid": [[2,1,1],[0,1,1],[1,0,1]]
+      },
+      "expected": -1,
+      "explanation": "The orange at (2,0) is isolated and can never be reached by rot.",
+      "tags": ["impossible", "edge-case"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "grid": [[0,2]]
+      },
+      "expected": 0,
+      "explanation": "No fresh oranges exist, so 0 minutes are needed.",
+      "tags": ["edge-case", "no-fresh"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "grid": [[2,2],[1,1],[0,0]]
+      },
+      "expected": 1,
+      "explanation": "Both fresh oranges in row 1 are adjacent to rotten oranges in row 0, all rot in 1 minute.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "grid": [[1,2,0],[1,1,1]]
+      },
+      "expected": 2,
+      "explanation": "Rot spreads from (0,1) to adjacent cells in 1 minute, then continues for 1 more minute to reach the rest.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Rotting Oranges** problem.\n\nYou are given an m x n grid where each cell can have one of three values: 0 (empty), 1 (fresh orange), 2 (rotten orange). Every minute, any fresh orange 4-directionally adjacent to a rotten orange becomes rotten. Return the minimum number of minutes until no fresh oranges remain, or -1 if impossible.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/rotting-oranges/).",
+  "examples": [
+    {
+      "input": "grid = [[2,1,1],[1,1,0],[0,1,1]]",
+      "output": "4",
+      "explanation": "BFS from rotten orange spreads to all fresh oranges in 4 minutes."
+    },
+    {
+      "input": "grid = [[2,1,1],[0,1,1],[1,0,1]]",
+      "output": "-1",
+      "explanation": "The orange at position (2,0) can never rot."
+    },
+    {
+      "input": "grid = [[0,2]]",
+      "output": "0",
+      "explanation": "No fresh oranges to rot."
+    }
+  ],
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 10",
+    "grid[i][j] is 0, 1, or 2"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[][]} grid\n * @return {number}\n */\nfunction orangesRotting(grid) {\n  // Write your solution here\n}",
+    "typescript": "function orangesRotting(grid: number[][]): number {\n  // Write your solution here\n}",
+    "python": "def oranges_rotting(grid: list[list[int]]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint orangesRotting(vector<vector<int>>& grid) {\n    // Write your solution here\n}",
+    "go": "func orangesRotting(grid [][]int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "orangesRotting",
+    "typescript": "orangesRotting",
+    "python": "oranges_rotting",
+    "cpp": "orangesRotting",
+    "go": "OrangesRotting"
+  }
 }

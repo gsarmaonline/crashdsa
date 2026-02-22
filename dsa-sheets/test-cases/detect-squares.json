@@ -1,13 +1,23 @@
 {
   "slug": "detect-squares",
   "functionName": "detectSquares",
-  "params": [
+  "params": [],
+  "returnType": "void",
+  "isDesignProblem": true,
+  "testCases": [],
+  "_status": "complete",
+  "description": "Design a data structure that supports two operations: add(point) — adds a new point to the data structure; count(point) — counts the number of ways to choose three points from the data structure such that the three points and the given point form an axis-aligned square with positive area.",
+  "examples": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "input": "DetectSquares obj = new DetectSquares(); obj.add([3,10]); obj.add([11,2]); obj.add([3,2]); obj.count([11,10]); // returns 1; obj.count([14,8]); // returns 0; obj.add([11,2]); obj.count([11,10]); // returns 2",
+      "output": "null, null, null, 1, 0, null, 2"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "point.length == 2",
+    "0 <= x, y <= 1000",
+    "At most 3000 calls will be made to add and count"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

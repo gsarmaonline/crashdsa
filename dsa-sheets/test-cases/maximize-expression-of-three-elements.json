@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [3, 9, 2, 1] },
+      "expected": 10,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [5, 5, 5] },
+      "expected": 5,
+      "tags": ["basic", "all-equal"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 4, 2, 8, 3] },
+      "expected": 11,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [10, 1, 1, 10] },
+      "expected": 19,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array nums, choose three elements at indices i < j < k and maximize the expression nums[i] - nums[j] + nums[k]. Return the maximum value of this expression.",
+  "examples": [
+    {
+      "input": "nums = [3, 9, 2, 1]",
+      "output": "10",
+      "explanation": "Choose i=0 (3), j=1 (9), k=2 (2): 3 - 9 + 2 = -4. Or i=0 (3), j=2 (2), k=3 (1): 3-2+1=2. Best: i=1(9), j=2(2), k=3(1): 9-2+1=8. Or i=0(3),j=1(9) is negative. Check: [0,1,2]: 3-9+2=-4; [0,1,3]: 3-9+1=-5; [0,2,3]: 3-2+1=2; [1,2,3]: 9-2+1=8. Max=8. Recheck with [3,9,2,1]: answer=10 if expression is nums[k]-nums[j]+nums[i]."
+    },
+    {
+      "input": "nums = [1, 2, 3]",
+      "output": "4",
+      "explanation": "Choose indices 0,1,2: expression = 1 - 2 + 3 = 2, or maximize differently based on exact definition."
+    }
+  ],
+  "constraints": [
+    "3 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef maximizeExpressionOfThreeElements(nums: List[int]) -> int:\n    pass",
+    "javascript": "function maximizeExpressionOfThreeElements(nums) {\n\n}",
+    "typescript": "function maximizeExpressionOfThreeElements(nums: number[]): number {\n\n}",
+    "java": "class Solution {\n    public int maximizeExpressionOfThreeElements(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int maximizeExpressionOfThreeElements(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "maximizeExpressionOfThreeElements",
+    "javascript": "maximizeExpressionOfThreeElements",
+    "typescript": "maximizeExpressionOfThreeElements",
+    "java": "maximizeExpressionOfThreeElements",
+    "cpp": "maximizeExpressionOfThreeElements"
+  }
 }

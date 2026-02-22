@@ -1,6 +1,6 @@
 {
   "slug": "course-schedule-ii",
-  "functionName": "courseScheduleIi",
+  "functionName": "findOrder",
   "params": [
     {
       "name": "numCourses",
@@ -11,7 +11,100 @@
       "type": "int[][]"
     }
   ],
-  "returnType": "boolean",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int[]",
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "numCourses": 2,
+        "prerequisites": [[1,0]]
+      },
+      "expected": [0,1],
+      "explanation": "Take course 0 first, then course 1.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "numCourses": 4,
+        "prerequisites": [[1,0],[2,0],[3,1],[3,2]]
+      },
+      "expected": [0,1,2,3],
+      "explanation": "One valid order is [0,1,2,3]; [0,2,1,3] is also valid.",
+      "tags": ["basic", "multiple-valid-orders"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "numCourses": 1,
+        "prerequisites": []
+      },
+      "expected": [0],
+      "explanation": "Only one course with no prerequisites.",
+      "tags": ["edge-case", "single-course"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "numCourses": 2,
+        "prerequisites": [[1,0],[0,1]]
+      },
+      "expected": [],
+      "explanation": "Cycle detected: course 0 requires 1 and course 1 requires 0.",
+      "tags": ["cycle", "impossible"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "numCourses": 3,
+        "prerequisites": [[1,0],[2,1]]
+      },
+      "expected": [0,1,2],
+      "explanation": "Linear chain: take 0, then 1, then 2.",
+      "tags": ["basic", "chain"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Course Schedule II** problem.\n\nThere are numCourses courses labeled 0 to numCourses-1. prerequisites[i] = [a, b] means course b must be taken before course a. Return a valid ordering of courses to finish all of them. Return an empty array if it is impossible.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/course-schedule-ii/).",
+  "examples": [
+    {
+      "input": "numCourses = 2, prerequisites = [[1,0]]",
+      "output": "[0,1]",
+      "explanation": "Take course 0 before course 1."
+    },
+    {
+      "input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
+      "output": "[0,2,1,3]",
+      "explanation": "Multiple valid orderings exist."
+    },
+    {
+      "input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
+      "output": "[]",
+      "explanation": "Impossible due to cycle."
+    }
+  ],
+  "constraints": [
+    "1 <= numCourses <= 2000",
+    "0 <= prerequisites.length <= numCourses * (numCourses - 1)",
+    "prerequisites[i].length == 2",
+    "0 <= a, b < numCourses",
+    "a != b",
+    "All prerequisite pairs are unique"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} numCourses\n * @param {number[][]} prerequisites\n * @return {number[]}\n */\nfunction findOrder(numCourses, prerequisites) {\n  // Write your solution here\n}",
+    "typescript": "function findOrder(numCourses: number, prerequisites: number[][]): number[] {\n  // Write your solution here\n}",
+    "python": "def find_order(numCourses: int, prerequisites: list[list[int]]) -> list[int]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nvector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {\n    // Write your solution here\n}",
+    "go": "func findOrder(numCourses int, prerequisites [][]int) []int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "findOrder",
+    "typescript": "findOrder",
+    "python": "find_order",
+    "cpp": "findOrder",
+    "go": "FindOrder"
+  }
 }

@@ -72,6 +72,24 @@
       "tags": [
         "single-element"
       ]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "head": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": [
+        3,
+        2,
+        1
+      ],
+      "tags": [
+        "basic"
+      ]
     }
   ],
   "description": "Solve the **Reverse Linked List** problem.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/reverse-linked-list/).",
@@ -103,5 +121,6 @@
     "python": "reverse_list",
     "cpp": "reverseList",
     "go": "ReverseList"
-  }
+  },
+  "_status": "complete"
 }

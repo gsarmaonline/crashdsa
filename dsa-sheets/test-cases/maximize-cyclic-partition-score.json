@@ -8,6 +8,59 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3, 4] },
+      "expected": 10,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [5, 5, 5] },
+      "expected": 15,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 3, 2] },
+      "expected": 6,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [10] },
+      "expected": 10,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [2, 4, 6, 8] },
+      "expected": 20,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array representing a circular sequence, partition it into non-overlapping segments to maximize the total score. Score of a partition is the sum of the max element in each segment.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "10",
+      "explanation": "Select all elements individually as partitions; each contributes its value: 1+2+3+4=10."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^5"
+  ],
+  "starterCode": {
+    "javascript": "function maximizeCyclicPartitionScore(nums) {\n  // your code here\n}",
+    "python": "def maximizeCyclicPartitionScore(nums):\n    pass",
+    "java": "public int maximizeCyclicPartitionScore(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maximizeCyclicPartitionScore",
+    "python": "maximizeCyclicPartitionScore",
+    "java": "maximizeCyclicPartitionScore"
+  }
 }

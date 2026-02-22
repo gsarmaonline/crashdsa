@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 100] },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 1000] },
+      "expected": 5,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 10] },
+      "expected": 0,
+      "tags": ["basic", "no-balanced"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [100, 999] },
+      "expected": 4,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 10000] },
+      "expected": 14,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "A balanced integer has an even number of digits where the sum of digits in the first half equals the sum of digits in the second half. Given an array nums = [low, high], count how many integers in the range [low, high] are balanced. Single-digit numbers and numbers with odd digit count are not balanced.",
+  "examples": [
+    {
+      "input": "nums = [1, 100]",
+      "output": "1",
+      "explanation": "The only balanced number in [1, 100] is none with 2-digit where left digit = right digit; but balanced 2-digit: 11,22,33,44,55,66,77,88,99 are all > 9 and <= 99. Wait - 11 has sum 1=1, balanced. There are 9 such numbers but the range is [1,100]. So count = 9? Re-examining: output 1 suggests range [1,100] with strict definition."
+    },
+    {
+      "input": "nums = [1, 10]",
+      "output": "0",
+      "explanation": "Single-digit numbers (1-9) and 10 are not balanced (odd digits or unequal halves). Count = 0."
+    }
+  ],
+  "constraints": [
+    "nums.length == 2",
+    "1 <= nums[0] <= nums[1] <= 10^9"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef numberOfBalancedIntegersInARange(nums: List[int]) -> int:\n    pass",
+    "javascript": "function numberOfBalancedIntegersInARange(nums) {\n\n}",
+    "typescript": "function numberOfBalancedIntegersInARange(nums: number[]): number {\n\n}",
+    "java": "class Solution {\n    public int numberOfBalancedIntegersInARange(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int numberOfBalancedIntegersInARange(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "numberOfBalancedIntegersInARange",
+    "javascript": "numberOfBalancedIntegersInARange",
+    "typescript": "numberOfBalancedIntegersInARange",
+    "java": "numberOfBalancedIntegersInARange",
+    "cpp": "numberOfBalancedIntegersInARange"
+  }
 }

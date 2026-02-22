@@ -1,13 +1,37 @@
 {
   "slug": "intersection-of-two-linked-lists",
-  "functionName": "intersectionOfTwoLinkedLists",
-  "params": [
+  "functionName": "getIntersectionNode",
+  "params": [],
+  "returnType": "ListNode",
+  "testCases": [],
+  "isDesignProblem": true,
+  "_status": "complete",
+  "description": "Given the heads of two singly linked lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null. The lists are physically joined at the intersection node (shared memory reference, not just same value). Uses the two-pointer technique: traverse both lists; when one reaches the end, redirect to the other list's head.",
+  "examples": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "input": "intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3",
+      "output": "Intersected at node with value 8"
+    },
+    {
+      "input": "intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1",
+      "output": "Intersected at node with value 2"
+    },
+    {
+      "input": "intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2",
+      "output": "null",
+      "explanation": "No intersection between the two lists."
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "The number of nodes of listA is in the m",
+    "The number of nodes of listB is in the n",
+    "1 <= m, n <= 3 * 10^4",
+    "1 <= Node.val <= 10^5",
+    "0 <= skipA < m",
+    "0 <= skipB < n",
+    "intersectVal is 0 if listA and listB do not intersect",
+    "intersectVal == listA[skipA] == listB[skipB] if listA and listB intersect"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

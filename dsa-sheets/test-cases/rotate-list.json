@@ -1,13 +1,65 @@
 {
   "slug": "rotate-list",
-  "functionName": "rotateList",
+  "functionName": "rotateRight",
   "params": [
+    {"name": "head", "type": "ListNode"},
+    {"name": "k", "type": "int"}
+  ],
+  "returnType": "ListNode",
+  "testCases": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "id": "tc-1",
+      "inputs": {"head": [1,2,3,4,5], "k": 2},
+      "expected": [4,5,1,2,3],
+      "explanation": "Rotate right by 2: move last 2 elements to front. [1,2,3,4,5] → [4,5,1,2,3].",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"head": [0,1,2], "k": 4},
+      "expected": [2,0,1],
+      "explanation": "k=4, list length=3. Effective rotation = 4 % 3 = 1. Rotate right by 1: [2,0,1].",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"head": [1,2,3], "k": 0},
+      "expected": [1,2,3],
+      "explanation": "Rotate by 0: no change to the list.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"head": [1], "k": 100},
+      "expected": [1],
+      "explanation": "Single node list: rotation has no effect regardless of k.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"head": [1,2], "k": 1},
+      "expected": [2,1],
+      "explanation": "Rotate right by 1: last element moves to front. [1,2] → [2,1].",
+      "tags": ["basic"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given the head of a linked list and an integer k, rotate the list to the right by k places. The last k nodes wrap around to the front. If k >= list length, use k % length to find effective rotation.",
+  "examples": [
+    {
+      "input": "head = [1,2,3,4,5], k = 2",
+      "output": "[4,5,1,2,3]"
+    },
+    {
+      "input": "head = [0,1,2], k = 4",
+      "output": "[2,0,1]"
+    }
+  ],
+  "constraints": [
+    "The number of nodes in the list is in the range [0, 500]",
+    "-100 <= Node.val <= 100",
+    "0 <= k <= 2 * 10^9"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

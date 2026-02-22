@@ -3,11 +3,68 @@
   "functionName": "findTheDuplicateNumber",
   "params": [
     {
-      "name": "head",
-      "type": "ListNode"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
-  "returnType": "boolean",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 3, 4, 2, 2] },
+      "expected": 2,
+      "explanation": "The number 2 appears twice in the array",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [3, 1, 3, 4, 2] },
+      "expected": 3,
+      "explanation": "The number 3 appears twice in the array",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 1] },
+      "expected": 1,
+      "explanation": "Minimal case with n=1: only two elements, 1 is duplicated",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 1, 2] },
+      "expected": 1,
+      "explanation": "1 is duplicated among [1,1,2]",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [2, 2, 2, 2, 2] },
+      "expected": 2,
+      "explanation": "2 appears multiple times; must still find the duplicate",
+      "tags": ["multiple-occurrences"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of integers nums containing n+1 integers where each integer is in the range [1, n] inclusive, there is only one repeated number. Return that repeated number. You must solve the problem without modifying the array nums and uses only constant extra space.",
+  "examples": [
+    {
+      "input": "nums = [1,3,4,2,2]",
+      "output": "2",
+      "explanation": "2 is the only number that appears more than once."
+    },
+    {
+      "input": "nums = [3,1,3,4,2]",
+      "output": "3",
+      "explanation": "3 is the only number that appears more than once."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^5",
+    "nums.length == n + 1",
+    "1 <= nums[i] <= n",
+    "All the integers in nums appear only once except for precisely one integer which appears two or more times"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

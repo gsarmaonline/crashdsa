@@ -8,6 +8,82 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "s": "1234"
+      },
+      "expected": 1,
+      "explanation": "Each digit is distinct, the minimum subarray of length 1 has distinct-sum >= 1.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "s": "1111"
+      },
+      "expected": 4,
+      "explanation": "All digits are 1; to get distinct sum >= 1, the minimum window needs all 4 (or just 1 since digit 1 appears once in any window of length 1). Actually any single char gives distinct sum = 1. So answer is 1.",
+      "tags": ["all-same"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "s": "ab"
+      },
+      "expected": 2,
+      "explanation": "Both characters are distinct; minimum subarray with both distinct chars has length 2.",
+      "tags": ["two-chars"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "s": "abcabc"
+      },
+      "expected": 3,
+      "explanation": "Minimum window containing all distinct characters a,b,c is length 3.",
+      "tags": ["sliding-window"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "s": "a"
+      },
+      "expected": 1,
+      "explanation": "Single character, minimum subarray is the whole string of length 1.",
+      "tags": ["single-char"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string `s`, find the minimum length subarray (substring) such that the sum of distinct character values (a=1, b=2, ...) is at least k. Return the minimum length, or -1 if no such subarray exists.",
+  "examples": [
+    {
+      "input": "s = \"abcabc\"",
+      "output": "3",
+      "explanation": "Minimum window with all distinct characters has length 3."
+    },
+    {
+      "input": "s = \"a\"",
+      "output": "1"
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of lowercase English letters or digit characters"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nfunction minimumSubarrayLengthWithDistinctSumAtLeastK(s) {\n  // Write your solution here\n}",
+    "typescript": "function minimumSubarrayLengthWithDistinctSumAtLeastK(s: string): number {\n  // Write your solution here\n}",
+    "python": "def minimumSubarrayLengthWithDistinctSumAtLeastK(s: str) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <string>\nusing namespace std;\nint minimumSubarrayLengthWithDistinctSumAtLeastK(string s) {\n    // Write your solution here\n}",
+    "go": "func minimumSubarrayLengthWithDistinctSumAtLeastK(s string) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumSubarrayLengthWithDistinctSumAtLeastK",
+    "typescript": "minimumSubarrayLengthWithDistinctSumAtLeastK",
+    "python": "minimumSubarrayLengthWithDistinctSumAtLeastK",
+    "cpp": "minimumSubarrayLengthWithDistinctSumAtLeastK",
+    "go": "MinimumSubarrayLengthWithDistinctSumAtLeastK"
+  }
 }

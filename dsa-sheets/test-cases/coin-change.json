@@ -24,8 +24,8 @@
         ],
         "amount": 11
       },
-      "expected": 3,
-      "explanation": "10 + 1 = 11 (not optimal with greedy for all cases, but works here)",
+      "expected": 2,
+      "explanation": "10 + 1 = 11, minimum 2 coins",
       "tags": [
         "basic"
       ]
@@ -95,8 +95,8 @@
   "examples": [
     {
       "input": "coins = [1,5,10,25], amount = 11",
-      "output": "3",
-      "explanation": "10 + 1 = 11 (not optimal with greedy for all cases, but works here)"
+      "output": "2",
+      "explanation": "10 + 1 = 11, minimum 2 coins"
     },
     {
       "input": "coins = [2], amount = 3",
@@ -123,5 +123,6 @@
     "python": "coin_change",
     "cpp": "coinChange",
     "go": "CoinChange"
-  }
+  },
+  "_status": "complete"
 }

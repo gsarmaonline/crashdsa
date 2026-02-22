@@ -3,11 +3,70 @@
   "functionName": "countDistinctSubarraysDivisibleByKInSortedArray",
   "params": [
     {
-      "name": "s",
-      "type": "string"
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "k",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3, 6], "k": 3 },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [2, 4, 6], "k": 2 },
+      "expected": 6,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 5, 7], "k": 3 },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [3], "k": 3 },
+      "expected": 1,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 2, 4, 8], "k": 5 },
+      "expected": 0,
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a sorted integer array and integer k, count the number of distinct contiguous subarrays whose sum is divisible by k.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,6], k = 3",
+      "output": "4",
+      "explanation": "Subarrays with sum divisible by 3: [3], [6], [1,2], [1,2,3,6] (sums 3,6,3,12 — all divisible by 3)."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^4",
+    "nums is sorted in non-decreasing order",
+    "1 <= nums[i] <= 10^5",
+    "1 <= k <= 10^5"
+  ],
+  "starterCode": {
+    "javascript": "function countDistinctSubarraysDivisibleByKInSortedArray(nums, k) {\n  // your code here\n}",
+    "python": "def countDistinctSubarraysDivisibleByKInSortedArray(nums, k):\n    pass",
+    "java": "public int countDistinctSubarraysDivisibleByKInSortedArray(int[] nums, int k) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "countDistinctSubarraysDivisibleByKInSortedArray",
+    "python": "countDistinctSubarraysDivisibleByKInSortedArray",
+    "java": "countDistinctSubarraysDivisibleByKInSortedArray"
+  }
 }

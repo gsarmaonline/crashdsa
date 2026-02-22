@@ -1,13 +1,70 @@
 {
   "slug": "lowest-common-ancestor-of-a-binary-tree",
-  "functionName": "lowestCommonAncestorOfABinaryTree",
+  "functionName": "lowestCommonAncestor",
   "params": [
-    {
-      "name": "root",
-      "type": "TreeNode"
-    }
+    {"name": "root", "type": "TreeNode"},
+    {"name": "p", "type": "int"},
+    {"name": "q", "type": "int"}
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"root": [3,5,1,6,2,0,8,null,null,7,4], "p": 5, "q": 1},
+      "expected": 3,
+      "explanation": "Node 5 is in the left subtree and node 1 is in the right subtree of node 3. So node 3 is their LCA.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"root": [3,5,1,6,2,0,8,null,null,7,4], "p": 5, "q": 4},
+      "expected": 5,
+      "explanation": "Node 4 is a descendant of node 5 (via node 2). A node can be a descendant of itself, so LCA is node 5.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"root": [1,2], "p": 1, "q": 2},
+      "expected": 1,
+      "explanation": "Node 2 is a child of node 1. Node 1 is an ancestor of node 2 and also node 1 itself, so LCA is node 1.",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"root": [3,5,1], "p": 5, "q": 1},
+      "expected": 3,
+      "explanation": "Node 5 is the left child and node 1 is the right child of node 3. Their LCA is node 3 (the root).",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"root": [3,5,1,6,2], "p": 6, "q": 2},
+      "expected": 5,
+      "explanation": "Both node 6 and node 2 are children of node 5. Their LCA is node 5.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a binary tree, find the lowest common ancestor (LCA) of two given nodes p and q. The LCA is defined as the lowest node in the tree that has both p and q as descendants (a node can be a descendant of itself). Return the value of the LCA node.",
+  "examples": [
+    {
+      "input": "root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1",
+      "output": "3",
+      "explanation": "The LCA of nodes 5 and 1 is node 3."
+    },
+    {
+      "input": "root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4",
+      "output": "5",
+      "explanation": "The LCA of nodes 5 and 4 is node 5, since a node can be a descendant of itself."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in the tree is in the range [2, 10^5]",
+    "-10^9 <= Node.val <= 10^9",
+    "All Node.val are unique",
+    "p != q",
+    "p and q will exist in the tree"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

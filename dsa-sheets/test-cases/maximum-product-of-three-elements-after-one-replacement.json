@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 6,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3, 4] },
+      "expected": 24,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [5, 5, 5] },
+      "expected": 125,
+      "tags": ["basic", "all-equal"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 1, 1, 10] },
+      "expected": 100,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [2, 4, 6, 8] },
+      "expected": 384,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array nums, you may replace at most one element with any positive integer. Return the maximum product of any three elements in the resulting array.",
+  "examples": [
+    {
+      "input": "nums = [1, 2, 3, 4]",
+      "output": "24",
+      "explanation": "The top three are 2, 3, 4. No replacement needed; product = 24."
+    },
+    {
+      "input": "nums = [1, 1, 1, 10]",
+      "output": "100",
+      "explanation": "Replace one of the 1s with 10; top three become 10, 10, 1, but best is 10*10*1=100? Actually replace to get 10,10,1: product=100."
+    }
+  ],
+  "constraints": [
+    "3 <= nums.length <= 10^4",
+    "1 <= nums[i] <= 10^4"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef maximumProductOfThreeElementsAfterOneReplacement(nums: List[int]) -> int:\n    pass",
+    "javascript": "function maximumProductOfThreeElementsAfterOneReplacement(nums) {\n\n}",
+    "typescript": "function maximumProductOfThreeElementsAfterOneReplacement(nums: number[]): number {\n\n}",
+    "java": "class Solution {\n    public int maximumProductOfThreeElementsAfterOneReplacement(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int maximumProductOfThreeElementsAfterOneReplacement(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "maximumProductOfThreeElementsAfterOneReplacement",
+    "javascript": "maximumProductOfThreeElementsAfterOneReplacement",
+    "typescript": "maximumProductOfThreeElementsAfterOneReplacement",
+    "java": "maximumProductOfThreeElementsAfterOneReplacement",
+    "cpp": "maximumProductOfThreeElementsAfterOneReplacement"
+  }
 }

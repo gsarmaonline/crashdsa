@@ -3,11 +3,64 @@
   "functionName": "majorityFrequencyCharacters",
   "params": [
     {
-      "name": "n",
-      "type": "int"
+      "name": "s",
+      "type": "string"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "string",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "aabbc" },
+      "expected": "ab",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "aaabbc" },
+      "expected": "a",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "abcd" },
+      "expected": "abcd",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "a" },
+      "expected": "a",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "aaaa" },
+      "expected": "a",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string, find all characters whose frequency is strictly greater than half the maximum frequency among all characters. Return them sorted.",
+  "examples": [
+    {
+      "input": "s = \"aabbc\"",
+      "output": "\"ab\"",
+      "explanation": "Frequencies: a=2, b=2, c=1. Max freq=2. Characters with freq > max/2 = 1 are a and b."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of lowercase English letters"
+  ],
+  "starterCode": {
+    "javascript": "function majorityFrequencyCharacters(s) {\n  // your code here\n}",
+    "python": "def majorityFrequencyCharacters(s):\n    pass",
+    "java": "public String majorityFrequencyCharacters(String s) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "majorityFrequencyCharacters",
+    "python": "majorityFrequencyCharacters",
+    "java": "majorityFrequencyCharacters"
+  }
 }

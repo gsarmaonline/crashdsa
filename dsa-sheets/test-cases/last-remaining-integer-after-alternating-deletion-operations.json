@@ -8,6 +8,83 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "nums": [1, 2, 3, 4, 5]
+      },
+      "expected": 2,
+      "explanation": "Delete from left: remove 1,3,5 → [2,4]. Delete from right: remove 4 → [2]. Last remaining is 2.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "nums": [1, 2, 3]
+      },
+      "expected": 2,
+      "explanation": "Delete from left: remove 1,3 → [2]. Last remaining is 2.",
+      "tags": ["odd-length"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "nums": [1, 2]
+      },
+      "expected": 2,
+      "explanation": "Delete from left: remove 1 → [2]. Last remaining is 2.",
+      "tags": ["two-elements"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [1]
+      },
+      "expected": 1,
+      "explanation": "Only one element, it remains.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [1, 2, 3, 4, 5, 6]
+      },
+      "expected": 4,
+      "explanation": "Delete from left: remove 1,3,5 → [2,4,6]. Delete from right: remove 6,2 → [4]. Last remaining is 4.",
+      "tags": ["even-length"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array `nums`, alternately delete elements from the left and right ends (first pass deletes every other element from the left, second pass from the right, etc.) until one element remains. Return that element.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "2",
+      "explanation": "Left pass removes 1,3,5 → [2,4]. Right pass removes 4 → [2]."
+    },
+    {
+      "input": "nums = [1,2,3,4,5,6]",
+      "output": "4",
+      "explanation": "Left pass removes 1,3,5 → [2,4,6]. Right pass removes 6,2 → [4]."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^6"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number}\n */\nfunction lastRemainingIntegerAfterAlternatingDeletionOperations(nums) {\n  // Write your solution here\n}",
+    "typescript": "function lastRemainingIntegerAfterAlternatingDeletionOperations(nums: number[]): number {\n  // Write your solution here\n}",
+    "python": "def lastRemainingIntegerAfterAlternatingDeletionOperations(nums: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint lastRemainingIntegerAfterAlternatingDeletionOperations(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func lastRemainingIntegerAfterAlternatingDeletionOperations(nums []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "lastRemainingIntegerAfterAlternatingDeletionOperations",
+    "typescript": "lastRemainingIntegerAfterAlternatingDeletionOperations",
+    "python": "lastRemainingIntegerAfterAlternatingDeletionOperations",
+    "cpp": "lastRemainingIntegerAfterAlternatingDeletionOperations",
+    "go": "LastRemainingIntegerAfterAlternatingDeletionOperations"
+  }
 }

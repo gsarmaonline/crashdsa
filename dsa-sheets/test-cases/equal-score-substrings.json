@@ -8,6 +8,59 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "aabb" },
+      "expected": 9,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "aab" },
+      "expected": 6,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "abc" },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "a" },
+      "expected": 1,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "abab" },
+      "expected": 7,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Count the number of substrings with equal scores. The score of a substring is the number of distinct characters in it. Count all substrings that share the same score as the full string.",
+  "examples": [
+    {
+      "input": "s = \"aabb\"",
+      "output": "9",
+      "explanation": "Count substrings where the number of distinct chars equals a target score."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of lowercase English letters"
+  ],
+  "starterCode": {
+    "javascript": "function equalScoreSubstrings(s) {\n  // your code here\n}",
+    "python": "def equalScoreSubstrings(s):\n    pass",
+    "java": "public int equalScoreSubstrings(String s) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "equalScoreSubstrings",
+    "python": "equalScoreSubstrings",
+    "java": "equalScoreSubstrings"
+  }
 }

@@ -8,6 +8,59 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3, 4] },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 10] },
+      "expected": 9,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [3, 1, 4, 2] },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 1, 1, 1] },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [5, 5, 10] },
+      "expected": 0,
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Split the array into two non-empty halves to minimize the absolute difference between the sums of the two halves. Return the minimum possible difference.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "0",
+      "explanation": "Split into [1,4] and [2,3]: sums 5 and 5, difference 0."
+    }
+  ],
+  "constraints": [
+    "2 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^5"
+  ],
+  "starterCode": {
+    "javascript": "function splitArrayWithMinimumDifference(nums) {\n  // your code here\n}",
+    "python": "def splitArrayWithMinimumDifference(nums):\n    pass",
+    "java": "public int splitArrayWithMinimumDifference(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "splitArrayWithMinimumDifference",
+    "python": "splitArrayWithMinimumDifference",
+    "java": "splitArrayWithMinimumDifference"
+  }
 }

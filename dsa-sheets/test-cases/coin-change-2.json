@@ -3,11 +3,67 @@
   "functionName": "coinChange2",
   "params": [
     {
-      "name": "nums",
+      "name": "amount",
+      "type": "int"
+    },
+    {
+      "name": "coins",
       "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "amount": 5, "coins": [1, 2, 5] },
+      "expected": 4,
+      "explanation": "Four ways: 5=5; 5=2+2+1; 5=2+1+1+1; 5=1+1+1+1+1",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "amount": 3, "coins": [2] },
+      "expected": 0,
+      "explanation": "Cannot make amount 3 using only coin of denomination 2",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "amount": 10, "coins": [10] },
+      "expected": 1,
+      "explanation": "Only one way: use one coin of denomination 10",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "amount": 0, "coins": [1, 2, 3] },
+      "expected": 1,
+      "explanation": "Exactly one way to make amount 0: use no coins",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "amount": 4, "coins": [1, 2, 3] },
+      "expected": 4,
+      "explanation": "Four ways: [1,1,1,1]; [1,1,2]; [2,2]; [1,3]",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array coins representing coins of different denominations and an integer amount, return the number of combinations that make up that amount. If that amount of money cannot be made up by any combination of the coins, return 0.",
+  "examples": [
+    {
+      "input": "amount = 5, coins = [1,2,5]",
+      "output": "4",
+      "explanation": "there are four ways to make up the amount: 5=5; 5=2+2+1; 5=2+1+1+1; 5=1+1+1+1+1"
+    }
+  ],
+  "constraints": [
+    "1 <= coins.length <= 300",
+    "1 <= coins[i] <= 5000",
+    "All values of coins are unique",
+    "0 <= amount <= 5000"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

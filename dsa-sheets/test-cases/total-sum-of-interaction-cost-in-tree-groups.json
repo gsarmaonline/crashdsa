@@ -9,5 +9,22 @@
   ],
   "returnType": "int",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "Given a tree, compute the total sum of interaction costs between groups of nodes. Interaction cost between two nodes is typically the distance between them in the tree.",
+  "examples": [],
+  "constraints": [
+    "Tree can have up to 10^4 nodes",
+    "Node values are positive integers"
+  ],
+  "starterCode": {
+    "javascript": "function totalSumOfInteractionCostInTreeGroups(root) {\n  // your code here\n}",
+    "python": "def totalSumOfInteractionCostInTreeGroups(root):\n    pass",
+    "java": "public int totalSumOfInteractionCostInTreeGroups(TreeNode root) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "totalSumOfInteractionCostInTreeGroups",
+    "python": "totalSumOfInteractionCostInTreeGroups",
+    "java": "totalSumOfInteractionCostInTreeGroups"
+  }
 }

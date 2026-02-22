@@ -1,6 +1,6 @@
 {
   "slug": "number-of-connected-components-in-an-undirected-graph",
-  "functionName": "numberOfConnectedComponentsInAnUndirectedGraph",
+  "functionName": "countComponents",
   "params": [
     {
       "name": "n",
@@ -12,6 +12,94 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "n": 5,
+        "edges": [[0,1],[1,2],[3,4]]
+      },
+      "expected": 2,
+      "explanation": "Component 1: {0,1,2}. Component 2: {3,4}. Total: 2.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "n": 5,
+        "edges": [[0,1],[1,2],[2,3],[3,4]]
+      },
+      "expected": 1,
+      "explanation": "All nodes are connected in one chain: 0-1-2-3-4.",
+      "tags": ["basic", "fully-connected"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "n": 3,
+        "edges": []
+      },
+      "expected": 3,
+      "explanation": "No edges means each node is its own component.",
+      "tags": ["edge-case", "no-edges"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "n": 1,
+        "edges": []
+      },
+      "expected": 1,
+      "explanation": "Single node with no edges is one component.",
+      "tags": ["edge-case", "single-node"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "n": 4,
+        "edges": [[0,1],[2,3]]
+      },
+      "expected": 2,
+      "explanation": "Component 1: {0,1}. Component 2: {2,3}. Total: 2.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Number of Connected Components in an Undirected Graph** problem.\n\nGiven n nodes (labeled 0 to n-1) and a list of undirected edges, return the number of connected components in the graph.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/).",
+  "examples": [
+    {
+      "input": "n = 5, edges = [[0,1],[1,2],[3,4]]",
+      "output": "2",
+      "explanation": "Two components: {0,1,2} and {3,4}."
+    },
+    {
+      "input": "n = 5, edges = [[0,1],[1,2],[2,3],[3,4]]",
+      "output": "1",
+      "explanation": "All nodes connected in one component."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 2000",
+    "1 <= edges.length <= 5000",
+    "edges[i].length == 2",
+    "0 <= a, b < n",
+    "a != b",
+    "No repeated edges"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @param {number[][]} edges\n * @return {number}\n */\nfunction countComponents(n, edges) {\n  // Write your solution here\n}",
+    "typescript": "function countComponents(n: number, edges: number[][]): number {\n  // Write your solution here\n}",
+    "python": "def count_components(n: int, edges: list[list[int]]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint countComponents(int n, vector<vector<int>>& edges) {\n    // Write your solution here\n}",
+    "go": "func countComponents(n int, edges [][]int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "countComponents",
+    "typescript": "countComponents",
+    "python": "count_components",
+    "cpp": "countComponents",
+    "go": "CountComponents"
+  }
 }

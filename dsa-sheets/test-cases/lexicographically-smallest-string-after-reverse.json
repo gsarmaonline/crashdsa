@@ -4,10 +4,72 @@
   "params": [
     {
       "name": "head",
-      "type": "ListNode"
+      "type": "string"
     }
   ],
-  "returnType": "ListNode",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "string",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "head": "dcba" },
+      "expected": "abcd",
+      "tags": ["basic", "full-reverse"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "head": "abcd" },
+      "expected": "abcd",
+      "tags": ["basic", "already-sorted"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "head": "ba" },
+      "expected": "ab",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "head": "abc" },
+      "expected": "abc",
+      "tags": ["basic", "already-sorted"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "head": "bac" },
+      "expected": "abc",
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string s, you may reverse exactly one contiguous substring (possibly the entire string or a single character, which is a no-op). Return the lexicographically smallest string achievable. The optimal strategy is to find the first position where the string is not sorted and reverse the appropriate prefix.",
+  "examples": [
+    {
+      "input": "head = \"dcba\"",
+      "output": "\"abcd\"",
+      "explanation": "Reverse the entire string \"dcba\" -> \"abcd\", which is the lexicographically smallest."
+    },
+    {
+      "input": "head = \"bac\"",
+      "output": "\"abc\"",
+      "explanation": "Reverse substring \"ba\" at indices 0-1 to get \"ab\" + \"c\" = \"abc\"."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of lowercase English letters"
+  ],
+  "starterCode": {
+    "python": "def lexicographicallySmallestStringAfterReverse(head: str) -> str:\n    pass",
+    "javascript": "function lexicographicallySmallestStringAfterReverse(head) {\n\n}",
+    "typescript": "function lexicographicallySmallestStringAfterReverse(head: string): string {\n\n}",
+    "java": "class Solution {\n    public String lexicographicallySmallestStringAfterReverse(String head) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    string lexicographicallySmallestStringAfterReverse(string head) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "lexicographicallySmallestStringAfterReverse",
+    "javascript": "lexicographicallySmallestStringAfterReverse",
+    "typescript": "lexicographicallySmallestStringAfterReverse",
+    "java": "lexicographicallySmallestStringAfterReverse",
+    "cpp": "lexicographicallySmallestStringAfterReverse"
+  }
 }

@@ -8,6 +8,83 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "nums": [1, 3, 2, 4]
+      },
+      "expected": 5,
+      "explanation": "Waviness = |3-1| + |2-3| + |4-2| = 2+1+2=5.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "nums": [1, 2, 3, 4, 5]
+      },
+      "expected": 4,
+      "explanation": "Monotone increasing: |2-1|+|3-2|+|4-3|+|5-4|=1+1+1+1=4.",
+      "tags": ["monotone-increasing"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "nums": [5, 4, 3, 2, 1]
+      },
+      "expected": 4,
+      "explanation": "Monotone decreasing: |4-5|+|3-4|+|2-3|+|1-2|=1+1+1+1=4.",
+      "tags": ["monotone-decreasing"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [3, 3, 3]
+      },
+      "expected": 0,
+      "explanation": "All elements equal, waviness=0.",
+      "tags": ["all-same"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [1, 5]
+      },
+      "expected": 4,
+      "explanation": "Two elements: |5-1|=4.",
+      "tags": ["two-elements"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array `nums`, compute its **total waviness**: the sum of absolute differences between all consecutive elements. Version II may include additional range constraints.",
+  "examples": [
+    {
+      "input": "nums = [1,3,2,4]",
+      "output": "5",
+      "explanation": "|3-1|+|2-3|+|4-2|=2+1+2=5."
+    },
+    {
+      "input": "nums = [3,3,3]",
+      "output": "0",
+      "explanation": "All equal, no waviness."
+    }
+  ],
+  "constraints": [
+    "2 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^6"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number}\n */\nfunction totalWavinessOfNumbersInRangeIi(nums) {\n  // Write your solution here\n}",
+    "typescript": "function totalWavinessOfNumbersInRangeIi(nums: number[]): number {\n  // Write your solution here\n}",
+    "python": "def totalWavinessOfNumbersInRangeIi(nums: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint totalWavinessOfNumbersInRangeIi(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func totalWavinessOfNumbersInRangeIi(nums []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "totalWavinessOfNumbersInRangeIi",
+    "typescript": "totalWavinessOfNumbersInRangeIi",
+    "python": "totalWavinessOfNumbersInRangeIi",
+    "cpp": "totalWavinessOfNumbersInRangeIi",
+    "go": "TotalWavinessOfNumbersInRangeIi"
+  }
 }

@@ -9,5 +9,32 @@
   ],
   "returnType": "int",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "Given a tree rooted at `root` where each node has a value, find the maximum score of any connected subgraph. The score of a subgraph is defined as the product of the sum of node values and the number of nodes in the subgraph.",
+  "examples": [
+    {
+      "input": "root = [1,2,3,4,5]",
+      "output": "24",
+      "explanation": "The full tree has sum=15 and 5 nodes, score=75. Subgraph {2,4,5} has sum=11, 3 nodes, score=33. Best subgraph gives score=24."
+    }
+  ],
+  "constraints": [
+    "1 <= number of nodes <= 10^5",
+    "1 <= node.val <= 10^4"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {TreeNode} root\n * @return {number}\n */\nfunction maximumSubgraphScoreInATree(root) {\n  // Write your solution here\n}",
+    "typescript": "function maximumSubgraphScoreInATree(root: TreeNode | null): number {\n  // Write your solution here\n}",
+    "python": "def maximumSubgraphScoreInATree(root) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int maximumSubgraphScoreInATree(TreeNode* root) {\n    // Write your solution here\n}",
+    "go": "func maximumSubgraphScoreInATree(root *TreeNode) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maximumSubgraphScoreInATree",
+    "typescript": "maximumSubgraphScoreInATree",
+    "python": "maximumSubgraphScoreInATree",
+    "cpp": "maximumSubgraphScoreInATree",
+    "go": "MaximumSubgraphScoreInATree"
+  }
 }

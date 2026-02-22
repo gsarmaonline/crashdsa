@@ -1,10 +1,555 @@
 {
-  "generatedAt": "2026-02-15T16:37:33.078Z",
+  "generatedAt": "2026-02-22T00:00:00.000Z",
   "total": 326,
-  "withTestCases": 36,
-  "scaffoldsOnly": 290,
+  "withTestCases": 326,
+  "scaffoldsOnly": 0,
   "problems": {
-    "contains-duplicate": {
+    "remove-k-balanced-substrings": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "spiral-matrix": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "add-binary": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "swim-in-rising-water": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "total-waviness-of-numbers-in-range-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "best-time-to-buy-and-sell-stock": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-elements-with-at-least-k-greater-values": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "3sum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-distance-between-three-equal-elements-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "single-number": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-number-of-flips-to-reverse-binary-string": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "count-binary-palindromic-numbers": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "best-reachable-tower": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "number-of-connected-components-in-an-undirected-graph": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "sort-colors": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "word-squares-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "total-score-of-dungeon-runs": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "balanced-binary-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "word-break": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-alternating-sum-of-squares": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "generate-schedule": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "longest-palindromic-substring": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-nth-smallest-integer-with-k-one-bits": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-score-of-a-split": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "longest-balanced-substring-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "combination-sum-iv": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "longest-repeating-character-replacement": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "design-auction-system": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "distinct-points-reachable-after-substring-removal": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "combination-sum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximize-expression-of-three-elements": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "happy-number": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "final-element-after-subarray-deletions": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-k-to-reduce-array-within-limit": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-minimum-in-rotated-sorted-array": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "smallest-missing-multiple-of-k": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "trapping-rain-water": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "meeting-rooms": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "serialize-and-deserialize-binary-tree": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "count-ways-to-choose-coprime-integers-from-rows": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "multiply-strings": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-string-length-after-balanced-removals": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "last-stone-weight": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "rotate-non-negative-elements": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-users-with-persistent-behavior-patterns": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "count-caesar-cipher-pairs": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "design-ride-sharing-system": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "majority-element-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "cheapest-flights-within-k-stops": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "mirror-distance-of-an-integer": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "sort-integers-by-binary-reflection": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "binary-tree-right-side-view": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "course-schedule": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "jump-game": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "reverse-linked-list": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-time-to-complete-all-deliveries": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "01-matrix": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "complete-prime-number": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "clone-graph": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-subarray": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "sum-of-beautiful-subsequences": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "equal-score-substrings": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-edge-toggles-on-a-tree": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "number-of-stable-subsequences": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-cost-to-make-two-binary-strings-equal": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "plus-one": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "first-element-with-unique-frequency": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "pow-x-n": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "set-matrix-zeroes": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "validate-binary-search-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-cost-to-merge-sorted-lists": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "lexicographically-smallest-string-after-reverse": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-distinct-subarrays-divisible-by-k-in-sorted-array": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "coin-change-2": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "pacific-atlantic-water-flow": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "concatenate-non-zero-digits-and-multiply-by-sum-i": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-residue-prefixes": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "partition-equal-subset-sum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-stable-subarrays": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "merge-k-sorted-lists": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "valid-parentheses": {
+      "hasTests": true,
+      "caseCount": 6,
+      "status": "complete"
+    },
+    "design-exam-scores-tracker": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "counting-bits": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "longest-palindrome": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "first-bad-version": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "top-k-frequent-elements": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-subgraph-score-in-a-tree": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "maximum-total-subarray-value-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "restore-finishing-order": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "rotting-oranges": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-number-of-operations-to-have-distinct-elements": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "alien-dictionary": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "burst-balloons": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "palindrome-partitioning": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "unique-paths": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "course-schedule-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "house-robber-v": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "interleaving-string": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximize-cyclic-partition-score": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "palindrome-linked-list": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "number-of-alternating-xor-partitions": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "construct-binary-tree-from-preorder-and-inorder-traversal": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "number-of-1-bits": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "design-add-and-search-words-data-structure": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "longest-balanced-subarray-i": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-monobit-integers": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "combination-sum-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximize-points-after-choosing-k-tasks": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-moves-to-equal-array-elements-iii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "total-waviness-of-numbers-in-range-i": {
       "hasTests": true,
       "caseCount": 5,
       "status": "complete"
@@ -14,547 +559,167 @@
       "caseCount": 5,
       "status": "complete"
     },
-    "two-sum": {
+    "total-sum-of-interaction-cost-in-tree-groups": {
       "hasTests": true,
-      "caseCount": 5,
+      "caseCount": 0,
       "status": "complete"
-    },
-    "group-anagrams": {
-      "hasTests": true,
-      "caseCount": 4,
-      "status": "complete"
-    },
-    "top-k-frequent-elements": {
-      "hasTests": true,
-      "caseCount": 3,
-      "status": "complete"
-    },
-    "product-of-array-except-self": {
-      "hasTests": true,
-      "caseCount": 4,
-      "status": "complete"
-    },
-    "valid-sudoku": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "encode-and-decode-strings": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-consecutive-sequence": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "valid-palindrome": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "two-sum-ii-input-array-is-sorted": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "3sum": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "container-with-most-water": {
-      "hasTests": true,
-      "caseCount": 4,
-      "status": "complete"
-    },
-    "trapping-rain-water": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "best-time-to-buy-and-sell-stock": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "longest-substring-without-repeating-characters": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "longest-repeating-character-replacement": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "permutation-in-string": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-window-substring": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "sliding-window-maximum": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "valid-parentheses": {
-      "hasTests": true,
-      "caseCount": 6,
-      "status": "complete"
-    },
-    "min-stack": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "evaluate-reverse-polish-notation": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "generate-parentheses": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "daily-temperatures": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "car-fleet": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "largest-rectangle-in-histogram": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "binary-search": {
-      "hasTests": true,
-      "caseCount": 6,
-      "status": "complete"
-    },
-    "search-a-2d-matrix": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "koko-eating-bananas": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-minimum-in-rotated-sorted-array": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "search-in-rotated-sorted-array": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "time-based-key-value-store": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "median-of-two-sorted-arrays": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "reverse-linked-list": {
-      "hasTests": true,
-      "caseCount": 4,
-      "status": "complete"
-    },
-    "merge-two-sorted-lists": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "reorder-list": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "remove-nth-node-from-end-of-list": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "copy-list-with-random-pointer": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "add-two-numbers": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "linked-list-cycle": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "find-the-duplicate-number": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "lru-cache": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "merge-k-sorted-lists": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "reverse-nodes-in-k-group": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "invert-binary-tree": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "maximum-depth-of-binary-tree": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "diameter-of-binary-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "balanced-binary-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "same-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "subtree-of-another-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "lowest-common-ancestor-of-a-binary-search-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "binary-tree-level-order-traversal": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "binary-tree-right-side-view": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-good-nodes-in-binary-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "validate-binary-search-tree": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "kth-smallest-element-in-a-bst": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "construct-binary-tree-from-preorder-and-inorder-traversal": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "binary-tree-maximum-path-sum": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "serialize-and-deserialize-binary-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "implement-trie-prefix-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "design-add-and-search-words-data-structure": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "word-search-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "kth-largest-element-in-a-stream": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "last-stone-weight": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
     },
     "k-closest-points-to-origin": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "kth-largest-element-in-an-array": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "task-scheduler": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "design-twitter": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-median-from-data-stream": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "subsets": {
-      "hasTests": true,
-      "caseCount": 4,
-      "status": "complete"
-    },
-    "combination-sum": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "permutations": {
-      "hasTests": true,
-      "caseCount": 3,
-      "status": "complete"
-    },
-    "subsets-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "combination-sum-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "word-search": {
       "hasTests": true,
       "caseCount": 5,
       "status": "complete"
     },
-    "palindrome-partitioning": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "maximum-subarray-xor-with-bounded-range": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "letter-combinations-of-a-phone-number": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "maximum-bitwise-and-after-increment-operations": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "n-queens": {
-      "hasTests": false,
+    "lru-cache": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
     },
     "number-of-islands": {
       "hasTests": true,
       "caseCount": 5,
       "status": "complete"
     },
-    "clone-graph": {
-      "hasTests": true,
-      "caseCount": 4,
-      "status": "complete"
-    },
-    "max-area-of-island": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "pacific-atlantic-water-flow": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "surrounded-regions": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "rotting-oranges": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "walls-and-gates": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "course-schedule": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "course-schedule-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "redundant-connection": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "number-of-connected-components-in-an-undirected-graph": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "graph-valid-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "word-ladder": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "reconstruct-itinerary": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "min-cost-to-connect-all-points": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "network-delay-time": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "swim-in-rising-water": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "alien-dictionary": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "cheapest-flights-within-k-stops": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "climbing-stairs": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
-    "min-cost-climbing-stairs": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "house-robber": {
-      "hasTests": true,
-      "caseCount": 5,
-      "status": "complete"
-    },
     "house-robber-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "longest-palindromic-substring": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "minimum-prefix-removal-to-make-array-strictly-increasing": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "palindromic-substrings": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "kth-largest-element-in-an-array": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "decode-ways": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "longest-balanced-substring-i": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "coin-change": {
+    "maximize-sum-of-at-most-k-distinct-elements": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "subtree-of-another-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "number-of-balanced-integers-in-a-range": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "vowel-consonant-score": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "reverse-nodes-in-k-group": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "binary-tree-maximum-path-sum": {
       "hasTests": true,
       "caseCount": 5,
       "status": "complete"
     },
     "maximum-product-subarray": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "word-break": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "climbing-stairs-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "longest-increasing-subsequence": {
-      "hasTests": false,
+    "find-books-with-polarized-opinions": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
     },
-    "partition-equal-subset-sum": {
-      "hasTests": false,
+    "valid-palindrome": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "regular-expression-matching": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-xor-of-subsequences": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-substrings-with-distinct-start": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-distinct-integers-after-removing-zeros": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "min-stack": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
     },
-    "unique-paths": {
+    "longest-alternating-subarray-after-removing-at-most-one-element": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-the-least-frequent-digit": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "longest-subsequence-with-non-zero-bitwise-xor": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-emotionally-consistent-users": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "permutation-in-string": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "split-array-with-minimum-difference": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-churn-risk-customers": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "minimum-operations-to-make-binary-palindrome": {
       "hasTests": true,
       "caseCount": 5,
       "status": "complete"
@@ -564,1075 +729,910 @@
       "caseCount": 5,
       "status": "complete"
     },
-    "best-time-to-buy-and-sell-stock-with-cooldown": {
-      "hasTests": false,
+    "find-loyal-customers": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
     },
-    "coin-change-2": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "majority-frequency-characters": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "target-sum": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "count-subarrays-with-majority-element-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "interleaving-string": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "diameter-of-binary-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "longest-increasing-path-in-a-matrix": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "reverse-integer": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "distinct-subsequences": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "network-delay-time": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "edit-distance": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "find-missing-elements": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "burst-balloons": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "regular-expression-matching": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-subarray": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "jump-game": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "jump-game-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "longest-fibonacci-subarray": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
     "gas-station": {
-      "hasTests": false,
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-partition-factor": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "container-with-most-water": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "word-search-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "reverse-string-prefix": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
+    },
+    "word-ladder": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-good-nodes-in-binary-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "climbing-stairs": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "stable-subarrays-with-equal-boundary-and-interior-sum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "coin-change": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
     "hand-of-straights": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "merge-triplets-to-form-target-triplet": {
-      "hasTests": false,
+    "reverse-letters-then-special-characters-in-a-string": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
     },
-    "partition-labels": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "earliest-time-to-finish-one-task": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "valid-parenthesis-string": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "longest-increasing-path-in-a-matrix": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "insert-interval": {
-      "hasTests": false,
+    "sliding-window-maximum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "same-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-swaps-to-avoid-forbidden-values": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-subarrays-with-majority-element-i": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "walls-and-gates": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
+    },
+    "reverse-words-with-same-vowel-count": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
     },
     "merge-intervals": {
       "hasTests": true,
       "caseCount": 5,
       "status": "complete"
     },
-    "non-overlapping-intervals": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "meeting-rooms": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "meeting-rooms-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-interval-to-include-each-query": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "rotate-image": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "spiral-matrix": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "set-matrix-zeroes": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "happy-number": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "plus-one": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "pow-x-n": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "multiply-strings": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "detect-squares": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "single-number": {
-      "hasTests": true,
-      "caseCount": 4,
-      "status": "complete"
-    },
-    "number-of-1-bits": {
+    "count-dominant-indices": {
       "hasTests": true,
       "caseCount": 5,
       "status": "complete"
     },
-    "counting-bits": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "reverse-bits": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "missing-number": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "sum-of-two-integers": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "reverse-integer": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "combination-sum-iv": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-users-with-persistent-behavior-patterns": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-almost-palindromic-substring": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "first-element-with-unique-frequency": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "weighted-word-mapping": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-dominant-indices": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "merge-adjacent-equal-elements": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "toggle-light-bulbs": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-subarrays-with-cost-less-than-or-equal-to-k": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "palindromic-path-queries-in-a-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-emotionally-consistent-users": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-subarray-xor-with-bounded-range": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-score-using-exactly-k-pairs": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "reverse-letters-then-special-characters-in-a-string": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-prefix-removal-to-make-array-strictly-increasing": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-alternating-subarray-after-removing-at-most-one-element": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-users-with-high-token-usage": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-monobit-integers": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-operations-to-reach-target-array": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-nth-smallest-integer-with-k-one-bits": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "best-reachable-tower": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-residue-prefixes": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-caesar-cipher-pairs": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-edge-toggles-on-a-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "pythagorean-distance-nodes-in-a-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "largest-even-number": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "vowel-consonant-score": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "reverse-string-prefix": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-k-to-reduce-array-within-limit": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "smallest-all-ones-multiple": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-score-of-a-split": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "rotate-non-negative-elements": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "most-common-course-pairs": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "mirror-distance-of-an-integer": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "last-remaining-integer-after-alternating-deletion-operations": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-number-of-operations-to-have-distinct-elements": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-sum-of-three-numbers-divisible-by-three": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "absolute-difference-between-maximum-and-minimum-k-elements": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "reverse-words-with-same-vowel-count": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-cost-to-make-two-binary-strings-equal": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-bitwise-and-after-increment-operations": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-routes-to-climb-a-rectangular-grid": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-subarray-length-with-distinct-sum-at-least-k": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-subgraph-score-in-a-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "sort-integers-by-binary-reflection": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-cost-to-acquire-required-items": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "total-score-of-dungeon-runs": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-inversion-count-in-subarrays-of-fixed-length": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-cost-to-merge-sorted-lists": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "number-of-alternating-xor-partitions": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-elements-with-at-least-k-greater-values": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-absolute-distance-between-mirror-pairs": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-deletion-cost-to-make-all-characters-equal": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "number-of-prefix-connected-groups": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "concatenate-non-zero-digits-and-multiply-by-sum-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "concatenate-non-zero-digits-and-multiply-by-sum-i": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "number-of-effective-subsequences": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-score-after-binary-swaps": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "number-of-centered-subarrays": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "total-waviness-of-numbers-in-range-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-number-of-flips-to-reverse-binary-string": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "final-element-after-subarray-deletions": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-partition-score": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-distance-between-three-equal-elements-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "design-ride-sharing-system": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-moves-to-equal-array-elements-iii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-distance-between-three-equal-elements-i": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximize-expression-of-three-elements": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-stable-subarrays": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-missing-elements": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-churn-risk-customers": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-product-of-three-elements-after-one-replacement": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "complete-prime-number": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-operations-to-make-binary-palindrome": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-non-decreasing-subarray-after-replacing-at-most-one-element": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "number-of-balanced-integers-in-a-range": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-golden-hour-customers": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-string-length-after-balanced-removals": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximize-points-after-choosing-k-tasks": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-substrings-with-distinct-start": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "lexicographically-smallest-string-after-deleting-duplicate-characters": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "largest-prime-from-consecutive-prime-sum": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximize-sum-of-squares-of-digits": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "stable-subarrays-with-equal-boundary-and-interior-sum": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "smallest-missing-multiple-of-k": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-capacity-within-budget": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-alternating-sum-of-squares": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "lexicographically-smallest-negated-permutation-that-sums-to-target": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-subarrays-with-majority-element-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-subarrays-with-majority-element-i": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "lexicographically-smallest-string-after-reverse": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "total-sum-of-interaction-cost-in-tree-groups": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "word-squares-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-ways-to-choose-coprime-integers-from-rows": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "sum-of-elements-with-frequency-divisible-by-k": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "design-auction-system": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-deletions-to-make-alternating-substring": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-distinct-subarrays-divisible-by-k-in-sorted-array": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "house-robber-v": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-swaps-to-avoid-forbidden-values": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "design-exam-scores-tracker": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "compute-alternating-sum": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "total-waviness-of-numbers-in-range-i": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-balanced-substring-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-balanced-substring-i": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-distinct-integers-after-removing-zeros": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "majority-frequency-characters": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "equal-score-substrings": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "remove-zeros-in-decimal-representation": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-no-zero-pairs-that-sum-to-n": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-time-to-complete-all-deliveries": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-balanced-subarray-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-balanced-subarray-i": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-zombie-sessions": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-operations-to-transform-array": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "climbing-stairs-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "compute-decimal-representation": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "lexicographically-smallest-palindromic-permutation-greater-than-target": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-partition-factor": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-subsequence-with-non-zero-bitwise-xor": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-strictly-increasing-subsequence-with-non-zero-bitwise-and": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximize-cyclic-partition-score": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "number-of-stable-subsequences": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-loyal-customers": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-binary-palindromic-numbers": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-operations-to-equalize-subarrays": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "distinct-points-reachable-after-substring-removal": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "lexicographically-smallest-permutation-greater-than-target": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "remove-k-balanced-substrings": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "minimum-operations-to-transform-string": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "detect-squares": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
     },
     "minimum-moves-to-balance-circular-array": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "split-array-with-minimum-difference": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "minimum-absolute-distance-between-mirror-pairs": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
-    "earliest-time-to-finish-one-task": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "smallest-absent-positive-greater-than-average": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximize-alternating-sum-using-swaps": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "bitwise-or-of-even-numbers-in-an-array": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "restore-finishing-order": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-total-subarray-value-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-total-subarray-value-i": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-fibonacci-subarray": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "count-bowl-subarrays": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-operations-to-transform-string": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-operations-to-equalize-array": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximize-sum-of-at-most-k-distinct-elements": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-books-with-polarized-opinions": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "gcd-of-odd-and-even-sums": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "find-the-least-frequent-digit": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "generate-schedule": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-xor-of-subsequences": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "sum-of-beautiful-subsequences": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "maximum-path-score-in-a-grid": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "minimum-operations-to-equalize-binary-string": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "flood-fill": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "implement-queue-using-stacks": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "first-bad-version": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "ransom-note": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "longest-palindrome": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "majority-element": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "add-binary": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "middle-of-the-linked-list": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "01-matrix": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "lowest-common-ancestor-of-a-binary-tree": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "accounts-merge": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "sort-colors": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "kadanes-algorithm": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "merge-sorted-array": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "majority-element-ii": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "reverse-pairs": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "4sum": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
-    },
-    "largest-subarray-with-zero-sum": {
-      "hasTests": false,
-      "caseCount": 0,
-      "status": "scaffold"
+    "longest-almost-palindromic-substring": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
     "count-inversions": {
-      "hasTests": false,
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "add-two-numbers": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "search-a-2d-matrix": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "lexicographically-smallest-negated-permutation-that-sums-to-target": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "sum-of-elements-with-frequency-divisible-by-k": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-users-with-high-token-usage": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
+    },
+    "implement-queue-using-stacks": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "house-robber": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "number-of-effective-subsequences": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "weighted-word-mapping": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "generate-parentheses": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "longest-substring-without-repeating-characters": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "valid-parenthesis-string": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "permutations": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "compute-alternating-sum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-zombie-sessions": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "two-sum-ii-input-array-is-sorted": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-window-substring": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "largest-rectangle-in-histogram": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "n-queens": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "edit-distance": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "merge-sorted-array": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "minimum-cost-to-acquire-required-items": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-subarray-length-with-distinct-sum-at-least-k": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "middle-of-the-linked-list": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "4sum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "accounts-merge": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-score-using-exactly-k-pairs": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "smallest-all-ones-multiple": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "partition-labels": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
     "delete-node-in-a-linked-list": {
-      "hasTests": false,
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
     },
-    "palindrome-linked-list": {
-      "hasTests": false,
+    "minimum-operations-to-equalize-subarrays": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "lowest-common-ancestor-of-a-binary-search-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-partition-score": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-depth-of-binary-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "merge-two-sorted-lists": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-golden-hour-customers": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
+    },
+    "evaluate-reverse-polish-notation": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "last-remaining-integer-after-alternating-deletion-operations": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "majority-element": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "absolute-difference-between-maximum-and-minimum-k-elements": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "binary-search": {
+      "hasTests": true,
+      "caseCount": 6,
+      "status": "complete"
+    },
+    "palindromic-substrings": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "lowest-common-ancestor-of-a-binary-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "design-twitter": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "best-time-to-buy-and-sell-stock-with-cooldown": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "compute-decimal-representation": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "smallest-absent-positive-greater-than-average": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "two-sum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "sum-of-two-integers": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-product-of-three-elements-after-one-replacement": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "subsets": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "rotate-image": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "most-common-course-pairs": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "median-of-two-sorted-arrays": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "insert-interval": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "reconstruct-itinerary": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "number-of-centered-subarrays": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-deletion-cost-to-make-all-characters-equal": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "merge-adjacent-equal-elements": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "kth-largest-element-in-a-stream": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "koko-eating-bananas": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "bitwise-or-of-even-numbers-in-an-array": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "graph-valid-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "largest-prime-from-consecutive-prime-sum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "longest-strictly-increasing-subsequence-with-non-zero-bitwise-and": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-median-from-data-stream": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "remove-zeros-in-decimal-representation": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "time-based-key-value-store": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "gcd-of-odd-and-even-sums": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "car-fleet": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "flood-fill": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "reverse-pairs": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "valid-sudoku": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "distinct-subsequences": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "invert-binary-tree": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "kth-smallest-element-in-a-bst": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-operations-to-transform-array": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "redundant-connection": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-sum-of-three-numbers-divisible-by-three": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "surrounded-regions": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "maximize-sum-of-squares-of-digits": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "longest-increasing-subsequence": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "lexicographically-smallest-permutation-greater-than-target": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "longest-non-decreasing-subarray-after-replacing-at-most-one-element": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "product-of-array-except-self": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "word-search": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-operations-to-equalize-binary-string": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "daily-temperatures": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-bowl-subarrays": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
     "linked-list-cycle-ii": {
-      "hasTests": false,
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
     },
-    "intersection-of-two-linked-lists": {
-      "hasTests": false,
+    "longest-consecutive-sequence": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "target-sum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "palindromic-path-queries-in-a-tree": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
+    },
+    "encode-and-decode-strings": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "toggle-light-bulbs": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "non-overlapping-intervals": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-capacity-within-budget": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-score-after-binary-swaps": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-subarrays-with-cost-less-than-or-equal-to-k": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
     "rotate-list": {
-      "hasTests": false,
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "min-cost-to-connect-all-points": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "search-in-rotated-sorted-array": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-deletions-to-make-alternating-substring": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "group-anagrams": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-inversion-count-in-subarrays-of-fixed-length": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-interval-to-include-each-query": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "ransom-note": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "missing-number": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-distance-between-three-equal-elements-i": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "linked-list-cycle": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "reverse-bits": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "remove-nth-node-from-end-of-list": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "binary-tree-level-order-traversal": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "contains-duplicate": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "find-the-duplicate-number": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "intersection-of-two-linked-lists": {
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
+    },
+    "subsets-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximize-alternating-sum-using-swaps": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "largest-subarray-with-zero-sum": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "kadanes-algorithm": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "meeting-rooms-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "decode-ways": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "maximum-path-score-in-a-grid": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "implement-trie-prefix-tree": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "concatenate-non-zero-digits-and-multiply-by-sum-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "lexicographically-smallest-palindromic-permutation-greater-than-target": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "letter-combinations-of-a-phone-number": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "merge-triplets-to-form-target-triplet": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "largest-even-number": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     },
     "flatten-a-multilevel-doubly-linked-list": {
-      "hasTests": false,
+      "hasTests": true,
       "caseCount": 0,
-      "status": "scaffold"
+      "status": "complete"
+    },
+    "number-of-prefix-connected-groups": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "pythagorean-distance-nodes-in-a-tree": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "min-cost-climbing-stairs": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-no-zero-pairs-that-sum-to-n": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-operations-to-equalize-array": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "lexicographically-smallest-string-after-deleting-duplicate-characters": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "longest-balanced-subarray-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "count-routes-to-climb-a-rectangular-grid": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "copy-list-with-random-pointer": {
+      "hasTests": true,
+      "caseCount": 0,
+      "status": "complete"
+    },
+    "maximum-total-subarray-value-i": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "jump-game-ii": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "reorder-list": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "task-scheduler": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "minimum-operations-to-reach-target-array": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
+    },
+    "max-area-of-island": {
+      "hasTests": true,
+      "caseCount": 5,
+      "status": "complete"
     }
   }
 }

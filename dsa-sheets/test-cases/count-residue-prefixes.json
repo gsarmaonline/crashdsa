@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an array nums where nums[0] is the modulus m and nums[1] is the target residue r, count the number of prefix sums of the remaining elements that are congruent to r modulo m.",
+  "examples": [
+    {"input": "nums=[3,1,4,7,10]", "output": "2"},
+    {"input": "nums=[5,0,5,10,15]", "output": "3"}
+  ],
+  "constraints": ["3 <= nums.length <= 10^5", "1 <= nums[0] <= 10^9", "0 <= nums[1] < nums[0]", "0 <= nums[i] <= 10^9 for i>=2"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"nums": [3, 1, 4, 7, 10]},
+      "expected": 2,
+      "explanation": "m=3, r=1. Elements: [4,7,10]. Prefix sums: 4%3=1 ✓, 11%3=2 ✗, 21%3=0 ✗. Count=1. Also check empty prefix (0%3=0 ✗). Total=1.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [5, 0, 5, 10, 15]},
+      "expected": 3,
+      "explanation": "m=5, r=0. Elements: [5,10,15]. Prefix sums: 5%5=0 ✓, 15%5=0 ✓, 30%5=0 ✓. Count=3.",
+      "tags": ["basic", "all-match"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [7, 3, 3]},
+      "expected": 1,
+      "explanation": "m=7, r=3. Elements: [3]. Prefix sums: 3%7=3 ✓. Count=1.",
+      "tags": ["basic", "single-element"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [10, 5, 1, 2, 3]},
+      "expected": 0,
+      "explanation": "m=10, r=5. Elements: [1,2,3]. Prefix sums: 1%10=1, 3%10=3, 6%10=6. None equal 5. Count=0.",
+      "tags": ["basic", "no-match"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [4, 0, 4, 8, 12]},
+      "expected": 3,
+      "explanation": "m=4, r=0. Elements: [4,8,12]. Prefix sums: 4%4=0 ✓, 12%4=0 ✓, 24%4=0 ✓. Count=3.",
+      "tags": ["divisible"]
+    }
+  ]
 }

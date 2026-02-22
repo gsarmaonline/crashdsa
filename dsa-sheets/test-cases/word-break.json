@@ -3,11 +3,106 @@
   "functionName": "wordBreak",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "s",
+      "type": "string"
+    },
+    {
+      "name": "wordDict",
+      "type": "string[]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "s": "leetcode",
+        "wordDict": ["leet","code"]
+      },
+      "expected": true,
+      "explanation": "'leetcode' can be segmented as 'leet' + 'code'.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "s": "applepenapple",
+        "wordDict": ["apple","pen"]
+      },
+      "expected": true,
+      "explanation": "'applepenapple' = 'apple' + 'pen' + 'apple'. Words can be reused.",
+      "tags": ["basic", "reuse-words"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "s": "catsandog",
+        "wordDict": ["cats","dog","sand","and","cat"]
+      },
+      "expected": false,
+      "explanation": "Cannot segment 'catsandog': 'cat'+'sand'+'og' fails; 'cats'+'and'+'og' fails; etc.",
+      "tags": ["basic", "impossible"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "s": "a",
+        "wordDict": ["a"]
+      },
+      "expected": true,
+      "explanation": "Single character matches single word in dictionary.",
+      "tags": ["edge-case", "single-char"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "s": "ab",
+        "wordDict": ["a","b"]
+      },
+      "expected": true,
+      "explanation": "'ab' = 'a' + 'b'.",
+      "tags": ["edge-case", "two-chars"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Word Break** problem.\n\nGiven a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words. The same word may be reused multiple times.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/word-break/).",
+  "examples": [
+    {
+      "input": "s = \"leetcode\", wordDict = [\"leet\",\"code\"]",
+      "output": "true",
+      "explanation": "'leet' + 'code'"
+    },
+    {
+      "input": "s = \"applepenapple\", wordDict = [\"apple\",\"pen\"]",
+      "output": "true",
+      "explanation": "'apple' + 'pen' + 'apple'"
+    },
+    {
+      "input": "s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
+      "output": "false"
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 300",
+    "1 <= wordDict.length <= 1000",
+    "1 <= wordDict[i].length <= 20",
+    "s and wordDict[i] consist of only lowercase English letters",
+    "All words in wordDict are unique"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @param {string[]} wordDict\n * @return {boolean}\n */\nfunction wordBreak(s, wordDict) {\n  // Write your solution here\n}",
+    "typescript": "function wordBreak(s: string, wordDict: string[]): boolean {\n  // Write your solution here\n}",
+    "python": "def word_break(s: str, wordDict: list[str]) -> bool:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nbool wordBreak(string s, vector<string>& wordDict) {\n    // Write your solution here\n}",
+    "go": "func wordBreak(s string, wordDict []string) bool {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "wordBreak",
+    "typescript": "wordBreak",
+    "python": "word_break",
+    "cpp": "wordBreak",
+    "go": "WordBreak"
+  }
 }

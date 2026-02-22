@@ -3,11 +3,63 @@
   "functionName": "spiralMatrix",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "matrix",
+      "type": "int[][]"
     }
   ],
   "returnType": "int[]",
-  "testCases": [],
-  "_status": "scaffold"
+  "outputOrderMatters": true,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "matrix": [[1, 2, 3], [4, 5, 6], [7, 8, 9]] },
+      "expected": [1, 2, 3, 6, 9, 8, 7, 4, 5],
+      "explanation": "Spiral order: right across top row, down right column, left across bottom row, up left column, center",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "matrix": [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]] },
+      "expected": [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7],
+      "explanation": "Spiral traversal of 3x4 matrix",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "matrix": [[1]] },
+      "expected": [1],
+      "explanation": "Single element; return it directly",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "matrix": [[1, 2], [3, 4]] },
+      "expected": [1, 2, 4, 3],
+      "explanation": "2x2 spiral: right (1,2), down (4), left (3)",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "matrix": [[1, 2, 3]] },
+      "expected": [1, 2, 3],
+      "explanation": "Single row; just return it in order",
+      "tags": ["edge"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an m x n matrix, return all elements of the matrix in spiral order (clockwise from top-left).",
+  "examples": [
+    {
+      "input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
+      "output": "[1,2,3,6,9,8,7,4,5]"
+    }
+  ],
+  "constraints": [
+    "m == matrix.length",
+    "n == matrix[i].length",
+    "1 <= m, n <= 10",
+    "-100 <= matrix[i][j] <= 100"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

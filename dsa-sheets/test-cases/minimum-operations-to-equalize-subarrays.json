@@ -3,11 +3,70 @@
   "functionName": "minimumOperationsToEqualizeSubarrays",
   "params": [
     {
-      "name": "s",
-      "type": "string"
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "k",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3, 4], "k": 2 },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 1, 1, 1], "k": 2 },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [3, 1, 4, 1], "k": 2 },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [5], "k": 1 },
+      "expected": 0,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [2, 4, 6, 8], "k": 4 },
+      "expected": 3,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array and integer k, split the array into k equal-length subarrays. Return the minimum number of operations (element increments/decrements) to make all subarrays have the same sum.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3,4], k = 2",
+      "output": "2",
+      "explanation": "Subarrays [1,2] and [3,4] have sums 3 and 7. Change to equalize: reduce subarray 2 sum by 2, requiring 2 operations."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "nums.length is divisible by k",
+    "1 <= nums[i] <= 10^9",
+    "1 <= k <= nums.length"
+  ],
+  "starterCode": {
+    "javascript": "function minimumOperationsToEqualizeSubarrays(nums, k) {\n  // your code here\n}",
+    "python": "def minimumOperationsToEqualizeSubarrays(nums, k):\n    pass",
+    "java": "public int minimumOperationsToEqualizeSubarrays(int[] nums, int k) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumOperationsToEqualizeSubarrays",
+    "python": "minimumOperationsToEqualizeSubarrays",
+    "java": "minimumOperationsToEqualizeSubarrays"
+  }
 }

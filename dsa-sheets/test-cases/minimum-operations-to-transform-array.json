@@ -3,11 +3,69 @@
   "functionName": "minimumOperationsToTransformArray",
   "params": [
     {
-      "name": "n",
-      "type": "int"
+      "name": "nums",
+      "type": "int[]"
+    },
+    {
+      "name": "target",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3], "target": [1, 2, 3] },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3], "target": [3, 2, 1] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [5, 5, 5], "target": [1, 1, 1] },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1], "target": [1] },
+      "expected": 0,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 3, 5, 7], "target": [2, 4, 6, 8] },
+      "expected": 4,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given two arrays nums and target of the same length, return the minimum number of operations to transform nums into target. Each operation increments or decrements one element by 1.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3], target = [3,2,1]",
+      "output": "2",
+      "explanation": "Change nums[0] from 1 to 3 (+2 ops) and nums[2] from 3 to 1 (-2 ops). Total: 4 abs differences... but minimum operations = sum of |nums[i]-target[i]|."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i], target[i] <= 10^5",
+    "nums.length == target.length"
+  ],
+  "starterCode": {
+    "javascript": "function minimumOperationsToTransformArray(nums, target) {\n  // your code here\n}",
+    "python": "def minimumOperationsToTransformArray(nums, target):\n    pass",
+    "java": "public int minimumOperationsToTransformArray(int[] nums, int[] target) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumOperationsToTransformArray",
+    "python": "minimumOperationsToTransformArray",
+    "java": "minimumOperationsToTransformArray"
+  }
 }

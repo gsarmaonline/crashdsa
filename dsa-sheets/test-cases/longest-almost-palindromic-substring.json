@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Return the length of the longest substring that can be made into a palindrome by changing at most one character.",
+  "examples": [
+    {"input": "s=\"abcba\"", "output": "5"},
+    {"input": "s=\"abcd\"", "output": "3"}
+  ],
+  "constraints": ["1 <= s.length <= 10^4", "s consists of lowercase English letters"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"s": "abcba"},
+      "expected": 5,
+      "explanation": "The whole string 'abcba' is already a palindrome of length 5.",
+      "tags": ["basic", "already-palindrome"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"s": "abcd"},
+      "expected": 3,
+      "explanation": "Any 3-char substring like 'abc' can become 'aba' or 'aca' with 1 change; longest is 3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"s": "a"},
+      "expected": 1,
+      "explanation": "Single character is already a palindrome.",
+      "tags": ["edge", "single-char"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"s": "aab"},
+      "expected": 3,
+      "explanation": "'aab' can be changed to 'aaa' (1 change) making it a palindrome of length 3.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"s": "abacaba"},
+      "expected": 7,
+      "explanation": "'abacaba' is already a palindrome of length 7.",
+      "tags": ["palindrome", "full-string"]
+    }
+  ]
 }

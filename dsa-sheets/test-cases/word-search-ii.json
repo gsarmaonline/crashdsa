@@ -2,12 +2,97 @@
   "slug": "word-search-ii",
   "functionName": "wordSearchIi",
   "params": [
+    { "name": "board", "type": "char[][]" },
+    { "name": "words", "type": "string[]" }
+  ],
+  "returnType": "string[]",
+  "outputOrderMatters": false,
+  "testCases": [
     {
-      "name": "root",
-      "type": "TreeNode"
+      "id": "tc-1",
+      "inputs": {
+        "board": [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]],
+        "words": ["oath","pea","eat","rain"]
+      },
+      "expected": ["eat","oath"],
+      "explanation": "'eat' found starting at (1,3) going left; 'oath' found starting at (3,0) going up-right. 'pea' and 'rain' are not on the board.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "board": [["a","b"],["c","d"]],
+        "words": ["abcd"]
+      },
+      "expected": [],
+      "explanation": "'abcd' cannot be formed by adjacent (non-diagonal) cells on this board.",
+      "tags": ["no-solution"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "board": [["a"]],
+        "words": ["a"]
+      },
+      "expected": ["a"],
+      "explanation": "Single cell board, 'a' matches exactly.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "board": [["a"]],
+        "words": ["b"]
+      },
+      "expected": [],
+      "explanation": "Single cell board with 'a', word 'b' not found.",
+      "tags": ["edge-case", "no-solution"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "board": [["a","b"],["c","d"]],
+        "words": ["ab","cd","ac","bd"]
+      },
+      "expected": ["ab","cd","ac","bd"],
+      "explanation": "'ab': (0,0)→(0,1). 'cd': (1,0)→(1,1). 'ac': (0,0)→(1,0). 'bd': (0,1)→(1,1). All four words are found via adjacent horizontal/vertical paths.",
+      "tags": ["basic"]
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Given an m x n board of characters and a list of strings `words`, return all words on the board.\n\nEach word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.\n\nSee the full problem on [LeetCode 212](https://leetcode.com/problems/word-search-ii/).",
+  "examples": [
+    {
+      "input": "board = [[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]], words = [\"oath\",\"pea\",\"eat\",\"rain\"]",
+      "output": "[\"eat\",\"oath\"]"
+    },
+    {
+      "input": "board = [[\"a\",\"b\"],[\"c\",\"d\"]], words = [\"abcd\"]",
+      "output": "[]"
+    }
+  ],
+  "constraints": [
+    "m == board.length",
+    "n == board[i].length",
+    "1 <= m, n <= 12",
+    "board[i][j] is a lowercase English letter",
+    "1 <= words.length <= 3 * 10^4",
+    "1 <= words[i].length <= 10",
+    "words[i] consists of lowercase English letters",
+    "All the strings in words are unique"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {character[][]} board\n * @param {string[]} words\n * @return {string[]}\n */\nfunction wordSearchIi(board, words) {\n  // Write your solution here\n}",
+    "typescript": "function wordSearchIi(board: string[][], words: string[]): string[] {\n  // Write your solution here\n}",
+    "python": "def word_search_ii(board: list[list[str]], words: list[str]) -> list[str]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nvector<string> wordSearchIi(vector<vector<char>>& board, vector<string>& words) {\n    // Write your solution here\n}",
+    "go": "func wordSearchIi(board [][]byte, words []string) []string {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "wordSearchIi",
+    "typescript": "wordSearchIi",
+    "python": "word_search_ii",
+    "cpp": "wordSearchIi",
+    "go": "WordSearchIi"
+  }
 }

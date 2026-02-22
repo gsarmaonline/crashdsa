@@ -1,13 +1,90 @@
 {
   "slug": "koko-eating-bananas",
-  "functionName": "kokoEatingBananas",
+  "functionName": "minEatingSpeed",
   "params": [
     {
-      "name": "nums",
+      "name": "piles",
       "type": "int[]"
+    },
+    {
+      "name": "h",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Koko loves to eat bananas. There are `n` piles of bananas, the `i`th pile has `piles[i]` bananas. The guards have gone and will come back in `h` hours.\n\nKoko can decide her bananas-per-hour eating speed of `k`. Each hour, she chooses some pile of bananas and eats `k` bananas from that pile. If the pile has less than `k` bananas, she eats all of them instead and will not eat any more bananas during this hour.\n\nKoko likes to eat slowly but still wants to finish eating all the bananas before the guards return.\n\nReturn the minimum integer `k` such that she can eat all the bananas within `h` hours.",
+  "examples": [
+    {
+      "input": "piles = [3,6,7,11], h = 8",
+      "output": "4",
+      "explanation": "With speed 4: ceil(3/4)+ceil(6/4)+ceil(7/4)+ceil(11/4) = 1+2+2+3 = 8 hours. Speed 3 would need 1+2+3+4=10 > 8 hours."
+    },
+    {
+      "input": "piles = [30,11,23,4,20], h = 5",
+      "output": "30",
+      "explanation": "With h == number of piles, Koko must finish each pile in one hour — so k must be at least max(piles) = 30."
+    },
+    {
+      "input": "piles = [30,11,23,4,20], h = 6",
+      "output": "23",
+      "explanation": "Speed 23: ceil(30/23)+ceil(11/23)+ceil(23/23)+ceil(4/23)+ceil(20/23) = 2+1+1+1+1 = 6 hours."
+    }
+  ],
+  "constraints": [
+    "1 <= piles.length <= 10^4",
+    "piles.length <= h <= 10^9",
+    "1 <= piles[i] <= 10^9"
+  ],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "piles": [3, 6, 7, 11], "h": 8 },
+      "expected": 4,
+      "explanation": "Speed 4: hours = ceil(3/4)+ceil(6/4)+ceil(7/4)+ceil(11/4) = 1+2+2+3 = 8. Minimum k is 4.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "piles": [30, 11, 23, 4, 20], "h": 5 },
+      "expected": 30,
+      "explanation": "h equals number of piles — must finish each pile in exactly 1 hour, so k = max pile = 30.",
+      "tags": ["basic", "edge-case"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "piles": [30, 11, 23, 4, 20], "h": 6 },
+      "expected": 23,
+      "explanation": "Speed 23: ceil(30/23)+ceil(11/23)+ceil(23/23)+ceil(4/23)+ceil(20/23) = 2+1+1+1+1 = 6.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "piles": [1000000000], "h": 2 },
+      "expected": 500000000,
+      "explanation": "Single pile of 10^9 bananas in 2 hours: ceil(10^9 / 5*10^8) = 2. So k = 5*10^8.",
+      "tags": ["single-element", "edge-case"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "piles": [1, 1, 1, 1], "h": 8 },
+      "expected": 1,
+      "explanation": "All piles size 1 and h=8 >= 4 piles. Minimum speed 1 takes exactly 4 hours <= 8 hours.",
+      "tags": ["all-same"]
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} piles\n * @param {number} h\n * @return {number}\n */\nfunction minEatingSpeed(piles, h) {\n  // Write your solution here\n}",
+    "typescript": "function minEatingSpeed(piles: number[], h: number): number {\n  // Write your solution here\n}",
+    "python": "def min_eating_speed(piles: list[int], h: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int minEatingSpeed(vector<int>& piles, int h) {\n    // Write your solution here\n}",
+    "go": "func minEatingSpeed(piles []int, h int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minEatingSpeed",
+    "typescript": "minEatingSpeed",
+    "python": "min_eating_speed",
+    "cpp": "minEatingSpeed",
+    "go": "MinEatingSpeed"
+  }
 }

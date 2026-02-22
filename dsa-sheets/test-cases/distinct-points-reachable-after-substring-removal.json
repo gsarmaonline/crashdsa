@@ -8,6 +8,59 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "abc" },
+      "expected": 7,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "aa" },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "ab" },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "a" },
+      "expected": 2,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "aab" },
+      "expected": 5,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given string s, count the number of distinct strings reachable by removing exactly one contiguous substring (including the empty substring removal).",
+  "examples": [
+    {
+      "input": "s = \"abc\"",
+      "output": "7",
+      "explanation": "Removing any substring (including empty) of \"abc\" yields: \"abc\", \"bc\", \"ac\", \"ab\", \"c\", \"b\", \"a\" — 7 distinct results."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of lowercase English letters"
+  ],
+  "starterCode": {
+    "javascript": "function distinctPointsReachableAfterSubstringRemoval(s) {\n  // your code here\n}",
+    "python": "def distinctPointsReachableAfterSubstringRemoval(s):\n    pass",
+    "java": "public int distinctPointsReachableAfterSubstringRemoval(String s) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "distinctPointsReachableAfterSubstringRemoval",
+    "python": "distinctPointsReachableAfterSubstringRemoval",
+    "java": "distinctPointsReachableAfterSubstringRemoval"
+  }
 }

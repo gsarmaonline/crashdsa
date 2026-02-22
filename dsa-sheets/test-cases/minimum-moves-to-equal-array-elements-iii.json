@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 1, 1] },
+      "expected": 0,
+      "tags": ["basic", "already-equal"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 10] },
+      "expected": 9,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 0, 0, 8, 6] },
+      "expected": 14,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [5, 6, 8, 8, 5] },
+      "expected": 6,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array nums, in one move you can increment or decrement any element by 1. Return the minimum number of moves required to make all array elements equal. This is version III which may allow moves of size up to 3 or have other extensions compared to earlier versions.",
+  "examples": [
+    {
+      "input": "nums = [1, 2, 3]",
+      "output": "2",
+      "explanation": "Move 1 to 2 and 3 to 2 (or equivalently target the median). Total moves = 2."
+    },
+    {
+      "input": "nums = [1, 1, 1]",
+      "output": "0",
+      "explanation": "All elements are already equal."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "0 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "python": "from typing import List\ndef minimumMovesToEqualArrayElementsIii(nums: List[int]) -> int:\n    pass",
+    "javascript": "function minimumMovesToEqualArrayElementsIii(nums) {\n\n}",
+    "typescript": "function minimumMovesToEqualArrayElementsIii(nums: number[]): number {\n\n}",
+    "java": "class Solution {\n    public int minimumMovesToEqualArrayElementsIii(int[] nums) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int minimumMovesToEqualArrayElementsIii(vector<int>& nums) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "minimumMovesToEqualArrayElementsIii",
+    "javascript": "minimumMovesToEqualArrayElementsIii",
+    "typescript": "minimumMovesToEqualArrayElementsIii",
+    "java": "minimumMovesToEqualArrayElementsIii",
+    "cpp": "minimumMovesToEqualArrayElementsIii"
+  }
 }

@@ -8,6 +8,83 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "nums": [2, 3, 5]
+      },
+      "expected": 5,
+      "explanation": "Acquire items greedily: pick items of cost 2 and 3, combined cost 5 to meet the requirement.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "nums": [1]
+      },
+      "expected": 1,
+      "explanation": "Only one item needed, cost is 1.",
+      "tags": ["single-item"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "nums": [5, 5, 5]
+      },
+      "expected": 5,
+      "explanation": "All items cost 5, only need the minimum to satisfy requirement: 5.",
+      "tags": ["all-same"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [1, 2, 3, 4, 5]
+      },
+      "expected": 6,
+      "explanation": "Pick cheapest items greedily: 1+2+3=6 to cover the required sum.",
+      "tags": ["greedy"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [10, 1, 1]
+      },
+      "expected": 2,
+      "explanation": "Pick two cheapest items: 1+1=2.",
+      "tags": ["sorted"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array `nums` of item costs, find the minimum total cost to acquire the required set of items. Each item can only be acquired once.",
+  "examples": [
+    {
+      "input": "nums = [2,3,5]",
+      "output": "5",
+      "explanation": "Acquire items with costs 2 and 3, total cost = 5."
+    },
+    {
+      "input": "nums = [1,2,3,4,5]",
+      "output": "6",
+      "explanation": "Acquire cheapest three items: 1+2+3=6."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^4"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number}\n */\nfunction minimumCostToAcquireRequiredItems(nums) {\n  // Write your solution here\n}",
+    "typescript": "function minimumCostToAcquireRequiredItems(nums: number[]): number {\n  // Write your solution here\n}",
+    "python": "def minimumCostToAcquireRequiredItems(nums: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint minimumCostToAcquireRequiredItems(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func minimumCostToAcquireRequiredItems(nums []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumCostToAcquireRequiredItems",
+    "typescript": "minimumCostToAcquireRequiredItems",
+    "python": "minimumCostToAcquireRequiredItems",
+    "cpp": "minimumCostToAcquireRequiredItems",
+    "go": "MinimumCostToAcquireRequiredItems"
+  }
 }

@@ -8,6 +8,83 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "nums": [2, 3]
+      },
+      "expected": 3,
+      "explanation": "Grid has step sizes [2,3]. Routes from bottom to top of a 2x3 grid: 3 distinct paths.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "nums": [1, 1]
+      },
+      "expected": 1,
+      "explanation": "Minimum grid, only one route.",
+      "tags": ["minimal"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "nums": [3, 3]
+      },
+      "expected": 6,
+      "explanation": "Square grid 3x3, 6 distinct routes.",
+      "tags": ["square"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [1, 2, 3]
+      },
+      "expected": 6,
+      "explanation": "Three-step grid with sizes [1,2,3], 6 routes.",
+      "tags": ["three-steps"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [4, 4]
+      },
+      "expected": 20,
+      "explanation": "4x4 grid: C(6,2)=15, but with step constraint: 20 routes.",
+      "tags": ["larger"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array `nums` representing the dimensions of a rectangular grid, count the number of distinct routes to climb from one corner to the opposite corner, moving only right or up.",
+  "examples": [
+    {
+      "input": "nums = [2,3]",
+      "output": "3",
+      "explanation": "In a 2-row, 3-column grid, there are 3 routes going only right or down."
+    },
+    {
+      "input": "nums = [3,3]",
+      "output": "6",
+      "explanation": "C(4,2)=6 routes in a 3x3 grid."
+    }
+  ],
+  "constraints": [
+    "2 <= nums.length <= 5",
+    "1 <= nums[i] <= 10"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number}\n */\nfunction countRoutesToClimbARectangularGrid(nums) {\n  // Write your solution here\n}",
+    "typescript": "function countRoutesToClimbARectangularGrid(nums: number[]): number {\n  // Write your solution here\n}",
+    "python": "def countRoutesToClimbARectangularGrid(nums: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint countRoutesToClimbARectangularGrid(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func countRoutesToClimbARectangularGrid(nums []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "countRoutesToClimbARectangularGrid",
+    "typescript": "countRoutesToClimbARectangularGrid",
+    "python": "countRoutesToClimbARectangularGrid",
+    "cpp": "countRoutesToClimbARectangularGrid",
+    "go": "CountRoutesToClimbARectangularGrid"
+  }
 }

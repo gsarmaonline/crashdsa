@@ -1,13 +1,27 @@
 {
   "slug": "sort-colors",
   "functionName": "sortColors",
-  "params": [
+  "params": [],
+  "returnType": "void",
+  "testCases": [],
+  "isDesignProblem": true,
+  "_status": "complete",
+  "description": "Given an array nums with n objects colored red (0), white (1), or blue (2), sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue. You must solve this without using the library's sort function and in a single pass using the Dutch National Flag algorithm.",
+  "examples": [
     {
-      "name": "n",
-      "type": "int"
+      "input": "nums = [2,0,2,1,1,0]",
+      "output": "[0,0,1,1,2,2]"
+    },
+    {
+      "input": "nums = [2,0,1]",
+      "output": "[0,1,2]"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "n == nums.length",
+    "1 <= n <= 300",
+    "nums[i] is either 0, 1, or 2"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

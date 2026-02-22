@@ -5,9 +5,67 @@
     {
       "name": "nums",
       "type": "int[]"
+    },
+    {
+      "name": "k",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 5, 3, 2, 4], "k": 2 },
+      "expected": 9,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [3, 3, 3], "k": 1 },
+      "expected": 9,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 2, 3, 4, 5], "k": 3 },
+      "expected": 12,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [10], "k": 1 },
+      "expected": 10,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 2, 1, 2, 1], "k": 2 },
+      "expected": 10,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of integers and integer k, select at most k distinct element values and take all occurrences of those values to maximize the total sum.",
+  "examples": [
+    {
+      "input": "nums = [1,5,3,2,4], k = 2",
+      "output": "9",
+      "explanation": "Choose the 2 largest distinct values: 5 and 4. Sum = 5+4 = 9."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^9",
+    "1 <= k <= nums.length"
+  ],
+  "starterCode": {
+    "javascript": "function maximizeSumOfAtMostKDistinctElements(nums, k) {\n  // your code here\n}",
+    "python": "def maximizeSumOfAtMostKDistinctElements(nums, k):\n    pass",
+    "java": "public int maximizeSumOfAtMostKDistinctElements(int[] nums, int k) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "maximizeSumOfAtMostKDistinctElements",
+    "python": "maximizeSumOfAtMostKDistinctElements",
+    "java": "maximizeSumOfAtMostKDistinctElements"
+  }
 }

@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "aaa" },
+      "expected": 6,
+      "tags": ["basic", "all-same"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "ab" },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "aab" },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "aba" },
+      "expected": 5,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "aaab" },
+      "expected": 9,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string s, count subarrays where a single character appears strictly more than half the subarray's length (majority element). Version I counts all subarrays including length-1 ones (every length-1 subarray trivially has a majority element). A character c is a majority in a subarray if count(c) > length/2.",
+  "examples": [
+    {
+      "input": "s = \"aab\"",
+      "output": "4",
+      "explanation": "Subarrays: 'a'(majority 'a'), 'a'(majority 'a'), 'b'(majority 'b'), 'aa'(majority 'a'), 'ab'(no majority), 'aab'(majority 'a'). Subarrays with majority: 4."
+    },
+    {
+      "input": "s = \"ab\"",
+      "output": "2",
+      "explanation": "Subarrays: 'a'(majority), 'b'(majority), 'ab'(no majority since each appears once in length 2). Count = 2."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of lowercase English letters"
+  ],
+  "starterCode": {
+    "python": "def countSubarraysWithMajorityElementI(s: str) -> int:\n    pass",
+    "javascript": "function countSubarraysWithMajorityElementI(s) {\n\n}",
+    "typescript": "function countSubarraysWithMajorityElementI(s: string): number {\n\n}",
+    "java": "class Solution {\n    public int countSubarraysWithMajorityElementI(String s) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int countSubarraysWithMajorityElementI(string s) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "countSubarraysWithMajorityElementI",
+    "javascript": "countSubarraysWithMajorityElementI",
+    "typescript": "countSubarraysWithMajorityElementI",
+    "java": "countSubarraysWithMajorityElementI",
+    "cpp": "countSubarraysWithMajorityElementI"
+  }
 }

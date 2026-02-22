@@ -3,11 +3,65 @@
   "functionName": "sumOfBeautifulSubsequences",
   "params": [
     {
-      "name": "grid",
-      "type": "int[][]"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 14,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [2, 4] },
+      "expected": 10,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1] },
+      "expected": 1,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [3, 3] },
+      "expected": 12,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 2, 4] },
+      "expected": 20,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array, a beautiful subsequence is one where each element is divisible by its position index (1-based) in the subsequence. Return the sum of all elements across all beautiful subsequences, modulo 10^9+7.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "14",
+      "explanation": "Sum all elements that appear in any beautiful subsequence."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^9",
+    "Answer modulo 10^9+7"
+  ],
+  "starterCode": {
+    "javascript": "function sumOfBeautifulSubsequences(nums) {\n  // your code here\n}",
+    "python": "def sumOfBeautifulSubsequences(nums):\n    pass",
+    "java": "public int sumOfBeautifulSubsequences(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "sumOfBeautifulSubsequences",
+    "python": "sumOfBeautifulSubsequences",
+    "java": "sumOfBeautifulSubsequences"
+  }
 }

@@ -7,7 +7,67 @@
       "type": "TreeNode"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "int[]",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "root": [1, 2, 3, null, 5, null, 4] },
+      "expected": [1, 3, 4],
+      "explanation": "Level 0: see 1; Level 1: rightmost is 3; Level 2: rightmost is 4",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "root": [1, null, 3] },
+      "expected": [1, 3],
+      "explanation": "Level 0: see 1; Level 1: only right child 3 visible",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "root": [] },
+      "expected": [],
+      "explanation": "Empty tree has no right side view",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "root": [1] },
+      "expected": [1],
+      "explanation": "Single node is visible from the right",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "root": [1, 2, 3, 4] },
+      "expected": [1, 3, 4],
+      "explanation": "Level 0: 1; Level 1: rightmost is 3; Level 2: rightmost is 4 (only child of 2)",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given the root of a binary tree, imagine yourself standing on the right side of it. Return the values of the nodes you can see ordered from top to bottom.",
+  "examples": [
+    {
+      "input": "root = [1,2,3,null,5,null,4]",
+      "output": "[1,3,4]",
+      "explanation": "Viewing from the right: at each level, the rightmost node is visible."
+    },
+    {
+      "input": "root = [1,null,3]",
+      "output": "[1,3]",
+      "explanation": "The right child 3 is visible at level 1."
+    },
+    {
+      "input": "root = []",
+      "output": "[]",
+      "explanation": "Empty tree has no visible nodes."
+    }
+  ],
+  "constraints": [
+    "The number of nodes in the tree is in the range [0, 100]",
+    "-100 <= Node.val <= 100"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

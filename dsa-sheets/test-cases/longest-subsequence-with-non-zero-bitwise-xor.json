@@ -3,11 +3,64 @@
   "functionName": "longestSubsequenceWithNonZeroBitwiseXor",
   "params": [
     {
-      "name": "grid",
-      "type": "int[][]"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 3] },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 1] },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [3, 5, 6] },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [0] },
+      "expected": 0,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [4, 2, 1, 3] },
+      "expected": 4,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Find the length of the longest subsequence of nums such that the bitwise XOR of all its elements is non-zero.",
+  "examples": [
+    {
+      "input": "nums = [1,2,3]",
+      "output": "3",
+      "explanation": "XOR of [1,2,3] = 1^2^3 = 0, but subsequence [1,2] has XOR=3≠0. Longest with non-zero XOR: length 2 or use all elements if XOR≠0."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "0 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "function longestSubsequenceWithNonZeroBitwiseXor(nums) {\n  // your code here\n}",
+    "python": "def longestSubsequenceWithNonZeroBitwiseXor(nums):\n    pass",
+    "java": "public int longestSubsequenceWithNonZeroBitwiseXor(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "longestSubsequenceWithNonZeroBitwiseXor",
+    "python": "longestSubsequenceWithNonZeroBitwiseXor",
+    "java": "longestSubsequenceWithNonZeroBitwiseXor"
+  }
 }

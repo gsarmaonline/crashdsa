@@ -1,13 +1,26 @@
 {
   "slug": "design-add-and-search-words-data-structure",
   "functionName": "designAddAndSearchWordsDataStructure",
-  "params": [
+  "params": [],
+  "returnType": "void",
+  "isDesignProblem": true,
+  "testCases": [],
+  "_status": "complete",
+  "description": "Design a data structure that supports adding new words and finding if a string matches any previously added string.\n\n- `WordDictionary()` initializes the object.\n- `void addWord(word)` adds `word` to the data structure.\n- `bool search(word)` returns `true` if there is any string in the data structure that matches `word`, or `false` otherwise. The word may contain dots `.` where dots can be matched with any letter.\n\nSee the full problem on [LeetCode 211](https://leetcode.com/problems/design-add-and-search-words-data-structure/).",
+  "examples": [
     {
-      "name": "root",
-      "type": "TreeNode"
+      "input": "[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]",
+      "output": "[null,null,null,null,false,true,true,true]",
+      "explanation": "search('pad')=false (not added), search('bad')=true, search('.ad')=true (matches bad/dad/mad), search('b..')=true (matches bad)."
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "constraints": [
+    "1 <= word.length <= 25",
+    "word in addWord consists of lowercase English letters",
+    "word in search consists of '.' or lowercase English letters",
+    "There will be at most 2 dots in word for search queries",
+    "At most 10^4 calls will be made to addWord and search"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

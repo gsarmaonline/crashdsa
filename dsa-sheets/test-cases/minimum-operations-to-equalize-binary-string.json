@@ -3,11 +3,69 @@
   "functionName": "minimumOperationsToEqualizeBinaryString",
   "params": [
     {
-      "name": "n",
-      "type": "int"
+      "name": "s",
+      "type": "string"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "0101" },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "000" },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "111" },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "01" },
+      "expected": 1,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "001" },
+      "expected": 1,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a binary string s, return the minimum number of operations (flipping a character from '0' to '1' or '1' to '0') to make all characters the same.",
+  "examples": [
+    {
+      "input": "s = \"0101\"",
+      "output": "2",
+      "explanation": "Flip to all 0s: flip 2 ones (2 ops). Flip to all 1s: flip 2 zeros (2 ops). Minimum = 2."
+    },
+    {
+      "input": "s = \"001\"",
+      "output": "1",
+      "explanation": "Flip to all 0s: flip 1 one (1 op). Flip to all 1s: flip 2 zeros (2 ops). Minimum = 1."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists only of '0' and '1'"
+  ],
+  "starterCode": {
+    "javascript": "function minimumOperationsToEqualizeBinaryString(s) {\n  // your code here\n}",
+    "python": "def minimumOperationsToEqualizeBinaryString(s):\n    pass",
+    "java": "public int minimumOperationsToEqualizeBinaryString(String s) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "minimumOperationsToEqualizeBinaryString",
+    "python": "minimumOperationsToEqualizeBinaryString",
+    "java": "minimumOperationsToEqualizeBinaryString"
+  }
 }

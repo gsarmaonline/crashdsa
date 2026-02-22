@@ -8,6 +8,59 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 3, 2, 4, 1] },
+      "expected": 5,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3, 4] },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [4, 3, 2, 1] },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1] },
+      "expected": 0,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 3, 1, 3, 1] },
+      "expected": 8,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Compute the total waviness of numbers in an array. Waviness is defined as the sum of absolute differences between consecutive elements that form local extrema (peaks and valleys).",
+  "examples": [
+    {
+      "input": "nums = [1,3,2,4,1]",
+      "output": "5",
+      "explanation": "Peaks/valleys: 3 is a peak (diff 2+1=3), 2 is a valley (diff 1+2=3). Total = sum of extremal absolute differences."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^5"
+  ],
+  "starterCode": {
+    "javascript": "function totalWavinessOfNumbersInRangeI(nums) {\n  // your code here\n}",
+    "python": "def totalWavinessOfNumbersInRangeI(nums):\n    pass",
+    "java": "public int totalWavinessOfNumbersInRangeI(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "totalWavinessOfNumbersInRangeI",
+    "python": "totalWavinessOfNumbersInRangeI",
+    "java": "totalWavinessOfNumbersInRangeI"
+  }
 }

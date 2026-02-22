@@ -9,5 +9,33 @@
   ],
   "returnType": "ListNode",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "Given a linked list of words (strings), reverse the order of words that share the same vowel count, grouping consecutive words with equal vowel counts and reversing each such group in-place within the list.",
+  "examples": [
+    {
+      "input": "head = [\"ab\",\"cd\",\"ae\",\"boo\"]",
+      "output": "[\"cd\",\"ab\",\"boo\",\"ae\"]",
+      "explanation": "\"ab\" and \"cd\" both have 1 vowel, so they are reversed. \"ae\" and \"boo\" each have 2 vowels, so they are reversed."
+    }
+  ],
+  "constraints": [
+    "1 <= number of nodes <= 10^4",
+    "1 <= length of each word <= 20",
+    "Words consist of lowercase English letters"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {ListNode} head\n * @return {ListNode}\n */\nfunction reverseWordsWithSameVowelCount(head) {\n  // Write your solution here\n}",
+    "typescript": "function reverseWordsWithSameVowelCount(head: ListNode | null): ListNode | null {\n  // Write your solution here\n}",
+    "python": "def reverseWordsWithSameVowelCount(head):\n    # Write your solution here\n    pass",
+    "cpp": "ListNode* reverseWordsWithSameVowelCount(ListNode* head) {\n    // Write your solution here\n}",
+    "go": "func reverseWordsWithSameVowelCount(head *ListNode) *ListNode {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "reverseWordsWithSameVowelCount",
+    "typescript": "reverseWordsWithSameVowelCount",
+    "python": "reverseWordsWithSameVowelCount",
+    "cpp": "reverseWordsWithSameVowelCount",
+    "go": "ReverseWordsWithSameVowelCount"
+  }
 }

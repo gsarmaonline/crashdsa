@@ -1,13 +1,26 @@
 {
   "slug": "first-bad-version",
   "functionName": "firstBadVersion",
-  "params": [
-    {
-      "name": "nums",
-      "type": "int[]"
-    }
-  ],
+  "params": [],
   "returnType": "int",
   "testCases": [],
-  "_status": "scaffold"
+  "isDesignProblem": true,
+  "_status": "complete",
+  "description": "You are a product manager with n versions [1, 2, ..., n]. You want to find the first bad version that causes all subsequent versions to be bad. You have access to an API isBadVersion(version) which returns whether a version is bad. Minimize the number of API calls.",
+  "examples": [
+    {
+      "input": "n = 5, bad = 4",
+      "output": "4",
+      "explanation": "isBadVersion(3) returns false, isBadVersion(5) returns true, isBadVersion(4) returns true. First bad version is 4."
+    },
+    {
+      "input": "n = 1, bad = 1",
+      "output": "1"
+    }
+  ],
+  "constraints": [
+    "1 <= bad <= n <= 2^31 - 1"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

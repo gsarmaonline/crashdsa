@@ -8,6 +8,59 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "(())" },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": ")(" },
+      "expected": 0,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "()()" },
+      "expected": 4,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "(" },
+      "expected": 0,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "(()()" },
+      "expected": 4,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Longest Balanced Substring version I: find the length of the longest contiguous substring that forms a valid balanced parentheses sequence.",
+  "examples": [
+    {
+      "input": "s = \"(()\"",
+      "output": "2",
+      "explanation": "The longest balanced substring is \"()\" of length 2."
+    }
+  ],
+  "constraints": [
+    "0 <= s.length <= 3 * 10^4",
+    "s consists only of '(' and ')'"
+  ],
+  "starterCode": {
+    "javascript": "function longestBalancedSubstringI(s) {\n  // your code here\n}",
+    "python": "def longestBalancedSubstringI(s):\n    pass",
+    "java": "public int longestBalancedSubstringI(String s) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "longestBalancedSubstringI",
+    "python": "longestBalancedSubstringI",
+    "java": "longestBalancedSubstringI"
+  }
 }

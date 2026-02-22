@@ -2,12 +2,77 @@
   "slug": "combination-sum-ii",
   "functionName": "combinationSumIi",
   "params": [
-    {
-      "name": "nums",
-      "type": "int[]"
-    }
+    { "name": "candidates", "type": "int[]" },
+    { "name": "target", "type": "int" }
   ],
   "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "outputOrderMatters": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "candidates": [10,1,2,7,6,1,5], "target": 8 },
+      "expected": [[1,1,6],[1,2,5],[1,7],[2,6]],
+      "explanation": "Each candidate used at most once. 1+1+6=8, 1+2+5=8, 1+7=8, 2+6=8. No duplicate combinations.",
+      "tags": ["basic", "duplicates"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "candidates": [2,5,2,1,2], "target": 5 },
+      "expected": [[1,2,2],[5]],
+      "explanation": "1+2+2=5 (using the three 2s), 5=5.",
+      "tags": ["basic", "duplicates"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "candidates": [1], "target": 1 },
+      "expected": [[1]],
+      "explanation": "Single candidate equals target.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "candidates": [1,1], "target": 2 },
+      "expected": [[1,1]],
+      "explanation": "Two 1s sum to 2. Only one unique combination.",
+      "tags": ["edge-case", "duplicates"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "candidates": [1,2], "target": 3 },
+      "expected": [[1,2]],
+      "explanation": "1+2=3. No other combination possible.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a collection of candidate numbers (`candidates`) and a target number (`target`), find all unique combinations in `candidates` where the candidate numbers sum to `target`.\n\nEach number in `candidates` may only be used once in the combination. The solution set must not contain duplicate combinations.\n\nSee the full problem on [LeetCode 40](https://leetcode.com/problems/combination-sum-ii/).",
+  "examples": [
+    {
+      "input": "candidates = [10,1,2,7,6,1,5], target = 8",
+      "output": "[[1,1,6],[1,2,5],[1,7],[2,6]]"
+    },
+    {
+      "input": "candidates = [2,5,2,1,2], target = 5",
+      "output": "[[1,2,2],[5]]"
+    }
+  ],
+  "constraints": [
+    "1 <= candidates.length <= 100",
+    "1 <= candidates[i] <= 50",
+    "1 <= target <= 30"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} candidates\n * @param {number} target\n * @return {number[][]}\n */\nfunction combinationSumIi(candidates, target) {\n  // Write your solution here\n}",
+    "typescript": "function combinationSumIi(candidates: number[], target: number): number[][] {\n  // Write your solution here\n}",
+    "python": "def combination_sum_ii(candidates: list[int], target: int) -> list[list[int]]:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nvector<vector<int>> combinationSumIi(vector<int>& candidates, int target) {\n    // Write your solution here\n}",
+    "go": "func combinationSumIi(candidates []int, target int) [][]int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "combinationSumIi",
+    "typescript": "combinationSumIi",
+    "python": "combination_sum_ii",
+    "cpp": "combinationSumIi",
+    "go": "CombinationSumIi"
+  }
 }

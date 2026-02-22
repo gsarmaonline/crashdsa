@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "a" },
+      "expected": 1,
+      "tags": ["basic", "single"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "aa" },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "ab" },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "aab" },
+      "expected": 5,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "aba" },
+      "expected": 5,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string s, count the number of stable subarrays. A subarray is considered stable if all characters within it are the same (i.e., it is a uniform substring). Return the total count of such subarrays.",
+  "examples": [
+    {
+      "input": "s = \"aa\"",
+      "output": "3",
+      "explanation": "Subarrays: \"a\" (index 0), \"a\" (index 1), \"aa\" (indices 0-1). All are stable. Total = 3."
+    },
+    {
+      "input": "s = \"ab\"",
+      "output": "2",
+      "explanation": "Subarrays: \"a\" and \"b\" are stable; \"ab\" is not. Total = 2."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of lowercase English letters"
+  ],
+  "starterCode": {
+    "python": "def countStableSubarrays(s: str) -> int:\n    pass",
+    "javascript": "function countStableSubarrays(s) {\n\n}",
+    "typescript": "function countStableSubarrays(s: string): number {\n\n}",
+    "java": "class Solution {\n    public int countStableSubarrays(String s) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int countStableSubarrays(string s) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "countStableSubarrays",
+    "javascript": "countStableSubarrays",
+    "typescript": "countStableSubarrays",
+    "java": "countStableSubarrays",
+    "cpp": "countStableSubarrays"
+  }
 }

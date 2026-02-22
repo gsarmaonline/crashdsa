@@ -8,6 +8,56 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [10, 9, 2, 5, 3, 7, 101, 18] },
+      "expected": 4,
+      "explanation": "LIS is [2,3,7,101] or [2,5,7,101], length 4",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [0, 1, 0, 3, 2, 3] },
+      "expected": 4,
+      "explanation": "LIS is [0,1,2,3], length 4",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [7, 7, 7, 7, 7] },
+      "expected": 1,
+      "explanation": "All elements equal; strictly increasing subsequence has length 1",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1] },
+      "expected": 1,
+      "explanation": "Single element array; LIS length is 1",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 2, 3, 4, 5] },
+      "expected": 5,
+      "explanation": "Already sorted in strictly increasing order; entire array is LIS",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence. A subsequence is derived by deleting some (or no) elements without changing the order of remaining elements.",
+  "examples": [
+    {
+      "input": "nums = [10,9,2,5,3,7,101,18]",
+      "output": "4",
+      "explanation": "The longest increasing subsequence is [2,3,7,101], therefore the length is 4."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 2500",
+    "-10^4 <= nums[i] <= 10^4"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

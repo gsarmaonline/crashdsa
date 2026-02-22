@@ -3,11 +3,68 @@
   "functionName": "findTheLeastFrequentDigit",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "n",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "n": 1234 },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "n": 11223 },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "n": 999 },
+      "expected": 9,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "n": 5 },
+      "expected": 5,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "n": 112233 },
+      "expected": 1,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a positive integer n, find the digit that appears least frequently in its decimal representation. If multiple digits tie for least frequency, return the smallest such digit.",
+  "examples": [
+    {
+      "input": "n = 1234",
+      "output": "1",
+      "explanation": "Each digit 1,2,3,4 appears once. Smallest with minimum frequency = 1."
+    },
+    {
+      "input": "n = 11223",
+      "output": "3",
+      "explanation": "Frequencies: 1→2, 2→2, 3→1. Least frequent is 3 with frequency 1."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "function findTheLeastFrequentDigit(n) {\n  // your code here\n}",
+    "python": "def findTheLeastFrequentDigit(n):\n    pass",
+    "java": "public int findTheLeastFrequentDigit(int n) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "findTheLeastFrequentDigit",
+    "python": "findTheLeastFrequentDigit",
+    "java": "findTheLeastFrequentDigit"
+  }
 }

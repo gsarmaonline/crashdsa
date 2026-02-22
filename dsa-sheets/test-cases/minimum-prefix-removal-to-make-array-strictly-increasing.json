@@ -8,6 +8,48 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "Return the minimum number of elements to remove from the prefix of the array so that the remaining array is strictly increasing.",
+  "examples": [
+    {"input": "nums=[5,3,4,5,6]", "output": "2"},
+    {"input": "nums=[1,2,3]", "output": "0"}
+  ],
+  "constraints": ["1 <= nums.length <= 10^5", "1 <= nums[i] <= 10^9"],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {"nums": [5, 3, 4, 5, 6]},
+      "expected": 2,
+      "explanation": "Remove prefix [5,3]; remaining [4,5,6] is strictly increasing. 2 removals.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {"nums": [1, 2, 3]},
+      "expected": 0,
+      "explanation": "Array is already strictly increasing; no removals needed.",
+      "tags": ["basic", "no-removal"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {"nums": [5, 4, 3, 2, 1]},
+      "expected": 4,
+      "explanation": "Remove prefix [5,4,3,2]; remaining [1] is trivially strictly increasing. 4 removals.",
+      "tags": ["descending"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {"nums": [1]},
+      "expected": 0,
+      "explanation": "Single element is already strictly increasing.",
+      "tags": ["edge", "single"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {"nums": [3, 1, 2]},
+      "expected": 1,
+      "explanation": "Remove prefix [3]; remaining [1,2] is strictly increasing. 1 removal.",
+      "tags": ["basic"]
+    }
+  ]
 }

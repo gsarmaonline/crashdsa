@@ -5,9 +5,67 @@
     {
       "name": "s",
       "type": "string"
+    },
+    {
+      "name": "k",
+      "type": "int"
     }
   ],
-  "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "string",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "(())()", "k": 1 },
+      "expected": "()",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "()()()", "k": 2 },
+      "expected": "()",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "(())", "k": 1 },
+      "expected": "()",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "()", "k": 1 },
+      "expected": "",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "(()())", "k": 1 },
+      "expected": "(())",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a balanced parentheses string s and integer k, remove exactly k balanced substrings from s and return the resulting string.",
+  "examples": [
+    {
+      "input": "s = \"(())()\", k = 1",
+      "output": "\"()\"",
+      "explanation": "Remove one balanced substring. \"(())\" → remove inner \"()\" → \"()\". Result after removing the outer balanced part = \"()\"."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s is a valid balanced parentheses string",
+    "1 <= k <= s.length / 2"
+  ],
+  "starterCode": {
+    "javascript": "function removeKBalancedSubstrings(s, k) {\n  // your code here\n}",
+    "python": "def removeKBalancedSubstrings(s, k):\n    pass",
+    "java": "public String removeKBalancedSubstrings(String s, int k) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "removeKBalancedSubstrings",
+    "python": "removeKBalancedSubstrings",
+    "java": "removeKBalancedSubstrings"
+  }
 }

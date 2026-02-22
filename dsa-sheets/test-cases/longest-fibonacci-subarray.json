@@ -3,11 +3,69 @@
   "functionName": "longestFibonacciSubarray",
   "params": [
     {
-      "name": "s",
-      "type": "string"
+      "name": "nums",
+      "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 1, 2, 3, 5, 8] },
+      "expected": 6,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3, 5, 8] },
+      "expected": 5,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 2, 4] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1, 1, 1] },
+      "expected": 2,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [2, 2, 4, 6, 10] },
+      "expected": 5,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Find the length of the longest contiguous Fibonacci-like subarray, where each element (starting from the third) equals the sum of the two preceding elements.",
+  "examples": [
+    {
+      "input": "nums = [1,1,2,3,5,8]",
+      "output": "6",
+      "explanation": "The entire array is Fibonacci-like: 1+1=2, 1+2=3, 2+3=5, 3+5=8."
+    },
+    {
+      "input": "nums = [1,1,1]",
+      "output": "2",
+      "explanation": "1+1=2 != 1, so [1,1] is the longest Fibonacci-like subarray (trivially, any two elements form length 2)."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^4",
+    "1 <= nums[i] <= 10^9"
+  ],
+  "starterCode": {
+    "javascript": "function longestFibonacciSubarray(nums) {\n  // your code here\n}",
+    "python": "def longestFibonacciSubarray(nums):\n    pass",
+    "java": "public int longestFibonacciSubarray(int[] nums) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "longestFibonacciSubarray",
+    "python": "longestFibonacciSubarray",
+    "java": "longestFibonacciSubarray"
+  }
 }

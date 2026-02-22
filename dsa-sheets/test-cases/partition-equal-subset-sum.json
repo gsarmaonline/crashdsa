@@ -7,7 +7,57 @@
       "type": "int[]"
     }
   ],
-  "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 5, 11, 5] },
+      "expected": true,
+      "explanation": "The array can be partitioned as [1,5,5] and [11], each summing to 11",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 2, 3, 5] },
+      "expected": false,
+      "explanation": "Total sum is 11 (odd), cannot be split into two equal subsets",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [1, 1] },
+      "expected": true,
+      "explanation": "Partition as [1] and [1], each summing to 1",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [1] },
+      "expected": false,
+      "explanation": "Single element cannot be partitioned into two non-empty equal-sum subsets",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [2, 2, 4] },
+      "expected": true,
+      "explanation": "Partition as [2,2] and [4], each summing to 4",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a non-empty array nums containing only positive integers, determine if it can be partitioned into two subsets such that the sum of elements in both subsets is equal.",
+  "examples": [
+    {
+      "input": "nums = [1,5,11,5]",
+      "output": "true",
+      "explanation": "The array can be partitioned as [1, 5, 5] and [11]."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 200",
+    "1 <= nums[i] <= 100"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

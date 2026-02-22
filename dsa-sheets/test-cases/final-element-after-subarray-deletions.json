@@ -8,6 +8,68 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s": "1" },
+      "expected": 1,
+      "tags": ["basic", "single"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s": "12" },
+      "expected": 1,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s": "321" },
+      "expected": 3,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s": "1432" },
+      "expected": 4,
+      "tags": ["medium"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s": "54321" },
+      "expected": 5,
+      "tags": ["medium"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given a string of digits representing array elements, repeatedly delete subarrays according to specified rules (e.g., delete the smallest subarray segment), and return the final remaining element as an integer.",
+  "examples": [
+    {
+      "input": "s = \"321\"",
+      "output": "3",
+      "explanation": "The largest element survives after all deletions."
+    },
+    {
+      "input": "s = \"12\"",
+      "output": "1",
+      "explanation": "The first (smallest remaining dominant) element survives."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 10^5",
+    "s consists of digit characters '1'-'9'"
+  ],
+  "starterCode": {
+    "python": "def finalElementAfterSubarrayDeletions(s: str) -> int:\n    pass",
+    "javascript": "function finalElementAfterSubarrayDeletions(s) {\n\n}",
+    "typescript": "function finalElementAfterSubarrayDeletions(s: string): number {\n\n}",
+    "java": "class Solution {\n    public int finalElementAfterSubarrayDeletions(String s) {\n\n    }\n}",
+    "cpp": "class Solution {\npublic:\n    int finalElementAfterSubarrayDeletions(string s) {\n\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "finalElementAfterSubarrayDeletions",
+    "javascript": "finalElementAfterSubarrayDeletions",
+    "typescript": "finalElementAfterSubarrayDeletions",
+    "java": "finalElementAfterSubarrayDeletions",
+    "cpp": "finalElementAfterSubarrayDeletions"
+  }
 }

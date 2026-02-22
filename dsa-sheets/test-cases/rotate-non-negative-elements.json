@@ -8,6 +8,83 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "nums": [3, -1, 2, -2, 1]
+      },
+      "expected": 3,
+      "explanation": "Non-negative elements are [3,2,1]. After rotating right by 1: [1,3,2]. The first non-negative element in original order is now 1, but return count of non-negatives rotated = 3",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "nums": [1, 2, 3, 4]
+      },
+      "expected": 4,
+      "explanation": "All elements are non-negative, all 4 are rotated",
+      "tags": ["all-non-negative"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "nums": [-1, -2, -3]
+      },
+      "expected": 0,
+      "explanation": "No non-negative elements, nothing to rotate",
+      "tags": ["all-negative"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "nums": [5]
+      },
+      "expected": 1,
+      "explanation": "Single non-negative element, count is 1",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "nums": [0, -1, 0, -2, 0]
+      },
+      "expected": 3,
+      "explanation": "Three zeros (non-negative), count is 3",
+      "tags": ["zeros"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array `nums`, rotate the non-negative elements among them (in-place among their positions) and return the count of non-negative elements.",
+  "examples": [
+    {
+      "input": "nums = [3,-1,2,-2,1]",
+      "output": "3",
+      "explanation": "Non-negative elements are [3,2,1], they are rotated among their positions."
+    },
+    {
+      "input": "nums = [1,2,3,4]",
+      "output": "4",
+      "explanation": "All four elements are non-negative."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^4",
+    "-10^5 <= nums[i] <= 10^5"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number[]} nums\n * @return {number}\n */\nfunction rotateNonNegativeElements(nums) {\n  // Write your solution here\n}",
+    "typescript": "function rotateNonNegativeElements(nums: number[]): number {\n  // Write your solution here\n}",
+    "python": "def rotateNonNegativeElements(nums: list[int]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nint rotateNonNegativeElements(vector<int>& nums) {\n    // Write your solution here\n}",
+    "go": "func rotateNonNegativeElements(nums []int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "rotateNonNegativeElements",
+    "typescript": "rotateNonNegativeElements",
+    "python": "rotateNonNegativeElements",
+    "cpp": "rotateNonNegativeElements",
+    "go": "RotateNonNegativeElements"
+  }
 }

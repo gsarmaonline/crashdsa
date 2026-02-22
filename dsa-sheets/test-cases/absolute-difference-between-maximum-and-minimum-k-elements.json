@@ -8,6 +8,82 @@
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "n": 5
+      },
+      "expected": 6,
+      "explanation": "For n=5, array [1,2,3,4,5]. Sum of top-2 = 4+5=9, sum of bottom-2 = 1+2=3. |9-3|=6.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "n": 1
+      },
+      "expected": 0,
+      "explanation": "Only one element, max and min are the same. Difference is 0.",
+      "tags": ["single-element"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "n": 4
+      },
+      "expected": 4,
+      "explanation": "Array [1,2,3,4]. Sum of top-2 = 3+4=7, sum of bottom-2 = 1+2=3. |7-3|=4.",
+      "tags": ["even-length"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "n": 6
+      },
+      "expected": 9,
+      "explanation": "Array [1,2,3,4,5,6]. Sum of top-3 = 4+5+6=15, sum of bottom-3 = 1+2+3=6. |15-6|=9.",
+      "tags": ["larger-input"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "n": 2
+      },
+      "expected": 1,
+      "explanation": "Array [1,2]. Sum of top-1 = 2, sum of bottom-1 = 1. |2-1|=1.",
+      "tags": ["two-elements"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an integer `n`, consider the array [1, 2, ..., n]. Let k = floor(n/2). Return the absolute difference between the sum of the k largest elements and the sum of the k smallest elements.",
+  "examples": [
+    {
+      "input": "n = 5",
+      "output": "6",
+      "explanation": "k=2. Top-2 sum = 4+5=9, bottom-2 sum = 1+2=3. |9-3|=6."
+    },
+    {
+      "input": "n = 4",
+      "output": "4",
+      "explanation": "k=2. Top-2 sum = 3+4=7, bottom-2 sum = 1+2=3. |7-3|=4."
+    }
+  ],
+  "constraints": [
+    "1 <= n <= 10^5"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} n\n * @return {number}\n */\nfunction absoluteDifferenceBetweenMaximumAndMinimumKElements(n) {\n  // Write your solution here\n}",
+    "typescript": "function absoluteDifferenceBetweenMaximumAndMinimumKElements(n: number): number {\n  // Write your solution here\n}",
+    "python": "def absoluteDifferenceBetweenMaximumAndMinimumKElements(n: int) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "int absoluteDifferenceBetweenMaximumAndMinimumKElements(int n) {\n    // Write your solution here\n}",
+    "go": "func absoluteDifferenceBetweenMaximumAndMinimumKElements(n int) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "absoluteDifferenceBetweenMaximumAndMinimumKElements",
+    "typescript": "absoluteDifferenceBetweenMaximumAndMinimumKElements",
+    "python": "absoluteDifferenceBetweenMaximumAndMinimumKElements",
+    "cpp": "absoluteDifferenceBetweenMaximumAndMinimumKElements",
+    "go": "AbsoluteDifferenceBetweenMaximumAndMinimumKElements"
+  }
 }

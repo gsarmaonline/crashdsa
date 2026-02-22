@@ -1,13 +1,36 @@
 {
   "slug": "min-stack",
-  "functionName": "minStack",
-  "params": [
+  "functionName": "MinStack",
+  "isDesignProblem": true,
+  "params": [],
+  "returnType": "void",
+  "_status": "complete",
+  "description": "Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.\n\nImplement the `MinStack` class:\n- `MinStack()` initializes the stack object.\n- `void push(int val)` pushes the element `val` onto the stack.\n- `void pop()` removes the element on the top of the stack.\n- `int top()` gets the top element of the stack.\n- `int getMin()` retrieves the minimum element in the stack.\n\nYou must implement a solution with O(1) time complexity for each function.",
+  "examples": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "input": "MinStack minStack = new MinStack();\nminStack.push(-2);\nminStack.push(0);\nminStack.push(-3);\nminStack.getMin(); // return -3\nminStack.pop();\nminStack.top();    // return 0\nminStack.getMin(); // return -2",
+      "output": "[-3, 0, -2]",
+      "explanation": "After pushing -2, 0, -3: min is -3. After popping -3: top is 0, min is -2."
     }
   ],
-  "returnType": "int[]",
+  "constraints": [
+    "-2^31 <= val <= 2^31 - 1",
+    "Methods pop, top and getMin operations will always be called on non-empty stacks.",
+    "At most 3 * 10^4 calls will be made to push, pop, top, and getMin."
+  ],
   "testCases": [],
-  "_status": "scaffold"
+  "starterCode": {
+    "javascript": "class MinStack {\n  constructor() {\n    // Write your solution here\n  }\n\n  /** @param {number} val */\n  push(val) {\n    // Write your solution here\n  }\n\n  pop() {\n    // Write your solution here\n  }\n\n  /** @return {number} */\n  top() {\n    // Write your solution here\n  }\n\n  /** @return {number} */\n  getMin() {\n    // Write your solution here\n  }\n}",
+    "typescript": "class MinStack {\n  constructor() {\n    // Write your solution here\n  }\n\n  push(val: number): void {\n    // Write your solution here\n  }\n\n  pop(): void {\n    // Write your solution here\n  }\n\n  top(): number {\n    // Write your solution here\n  }\n\n  getMin(): number {\n    // Write your solution here\n  }\n}",
+    "python": "class MinStack:\n    def __init__(self):\n        # Write your solution here\n        pass\n\n    def push(self, val: int) -> None:\n        # Write your solution here\n        pass\n\n    def pop(self) -> None:\n        # Write your solution here\n        pass\n\n    def top(self) -> int:\n        # Write your solution here\n        pass\n\n    def get_min(self) -> int:\n        # Write your solution here\n        pass",
+    "cpp": "class MinStack {\npublic:\n    MinStack() {\n        // Write your solution here\n    }\n\n    void push(int val) {\n        // Write your solution here\n    }\n\n    void pop() {\n        // Write your solution here\n    }\n\n    int top() {\n        // Write your solution here\n    }\n\n    int getMin() {\n        // Write your solution here\n    }\n};",
+    "go": "type MinStack struct {\n    // Write your solution here\n}\n\nfunc Constructor() MinStack {\n    // Write your solution here\n    return MinStack{}\n}\n\nfunc (s *MinStack) Push(val int) {\n    // Write your solution here\n}\n\nfunc (s *MinStack) Pop() {\n    // Write your solution here\n}\n\nfunc (s *MinStack) Top() int {\n    // Write your solution here\n    return 0\n}\n\nfunc (s *MinStack) GetMin() int {\n    // Write your solution here\n    return 0\n}"
+  },
+  "functionNameMap": {
+    "javascript": "MinStack",
+    "typescript": "MinStack",
+    "python": "MinStack",
+    "cpp": "MinStack",
+    "go": "MinStack"
+  }
 }

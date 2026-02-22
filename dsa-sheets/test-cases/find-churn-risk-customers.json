@@ -8,6 +8,34 @@
     }
   ],
   "returnType": "int",
+  "isDesignProblem": true,
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "description": "A SQL-style analytical problem: Given customer activity data (login frequency, purchase history, support tickets, last active date), identify customers at high risk of churning. A customer is considered churn-risk if they have not made a purchase in the last 30 days AND their login frequency in the past 60 days is below a threshold. Return a query or logic that retrieves the list of at-risk customer IDs.",
+  "examples": [
+    {
+      "input": "Customers table with columns: customer_id, last_purchase_date, login_count_60d, support_tickets_30d",
+      "output": "List of customer_ids where last_purchase_date < TODAY - 30 AND login_count_60d < 5",
+      "explanation": "Customers inactive for 30 days and with fewer than 5 logins in 60 days are flagged as churn-risk."
+    }
+  ],
+  "constraints": [
+    "This is a SQL/analytical design problem",
+    "Assume standard SQL date functions are available",
+    "Customer IDs are unique positive integers"
+  ],
+  "starterCode": {
+    "python": "# SQL-style problem\n# Write a query or function to find churn-risk customers\ndef findChurnRiskCustomers(customers):\n    \"\"\"\n    customers: list of dicts with keys:\n      - customer_id (int)\n      - last_purchase_days_ago (int)\n      - login_count_60d (int)\n    Returns list of churn-risk customer_ids\n    \"\"\"\n    pass",
+    "javascript": "// SQL-style problem\nfunction findChurnRiskCustomers(customers) {\n    // customers: array of {customer_id, last_purchase_days_ago, login_count_60d}\n    // Return array of churn-risk customer_ids\n}",
+    "typescript": "// SQL-style problem\ninterface Customer {\n    customer_id: number;\n    last_purchase_days_ago: number;\n    login_count_60d: number;\n}\nfunction findChurnRiskCustomers(customers: Customer[]): number[] {\n\n}",
+    "java": "// SQL-style problem\nimport java.util.*;\nclass Solution {\n    public List<Integer> findChurnRiskCustomers(int[][] customers) {\n        // customers[i] = [customer_id, last_purchase_days_ago, login_count_60d]\n        return new ArrayList<>();\n    }\n}",
+    "cpp": "// SQL-style problem\nclass Solution {\npublic:\n    vector<int> findChurnRiskCustomers(vector<vector<int>>& customers) {\n        // customers[i] = {customer_id, last_purchase_days_ago, login_count_60d}\n        return {};\n    }\n};"
+  },
+  "functionNameMap": {
+    "python": "findChurnRiskCustomers",
+    "javascript": "findChurnRiskCustomers",
+    "typescript": "findChurnRiskCustomers",
+    "java": "findChurnRiskCustomers",
+    "cpp": "findChurnRiskCustomers"
+  }
 }

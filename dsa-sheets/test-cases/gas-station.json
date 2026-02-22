@@ -3,11 +3,66 @@
   "functionName": "gasStation",
   "params": [
     {
-      "name": "nums",
+      "name": "gas",
+      "type": "int[]"
+    },
+    {
+      "name": "cost",
       "type": "int[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "gas": [1, 2, 3, 4, 5], "cost": [3, 4, 5, 1, 2] },
+      "expected": 3,
+      "explanation": "Start at station 3: +4-1=3, go to 4: +5-2=6, go to 0: +1-3=-2+6=4... completing the circuit",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "gas": [2, 3, 4], "cost": [3, 4, 3] },
+      "expected": -1,
+      "explanation": "Total gas (9) < total cost (10); impossible to complete circuit",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "gas": [1], "cost": [1] },
+      "expected": 0,
+      "explanation": "Single station; start at 0, net gain = 0, circuit completes",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "gas": [5], "cost": [4] },
+      "expected": 0,
+      "explanation": "Single station with surplus; start at 0",
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "gas": [5, 1, 2, 3, 4], "cost": [4, 4, 1, 5, 1] },
+      "expected": 4,
+      "explanation": "Start at station 4: +4-1=3, go to 0: +5-4=4, go to 1: +1-4=-2 fail? No: carry 3+4=7-4=3, 3+5-4=4, 4+1-4=1, 1+2-1=2, 2+3-5=0. Circuit completes.",
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "There are n gas stations along a circular route. You are given two integer arrays gas and cost. gas[i] is the gas at station i and cost[i] is the cost to travel from station i to the next. Return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return -1.",
+  "examples": [
+    {
+      "input": "gas = [1,2,3,4,5], cost = [3,4,5,1,2]",
+      "output": "3",
+      "explanation": "Start at station 3 (index 3) and fill up with 4 unit of gas. Your tank = 0 + 4 = 4. Travel to station 4..."
+    }
+  ],
+  "constraints": [
+    "n == gas.length == cost.length",
+    "1 <= n <= 10^5",
+    "0 <= gas[i], cost[i] <= 10^4"
+  ],
+  "starterCode": {},
+  "functionNameMap": {}
 }

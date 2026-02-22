@@ -1,13 +1,84 @@
 {
   "slug": "permutation-in-string",
-  "functionName": "permutationInString",
+  "functionName": "checkInclusion",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "s1",
+      "type": "string"
+    },
+    {
+      "name": "s2",
+      "type": "string"
     }
   ],
-  "returnType": "int[][]",
-  "testCases": [],
-  "_status": "scaffold"
+  "returnType": "boolean",
+  "_status": "complete",
+  "description": "Given two strings `s1` and `s2`, return `true` if `s2` contains a permutation of `s1`, or `false` otherwise.\n\nIn other words, return `true` if one of `s1`'s permutations is the substring of `s2`.",
+  "examples": [
+    {
+      "input": "s1 = \"ab\", s2 = \"eidbaooo\"",
+      "output": "true",
+      "explanation": "s2 contains one permutation of s1 (\"ba\" at index 3)."
+    },
+    {
+      "input": "s1 = \"ab\", s2 = \"eidboaoo\"",
+      "output": "false",
+      "explanation": "No permutation of s1 (\"ab\" or \"ba\") appears as a contiguous substring of s2."
+    }
+  ],
+  "constraints": [
+    "1 <= s1.length, s2.length <= 10^4",
+    "s1 and s2 consist of lowercase English letters."
+  ],
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "s1": "ab", "s2": "eidbaooo" },
+      "expected": true,
+      "explanation": "\"ba\" at index 3 in s2 is a permutation of \"ab\".",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "s1": "ab", "s2": "eidboaoo" },
+      "expected": false,
+      "explanation": "No contiguous window in s2 contains a permutation of \"ab\".",
+      "tags": ["basic", "no-solution"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "s1": "adc", "s2": "dcda" },
+      "expected": true,
+      "explanation": "\"cda\" (index 1-3) is a permutation of \"adc\".",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "s1": "abc", "s2": "ab" },
+      "expected": false,
+      "explanation": "s1 is longer than s2 — no permutation of s1 can fit in s2.",
+      "tags": ["edge-case"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "s1": "a", "s2": "a" },
+      "expected": true,
+      "explanation": "s2 is exactly s1 — the single character is its own permutation.",
+      "tags": ["single-element", "edge-case"]
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s1\n * @param {string} s2\n * @return {boolean}\n */\nfunction checkInclusion(s1, s2) {\n  // Write your solution here\n}",
+    "typescript": "function checkInclusion(s1: string, s2: string): boolean {\n  // Write your solution here\n}",
+    "python": "def check_inclusion(s1: str, s2: str) -> bool:\n    # Write your solution here\n    pass",
+    "cpp": "bool checkInclusion(string s1, string s2) {\n    // Write your solution here\n}",
+    "go": "func checkInclusion(s1 string, s2 string) bool {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "checkInclusion",
+    "typescript": "checkInclusion",
+    "python": "check_inclusion",
+    "cpp": "checkInclusion",
+    "go": "CheckInclusion"
+  }
 }

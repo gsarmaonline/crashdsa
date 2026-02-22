@@ -1,13 +1,115 @@
 {
   "slug": "word-ladder",
-  "functionName": "wordLadder",
+  "functionName": "ladderLength",
   "params": [
     {
-      "name": "n",
-      "type": "int"
+      "name": "beginWord",
+      "type": "string"
+    },
+    {
+      "name": "endWord",
+      "type": "string"
+    },
+    {
+      "name": "wordList",
+      "type": "string[]"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "beginWord": "hit",
+        "endWord": "cog",
+        "wordList": ["hot","dot","dog","lot","log","cog"]
+      },
+      "expected": 5,
+      "explanation": "hit -> hot -> dot -> dog -> cog (5 words in transformation sequence).",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "beginWord": "hit",
+        "endWord": "cog",
+        "wordList": ["hot","dot","dog","lot","log"]
+      },
+      "expected": 0,
+      "explanation": "endWord 'cog' is not in the wordList, so no valid transformation exists.",
+      "tags": ["impossible", "end-not-in-list"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "beginWord": "a",
+        "endWord": "c",
+        "wordList": ["a","b","c"]
+      },
+      "expected": 2,
+      "explanation": "a -> c (one letter difference, sequence length 2).",
+      "tags": ["edge-case", "short-words"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "beginWord": "hot",
+        "endWord": "dog",
+        "wordList": ["hot","hog","dog"]
+      },
+      "expected": 3,
+      "explanation": "hot -> hog -> dog (3 words in transformation sequence).",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "beginWord": "hot",
+        "endWord": "dog",
+        "wordList": ["hot","dog"]
+      },
+      "expected": 0,
+      "explanation": "No single-letter transformation path from 'hot' to 'dog' with only these words.",
+      "tags": ["impossible"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Word Ladder** problem.\n\nGiven a beginWord, endWord, and a wordList, find the length of the shortest transformation sequence from beginWord to endWord such that only one letter is changed at a time and each intermediate word exists in wordList. Return 0 if no such sequence exists.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/word-ladder/).",
+  "examples": [
+    {
+      "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "output": "5",
+      "explanation": "hit -> hot -> dot -> dog -> cog"
+    },
+    {
+      "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
+      "output": "0",
+      "explanation": "endWord 'cog' not in wordList."
+    }
+  ],
+  "constraints": [
+    "1 <= beginWord.length <= 10",
+    "endWord.length == beginWord.length",
+    "1 <= wordList.length <= 5000",
+    "wordList[i].length == beginWord.length",
+    "beginWord, endWord, and wordList[i] consist of lowercase English letters",
+    "beginWord != endWord",
+    "All words in wordList are unique"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} beginWord\n * @param {string} endWord\n * @param {string[]} wordList\n * @return {number}\n */\nfunction ladderLength(beginWord, endWord, wordList) {\n  // Write your solution here\n}",
+    "typescript": "function ladderLength(beginWord: string, endWord: string, wordList: string[]): number {\n  // Write your solution here\n}",
+    "python": "def ladder_length(beginWord: str, endWord: str, wordList: list[str]) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\n#include <string>\nusing namespace std;\nint ladderLength(string beginWord, string endWord, vector<string>& wordList) {\n    // Write your solution here\n}",
+    "go": "func ladderLength(beginWord string, endWord string, wordList []string) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "ladderLength",
+    "typescript": "ladderLength",
+    "python": "ladder_length",
+    "cpp": "ladderLength",
+    "go": "LadderLength"
+  }
 }

@@ -1,13 +1,98 @@
 {
   "slug": "decode-ways",
-  "functionName": "decodeWays",
+  "functionName": "numDecodings",
   "params": [
     {
-      "name": "nums",
-      "type": "int[]"
+      "name": "s",
+      "type": "string"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "outputOrderMatters": false,
+  "isDesignProblem": false,
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": {
+        "s": "12"
+      },
+      "expected": 2,
+      "explanation": "Can be decoded as 'AB' (1,2) or 'L' (12). Total: 2 ways.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": {
+        "s": "226"
+      },
+      "expected": 3,
+      "explanation": "Can be decoded as 'BZ' (2,26), 'VF' (22,6), or 'BBF' (2,2,6). Total: 3 ways.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": {
+        "s": "06"
+      },
+      "expected": 0,
+      "explanation": "'06' cannot be decoded because '0' alone has no mapping and '06' > 26.",
+      "tags": ["edge-case", "leading-zero"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": {
+        "s": "11106"
+      },
+      "expected": 2,
+      "explanation": "Can be decoded as (1,1,10,6) or (11,10,6). Total: 2 ways.",
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": {
+        "s": "10"
+      },
+      "expected": 1,
+      "explanation": "'10' can only be decoded as 'J' (10). Total: 1 way.",
+      "tags": ["edge-case", "ten"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Solve the **Decode Ways** problem.\n\nA message encoded with the mapping 'A'->1, 'B'->2, ..., 'Z'->26 is given as a digit string s. Find the total number of ways to decode it.\n\nSee the full problem description on [LeetCode](https://leetcode.com/problems/decode-ways/).",
+  "examples": [
+    {
+      "input": "s = \"12\"",
+      "output": "2",
+      "explanation": "'AB' (1+2) or 'L' (12)."
+    },
+    {
+      "input": "s = \"226\"",
+      "output": "3",
+      "explanation": "'BBF' (2+2+6), 'BZ' (2+26), or 'VF' (22+6)."
+    },
+    {
+      "input": "s = \"06\"",
+      "output": "0",
+      "explanation": "No valid decoding exists."
+    }
+  ],
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s contains only digits",
+    "s may contain leading zeros"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nfunction numDecodings(s) {\n  // Write your solution here\n}",
+    "typescript": "function numDecodings(s: string): number {\n  // Write your solution here\n}",
+    "python": "def num_decodings(s: str) -> int:\n    # Write your solution here\n    pass",
+    "cpp": "#include <string>\nusing namespace std;\nint numDecodings(string s) {\n    // Write your solution here\n}",
+    "go": "func numDecodings(s string) int {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "numDecodings",
+    "typescript": "numDecodings",
+    "python": "num_decodings",
+    "cpp": "numDecodings",
+    "go": "NumDecodings"
+  }
 }

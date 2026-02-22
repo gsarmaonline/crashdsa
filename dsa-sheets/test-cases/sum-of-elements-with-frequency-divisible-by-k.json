@@ -5,9 +5,67 @@
     {
       "name": "nums",
       "type": "int[]"
+    },
+    {
+      "name": "k",
+      "type": "int"
     }
   ],
   "returnType": "int",
-  "testCases": [],
-  "_status": "scaffold"
+  "testCases": [
+    {
+      "id": "tc-1",
+      "inputs": { "nums": [1, 2, 2, 3, 3, 3], "k": 3 },
+      "expected": 9,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-2",
+      "inputs": { "nums": [1, 1, 2, 2, 3, 3], "k": 2 },
+      "expected": 12,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-3",
+      "inputs": { "nums": [4, 4, 4, 4], "k": 2 },
+      "expected": 16,
+      "tags": ["basic"]
+    },
+    {
+      "id": "tc-4",
+      "inputs": { "nums": [5, 5, 5], "k": 4 },
+      "expected": 0,
+      "tags": ["edge"]
+    },
+    {
+      "id": "tc-5",
+      "inputs": { "nums": [1, 2, 3], "k": 1 },
+      "expected": 6,
+      "tags": ["basic"]
+    }
+  ],
+  "_status": "complete",
+  "description": "Given an array of integers nums and an integer k, return the sum of elements whose frequency in the array is divisible by k.",
+  "examples": [
+    {
+      "input": "nums = [1,2,2,3,3,3], k = 3",
+      "output": "9",
+      "explanation": "Element 3 appears 3 times (3%3=0), so its contribution is 3*3=9. Elements 1 (freq 1) and 2 (freq 2) do not qualify."
+    }
+  ],
+  "constraints": [
+    "1 <= nums.length <= 10^5",
+    "1 <= nums[i] <= 10^5",
+    "1 <= k <= nums.length"
+  ],
+  "starterCode": {
+    "javascript": "function sumOfElementsWithFrequencyDivisibleByK(nums, k) {\n  // your code here\n}",
+    "python": "def sumOfElementsWithFrequencyDivisibleByK(nums, k):\n    pass",
+    "java": "public int sumOfElementsWithFrequencyDivisibleByK(int[] nums, int k) {\n    // your code here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "sumOfElementsWithFrequencyDivisibleByK",
+    "python": "sumOfElementsWithFrequencyDivisibleByK",
+    "java": "sumOfElementsWithFrequencyDivisibleByK"
+  }
 }

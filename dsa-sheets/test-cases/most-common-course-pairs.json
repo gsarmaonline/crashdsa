@@ -13,5 +13,33 @@
   ],
   "returnType": "boolean",
   "testCases": [],
-  "_status": "scaffold"
+  "_status": "complete",
+  "isDesignProblem": true,
+  "description": "Given a list of student course enrollments, find the most common pair of courses taken together. This is an SQL/aggregation-style problem that requires grouping enrollments by student and counting co-enrollment pairs.",
+  "examples": [
+    {
+      "input": "enrollments = [[1,\"Math\"],[1,\"Science\"],[2,\"Math\"],[2,\"Science\"],[2,\"English\"]]",
+      "output": "[[\"Math\",\"Science\"],2]",
+      "explanation": "Math and Science are taken together by 2 students, which is the most common pair."
+    }
+  ],
+  "constraints": [
+    "1 <= number of students <= 10^4",
+    "1 <= number of courses per student <= 10^2",
+    "Course names are non-empty strings"
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {number} numCourses\n * @param {number[][]} prerequisites\n * @return {boolean}\n */\nfunction mostCommonCoursePairs(numCourses, prerequisites) {\n  // Write your solution here\n}",
+    "typescript": "function mostCommonCoursePairs(numCourses: number, prerequisites: number[][]): boolean {\n  // Write your solution here\n}",
+    "python": "def mostCommonCoursePairs(numCourses: int, prerequisites: list[list[int]]) -> bool:\n    # Write your solution here\n    pass",
+    "cpp": "#include <vector>\nusing namespace std;\nbool mostCommonCoursePairs(int numCourses, vector<vector<int>>& prerequisites) {\n    // Write your solution here\n}",
+    "go": "func mostCommonCoursePairs(numCourses int, prerequisites [][]int) bool {\n    // Write your solution here\n}"
+  },
+  "functionNameMap": {
+    "javascript": "mostCommonCoursePairs",
+    "typescript": "mostCommonCoursePairs",
+    "python": "mostCommonCoursePairs",
+    "cpp": "mostCommonCoursePairs",
+    "go": "MostCommonCoursePairs"
+  }
 }
