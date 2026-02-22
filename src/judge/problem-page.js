@@ -361,6 +361,17 @@
     document.getElementById('run-btn').addEventListener('click', runTests);
     document.getElementById('submit-btn').addEventListener('click', runTests);
 
+    // Keyboard shortcuts: Cmd+' to Run, Cmd+Enter to Submit
+    document.addEventListener('keydown', function(e) {
+      if (e.metaKey && e.key === "'") {
+        e.preventDefault();
+        runTests();
+      } else if (e.metaKey && e.key === 'Enter') {
+        e.preventDefault();
+        runTests();
+      }
+    });
+
     // Initialize resize and loading indicator
     initResizer();
     initLoadingIndicator();

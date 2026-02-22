@@ -53,8 +53,8 @@ export function problemDetailPage(problem: ProblemWithSlug, user: User | null = 
         </select>
         <div id="loading-indicator"></div>
         <div class="editor-actions">
-          <button id="run-btn" class="btn btn-secondary btn-small">Run</button>
-          <button id="submit-btn" class="btn btn-primary btn-small">Submit</button>
+          <button id="run-btn" class="btn btn-secondary btn-small" title="Run (⌘+')">Run</button>
+          <button id="submit-btn" class="btn btn-primary btn-small" title="Submit (⌘+Enter)">Submit</button>
         </div>
       </div>
       <div id="code-editor"></div>
