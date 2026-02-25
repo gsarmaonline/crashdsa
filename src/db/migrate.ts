@@ -55,6 +55,7 @@ async function runMigrationsInner(sql: NonNullable<typeof defaultSql>) {
   `
   await sql`CREATE INDEX IF NOT EXISTS idx_solved_user ON user_solved_problems(user_id)`
   await sql`CREATE INDEX IF NOT EXISTS idx_solved_slug ON user_solved_problems(problem_slug)`
+  await sql`CREATE INDEX IF NOT EXISTS idx_solved_at ON user_solved_problems(solved_at DESC)`
 
   // Prisma schema column additions (idempotent with IF NOT EXISTS)
   await sql`ALTER TABLE "Problem" ADD COLUMN IF NOT EXISTS "description" TEXT`

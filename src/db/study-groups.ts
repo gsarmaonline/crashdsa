@@ -207,6 +207,91 @@ export async function getGroupProgress(groupId: number): Promise<MemberProgress[
   }))
 }
 
+export interface GroupActivityItem {
+  user_id: number
+  username: string
+  display_name: string | null
+  avatar_url: string | null
+  problem_slug: string
+  solved_at: Date
+}
+
+export interface GroupRawStats {
+  total_unique_solved: number
+  most_solved_slug: string | null
+  most_solved_count: number
+  active_this_week: number
+  all_solved_slugs: string[]
+}
+
+export async function getGroupActivity(groupId: number, limit = 20): Promise<GroupActivityItem[]> {
+  if (!sql) return []
+
+  return sql<GroupActivityItem[]>`
+    SELECT u.id AS user_id, u.username, u.display_name, u.avatar_url,
+           usp.problem_slug, usp.solved_at
+    FROM user_solved_problems usp
+    JOIN users u ON u.id = usp.user_id
+    WHERE usp.user_id IN (
+      SELECT user_id FROM study_group_members WHERE group_id = ${groupId}
+    )
+    ORDER BY usp.solved_at DESC
+    LIMIT ${limit}
+  `
+}
+
+export async function getGroupRawStats(groupId: number): Promise<GroupRawStats> {
+  if (!sql) {
+    return { total_unique_solved: 0, most_solved_slug: null, most_solved_count: 0, active_this_week: 0, all_solved_slugs: [] }
+  }
+
+  const members = await sql<{ user_id: number }[]>`
+    SELECT user_id FROM study_group_members WHERE group_id = ${groupId}
+  `
+
+  if (members.length === 0) {
+    return { total_unique_solved: 0, most_solved_slug: null, most_solved_count: 0, active_this_week: 0, all_solved_slugs: [] }
+  }
+
+  const userIds = members.map(m => m.user_id)
+  const solved = await sql<{ user_id: number; problem_slug: string; solved_at: Date }[]>`
+    SELECT user_id, problem_slug, solved_at
+    FROM user_solved_problems
+    WHERE user_id = ANY(${userIds})
+  `
+
+  const uniqueSlugs = new Set<string>()
+  const slugUserSets = new Map<string, Set<number>>()
+  const weekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000)
+  const activeUsers = new Set<number>()
+
+  for (const row of solved) {
+    uniqueSlugs.add(row.problem_slug)
+
+    if (!slugUserSets.has(row.problem_slug)) slugUserSets.set(row.problem_slug, new Set())
+    slugUserSets.get(row.problem_slug)!.add(row.user_id)
+
+    if (new Date(row.solved_at) >= weekAgo) activeUsers.add(row.user_id)
+  }
+
+  let mostSolvedSlug: string | null = null
+  let mostSolvedCount = 0
+  for (const [slug, users] of slugUserSets) {
+    if (users.size > mostSolvedCount) {
+      mostSolvedCount = users.size
+      mostSolvedSlug = slug
+    }
+  }
+
+  return {
+    total_unique_solved: uniqueSlugs.size,
+    most_solved_slug: mostSolvedSlug,
+    most_solved_count: mostSolvedCount,
+    active_this_week: activeUsers.size,
+    all_solved_slugs: [...uniqueSlugs],
+  }
+}
+
 export async function getMemberProgress(groupId: number, userId: number): Promise<MemberProgress | null> {
   if (!sql) return null
 

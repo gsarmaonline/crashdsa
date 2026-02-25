@@ -231,6 +231,35 @@ export async function getJudgeReadySlugs() {
   return problems.map((p) => p.slug)
 }
 
+export async function getProblemTitlesBySlug(slugs: string[]): Promise<Map<string, string>> {
+  if (slugs.length === 0) return new Map()
+  const problems = await prisma.problem.findMany({
+    where: { slug: { in: slugs } },
+    select: { slug: true, title: true },
+  })
+  const result = new Map<string, string>()
+  for (const p of problems) result.set(p.slug, p.title)
+  return result
+}
+
+export async function getPatternsBySlug(slugs: string[]): Promise<Map<string, string[]>> {
+  if (slugs.length === 0) return new Map()
+  const problems = await prisma.problem.findMany({
+    where: { slug: { in: slugs } },
+    select: { slug: true, patterns: { select: { patternName: true } } },
+  })
+  const result = new Map<string, string[]>()
+  for (const p of problems) result.set(p.slug, p.patterns.map(pp => pp.patternName))
+  return result
+}
+
+export async function getPatternDisplayNames(): Promise<Map<string, string>> {
+  const patterns = await prisma.pattern.findMany({ select: { name: true, displayName: true } })
+  const result = new Map<string, string>()
+  for (const p of patterns) result.set(p.name, p.displayName)
+  return result
+}
+
 export async function getTestCaseStats() {
   const [total, withTestCases, scaffoldsOnly] = await Promise.all([
     prisma.testCaseSet.count(),
