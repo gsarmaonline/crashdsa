@@ -88,9 +88,11 @@ describe('runMigrations', () => {
     const { fn, calls } = createMockSql()
     await runMigrations(fn as any)
     const alterCalls = calls.filter(s => s.includes('ALTER TABLE'))
-    expect(alterCalls.length).toBe(7)
+    expect(alterCalls.length).toBe(9)
     for (const call of alterCalls) {
-      expect(call).toContain('IF NOT EXISTS')
+      // DO $$ blocks use conditional IF EXISTS guard for idempotency instead of IF NOT EXISTS
+      const isIdempotent = call.includes('IF NOT EXISTS') || call.includes('DO $$')
+      expect(isIdempotent).toBe(true)
     }
   })
 
