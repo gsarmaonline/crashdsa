@@ -1,8 +1,9 @@
 import { Hono } from 'hono'
 import { setCookie, getCookie, deleteCookie } from 'hono/cookie'
 import { getGitHubAuthURL, exchangeCodeForToken, fetchGitHubUser } from './github.js'
+import { getGoogleAuthURL, exchangeGoogleCodeForToken, fetchGoogleUser } from './google.js'
 import { createSignedCookie, verifySessionCookie, type AuthVariables } from './middleware.js'
-import { findOrCreateUser } from '../db/users.js'
+import { findOrCreateUser, findOrCreateGoogleUser } from '../db/users.js'
 import { createSession, deleteSession } from '../db/sessions.js'
 import { loginPage } from '../views/login.js'
 
@@ -73,6 +74,71 @@ auth.get('/auth/github/callback', async (c) => {
     return c.redirect(safePath)
   } catch (error) {
     console.error('GitHub OAuth error:', error)
+    return c.redirect('/login?error=auth_failed')
+  }
+})
+
+// Initiate Google OAuth
+auth.get('/auth/google', (c) => {
+  const state = crypto.randomUUID()
+  const redirectTo = c.req.query('redirect')
+
+  setCookie(c, 'crashdsa_oauth_state', state, {
+    httpOnly: true,
+    secure: isSecure(),
+    sameSite: 'Lax',
+    path: '/',
+    maxAge: 600,
+  })
+
+  if (redirectTo) {
+    setCookie(c, 'crashdsa_redirect', redirectTo, {
+      httpOnly: true,
+      secure: isSecure(),
+      sameSite: 'Lax',
+      path: '/',
+      maxAge: 600,
+    })
+  }
+
+  return c.redirect(getGoogleAuthURL(state))
+})
+
+// Google OAuth callback
+auth.get('/auth/google/callback', async (c) => {
+  const code = c.req.query('code')
+  const state = c.req.query('state')
+  const storedState = getCookie(c, 'crashdsa_oauth_state')
+
+  deleteCookie(c, 'crashdsa_oauth_state')
+
+  if (!code || !state || state !== storedState) {
+    return c.redirect('/login?error=invalid_state')
+  }
+
+  try {
+    const accessToken = await exchangeGoogleCodeForToken(code)
+    const googleUser = await fetchGoogleUser(accessToken)
+    const user = await findOrCreateGoogleUser(googleUser)
+    const session = await createSession(user.id)
+
+    setCookie(c, 'crashdsa_session', createSignedCookie(session.id), {
+      httpOnly: true,
+      secure: isSecure(),
+      sameSite: 'Lax',
+      path: '/',
+      maxAge: 30 * 24 * 60 * 60,
+    })
+
+    const redirectTo = getCookie(c, 'crashdsa_redirect')
+    deleteCookie(c, 'crashdsa_redirect')
+    const safePath = redirectTo && redirectTo.startsWith('/') && !redirectTo.startsWith('//')
+      ? redirectTo
+      : '/'
+
+    return c.redirect(safePath)
+  } catch (error) {
+    console.error('Google OAuth error:', error)
     return c.redirect('/login?error=auth_failed')
   }
 })
