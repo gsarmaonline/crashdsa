@@ -66,6 +66,21 @@ async function runMigrationsInner(sql: NonNullable<typeof defaultSql>) {
 
   await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login_at TIMESTAMPTZ`
 
+  // Google OAuth support: make github_id nullable, add google_id
+  await sql`
+    DO $$
+    BEGIN
+      IF EXISTS (
+        SELECT 1 FROM information_schema.columns
+        WHERE table_name = 'users' AND column_name = 'github_id' AND is_nullable = 'NO'
+      ) THEN
+        ALTER TABLE users ALTER COLUMN github_id DROP NOT NULL;
+      END IF;
+    END $$
+  `
+  await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS google_id TEXT`
+  await sql`CREATE UNIQUE INDEX IF NOT EXISTS idx_users_google_id ON users(google_id) WHERE google_id IS NOT NULL`
+
   // Study groups
   await sql`
     CREATE TABLE IF NOT EXISTS study_groups (
