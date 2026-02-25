@@ -53,7 +53,7 @@ export async function findOrCreateGoogleUser(googleUser: {
   const [user] = await sql<User[]>`
     INSERT INTO users (google_id, username, display_name, avatar_url, email, last_login_at)
     VALUES (${googleUser.sub}, ${username}, ${googleUser.name}, ${googleUser.picture}, ${googleUser.email}, NOW())
-    ON CONFLICT (google_id)
+    ON CONFLICT (google_id) WHERE google_id IS NOT NULL
     DO UPDATE SET
       display_name = ${googleUser.name},
       avatar_url = ${googleUser.picture},
