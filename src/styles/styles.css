@@ -31,6 +31,10 @@
   --font-display: 'Plus Jakarta Sans', 'Inter', sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-body);
   line-height: 1.6;
@@ -41,6 +45,8 @@ body {
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .container {
@@ -60,6 +66,8 @@ body {
   box-shadow: var(--shadow);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  width: 100%;
+  overflow: hidden;
 }
 
 .navbar .container {
