@@ -318,7 +318,116 @@ export function groupDetailPage(groupId: number, user: User | null = null) {
       color: var(--danger);
     }
 
+    /* Stats card */
+    .stats-card {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+
+    .stat-item {
+      background: var(--bg-secondary);
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .stat-value {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      letter-spacing: 0.05em;
+    }
+
+    .stat-sub {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-top: 0.1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Activity feed */
+    .activity-section {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+    }
+
+    .activity-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .activity-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.875rem 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+
+    .activity-item:last-child { border-bottom: none; }
+
+    .activity-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    .activity-avatar-placeholder {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .activity-text {
+      flex: 1;
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .activity-problem {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .activity-time {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      margin-top: 0.1rem;
+    }
+
     @media (max-width: 768px) {
+      .stats-card {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
       .group-title-row {
         flex-direction: column;
       }
@@ -420,6 +529,8 @@ export function groupDetailPage(groupId: number, user: User | null = null) {
     var CURRENT_USER_ID = ${user?.id || 0}
     var groupData = null
     var progressData = null
+    var statsData = null
+    var activityData = null
     var userRole = null
 
     async function loadGroup() {
@@ -437,9 +548,19 @@ export function groupDetailPage(groupId: number, user: User | null = null) {
         groupData = await res.json()
         userRole = groupData.role
 
-        // Load progress in parallel
-        var progRes = await fetch('/api/groups/' + GROUP_ID + '/progress')
+        // Load progress, stats, and activity in parallel
+        var results = await Promise.all([
+          fetch('/api/groups/' + GROUP_ID + '/progress'),
+          fetch('/api/groups/' + GROUP_ID + '/stats'),
+          fetch('/api/groups/' + GROUP_ID + '/activity'),
+        ])
+        var progRes = results[0]
+        var statsRes = results[1]
+        var activityRes = results[2]
+
         progressData = await progRes.json()
+        statsData = statsRes.ok ? await statsRes.json() : null
+        activityData = activityRes.ok ? await activityRes.json() : null
 
         renderGroup()
       } catch (err) {
@@ -482,10 +603,14 @@ export function groupDetailPage(groupId: number, user: User | null = null) {
       html += '<button class="btn-copy" onclick="copyInviteCode()">Copy Code</button>'
       html += '</div>'
 
+      // Stats card
+      html += renderStatsCard(statsData ? statsData.stats : null)
+
       // Tabs
       html += '<div class="tabs">'
       html += '<button class="tab active" onclick="switchTab(\\'progress\\')">Progress</button>'
       html += '<button class="tab" onclick="switchTab(\\'members\\')">Members (' + members.length + ')</button>'
+      html += '<button class="tab" onclick="switchTab(\\'activity\\')">Activity</button>'
       if (userRole === 'admin') {
         html += '<button class="tab" onclick="switchTab(\\'settings\\')">Settings</button>'
       }
@@ -499,6 +624,11 @@ export function groupDetailPage(groupId: number, user: User | null = null) {
       // Members tab
       html += '<div class="tab-panel" id="tab-members">'
       html += renderMembersTab(members)
+      html += '</div>'
+
+      // Activity tab
+      html += '<div class="tab-panel" id="tab-activity">'
+      html += renderActivityTab(activityData ? activityData.activity : [])
       html += '</div>'
 
       // Settings tab (admin only)
@@ -614,6 +744,92 @@ export function groupDetailPage(groupId: number, user: User | null = null) {
       html += '</div>'
 
       return html
+    }
+
+    function renderStatsCard(stats) {
+      var dash = '<span style="color:var(--text-secondary)">-</span>'
+
+      var totalSolved = stats ? stats.total_unique_solved : dash
+      var mostSolvedVal = stats && stats.most_solved ? stats.most_solved.solved_by_count : dash
+      var mostSolvedSub = stats && stats.most_solved ? escapeHtml(stats.most_solved.title) : ''
+      var favPatternVal = stats && stats.favorite_pattern ? stats.favorite_pattern.problem_count : dash
+      var favPatternSub = stats && stats.favorite_pattern ? escapeHtml(stats.favorite_pattern.display_name) : ''
+      var activeVal = stats ? stats.active_this_week : dash
+
+      var html = '<div class="stats-card">'
+      html += '<div class="stat-item">'
+      html += '<div class="stat-value">' + totalSolved + '</div>'
+      html += '<div class="stat-label">Unique Problems Solved</div>'
+      html += '</div>'
+
+      html += '<div class="stat-item">'
+      html += '<div class="stat-value">' + mostSolvedVal + '</div>'
+      html += '<div class="stat-label">Most Solved By</div>'
+      if (mostSolvedSub) html += '<div class="stat-sub">' + mostSolvedSub + '</div>'
+      html += '</div>'
+
+      html += '<div class="stat-item">'
+      html += '<div class="stat-value">' + favPatternVal + '</div>'
+      html += '<div class="stat-label">Favorite Pattern</div>'
+      if (favPatternSub) html += '<div class="stat-sub">' + favPatternSub + '</div>'
+      html += '</div>'
+
+      html += '<div class="stat-item">'
+      html += '<div class="stat-value">' + activeVal + '</div>'
+      html += '<div class="stat-label">Active This Week</div>'
+      html += '</div>'
+      html += '</div>'
+
+      return html
+    }
+
+    function renderActivityTab(activity) {
+      if (!activity || activity.length === 0) {
+        return '<div class="activity-section"><div class="loading">No activity yet. Start solving problems!</div></div>'
+      }
+
+      var html = '<div class="activity-section">'
+      html += '<ul class="activity-list">'
+
+      for (var i = 0; i < activity.length; i++) {
+        var item = activity[i]
+        html += '<li class="activity-item">'
+        if (item.avatar_url) {
+          html += '<img src="' + item.avatar_url + '" class="activity-avatar" />'
+        } else {
+          html += '<div class="activity-avatar-placeholder"></div>'
+        }
+        html += '<div style="flex:1">'
+        html += '<div class="activity-text">'
+        html += '<strong>' + escapeHtml(item.display_name || item.username) + '</strong>'
+        html += ' solved <span class="activity-problem">' + escapeHtml(item.problem_title) + '</span>'
+        html += '</div>'
+        html += '<div class="activity-time">' + formatRelativeTime(new Date(item.solved_at)) + '</div>'
+        html += '</div>'
+        html += '</li>'
+      }
+
+      html += '</ul>'
+      html += '</div>'
+      return html
+    }
+
+    function formatRelativeTime(date) {
+      var now = new Date()
+      var diffMs = now - date
+      var diffSec = Math.floor(diffMs / 1000)
+      var diffMin = Math.floor(diffSec / 60)
+      var diffHr = Math.floor(diffMin / 60)
+      var diffDay = Math.floor(diffHr / 24)
+      var diffWeek = Math.floor(diffDay / 7)
+      var diffMonth = Math.floor(diffDay / 30)
+
+      if (diffSec < 60) return 'just now'
+      if (diffMin < 60) return diffMin + ' minute' + (diffMin === 1 ? '' : 's') + ' ago'
+      if (diffHr < 24) return diffHr + ' hour' + (diffHr === 1 ? '' : 's') + ' ago'
+      if (diffDay < 7) return diffDay + ' day' + (diffDay === 1 ? '' : 's') + ' ago'
+      if (diffWeek < 5) return diffWeek + ' week' + (diffWeek === 1 ? '' : 's') + ' ago'
+      return diffMonth + ' month' + (diffMonth === 1 ? '' : 's') + ' ago'
     }
 
     function switchTab(name) {

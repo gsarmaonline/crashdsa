@@ -14,7 +14,10 @@ import {
   getGroupMembers,
   getGroupProgress,
   getMemberProgress,
+  getGroupActivity,
+  getGroupRawStats,
 } from '../db/study-groups.js'
+import { getProblemTitlesBySlug, getPatternsBySlug, getPatternDisplayNames } from '../data/problem-repository.js'
 
 const groups = new Hono<{ Variables: AuthVariables }>()
 
@@ -171,6 +174,87 @@ groups.get('/api/groups/:id/members/:userId/progress', async (c) => {
   if (!progress) return c.json({ error: 'Member not found in this group' }, 404)
 
   return c.json({ progress })
+})
+
+// Get group activity feed
+groups.get('/api/groups/:id/activity', async (c) => {
+  const user = c.get('user')!
+  const groupId = parseInt(c.req.param('id'), 10)
+  if (isNaN(groupId)) return c.json({ error: 'Invalid group ID' }, 400)
+
+  const isMember = await isGroupMember(groupId, user.id)
+  if (!isMember) return c.json({ error: 'Not a member of this group' }, 403)
+
+  const limitParam = c.req.query('limit')
+  const limit = limitParam ? Math.min(Math.max(parseInt(limitParam, 10) || 20, 1), 100) : 20
+
+  const activity = await getGroupActivity(groupId, limit)
+
+  const uniqueSlugs = [...new Set(activity.map(a => a.problem_slug))]
+  const titleMap = await getProblemTitlesBySlug(uniqueSlugs)
+
+  return c.json({
+    activity: activity.map(a => ({
+      user_id: a.user_id,
+      username: a.username,
+      display_name: a.display_name,
+      avatar_url: a.avatar_url,
+      problem_slug: a.problem_slug,
+      problem_title: titleMap.get(a.problem_slug) || a.problem_slug,
+      solved_at: a.solved_at,
+    })),
+  })
+})
+
+// Get group stats
+groups.get('/api/groups/:id/stats', async (c) => {
+  const user = c.get('user')!
+  const groupId = parseInt(c.req.param('id'), 10)
+  if (isNaN(groupId)) return c.json({ error: 'Invalid group ID' }, 400)
+
+  const isMember = await isGroupMember(groupId, user.id)
+  if (!isMember) return c.json({ error: 'Not a member of this group' }, 403)
+
+  const rawStats = await getGroupRawStats(groupId)
+
+  const slugsToFetch = rawStats.most_solved_slug ? [rawStats.most_solved_slug] : []
+  const [titleMap, patternMap, displayNameMap] = await Promise.all([
+    getProblemTitlesBySlug(slugsToFetch),
+    getPatternsBySlug(rawStats.all_solved_slugs),
+    getPatternDisplayNames(),
+  ])
+
+  // Count pattern frequencies across all solved problems
+  const patternFreq = new Map<string, number>()
+  for (const [, patterns] of patternMap) {
+    for (const p of patterns) {
+      patternFreq.set(p, (patternFreq.get(p) || 0) + 1)
+    }
+  }
+
+  let favoritePattern: { name: string; display_name: string; problem_count: number } | null = null
+  let maxFreq = 0
+  for (const [name, count] of patternFreq) {
+    if (count > maxFreq) {
+      maxFreq = count
+      favoritePattern = { name, display_name: displayNameMap.get(name) || name, problem_count: count }
+    }
+  }
+
+  return c.json({
+    stats: {
+      total_unique_solved: rawStats.total_unique_solved,
+      most_solved: rawStats.most_solved_slug
+        ? {
+            slug: rawStats.most_solved_slug,
+            title: titleMap.get(rawStats.most_solved_slug) || rawStats.most_solved_slug,
+            solved_by_count: rawStats.most_solved_count,
+          }
+        : null,
+      favorite_pattern: favoritePattern,
+      active_this_week: rawStats.active_this_week,
+    },
+  })
 })
 
 export default groups

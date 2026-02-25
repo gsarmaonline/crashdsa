@@ -97,6 +97,33 @@ docker build -t crashdsa .
 docker run -p 3000:3000 crashdsa
 ```
 
+## Study Groups
+
+Collaborative learning with shared progress tracking.
+
+- **Create / join groups** via invite codes
+- **Progress leaderboard** — ranked by problems solved per member
+- **Stats card** — 4-stat summary on every group page:
+  - Total unique problems solved by the group
+  - Most-solved problem (by distinct member count)
+  - Favorite pattern (most frequently solved pattern across the group)
+  - Active members this week
+- **Activity feed** — chronological list of recent solves ("Alice solved Two Sum, 2h ago")
+
+### Group API
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/groups` | List user's groups |
+| `POST` | `/api/groups` | Create a group |
+| `GET` | `/api/groups/:id` | Group details + members |
+| `PATCH` | `/api/groups/:id` | Update group (admin) |
+| `DELETE` | `/api/groups/:id` | Delete group (admin) |
+| `POST` | `/api/groups/join` | Join via invite code |
+| `GET` | `/api/groups/:id/progress` | Member solve counts |
+| `GET` | `/api/groups/:id/stats` | Group stats summary |
+| `GET` | `/api/groups/:id/activity` | Recent solve feed (`?limit=20`) |
+
 ## API
 
 - `GET /` — Homepage
