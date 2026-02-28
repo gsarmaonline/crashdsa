@@ -234,6 +234,22 @@
     setTimeout(function() { banner.remove(); }, 3000);
   }
 
+  // --- Judge0 Server-Side Execution ---
+
+  async function runTestsViaJudge0(slug, code, language) {
+    var resp = await fetch('/api/judge/execute', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ slug: slug, code: code, language: language })
+    });
+    if (!resp.ok) {
+      var errData = await resp.json().catch(function() { return {}; });
+      throw new Error(errData.error || 'Judge0 execution failed: ' + resp.status);
+    }
+    var data = await resp.json();
+    return data.results;
+  }
+
   // --- Run / Submit ---
 
   async function runTests() {
@@ -249,9 +265,16 @@
 
     logToConsole('Running tests with ' + currentLanguage + '...', 'info');
 
+    var results;
     try {
       var code = getEditorCode();
-      var results = await window.JudgeClient.runTests(code, currentLanguage, problemDef);
+      try {
+        results = await runTestsViaJudge0(SLUG, code, currentLanguage);
+        logToConsole('Executed via Judge0 (server-side)', 'info');
+      } catch (judge0Err) {
+        logToConsole('Judge0 unavailable, falling back to local runner...', 'info');
+        results = await window.JudgeClient.runTests(code, currentLanguage, problemDef);
+      }
       var passed = results.filter(function(r) { return r.passed; }).length;
       logToConsole(passed + '/' + results.length + ' tests passed', passed === results.length ? 'success' : 'error');
       renderTestResults(results, wallStart);

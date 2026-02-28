@@ -27,6 +27,8 @@ import authRoutes from './src/auth/routes.js'
 import groupRoutes from './src/groups/routes.js'
 import { runMigrations } from './src/db/migrate.js'
 import { markProblemSolved, getUserSolvedProblems, getUserSolvedSlugs } from './src/db/solved-problems.js'
+import { executeViaJudge0 } from './src/judge0/executor.js'
+import type { ExecuteRequest } from './src/judge0/types.js'
 
 const app = new Hono<{ Variables: AuthVariables }>()
 
@@ -252,6 +254,18 @@ app.get('/api/problems/:slug/test-cases', async (c) => {
 app.get('/api/judge/problems', async (c) => {
   const slugs = await getJudgeReadySlugs()
   return c.json({ slugs })
+})
+
+// Execute code via Judge0 (server-side)
+app.post('/api/judge/execute', async (c) => {
+  const { slug, code, language } = await c.req.json<ExecuteRequest>()
+  try {
+    const results = await executeViaJudge0(slug, code, language)
+    return c.json({ results })
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Execution failed'
+    return c.json({ error: message }, 500)
+  }
 })
 
 // Get test case coverage statistics

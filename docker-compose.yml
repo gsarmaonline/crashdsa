@@ -31,6 +31,7 @@ services:
 
   judge0-server:
     image: judge0/judge0:1.13.1
+    platform: linux/amd64
     ports:
       - "2358:2358"
     env_file:
@@ -44,6 +45,7 @@ services:
 
   judge0-workers:
     image: judge0/judge0:1.13.1
+    platform: linux/amd64
     command: ["./scripts/workers"]
     env_file:
       - judge0.conf
