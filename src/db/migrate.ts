@@ -57,13 +57,25 @@ async function runMigrationsInner(sql: NonNullable<typeof defaultSql>) {
   await sql`CREATE INDEX IF NOT EXISTS idx_solved_slug ON user_solved_problems(problem_slug)`
   await sql`CREATE INDEX IF NOT EXISTS idx_solved_at ON user_solved_problems(solved_at DESC)`
 
-  // Prisma schema column additions (idempotent with IF NOT EXISTS)
-  await sql`ALTER TABLE "Problem" ADD COLUMN IF NOT EXISTS "description" TEXT`
-  await sql`ALTER TABLE "Problem" ADD COLUMN IF NOT EXISTS "examples" JSONB`
-  await sql`ALTER TABLE "Problem" ADD COLUMN IF NOT EXISTS "constraints" JSONB`
-  await sql`ALTER TABLE "TestCaseSet" ADD COLUMN IF NOT EXISTS "starterCode" JSONB`
-  await sql`ALTER TABLE "TestCaseSet" ADD COLUMN IF NOT EXISTS "functionNameMap" JSONB`
-  await sql`ALTER TABLE "Pattern" ADD COLUMN IF NOT EXISTS "strategy" TEXT NOT NULL DEFAULT ''`
+  // Prisma schema column additions — only run if Prisma has already created these tables
+  // (in production Prisma migrations run first; locally they may not exist yet)
+  await sql`
+    DO $$
+    BEGIN
+      IF EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'Problem') THEN
+        ALTER TABLE "Problem" ADD COLUMN IF NOT EXISTS "description" TEXT;
+        ALTER TABLE "Problem" ADD COLUMN IF NOT EXISTS "examples" JSONB;
+        ALTER TABLE "Problem" ADD COLUMN IF NOT EXISTS "constraints" JSONB;
+      END IF;
+      IF EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'TestCaseSet') THEN
+        ALTER TABLE "TestCaseSet" ADD COLUMN IF NOT EXISTS "starterCode" JSONB;
+        ALTER TABLE "TestCaseSet" ADD COLUMN IF NOT EXISTS "functionNameMap" JSONB;
+      END IF;
+      IF EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'Pattern') THEN
+        ALTER TABLE "Pattern" ADD COLUMN IF NOT EXISTS "strategy" TEXT NOT NULL DEFAULT '';
+      END IF;
+    END $$
+  `
 
   await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login_at TIMESTAMPTZ`
 

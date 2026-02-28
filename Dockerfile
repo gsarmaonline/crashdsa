@@ -38,6 +38,6 @@ COPY --from=install /temp/prod/src/generated ./src/generated
 # Expose port
 EXPOSE 3000
 
-# Run the app
+# Run migrations then start the app
 USER bun
-CMD ["bun", "run", "start"]
+CMD ["sh", "-c", "bun run scripts/migrate.ts && bun run start"]

@@ -5,10 +5,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    environment:
-      - DATABASE_URL=postgresql://crashdsa:crashdsa@db:5432/crashdsa
-      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
-      - NODE_ENV=production
+    env_file:
+      - .env.local
     depends_on:
       db:
         condition: service_healthy
@@ -31,5 +29,60 @@ services:
       retries: 5
     restart: unless-stopped
 
+  judge0-server:
+    image: judge0/judge0:1.13.1
+    ports:
+      - "2358:2358"
+    env_file:
+      - judge0.conf
+    depends_on:
+      judge0-db:
+        condition: service_healthy
+      judge0-redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  judge0-workers:
+    image: judge0/judge0:1.13.1
+    command: ["./scripts/workers"]
+    env_file:
+      - judge0.conf
+    depends_on:
+      judge0-db:
+        condition: service_healthy
+      judge0-redis:
+        condition: service_healthy
+    privileged: true
+    restart: unless-stopped
+
+  judge0-db:
+    image: postgres:13-alpine
+    environment:
+      - POSTGRES_USER=judge0
+      - POSTGRES_PASSWORD=judge0
+      - POSTGRES_DB=judge0
+    volumes:
+      - judge0_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U judge0 -d judge0"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  judge0-redis:
+    image: redis:6-alpine
+    command: redis-server --requirepass judge0
+    volumes:
+      - judge0_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "judge0", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
 volumes:
   postgres_data:
+  judge0_postgres_data:
+  judge0_redis_data:
