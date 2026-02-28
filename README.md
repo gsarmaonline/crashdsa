@@ -97,6 +97,32 @@ docker build -t crashdsa .
 docker run -p 3000:3000 crashdsa
 ```
 
+### Local Development with Docker Compose
+
+Spins up the app and a PostgreSQL database together:
+
+```bash
+# Start all services
+docker-compose up
+
+# Build and start (after code changes)
+docker-compose up --build
+
+# Run in background
+docker-compose up -d
+
+# Run DB migrations after first start
+docker-compose exec app bunx prisma migrate deploy
+
+# Tear down (keeps DB data)
+docker-compose down
+
+# Tear down and delete DB data
+docker-compose down -v
+```
+
+Set `ANTHROPIC_API_KEY` in your environment or a `.env` file before running.
+
 ## Study Groups
 
 Collaborative learning with shared progress tracking.
