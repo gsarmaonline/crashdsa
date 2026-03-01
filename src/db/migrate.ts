@@ -122,5 +122,21 @@ async function runMigrationsInner(sql: NonNullable<typeof defaultSql>) {
   await sql`CREATE INDEX IF NOT EXISTS idx_sgm_group_id ON study_group_members(group_id)`
   await sql`CREATE INDEX IF NOT EXISTS idx_sgm_user_id ON study_group_members(user_id)`
 
+  // Notifications
+  await sql`
+    CREATE TABLE IF NOT EXISTS notifications (
+      id          SERIAL PRIMARY KEY,
+      user_id     INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+      type        VARCHAR(50) NOT NULL DEFAULT 'info',
+      title       VARCHAR(255) NOT NULL,
+      message     TEXT NOT NULL,
+      read_at     TIMESTAMPTZ,
+      created_at  TIMESTAMPTZ DEFAULT NOW()
+    )
+  `
+  await sql`CREATE INDEX IF NOT EXISTS idx_notifications_user_id ON notifications(user_id)`
+  await sql`CREATE INDEX IF NOT EXISTS idx_notifications_read_at ON notifications(read_at)`
+  await sql`CREATE INDEX IF NOT EXISTS idx_notifications_created_at ON notifications(created_at DESC)`
+
   console.log('Database migrations complete')
 }

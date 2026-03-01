@@ -25,6 +25,7 @@ import { groupDetailPage } from './src/views/group-detail.js'
 import { authMiddleware, requireAuthUI, requireAuthAPI, type AuthVariables } from './src/auth/middleware.js'
 import authRoutes from './src/auth/routes.js'
 import groupRoutes from './src/groups/routes.js'
+import notificationRoutes from './src/notifications/routes.js'
 import { runMigrations } from './src/db/migrate.js'
 import { markProblemSolved, getUserSolvedProblems, getUserSolvedSlugs } from './src/db/solved-problems.js'
 import { executeViaJudge0 } from './src/judge0/executor.js'
@@ -66,6 +67,9 @@ app.use('/api/groups/*', requireAuthAPI)
 
 // Study group API routes (must be after auth middleware)
 app.route('/', groupRoutes)
+
+// Notification API routes (must be after auth middleware)
+app.route('/', notificationRoutes)
 
 // UI Routes
 app.get('/', async (c) => {
