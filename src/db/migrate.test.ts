@@ -96,6 +96,25 @@ describe('runMigrations', () => {
     }
   })
 
+  it('creates notifications table', async () => {
+    const { fn, calls } = createMockSql()
+    await runMigrations(fn as any)
+    const match = calls.find(s => s.includes('CREATE TABLE IF NOT EXISTS notifications'))
+    expect(match).toBeDefined()
+    expect(match).toContain('user_id')
+    expect(match).toContain('title')
+    expect(match).toContain('message')
+    expect(match).toContain('read_at')
+  })
+
+  it('creates indexes for notifications', async () => {
+    const { fn, calls } = createMockSql()
+    await runMigrations(fn as any)
+    expect(calls.some(s => s.includes('idx_notifications_user_id'))).toBe(true)
+    expect(calls.some(s => s.includes('idx_notifications_read_at'))).toBe(true)
+    expect(calls.some(s => s.includes('idx_notifications_created_at'))).toBe(true)
+  })
+
   it('skips migrations when sql connection is null', async () => {
     const consoleSpy = spyOn(console, 'log')
     await runMigrations(null as any)
