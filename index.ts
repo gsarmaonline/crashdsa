@@ -22,9 +22,11 @@ import { patternDetailPage } from './src/views/pattern-detail.js'
 import { progressPage } from './src/views/progress.js'
 import { groupsPage } from './src/views/groups.js'
 import { groupDetailPage } from './src/views/group-detail.js'
+import { notificationsPage } from './src/views/notifications.js'
 import { authMiddleware, requireAuthUI, requireAuthAPI, type AuthVariables } from './src/auth/middleware.js'
 import authRoutes from './src/auth/routes.js'
 import groupRoutes from './src/groups/routes.js'
+import notificationRoutes from './src/notifications/routes.js'
 import { runMigrations } from './src/db/migrate.js'
 import { markProblemSolved, getUserSolvedProblems, getUserSolvedSlugs } from './src/db/solved-problems.js'
 import { executeViaJudge0 } from './src/judge0/executor.js'
@@ -51,6 +53,7 @@ app.use('/patterns/*', requireAuthUI)
 app.use('/progress', requireAuthUI)
 app.use('/groups', requireAuthUI)
 app.use('/groups/*', requireAuthUI)
+app.use('/notifications', requireAuthUI)
 
 // Protected API routes - require GitHub login
 app.use('/api/problems', requireAuthAPI)
@@ -66,6 +69,9 @@ app.use('/api/groups/*', requireAuthAPI)
 
 // Study group API routes (must be after auth middleware)
 app.route('/', groupRoutes)
+
+// Notification API routes
+app.route('/', notificationRoutes)
 
 // UI Routes
 app.get('/', async (c) => {
@@ -92,6 +98,10 @@ app.get('/groups/:id', (c) => {
   const id = parseInt(c.req.param('id'), 10)
   if (isNaN(id)) return c.text('Invalid group ID', 400)
   return c.html(groupDetailPage(id, c.get('user')))
+})
+
+app.get('/notifications', (c) => {
+  return c.html(notificationsPage(c.get('user')))
 })
 
 app.get('/patterns/:name', async (c) => {
