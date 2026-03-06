@@ -1,211 +1,139 @@
-import { describe, it, expect } from 'bun:test'
-import { createTTLCache, createTTLCacheWithParam, invalidateAll, __registerCachedFunction } from './cache'
+import { describe, it, expect, beforeEach, mock } from 'bun:test'
+import { cached, invalidate, invalidateAll, cacheSize } from './cache.js'
 
-describe('TTL Cache', () => {
-  describe('createTTLCache', () => {
-    it('should return the same cached value within TTL', async () => {
-      let callCount = 0
-      const expensiveFn = async () => {
-        callCount++
-        return { value: 'result', callCount }
-      }
+describe('TTL cache', () => {
+  beforeEach(() => {
+    invalidateAll()
+  })
 
-      const cached = createTTLCache(expensiveFn, 100) // 100ms TTL
-      const result1 = await cached()
-      const result2 = await cached()
+  describe('cached()', () => {
+    it('calls the factory function on a cache miss', async () => {
+      const fn = mock(() => Promise.resolve(42))
 
-      expect(result1).toEqual({ value: 'result', callCount: 1 })
-      expect(result2).toEqual({ value: 'result', callCount: 1 }) // Same value (cached)
-      expect(callCount).toBe(1) // Function called once
+      const result = await cached('key1', fn)
+
+      expect(result).toBe(42)
+      expect(fn).toHaveBeenCalledTimes(1)
     })
 
-    it('should call the function again after TTL expires', async () => {
+    it('returns the cached value on a cache hit without calling the factory', async () => {
       let callCount = 0
-      const expensiveFn = async () => {
-        callCount++
-        return { value: 'result', callCount }
-      }
+      const fn = mock(() => Promise.resolve(++callCount))
 
-      const cached = createTTLCache(expensiveFn, 50) // 50ms TTL
-      const result1 = await cached()
-      expect(result1.callCount).toBe(1)
+      const first = await cached('key2', fn)
+      const second = await cached('key2', fn)
 
-      // Wait for TTL to expire
-      await new Promise((resolve) => setTimeout(resolve, 60))
-
-      const result2 = await cached()
-      expect(result2.callCount).toBe(2) // Function called again
-      expect(callCount).toBe(2) // Function called twice total
+      expect(first).toBe(1)
+      expect(second).toBe(1)
+      expect(fn).toHaveBeenCalledTimes(1)
     })
 
-    it('should handle async errors properly', async () => {
-      let callCount = 0
-      const failingFn = async () => {
-        callCount++
-        throw new Error('Test error')
-      }
+    it('uses separate entries for different keys', async () => {
+      const result1 = await cached('a', () => Promise.resolve('alpha'))
+      const result2 = await cached('b', () => Promise.resolve('beta'))
 
-      const cached = createTTLCache(failingFn, 100)
-
-      try {
-        await cached()
-      } catch (e) {
-        expect((e as Error).message).toBe('Test error')
-      }
-
-      // Cache should not store failed results, so next call should try again
-      callCount = 0
-      try {
-        await cached()
-      } catch (e) {
-        expect((e as Error).message).toBe('Test error')
-      }
-      expect(callCount).toBe(1) // Function called again for retry
+      expect(result1).toBe('alpha')
+      expect(result2).toBe('beta')
+      expect(cacheSize()).toBe(2)
     })
 
-    it('should handle multiple concurrent calls', async () => {
+    it('re-fetches after the TTL expires', async () => {
       let callCount = 0
-      const delayedFn = async () => {
-        callCount++
-        await new Promise((resolve) => setTimeout(resolve, 50))
-        return { value: 'result', callCount }
-      }
+      const fn = mock(() => Promise.resolve(++callCount))
 
-      const cached = createTTLCache(delayedFn, 200)
+      const first = await cached('expire-key', fn, 1)
 
-      // Call multiple times concurrently
-      const results = await Promise.all([cached(), cached(), cached()])
+      await new Promise((resolve) => setTimeout(resolve, 10))
 
-      // All results should be the same
-      expect(results[0]).toEqual(results[1])
-      expect(results[1]).toEqual(results[2])
-      // In this implementation, concurrent calls may call the function multiple times
-      // because the cache is not set until the first call completes
-      // This is a documented trade-off for simplicity
+      const second = await cached('expire-key', fn, 1)
+
+      expect(first).toBe(1)
+      expect(second).toBe(2)
+      expect(fn).toHaveBeenCalledTimes(2)
+    })
+
+    it('caches null and undefined values', async () => {
+      const fnNull = mock(() => Promise.resolve(null))
+      const fnUndef = mock(() => Promise.resolve(undefined))
+
+      const r1 = await cached('null-key', fnNull)
+      const r2 = await cached('null-key', fnNull)
+
+      expect(r1).toBeNull()
+      expect(r2).toBeNull()
+      expect(fnNull).toHaveBeenCalledTimes(1)
+
+      const r3 = await cached('undef-key', fnUndef)
+      const r4 = await cached('undef-key', fnUndef)
+
+      expect(r3).toBeUndefined()
+      expect(r4).toBeUndefined()
+      expect(fnUndef).toHaveBeenCalledTimes(1)
+    })
+
+    it('does not cache when the factory throws', async () => {
+      const fn = mock(() => Promise.reject(new Error('db down')))
+
+      await expect(cached('err-key', fn)).rejects.toThrow('db down')
+      expect(cacheSize()).toBe(0)
     })
   })
 
-  describe('createTTLCacheWithParam', () => {
-    it('should cache results per parameter', async () => {
-      let callCount = 0
-      const parameterizedFn = async (param: string) => {
-        callCount++
-        return { value: param, callCount }
-      }
+  describe('invalidate()', () => {
+    it('removes a single cached entry', async () => {
+      await cached('x', () => Promise.resolve(1))
+      await cached('y', () => Promise.resolve(2))
 
-      const cached = createTTLCacheWithParam(parameterizedFn, 100)
+      expect(cacheSize()).toBe(2)
 
-      const result1 = await cached('a')
-      const result1Again = await cached('a')
-      const result2 = await cached('b')
-      const result2Again = await cached('b')
+      const removed = invalidate('x')
 
-      expect(result1).toEqual({ value: 'a', callCount: 1 })
-      expect(result1Again).toEqual({ value: 'a', callCount: 1 }) // Cached
-      expect(result2).toEqual({ value: 'b', callCount: 2 })
-      expect(result2Again).toEqual({ value: 'b', callCount: 2 }) // Cached
-      expect(callCount).toBe(2) // Called once per unique parameter
+      expect(removed).toBe(true)
+      expect(cacheSize()).toBe(1)
     })
 
-    it('should expire cache per parameter independently', async () => {
-      let callCount = 0
-      const parameterizedFn = async (param: string) => {
-        callCount++
-        return { value: param, callCount }
-      }
-
-      const cached = createTTLCacheWithParam(parameterizedFn, 50)
-
-      const result1 = await cached('a')
-      expect(result1.callCount).toBe(1)
-
-      // Wait for TTL to expire
-      await new Promise((resolve) => setTimeout(resolve, 60))
-
-      const result1Again = await cached('a')
-      expect(result1Again.callCount).toBe(2) // Cache expired for 'a'
-
-      const result2 = await cached('b')
-      expect(result2.callCount).toBe(3) // Different parameter, never cached
+    it('returns false when the key does not exist', () => {
+      expect(invalidate('nonexistent')).toBe(false)
     })
 
-    it('should handle undefined as a parameter', async () => {
+    it('causes the next cached() call to re-fetch', async () => {
       let callCount = 0
-      const parameterizedFn = async (param?: string) => {
-        callCount++
-        return { value: param, callCount }
-      }
+      const fn = mock(() => Promise.resolve(++callCount))
 
-      const cached = createTTLCacheWithParam(parameterizedFn, 100)
+      await cached('inv-key', fn)
+      invalidate('inv-key')
+      const second = await cached('inv-key', fn)
 
-      const result1 = await cached(undefined)
-      const result1Again = await cached(undefined)
-
-      expect(result1).toEqual({ value: undefined, callCount: 1 })
-      expect(result1Again).toEqual({ value: undefined, callCount: 1 }) // Cached
-      expect(callCount).toBe(1)
-    })
-
-    it('should handle numeric parameters', async () => {
-      let callCount = 0
-      const parameterizedFn = async (param: number) => {
-        callCount++
-        return { value: param * 2, callCount }
-      }
-
-      const cached = createTTLCacheWithParam(parameterizedFn, 100)
-
-      const result1 = await cached(5)
-      const result1Again = await cached(5)
-      const result2 = await cached(10)
-
-      expect(result1).toEqual({ value: 10, callCount: 1 })
-      expect(result1Again).toEqual({ value: 10, callCount: 1 }) // Cached
-      expect(result2).toEqual({ value: 20, callCount: 2 })
-      expect(callCount).toBe(2)
+      expect(second).toBe(2)
+      expect(fn).toHaveBeenCalledTimes(2)
     })
   })
 
-  describe('invalidateAll', () => {
-    it('should clear all caches', async () => {
-      let callCount1 = 0
-      let callCount2 = 0
+  describe('invalidateAll()', () => {
+    it('clears all cached entries', async () => {
+      await cached('a', () => Promise.resolve(1))
+      await cached('b', () => Promise.resolve(2))
+      await cached('c', () => Promise.resolve(3))
 
-      const fn1 = async () => {
-        callCount1++
-        return { value: 'result1', callCount: callCount1 }
-      }
+      expect(cacheSize()).toBe(3)
 
-      const fn2 = async (param: string) => {
-        callCount2++
-        return { value: param, callCount: callCount2 }
-      }
-
-      const cached1 = createTTLCache(fn1, 5000)
-      const cached2 = createTTLCacheWithParam(fn2, 5000)
-
-      // Register both caches
-      __registerCachedFunction(cached1)
-      __registerCachedFunction(cached2)
-
-      // Call them once to populate cache
-      await cached1()
-      await cached2('test')
-
-      // Verify caching works
-      const result1 = await cached1()
-      const result2 = await cached2('test')
-      expect(callCount1).toBe(1)
-      expect(callCount2).toBe(1)
-
-      // Clear all caches
       invalidateAll()
 
-      // After clearing, functions should be called again
-      const result1Again = await cached1()
-      const result2Again = await cached2('test')
-      expect(callCount1).toBe(2)
-      expect(callCount2).toBe(2)
+      expect(cacheSize()).toBe(0)
+    })
+  })
+
+  describe('cacheSize()', () => {
+    it('returns 0 for an empty cache', () => {
+      expect(cacheSize()).toBe(0)
+    })
+
+    it('tracks the number of entries', async () => {
+      await cached('s1', () => Promise.resolve('a'))
+      expect(cacheSize()).toBe(1)
+
+      await cached('s2', () => Promise.resolve('b'))
+      expect(cacheSize()).toBe(2)
     })
   })
 })

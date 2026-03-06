@@ -1,6 +1,6 @@
 import { prisma } from './db.js'
-import { createTTLCache, createTTLCacheWithParam, __registerCachedFunction } from './cache.js'
 import { Difficulty } from '../generated/prisma/client.js'
+import { cached } from './cache.js'
 
 // Cache TTL: 5 minutes (300,000 ms)
 // Since the problem dataset only changes during seeding, this is safe.
@@ -25,7 +25,8 @@ function mapProblem(p: {
   acceptance: number | null
   patterns: { patternName: string }[]
   sourceSheets: { sheetName: string }[]
-  tags: { tagName: string }[]}): Problem {
+  tags: { tagName: string }[]
+}): Problem {
   return {
     name: p.title,
     slug: p.slug,
@@ -44,147 +45,70 @@ const problemInclude = {
   tags: { select: { tagName: true } },
 } as const
 
-// ============================================
-// Cached Query Functions
-// ============================================
-
-const _getAllProblems = async (difficulty?: string) => {
-  const where = difficulty
-    ? { difficulty: difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase() as Difficulty }
-    : {}
-
-  const problems = await prisma.problem.findMany({
-    where,
-    include: problemInclude,
-    orderBy: { title: 'asc' },
-  })
-
-  return {
-    problems: problems.map(mapProblem),
-    count: problems.length,
-  }
-}
-
-const cachedGetAllProblems = createTTLCacheWithParam(_getAllProblems, CACHE_TTL_MS)
-__registerCachedFunction(cachedGetAllProblems)
-
 export async function getAllProblems(difficulty?: string) {
-  return cachedGetAllProblems(difficulty)
+  const cacheKey = `allProblems:${difficulty ?? 'all'}`
+
+  return cached(cacheKey, async () => {
+    const where = difficulty
+      ? { difficulty: difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase() as Difficulty }
+      : {}
+
+    const problems = await prisma.problem.findMany({
+      where,
+      include: problemInclude,
+      orderBy: { title: 'asc' },
+    })
+
+    return {
+      problems: problems.map(mapProblem),
+      count: problems.length,
+    }
+  }, CACHE_TTL_MS)
 }
-
-const _getProblemsByPattern = async (patternName: string) => {
-  const pattern = await prisma.pattern.findUnique({ where: { name: patternName } })
-  if (!pattern) return null
-
-  const problems = await prisma.problem.findMany({
-    where: { patterns: { some: { patternName } } },
-    include: problemInclude,
-    orderBy: { title: 'asc' },
-  })
-
-  return {
-    name: patternName,
-    pattern: patternName,
-    displayName: pattern.displayName,
-    description: pattern.description,
-    strategy: pattern.strategy,
-    keywords: pattern.keywords,
-    problems: problems.map(mapProblem),
-    count: problems.length,
-  }
-}
-
-const cachedGetProblemsByPattern = createTTLCacheWithParam(_getProblemsByPattern, CACHE_TTL_MS)
-__registerCachedFunction(cachedGetProblemsByPattern)
 
 export async function getProblemsByPattern(patternName: string) {
-  return cachedGetProblemsByPattern(patternName)
+  const cacheKey = `problemsByPattern:${patternName}`
+
+  return cached(cacheKey, async () => {
+    const pattern = await prisma.pattern.findUnique({ where: { name: patternName } })
+    if (!pattern) return null
+
+    const problems = await prisma.problem.findMany({
+      where: { patterns: { some: { patternName } } },
+      include: problemInclude,
+      orderBy: { title: 'asc' },
+    })
+
+    return {
+      name: patternName,
+      pattern: patternName,
+      displayName: pattern.displayName,
+      description: pattern.description,
+      strategy: pattern.strategy,
+      keywords: pattern.keywords,
+      problems: problems.map(mapProblem),
+      count: problems.length,
+    }
+  }, CACHE_TTL_MS)
 }
-
-const _getPatterns = async () => {
-  const patterns = await prisma.pattern.findMany({
-    include: { problems: { select: { problemId: true } } },
-    orderBy: { name: 'asc' },
-  })
-
-  return {
-    patterns: patterns.map((p) => ({
-      name: p.name,
-      displayName: p.displayName,
-      count: p.problems.length,
-    })),
-    total: patterns.length,
-  }
-}
-
-const cachedGetPatterns = createTTLCache(_getPatterns, CACHE_TTL_MS)
-__registerCachedFunction(cachedGetPatterns)
 
 export async function getPatterns() {
-  return cachedGetPatterns()
+  return cached('patterns', async () => {
+    const patterns = await prisma.pattern.findMany({
+      include: { problems: { select: { problemId: true } } },
+      orderBy: { name: 'asc' },
+    })
+
+    return {
+      patterns: patterns.map((p) => ({
+        name: p.name,
+        displayName: p.displayName,
+        count: p.problems.length,
+      })),
+      total: patterns.length,
+    }
+  }, CACHE_TTL_MS)
 }
-
-const _getStats = async () => {
-  const [total, easy, medium, hard] = await Promise.all([
-    prisma.problem.count(),
-    prisma.problem.count({ where: { difficulty: 'Easy' } }),
-    prisma.problem.count({ where: { difficulty: 'Medium' } }),
-    prisma.problem.count({ where: { difficulty: 'Hard' } }),
-  ])
-
-  return { total, easy, medium, hard, lastUpdated: new Date() }
-}
-
-const cachedGetStats = createTTLCache(_getStats, CACHE_TTL_MS)
-__registerCachedFunction(cachedGetStats)
-
-export async function getStats() {
-  return cachedGetStats()
-}
-
-export interface PatternWithProblems {
-  name: string
-  displayName: string
-  description: string
-  strategy: string
-  keywords: string[]
-  problems: Problem[]
-}
-
-const _getPatternProblems = async () => {
-  const patterns = await prisma.pattern.findMany({
-    include: {
-      problems: {
-        include: {
-          problem: {
-            include: problemInclude,
-          },
-        },
-      },
-    },
-    orderBy: { name: 'asc' },
-  })
-
-  return patterns.map((pattern) => ({
-    name: pattern.name,
-    displayName: pattern.displayName,
-    description: pattern.description,
-    strategy: pattern.strategy,
-    keywords: pattern.keywords,
-    problems: pattern.problems.map((pp) => mapProblem(pp.problem)),
-  })) as PatternWithProblems[]
-}
-
-const cachedGetPatternProblems = createTTLCache(_getPatternProblems, CACHE_TTL_MS)
-__registerCachedFunction(cachedGetPatternProblems)
-
-export async function getPatternProblems() {
-  return cachedGetPatternProblems()
-}
-
-// ============================================
-// Non-Cached Query Functions
-// ============================================
 
 export async function getProblemBySlug(slug: string) {
   const problem = await prisma.problem.findUnique({
@@ -198,6 +122,54 @@ export async function getProblemBySlug(slug: string) {
     ...mapProblem(problem),
     slug: problem.slug,
   }
+}
+
+export async function getStats() {
+  return cached('stats', async () => {
+    const [total, easy, medium, hard] = await Promise.all([
+      prisma.problem.count(),
+      prisma.problem.count({ where: { difficulty: 'Easy' } }),
+      prisma.problem.count({ where: { difficulty: 'Medium' } }),
+      prisma.problem.count({ where: { difficulty: 'Hard' } }),
+    ])
+
+    return { total, easy, medium, hard, lastUpdated: new Date() }
+  }, CACHE_TTL_MS)
+}
+
+export interface PatternWithProblems {
+  name: string
+  displayName: string
+  description: string
+  strategy: string
+  keywords: string[]
+  problems: Problem[]
+}
+
+export async function getPatternProblems() {
+  return cached('patternProblems', async () => {
+    const patterns = await prisma.pattern.findMany({
+      include: {
+        problems: {
+          include: {
+            problem: {
+              include: problemInclude,
+            },
+          },
+        },
+      },
+      orderBy: { name: 'asc' },
+    })
+
+    return patterns.map((pattern) => ({
+      name: pattern.name,
+      displayName: pattern.displayName,
+      description: pattern.description,
+      strategy: pattern.strategy,
+      keywords: pattern.keywords,
+      problems: pattern.problems.map((pp) => mapProblem(pp.problem)),
+    })) as PatternWithProblems[]
+  }, CACHE_TTL_MS)
 }
 
 export async function getTestCasesForProblem(slug: string) {
@@ -315,21 +287,4 @@ export async function getTestCaseStats() {
   ])
 
   return { total, withTestCases, scaffoldsOnly, generatedAt: new Date().toISOString() }
-}
-
-// ============================================
-// Test Utilities
-// ============================================
-
-/**
- * Internal function to clear all caches.
- * Only exported for testing purposes.
- * @internal
- */
-export function __clearAllCaches__() {
-  if (cachedGetAllProblems.__invalidate) cachedGetAllProblems.__invalidate()
-  if (cachedGetProblemsByPattern.__invalidate) cachedGetProblemsByPattern.__invalidate()
-  if (cachedGetPatterns.__invalidate) cachedGetPatterns.__invalidate()
-  if (cachedGetStats.__invalidate) cachedGetStats.__invalidate()
-  if (cachedGetPatternProblems.__invalidate) cachedGetPatternProblems.__invalidate()
 }
