@@ -1,5 +1,10 @@
 import { prisma } from './db.js'
 import { Difficulty } from '../generated/prisma/client.js'
+import { cached } from './cache.js'
+
+// Cache TTL: 5 minutes (300,000 ms)
+// Since the problem dataset only changes during seeding, this is safe.
+const CACHE_TTL_MS = 5 * 60 * 1000
 
 export interface Problem {
   name: string
@@ -41,58 +46,68 @@ const problemInclude = {
 } as const
 
 export async function getAllProblems(difficulty?: string) {
-  const where = difficulty
-    ? { difficulty: difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase() as Difficulty }
-    : {}
+  const cacheKey = `allProblems:${difficulty ?? 'all'}`
 
-  const problems = await prisma.problem.findMany({
-    where,
-    include: problemInclude,
-    orderBy: { title: 'asc' },
-  })
+  return cached(cacheKey, async () => {
+    const where = difficulty
+      ? { difficulty: difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase() as Difficulty }
+      : {}
 
-  return {
-    problems: problems.map(mapProblem),
-    count: problems.length,
-  }
+    const problems = await prisma.problem.findMany({
+      where,
+      include: problemInclude,
+      orderBy: { title: 'asc' },
+    })
+
+    return {
+      problems: problems.map(mapProblem),
+      count: problems.length,
+    }
+  }, CACHE_TTL_MS)
 }
 
 export async function getProblemsByPattern(patternName: string) {
-  const pattern = await prisma.pattern.findUnique({ where: { name: patternName } })
-  if (!pattern) return null
+  const cacheKey = `problemsByPattern:${patternName}`
 
-  const problems = await prisma.problem.findMany({
-    where: { patterns: { some: { patternName } } },
-    include: problemInclude,
-    orderBy: { title: 'asc' },
-  })
+  return cached(cacheKey, async () => {
+    const pattern = await prisma.pattern.findUnique({ where: { name: patternName } })
+    if (!pattern) return null
 
-  return {
-    name: patternName,
-    pattern: patternName,
-    displayName: pattern.displayName,
-    description: pattern.description,
-    strategy: pattern.strategy,
-    keywords: pattern.keywords,
-    problems: problems.map(mapProblem),
-    count: problems.length,
-  }
+    const problems = await prisma.problem.findMany({
+      where: { patterns: { some: { patternName } } },
+      include: problemInclude,
+      orderBy: { title: 'asc' },
+    })
+
+    return {
+      name: patternName,
+      pattern: patternName,
+      displayName: pattern.displayName,
+      description: pattern.description,
+      strategy: pattern.strategy,
+      keywords: pattern.keywords,
+      problems: problems.map(mapProblem),
+      count: problems.length,
+    }
+  }, CACHE_TTL_MS)
 }
 
 export async function getPatterns() {
-  const patterns = await prisma.pattern.findMany({
-    include: { problems: { select: { problemId: true } } },
-    orderBy: { name: 'asc' },
-  })
+  return cached('patterns', async () => {
+    const patterns = await prisma.pattern.findMany({
+      include: { problems: { select: { problemId: true } } },
+      orderBy: { name: 'asc' },
+    })
 
-  return {
-    patterns: patterns.map((p) => ({
-      name: p.name,
-      displayName: p.displayName,
-      count: p.problems.length,
-    })),
-    total: patterns.length,
-  }
+    return {
+      patterns: patterns.map((p) => ({
+        name: p.name,
+        displayName: p.displayName,
+        count: p.problems.length,
+      })),
+      total: patterns.length,
+    }
+  }, CACHE_TTL_MS)
 }
 
 export async function getProblemBySlug(slug: string) {
@@ -110,14 +125,16 @@ export async function getProblemBySlug(slug: string) {
 }
 
 export async function getStats() {
-  const [total, easy, medium, hard] = await Promise.all([
-    prisma.problem.count(),
-    prisma.problem.count({ where: { difficulty: 'Easy' } }),
-    prisma.problem.count({ where: { difficulty: 'Medium' } }),
-    prisma.problem.count({ where: { difficulty: 'Hard' } }),
-  ])
+  return cached('stats', async () => {
+    const [total, easy, medium, hard] = await Promise.all([
+      prisma.problem.count(),
+      prisma.problem.count({ where: { difficulty: 'Easy' } }),
+      prisma.problem.count({ where: { difficulty: 'Medium' } }),
+      prisma.problem.count({ where: { difficulty: 'Hard' } }),
+    ])
 
-  return { total, easy, medium, hard, lastUpdated: new Date() }
+    return { total, easy, medium, hard, lastUpdated: new Date() }
+  }, CACHE_TTL_MS)
 }
 
 export interface PatternWithProblems {
@@ -130,27 +147,29 @@ export interface PatternWithProblems {
 }
 
 export async function getPatternProblems() {
-  const patterns = await prisma.pattern.findMany({
-    include: {
-      problems: {
-        include: {
-          problem: {
-            include: problemInclude,
+  return cached('patternProblems', async () => {
+    const patterns = await prisma.pattern.findMany({
+      include: {
+        problems: {
+          include: {
+            problem: {
+              include: problemInclude,
+            },
           },
         },
       },
-    },
-    orderBy: { name: 'asc' },
-  })
+      orderBy: { name: 'asc' },
+    })
 
-  return patterns.map((pattern) => ({
-    name: pattern.name,
-    displayName: pattern.displayName,
-    description: pattern.description,
-    strategy: pattern.strategy,
-    keywords: pattern.keywords,
-    problems: pattern.problems.map((pp) => mapProblem(pp.problem)),
-  })) as PatternWithProblems[]
+    return patterns.map((pattern) => ({
+      name: pattern.name,
+      displayName: pattern.displayName,
+      description: pattern.description,
+      strategy: pattern.strategy,
+      keywords: pattern.keywords,
+      problems: pattern.problems.map((pp) => mapProblem(pp.problem)),
+    })) as PatternWithProblems[]
+  }, CACHE_TTL_MS)
 }
 
 export async function getTestCasesForProblem(slug: string) {

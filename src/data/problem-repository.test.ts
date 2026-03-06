@@ -1,5 +1,6 @@
 import { describe, it, expect, mock, beforeEach } from 'bun:test'
 import { prisma } from './db.js'
+import { invalidateAll } from './cache.js'
 
 // Mock the Prisma client
 mock.module('./db.js', () => ({
@@ -60,6 +61,7 @@ const mockProblemRowHard = {
 
 describe('problem-repository', () => {
   beforeEach(() => {
+    invalidateAll()
     ;(prisma.problem.findMany as ReturnType<typeof mock>).mockReset()
     ;(prisma.problem.count as ReturnType<typeof mock>).mockReset()
     ;(prisma.pattern.findUnique as ReturnType<typeof mock>).mockReset()
