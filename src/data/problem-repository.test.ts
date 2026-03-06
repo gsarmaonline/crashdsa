@@ -29,7 +29,6 @@ import {
   getPatternProblems,
   getTestCasesForProblem,
   getTestCaseStats,
-  __clearAllCaches__,
 } from './problem-repository.js'
 
 const mockProblemRow = {
