@@ -36,6 +36,7 @@ mock.module('./src/db/connection.js', () => ({
 }))
 
 import { prisma } from './src/data/db.js'
+import { invalidateAll } from './src/data/cache.js'
 import { createSignedCookie } from './src/auth/middleware.js'
 
 // Import the app after mocks are set up
@@ -70,6 +71,7 @@ const mockProblemRow = {
 
 describe('CrashDSA API', () => {
   beforeEach(() => {
+    invalidateAll()
     ;(prisma.problem.findMany as ReturnType<typeof mock>).mockReset()
     ;(prisma.problem.count as ReturnType<typeof mock>).mockReset()
     ;(prisma.pattern.findUnique as ReturnType<typeof mock>).mockReset()
